@@ -1,9 +1,16 @@
 /* Custom container */
+
 body {
-  background-image: url("/assets/images/MountEvansAndMountBierstadtFromGuanellaPassNearDusk1200x842.jpg");
-}
-.no-image {
   background-color: #fefdfd;
+  height: 100%;
+}
+
+.background-image {
+  background-image: url("/assets/images/MountEvansAndMountBierstadtFromGuanellaPassNearDusk2560x1440.jpg");
+  /*background-image: url("/assets/images/MountEvansAndMountBierstadtFromGuanellaPassNearDusk1200x842.jpg");*/
+  background-repeat: repeat;
+  background-size: cover; /*contain;*/
+  height: 100vh;
 }
 
 .prog-scala-cover-cell {
@@ -14,10 +21,13 @@ body {
 
 .container {
   background-color: #fefdfd;
-  opacity: 0.75;
-  filter: alpha(opacity=75); /* For IE8 and earlier */
 }
 
+.footnote {
+/*  position:absolute;
+  bottom:0;
+*/  /*left:0;*/
+}
 .keyword {  /* used for highlighting terminology */
   color:#642;
   font-weight: bold;
@@ -31,7 +41,13 @@ body {
   margin: 30px 0; }
 
 .navbar .nav {
-  float: right; }
+  float: right;
+}
+
+.partially-transparent {
+  opacity: 0.75;
+  filter: alpha(opacity=75); /* For IE8 and earlier */
+}
 
 /* posts index */
 .post > h3.title {
