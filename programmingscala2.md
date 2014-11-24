@@ -17,15 +17,18 @@ tagline:
 <li>I know Java and perhaps a few other languages.</li>
 <li>I know Object-Oriented Programming, but not necessarily Functional Programming.</li>
 <li>I hear that Functional Programming is the "future" and Scala is a natural migration step from Java.</li>
+<li>I'm serious about learning Scala.</li>
 </ul>
 </p>
 <p>I would read <a href="http://shop.oreilly.com/product/0636920033073.do">Programming Scala, Second Edition</a> to achieve the following:
 <ul>
 <li>Learn why Scala is an excellent language for today's technical challenges.</li>
-<li>Learn the common idioms, libraries, tools, and techniques that the experts use for Scala development.</li>
+<li>Learn the common idioms, libraries, tools, and techniques used by experts.</li>
 <li>Master all the major features of Scala, warts and all.</li>
 </ul>
 </p>
+
+<p>If you want a more gentle introduction to Scala, consider <a href="">Atomic Scala</a> and <a href="">Scala for the Impatient</a>.</p>
 
 <p>I don't cover <em>everything</em> about the language and libraries. There are some more obscure topics that I omit and other very advanced topics that I briefly mention, so you'll be aware of them. Still, my goal for the reader is to <em>really</em> know the language, the common techniques used to solve various design problems, and to understand how Scala is used in domains like <em>Big Data</em>.</p>
 
