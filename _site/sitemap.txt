@@ -1,0 +1,7 @@
+
+http://deanwampler.github.io/index.html
+http://deanwampler.github.io/pages.html
+http://deanwampler.github.io/programmingscala2.html
+http://deanwampler.github.io/sitemap.txt
+
+http://deanwampler.github.io/lessons/2011/12/29/jekyll-introduction
