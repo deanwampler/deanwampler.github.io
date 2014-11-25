@@ -1,5 +1,7 @@
 
+http://deanwampler.github.io/concurrent-thought.html
 http://deanwampler.github.io/index.html
+http://deanwampler.github.io/open-source.html
 http://deanwampler.github.io/pages.html
 http://deanwampler.github.io/programmingscala2.html
 http://deanwampler.github.io/sitemap.txt

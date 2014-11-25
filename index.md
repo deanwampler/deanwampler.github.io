@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Dean Wampler
+title: Dean Wampler, Ph.D.
 tagline: Polyglot Developer of Distributed, Data-centric Applications
 ---
 {% include JB/setup %}
 
-I am a software developer specializing in *Big Data* applications using Spark, Hadoop, Mesos, and other tools. I've been a long-time advocate for *Functional Programming* and Scala as ideal tools for data-centric applications.
+I am a software developer specializing in <span class="keyword">Big Data</span> applications using [Spark](http://spark.apache.org), [Hadoop](http://hadoop.apache.org), [Mesos](http://mesos.apache.org), and other tools. I've been a long-time advocate for <span class="keyword">Functional Programming</span> and <span class="keyword">Scala</span> as ideal tools for data-centric applications.
 
-I work for [Typesafe](http://typesafe.com). I write books for O'Reilly. I help organize and speak frequently at conferences around the world. I organize several user groups in Chicago, where I live.
+I work for [Typesafe](http://typesafe.com). I write books for [O'Reilly](http://www.oreilly.com/pub/au/764). I help organize and speak frequently at conferences around the world. I organize several user groups in Chicago, where I live.
 
 I am the author of [Programming Scala, Second Edition](programmingscala2.html) and [Functional Programming for Java Developers](http://oreilly.com/catalog/9781449311032/). I'm the co-author with Edward Capriolo and Jason Rutherglen of [Programming Hive](http://oreilly.com/catalog/9781449319335/). All are published by [O'Reilly Media](http://oreilly.com).
 
