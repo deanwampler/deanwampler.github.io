@@ -7,7 +7,7 @@ tagline:
 
 {% include JB/setup %}
 
-<section id="talks" class="talks centered">
+<div id="talks" class="talks centered">
 Almost all of my conference and user group talks can be found at my <a href="http://github.com/deanwampler/Presentations/">GitHub Presentations</a> repo.
 
 <table>
@@ -45,5 +45,5 @@ Almost all of my conference and user group talks can be found at my <a href="htt
   </tr>
 
 </table>
-</section>
+</div>
 

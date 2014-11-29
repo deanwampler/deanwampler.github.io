@@ -31,10 +31,11 @@ include_social: true
     <a href="fpjava.html" class="books-book"><img src="/assets/images/FPforJavaDevsCover_256x337.png"/></a>
     <a href="programminghive.html" class="books-book"><img src="/assets/images/prog_hive_mech_cover_front_252x331.png"/></a>
   </div>
+  <p class="talk"><p>See <a href="/books">all my books</a></p></p>
 </section>
 
 <section id="talks" class="talks centered">
-  <p class="section-title"><span>Talks</span></p>
+  <p class="section-title"><span>Talks &amp; Papers </span></p>
 
   <article class="talk">
     <h1>Error Handling in Reactive Systems</h1>
@@ -58,5 +59,5 @@ include_social: true
     </div>
   </article>
 
-  <article class="talk"><p>See <a href="papers.html">all my talks</a></p></article>
+  <p class="talk"><p>See <a href="/papers">all my talks and papers</a></p></p>
 </section>

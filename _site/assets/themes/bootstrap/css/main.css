@@ -12,7 +12,9 @@ body {
   /*color: #9B9B9B;*/
   font-family: "Merriweather", serif;
   font-size: 14px;
-/*  text-align: center; */
+}
+.centered {
+  text-align: center; 
 }
 
 h1, h2, h3, h4 {
