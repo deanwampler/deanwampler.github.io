@@ -31,7 +31,7 @@ include_social: true
     <a href="fpjava.html" class="books-book"><img src="/assets/images/FPforJavaDevsCover_256x337.png"/></a>
     <a href="programminghive.html" class="books-book"><img src="/assets/images/prog_hive_mech_cover_front_252x331.png"/></a>
   </div>
-  <p class="talk"><p>See <a href="/books">all my books</a></p></p>
+  <p class="talk"><a href="/books">More on my books</a>.</p>
 </section>
 
 <section id="talks" class="talks centered">
@@ -59,5 +59,5 @@ include_social: true
     </div>
   </article>
 
-  <p class="talk"><p>See <a href="/papers">all my talks and papers</a></p></p>
+  <p class="talk"><a href="/papers">See all my talks and papers</a>.</p>
 </section>
