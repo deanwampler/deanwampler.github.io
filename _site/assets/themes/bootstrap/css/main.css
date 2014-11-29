@@ -15,7 +15,7 @@ body {
 /*  text-align: center; */
 }
 .centered {
-  text-align: center; 
+  text-align: center;
 }
 
 h1, h2, h3, h4 {
@@ -72,9 +72,6 @@ nav a:hover {
   color: #112337;
 }
 
-
-/*!.button, !.about-social-button, !nav a {*/
-
 p a {
   color: #26517f;
   text-decoration: none;
@@ -113,11 +110,11 @@ p a:hover {
 }
 
 .about-social-button-twitter {
-  background-position-y: -37px;
+  background-position: 8px -37px;
 }
 
 .about-social-button-resume {
-  background-position-y: -118px;
+  background-position: 8px -118px;
 }
 
 .button {
@@ -150,7 +147,7 @@ p a:hover {
   border: 1px solid #112337;
   color: #112337;
   text-decoration: none;
-  
+
 }
 .button-video-inactive {
   opacity: 0.75;
@@ -174,10 +171,10 @@ p a:hover {
 }
 
 .button-video .button-video-inactive {
-  background-position: 8px -158px;  
+  background-position: 8px -158px;
 }
 .button-video:hover {
-  background-position: 8px -198px;  
+  background-position: 8px -198px;
 }
 
 
@@ -247,7 +244,7 @@ section {
  */
 
 #research {
-  
+
 }
 #research:after {
   content: " ";
@@ -283,12 +280,12 @@ section {
  */
 
 .talks {
-  padding-bottom: 25px;  
+  padding-bottom: 25px;
 }
 
 .talk {
   width: 660px;
-  margin: 20px auto;  
+  margin: 20px auto;
 }
 
 .talk img {
