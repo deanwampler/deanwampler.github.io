@@ -1,22 +1,62 @@
 ---
 layout: page
 title: Dean Wampler, Ph.D.
-tagline: Polyglot Developer of Distributed, Data-centric Applications
+tagline: Software developer, expert in Big Data, Scala, and Functional Programming,<br/>O'Reilly author, and frequent public speaker living in Chicago.
+include_social: true
 ---
 {% include JB/setup %}
 
-I am a software developer specializing in <span class="keyword">Big Data</span> applications using [Spark](http://spark.apache.org), [Hadoop](http://hadoop.apache.org), [Mesos](http://mesos.apache.org), and other tools. I've been a long-time advocate for <span class="keyword">Functional Programming</span> and <span class="keyword">Scala</span> as ideal tools for data-centric applications.
+<section id="research" class="centered">
+  <p class="section-title"><span>Research</span></p>
+  <article class="research-item">
+    <h2>Polyglot Programming</h2>
+    <p>Polyglot Programming is a website dedicated to exploring the benefits (and drawbacks) of combining multiple programming languages and multiple "modularity paradigms" in application development. The "paradigms" include Functional Programming, Object-Oriented Programming, and Aspect-Oriented Programming.</p>
+    <div class="more">
+      <a href="polyglotprogramming.html" class="button">polyglotprogramming.com</a>
+    </div>
+  </article>
+  <article class="research-item">
+    <h2>Aspect Oriented Programming</h2>
+    <p>AOP is an attempt to address <em>cross cutting concerns</em> in applications. The dominant decomposition into modules usually reflects the domain model or perhaps the implementation infrastructure. However, it becomes difficult to add in globally-consistent features, like logging, that cut across these module boundaries. AOP attempts to solve this problem.</p>
+    <div class="more">
+      <a href="/aspectprogramming" class="button">aspectprogramming.com</a>
+    </div>
+  </article>
+</section>
 
-I work for [Typesafe](http://typesafe.com). I write books for [O'Reilly](http://www.oreilly.com/pub/au/764). I help organize and speak frequently at conferences around the world. I organize several user groups in Chicago, where I live.
+<section id="books" class="centered">
+  <p class="section-title"><span>Books</span></p>
+  <div class="books-list">
+    <a href="programmingscala2.html" class="books-book"><img src="/assets/images/prog_scala_2ed_comp-quarter_size.jpg" alt="Programming Scala, 2nd Edition"/></a>
+    <a href="fpjava.html" class="books-book"><img src="/assets/images/FPforJavaDevsCover_256x337.png"/></a>
+    <a href="programminghive.html" class="books-book"><img src="/assets/images/prog_hive_mech_cover_front_252x331.png"/></a>
+  </div>
+</section>
 
-I am the author of [Programming Scala, Second Edition](programmingscala2.html) and [Functional Programming for Java Developers](http://oreilly.com/catalog/9781449311032/). I'm the co-author with Edward Capriolo and Jason Rutherglen of [Programming Hive](http://oreilly.com/catalog/9781449319335/). All are published by [O'Reilly Media](http://oreilly.com).
+<section id="talks" class="talks centered">
+  <p class="section-title"><span>Talks</span></p>
 
-My conference talks can be found at [Polyglot Programming](http://polyglotprogramming.com/talks). Some are also on [Slideshare](http://www.slideshare.net/deanwampler/).
+  <article class="talk">
+    <h1>Error Handling in Reactive Systems</h1>
+    <p class="talk-desc">REACT Conf - San Francisco - 2014</p>
+    <p>Failure handling must be "first-class" in reactive systems, to satisfy the resilient trait. This talk for React SF 2014 discusses how reactive models and libraries support failure handling. (November 19, 2014)</p>
+    <div class="more">
+      <a href="/papers/ErrorHandlingReactiveSystems.pdf" class="button-pdf">Download PDF</a>
+      <!-- <a href="#" class="button-video">Watch video</a> -->
+      <span class="button-video-inactive">Watch video</span> (Coming Soon)
+    </div>
+  </article>
 
-I started the [Chicago-Area Scala Enthusiasts](http://meetup.com/chicagoscala) and I help organize the [Chicago Hadoop User Group](http://www.meetup.com/Chicago-area-Hadoop-User-Group-CHUG/) and the [Chicago Spark Users](http://www.meetup.com/Chicago-Spark-Users/).
+  <article class="talk">
+    <h1>Spark: The Next Top (Compute) Model</h1>
+    <p class="talk-desc">Numerous Venues - 2014</p>
+    <p><a href="http://spark.apache.org">Spark</a> has emerged as the replacement for <span class='keyword'>MapReduce</span> in <span class='keyword'>Hadoop</span> applications. This talk explains why. (April 28, 2014)</p>
+    <div class="more">
+      <a href="/papers/Spark-TheNextTopComputeModel.pdf" class="button-pdf">Download PDF</a>
+      <!-- <a href="#" class="button-video">Watch video</a> -->
+      <!-- <span class="button-video-inactive">Watch video</span> (Coming Soon) -->
+    </div>
+  </article>
 
-You'll find me on [Twitter](http://twitter.com/deanwampler) and I occasionally [blog](http://blog.polyglotprogramming.com).
-
-For more on my background, see my [resum&eacute;](resume.pdf) <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/> and my [Linkedin](http://www.linkedin.com/in/deanwampler/) account.
-
-I inflict my photography on unsuspecting conference attendees. You can find more of it at [Flickr](http://www.flickr.com/deanwampler).
+  <article class="talk"><p>See <a href="papers.html">all my talks</a></p></article>
+</section>

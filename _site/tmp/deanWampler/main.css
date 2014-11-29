@@ -1,0 +1,278 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,900italic|Merriweather:300italic,300,700,700italic);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  /*color: #9B9B9B;*/
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: #2C2C2C;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 75px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+h3 {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+p {
+  margin: 1.5em 0;
+  line-height: 1.5em;
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 3px;
+  background: #112337;  /*#D0021B;*/
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+nav a:hover {
+  background: #fff;
+  color: #112337;
+}
+
+
+.background-image {
+  background-image: url("MountEvansAndMountBierstadtFromGuanellaPassNearDusk2560x1440.jpg");
+  /*background-image: url("/assets/images/MountEvansAndMountBierstadtFromGuanellaPassNearDusk2560x1440.jpg");*/
+  /*background-image: url("/assets/images/MountEvansAndMountBierstadtFromGuanellaPassNearDusk1200x842.jpg");*/
+  /*background-repeat: repeat;*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; /* contain; */
+  height: 100vh;
+}
+
+/*
+ * BUTTONS
+ */
+
+.about-social-button-twitter,
+.about-social-button-linkedin,
+.button-pdf,
+.button-video {
+  background: url(images/buttons.svg) 3px 3px no-repeat;
+}
+
+.about-social-button-twitter,
+.about-social-button-linkedin {
+  display: inline-block;
+  padding: 0 15px 0 35px;
+  margin: 0 5px;
+  height: 30px;
+  line-height: 31px;
+  border-radius: 20px;
+  background-color: #112337;
+  color: #fff;
+  text-decoration: none;
+}
+
+.about-social-button-twitter {
+  background-position-y: -37px;
+}
+
+.button {
+  display: inline-block;
+  padding: 0 15px;
+  margin: 0 5px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 20px;
+  border: 1px solid #112337;
+  color: #112337;
+  text-decoration: none;
+}
+
+.button:hover,
+.button-pdf:hover,
+.button-video:hover {
+  background-color: #112337;
+  color: #fff;
+}
+
+.button-pdf,
+.button-video {
+  display: inline-block;
+  padding: 0 15px 0 35px;
+  margin: 0 5px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 20px;
+  border: 1px solid #112337;
+  color: #112337;
+  text-decoration: none;
+  
+}
+
+.button-pdf {
+  background-position: 8px -78px;
+}
+.button-pdf:hover {
+  background-position: 8px -118px;
+}
+
+.button-video {
+  background-position: 8px -158px;  
+}
+.button-video:hover {
+  background-position: 8px -198px;  
+}
+
+
+
+/*
+ * LAYOUT
+ */
+
+#wrapper {
+  background-color: #f6fef6;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.partially-transparent {
+  opacity: 0.75;
+  filter: alpha(opacity=75); /* For IE8 and earlier */
+}
+
+section {
+  margin-top:    80px;
+  margin-bottom: 80px;
+  margin-left:    0px;
+  margin-right:   0px;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  border-top: 1px solid #eee;
+}
+.section-title span {
+  position: relative;
+  top: -12px;
+  padding: 0 10px;
+  background: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #CECECE;
+}
+
+
+
+/*
+ * ABOUT
+ */
+
+#about {
+  margin: 100px 0 40px;
+}
+
+#about h1 {
+  font-size: 100px;
+  line-height: 120px;
+}
+
+.about-whoami {
+  margin: 20px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.about-social {
+  margin: 30px;
+}
+
+
+
+/*
+ * REASEARCHES
+ */
+
+#research {
+  
+}
+#research:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.research-item {
+  width: 50%;
+  padding: 0 15px;
+  float: left;
+}
+
+
+
+/*
+ * BOOKS
+ */
+
+.books-book img {
+  width: 125px;
+  border: 4px solid #CECECE;
+  margin: 20px;
+}
+.books-book:hover img {
+  border-color: #112337;
+}
+
+
+
+/*
+ * TALKS
+ */
+
+.talks {
+  padding-bottom: 25px;  
+}
+
+.talk {
+  width: 660px;
+  margin: 80px auto;  
+}
+
+.talk-desc {
+  font-family: Lato-Bold;
+  font-size: 18px;
+  color: #112337;
+  line-height: 22px;
+}
+
+

@@ -10,7 +10,8 @@
 
     <link href="{{ ASSET_PATH }}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/custom.css" rel="stylesheet">
-
+    <link href="{{ ASSET_PATH }}/css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
     <!--[if lt IE 9]>
       <script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
     <![endif]-->
@@ -20,35 +21,26 @@
 
   </head>
 
-  <body class="{{ page.style }}">
-    <div class="background-image">
-      <nav class="navbar navbar-default partially-transparent" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          </div>
-
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-              {% assign pages_list = site.pages %}
-              {% assign group = 'navigation' %}
-              {% include JB/pages_list %}
-            </ul>
-          </div>
-        </div>
+  <body class="{{ page.style }} background-image">
+    <!-- <div class=""> -->
+      <nav class="centered">
+        <a href="/index.html">About</a>
+        <a href="/papers">Talks &amp; Papers</a>
+        <a href="/books">Books</a>
+        <a href="/polyglotprogramming">Polyglot Programming</a>
+        <a href="/aspectprogramming">Aspect Programming</a>
+        <a href="/concurrentthought">Concurrent Thought</a>
+        <!-- <a href="http://blog.polyglotprogramming.com">Blog</a> -->
+        <a href="/pages.html">Pages...</a>
       </nav>
-      <div class="container partially-transparent">
+      <div class="container content partially-transparent">
         {{ content }}
         <hr>
         <footer>
           <p>
-            &copy; 2003 - {{ site.time || date: '%Y' }} {{ site.author.name }}. All Rights Reserved.
+            <span class="pull-left text-muted">
+              &copy; 2003 - {{ site.time || date: '%Y' }} {{ site.author.name }}. All Rights Reserved.
+            </span>
             <span class="pull-right text-muted">
               Powered by
               <a href="http://dbtek.github.io/jekyll-bootstrap-3" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll-Bootstrap-3</a>
@@ -61,6 +53,6 @@
       {% include JB/analytics %}
       <script src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
       <script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
-    </div>
+    <!-- </div> -->
   </body>
 </html>

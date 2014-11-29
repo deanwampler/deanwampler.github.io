@@ -11,7 +11,8 @@
 
     <link href="/assets/themes/bootstrap/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/themes/bootstrap/css/custom.css" rel="stylesheet">
-
+    <link href="/assets/themes/bootstrap/css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
     <!--[if lt IE 9]>
       <script src="/assets/themes/bootstrap/resources/respond/Respond.min.js"></script>
     <![endif]-->
@@ -21,68 +22,28 @@
 
   </head>
 
-  <body class="no-image">
-    <div class="background-image">
-      <nav class="navbar navbar-default partially-transparent" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">Dean Wampler</a>
-          </div>
-
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-              
-              
-              
-
-
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/pages.html">Pages</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-    
-  
-
-
-
-            </ul>
-          </div>
-        </div>
+  <body class="no-image background-image">
+    <!-- <div class=""> -->
+      <nav class="centered">
+        <a href="/index.html">About</a>
+        <a href="/papers">Talks &amp; Papers</a>
+        <a href="/books">Books</a>
+        <a href="/polyglotprogramming">Polyglot Programming</a>
+        <a href="/aspectprogramming">Aspect Programming</a>
+        <a href="/concurrentthought">Concurrent Thought</a>
+        <!-- <a href="http://blog.polyglotprogramming.com">Blog</a> -->
+        <a href="/pages.html">Pages...</a>
       </nav>
-      <div class="container partially-transparent">
+      <div class="container content partially-transparent">
         
-<div class="page-header">
-  <h1>Open Source Projects </h1>
-</div>
+<section id="about" class="centered">
+  <h1>Open Source Projects</h1>
+  <p class="about-whoami">
+    
+  </p>
+
+  
+</section>
 
 <div class="row">
   <div class="col-xs-12">
@@ -90,7 +51,7 @@
 
 <ul>
   <li><a href="https://github.com/deanwampler/Aquarium">Aquarium</a>: An <a href="http://aspectprogramming.com">Aspect-Oriented Programming</a> toolkit for <a href="https://www.ruby-lang.org/en/">Ruby</a>. Since I no longer work in the Ruby community, I’m looking for someone to take over this project.</li>
-  <li><a href="http://www.polyglotprogramming.com/contract4j">Contract4J</a>: An AspectJ-based, <span class="keyword">Design by Contract</span> tool for Java 5+, written in
+  <li><a href="http://www.polyglotprogramming.com/contract4j">Contract4J</a>: An AspectJ-based, <a href="http://en.wikipedia.org/wiki/Design_by_contract">Design by Contract</a> tool for Java 5+, written in
 <a href="https://eclipse.org/aspectj/">AspectJ</a>.</li>
   <li><a href="https://github.com/deanwampler/stampede">Stampede</a>: A flyweight work flow scheduling tool, written as a reaction to bloated, hard-to-use tools like <a href="http://oozie.apache.org">Oozie</a>. It relies on classic <span class="keyword">UNIX</span> tools, like <a href="http://www.gnu.org/software/bash/">bash</a>, <a href="http://www.gnu.org/software/make/">make</a>, and <a href="http://en.wikipedia.org/wiki/Cron">cron</a>.</li>
 </ul>
@@ -104,7 +65,9 @@
         <hr>
         <footer>
           <p>
-            &copy; 2003 - 2014 Dean Wampler. All Rights Reserved.
+            <span class="pull-left text-muted">
+              &copy; 2003 - 2014 Dean Wampler. All Rights Reserved.
+            </span>
             <span class="pull-right text-muted">
               Powered by
               <a href="http://dbtek.github.io/jekyll-bootstrap-3" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll-Bootstrap-3</a>
@@ -118,7 +81,7 @@
 
       <script src="/assets/themes/bootstrap/resources/jquery/jquery.min.js"></script>
       <script src="/assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js"></script>
-    </div>
+    <!-- </div> -->
   </body>
 </html>
 

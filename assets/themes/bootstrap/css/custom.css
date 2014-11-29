@@ -19,6 +19,19 @@ body {
   height: 344px;
 }
 
+.basic-table {
+  width: 90%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dddddd;
+}
+.basic-table td {
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dddddd;
+}
+
 .container {
   background-color: #fefdfd;
 }

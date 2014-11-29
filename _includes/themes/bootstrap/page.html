@@ -1,6 +1,17 @@
-<div class="page-header">
-  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
-</div>
+<section id="about" class="centered">
+  <h1>{{ page.title }}</h1>
+  <p class="about-whoami">
+    {{ page.tagline }}
+  </p>
+
+  {% if page.include_social %}
+  <div class="about-social">
+    <a href="http://twitter.com/deanwampler" class="about-social-button-twitter" target="twitter">@deanwampler</a>
+    <a href="http://www.linkedin.com/in/deanwampler/" class="about-social-button-linkedin" target="linkedin">Dean Wampler</a>
+    <a href="resume.pdf" class="about-social-button-resume" target="resume">Resum&eacute;</a>
+  </div>
+  {% endif %}
+</section>
 
 <div class="row">
   <div class="col-xs-12">
