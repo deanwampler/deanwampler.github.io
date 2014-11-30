@@ -52,17 +52,17 @@ A project of <a href="/aspectresearchassociates">Aspect Research Associates</a><
 Copyright 2005-2011 Contract4J Development Team
 
    Licensed under the Eclipse Public License - v 1.0; you
-   may not use this software except in compliance with the 
+   may not use this software except in compliance with the
    License. You may obtain a copy of the License a
 
        http://www.eclipse.org/legal/epl-v10.html
 
    A copy is also included with this distribution. See the
-   "LICENSE" file. Unless required by applicable law or 
-   agreed to in writing, software distributed under the 
-   License is distributed on an "AS IS" BASIS, WITHOUT 
+   "LICENSE" file. Unless required by applicable law or
+   agreed to in writing, software distributed under the
+   License is distributed on an "AS IS" BASIS, WITHOUT
    WARRANTIES OR CONDITIONS OF ANY KIND, either express or
-   implied. See the License for the specific language 
+   implied. See the License for the specific language
    governing permissions and limitations under the License.
 ==========================================================
 </code></pre>
@@ -466,30 +466,30 @@ build.bat test.ltw    # windows
 
 <p>Here is a large example showing how to define Contract4J5 tests in your code so that Contract4J5 can discover and execute them at runtime. It is the file <code>test/org/Contract4J5/test/BaseTestClass.java</code> (with some superfluous details omitted). See additional examples in the unit/acceptance suite under the &#8220;test&#8221; directory.</p>
 
-<p>The comments in this class should be self explanatory. More specific details on writing contracts are provided below. 
+<p>The comments in this class should be self explanatory. More specific details on writing contracts are provided below.
 <code>BaseTestClass.java</code>:</p>
 
 <pre><code>package org.contract4j5.test;
 
 import org.contract4j5.contract.*;
 /**
- * A (contrived) example Java class that demonstrates how 
- * to define DbC tests. The "@Contract" annotation is 
- * required. Then, we define a class-level invariant, 
- * which happens to be for one of the fields. Note that 
- * we have to prefix the field name with "$this", one of 
+ * A (contrived) example Java class that demonstrates how
+ * to define DbC tests. The "@Contract" annotation is
+ * required. Then, we define a class-level invariant,
+ * which happens to be for one of the fields. Note that
+ * we have to prefix the field name with "$this", one of
  * several special keywords that begin with "$" and are
- * replaced with special values before passing the 
+ * replaced with special values before passing the
  * expression to the script interpreter. In this case,
  * "$this" means "this object" (You can't just use "this"
  * without the "$" for backwards compatibility reasons;
- * this may be relaxed in a future release). 
+ * this may be relaxed in a future release).
  * Prefixing field names with $this is necessary for the
  * scripting engine to be able to resolve the variable
  * name. While not required in all cases, as a rule it is
  * best to always refer to fields this way for consistent.
  * The one case where you don't need the "$this." is when
- * you define an invariant for a field itself (See the 
+ * you define an invariant for a field itself (See the
  * test for "name" below). Note also that in order for
  * Jexl to resolve the field reference, a JavaBeans
  * "getter" method must exist for the field, even if the
@@ -499,12 +499,12 @@ import org.contract4j5.contract.*;
 @Invar("$this.lazyPi==3.14159") // see comments for "lazyPi"
 public class BaseTestClass {
   /**
-   * A field that is initialized "lazily", but cannot 
-   * change after that. This invariance is enforced by the 
-   * @Invar annotation on the class. The constructor must 
+   * A field that is initialized "lazily", but cannot
+   * change after that. This invariance is enforced by the
+   * @Invar annotation on the class. The constructor must
    * call {@link #getLazyPi()} BEFORE ANY OTHER PUBLIC
    * FUNCTION, or the invariant test will fail!
-   * NOTE: the Jexl parser chokes if the invariant test 
+   * NOTE: the Jexl parser chokes if the invariant test
    * appends "f" to the constant!
    * NOTE: Jexl can't resolve "lazyPi" unless "getLazyPi()"
    * exists!
@@ -513,7 +513,7 @@ public class BaseTestClass {
 
   /**
    * "getLazyPi()" always simply sets the value to 3.14159,
-   * so the class invariant "$this.lazyPi==3.14159" will 
+   * so the class invariant "$this.lazyPi==3.14159" will
    * always pass. However, see {@link #setLazyPi(float)}.
    * @return pi
    */
@@ -526,26 +526,26 @@ public class BaseTestClass {
 
   /**
    * This function allows unit tests to force a failure!
-   */ 
+   */
   public void setLazyPi (float f) {
     lazyPi = f;
   }
 
   /**
-   * A field that should never be null or "". See also 
-   * comments in {@link #setName(String)}. Note that you 
-   * can safely use the "bare" field name "name" here. 
+   * A field that should never be null or "". See also
+   * comments in {@link #setName(String)}. Note that you
+   * can safely use the "bare" field name "name" here.
    * You can also use "$this.name", which you have to use
-   * in all other types of tests (i.e., tests other than 
+   * in all other types of tests (i.e., tests other than
    * the invariant test on the field itself). You can also
-   * use the keyword "$target", which currently is only 
+   * use the keyword "$target", which currently is only
    * used to refer to a corresponding field when used in a
-   * test expression. (In the future, "$target" may have 
-   * other uses in the more general AspectJ-sense of the 
+   * test expression. (In the future, "$target" may have
+   * other uses in the more general AspectJ-sense of the
    * poincut "target()" expression.)
    * NOTE: You can specify an optional error message that
    * will be reported with any failure message. Also, as
-   * stated before, "name" must have a "getName()" 
+   * stated before, "name" must have a "getName()"
    * accessor or Jexl can't resolve it!
    */
   @Invar(value="name != null &amp;&amp; name.length() &gt; 0",
@@ -558,14 +558,14 @@ public class BaseTestClass {
   public String getName() { return this.name; }
 
   /**
-   * Use a precondition to prevent setting name to null. 
+   * Use a precondition to prevent setting name to null.
    * Note this test is less restrictive than the invariant
-   * test on the field itself, a poor design. (Hopefully, 
+   * test on the field itself, a poor design. (Hopefully,
    * the developer will realize the mistake when one test
-   * fails while the other passes.) In this case, this 
+   * fails while the other passes.) In this case, this
    * "mistake" is useful for the dbc4j unit tests.
    * @param name String naming the object
-   */    
+   */
   @Pre("name != null")
   public void setName (String name) { this.name = name; }
 
@@ -578,7 +578,7 @@ public class BaseTestClass {
   public void setFlag () { flag = true; }
 
   /**
-   * Set the flag. This method is used in unit tests to  
+   * Set the flag. This method is used in unit tests to
    * force a contract assertion failures.
    */
   public void setFlag (boolean f) { flag = f; }
@@ -586,18 +586,18 @@ public class BaseTestClass {
   /**
    * Constructor. Note that the precondition on the "name"
    * parameter is redundant, since {@link #setName(String)}
-   * is called, but it is still useful for documenting the 
+   * is called, but it is still useful for documenting the
    * interface. Note that the @Pre test does not
-   * define a test expression. In this case, C4J5 uses a 
+   * define a test expression. In this case, C4J5 uses a
    * {@link org.contract4j5.testexpression.DefaultTestExpressionMaker}
-   * to generate a default test expression. There are 
-   * separate "makers" for different types of tests and 
-   * contexts and they are user configurable. For 
+   * to generate a default test expression. There are
+   * separate "makers" for different types of tests and
+   * contexts and they are user configurable. For
    * preconditions, the default is to require that all
    * arguments are non-null.
-   * Note that tests can call methods, too, but watch for 
-   * side effects, especially since tests will normally be 
-   * disabled in production builds. Therefore, never call 
+   * Note that tests can call methods, too, but watch for
+   * side effects, especially since tests will normally be
+   * disabled in production builds. Therefore, never call
    * a method with side effects!
    * @param name a non-null String
    */
@@ -610,19 +610,19 @@ public class BaseTestClass {
   }
 
   /**
-   * Constructor. As discussed in {@link 
-   * #BaseTestClass(String)}, the default test expression 
+   * Constructor. As discussed in {@link
+   * #BaseTestClass(String)}, the default test expression
    * for the precondition test will be that all parameters,
-   * in this case "name" and "flag", must be non-null. What 
-   * does that mean for "flag", which is boolean. Not much; 
+   * in this case "name" and "flag", must be non-null. What
+   * does that mean for "flag", which is boolean. Not much;
    * this argument will be converted to
    * {@link java.lang.Boolean} internally and it will never
-   * be null! Also, in this example, the precondition test 
-   * is actually redundant, since {@link #setName(String)} 
-   * is called. However, the test is still useful for 
+   * be null! Also, in this example, the precondition test
+   * is actually redundant, since {@link #setName(String)}
+   * is called. However, the test is still useful for
    * documenting the interface.
    * @param name a non-null String
-   * @param flag a boolean flag; if false, causes the 
+   * @param flag a boolean flag; if false, causes the
    *    postcondition to fail.
    */
   @Pre
@@ -641,14 +641,14 @@ public class BaseTestClass {
     return flag;        // reusing our flag...
   }
 
-  /** 
+  /**
    * Method that requires flag to have been previously set.
    * E.g., {@link #setFlag(boolean)}, {@link #doIt()}, etc.
-   * Note the postcondition to confirm that the method 
+   * Note the postcondition to confirm that the method
    * succeeded, where "$return" is the keyword that matches
    * the value returned by the method (an int in this case).
    */
-  @Pre(value="$this.flag == true", 
+  @Pre(value="$this.flag == true",
         message="this.flag true before calling 'doIt()'?")
   @Post("$return == 0")
   public int doIt () {
@@ -658,10 +658,10 @@ public class BaseTestClass {
     return 0;
   }
 
-  /** 
-   * Overloaded method. Useful to confirm that the 
-   * generated tests correctly discriminate between the 
-   * methods (note the conflicting @Post annotations on the 
+  /**
+   * Overloaded method. Useful to confirm that the
+   * generated tests correctly discriminate between the
+   * methods (note the conflicting @Post annotations on the
    * two versions.)
    */
   @Post("$return != 0")
@@ -672,24 +672,24 @@ public class BaseTestClass {
     return 0;
   }
 
-  /** 
-   * Method with tests on more than one parameter. The 
-   * keywords "$args[n]" refer to the parameter arguments, 
+  /**
+   * Method with tests on more than one parameter. The
+   * keywords "$args[n]" refer to the parameter arguments,
    * counting from 0.
    */
-  @Pre ("$args[0]&gt; 0 &amp;&amp; $args[1].equals(\"foo\")") 
+  @Pre ("$args[0]&gt; 0 &amp;&amp; $args[1].equals(\"foo\")")
   public int doThat (int toss, String fooStr) {
     return toss;
   }
 
-  /** 
-   * Method with tests on more than one parameter. Tests 
-   * whether we correctly generate matching aspects on the 
+  /**
+   * Method with tests on more than one parameter. Tests
+   * whether we correctly generate matching aspects on the
    * second and last parameter. Note that a nested string
    * in a test must be escaped.
    */
-  @Pre ("toss2 &gt; 0 &amp;&amp; toss4.equals(\"foo\")") 
-  public int doTheOther (int toss1, int toss2, 
+  @Pre ("toss2 &gt; 0 &amp;&amp; toss4.equals(\"foo\")")
+  public int doTheOther (int toss1, int toss2,
                          String toss3, String toss4) {
     return toss1;
   }
@@ -714,7 +714,7 @@ public class BaseTestClass {
     private int positive;
 
     /**
-     * Method to force the invariant test to fail, 
+     * Method to force the invariant test to fail,
      * if a negative argument is used.
      */
     public void setPositive (int p) { this.positive = p; }
@@ -722,9 +722,9 @@ public class BaseTestClass {
     public int getPositive () { return this.positive; }
 
     // The @Post on "name" should really be a @Pre on "nm",
-    // as it is more restrictive, but it is useful for 
+    // as it is more restrictive, but it is useful for
     // example purposes.
-    @Post ("$this.name != null &amp;&amp; $this.name.length() &gt; 0 &amp;&amp; nm != null")  
+    @Post ("$this.name != null &amp;&amp; $this.name.length() &gt; 0 &amp;&amp; nm != null")
     NestedBaseTestClass (String nm) {
       this.name = nm;
       this.positive  = nm != null ? nm.length() : -1;
@@ -744,7 +744,7 @@ public class BaseTestClass {
 <p>Examples:</p>
 
 <pre><code>@Contract
-public interface Foo { ... } 
+public interface Foo { ... }
 
 @Contract
 public class Bar { ... }
@@ -1238,7 +1238,7 @@ Thanks to Chuck H. for additional feedback and Sebastiaan v. E. and Daniel S. fo
 
 <p>Minor Documentation Bug Fixes</p>
 
-<p>Fixed examples that had obsolete package and class references. Added more details about how to use load-time weaving (LTW). 
+<p>Fixed examples that had obsolete package and class references. Added more details about how to use load-time weaving (LTW).
 Thanks to Chuck H. for valuable feedback.</p>
 
 <p>v0.7.0 December 31, 2006</p>
@@ -1400,7 +1400,7 @@ Numerous minor enhancements.</p>
 
 <p><a href="/contract4j">polyglotprogramming.com/contract4j</a> is the home page for Contract4J5 and Contract4JBeans. It is developed by <a href="/aspectresearchassociates">Aspect Research Associates</a> (ARA), a consulting company specializing in <em>Polyglot</em> Programming technologies, such as Aspect-Oriented, Functional, and Object-Oriented Programming, &#8220;enterprise&#8221; Scala and Java, and Ruby on Rails. ARA also manages the <a href="/aspectprogramming">Aspect Programming</a> web site, where you will find more information and whitepapers on Contract4J5 and Aspect-Oriented Software Development (AOSD), in general.</p>
 
-<p>We recently released the first version of a new AOP framework for Ruby called <a href="http://aquarium.rubyforge.org/">Aquarium</a>. The examples included with Aquarium include a basic Design-by-Contract module.</p>
+<p>We recently released the first version of a new AOP framework for Ruby called <a href="https://github.com/deanwampler/Aquarium">Aquarium</a>. The examples included with Aquarium include a basic Design-by-Contract module.</p>
 
 <p>The <a href="http://www.ibm.com/developerworks/views/java/libraryview.jsp?search_by=aop@work:">AOP@Work</a> series at <a href="http://developerWorks.com">developerWorks.com</a> contains an <a href="http://www.ibm.com/developerworks/java/library/j-aopwork17.html">article about Contract4J5</a>. It introduces Design by Contract and how Contract4J5 supports it in Java. The article concludes with a discussion of emerging trends in Aspect-Oriented Design.</p>
 

@@ -55,9 +55,8 @@ v0.3.0.0   February 20, 2006
 v0.2.0.0   October 5, 2005
 v0.2.0M1   August 15, 2005
 
-Dean Wampler 
-http://www.polyglotprogramming.com/contract4j
-http://www.aspectprogramming.com/contract4j
+Dean Wampler, Ph.D.
+http://aspectprogramming.com/contract4j
 
 Contents:
 
@@ -75,27 +74,27 @@ Contents:
 ** Introduction
 
 For the Copyright statement and a general overview of
-Contract4J and Design by Contract, see the 
+Contract4J and Design by Contract, see the
 &lt;%= link_to 'Contract4J5 README', :action =&gt; 'c4j5'%&gt;.
 
 
 ** What Is "Contract4JBeans"?
 
-After the initial version of Contract4J, a second, 
-experimental version was developed that used a 
+After the initial version of Contract4J, a second,
+experimental version was developed that used a
 JavaBeans-like syntax for defining tests as regular
-Java methods. Hence, it is called Contract4JBeans. 
-This version was developed as a way of avoiding some 
-issues with the original annotation-based version 
+Java methods. Hence, it is called Contract4JBeans.
+This version was developed as a way of avoiding some
+issues with the original annotation-based version
 (which have since been resolved). While Contract4JBeans
-demonstrates some interesting ideas, it is considered 
-an inferior approach and it is not being developed 
+demonstrates some interesting ideas, it is considered
+an inferior approach and it is not being developed
 further. The main flaws are:
   - Very poor runtime performance
   - The role of the tests as part of the component
     interface is more obscure than for the annotation
     approach used in Contract4J5.
-However, it may be of interest to AOP tool writers, so 
+However, it may be of interest to AOP tool writers, so
 it will remain publicly available. To distinguish the
 two versions of Contract4J, the annotation version is
 called Contract4J5 and the "beans" version is called
@@ -105,26 +104,26 @@ documentation.
 
 --- How Does Contract4JBeans Support Design by Contract?
 
-Contract4JBeans and Contract4J5 take very different 
-approaches to supporting DbC, each with strengths and 
+Contract4JBeans and Contract4J5 take very different
+approaches to supporting DbC, each with strengths and
 weaknesses.
 
 I'm a long-time believer in DbC and wanted to use it in
 Java. A few years ago, I discovered the clever "Barter"
 project, which supports DbC in Java using XDoclet tags
-and AspectJ code generation to perform the tests as AspectJ 
-"advice" (http://barter.sourceforge.net/). 
+and AspectJ code generation to perform the tests as AspectJ
+"advice" (http://barter.sourceforge.net/).
 
-A problem with doclet-based approaches is that they are 
-buried in the comments and hence decoupled from the 
+A problem with doclet-based approaches is that they are
+buried in the comments and hence decoupled from the
 runtime environment. Java 5 introduced annotations, which
 are like "javadoc tags for code". In particular,
 annotations are used to ascribe meta-information to the
 code and to support optional runtime exploitation of that
 information. Annotations are a logical tool for associating
-contract tests with code and Contract4J5 defines a set of 
-annotations for specifying contracts in the form of 
-executable statements. The details are discussed below. 
+contract tests with code and Contract4J5 defines a set of
+annotations for specifying contracts in the form of
+executable statements. The details are discussed below.
 A contrived example suffices for now:
 
 @Contract
@@ -143,27 +142,27 @@ public class MyClass {
   ...
 }
 
-The "@Contract" annotation tells Contract4J5 that 
+The "@Contract" annotation tells Contract4J5 that
 "MyClass" defines tests. The tests are:
-1) The attribute "name" has an invariant test that 
-it can never be null (after the object has been 
+1) The attribute "name" has an invariant test that
+it can never be null (after the object has been
 constructed...).
 2) The "setName" method has a precondition that the
 value of the parameter cannot be null.
 3) The "getName" method has a postcondition that it
 can never return null.
-4) The "doIt" method has both a pre- and a 
+4) The "doIt" method has both a pre- and a
 postcondition test.
 
 Contract4J5 is described in more detail in the
 &lt;%= link_to 'Contract4J5 README', :action =&gt; 'c4j5'%&gt;.
 
 This approach, called "Contract4JBeans" or "ContractBeans"
-for short, is an experimental version that uses a 
+for short, is an experimental version that uses a
 different approach. It started with the need to remove
 some of the disadvantages of the first versions of
 Contract4J. This approach is considered experimental
-because it doesn't really offer a better approach and 
+because it doesn't really offer a better approach and
 it will not be developed further. However, it has some
 interesting characteristics that may be useful for other
 tools that use AOP and AspectJ.
@@ -193,44 +192,44 @@ public class MyClass {
   ...
 }
 
-All test methods return true if the test passes 
-or false if it doesn't. The invariant test for the 
-"name" attribute is called "invarName". The 
+All test methods return true if the test passes
+or false if it doesn't. The invariant test for the
+"name" attribute is called "invarName". The
 precondition test for "setName" is called "preSetName".
 All precondition and invariant tests for methods take
-the same argument list as the method itself. 
+the same argument list as the method itself.
 Postcondition tests, like the ones for "getName" and
 "doIt" pass as the first argument the result of the
 method call (compare with the "$return" keyword used
 in Contract4J5 tests), followed by the same argument
-list passed to the method. 
+list passed to the method.
 
 Note that, unlike the annotation form, the test methods
-could actually appear anywhere in the class, not 
-necessarily adjacent to the members they test, and 
+could actually appear anywhere in the class, not
+necessarily adjacent to the members they test, and
 the test methods could be called for other purposes.
 
 So, the contract tests are defined without annotations.
-This was not an original goal of the redesign, but a 
-result of the naming convention. It has the benefit 
+This was not an original goal of the redesign, but a
+result of the naming convention. It has the benefit
 that Contract4JBeans can be used in pre-Java 5 environments.
 
 Further comparisons of these two Contract4J approaches
 can be found in the papers "The Challenges of Writing
 Reusable Aspects in AspectJ" that was presented as part
 of the Industry Track at at AOSD.06, March, 2006 and
-"Pattern-Based Interfaces and Contract4J" that was 
+"Pattern-Based Interfaces and Contract4J" that was
 presented as part of the ACP4IS Workshop at AOSD.06.
 Contact me if you would like copies of these papers.
 
 ---- Inheritance Behavior of Contracts
 
 As discussed in the &lt;%= link_to 'Contract4J5 README', :action =&gt; 'c4j5'%&gt;,
-DbC has rules for proper behavior of inherited 
-contracts. Contract4JBeans does not have any 
-"native" support for the correct covariant or 
+DbC has rules for proper behavior of inherited
+contracts. Contract4JBeans does not have any
+"native" support for the correct covariant or
 contravariant behavior, as appropriate, under
-inheritance. C4J does invoke base-class tests on 
+inheritance. C4J does invoke base-class tests on
 derived class overrides, like method calls, but it
 relies on the test writer to implement tests
  appropriate. This is really no different than the
@@ -242,11 +241,11 @@ requirements.
 The patterns that test writers should use are these.
 Only override a precondition test if you intend to
 loosen it. Call the parent test and if it fails, then
-test whether or not the "extra" allowed "states" are 
-met (i.e., "or" the results). If so return true. 
-Otherwise, return false. 
+test whether or not the "extra" allowed "states" are
+met (i.e., "or" the results). If so return true.
+Otherwise, return false.
 
-For postcondition tests, never relax the conditions, 
+For postcondition tests, never relax the conditions,
 only strengthen them. Use similar coding logic; call
 the parent test and if it passes, then test if "state"
 is still within the tightened constraints (i.e., "and"
@@ -255,14 +254,14 @@ the results).
 Here is a contrived example:
 
 public class Base {
-  public String generateString (int n) { 
-    return Integer.toString(n);  
+  public String generateString (int n) {
+    return Integer.toString(n);
   }
   public boolean preGenerateString  (int n) {
     return n &gt; 0;
   }
   public boolean postGenerateString (String result, int n) {
-    return result != null &amp;&amp; result.length() &gt; 0; 
+    return result != null &amp;&amp; result.length() &gt; 0;
   }
   ...
 }
@@ -276,7 +275,7 @@ public class Derived extends Base {
     return super.preGenerateString(n) || n == 0;
   }
   public boolean postGenerateString (String result, int n) {
-    return super.postGenerateString(result, n) &amp;&amp; result.length() &gt; 8; 
+    return super.postGenerateString(result, n) &amp;&amp; result.length() &gt; 8;
   }
   ...
 }
@@ -309,29 +308,29 @@ a test of the more constrained allowed states.
 WARNING: Unfortunately, there is currently a bug that prevents you from writing
 covariant postcondition tests. Using the example above, note that the method
 "postGenerateString()" is public and defined in both classes, meaning that it
-is virtual and overridden in the derived class. When the derived 
+is virtual and overridden in the derived class. When the derived
 "generateString()" calls the parent method using "super", C4J will look for and
 find the corresponding base-class "postGenerateString()". However, when it
 invokes this method using Java reflection, if the object is actually of type
 Derived, the derived-class version will be invoked instead. This is because
 java.lang.reflect.Method.invoke() uses dynamic dispatch. However, if the
 derived-class postcondition test "tightens" the constraints, then the test may
-fail, even if the derived method *being tested* would make that test pass. 
+fail, even if the derived method *being tested* would make that test pass.
 
 The bug reflects a collision between normal Java method dispatch and the
 semantics of contract inheritance. It's a flaw of the Contract4JBeans approach.
 The ideal solution is to prevent the derived-class test from being used to test
-the parent-class method. This may not be possible, since Java reflection is 
+the parent-class method. This may not be possible, since Java reflection is
 used to find and invoke the tests. A fall back solution is to only allow tests
-to be run before and after the most derived version of the method under test. 
+to be run before and after the most derived version of the method under test.
 In other words, to ignore the tests when "super." methods are executed. This
 can be implemented by maintaining context information within Contract4JBeans
-code itself. 
+code itself.
 
-Several unit tests in 
+Several unit tests in
 com.aspectprogramming.contract4jbeans.test.TestContractTestSubclass,
 including testContractTestClassContravariantPreCovariantPost1() and
-testContractTestClassContravariantPreCovariantPost1(), "pass" only because 
+testContractTestClassContravariantPreCovariantPost1(), "pass" only because
 they explicitly anticipate this incorrect behavior and disallow postcondition
 covariance.
 
@@ -340,22 +339,22 @@ covariance.
 This section describes how to use Contract4JBeans. For information on using
 Contract4J5, the annotation form, see the README.txt in its distribution.
 
-This distribution contains ant files and examples of how to use 
+This distribution contains ant files and examples of how to use
 Contract4JBeans. The examples are also used by the unit/acceptance test suite.
 
 ---- Installation:
 
 The following commands are Linux/Unix commands. They also work with Cygwin bash
-on Windows. Or, use WinZip or an equivalent utility to expand the compressed 
-tar file. 
+on Windows. Or, use WinZip or an equivalent utility to expand the compressed
+tar file.
 
 You will need Java 5, AspectJ 5, and JUnit 3.8.1.
 
-  tar xvzf contract4jbeans_030.tar.gz 
+  tar xvzf contract4jbeans_030.tar.gz
 
 You can use the installed "contract4jbeans.jar" file as is. If you want to
-rebuild it, use the ant driver script "build.sh" in this directory, edit 
-the file and change the environment variable definitions to have the 
+rebuild it, use the ant driver script "build.sh" in this directory, edit
+the file and change the environment variable definitions to have the
 appropriate values for your environment or set up your environment so they
 are defined apropriately before invocation of the script. If you have the
 environment variables already defined, you can also invoke "ant" directly.
@@ -376,12 +375,12 @@ used by the tests, which also provide usage examples.
 
 classes - where build artifacts (except the jars) are stored
 doc - Where Javadocs are written
-contract4jbeans.jar - The runtime deployment jar. It contains the build 
+contract4jbeans.jar - The runtime deployment jar. It contains the build
 products from "src".
 contract4jbeans-test.jar - The jar containing the build products from "test".
 Not required as part of the normal runtime deployment.
 
-You can use the installed "contract4jbeans.jar" file as is (see below). 
+You can use the installed "contract4jbeans.jar" file as is (see below).
 To build Contract4J:
 
   6a) ./build.sh all
@@ -407,29 +406,29 @@ classes that illustrate usage. The other classes and aspects are supporting
 tools and also demonstrate how to define tests and use Contract4JBeans.
 Note that "Contract4JTestScope.aj" is a special example of an aspect you
 should define in your environment that tells Contract4JBeans the "scope" of
-where to look for tests. (For example, you don't want to include the JDK 
+where to look for tests. (For example, you don't want to include the JDK
 packages.) Let's look at some of the test examples.
 
 ----- Contract4JTestScope.aj:
 
 A marker interface is defined called "Contracts" that is used
 to indicate which classes define tests. It defines no members. Users can
-explicitly declare their classes to implement this interface (see, for example, 
+explicitly declare their classes to implement this interface (see, for example,
 contract4jbeans/test/com/aspectprogramming/contract4jbeans/test/TestProperties.java).
 However, the better way is to use AspectJ's intertype declaration (a.k.a.
 introduction) feature to make Contracts a "parent" of all the classes
-in your project's packages for which you intend to define tests. 
+in your project's packages for which you intend to define tests.
 
-Contract4JTestScope.aj provides an example. The form of this file and 
+Contract4JTestScope.aj provides an example. The form of this file and
 similar files for your projects is as follows:
 
 import  com.aspectprogramming.contract4jbeans.Contracts;
-public aspect Contract4JTestScope { 
+public aspect Contract4JTestScope {
   declare parents: (<type specification="">) implements Contracts;
 }
 
 Any unique name for the aspect will do. The "<type specification="">" is, for
-example, "com.aspectprogramming.contract4jbeans.test.ContractTest*" in 
+example, "com.aspectprogramming.contract4jbeans.test.ContractTest*" in
 Contract4JTestScope.aj. Any valid AspectJ type specification can be used.
 
 ----- ContractTestClass.java
@@ -458,7 +457,7 @@ public class ContractTestClass implements IContractTestClass {
     // after every read and write of a field, except they are not
   // called within the context ("cflowbelow") of constructors, since the
   // fields are only assumed to be properly initialized after the
-  // constructor completes, at which point the invariant tests are 
+  // constructor completes, at which point the invariant tests are
   // evaluated.
   public boolean invarName () { return checkStr (name); }
 
@@ -522,14 +521,14 @@ public class ContractTestClass implements IContractTestClass {
    * the method being tested.
    */
   public boolean invarMethodWithInvar (int flag, String s) {
-    return flag &gt; 0;  
+    return flag &gt; 0;
   }
   /**
    * Note that this method attempts to define a postcondition test on another
    * test method. In fact, it is ignored!
    */
   public boolean postInvarMethodWithInvar (Boolean result, int flag, String s) {
-    return !s.equals("force fail"); 
+    return !s.equals("force fail");
   }
 
   /**
@@ -539,13 +538,13 @@ public class ContractTestClass implements IContractTestClass {
    * You'll see warning messages during compilation for this method.
    */
   public static boolean staticMethodWithTests (int flag) {
-    return true;     
+    return true;
   }
-  // never called!    
+  // never called!
   public static boolean preStaticMethodWithTests   (int flag)            {return false;}
-  // never called!    
+  // never called!
   public static boolean postStaticMethodWithTests  (boolean b, int flag) {return false;}
-  // never called!    
+  // never called!
   public static boolean invarStaticMethodWithTests (int flag)            {return false;}
 
   /**
@@ -568,8 +567,8 @@ public class ContractTestClass implements IContractTestClass {
    * default c'tor. You can tell the difference because this method
    * is not static, unlike c'tor methods.
    */
-  public boolean invarContractTestClass () { 
-    return name == null || !name.equals("bad class invar name"); 
+  public boolean invarContractTestClass () {
+    return name == null || !name.equals("bad class invar name");
   }
 }
 
@@ -581,30 +580,30 @@ discussed.
 
 1) Implement the "Contracts" Interface
 
-Either explicitly declare your classes to implement this interface (in 
+Either explicitly declare your classes to implement this interface (in
 the com.aspectprogramming.contract4jbeans package) or use an aspect with
 an intertype declaration:
 
 import  com.aspectprogramming.contract4jbeans.Contracts;
 ...
-public class <class name=""> ... implements Contracts { ... } 
+public class <class name=""> ... implements Contracts { ... }
 
-or 
+or
 
 import  com.aspectprogramming.contract4jbeans.Contracts;
-public aspect <aspect name=""> { 
+public aspect <aspect name=""> {
   declare parents: (<type specification="">) implements Contracts;
 }
 
-Where 
+Where
   <class name=""> is the name of a class with tests.
   <aspect name=""> is an arbitrary, but unique name for the aspect.
   <type specification=""> is an AspectJ type specification, e.g., one or
     more packages and/or classes (See the AspectJ documentation for details).
 
-The advantage of the latter approach is that you can specify whole packages 
+The advantage of the latter approach is that you can specify whole packages
 in the type specification, etc. For a complete example of the latter approach,
-see  com/aspectprogramming/contract4j/test/Contract4JTestScope.aj in the 
+see  com/aspectprogramming/contract4j/test/Contract4JTestScope.aj in the
 distribution.
 
 2) Define the Test Methods, Following the Method Signature Conventions
@@ -626,11 +625,11 @@ Test Format:
   [!private] boolean invar<field name=""> () {...}
 
 The method should not be private, since the contract is part of the interface
-exposed to clients and/or derived class writers. It must return boolean. The 
-name must be the field name, with the first character capitalized, prefixed 
+exposed to clients and/or derived class writers. It must return boolean. The
+name must be the field name, with the first character capitalized, prefixed
 with "invar". It must take no arguments.
 
-Example: 
+Example:
 For "private String name" field,
     public boolean invarName() {...}
 
@@ -642,15 +641,15 @@ execution, respectively. Generally speaking, method tests are usually only
 "interesting" for non-private methods. Hence, tests defined for private
 methods are ignored. Any test methods that are defined to test other test
 methods (nesting) are ignored! (These restrictions are, in part,
-simplifications to reduce the design complexity and the overhead of test 
+simplifications to reduce the design complexity and the overhead of test
 method discovery.)
 
 Precondition Test Format:
   [!private] boolean pre<method name=""> (arglist) {...}
 
 The method should not be private, since the contract is part of the interface
-exposed to clients and/or derived class writers. It must return boolean. The 
-name must be the method name, with the first character capitalized, prefixed 
+exposed to clients and/or derived class writers. It must return boolean. The
+name must be the method name, with the first character capitalized, prefixed
 with "pre". It must take the same argument list as the method being tested.
 
 Postcondition Test Format:
@@ -658,8 +657,8 @@ Postcondition Test Format:
 
 The method should not be private, since the contract is part of the interface
 exposed to clients and/or derived class writers. It must return boolean. The
-name must be the method name, with the first character capitalized, prefixed 
-with "post". If the original method does not return void, then the test method 
+name must be the method name, with the first character capitalized, prefixed
+with "post". If the original method does not return void, then the test method
 must take an argument list where the first argument has the same return type as
 the method being tested (the argument name itself is arbitrary; "result" is just
 a convention). The rest of the argument list must be the same argument list as
@@ -672,11 +671,11 @@ Invariant Condition Test Format:
 
 The method should not be private, since the contract is part of the interface
 exposed to clients and/or derived class writers. It must return boolean. The
-name must be the method name, with the first character capitalized, prefixed 
-with "invariant". It must take the same argument list as the method being 
+name must be the method name, with the first character capitalized, prefixed
+with "invariant". It must take the same argument list as the method being
 tested.
 
-Example: 
+Example:
 For "public String foo (String name, int flag)" method,
     public boolean preFoo   (String name, int flag) {...}
     public boolean postFoo  (String result, String name, int flag) {...}
@@ -691,18 +690,18 @@ c) Constructor Tests
 Constructors may have pre-, post-, and invariant-condition tests that will be
 evaluated before, after, and "around" (both before and after) the method
 execution, respectively. Unlike instance method tests, constructor tests can
-be defined for private constructors and they will be evaluated, since in some 
+be defined for private constructors and they will be evaluated, since in some
 cases instance creation might only be done with a private constructor call
-(e.g., in factory patterns) and proper construction is important. 
+(e.g., in factory patterns) and proper construction is important.
 
 Precondition Test Format:
   ... static boolean pre<class name=""> (arglist) {...}
 
 The method may be private, but it should only be private if the constructor is
 private. The method must be static, because the instance doesn't exist yet upon
-which to call an instance test method. It must return boolean. The name 
+which to call an instance test method. It must return boolean. The name
 must be the class name, which is of course equivalent to the constructor name,
-prefixed with "pre". It must take the same argument list as the constructor 
+prefixed with "pre". It must take the same argument list as the constructor
 being tested.
 
 Postcondition Test Format:
@@ -716,8 +715,8 @@ does exist with which a call to an instance test method could be made! This
 the potential for confusion.
 It must return boolean. The name must be the class name, which is of course
 equivalent to the constructor name, prefixed with "post". It must take the
-same argument list as the constructor being tested. (Note that because 
-constructors never return a value, test methods always take the same argument 
+same argument list as the constructor being tested. (Note that because
+constructors never return a value, test methods always take the same argument
 list as the constructor being tested.)
 
 Invariant Condition Test Format:
@@ -730,7 +729,7 @@ return boolean. The name must be the class name, which is of course equivalent
 to the constructor name, prefixed with "invar". It must take the same argument
 list as the constructor being tested.
 
-Example: 
+Example:
 For "public MyClass (String name, int flag)" constructor,
     public static boolean preMyClass   (String name, int flag) {...}
     public static boolean postMyClass  (String name, int flag) {...}
@@ -740,7 +739,7 @@ d) Class Invariant Tests
 
 Class invariant tests evaluate the state of an instance before and after every
 non-private instance method and constructor call, with the exception that they
-aren't evaluated before the constructor calls, since the object isn't 
+aren't evaluated before the constructor calls, since the object isn't
 initialized to a valid state yet, nor are they called before calls to "get" or
 "set" JavaBeans methods, since lazy evaluation may be used to initialize or
 modify the state. (Recall, however, that any class-level, field-level, or
@@ -763,19 +762,19 @@ word "class-level" with "static"; the tests are not static, "instance-
 independent" tests.
 
 Also, test methods for constructors that take arguments also take the same
-argument list, while class-level invariant tests always take no arguments. 
+argument list, while class-level invariant tests always take no arguments.
 
 
 ----- Configuring the Behavior
 
-The behavior of Contract4JBeans can be configured through property files or at 
+The behavior of Contract4JBeans can be configured through property files or at
 runtime using API calls.  At startup, Contract4J will look for property
-files named "contract4j.properties", "contract4jbeans.properties", 
+files named "contract4j.properties", "contract4jbeans.properties",
 "contract4j.xml", and "contract4jbeans.xml". The XML files must follow the
 new Java 5 XML format for properties. Ifmore than one of these files is found,
 settings in the later ones override settings in the earlier files. The default
 file name can be overridden by defining the environment variable
-"$CONTRACT4J_PROPS_FILE" or the Java System property 
+"$CONTRACT4J_PROPS_FILE" or the Java System property
 "com.aspectprogramming.contract4jbeans.properties.filename". (The latter value
 takes precedence.)
 
@@ -790,7 +789,7 @@ following directories, in order:
 The last values read among all the files processed take precedence.
 
 In the discussion below about particular properties, they can be defined in
-any of these files. 
+any of these files.
 
 Note: For all properties currently defined, if a value is empty, it is ignored!
 
@@ -805,7 +804,7 @@ any test overhead.
 
 b) Property Files
 
-To enable or disable test types in a property file, set the following 
+To enable or disable test types in a property file, set the following
 properties:
 
   com.aspectprogramming.contract4jbeans.contracts = true|false
@@ -820,7 +819,7 @@ specific properties are specified, in which case it dominates.
 
 c) API Calls
 
-To disable one type of test, e.g., precondition tests, you can do this 
+To disable one type of test, e.g., precondition tests, you can do this
 programmatically, by calling the following static method:
 
 import com.aspectprogramming.contract4jbeans.Contract4J;
@@ -841,7 +840,7 @@ import com.aspectprogramming.contract4jbeans.Contract4J;
 2) Configuring "Reporters"
 
 By default, all output is written to using a simple logging-like interface
-called "Reporter", defined in com.aspectprogramming.contract4jbeans.Reporter. 
+called "Reporter", defined in com.aspectprogramming.contract4jbeans.Reporter.
 It supports 5 levels of output and the ability to set the message threshold.
 A default implementation writes to standard out or error with a threshold
 of "Warn". Separate Reporters can also be defined and configured for some
@@ -876,7 +875,7 @@ following API calls:
   ...
   Contract4J.getReporter().setThreshold(level);
 
-where "level" is one of 
+where "level" is one of
 
   Reporter.Level.Debug
   Reporter.Level.Info
@@ -914,7 +913,7 @@ the methods are implemented with a default algorithm used by Contract4J in the
 DefaultTestMethodFinder class, a subclass of TestMethodFinderHelper.
 TestMethodFinder also uses the system default Reporter, but you can specify
 and configure a unique one, if you want.
-TestMethodFinder reports when a test method is found or not found. The 
+TestMethodFinder reports when a test method is found or not found. The
 threshold (a Reporter.Level value) is a configurable property.
 
 Similarly, ContractEnforcer specifies an abstraction for how test methods are
@@ -924,7 +923,7 @@ DefaultContractEnforcer, a subclass of ContractEnforcerHelper.
 When test failures are reported, the stack trace can be printed. This is a
 configurable property.
 ContractEnforcer also uses the system default Reporter, but you can specify
-and configure a unique one, if you want. 
+and configure a unique one, if you want.
 
 a) Property Files
 
@@ -945,11 +944,11 @@ set the following properties:
 
 The test.method.finder.found.level and test.method.finder.not.found.level are
 threshold levels for reporting a test method was or was not found, respectively.
-The default values are "Debug" and "Info", respectively, the rational being that 
-you might be interested in knowing when a test method is missing and hence needs 
+The default values are "Debug" and "Info", respectively, the rational being that
+you might be interested in knowing when a test method is missing and hence needs
 to be added, but you only want notification of a test found when debugging.
 
-Warning: If you change the threshold of a reporter, but you didn't define a 
+Warning: If you change the threshold of a reporter, but you didn't define a
 unique instance separate from the global reporter, the change will actually
 be made to the global reporter!
 
@@ -974,12 +973,12 @@ in the CLASSPATH. Or, the jars containing precompiled Java files must be woven b
 AspectJ; put those jars in the "-inpath" option to ajc or the corresponding
 "inpath" or "inpathRef" options for the iajc ant task.
 
-During compilation, advice will be inserted before and after ALL non-private 
+During compilation, advice will be inserted before and after ALL non-private
 method calls, all constructor calls, and all field accesses in the classes that
-implement the Contracts marker interface, as described above. 
+implement the Contracts marker interface, as described above.
 
 At runtime, when a join point with advice is executed, the advice uses Java and
-AspectJ reflection to find a test method that corresponds to the join point. 
+AspectJ reflection to find a test method that corresponds to the join point.
 The method must match the format specifications described above. If a matching
 method is not found in the same class, parent classes and interfaces[1] are
 searched. If a method is found, it is executed. If it returns false, an error
@@ -1009,9 +1008,9 @@ Summary and "Tips":
   - Postcondition methods must declare as their first argument a parameter of
     the same type as the return type of the method they are testing. The rest
     of the argument list must match the list of the method under test. The
-    value returned by the method will be passed as this first parameter. 
+    value returned by the method will be passed as this first parameter.
     However, if the method returns void (including constructors), then no
-    "return" parameter is declared. In this case, the test method's argument 
+    "return" parameter is declared. In this case, the test method's argument
     list must match the original method's argument list exactly.
   - Constructor test methods must be declared static, since the instance is
     being constructed during precondition and invariant test execution. While
@@ -1030,7 +1029,7 @@ Summary and "Tips":
   - Test methods defined for other test methods, and for static and private
       instance methods are ignored. However, test methods for private
     constructors are supported.
-3) There are several supported configuration options. The details are described 
+3) There are several supported configuration options. The details are described
    above.
     - Which types of tests, pre, post, and/or invar, are enabled or disabled.
     - Setting the reporting (output) threshold.
@@ -1038,19 +1037,19 @@ Summary and "Tips":
     out/err, Log4J, etc.)
   - The class used to locate test methods.
   - The class used to execute test methods and handle failures.
-4) Avoid writing test methods with "side effects", as they may be turned off, 
+4) Avoid writing test methods with "side effects", as they may be turned off,
    thereby changing the runtime behavior of your application!
 
 
 --- Invocation and Configuration of Contract4J
 
-Contract4JBeans has been tested on Linux, MacOS X, and Windows. To build it from 
+Contract4JBeans has been tested on Linux, MacOS X, and Windows. To build it from
 scratch, the following third-party tools are required, along with corresponding
 "HOME" environment variable definitions needed by the ant build scripts:
 
 1) JUnit 3.8.1 (JUNIT_HOME)
-2) Java 1.5 (JAVA_HOME). 
-3) AspectJ 1.5 (ASPECTJ_HOME). 
+2) Java 1.5 (JAVA_HOME).
+3) AspectJ 1.5 (ASPECTJ_HOME).
 3) Ant 1.6.3 (ANT_HOME)
 
 Also define "CONTRACT4J_HOME" to be the directory ".../contract4jbeans_030/contract4j"
@@ -1058,7 +1057,7 @@ where you installed it.
 
 For your convenience, you can use the build driver scripts "build.sh" or
 "build.bat". Edit the values of the environment variables defined in the
-scripts as appropriate or define them in your environment before invoking 
+scripts as appropriate or define them in your environment before invoking
 the scripts.
 
 Only Java and AspectJ are required if you simply use the built jars in the
@@ -1070,18 +1069,18 @@ or weaves precompiled jar or class files as described in the section
 ---- Contract4J5
 
 The Contract4J5 and Contract4JBeans distributions are separate. both can
-be found by following the links at http://www.polyglotprogramming.com/contract4j.
+be found by following the links at contract4j.
 
 
 ** TODO Items:
 
-Here is a brief list of some of the more important "todo" items, roughly in 
-order of importance. 
+Here is a brief list of some of the more important "todo" items, roughly in
+order of importance.
 
 --- V.0.3.0
-1) Fix bug that prohibits covariant postcondition tests from working (see 
+1) Fix bug that prohibits covariant postcondition tests from working (see
 above).
-2) Consider support for Java 1.4 and perhaps 1.3, since the bean-style 
+2) Consider support for Java 1.4 and perhaps 1.3, since the bean-style
 interface uses no Java 5 constructs (e.g., annotations). However, the current
 implementation does use Java 5 constructs internally.
 3) Exploit aspects to manage the "Reporter" objects, which are hard-coded in
@@ -1092,28 +1091,28 @@ classes that use them.
 
 *** v0.3.0 February 20, 2006
 
-Changing version labeling and package scheme as discussed previously. 
+Changing version labeling and package scheme as discussed previously.
 No other functional changes were made.
 
 *** v0.2.0 October 5, 2005
 
 Implemented caching in the algorithm that searches for test methods, so this
 process isn't repeated over and over again. See
-  src/com/aspectprogramming/contract4j/ContractMethodCache.aj 
+  src/com/aspectprogramming/contract4j/ContractMethodCache.aj
 for details and approximate timing numbers.
 
 *** v0.2.0M1 August 15, 2005
 
-Contract4JBeans2 is a complete rewrite that introduces a new model for defining 
-contracts and a simpler adoption process. The previously-required preprocessor 
-step, running Sun's Annotation Processor Tool (APT), has been eliminated. 
-Therefore, adoption of Contract4JBeans is a simpler process of including the 
-"contract4J.jar" file in the ASPECTPATH for weaving (and optionally for 
-compiling) and runtime deployment. Then, the developer writes DbC tests in 
+Contract4JBeans2 is a complete rewrite that introduces a new model for defining
+contracts and a simpler adoption process. The previously-required preprocessor
+step, running Sun's Annotation Processor Tool (APT), has been eliminated.
+Therefore, adoption of Contract4JBeans is a simpler process of including the
+"contract4J.jar" file in the ASPECTPATH for weaving (and optionally for
+compiling) and runtime deployment. Then, the developer writes DbC tests in
 plain Java.
 
-The new model for defining contracts does not use annotations, which allows 
-its use in pre-Java 5 environments. Instead, a JavaBeans-like convention is 
+The new model for defining contracts does not use annotations, which allows
+its use in pre-Java 5 environments. Instead, a JavaBeans-like convention is
 used to define the tests, as discussed elsewhere in this README.
 
 This is a milestone release with a number of planned enhancements before the
@@ -1123,20 +1122,20 @@ final release. See the TODO items above for details.
 
 ** For Further Information...
 
-http://www.polyglotprogramming.com/contract4j/ is the home page for Contract4J. It is hosted by 
+contract4j/ is the home page for Contract4J. It is hosted by
 Aspect Programming, http://www.aspectprogramming.com/, where you'll find more
-information and whitepapers on Contract4J and Aspect-Oriented Software 
-Development (AOSD), in general. 
+information and whitepapers on Contract4J and Aspect-Oriented Software
+Development (AOSD), in general.
 
 The definitive site on AOSD is http://www.aosd.net.
 
-See http://www.aspectj.org for information on AspectJ. Note that there are 
-plans to incorporate Contract4J into the new standard library for AspectJ that 
+See http://www.eclipse.org/aspectj for information on AspectJ. Note that there are
+plans to incorporate Contract4J into the new standard library for AspectJ that
 will be introduced with the forthcoming, final AspectJ5 release.
 
 For alternative approaches to doing Design by Contract in Java, see the
-"Barter" project, which uses XDoclet and also generates AspectJ. Barter 
-partially inspired Contract4J. http://barter.sourceforge.net/. 
+"Barter" project, which uses XDoclet and also generates AspectJ. Barter
+partially inspired Contract4J. http://barter.sourceforge.net/.
 
 There is a discussion group doing DbC in Java and possibly getting a future
 version of Java to support DbC natively. See http://dbc.dev.java.net/.
