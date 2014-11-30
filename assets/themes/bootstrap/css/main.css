@@ -279,6 +279,10 @@ section {
  * TALKS
  */
 
+.talks-table {
+  width: 95%;
+}
+
 .talks {
   padding-bottom: 25px;
 }
@@ -303,4 +307,10 @@ section {
   color: #112337;
   line-height: 22px;
 }
+
+ .talk-small-description {
+  padding-left: 15px;
+  margin-right: 15px;
+  font-style: italic;
+ }
 
