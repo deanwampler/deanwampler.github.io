@@ -3,6 +3,13 @@ layout: page
 style: no-image
 title: Talks and Papers
 tagline:
+redirect_from: 
+  - /aspectprogramming.com/papers/
+  - /polyglotprogramming.com/papers/
+  - /concurrentthought.com/papers/
+  - /aspectprogramming/papers/
+  - /polyglotprogramming/papers/
+  - /concurrentthought/papers/
 ---
 
 {% include JB/setup %}

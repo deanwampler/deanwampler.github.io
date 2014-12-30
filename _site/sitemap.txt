@@ -17,5 +17,9 @@ http://deanwampler.github.io/papers.html
 http://deanwampler.github.io/books/programminghive.html
 http://deanwampler.github.io/books/programmingscala2.html
 http://deanwampler.github.io/sitemap.txt
-
-http://deanwampler.github.io/lessons/2011/12/29/jekyll-introduction
+http://deanwampler.github.io/aspectprogramming.com/papers/
+http://deanwampler.github.io/polyglotprogramming.com/papers/
+http://deanwampler.github.io/concurrentthought.com/papers/
+http://deanwampler.github.io/aspectprogramming/papers/
+http://deanwampler.github.io/polyglotprogramming/papers/
+http://deanwampler.github.io/concurrentthought/papers/

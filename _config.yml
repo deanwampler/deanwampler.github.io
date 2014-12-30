@@ -5,6 +5,9 @@ include: ["papers", "talks", "books", "home", "contract4j"]
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "tmp"]
 highlighter: pygments
 
+gems:
+  - jekyll-redirect-from
+
 # https://help.github.com/articles/migrating-your-pages-site-from-maruku
 markdown: kramdown
 
