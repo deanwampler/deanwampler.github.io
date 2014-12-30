@@ -42,7 +42,7 @@ include_social: true
     <p class="talk-desc"><a href="http://reactconf.com/">React Conf San Francisco 2014</a></p>
     <p>Failure handling must be "first-class" in reactive systems, to satisfy the resilient trait. This talk for React SF 2014 discusses how reactive models and libraries support failure handling. Hint: Most only offer limited facilities. (November 19, 2014)</p>
     <div class="more">
-      <a href="/papers/ErrorHandlingReactiveSystems.pdf" class="button-pdf">Download PDF</a>
+      <a href="/polyglotprogramming/papers/ErrorHandlingReactiveSystems.pdf" class="button-pdf">Download PDF</a>
       <!-- <a href="#" class="button-video">Watch video</a> -->
       <span class="button-video-inactive">Watch video</span> (Coming Soon)
     </div>
@@ -53,11 +53,11 @@ include_social: true
     <p class="talk-desc">Numerous Venues - 2014</p>
     <p><a href="http://spark.apache.org">Spark</a> has emerged as the replacement for <span class='keyword'>MapReduce</span> in <span class='keyword'>Hadoop</span> applications. This talk explains why. (April 28, 2014)</p>
     <div class="more">
-      <a href="/papers/Spark-TheNextTopComputeModel.pdf" class="button-pdf">Download PDF</a>
+      <a href="/polyglotprogramming/papers/Spark-TheNextTopComputeModel.pdf" class="button-pdf">Download PDF</a>
       <!-- <a href="#" class="button-video">Watch video</a> -->
       <!-- <span class="button-video-inactive">Watch video</span> (Coming Soon) -->
     </div>
   </article>
 
-  <p class="talk"><a href="/papers">See all my talks and papers</a>.</p>
+  <p class="talk"><a href="/polyglotprogramming/papers">See all my talks and papers</a>.</p>
 </section>
