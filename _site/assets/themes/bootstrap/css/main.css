@@ -14,11 +14,8 @@ body {
   font-size: 18px;
 /*  text-align: center; */
 }
-
 footer {
-  /*color: #9B9B9B;*/
   font-size: 14px;
-/*  text-align: center; */
 }
 
 .centered {
@@ -33,8 +30,12 @@ h1, h2, h3, h4 {
 }
 
 h1 {
+  font-size: 48px;
+  line-height: 60px;
+/*
   font-size: 60px;
   line-height: 75px;
+*/
 }
 h2 {
   font-size: 30px;
