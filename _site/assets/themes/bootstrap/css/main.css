@@ -11,9 +11,16 @@
 body {
   /*color: #9B9B9B;*/
   font-family: "Merriweather", serif;
+  font-size: 18px;
+/*  text-align: center; */
+}
+
+footer {
+  /*color: #9B9B9B;*/
   font-size: 14px;
 /*  text-align: center; */
 }
+
 .centered {
   text-align: center;
 }
