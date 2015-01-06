@@ -38,24 +38,34 @@ include_social: true
   <p class="section-title"><span>Talks &amp; Papers </span></p>
 
   <article class="talk">
-    <h1>Error Handling in Reactive Systems</h1>
-    <p class="talk-desc"><a href="http://reactconf.com/">React Conf San Francisco 2014</a></p>
-    <p>Failure handling must be "first-class" in reactive systems, to satisfy the resilient trait. This talk for React SF 2014 discusses how reactive models and libraries support failure handling. Hint: Most only offer limited facilities. (November 19, 2014)</p>
+    <h1>Why Spark Is The Next Top (Compute) Model</h1>
+    <p class="talk-desc">Numerous Venues - 2014</p>
+    <p><a href="http://spark.apache.org">Spark</a> has emerged as the replacement for <span class='keyword'>MapReduce</span> in <span class='keyword'>Hadoop</span> applications. This talk explains why.</p>
     <div class="more">
-      <a href="/polyglotprogramming/papers/ErrorHandlingReactiveSystems.pdf" class="button-pdf">Download PDF</a>
-      <!-- <a href="#" class="button-video">Watch video</a> -->
-      <span class="button-video-inactive">Watch video</span> (Coming Soon)
+      <a href="/polyglotprogramming/papers/Spark-TheNextTopComputeModel.pdf" class="button-pdf">Download PDF</a>
+      <a href="http://www.infoq.com/presentations/spark-scala-mapreduce-java" class="button-video">Watch video</a>
+      <!-- <span class="button-video-inactive">Watch video</span> (Coming Soon) -->
     </div>
   </article>
 
   <article class="talk">
-    <h1>Spark: The Next Top (Compute) Model</h1>
-    <p class="talk-desc">Numerous Venues - 2014</p>
-    <p><a href="http://spark.apache.org">Spark</a> has emerged as the replacement for <span class='keyword'>MapReduce</span> in <span class='keyword'>Hadoop</span> applications. This talk explains why. (April 28, 2014)</p>
+    <h1>Why Scala Is Taking Over the Big Data World</h1>
+    <p class="talk-desc"><a href="http://www.scaladays.org/#schedule/Why-Scala-is-Taking-Over-the-Big-Data-World">Scala Days 2014</a></p>
+    <p><em>Scala</em> has emerged as the <em>de facto</em> language for big data development, driven in part by tools like <a href="https://github.com/twitter/scalding">Scalding</a> and <a href="http://spark.apache.org">Spark</a>.</p>
     <div class="more">
-      <a href="/polyglotprogramming/papers/Spark-TheNextTopComputeModel.pdf" class="button-pdf">Download PDF</a>
+      <a href="WhyScalaIsTakingOverTheBigDataWorld.pdf" class="button-pdf">Download PDF</a>
+      <a href="https://parleys.com/play/53a7d2c5e4b0543940d9e544/chapter0/about" class="button-video">Watch video</a>
+    </div>
+  </article>
+
+  <article class="talk">
+    <h1>Error Handling in Reactive Systems</h1>
+    <p class="talk-desc"><a href="http://reactconf.com/">React Conf San Francisco 2014</a></p>
+    <p>Failure handling must be "first-class" in reactive systems, to satisfy the <em>resilient</em> trait. This talk for <a href="http://reactconf.com/">React SF 2014</a> discusses how reactive models and libraries support failure handling (or don't).</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/ErrorHandlingReactiveSystems.pdf" class="button-pdf">Download PDF</a>
       <!-- <a href="#" class="button-video">Watch video</a> -->
-      <!-- <span class="button-video-inactive">Watch video</span> (Coming Soon) -->
+      <span class="button-video-inactive">Watch video</span> (Coming Soon)
     </div>
   </article>
 

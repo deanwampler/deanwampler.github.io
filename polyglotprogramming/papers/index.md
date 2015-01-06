@@ -3,7 +3,7 @@ layout: page
 style: no-image
 title: Talks and Papers
 tagline:
-redirect_from: 
+redirect_from:
   - /aspectprogramming/papers/
   - /concurrentthought/papers/
   - /papers/
@@ -35,11 +35,12 @@ Most of my conference and user group talks can be found at my <a href="http://gi
   <tr>
     <td>
       <article class="talk">
-        <h1>Spark: The Next Top (Compute) Model</h1>
+        <h1>Why Spark Is The Next Top (Compute) Model</h1>
         <p class="talk-desc">Numerous Venues - 2014</p>
         <p><a href="http://spark.apache.org">Spark</a> has emerged as the replacement for <em>MapReduce</em> in <em>Hadoop</em> applications. This talk explains why. (April 28, 2014)</p>
         <div class="more">
           <a href="Spark-TheNextTopComputeModel.pdf" class="button-pdf">Download PDF</a>
+          <a href="http://www.infoq.com/presentations/spark-scala-mapreduce-java" class="button-video">Video</a>
         </div>
       </article>
     </td>
@@ -327,7 +328,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
 
 <h3>Big Data</h3>
 
-<p><a href="Spark-TheNextTopComputeModel.pdf">Spark: The Next Top (Compute) Model</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/> Video TBD.</p>
+<p><a href="Spark-TheNextTopComputeModel.pdf">Why Spark Is The Next Top (Compute) Model</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/> Video TBD.</p>
 <p class="talk-small-description">This is a talk for <a href="http://phillyemergingtech.com/2014">Emerging Technology for the Enterprise 2014</a>. <a href="http://spark.apache.org">Spark</a> has emerged as the most likely replacement for <span class='keyword'>MapReduce</span> in <span class='keyword'>Hadoop</span> applications. This talk explains why. (Last updated: April 23, 2014)</p>
 
 <p><a href="Typesafe-SparkSummit.pdf">Apache Spark and the Typesafe Reactive Platform: A Match Made in Heaven</a>
