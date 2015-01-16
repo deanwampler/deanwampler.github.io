@@ -41,7 +41,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p><em>Scala</em> has emerged as the <em>de facto</em> language for big data development, driven in part by tools like <a href="https://github.com/twitter/scalding">Scalding</a> and <a href="http://spark.apache.org">Spark</a>.</p>
         <div class="more">
           <a href="WhyScalaIsTakingOverTheBigDataWorld.pdf" class="button-pdf">Download PDF</a>
-          <a href="https://skillsmatter.com/skillscasts/5423-why-scala-is-taking-over-the-big-data-world" class="button-video">Watch video (Scala eXchange)</a>
+          <a href="https://skillsmatter.com/skillscasts/5423-why-scala-is-taking-over-the-big-data-world" class="button-video">Watch video</a> (Scala eXchange)
         </div>
       </article>
     </td>
