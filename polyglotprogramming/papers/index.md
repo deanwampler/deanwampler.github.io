@@ -15,22 +15,6 @@ redirect_from:
 Most of my conference and user group talks can be found at my <a href="http://github.com/deanwampler/Presentations/">GitHub Presentations</a> repo.
 
 <table class="talks-table centered">
-  <tr>
-    <td>
-      <article class="talk">
-        <h1>Error Handling in Reactive Systems</h1>
-        <p class="talk-desc"><a href="http://reactconf.com/">React Conf San Francisco 2014</a></p>
-        <p>Failure handling must be <em>first-class</em> in reactive systems, to satisfy the <em>resilient</em> trait. This talk discusses how reactive models and libraries support failure handling. Hint: Most only offer limited facilities. (November 19, 2014)</p>
-        <div class="more">
-          <a href="ErrorHandlingReactiveSystems.pdf" class="button-pdf">Download PDF</a>
-          <span class="button-video-inactive">Watch video</span> (Coming Soon)
-        </div>
-      </article>
-    </td>
-    <td>
-      <a href="ErrorHandlingReactiveSystems.pdf"><img src="ErrorHandlingReactiveSystems-TitlePage-256x192.jpg"></img></a>
-    </td>
-  </tr>
 
   <tr>
     <td>
@@ -64,6 +48,23 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     <td>
       <a href="WhyScalaIsTakingOverTheBigDataWorld.pdf">
       <img src="WhyScalaIsTakingOverTheBigDataWorld-TitlePage-256x192.jpg"></img></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
+        <h1>Error Handling in Reactive Systems</h1>
+        <p class="talk-desc"><a href="http://reactconf.com/">React Conf San Francisco 2014</a></p>
+        <p>Failure handling must be <em>first-class</em> in reactive systems, to satisfy the <em>resilient</em> trait. This talk discusses how reactive models and libraries support failure handling. Hint: Most only offer limited facilities. (November 19, 2014)</p>
+        <div class="more">
+          <a href="ErrorHandlingReactiveSystems.pdf" class="button-pdf">Download PDF</a>
+          <span class="button-video-inactive">Watch video</span> (Coming Soon)
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="ErrorHandlingReactiveSystems.pdf"><img src="ErrorHandlingReactiveSystems-TitlePage-256x192.jpg"></img></a>
     </td>
   </tr>
 
