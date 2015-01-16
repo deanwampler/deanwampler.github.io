@@ -53,11 +53,11 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     <td>
       <article class="talk">
         <h1>Why Scala Is Taking Over the Big Data World</h1>
-        <p class="talk-desc"><a href="http://www.scaladays.org/#schedule/Why-Scala-is-Taking-Over-the-Big-Data-World">Scala Days 2014</a></p>
-        <p><em>Scala</em> has emerged as the <em>de facto</em> language for big data development, driven in part by tools like <a href="https://github.com/twitter/scalding">Scalding</a> and <a href="http://spark.apache.org">Spark</a>. (June 17, 2014)</p>
+        <p class="talk-desc"><a href="http://www.scaladays.org/#schedule/Why-Scala-is-Taking-Over-the-Big-Data-World">Scala Days 2014</a>, <a href="https://skillsmatter.com/conferences/1948-scala-exchange-2014">Scala eXchange 2014</a>, and <a href="http://datadaytexas.com/">Data Day Texas 2015</a></p>
+        <p><em>Scala</em> has emerged as the <em>de facto</em> language for big data development, driven in part by tools like <a href="https://github.com/twitter/scalding">Scalding</a> and <a href="http://spark.apache.org">Spark</a>.</p>
         <div class="more">
           <a href="WhyScalaIsTakingOverTheBigDataWorld.pdf" class="button-pdf">Download PDF</a>
-          <a href="https://parleys.com/play/53a7d2c5e4b0543940d9e544/chapter0/about" class="button-video">Watch video</a>
+          <a href="https://skillsmatter.com/skillscasts/5423-why-scala-is-taking-over-the-big-data-world" class="button-video">Watch video (Scala eXchange)</a>
         </div>
       </article>
     </td>
