@@ -7,11 +7,11 @@ http://deanwampler.github.io/concurrentthought/index.html
 http://deanwampler.github.io/contract4j/example/index.html
 http://deanwampler.github.io/books/index.html
 http://deanwampler.github.io/index.html
-http://deanwampler.github.io/open-source/index.html
+http://deanwampler.github.io/contract4j/index.html
 http://deanwampler.github.io/polyglotprogramming/index.html
 http://deanwampler.github.io/contract4j/c4j5/index.html
 http://deanwampler.github.io/polyglotprogramming/papers/index.html
-http://deanwampler.github.io/contract4j/index.html
+http://deanwampler.github.io/open-source/index.html
 http://deanwampler.github.io/pages.html
 http://deanwampler.github.io/books/programminghive.html
 http://deanwampler.github.io/books/programmingscala2.html
