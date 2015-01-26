@@ -19,5 +19,3 @@ http://deanwampler.github.io/sitemap.txt
 http://deanwampler.github.io/aspectprogramming/papers/
 http://deanwampler.github.io/concurrentthought/papers/
 http://deanwampler.github.io/papers/
-
-http://deanwampler.github.io/lessons/2011/12/29/jekyll-introduction
