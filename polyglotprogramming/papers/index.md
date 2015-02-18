@@ -24,7 +24,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p><a href="http://spark.apache.org">Spark</a> has emerged as the replacement for <em>MapReduce</em> in <em>Hadoop</em> applications. This talk explains why.</p>
         <div class="more">
           <a href="Spark-TheNextTopComputeModel.pdf" class="button-pdf">Download PDF</a>
-          <a href="http://www.infoq.com/presentations/spark-scala-mapreduce-java" class="button-video">Video</a>
+          <a href="http://www.infoq.com/presentations/spark-scala-mapreduce-java" class="button-video">Video</a> (older version)
         </div>
       </article>
     </td>
