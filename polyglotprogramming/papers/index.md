@@ -36,6 +36,23 @@ Most of my conference and user group talks can be found at my <a href="http://gi
   <tr>
     <td>
       <article class="talk">
+        <h1>The Unreasonable Effectiveness of Scala for Big Data</h1>
+        <p class="talk-desc"><a href="http://event.scaladays.org/scaladays-sanfran-2015#!#schedulePopupExtras-6536">Scala Days 2015</a>.</p>
+        <p>Why <em>Scala</em> has proven so effective as the general-purpose programming language for Big Data development.</p>
+        <div class="more">
+          <a href="UnreasonableEffectivenessOfScalaForBigData.pdf" class="button-pdf">Download PDF</a>
+          <span class="button-video-inactive">Watch video</span> (Coming Soon)
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="UnreasonableEffectivenessOfScalaForBigData.pdf"><img src="UnreasonableEffectivenessOfScalaForBigData-TitlePage-256x192.jpg"></img></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Why Scala Is Taking Over the Big Data World</h1>
         <p class="talk-desc"><a href="http://www.scaladays.org/#schedule/Why-Scala-is-Taking-Over-the-Big-Data-World">Scala Days 2014</a>, <a href="https://skillsmatter.com/conferences/1948-scala-exchange-2014">Scala eXchange 2014</a>, and <a href="http://datadaytexas.com/">Data Day Texas 2015</a></p>
         <p><em>Scala</em> has emerged as the <em>de facto</em> language for big data development, driven in part by tools like <a href="https://github.com/twitter/scalding">Scalding</a> and <a href="http://spark.apache.org">Spark</a>.</p>
