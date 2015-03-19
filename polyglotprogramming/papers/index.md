@@ -71,9 +71,26 @@ Most of my conference and user group talks can be found at my <a href="http://gi
   <tr>
     <td>
       <article class="talk">
+        <h1>Reactive Systems - The Why and the How</h1>
+        <p class="talk-desc"><a href="http://softwarearchitectureconf.com">Software Architecture 2015</a></p>
+        <p>What exactly are <em>Reactive Systems</em>, as described by the <a href="http://reactive-manifesto.org">Reactive Manifesto</a>, and why are they important for modern architectures? (March 19, 2015)</p>
+        <div class="more">
+          <a href="ReactiveSystems-TheWhyAndTheHow.pdf" class="button-pdf">Download PDF</a>
+          <span class="button-video-inactive">Watch video</span> (Coming Soon)
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="ReactiveSystems-TheWhyAndTheHow.pdf"><img src="ReactiveSystems-TheWhyAndTheHow-TitlePage-256x192.jpg"></img></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Error Handling in Reactive Systems</h1>
-        <p class="talk-desc"><a href="http://reactconf.com/">React Conf San Francisco 2014</a></p>
-        <p>Failure handling must be <em>first-class</em> in reactive systems, to satisfy the <em>resilient</em> trait. This talk discusses how reactive models and libraries support failure handling. Hint: Most only offer limited facilities. (November 19, 2014)</p>
+        <p class="talk-desc"><a href="http://reactconf.com/">React Conf San Francisco 2014</a>, <a href="http://softwarearchitectureconf.com">Software Architecture 2015</a></p>
+        <p>Failure handling must be <em>first-class</em> in reactive systems, to satisfy the <em>resilient</em> trait. This talk discusses how reactive models and libraries support failure handling. Hint: Most only offer limited facilities. (March 19, 2015)</p>
         <div class="more">
           <a href="ErrorHandlingReactiveSystems.pdf" class="button-pdf">Download PDF</a>
           <span class="button-video-inactive">Watch video</span> (Coming Soon)

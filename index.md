@@ -59,9 +59,19 @@ include_social: true
   </article>
 
   <article class="talk">
+    <h1>Reactive Systems - The Why and the How</h1>
+    <p class="talk-desc"><a href="http://softwarearchitectureconf.com">Software Architecture 2015</a></p>
+    <p>What exactly are <em>Reactive Systems</em>, as described by the <a href="http://reactive-manifesto.org">Reactive Manifesto</a>, and why are they important for modern architectures?</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/ReactiveSystems-TheWhyAndTheHow.pdf" class="button-pdf">Download PDF</a>
+      <span class="button-video-inactive">Watch video</span> (Coming Soon)
+    </div>
+  </article>
+
+  <article class="talk">
     <h1>Error Handling in Reactive Systems</h1>
-    <p class="talk-desc"><a href="http://reactconf.com/">React Conf San Francisco 2014</a></p>
-    <p>Failure handling must be "first-class" in reactive systems, to satisfy the <em>resilient</em> trait. This talk for <a href="http://reactconf.com/">React SF 2014</a> discusses how reactive models and libraries support failure handling (or don't).</p>
+    <p class="talk-desc"><a href="http://reactconf.com/">React Conf San Francisco 2014</a>, <a href="http://softwarearchitectureconf.com">Software Architecture 2015</a></p>
+    <p>Failure handling must be "first-class" in reactive systems, to satisfy the <em>resilient</em> trait. This talk discusses how reactive models and libraries support failure handling (or don't).</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/ErrorHandlingReactiveSystems.pdf" class="button-pdf">Download PDF</a>
       <!-- <a href="#" class="button-video">Watch video</a> -->
