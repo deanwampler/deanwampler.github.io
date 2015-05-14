@@ -53,6 +53,24 @@ Most of my conference and user group talks can be found at my <a href="http://gi
   <tr>
     <td>
       <article class="talk">
+        <h1>Data Science at Scale with Spark</h1>
+        <p class="talk-desc">GOTO Chicago 2015</p>
+        <p>Using examples, I show how to use <a href="http://spark.apache.org">Spark</a> for Data Science at scale in ways that were previously not feasible with other tools.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/DataScienceAtScaleWithSpark.pdf" class="button-pdf">Download PDF</a>
+          <!-- <a href="http://www.infoq.com/presentations/spark-scala-mapreduce-java" class="button-video">Watch video</a> -->
+          <span class="button-video-inactive">Watch video</span> (Coming Soon)
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="DataScienceAtScaleWithSpark.pdf"><img src="DataScienceAtScaleWithSpark-TitlePage-256x192.jpg"></img></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>The Unreasonable Effectiveness of Scala for Big Data</h1>
         <p class="talk-desc"><a href="http://event.scaladays.org/scaladays-sanfran-2015#!#schedulePopupExtras-6536">Scala Days 2015</a>.</p>
         <p>Why <em>Scala</em> has proven so effective as the general-purpose programming language for Big Data development.</p>
