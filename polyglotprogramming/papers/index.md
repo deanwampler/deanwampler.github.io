@@ -107,7 +107,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     <td>
       <article class="talk">
         <h1>Reactive Systems - The Why and the How</h1>
-        <p class="talk-desc"><a href="http://softwarearchitectureconf.com">Software Architecture 2015</a></p>
+        <p class="talk-desc"><a href="http://softwarearchitectureconf.com">Software Architecture 2015</a> and <a href="http://www.meetup.com/ChicagoJUG/events/222009916/">CJUG May 2015</a></p>
         <p>What exactly are <em>Reactive Systems</em>, as described by the <a href="http://reactive-manifesto.org">Reactive Manifesto</a>, and why are they important for modern architectures? (March 19, 2015)</p>
         <div class="more">
           <a href="ReactiveSystems-TheWhyAndTheHow.pdf" class="button-pdf">Download PDF</a>
