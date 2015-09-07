@@ -27,9 +27,9 @@ include_social: true
 <section id="books" class="centered">
   <p class="section-title"><span>Books</span></p>
   <div class="books-list">
-    <a href="programmingscala2.html" class="books-book"><img src="/assets/images/prog_scala_2ed_comp-quarter_size.jpg" alt="Programming Scala, 2nd Edition"/></a>
-    <a href="fpjava.html" class="books-book"><img src="/assets/images/FPforJavaDevsCover_256x337.png"/></a>
-    <a href="programminghive.html" class="books-book"><img src="/assets/images/prog_hive_mech_cover_front_252x331.png"/></a>
+    <a href="books/programmingscala2.html" class="books-book"><img src="/assets/images/prog_scala_2ed_comp-quarter_size.jpg" alt="Programming Scala, 2nd Edition"/></a>
+    <a href="books/fpjava.html" class="books-book"><img src="/assets/images/FPforJavaDevsCover_256x337.png"/></a>
+    <a href="books/programminghive.html" class="books-book"><img src="/assets/images/prog_hive_mech_cover_front_252x331.png"/></a>
   </div>
   <p class="talk"><a href="/books">More on my books</a>.</p>
 </section>
