@@ -12,13 +12,13 @@ tagline:
 
 <p>Our specialties include the following:</p>
 <ul>
-  <li><span class="keyword">Big Data Technologies</span>: Dean has spent the past several years working with clients on <a href="http://hadoop.apache.org">Hadoop</a> projects, most recently based on <a href="http://spark.apache.org">Spark</a> and <a href="https://github.com/twitter/scalding">Scalding</a>, along with various <span class="keyword">NoSQL</span> datastores, and tools for data analytics. </li>
-  <li><span class="keyword">Software Design Paradigms</span>: Dean helps clients find the right balance of <a href="http://en.wikipedia.org/wiki/Functional_programming">Functional</a>, <a href="http://en.wikipedia.org/wiki/Object_oriented">Object-Oriented</a>, and <a href="//aspectprogramming" target='ap'>Aspect-Oriented Programming</a> for building large-scale, data-centric, and highly-concurrent systems.</li>
-  <li><span class="keyword">Language Ecosystems</span>: Dean is a recognized expert in <span class="keyword">Scala</span>. He wrote <a href="/programmingscala2.html">Programming Scala, Second Edition</a> (O'Reilly, 2015). He also has years of experience with <span class="keyword">Java</span>, <span class="keyword">JavaScript</span>, and <span class="keyword">Ruby</span>.</li>
-  <li><span class="keyword">Application Frameworks</span>: <a href="http://github.com/jboner/akka/tree/master">Akka</a>, <a href="http://hadoop.apache.org">Hadoop</a>, and web stacks such as <a href="http://www.rubyonrails.org">Ruby&nbsp;on&nbsp;Rails</a>.</li>
+  <li><span class="keyword">Big Data Technologies</span>: Dean has spent the past several years working with clients on <a href="http://spark.apache.org">Spark</a>, <a href="http://mesos.apache.org">Mesos</a>, and <a href="http://hadoop.apache.org">Hadoop</a>, and <a href="https://github.com/twitter/scalding">Scalding</a> projects, along with various <span class="keyword">NoSQL</span> datastores, and tools for data analytics. </li>
+  <li><span class="keyword">Software Design Paradigms</span>: Dean helps clients find the right balance of <a href="http://en.wikipedia.org/wiki/Functional_programming">Functional</a>, <a href="http://en.wikipedia.org/wiki/Object_oriented">Object-Oriented</a>, and <a href="/aspectprogramming" target='ap'>Aspect-Oriented Programming</a> for building large-scale, data-centric, and highly-concurrent systems.</li>
+  <li><span class="keyword">Language Ecosystems</span>: Dean is a recognized expert in <span class="keyword">Scala</span>. He wrote <a href="/books/programmingscala2.html">Programming Scala, Second Edition</a> (O'Reilly, 2015). He also has years of experience with <span class="keyword">Java</span>, <span class="keyword">JavaScript</span>, and <span class="keyword">Ruby</span>.</li>
+  <li><span class="keyword">Application Frameworks</span>: <a href="http://spark.apache.org">Spark</a>, <a href="http://mesos.apache.org">Mesos</a>, <a href="http://github.com/jboner/akka/tree/master">Akka</a>, <a href="http://hadoop.apache.org">Hadoop</a>, etc.</li>
   <li><span class="keyword">Agile for Large Organizations</span>: <a href="http://www.extremeprogramming.org/">XP</a>, <a href="http://en.wikipedia.org/wiki/Scrum_(development)">Scrum</a>, and <a href="http://www.poppendieck.com/">Lean</a>, scaled from small teams up to enterprises.</li>
 </ul>
 
-<p>Dean is a widely recognized conference speaker and author. You can find his talks <a href="/talks">here</a>.</p>
+<p><a href="http://deanwampler.com">Dean Wampler</a> is a widely recognized conference speaker and author. </p>
 
 <p>For more information, send us <a href="mailto:info@aspectresearchassociates.com">email</a>.</p>
