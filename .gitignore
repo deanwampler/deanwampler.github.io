@@ -1,2 +1,6 @@
 .DS_Store
 tmp
+_site
+_drafts
+_posts
+_site.save
