@@ -45,6 +45,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
           <!-- <a href="http://www.infoq.com/presentations/spark-scala-mapreduce-java" class="button-video">Watch video</a> -->
         </div>
       </article>
+    </td>
     <td>
       <a href="ScalaJVMBigData-SparkLessons.pdf"><img src="ScalaJVMBigData-SparkLessons-TitlePage-342x192.jpg"></img></a>
     </td>
