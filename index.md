@@ -49,8 +49,19 @@ include_social: true
   </article>
 
   <article class="talk">
+    <h1>Scala and the JVM for Big Data: Lessons from Spark</h1>
+    <p class="talk-desc">Scala World 2015</p>
+    <p>The JVM is the standard platform for Big Data and Scala is emerging as the standard programming language for Big Data Developers, driven in part by <a href="http://spark.apache.org">Spark</a>. What lessons can we draw from this picture?</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons.pdf" class="button-pdf">Download PDF</a>
+      <span class="button-video-inactive">Watch video</span> (Coming Soon)
+      <!-- <a href="http://www.infoq.com/presentations/spark-scala-mapreduce-java" class="button-video">Watch video</a> -->
+    </div>
+  </article>
+
+  <article class="talk">
     <h1>Spark on Mesos</h1>
-    <p class="talk-desc">Strata + Hadoop World London 2015</p>
+    <p class="talk-desc">Strata + Hadoop World London and NYC 2015</p>
     <p>While <a href="http://spark.apache.org">Spark</a> is now popular on Hadoop, managed by YARN, it emerged as demonstration project for <a href="http://mesos.apache.org">Mesos</a>. This talk explores Mesos, compares it to YARN, and argues for why you should consider a Spark + Mesos cluster.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/SparkOnMesos.pdf" class="button-pdf">Download PDF</a>
