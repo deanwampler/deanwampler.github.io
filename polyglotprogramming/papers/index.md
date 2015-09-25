@@ -14,6 +14,7 @@ redirect_from:
 <section id="talks" class="talks centered">
 Most of my conference and user group talks can be found at my <a href="http://github.com/deanwampler/Presentations/">GitHub Presentations</a> repo.
 
+
 <table class="talks-table centered">
   <tr>
     <td>
