@@ -56,7 +56,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     <td>
       <article class="talk">
         <h1>Spark on Mesos</h1>
-        <p class="talk-desc">Strata + Hadoop World London 2015</p>
+        <p class="talk-desc">Strata + Hadoop World London and NYC 2015</p>
         <p>While <a href="http://spark.apache.org">Spark</a> is now popular on Hadoop, managed by YARN, it emerged as demonstration project for <a href="http://mesos.apache.org">Mesos</a>. This talk explores Mesos, compares it to YARN, and argues for why you should consider a Spark + Mesos cluster.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/SparkOnMesos.pdf" class="button-pdf">Download PDF</a>
