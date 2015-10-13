@@ -418,13 +418,13 @@ Most of my conference and user group talks can be found at my <a href="http://gi
 
 <h3>Big Data</h3>
 
-<p><a href="Spark-TheNextTopComputeModel.pdf">Why Spark Is The Next Top (Compute) Model</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/> Video TBD.</p>
+<p><a href="Spark-TheNextTopComputeModel.pdf">Why Spark Is The Next Top (Compute) Model</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/>.</p>
 <p class="talk-small-description">This is a talk for <a href="http://phillyemergingtech.com/2014">Emerging Technology for the Enterprise 2014</a>. <a href="http://spark.apache.org">Spark</a> has emerged as the most likely replacement for <span class='keyword'>MapReduce</span> in <span class='keyword'>Hadoop</span> applications. This talk explains why. (Last updated: April 23, 2014)</p>
 
-<p><a href="SparkOnMesos.pdf" class="button-pdf">Spark on Mesos</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/> Video TBD.</p>
+<p><a href="SparkOnMesos.pdf">Spark on Mesos</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/></p>
 <p class="talk-small-description"> In this <a href="http://strataconf.com/">Strata + Hadoop World London and NYC 2015</a> talk I argue that, while <a href="http://spark.apache.org">Spark</a> is now popular on Hadoop, managed by YARN, it emerged as demonstration project for <a href="http://mesos.apache.org">Mesos</a>. I explore Mesos, compare it to YARN, and argue for why you should consider a Spark + Mesos cluster. (Last updated: October 10, 2015</p>
 
-<p><a href="ScalaJVMBigData-SparkLessons.pdf" class="button-pdf">Scala and the JVM for Big Data: Lessons from Spark</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/> Video TBD.</p>
+<p><a href="ScalaJVMBigData-SparkLessons.pdf">Scala and the JVM for Big Data: Lessons from Spark</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/></p>
 <p class="talk-desc">At the first <a href="http://scala.world">Scala World 2015</a>, I discussed how the JVM is the standard platform for Big Data and Scala is emerging as the standard programming language for Big Data Developers, driven in part by <a href="http://spark.apache.org">Spark</a>. What lessons can we draw from this picture? (Last updated: October 10, 2015</p>
 
 <p><a href="Typesafe-SparkSummit.pdf">Apache Spark and the Typesafe Reactive Platform: A Match Made in Heaven</a>
