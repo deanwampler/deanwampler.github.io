@@ -7,6 +7,7 @@ tagline:
 
 I started several open-source projects, including the following:
 
+* [Command Line Arguments](https://github.com/deanwampler/command-line-arguments): Yet another Scala library for parsing command-line arguments.
 * [Aquarium](https://github.com/deanwampler/Aquarium): An [Aspect-Oriented Programming](http://aspectprogramming.com) toolkit for [Ruby](https://www.ruby-lang.org/en/). Since I no longer work in the Ruby community, I'm looking for someone to take over this project.
 * [Contract4J](contract4j): An AspectJ-based, [Design by Contract](http://en.wikipedia.org/wiki/Design_by_contract) tool for Java 5+, written in
 [AspectJ](https://eclipse.org/aspectj/).

@@ -1,0 +1,340 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>cla - com.concurrentthought.cla</title>
+          <meta name="description" content="cla - com.concurrentthought.cla" />
+          <meta name="keywords" content="cla com.concurrentthought.cla" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'com.concurrentthought.cla.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="com">com</a>.<a href="../package.html" class="extype" name="com.concurrentthought">concurrentthought</a></p>
+        <h1>cla</h1><span class="permalink">
+      <a href="../../../index.html#com.concurrentthought.cla.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cla</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Package object that adds  a mini-DSL allowing the user to construct an <code>Args</code>
+using using a multi-line string.</p></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>Experimental!</p></span></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="com.concurrentthought.cla"><span>cla</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="com.concurrentthought.cla.Args" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ArgsextendsProductwithSerializable"></a>
+      <a id="Args:Args"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Args.html"><span class="name">Args</span></a><span class="params">(<span name="programInvocation">programInvocation: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="leadingComments">leadingComments: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="trailingComments">trailingComments: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="opts">opts: <span class="extype" name="scala.Seq">Seq</span>[<a href="Opt.html" class="extype" name="com.concurrentthought.cla.Opt">Opt</a>[_]]</span>, <span name="defaults">defaults: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Any">Any</span>]</span>, <span name="values">values: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Any">Any</span>]</span>, <span name="allValues">allValues: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Any">Any</span>]]</span>, <span name="remaining">remaining: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="failures">failures: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Any">Any</span>)]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.concurrentthought.cla.package@ArgsextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Contains the options defined, the current values, which are the defaults
+before parsing and afterwards are the defaults overridden by the actual
+invocation options, and contains any parsing errors that were found, which
+is empty before parse is called.</p><div class="fullcomment"><div class="comment cmt"><p>Contains the options defined, the current values, which are the defaults
+before parsing and afterwards are the defaults overridden by the actual
+invocation options, and contains any parsing errors that were found, which
+is empty before parse is called. In order to properly construct the default
+values, this constructor is protected. Instead, use the companion Args.apply
+to construct initial instances correctly. Subsequent calls to <code>Args.parse</code> return
+new, updated instances.
+</p></div></div>
+    </li><li name="com.concurrentthought.cla.Opt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Opt[V]extendsProductwithSerializable"></a>
+      <a id="Opt[V]:Opt[V]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Opt.html"><span class="name">Opt</span></a><span class="tparams">[<span name="V">V</span>]</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="flags">flags: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="default">default: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="com.concurrentthought.cla.Opt.V">V</span>] = <span class="symbol">None</span></span>, <span name="help">help: <span class="extype" name="scala.Predef.String">String</span> = <span class="symbol">&quot;&quot;</span></span>, <span name="requiredFlag">requiredFlag: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">false</span></span>)</span><span class="params">(<span name="fromString">fromString: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.util.Try">Try</span>[<span class="extype" name="com.concurrentthought.cla.Opt.V">V</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.concurrentthought.cla.package@Opt[V]extendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A command-line option, which might actually be required, with a corresponding
+value.</p><div class="fullcomment"><div class="comment cmt"><p>A command-line option, which might actually be required, with a corresponding
+value. It has the following fields:</p><ul><li><code>name</code> - serve as a lookup key for retrieving the value.</li><li><code>flags</code> - the arguments that invoke the option, e.g., <code>-h</code> and <code>--help</code>.</li><li><code>help</code> - a message displayed for command-line help.</li><li><code>default</code> - an optional default value, for when the user doesn't specify the option.</li><li><code>required</code> - the user must specify this option on the command line.
+    This flag is effectively ignored if a <code>default</code> is provided.</li><li><code>parser</code> - An implementation feature for parsing arguments.</li><li><code>fromString: String =&gt; V</code> - convert the found value from a String to the correct type.</li></ul></div></div>
+    </li><li name="com.concurrentthought.cla.ParseError" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ParseErrorextendsRuntimeExceptionwithProductwithSerializable"></a>
+      <a id="ParseError:ParseError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ParseError.html"><span class="name">ParseError</span></a><span class="params">(<span name="msg">msg: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="cause">cause: <span class="extype" name="scala.Throwable">Throwable</span> = <span class="symbol">null</span></span>)</span><span class="result"> extends <span class="extype" name="scala.RuntimeException">RuntimeException</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.concurrentthought.cla.package@ParseErrorextendsRuntimeExceptionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.concurrentthought.cla.ToArgs" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ToArgsextendsAnyRef"></a>
+      <a id="ToArgs:ToArgs"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$ToArgs.html"><span class="name">ToArgs</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.concurrentthought.cla.package@ToArgsextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Specify the command-line arguments using a single, multi-line string.</p><div class="fullcomment"><div class="comment cmt"><p>Specify the command-line arguments using a single, multi-line string.
+Note the following example:</p><pre><span class="kw">import</span> com.concurrentthought.cla._
+
+<span class="kw">val</span> args: Args = <span class="lit">""</span><span class="lit">"
+  |java -cp ... foo
+  |Some description
+  |and a second line.
+  |  [-i | --in  | --input       string]             Path to input file.
+  |  [-o | --out | --output      string=/dev/null]   Path to output file.
+  |  [-l | --log | --log-level   int=3]              Log level to use.
+  |   -p | --path                path                Path elements separated by ':' (*nix) or ';' (Windows).
+  |  [-q | --quiet               flag]               Suppress some verbose output.
+  |       [--things              seq([-|])]          String elements separated by '-' or '|'.
+  |                              others              Other stuff.
+  |Any additional help description lines,
+  |which also have no leading whitespace.
+  |"</span><span class="lit">""</span>.stripMargin.toArgs</pre><p>The format, as illustrated in the example, has the following requirements:</p><ul><li>Zero or more leading and trailing lines without opening whitespace are
+  interpreted as the &quot;program invocation&quot; string in the help message,
+  followed by zero or more description lines, which will be concatenated
+  together (separated by whitespace) in the help message.</li><li>Each option appears on a line with leading whitespace.</li><li>Each option has one or more flags, separated by &quot;|&quot;. As a special case,
+  one option can have no flags. It is used to provide a help message for all other
+  command-line tokens that aren't associated with flags (which will be stored
+  in <code>Args.remaining</code>).
+  Note that these tokens are handled whether or not you specify a line like
+  this or not.</li><li>If the option is not required for the user to specify a value, the flags
+  and name must be wrapped in &quot;[...]&quot;. Specifying a default value is effectively
+  the name as not required, but the main purpose is display the expected
+  behavior to the user.</li><li>After the flags, the &quot;middle column&quot; describes the type of option and
+  optionally a default value. The types correspond to several helper functions
+  in <code>Opt</code>: <code>string</code>, <code>byte</code>, <code>char</code>, <code>int</code>, <code>long</code>, <code>float</code>, <code>double</code>, <code>path</code>,
+  <code>seqString</code>, where the string &quot;seq&quot; is used, followed by a required
+  <code>(delim)</code> suffix to specify the delimiter regex as shown in the example, and
+  <code>flag</code> which indicates a boolean flag where no value is expected, but the
+  flag's presence means <code>true</code> and absence means <code>false</code>.
+  However, for a no-flag option, the value in this column is interpreted as a
+  name for the option for the help message. This is the one case where the string
+  isn't interpreted as a type specifier.
+  The <code>=</code> indicates the default value to use, if present. Current limitations
+  of the type specification include the following: (i) <code>Opt.seq[V]</code> isn't
+  supported in this mechanism, (ii) default values can't be specified for
+  the <code>path</code> or <code>seq</code> types, nor for the no-flag case (an implementation limitation).</li><li>The remaining text is interpreted as the help string.</li></ul></div><dl class="attributes block"> <dt>Note</dt><dd><span class="cmt"><p>This is an experimental feature. There are several known limitations:</p><ul><li>It provides no way to use the predefined flags like <code>Args.quietFlag</code>,
+  although <code>Args.helpFlag</code> and <code>Args.remainingOpt</code> are automatically added
+  if the list of options doesn't explicitly define help and no-flag constructs.</li><li>The general case of <code>Opt.seq[V]</code> isn't supported, only <code>Opt.seqString</code>.</li><li>It needs to be tested on a lot more examples.</li></ul></span></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="com.concurrentthought.cla.Args" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Args"></a>
+      <a id="Args:Args"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Args$.html"><span class="name">Args</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.concurrentthought.cla.package@Args" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.concurrentthought.cla.Elems" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Elems"></a>
+      <a id="Elems:Elems"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Elems$.html"><span class="name">Elems</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.concurrentthought.cla.package@Elems" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A set of &quot;Elements&quot;, used for convenient access from clients.</p>
+    </li><li name="com.concurrentthought.cla.Help" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Help"></a>
+      <a id="Help:Help"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Help$.html"><span class="name">Help</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.concurrentthought.cla.package@Help" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Format a help message for the command-line invocation of a program, based
+on the <code>Args</code> object passed to <code>apply</code>.</p>
+    </li><li name="com.concurrentthought.cla.Opt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Opt"></a>
+      <a id="Opt:Opt"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Opt$.html"><span class="name">Opt</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.concurrentthought.cla.package@Opt" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="com.concurrentthought.cla.OptParser" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OptParser"></a>
+      <a id="OptParser:OptParser"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="OptParser$.html"><span class="name">OptParser</span></a><span class="result"> extends <span class="extype" name="org.parboiled.scala.Parser">Parser</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#com.concurrentthought.cla.package@OptParser" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Parse a line defining an option.</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
