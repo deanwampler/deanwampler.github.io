@@ -43,7 +43,7 @@ include_social: true
     <p><a href="http://spark.apache.org">Spark</a> has emerged as the replacement for <span class='keyword'>MapReduce</span> in <span class='keyword'>Hadoop</span> applications. This talk explains why.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/Spark-TheNextTopComputeModel.pdf" class="button-pdf">Download PDF</a>
-      <a href="http://www.infoq.com/presentations/spark-scala-mapreduce-java" class="button-video">Watch video</a> (older version)
+      <a href="https://www.parleys.com/tutorial/why-spark-is-next-top-compute-model" class="button-video">Watch video</a>
       <!-- <span class="button-video-inactive">Watch video</span> (Coming Soon) -->
     </div>
   </article>
