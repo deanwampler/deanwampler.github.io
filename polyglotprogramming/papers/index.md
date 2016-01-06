@@ -96,7 +96,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p>Why <em>Scala</em> has proven so effective as the general-purpose programming language for Big Data development.</p>
         <div class="more">
           <a href="UnreasonableEffectivenessOfScalaForBigData.pdf" class="button-pdf">Download PDF</a>
-          <span class="button-video-inactive">Watch video</span> (Coming Soon)
+          <a href="https://www.parleys.com/tutorial/the-unreasonable-effectiveness-scala-big-data" class="button-video">Video</a>
         </div>
       </article>
     </td>
