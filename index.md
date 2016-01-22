@@ -71,44 +71,11 @@ include_social: true
   </article>
 
   <article class="talk">
-    <h1>Data Science at Scale with Spark</h1>
-    <p class="talk-desc">GOTO Chicago 2015</p>
-    <p>Using examples, I show how to use <a href="http://spark.apache.org">Spark</a> for Data Science at scale in ways that were previously not feasible with other tools.</p>
+    <h1>The Internet Was Made for Cats</h1>
+    <p class="talk-desc"><a href="http://www.meetup.com/chicagoscala/events/226860360/">Chicago Scala Users Group, Jan 2016</a></p>
+    <p>My informal introduction to the <a href="https://github.com/non/cats">Typelevel Cats</a> project, including why I think it's a model for open-source development.</p>
     <div class="more">
-      <a href="/polyglotprogramming/papers/DataScienceAtScaleWithSpark.pdf" class="button-pdf">Download PDF</a>
-      <!-- <a href="http://www.infoq.com/presentations/spark-scala-mapreduce-java" class="button-video">Watch video</a> -->
-      <span class="button-video-inactive">Watch video</span> (Coming Soon)
-    </div>
-  </article>
-
-  <article class="talk">
-    <h1>The Unreasonable Effectiveness of Scala for Big Data</h1>
-    <p class="talk-desc"><a href="http://event.scaladays.org/scaladays-sanfran-2015#!#schedulePopupExtras-6536">Scala Days 2015</a>.</p>
-    <p>Why <em>Scala</em> has proven so effective as the general-purpose programming language for Big Data development.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/UnreasonableEffectivenessOfScalaForBigData.pdf" class="button-pdf">Download PDF</a>
-      <a href="https://www.parleys.com/tutorial/the-unreasonable-effectiveness-scala-big-data" class="button-video">Video</a>
-    </div>
-  </article>
-
-  <article class="talk">
-    <h1>Reactive Systems - The Why and the How</h1>
-    <p class="talk-desc"><a href="http://softwarearchitectureconf.com">Software Architecture 2015</a> and <a href="http://www.meetup.com/ChicagoJUG/events/222009916/">CJUG May 2015</a></p>
-    <p>What exactly are <em>Reactive Systems</em>, as described by the <a href="http://reactive-manifesto.org">Reactive Manifesto</a>, and why are they important for modern architectures?</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/ReactiveSystems-TheWhyAndTheHow.pdf" class="button-pdf">Download PDF</a>
-      <span class="button-video-inactive">Watch video</span> (Coming Soon)
-    </div>
-  </article>
-
-  <article class="talk">
-    <h1>Error Handling in Reactive Systems</h1>
-    <p class="talk-desc"><a href="http://reactconf.com/">React Conf San Francisco 2014</a>, <a href="http://softwarearchitectureconf.com">Software Architecture 2015</a></p>
-    <p>Failure handling must be "first-class" in reactive systems, to satisfy the <em>resilient</em> trait. This talk discusses how reactive models and libraries support failure handling (or don't).</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/ErrorHandlingReactiveSystems.pdf" class="button-pdf">Download PDF</a>
-      <!-- <a href="#" class="button-video">Watch video</a> -->
-      <span class="button-video-inactive">Watch video</span> (Coming Soon)
+      <a href="/polyglotprogramming/papers/Cats.pdf" class="button-pdf">Download PDF</a>
     </div>
   </article>
 

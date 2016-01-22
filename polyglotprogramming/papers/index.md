@@ -123,6 +123,23 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
   </tr>
 
+
+  <tr>
+    <td>
+      <article class="talk">
+        <h1>The Internet Was Made for Cats</h1>
+        <p class="talk-desc"><a href="http://www.meetup.com/chicagoscala/events/226860360/">Chicago Scala Users Group, Jan 2016</a></p>
+        <p>My informal introduction to the <a href="https://github.com/non/cats">Typelevel Cats</a> project, including why I think it's model for open-source development.</p>
+        <div class="more">
+          <a href="Cats.pdf" class="button-pdf">Download PDF</a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="Cats.pdf"><img src="Cats-TitlePage-256x192.jpg"></img></a>
+    </td>
+  </tr>
+
   <tr>
     <td>
       <article class="talk">
