@@ -38,10 +38,11 @@ Most of my conference and user group talks can be found at my <a href="http://gi
 
       <article class="talk">
         <h1>Scala and the JVM for Big Data: Lessons from Spark</h1>
-        <p class="talk-desc">Scala World 2015</p>
+        <p class="talk-desc">Strata + Hadoop World, San Jose, 2016</p>
         <p>The JVM is the standard platform for Big Data and Scala is emerging as the standard programming language for Big Data Developers, driven in part by <a href="http://spark.apache.org">Spark</a>. What lessons can we draw from this picture?</p>
         <div class="more">
-          <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons.pdf" class="button-pdf">Download PDF</a>
+          <a href="ScalaJVMBigData-SparkLessons.pdf" class="button-pdf">Download PDF</a>
+          <a href="ScalaJVMBigData-SparkLessons-extended.pdf" class="button-pdf">Older, Longer Version</a>
           <a href="https://www.youtube.com/watch?v=7mzsZq__Oh4" class="button-video">Watch video</a>
         </div>
       </article>
@@ -58,7 +59,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc">Strata + Hadoop World London and NYC 2015</p>
         <p>While <a href="http://spark.apache.org">Spark</a> is now popular on Hadoop, managed by YARN, it emerged as demonstration project for <a href="http://mesos.apache.org">Mesos</a>. This talk explores Mesos, compares it to YARN, and argues for why you should consider a Spark + Mesos cluster.</p>
         <div class="more">
-          <a href="/polyglotprogramming/papers/SparkOnMesos.pdf" class="button-pdf">Download PDF</a>
+          <a href="SparkOnMesos.pdf" class="button-pdf">Download PDF</a>
           <!-- <a href="http://www.infoq.com/presentations/spark-scala-mapreduce-java" class="button-video">Watch video</a> -->
           <span class="button-video-inactive">Watch video</span> (Coming Soon)
         </div>
@@ -76,7 +77,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc">GOTO Chicago 2015</p>
         <p>Using examples, I show how to use <a href="http://spark.apache.org">Spark</a> for Data Science at scale in ways that were previously not feasible with other tools.</p>
         <div class="more">
-          <a href="/polyglotprogramming/papers/DataScienceAtScaleWithSpark.pdf" class="button-pdf">Download PDF</a>
+          <a href="DataScienceAtScaleWithSpark.pdf" class="button-pdf">Download PDF</a>
           <!-- <a href="http://www.infoq.com/presentations/spark-scala-mapreduce-java" class="button-video">Watch video</a> -->
           <span class="button-video-inactive">Watch video</span> (Coming Soon)
         </div>
