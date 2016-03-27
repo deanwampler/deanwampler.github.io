@@ -3,7 +3,7 @@
 permalink: /:categories/:year/:month/:day/:title
 include: ["papers", "talks", "books", "home", "contract4j"]
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "tmp"]
-highlighter: pygments
+highlighter: rouge
 
 gems:
   - jekyll-redirect-from
