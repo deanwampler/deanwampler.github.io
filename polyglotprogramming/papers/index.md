@@ -42,7 +42,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p>The JVM is the standard platform for Big Data and Scala is emerging as the standard programming language for Big Data Developers, driven in part by <a href="http://spark.apache.org">Spark</a>. What lessons can we draw from this picture?</p>
         <div class="more">
           <a href="ScalaJVMBigData-SparkLessons.pdf" class="button-pdf">Download PDF</a>
-          <a href="ScalaJVMBigData-SparkLessons-extended.pdf" class="button-pdf">Older, Longer Version</a>
+          <a href="ScalaJVMBigData-SparkLessons-extended.pdf" class="button-pdf">Longer Version</a>
           <a href="https://www.youtube.com/watch?v=7mzsZq__Oh4" class="button-video">Watch video</a>
         </div>
       </article>
