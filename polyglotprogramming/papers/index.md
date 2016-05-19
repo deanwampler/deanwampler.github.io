@@ -19,6 +19,22 @@ Most of my conference and user group talks can be found at my <a href="http://gi
   <tr>
     <td>
       <article class="talk">
+        <h1>Spark 2.0</h1>
+        <p class="talk-desc">Chicago Spark Meetup, May 18, 2016</p>
+        <p><a href="http://spark.apache.org">Spark</a> 2.0 introduces significant improvements and refactorings. This talk summarizes the major changes.</p>
+        <div class="more">
+          <a href="Spark20.pdf" class="button-pdf">Download PDF</a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="Spark20.pdf"><img src="Spark20-TitlePage-256x192.jpg"></img></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Why Spark Is The Next Top (Compute) Model</h1>
         <p class="talk-desc">Numerous Venues - 2014, 2015</p>
         <p><a href="http://spark.apache.org">Spark</a> has emerged as the replacement for <em>MapReduce</em> in <em>Hadoop</em> applications. This talk explains why.</p>
