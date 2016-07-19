@@ -8,7 +8,7 @@ tagline: Books written by Dean Wampler
 <table>
   <tr>
     <td>
-      <p><a href="http://shop.oreilly.com/product/0636920033073.do">Programming Scala, Second Edition</a> is a comprehensive and up-to-date introduction to <a href="http://scala-lang.org">Scala</a>. It covers the features of the latest release, 2.11.n.</p>
+      <p><a href="http://shop.oreilly.com/product/0636920033073.do">Programming Scala, Second Edition</a> is a comprehensive and up-to-date introduction to <a href="http://scala-lang.org">Scala</a>. It covers the features of Scala 2.11.</p>
       <p><a href="programmingscala2.html">More information...</a>.</p>
     </td>
     <td><a href="http://shop.oreilly.com/product/0636920033073.do" class="books-book">

@@ -9,7 +9,7 @@ tagline:
 <table>
 <tr>
 <td>
-<p><a href="http://shop.oreilly.com/product/0636920033073.do">Programming Scala, Second Edition</a> is a comprehensive and up-to-date introduction to <a href="http://scala-lang.org">Scala</a>. It covers the features of the latest release, 2.11.n.</p>
+<p><a href="http://shop.oreilly.com/product/0636920033073.do">Programming Scala, Second Edition</a> is a comprehensive and up-to-date introduction to <a href="http://scala-lang.org">Scala</a>. It covers the features of Scala version 2.11.</p>
 
 <p>I wrote the book on Scala that I would want to read, if I were to start from the following background:
 <ul>
@@ -22,7 +22,8 @@ tagline:
 </p>
 <p>I would read <a href="http://shop.oreilly.com/product/0636920033073.do">Programming Scala, Second Edition</a> to achieve the following:
 <ul>
-<li>Learn why Scala is an excellent language for today's technical challenges.</li>
+<li>Learn why Scala has become the language of choice for <em>data engineering</em> work in Big Data environments with tools like <a href="http://spark.apache.org">Spark</a> and <a href="http://kafka.apache.org">Kafka</a>.</li>
+<li>Learn why Scala is an excellent language for state of the art microservices.</li>
 <li>Learn the common idioms, libraries, tools, and techniques used by experts.</li>
 <li>Master all the major features of Scala, warts and all.</li>
 </ul>
