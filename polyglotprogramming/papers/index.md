@@ -28,7 +28,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
       </article>
     </td>
     <td>
-      <a href="Spark20.pdf"><img src="Spark20-TitlePage-256x192.jpg"></img></a>
+      <a href="Spark20.pdf"><img src="Spark20-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -45,7 +45,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
       </article>
     </td>
     <td>
-      <a href="Spark-TheNextTopComputeModel.pdf"><img src="Spark-TheNextTopComputeModel-TitlePage-256x192.jpg"></img></a>
+      <a href="Spark-TheNextTopComputeModel.pdf"><img src="Spark-TheNextTopComputeModel-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -64,7 +64,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
       </article>
     </td>
     <td>
-      <a href="ScalaJVMBigData-SparkLessons.pdf"><img src="ScalaJVMBigData-SparkLessons-TitlePage-342x192.jpg"></img></a>
+      <a href="ScalaJVMBigData-SparkLessons.pdf"><img src="ScalaJVMBigData-SparkLessons-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
 
@@ -82,7 +82,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
       </article>
     </td>
     <td>
-      <a href="SparkOnMesos.pdf"><img src="SparkOnMesos-TitlePage-256x192.jpg"></img></a>
+      <a href="SparkOnMesos.pdf"><img src="SparkOnMesos-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -100,7 +100,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
       </article>
     </td>
     <td>
-      <a href="DataScienceAtScaleWithSpark.pdf"><img src="DataScienceAtScaleWithSpark-TitlePage-256x192.jpg"></img></a>
+      <a href="DataScienceAtScaleWithSpark.pdf"><img src="DataScienceAtScaleWithSpark-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -117,7 +117,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
       </article>
     </td>
     <td>
-      <a href="UnreasonableEffectivenessOfScalaForBigData.pdf"><img src="UnreasonableEffectivenessOfScalaForBigData-TitlePage-256x192.jpg"></img></a>
+      <a href="UnreasonableEffectivenessOfScalaForBigData.pdf"><img src="UnreasonableEffectivenessOfScalaForBigData-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -135,7 +135,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="WhyScalaIsTakingOverTheBigDataWorld.pdf">
-      <img src="WhyScalaIsTakingOverTheBigDataWorld-TitlePage-256x192.jpg"></img></a>
+      <img src="WhyScalaIsTakingOverTheBigDataWorld-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -152,7 +152,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
       </article>
     </td>
     <td>
-      <a href="Cats.pdf"><img src="Cats-TitlePage-256x192.jpg"></img></a>
+      <a href="Cats.pdf"><img src="Cats-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -169,7 +169,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
       </article>
     </td>
     <td>
-      <a href="ReactiveSystems-TheWhyAndTheHow.pdf"><img src="ReactiveSystems-TheWhyAndTheHow-TitlePage-256x192.jpg"></img></a>
+      <a href="ReactiveSystems-TheWhyAndTheHow.pdf"><img src="ReactiveSystems-TheWhyAndTheHow-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -186,7 +186,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
       </article>
     </td>
     <td>
-      <a href="ErrorHandlingReactiveSystems.pdf"><img src="ErrorHandlingReactiveSystems-TitlePage-256x192.jpg"></img></a>
+      <a href="ErrorHandlingReactiveSystems.pdf"><img src="ErrorHandlingReactiveSystems-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -204,7 +204,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="ReactiveDesignLanguagesAndParadigms.pdf">
-      <img src="ReactiveDesignLanguagesAndParadigms-TitlePage-256x192.jpg"></img></a>
+      <img src="ReactiveDesignLanguagesAndParadigms-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -222,7 +222,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="CopiousData_TheKillerAppForFP.pdf">
-      <img src="CopiousData_TheKillerAppForFP-TitlePage-256x192.jpg"></img></a>
+      <img src="CopiousData_TheKillerAppForFP-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -239,7 +239,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="Typesafe-SparkSummit.pdf">
-      <img src="Typesafe-SparkSummit-TitlePage-256x192.jpg"></img></a>
+      <img src="Typesafe-SparkSummit-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -256,7 +256,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="ReactiveIoT.pdf">
-      <img src="ReactiveIoT-TitlePage-256x192.jpg"></img></a>
+      <img src="ReactiveIoT-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -274,7 +274,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="SQLStrikesBack.pdf">
-      <img src="SQLStrikesBack-TitlePage-256x192.jpg"></img></a>
+      <img src="SQLStrikesBack-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -292,7 +292,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="SeductionsOfScala.pdf">
-      <img src="SeductionsOfScala-TitlePage-256x192.jpg"></img></a>
+      <img src="SeductionsOfScala-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -309,7 +309,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="ScaldingForHadoop.pdf">
-      <img src="ScaldingForHadoop-TitlePage-256x192.jpg"></img></a>
+      <img src="ScaldingForHadoop-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -326,7 +326,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="MapReduceAndItsDiscontents.pdf">
-      <img src="MapReduceAndItsDiscontents-TitlePage-256x192.jpg"></img></a>
+      <img src="MapReduceAndItsDiscontents-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -344,7 +344,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="WhyBigDataNeedsToBeFunctional-print.pdf">
-      <img src="WhyBigDataNeedsToBeFunctional-print-TitlePage-256x192.jpg"></img></a>
+      <img src="WhyBigDataNeedsToBeFunctional-print-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -362,7 +362,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="HeresiesAndDogmasInSoftwareDevelopment.pdf">
-      <img src="HeresiesAndDogmasInSoftwareDevelopment-TitlePage-256x192.jpg"></img></a>
+      <img src="HeresiesAndDogmasInSoftwareDevelopment-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -380,7 +380,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="BetterProgrammingThroughFP.pdf">
-      <img src="BetterProgrammingThroughFP-TitlePage-256x192.jpg"></img></a>
+      <img src="BetterProgrammingThroughFP-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -398,7 +398,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="PolyglotPolyParadigm.pdf">
-      <img src="PolyglotPolyParadigm-TitlePage-256x192.jpg"></img></a>
+      <img src="PolyglotPolyParadigm-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -415,7 +415,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="Hive-SQLforHadoop.pdf">
-      <img src="Hive-SQLforHadoop-TitlePage-256x192.jpg"></img></a>
+      <img src="Hive-SQLforHadoop-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
@@ -432,7 +432,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="H2O-deanwampler.pdf">
-      <img src="H2O-deanwampler-TitlePage-256x192.jpg"></img></a>
+      <img src="H2O-deanwampler-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
 
