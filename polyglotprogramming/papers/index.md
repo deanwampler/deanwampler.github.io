@@ -19,6 +19,22 @@ Most of my conference and user group talks can be found at my <a href="http://gi
   <tr>
     <td>
       <article class="talk">
+        <h1>The SMACK Stack: Emerging Fast Data and Microservice Architectures</h1>
+        <p class="talk-desc">CodeNode London, October 24, 2016</p>
+        <p><a href="http://spark.apache.org">Spark</a>, <a href="http://mesos.apache.org">Mesos</a>, <a href="http://akka.io">Akka</a>, <a href="http://cassandra.apache.org">Cassandra</a>, and <a href="http://kafka.apache.org">Kafka</a> form the basis for new, flexible architectures for Fast Data and Microservice applications. This talk describes the characteristics these applications need and how the SMACK combination meets those needs.</p>
+        <div class="more">
+          <a href="SMACKStack.pdf" class="button-pdf">Download PDF</a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="SMACKStack.pdf"><img src="SMACKStack-TitlePage-256x144.jpg" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Spark 2.0</h1>
         <p class="talk-desc">Chicago Spark Meetup, May 18, 2016</p>
         <p><a href="http://spark.apache.org">Spark</a> 2.0 introduces significant improvements and refactorings. This talk summarizes the major changes.</p>

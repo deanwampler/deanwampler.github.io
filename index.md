@@ -38,6 +38,16 @@ include_social: true
   <p class="section-title"><span>Talks &amp; Papers </span></p>
 
   <article class="talk">
+    <h1>The SMACK Stack: Emerging Fast Data and Microservice Architectures</h1>
+    <p class="talk-desc">CodeNode London, October 24, 2016</p>
+    <p><a href="http://spark.apache.org">Spark</a>, <a href="http://mesos.apache.org">Mesos</a>, <a href="http://akka.io">Akka</a>, <a href="http://cassandra.apache.org">Cassandra</a>, and <a href="http://kafka.apache.org">Kafka</a> form the basis for new, flexible architectures for Fast Data and Microservice applications. This talk describes the characteristics these applications need and how the SMACK combination meets those needs.</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/SMACKStack.pdf" class="button-pdf">Download PDF</a>
+      <span class="button-video-inactive">Watch video</span> (Coming Soon)
+    </div>
+  </article>
+
+  <article class="talk">
     <h1>Why Spark Is The Next Top (Compute) Model</h1>
     <p class="talk-desc">Numerous Venues - 2014, 2015</p>
     <p><a href="http://spark.apache.org">Spark</a> has emerged as the replacement for <span class='keyword'>MapReduce</span> in <span class='keyword'>Hadoop</span> applications. This talk explains why.</p>
