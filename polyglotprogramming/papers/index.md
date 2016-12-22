@@ -35,6 +35,24 @@ Most of my conference and user group talks can be found at my <a href="http://gi
   <tr>
     <td>
       <article class="talk">
+        <h1>Scala and the JVM for Big Data: Lessons from Spark</h1>
+        <p class="talk-desc">Strata + Hadoop World, San Jose and Singapore, 2016</p>
+        <p>The JVM is the standard platform for Big Data and Scala is emerging as the standard programming language for Big Data Developers, driven in part by <a href="http://spark.apache.org">Spark</a>. What lessons can we draw from this picture?</p>
+        <div class="more">
+          <a href="ScalaJVMBigData-SparkLessons.pdf" class="button-pdf">Download PDF</a>
+          <a href="ScalaJVMBigData-SparkLessons-extended.pdf" class="button-pdf">Longer Version</a>
+          <a href="https://www.youtube.com/watch?v=7mzsZq__Oh4" class="button-video">Watch video</a> (older version)
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="ScalaJVMBigData-SparkLessons.pdf"><img src="ScalaJVMBigData-SparkLessons-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Spark 2.0</h1>
         <p class="talk-desc">Chicago Spark Meetup, May 18, 2016</p>
         <p><a href="http://spark.apache.org">Spark</a> 2.0 introduces significant improvements and refactorings. This talk summarizes the major changes.</p>
@@ -62,25 +80,6 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     </td>
     <td>
       <a href="Spark-TheNextTopComputeModel.pdf"><img src="Spark-TheNextTopComputeModel-TitlePage-256x192.jpg" /></a>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-
-      <article class="talk">
-        <h1>Scala and the JVM for Big Data: Lessons from Spark</h1>
-        <p class="talk-desc">Strata + Hadoop World, San Jose, 2016</p>
-        <p>The JVM is the standard platform for Big Data and Scala is emerging as the standard programming language for Big Data Developers, driven in part by <a href="http://spark.apache.org">Spark</a>. What lessons can we draw from this picture?</p>
-        <div class="more">
-          <a href="ScalaJVMBigData-SparkLessons.pdf" class="button-pdf">Download PDF</a>
-          <a href="ScalaJVMBigData-SparkLessons-extended.pdf" class="button-pdf">Longer Version</a>
-          <a href="https://www.youtube.com/watch?v=7mzsZq__Oh4" class="button-video">Watch video</a>
-        </div>
-      </article>
-    </td>
-    <td>
-      <a href="ScalaJVMBigData-SparkLessons.pdf"><img src="ScalaJVMBigData-SparkLessons-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
 

@@ -48,6 +48,17 @@ include_social: true
   </article>
 
   <article class="talk">
+    <h1>Scala and the JVM for Big Data: Lessons from Spark</h1>
+    <p class="talk-desc">Strata + Hadoop World, San Jose & Singapore, 2016</p>
+    <p>The JVM is the standard platform for Big Data and Scala is emerging as the standard programming language for Big Data Developers, driven in part by <a href="http://spark.apache.org">Spark</a>. What lessons can we draw from this picture?</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons.pdf" class="button-pdf">Download PDF</a>
+      <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons-extended.pdf" class="button-pdf">Longer Version</a>
+      <a href="https://www.youtube.com/watch?v=7mzsZq__Oh4" class="button-video">Watch video</a> (older version)
+    </div>
+  </article>
+
+  <article class="talk">
     <h1>Why Spark Is The Next Top (Compute) Model</h1>
     <p class="talk-desc">Numerous Venues - 2014, 2015</p>
     <p><a href="http://spark.apache.org">Spark</a> has emerged as the replacement for <span class='keyword'>MapReduce</span> in <span class='keyword'>Hadoop</span> applications. This talk explains why.</p>
@@ -55,17 +66,6 @@ include_social: true
       <a href="/polyglotprogramming/papers/Spark-TheNextTopComputeModel.pdf" class="button-pdf">Download PDF</a>
       <a href="https://www.parleys.com/tutorial/why-spark-is-next-top-compute-model" class="button-video">Watch video</a>
       <!-- <span class="button-video-inactive">Watch video</span> (Coming Soon) -->
-    </div>
-  </article>
-
-  <article class="talk">
-    <h1>Scala and the JVM for Big Data: Lessons from Spark</h1>
-    <p class="talk-desc">Strata + Hadoop World, San Jose, 2016</p>
-    <p>The JVM is the standard platform for Big Data and Scala is emerging as the standard programming language for Big Data Developers, driven in part by <a href="http://spark.apache.org">Spark</a>. What lessons can we draw from this picture?</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons.pdf" class="button-pdf">Download PDF</a>
-      <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons-extended.pdf" class="button-pdf">Longer Version</a>
-      <a href="https://www.youtube.com/watch?v=7mzsZq__Oh4" class="button-video">Watch video</a>
     </div>
   </article>
 
