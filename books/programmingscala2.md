@@ -34,6 +34,7 @@ tagline:
 <p>I don't cover <em>everything</em> about the language and libraries. There are some more obscure topics that I omit and other very advanced topics that I briefly mention, so you'll be aware of them. Still, my goal for the reader is to <em>really</em> know the language, the common techniques used to solve various design problems, and to understand how Scala is used in domains like <em>Big Data</em>.</p>
 
 <p>Download the book's example code from <a href="https://github.com/deanwampler/prog-scala-2nd-ed-code-examples">GitHub</a>. Report errata to <a href="http://oreilly.com/catalog/errata.csp?isbn=0636920033073">O'Reilly</a>.
+</p>
 </td>
 <td class="prog-scala-cover-cell"><a href="http://shop.oreilly.com/product/0636920033073.do"><img src="/assets/images/prog_scala_2ed_comp-quarter_size.jpg" alt="Programming Scala, 2nd Edition"/></a></td>
 </tr>

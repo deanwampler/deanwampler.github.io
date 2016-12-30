@@ -21,7 +21,7 @@ tagline:
 <li><b>I Have to Work Faster and Faster:</b> <span class="keyword">Functional Programming</span> keeps my code concise, by minimizing unnecessary and "one-off" implementation constructs, and it keeps my code logically correct. These qualities, in turn, keep me more agile over the life of the project as requirements change and features evolve.</li>
 <li><b>Functional Programming Is a Return to Simplicity:</b> <span class="keyword">Functional Programming</span> isn't <em>simple</em>, but it represents a return to <em>simplicity</em>; the goal of minimizing implementation size and complexity by rethinking our ideas about design patterns and idioms.</li>
 </ul>
-</p>
+
 </td>
 <td class="prog-scala-cover-cell"><a href="http://shop.oreilly.com/product/0636920021667.do"><img src="/assets/images/FPforJavaDevsCover_256x337.png" alt="Functional Programming for Java Developers: A Short Introduction"/></a></td>
 </tr>
