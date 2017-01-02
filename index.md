@@ -1,28 +1,11 @@
 ---
 layout: page
 title: Dean Wampler, Ph.D.
-tagline: Software developer, expert in Big Data, Scala, and Functional Programming,<br/>O'Reilly author, and frequent public speaker living in Chicago.
+tagline: Software developer, expert in Big Data, Scala, and Functional Programming. Mastering Deep Learning.<br/>O'Reilly author and frequent public speaker.<br/>Lives in Chicago. Works all over.
+
 include_social: true
 ---
 {% include JB/setup %}
-
-<section id="research" class="centered">
-  <p class="section-title"><span>Research</span></p>
-  <article class="research-item">
-    <h2>Polyglot Programming</h2>
-    <p>Polyglot Programming is a website dedicated to exploring the benefits (and drawbacks) of combining multiple programming languages and multiple "modularity paradigms" in application development. The "paradigms" include Functional Programming, Object-Oriented Programming, and Aspect-Oriented Programming.</p>
-    <div class="more">
-      <a href="polyglotprogramming/" class="button">polyglotprogramming.com</a>
-    </div>
-  </article>
-  <article class="research-item">
-    <h2>Aspect Oriented Programming</h2>
-    <p>AOP is an attempt to address <em>cross cutting concerns</em> in applications. The dominant decomposition into modules usually reflects the domain model or perhaps the implementation infrastructure. However, it becomes difficult to add in globally-consistent features, like logging, that cut across these module boundaries. AOP attempts to solve this problem.</p>
-    <div class="more">
-      <a href="aspectprogramming/" class="button">aspectprogramming.com</a>
-    </div>
-  </article>
-</section>
 
 <section id="books" class="centered">
   <p class="section-title"><span>Books</span></p>
