@@ -17,6 +17,15 @@ tagline: Books written by Dean Wampler
   </tr>
   <tr>
     <td>
+      <p><a href="http://www.oreilly.com/data/free/fast-data-architectures-for-streaming-applications.csp">Fast Data Architectures for Streaming Applications</a> is a free report co-published by <a href="http://lightbend.com">Lightbend</a> and <a href="http://oreilly.com">O'Reilly</a> on the architectural characteristics of highly available, resilient, scalable, and responsive systems for data stream processing at scale.</p>
+      <p><a href="fd-arch-streaming.html">More information...</a>.</p>
+    </td>
+    <td><a href="http://www.oreilly.com/data/free/fast-data-architectures-for-streaming-applications.csp" class="books-book">
+      <img src="/assets/images/FastDataArch-StreamingApps-256x337.png" alt="Fast Data Architectures for Streaming Applications"/></a>
+    </td>
+  </tr>
+  <tr>
+    <td>
       <p><a href="http://shop.oreilly.com/product/0636920021667.do">Functional Programming for Java Developers: A Short Introduction</a> is a concise, gentle introduction to the basic ideas of <span class="keyword">Functional Programming</span> and why Java developers should embrace it.</p>
       <p><a href="fpjava.html">More information...</a>.</p>
     </td>

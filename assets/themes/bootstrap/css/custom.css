@@ -20,6 +20,12 @@ body {
   height: 344px;
 }
 
+.fd-arch-streaming-cover-cell {
+  /*background-image: url("/assets/images/prog_scala_2ed_comp-quarter_size.jpg");*/
+  width:  256px;
+  height: 337px;
+}
+
 .basic-table {
   width: 90%;
   border-style: solid;
