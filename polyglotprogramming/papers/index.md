@@ -16,6 +16,25 @@ Most of my conference and user group talks can be found at my <a href="http://gi
 
 
 <table class="talks-table centered">
+
+
+  <tr>
+    <td>
+      <article class="talk">
+        <h1>Stream All the Things!!</h1>
+        <p class="talk-desc">O'Reilly Software Architecture Conference, NYC, April 4, 2017</p>
+        <p>I discuss the emerging architecture for large-scale stream data processing, that also integrates the best of microservice architectures.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="button-pdf">Download PDF</a>
+          <span class="button-video-inactive">Watch video</span> (Coming Soon)
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="StreamAllTheThings.pdf"><img src="StreamAllTheThings-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
   <tr>
     <td>
       <article class="talk">
