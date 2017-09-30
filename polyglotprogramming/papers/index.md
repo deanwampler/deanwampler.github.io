@@ -16,13 +16,11 @@ Most of my conference and user group talks can be found at my <a href="http://gi
 
 
 <table class="talks-table centered">
-
-
   <tr>
     <td>
       <article class="talk">
         <h1>Stream All the Things!!</h1>
-        <p class="talk-desc">Software Architecture Conference, NYC, April 2017 and Strata London May 2017</p>
+        <p class="talk-desc">Software Architecture Conference NYC, April 2017, Strata London, May 2017, and Strata NYC, September 2017</p>
         <p>I discuss the emerging architecture for large-scale stream data processing, that also integrates the best of microservice architectures.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="button-pdf">Download PDF</a>
