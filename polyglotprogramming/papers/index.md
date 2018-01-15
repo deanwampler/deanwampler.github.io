@@ -20,11 +20,11 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     <td>
       <article class="talk">
         <h1>Stream All the Things!!</h1>
-        <p class="talk-desc">Software Architecture Conference NYC, April 2017, Strata London, May 2017, and Strata NYC, September 2017</p>
+        <p class="talk-desc">Software Architecture Conference NYC, April 2017, Strata London, May 2017, Strata NYC, September 2017, Reactive Summit, October 2017</p>
         <p>I discuss the emerging architecture for large-scale stream data processing, that also integrates the best of microservice architectures.</p>
         <div class="more">
-          <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="button-pdf">Download PDF</a>
-          <span class="button-video-inactive">Watch video</span> (Coming Soon)
+          <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="button button-pdf">Download PDF</a>
+          <a href="https://www.youtube.com/watch?v=xZZB2JFyurY" class="button button-video">Watch video</a>
         </div>
       </article>
     </td>
@@ -36,29 +36,13 @@ Most of my conference and user group talks can be found at my <a href="http://gi
   <tr>
     <td>
       <article class="talk">
-        <h1>The SMACK Stack: Emerging Fast Data and Microservice Architectures</h1>
-        <p class="talk-desc">CodeNode London, October 24, 2016</p>
-        <p><a href="http://spark.apache.org">Spark</a>, <a href="http://mesos.apache.org">Mesos</a>, <a href="http://akka.io">Akka</a>, <a href="http://cassandra.apache.org">Cassandra</a>, and <a href="http://kafka.apache.org">Kafka</a> form the basis for new, flexible architectures for Fast Data and Microservice applications. This talk describes the characteristics these applications need and how the SMACK combination meets those needs.</p>
-        <div class="more">
-          <a href="SMACKStack.pdf" class="button-pdf">Download PDF</a>
-        </div>
-      </article>
-    </td>
-    <td>
-      <a href="SMACKStack.pdf"><img src="SMACKStack-TitlePage-256x144.jpg" /></a>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <article class="talk">
         <h1>Scala and the JVM for Big Data: Lessons from Spark</h1>
         <p class="talk-desc">Strata + Hadoop World, San Jose and Singapore, 2016</p>
         <p>The JVM is the standard platform for Big Data and Scala is emerging as the standard programming language for Big Data Developers, driven in part by <a href="http://spark.apache.org">Spark</a>. What lessons can we draw from this picture?</p>
         <div class="more">
-          <a href="ScalaJVMBigData-SparkLessons.pdf" class="button-pdf">Download PDF</a>
-          <a href="ScalaJVMBigData-SparkLessons-extended.pdf" class="button-pdf">Longer Version</a>
-          <a href="https://www.youtube.com/watch?v=7mzsZq__Oh4" class="button-video">Watch video</a> (older version)
+          <a href="ScalaJVMBigData-SparkLessons.pdf" class="button button-pdf">Download PDF</a>
+          <a href="ScalaJVMBigData-SparkLessons-extended.pdf" class="button button-pdf">Longer Version</a>
+          <a href="https://www.youtube.com/watch?v=FC-7AAZggl8" class="button button-video">Watch video</a>
         </div>
       </article>
     </td>
@@ -70,11 +54,27 @@ Most of my conference and user group talks can be found at my <a href="http://gi
   <tr>
     <td>
       <article class="talk">
+        <h1>The SMACK Stack: Emerging Fast Data and Microservice Architectures</h1>
+        <p class="talk-desc">CodeNode London, October 24, 2016</p>
+        <p><a href="http://spark.apache.org">Spark</a>, <a href="http://mesos.apache.org">Mesos</a>, <a href="http://akka.io">Akka</a>, <a href="http://cassandra.apache.org">Cassandra</a>, and <a href="http://kafka.apache.org">Kafka</a> form the basis for new, flexible architectures for Fast Data and Microservice applications. This talk describes the characteristics these applications need and how the SMACK combination meets those needs.</p>
+        <div class="more">
+          <a href="SMACKStack.pdf" class="button button-pdf">Download PDF</a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="SMACKStack.pdf"><img src="SMACKStack-TitlePage-256x144.jpg" />Download PDF</a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Spark 2.0</h1>
         <p class="talk-desc">Chicago Spark Meetup, May 18, 2016</p>
         <p><a href="http://spark.apache.org">Spark</a> 2.0 introduces significant improvements and refactorings. This talk summarizes the major changes.</p>
         <div class="more">
-          <a href="Spark20.pdf" class="button-pdf">Download PDF</a>
+          <a href="Spark20.pdf" class="button button-pdf">Download PDF</a>
         </div>
       </article>
     </td>
@@ -90,9 +90,9 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc">Numerous Venues - 2014, 2015</p>
         <p><a href="http://spark.apache.org">Spark</a> has emerged as the replacement for <em>MapReduce</em> in <em>Hadoop</em> applications. This talk explains why.</p>
         <div class="more">
-          <a href="Spark-TheNextTopComputeModel.pdf" class="button-pdf">Download PDF</a>
-          <a href="https://www.parleys.com/tutorial/why-spark-is-next-top-compute-model" class="button-video">Watch Video</a>
-        </div>
+          <a href="Spark-TheNextTopComputeModel.pdf" class="button button-pdf">Download PDF</a>
+          <a href="https://www.youtube.com/watch?v=R0kCmkUDdKs" class="button button-video">Watch video</a>
+       </div>
       </article>
     </td>
     <td>
@@ -107,9 +107,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc">Strata + Hadoop World London and NYC 2015</p>
         <p>While <a href="http://spark.apache.org">Spark</a> is now popular on Hadoop, managed by YARN, it emerged as demonstration project for <a href="http://mesos.apache.org">Mesos</a>. This talk explores Mesos, compares it to YARN, and argues for why you should consider a Spark + Mesos cluster.</p>
         <div class="more">
-          <a href="SparkOnMesos.pdf" class="button-pdf">Download PDF</a>
-          <!-- <a href="http://www.infoq.com/presentations/spark-scala-mapreduce-java" class="button-video">Watch video</a> -->
-          <span class="button-video-inactive">Watch video</span> (Coming Soon)
+          <a href="SparkOnMesos.pdf" class="button button-pdf">Download PDF</a>
         </div>
       </article>
     </td>
@@ -125,9 +123,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc">GOTO Chicago 2015</p>
         <p>Using examples, I show how to use <a href="http://spark.apache.org">Spark</a> for Data Science at scale in ways that were previously not feasible with other tools.</p>
         <div class="more">
-          <a href="DataScienceAtScaleWithSpark.pdf" class="button-pdf">Download PDF</a>
-          <!-- <a href="http://www.infoq.com/presentations/spark-scala-mapreduce-java" class="button-video">Watch video</a> -->
-          <span class="button-video-inactive">Watch video</span> (Coming Soon)
+          <a href="DataScienceAtScaleWithSpark.pdf" class="button button-pdf">Download PDF</a>
         </div>
       </article>
     </td>
@@ -143,8 +139,8 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc"><a href="http://event.scaladays.org/scaladays-sanfran-2015#!#schedulePopupExtras-6536">Scala Days 2015</a>.</p>
         <p>Why <em>Scala</em> has proven so effective as the general-purpose programming language for Big Data development.</p>
         <div class="more">
-          <a href="UnreasonableEffectivenessOfScalaForBigData.pdf" class="button-pdf">Download PDF</a>
-          <a href="https://www.parleys.com/tutorial/the-unreasonable-effectiveness-scala-big-data" class="button-video">Video</a>
+          <a href="UnreasonableEffectivenessOfScalaForBigData.pdf" class="button button-pdf">Download PDF</a>
+          <a href="https://www.parleys.com/tutorial/the-unreasonable-effectiveness-scala-big-data" class="button button-video">Video</a>
         </div>
       </article>
     </td>
@@ -160,8 +156,8 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc"><a href="http://www.scaladays.org/#schedule/Why-Scala-is-Taking-Over-the-Big-Data-World">Scala Days 2014</a>, <a href="https://skillsmatter.com/conferences/1948-scala-exchange-2014">Scala eXchange 2014</a>, and <a href="http://datadaytexas.com/">Data Day Texas 2015</a></p>
         <p><em>Scala</em> has emerged as the <em>de facto</em> language for big data development, driven in part by tools like <a href="https://github.com/twitter/scalding">Scalding</a> and <a href="http://spark.apache.org">Spark</a>.</p>
         <div class="more">
-          <a href="WhyScalaIsTakingOverTheBigDataWorld.pdf" class="button-pdf">Download PDF</a>
-          <a href="https://skillsmatter.com/skillscasts/5423-why-scala-is-taking-over-the-big-data-world" class="button-video">Watch video</a> (Scala eXchange)
+          <a href="WhyScalaIsTakingOverTheBigDataWorld.pdf" class="button button-pdf">Download PDF</a>
+          <a href="https://skillsmatter.com/skillscasts/5423-why-scala-is-taking-over-the-big-data-world" class="button button-video">Watch video</a> (Scala eXchange)
         </div>
       </article>
     </td>
@@ -179,7 +175,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc"><a href="http://www.meetup.com/chicagoscala/events/226860360/">Chicago Scala Users Group, Jan 2016</a></p>
         <p>My informal introduction to the <a href="https://github.com/non/cats">Typelevel Cats</a> project, including why I think it's model for open-source development.</p>
         <div class="more">
-          <a href="Cats.pdf" class="button-pdf">Download PDF</a>
+          <a href="Cats.pdf" class="button button-pdf">Download PDF</a>
         </div>
       </article>
     </td>
@@ -191,12 +187,12 @@ Most of my conference and user group talks can be found at my <a href="http://gi
   <tr>
     <td>
       <article class="talk">
-        <h1>Reactive Systems - The Why and the How</h1>
+        <h1>Reactive Systems - The Why and the What</h1>
         <p class="talk-desc"><a href="http://softwarearchitectureconf.com">Software Architecture 2015</a> and <a href="http://www.meetup.com/ChicagoJUG/events/222009916/">CJUG May 2015</a></p>
         <p>What exactly are <em>Reactive Systems</em>, as described by the <a href="http://reactive-manifesto.org">Reactive Manifesto</a>, and why are they important for modern architectures? (March 19, 2015)</p>
         <div class="more">
-          <a href="ReactiveSystems-TheWhyAndTheHow.pdf" class="button-pdf">Download PDF</a>
-          <span class="button-video-inactive">Watch video</span> (Coming Soon)
+          <a href="ReactiveSystems-TheWhyAndTheHow.pdf" class="button button-pdf">Download PDF</a>
+          <a href="https://www.safaribooksonline.com/library/view/oreilly-software-architecture/9781491924563/video211449.html" class="button button-video">Watch video</a> (Safari Subscription Required)
         </div>
       </article>
     </td>
@@ -212,8 +208,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc"><a href="http://reactconf.com/">React Conf San Francisco 2014</a>, <a href="http://softwarearchitectureconf.com">Software Architecture 2015</a></p>
         <p>Failure handling must be <em>first-class</em> in reactive systems, to satisfy the <em>resilient</em> trait. This talk discusses how reactive models and libraries support failure handling. Hint: Most only offer limited facilities. (March 19, 2015)</p>
         <div class="more">
-          <a href="ErrorHandlingReactiveSystems.pdf" class="button-pdf">Download PDF</a>
-          <span class="button-video-inactive">Watch video</span> (Coming Soon)
+          <a href="ErrorHandlingReactiveSystems.pdf" class="button button-pdf">Download PDF</a>
         </div>
       </article>
     </td>
@@ -229,8 +224,8 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc"><a href="http://reactconf.com">React Londong 2014</a> and <a href="http://lambdajam.yowconference.com.au/">YOW! LambdaJam 2014</a>.</p>
         <p>The <a href="http://reactivemanifesto.org">Reactive Manifesto</a> has four central traits. How well are they supported by Functional Programming, and Object-Oriented Programming, and Domain Driven Design? What about different languages? What about "reactive" approaches like <em>Functional Reactive Programming</em>, <em>Reactive Extensions</em>, and <em>Actors</em>? (April 8, 2014)</p>
         <div class="more">
-          <a href="ReactiveDesignLanguagesAndParadigms.pdf" class="button-pdf">Download PDF</a>
-          <a href="https://www.youtube.com/watch?v=4L3cYhfSUZs&list=UU5oW2NYbyctXP3fvPICxMMg" class="button-video">Watch video</a>
+          <a href="ReactiveDesignLanguagesAndParadigms.pdf" class="button button-pdf">Download PDF</a>
+          <a href="https://www.youtube.com/watch?v=4L3cYhfSUZs&list=UU5oW2NYbyctXP3fvPICxMMg" class="button button-video">Watch video</a>
         </div>
       </article>
     </td>
@@ -247,8 +242,8 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc"><a href="http://lambdajam.com/">LambdaJam Chicago</a></p>
         <p>I argue that <em>"Copious" Data</em> (okay, <em>Big Data</em>) is driving adoption of <em>Functional Programming</em> (FP), more so than multicore concurrency concerns, because more developers will grapple with data problems than concurrency. Because FP is based on Mathematics, it is a natural fit for working with Data, whereas languages like Java, in which Hadoop is written, are poor choices. (November 21, 2013)</p>
         <div class="more">
-          <a href="CopiousData_TheKillerAppForFP.pdf" class="button-pdf">Download PDF</a>
-          <a href="http://www.infoq.com/presentations/big-data-functional-programming" class="button-video">Watch video</a> (earlier version)
+          <a href="CopiousData_TheKillerAppForFP.pdf" class="button button-pdf">Download PDF</a>
+          <a href="http://www.infoq.com/presentations/big-data-functional-programming" class="button button-video">Watch video</a> (earlier version)
         </div>
       </article>
     </td>
@@ -265,7 +260,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc"><a href="http://spark-summit.org/">Spark Summit San Francisco 2014</a></p>
         <p>In this lightning talk at the <a href="http://spark-summit.org/">Spark Summit San Francisco 2014</a>, I discuss why <a href="http://spark.apache.org">Spark</a> and the <a href="https://typesafe.com/platform">Typesafe Reactive Platform</a> are so complementary. (July 1, 2014)</p>
         <div class="more">
-          <a href="Typesafe-SparkSummit.pdf" class="button-pdf">Download PDF</a>
+          <a href="Typesafe-SparkSummit.pdf" class="button button-pdf">Download PDF</a>
         </div>
       </article>
     </td>
@@ -282,7 +277,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc"><a href="http://thingmonk.com/">Thing Monk London 2013</a></p>
         <p>This short talk describes why large-scale deployments of <em>Internet of Things</em> networks need to be managed with <em>Reactive</em> systems. (December, 2013)</p>
         <div class="more">
-          <a href="ReactiveIoT.pdf" class="button-pdf">Download PDF</a>
+          <a href="ReactiveIoT.pdf" class="button button-pdf">Download PDF</a>
         </div>
       </article>
     </td>
@@ -299,8 +294,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc"><a href="http://codemesh.io">CodeMesh London 2014</a></p>
         <p>Relational databases fell out of fashion with the rise of <em>NoSQL</em> and <em>Hadoop</em>. But SQL proved too useful for too many people, so there are now many SQL-based query tools for Hadoop and subsets of SQL on several "NoSQL" databases. This talk discusses this trend and why it started. (November 4th, 2014)</p>
         <div class="more">
-          <a href="SQLStrikesBack.pdf" class="button-pdf">Download PDF</a>
-          <span class="button-video-inactive">Watch video</span> (Coming Soon)
+          <a href="SQLStrikesBack.pdf" class="button button-pdf">Download PDF</a>
         </div>
       </article>
     </td>
@@ -317,8 +311,8 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc">Various Venues</p>
         <p>An introduction to Scala that I often give at conferences and user groups. The PDF includes a lot of extra material that won't fit into a 50-60 minute time slot. The GitHub <a href="http://github.com/deanwampler/Presentations/tree/master/SeductionsOfScala">page</a> for this talk also has the sources used for the examples. In particular, for the <a href="http://akka.io">Akka-based</a> Actor example at the end of the talk, see <a href="http://github.com/deanwampler/Presentations/blob/master/SeductionsOfScala/code-examples/actors/README.md">README.md</a>. (November 19, 2013)</p>
         <div class="more">
-          <a href="SeductionsOfScala.pdf" class="button-pdf">Download PDF</a>
-          <!-- <a href="#" class="button-video">Watch video</a> -->
+          <a href="SeductionsOfScala.pdf" class="button button-pdf">Download PDF</a>
+          <!-- <a href="#" class="button button-video">Watch video</a> -->
         </div>
       </article>
     </td>
@@ -335,7 +329,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc"><a href="http://www.meetup.com/Chicago-area-Hadoop-User-Group-CHUG/events/95464182/">Chicago Hadoop User's Group</a> (CHUG) and <a href="http://www.bigdatatechcon.com/boston2013/">Big Data Techcon Boston 2013</a></p>
         <p>The benefits of using <a href="https://github.com/twitter/Scalding">Scalding</a> is a Scala-language tool for writing <em>Hadoop</em> applications. The original version of this talk given at the February 12, 2013 CHUG meeting came after <a href="http://twitter.com/pacoid">Paco Nathan</a> presented on <a href="http://www.slideshare.net/pacoid/chicago-hadoop-users-group-enterprise-data-workflows">Cascading</a>, which provides useful background information. (April 11, 2013)</p>
         <div class="more">
-          <a href="ScaldingForHadoop.pdf" class="button-pdf">Download PDF</a>
+          <a href="ScaldingForHadoop.pdf" class="button button-pdf">Download PDF</a>
         </div>
       </article>
     </td>
@@ -352,7 +346,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc">QCon NYC 2012, and <a href="http://www.bigdatatechcon.com/boston2013/">Big Data Techcon Boston 2013</a></p>
         <p>My first public talk where I claimed that <em>MapReduce is the Enterprise JavaBeans of our time</em>. I criticized the <em>MapReduce</em> programming model and the technical limitations of the <em>Hadoop</em> implementation, in particular. In part, I argued that Java (pre Java-8 especially) is the wrong tool for developing <em>Big Data</em> applications and middleware. Instead, we should be using <em>Functional Programming</em>, since when we work with data, we are really doing <em>Mathematics</em>! (April 11, 2013)</p>
         <div class="more">
-          <a href="MapReduceAndItsDiscontents.pdf" class="button-pdf">Download PDF</a>
+          <a href="MapReduceAndItsDiscontents.pdf" class="button button-pdf">Download PDF</a>
         </div>
       </article>
     </td>
@@ -369,8 +363,8 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc">NE Scala Symposium 2011</p>
         <p>A more general version of the previous "Discontents" talk, where I argue that the <em>Hadoop</em> community needs to drop reliance on Java-centric, Object-Oriented approaches and embrace Functional Programming and languages like Scala. (April 15th, 2012)</p>
         <div class="more">
-          <a href="WhyBigDataNeedsToBeFunctional-print.pdf" class="button-pdf">Download PDF</a>
-          <a href="http://nescala.org/#t-8958946" class="button-video">Watch video</a>
+          <a href="WhyBigDataNeedsToBeFunctional-print.pdf" class="button button-pdf">Download PDF</a>
+          <a href="http://nescala.org/#t-8958946" class="button button-video">Watch video</a>
         </div>
       </article>
     </td>
@@ -387,8 +381,8 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc"><a href="http://thestrangeloop.com">Strange Loop 2011</a></p>
         <p>I look at 5 ideas in the history of software development that were once popular, and still are in some quarters, but are now seen by most people as obsolete. (November 9th, 2011)</p>
         <div class="more">
-          <a href="HeresiesAndDogmasInSoftwareDevelopment.pdf" class="button-pdf">Download PDF</a>
-          <a href="http://www.infoq.com/presentations/Heresies-and-Dogmas-in-Software-Development" class="button-video">Watch video</a>
+          <a href="HeresiesAndDogmasInSoftwareDevelopment.pdf" class="button button-pdf">Download PDF</a>
+          <a href="http://www.infoq.com/presentations/Heresies-and-Dogmas-in-Software-Development" class="button button-video">Watch video</a>
         </div>
       </article>
     </td>
@@ -405,8 +399,8 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc"></p>
         <p>A half-day tutorial that introduces <em>Functional Programming</em>, why it has become important for our time, and how you can apply its ideas in almost any language. Examples are given in Java and Ruby. There is also a <a href="HowFPChangesDevPractices.pdf">shorter talk</a> version. (July 31st, 2011)</p>
         <div class="more">
-          <a href="BetterProgrammingThroughFP.pdf" class="button-pdf">Download PDF</a>
-          <a href="HowFPChangesDevPractices.pdf" class="button-pdf">Download Shorter Talk</a>
+          <a href="BetterProgrammingThroughFP.pdf" class="button button-pdf">Download PDF</a>
+          <a href="HowFPChangesDevPractices.pdf" class="button button-pdf">Download Shorter Talk</a>
         </div>
       </article>
     </td>
@@ -423,8 +417,8 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc">QCon San Francicso 2008</p>
         <p>An argument that modern development problems benefit from a <i>multi-paradigm</i> and/or <i>multi-language</i> solution strategy. Different strategies are discussed in the contexts of example problems (April 2, 2011)</p>
         <div class="more">
-          <a href="PolyglotPolyParadigm.pdf" class="button-pdf">Download PDF</a>
-          <a href="http://www.infoq.com/presentations/polyglot-polyparadigm-programming" class="button-video">Watch video</a> (Early version of this talk)
+          <a href="PolyglotPolyParadigm.pdf" class="button button-pdf">Download PDF</a>
+          <a href="http://www.infoq.com/presentations/polyglot-polyparadigm-programming" class="button button-video">Watch video</a> (Early version of this talk)
         </div>
       </article>
     </td>
@@ -441,7 +435,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc">Chicago Hadoop Users Group</p>
         <p>This talk introduces <em>Hive</em>, the original SQL tool for <em>Hadoop</em> and explains why it's a key technology that drove adoption of the ecosystem, primarily because it makes it easier to transition SQL-based data warehouses to <em>Hadoop</em> and it enables conventional data analysts to work with <em>Hadoop</em>. (January 2012)</p>
         <div class="more">
-          <a href="Hive-SQLforHadoop.pdf" class="button-pdf">Download PDF</a>
+          <a href="Hive-SQLforHadoop.pdf" class="button button-pdf">Download PDF</a>
         </div>
       </article>
     </td>
@@ -458,7 +452,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc"><a href="http://www.bigdatatechcon.com/">Big Data Techcon San Francisco 2014</a></p>
         <p><a href="http://h2o.ai">H2O</a> is a high-performance, clustered compute engine for data science that fills an underserved niche in the Big Data world, working with data sets under a few TBs in size, which is just too big or too slow for a single machine to process, but not big enough to require Hadoop. This talk discusses why H2O is such a good fit for this niche. (April 1, 2014)</p>
         <div class="more">
-          <a href="H2O-deanwampler.pdf" class="button-pdf">Download PDF</a>
+          <a href="H2O-deanwampler.pdf" class="button button-pdf">Download PDF</a>
         </div>
       </article>
     </td>
@@ -484,7 +478,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
 <h3>Big Data</h3>
 
 <p><a href="Spark-TheNextTopComputeModel.pdf">Why Spark Is The Next Top (Compute) Model</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/>.</p>
-<p class="talk-small-description">This is a talk for <a href="http://phillyemergingtech.com/2014">Emerging Technology for the Enterprise 2014</a>. <a href="http://spark.apache.org">Spark</a> has emerged as the most likely replacement for <span class='keyword'>MapReduce</span> in <span class='keyword'>Hadoop</span> applications. This talk explains why. (Last updated: April 23, 2014)</p>
+<p class="talk-small-description">This is a talk for <a href="http://phillyemergingtech.com/2014">Emerging Technology for the Enterprise 2014</a>. <a href="http://spark.apache.org">Spark</a> has emerged as the most likely replacement for <span class='keyword'>MapReduce</span> in <span class='keyword'>Hadoop</span> applications. This talk explains why. (Last updated: October, 2015)</p>
 
 <p><a href="SparkOnMesos.pdf">Spark on Mesos</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/></p>
 <p class="talk-small-description"> In this <a href="http://strataconf.com/">Strata + Hadoop World London and NYC 2015</a> talk I argue that, while <a href="http://spark.apache.org">Spark</a> is now popular on Hadoop, managed by YARN, it emerged as demonstration project for <a href="http://mesos.apache.org">Mesos</a>. I explore Mesos, compare it to YARN, and argue for why you should consider a Spark + Mesos cluster. (Last updated: October 10, 2015</p>
@@ -633,5 +627,4 @@ work on Ivar Jacobson's idea of considering Use Case-oriented software developme
 <p class='talk-small-description'>An examination of how AOSD addresses some
 technical challenges in OMG's Model Driven-Architecture (MDA).</p>
 
-</section>
 

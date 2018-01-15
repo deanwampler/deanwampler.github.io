@@ -26,18 +26,8 @@ include_social: true
     <p class="talk-desc">Software Architecture Conference NYC, April 2017, Strata London, May 2017, and Strata NYC, September 2017</p>
     <p>I discuss the emerging architecture for large-scale stream data processing, that also integrates the best of microservice architectures.</p>
     <div class="more">
-      <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="button-pdf">Download PDF</a>
-      <span class="button-video-inactive">Watch video</span> (Coming Soon)
-    </div>
-  </article>
-
-   <article class="talk">
-    <h1>The SMACK Stack: Emerging Fast Data and Microservice Architectures</h1>
-    <p class="talk-desc">CodeNode London, October 24, 2016</p>
-    <p><a href="http://spark.apache.org">Spark</a>, <a href="http://mesos.apache.org">Mesos</a>, <a href="http://akka.io">Akka</a>, <a href="http://cassandra.apache.org">Cassandra</a>, and <a href="http://kafka.apache.org">Kafka</a> form the basis for new, flexible architectures for Fast Data and Microservice applications. This talk describes the characteristics these applications need and how the SMACK combination meets those needs.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/SMACKStack.pdf" class="button-pdf">Download PDF</a>
-      <span class="button-video-inactive">Watch video</span> (Coming Soon)
+      <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="button button-pdf">Download PDF</a>
+      <a href="https://www.youtube.com/watch?v=xZZB2JFyurY" class="button button-video">Watch video</a>
     </div>
   </article>
 
@@ -46,9 +36,9 @@ include_social: true
     <p class="talk-desc">Strata + Hadoop World, San Jose & Singapore, 2016</p>
     <p>The JVM is the standard platform for Big Data and Scala is emerging as the standard programming language for Big Data Developers, driven in part by <a href="http://spark.apache.org">Spark</a>. What lessons can we draw from this picture?</p>
     <div class="more">
-      <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons.pdf" class="button-pdf">Download PDF</a>
-      <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons-extended.pdf" class="button-pdf">Longer Version</a>
-      <a href="https://www.youtube.com/watch?v=7mzsZq__Oh4" class="button-video">Watch video</a> (older version)
+      <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons.pdf" class="button button-pdf">Download PDF</a>
+      <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons-extended.pdf" class="button button-pdf">Longer Version</a>
+      <a href="https://www.youtube.com/watch?v=FC-7AAZggl8" class="button button-video">Watch video</a>
     </div>
   </article>
 
@@ -57,31 +47,9 @@ include_social: true
     <p class="talk-desc">Numerous Venues - 2014, 2015</p>
     <p><a href="http://spark.apache.org">Spark</a> has emerged as the replacement for <span class='keyword'>MapReduce</span> in <span class='keyword'>Hadoop</span> applications. This talk explains why.</p>
     <div class="more">
-      <a href="/polyglotprogramming/papers/Spark-TheNextTopComputeModel.pdf" class="button-pdf">Download PDF</a>
-      <a href="https://www.parleys.com/tutorial/why-spark-is-next-top-compute-model" class="button-video">Watch video</a>
-      <!-- <span class="button-video-inactive">Watch video</span> (Coming Soon) -->
+      <a href="/polyglotprogramming/papers/Spark-TheNextTopComputeModel.pdf" class="button button-pdf">Download PDF</a>
+      <a href="https://www.youtube.com/watch?v=R0kCmkUDdKs" class="button button-video">Watch video</a>
     </div>
   </article>
 
-  <article class="talk">
-    <h1>Spark on Mesos</h1>
-    <p class="talk-desc">Strata + Hadoop World London and NYC 2015</p>
-    <p>While <a href="http://spark.apache.org">Spark</a> is now popular on Hadoop, managed by YARN, it emerged as demonstration project for <a href="http://mesos.apache.org">Mesos</a>. This talk explores Mesos, compares it to YARN, and argues for why you should consider a Spark + Mesos cluster.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/SparkOnMesos.pdf" class="button-pdf">Download PDF</a>
-      <!-- <a href="http://www.infoq.com/presentations/spark-scala-mapreduce-java" class="button-video">Watch video</a> -->
-      <span class="button-video-inactive">Watch video</span> (Coming Soon)
-    </div>
-  </article>
-
-  <article class="talk">
-    <h1>The Internet Was Made for Cats</h1>
-    <p class="talk-desc"><a href="http://www.meetup.com/chicagoscala/events/226860360/">Chicago Scala Users Group, Jan 2016</a></p>
-    <p>My informal introduction to the <a href="https://github.com/non/cats">Typelevel Cats</a> project, including why I think it's a model for open-source development.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/Cats.pdf" class="button-pdf">Download PDF</a>
-    </div>
-  </article>
-
-  <p class="talk"><a href="/polyglotprogramming/papers">See all my talks and papers</a>.</p>
 </section>
