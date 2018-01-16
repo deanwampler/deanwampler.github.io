@@ -96,6 +96,7 @@ p a:hover {
  */
 
 .about-social-button-resume,
+.about-social-button-blog,
 .about-social-button-twitter,
 .about-social-button-linkedin,
 .button-pdf,
@@ -104,6 +105,7 @@ p a:hover {
 }
 
 .about-social-button-resume,
+.about-social-button-blog,
 .about-social-button-twitter,
 .about-social-button-linkedin {
   display: inline-block;
@@ -121,6 +123,8 @@ p a:hover {
   background-position: 8px -37px;
 }
 
+/* Use the same icon for the blog and resume. */
+.about-social-button-blog,
 .about-social-button-resume {
   background-position: 8px -118px;
 }
@@ -133,58 +137,41 @@ p a:hover {
   line-height: 30px;
   border-radius: 20px;
   border: 1px solid #112337;
-  color: #112337;
+  background-color: #112337;
+  color: #fff;
   text-decoration: none;
+}
+
+.button-inactive {
+  opacity: 0.75;
+  filter: alpha(opacity=75); /* For IE8 and earlier */
 }
 
 .button:hover,
 .button-pdf:hover,
 .button-video:hover {
-  background-color: #112337;
-  color: #fff;
+  background-color: #fff;
+  color: #112337;
 }
 
 .button-pdf,
 .button-video {
-  display: inline-block;
   padding: 0 15px 0 35px;
-  margin: 0 5px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 20px;
-  border: 1px solid #112337;
-  color: #112337;
-  text-decoration: none;
-
-}
-.button-video-inactive {
-  opacity: 0.75;
-  filter: alpha(opacity=75); /* For IE8 and earlier */
-  display: inline-block;
-  padding: 0 15px 0 35px;
-  margin: 0 5px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 20px;
-  border: 1px solid #112337;
-  color: #112337;
-  text-decoration: none;
 }
 
 .button-pdf {
-  background-position: 8px -78px;
-}
-.button-pdf:hover {
   background-position: 8px -118px;
 }
-
-.button-video .button-video-inactive {
-  background-position: 8px -158px;
+.button-pdf:hover {
+  background-position: 8px -78px;
 }
-.button-video:hover {
+
+.button-video {
   background-position: 8px -198px;
 }
-
+.button-video:hover {
+  background-position: 8px -158px;
+}
 
 
 /*
