@@ -52,4 +52,8 @@ include_social: true
     </div>
   </article>
 
+  <p>
+    <center><a href="/polyglotprogramming/papers">All Talks &amp; Papers...</a></center>
+  </p>
+
 </section>
