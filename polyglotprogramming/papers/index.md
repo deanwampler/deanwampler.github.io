@@ -36,6 +36,22 @@ Most of my conference and user group talks can be found at my <a href="http://gi
   <tr>
     <td>
       <article class="talk">
+        <h1>Streaming Microservices with Akka Streams and Kafka Streams</h1>
+        <p class="talk-desc">Strata San Jose and Strata London, 2018</p>
+        <p>I discuss processing data in microservices using Akka Streams and Kafka Streams, vs. using tools like Spark and Flink.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="button button-pdf">Download PDF</a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="KafkaMicroservices-AkkaStreams-KafkaStreams.pdf"><img src="KafkaMicroservices-AkkaStreams-KafkaStreams-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Scala and the JVM for Big Data: Lessons from Spark</h1>
         <p class="talk-desc">Strata + Hadoop World, San Jose and Singapore, 2016</p>
         <p>The JVM is the standard platform for Big Data and Scala is emerging as the standard programming language for Big Data Developers, driven in part by <a href="http://spark.apache.org">Spark</a>. What lessons can we draw from this picture?</p>
