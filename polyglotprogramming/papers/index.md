@@ -52,6 +52,22 @@ Most of my conference and user group talks can be found at my <a href="http://gi
   <tr>
     <td>
       <article class="talk">
+        <h1>Bash and All That</h1>
+        <p class="talk-desc">GOTO Chicago, 2018</p>
+        <p>A celebration of the UNIX philosophy and the tools it spawned.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/BashAndAllThat.pdf"><img src="BashAndAllThat-TitlePage-342x192.jpg" /></a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="KafkaMicroservices-AkkaStreams-KafkaStreams.pdf"><img src="KafkaMicroservices-AkkaStreams-KafkaStreams-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Scala and the JVM for Big Data: Lessons from Spark</h1>
         <p class="talk-desc">Strata + Hadoop World, San Jose and Singapore, 2016</p>
         <p>The JVM is the standard platform for Big Data and Scala is emerging as the standard programming language for Big Data Developers, driven in part by <a href="http://spark.apache.org">Spark</a>. What lessons can we draw from this picture?</p>
