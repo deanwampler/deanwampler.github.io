@@ -20,16 +20,17 @@ Most of my conference and user group talks can be found at my <a href="http://gi
     <td>
       <article class="talk">
         <h1>Stream All the Things!!</h1>
-        <p class="talk-desc">Software Architecture Conference NYC, April 2017, Strata London, May 2017, Strata NYC, September 2017, Reactive Summit, October 2017</p>
+        <p class="talk-desc">Software Architecture Conference NYC, April 2017, Strata London, May 2017, Strata NYC, September 2017, Reactive Summit, October 2017, ScalaIO, October 2017</p>
         <p>I discuss the emerging architecture for large-scale stream data processing, that also integrates the best of microservice architectures.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="button button-pdf">Download PDF</a>
-          <a href="https://www.youtube.com/watch?v=xZZB2JFyurY" class="button button-video">Watch video</a>
+          <a href="https://www.youtube.com/watch?v=T-RHhxptrlw&feature=youtu.be" class="button button-video">Watch video</a>
         </div>
       </article>
     </td>
     <td>
       <a href="StreamAllTheThings.pdf"><img src="StreamAllTheThings-TitlePage-342x192.jpg" /></a>
+      https://www.youtube.com/watch?v=T-RHhxptrlw&feature=youtu.be
     </td>
   </tr>
 
@@ -56,12 +57,12 @@ Most of my conference and user group talks can be found at my <a href="http://gi
         <p class="talk-desc">GOTO Chicago, 2018</p>
         <p>A celebration of the UNIX philosophy and the tools it spawned.</p>
         <div class="more">
-          <a href="/polyglotprogramming/papers/BashAndAllThat.pdf"><img src="BashAndAllThat-TitlePage-342x192.jpg" /></a>
+          <a href="BashAndAllThat.pdf" class="button button-pdf">Download PDF</a>
         </div>
       </article>
     </td>
     <td>
-      <a href="KafkaMicroservices-AkkaStreams-KafkaStreams.pdf"><img src="KafkaMicroservices-AkkaStreams-KafkaStreams-TitlePage-342x192.jpg" /></a>
+      <a href="/polyglotprogramming/papers/BashAndAllThat.pdf"><img src="BashAndAllThat-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
 
