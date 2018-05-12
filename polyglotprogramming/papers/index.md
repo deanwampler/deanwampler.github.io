@@ -29,8 +29,7 @@ Most of my conference and user group talks can be found at my <a href="http://gi
       </article>
     </td>
     <td>
-      <a href="StreamAllTheThings.pdf"><img src="StreamAllTheThings-TitlePage-342x192.jpg" /></a>
-      https://www.youtube.com/watch?v=T-RHhxptrlw&feature=youtu.be
+      <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf"><img src="StreamAllTheThings-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
 
