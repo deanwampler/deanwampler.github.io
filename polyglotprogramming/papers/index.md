@@ -20,7 +20,7 @@ Most of my conference and user group talks can be found in this <a href="http://
     <td>
       <article class="talk">
         <h1>Stream All the Things!!</h1>
-        <p class="talk-desc">Software Architecture Conference NYC, April 2017, Strata London, May 2017, Strata NYC, September 2017, Reactive Summit, October 2017, ScalaIO, October 2017</p>
+        <p class="talk-desc">2017: Software Architecture Conference NYC, Strata London, Strata NYC, Reactive Summit, ScalaIO. 2018: YOW! Data</p>
         <p>I discuss the emerging architecture for large-scale stream data processing, that also integrates the best of microservice architectures.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="button button-pdf">Download PDF</a>
