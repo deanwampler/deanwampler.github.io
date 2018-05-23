@@ -22,6 +22,15 @@ include_social: true
   <p class="section-title"><span>Talks &amp; Papers </span></p>
 
   <article class="talk">
+    <h1>Executive Briefing: What You Need to Know about Fast Data</h1>
+    <p class="talk-desc">2018: Strata London, Strata NYC</p>
+    <p>A briefing for managers and executives about the trends in Fast Data and how the impact on their organizations.</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData-with-notes.pdf" class="button button-pdf">Download PDF</a>
+    </div>
+  </article>
+
+  <article class="talk">
     <h1>Stream All the Things!!</h1>
     <p class="talk-desc">Software Architecture Conference NYC, April 2017, Strata London, May 2017, and Strata NYC, September 2017</p>
     <p>I discuss the emerging architecture for large-scale stream data processing, that also integrates the best of microservice architectures.</p>

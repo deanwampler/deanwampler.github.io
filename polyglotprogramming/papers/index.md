@@ -19,6 +19,23 @@ Most of my conference and user group talks can be found in this <a href="http://
   <tr>
     <td>
       <article class="talk">
+        <h1>Executive Briefing: What You Need to Know about Fast Data</h1>
+        <p class="talk-desc">2018: Strata London, Strata NYC</p>
+        <p>A briefing for managers and executives about the trends in Fast Data and how the impact on their organizations.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData-with-notes.pdf" class="button button-pdf">Download PDF</a>
+          <!-- <a href="https://www.youtube.com/watch?v=T-RHhxptrlw&feature=youtu.be" class="button button-video">Watch video</a> -->
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData-with-notes.pdf"><img src="ExecutiveBriefing-WhatYouNeedToKnowAboutFastData-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Stream All the Things!!</h1>
         <p class="talk-desc">2017: Software Architecture Conference NYC, Strata London, Strata NYC, Reactive Summit, ScalaIO. 2018: YOW! Data</p>
         <p>I discuss the emerging architecture for large-scale stream data processing, that also integrates the best of microservice architectures.</p>
