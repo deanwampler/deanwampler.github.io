@@ -112,7 +112,7 @@ Most of my conference and user group talks can be found in this <a href="http://
       </article>
     </td>
     <td>
-      <a href="SMACKStack.pdf"><img src="SMACKStack-TitlePage-256x144.jpg" />Download PDF</a>
+      <a href="SMACKStack.pdf"><img src="SMACKStack-TitlePage-256x144.jpg" /></a>
     </td>
   </tr>
 
