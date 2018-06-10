@@ -23,13 +23,13 @@ Most of my conference and user group talks can be found in this <a href="http://
         <p class="talk-desc">2018: Strata London, Strata NYC</p>
         <p>A briefing for managers and executives about the trends in Fast Data and how the impact on their organizations.</p>
         <div class="more">
-          <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData-with-notes.pdf" class="button button-pdf">Download PDF</a>
+          <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf" class="button button-pdf">Download PDF</a>
           <!-- <a href="https://www.youtube.com/watch?v=T-RHhxptrlw&feature=youtu.be" class="button button-video">Watch video</a> -->
         </div>
       </article>
     </td>
     <td>
-      <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData-with-notes.pdf"><img src="ExecutiveBriefing-WhatYouNeedToKnowAboutFastData-TitlePage-342x192.jpg" /></a>
+      <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf"><img src="ExecutiveBriefing-WhatYouNeedToKnowAboutFastData-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
 

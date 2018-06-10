@@ -26,7 +26,7 @@ include_social: true
     <p class="talk-desc">2018: Strata London, Strata NYC</p>
     <p>A briefing for managers and executives about the trends in Fast Data and how the impact on their organizations.</p>
     <div class="more">
-      <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData-with-notes.pdf" class="button button-pdf">Download PDF</a>
+      <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf" class="button button-pdf">Download PDF</a>
     </div>
   </article>
 
