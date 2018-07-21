@@ -54,7 +54,7 @@ Most of my conference and user group talks can be found in this <a href="http://
     <td>
       <article class="talk">
         <h1>Streaming Microservices with Akka Streams and Kafka Streams</h1>
-        <p class="talk-desc">Strata San Jose and Strata London, 2018</p>
+        <p class="talk-desc">Strata San Jose, Strata London, and Scala Days NYC, 2018</p>
         <p>I discuss processing data in microservices using Akka Streams and Kafka Streams, vs. using tools like Spark and Flink.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="button button-pdf">Download PDF</a>
