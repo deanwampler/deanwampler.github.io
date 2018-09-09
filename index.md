@@ -23,7 +23,7 @@ include_social: true
 
   <article class="talk">
     <h1>Executive Briefing: What You Need to Know about Fast Data</h1>
-    <p class="talk-desc">2018: Strata London, Strata NYC</p>
+    <p class="talk-desc">Strata London, Strata NYC, 2018</p>
     <p>A briefing for managers and executives about the trends in Fast Data and how the impact on their organizations.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf" class="button button-pdf">Download PDF</a>
