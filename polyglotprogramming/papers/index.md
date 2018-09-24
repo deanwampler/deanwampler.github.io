@@ -24,7 +24,7 @@ Most of my conference and user group talks can be found in this <a href="http://
         <p>A briefing for managers and executives about the trends in Fast Data and how the impact on their organizations.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf" class="button button-pdf">Download PDF</a>
-          <!-- <a href="https://www.youtube.com/watch?v=T-RHhxptrlw&feature=youtu.be" class="button button-video">Watch video</a> -->
+          <a href="https://info.lightbend.com/webinar-fast-data-executive-briefing-recording.html" class="button button-video">Watch video</a> (A similar webinar)
         </div>
       </article>
     </td>

@@ -27,6 +27,7 @@ include_social: true
     <p>A briefing for managers and executives about the trends in Fast Data and how the impact on their organizations.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf" class="button button-pdf">Download PDF</a>
+      <a href="https://info.lightbend.com/webinar-fast-data-executive-briefing-recording.html" class="button button-video">Watch video</a> (A similar webinar)
     </div>
   </article>
 
