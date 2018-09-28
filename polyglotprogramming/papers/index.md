@@ -36,7 +36,7 @@ Most of my conference and user group talks can be found in this <a href="http://
   <tr>
     <td>
       <article class="talk">
-        <h1>Delivering Media at Scala - The Fast Data Perspective</h1>
+        <h1>Delivering Media at Scale - The Fast Data Perspective</h1>
         <p class="talk-desc">Delivering Media Services at Scale - Reactive, London, September 27, 2018</p>
         <p>My talk at the Walt Disney Company Meetup in London. This talk is similar to the <em>Executive Briefing</em> above, but shorter and focused on the streaming use case.</p>
         <div class="more">
