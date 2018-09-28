@@ -40,13 +40,13 @@ Most of my conference and user group talks can be found in this <a href="http://
         <p class="talk-desc">Delivering Media Services at Scale - Reactive, London, September 27, 2018</p>
         <p>My talk at the Walt Disney Company Meetup in London. This talk is similar to the <em>Executive Briefing</em> above, but shorter and focused on the streaming use case.</p>
         <div class="more">
-          <a href="/polyglotprogramming/papers/DeliveringMediaAtScala-TheFastDataPerspective.pdf" class="button button-pdf">Download PDF</a>
+          <a href="/polyglotprogramming/papers/DeliveringMediaAtScale-TheFastDataPerspective.pdf" class="button button-pdf">Download PDF</a>
           <!-- <a href="https://info.lightbend.com/webinar-fast-data-executive-briefing-recording.html" class="button button-video">Watch video</a> (A similar webinar) -->
         </div>
       </article>
     </td>
     <td>
-      <a href="/polyglotprogramming/papers/DeliveringMediaAtScala-TheFastDataPerspective.pdf"><img src="DeliveringMediaAtScala-TheFastDataPerspective-TitlePage-342x192.jpg" /></a>
+      <a href="/polyglotprogramming/papers/DeliveringMediaAtScale-TheFastDataPerspective.pdf"><img src="DeliveringMediaAtScale-TheFastDataPerspective-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
 
