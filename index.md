@@ -23,7 +23,7 @@ include_social: true
 
   <article class="talk">
     <h1>Executive Briefing: What You Need to Know about Fast Data</h1>
-    <p class="talk-desc">Strata London, Strata NYC, 2018</p>
+    <p class="talk-desc">Strata London and NYC 2018</p>
     <p>A briefing for managers and executives about the trends in Fast Data and how the impact on their organizations.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf" class="button button-pdf">Download PDF</a>
@@ -33,7 +33,7 @@ include_social: true
 
   <article class="talk">
     <h1>Stream All the Things!!</h1>
-    <p class="talk-desc">Software Architecture Conference NYC, April 2017, Strata London, May 2017, and Strata NYC, September 2017</p>
+    <p class="talk-desc">Software Architecture Conference NYC 2017, Strata London and NYC 2017</p>
     <p>I discuss the emerging architecture for large-scale stream data processing, that also integrates the best of microservice architectures.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="button button-pdf">Download PDF</a>
@@ -43,7 +43,7 @@ include_social: true
 
   <article class="talk">
     <h1>Streaming Microservices with Akka Streams and Kafka Streams</h1>
-    <p class="talk-desc">Strata San Jose, Strata London, and Scala Days NYC, 2018</p>
+    <p class="talk-desc">Strata San Jose and London 2018, Scala Days NYC 2018, Reactive Summit 2018</p>
     <p>I discuss processing data in microservices using Akka Streams and Kafka Streams, vs. using tools like Spark and Flink.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="button button-pdf">Download PDF</a>
@@ -52,7 +52,7 @@ include_social: true
 
   <article class="talk">
     <h1>Bash and All That</h1>
-    <p class="talk-desc">GOTO Chicago, 2018</p>
+    <p class="talk-desc">GOTO Chicago 2018</p>
     <p>A celebration of the UNIX philosophy and the tools it spawned.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/BashAndAllThat.pdf" class="button button-pdf">Download PDF</a>
@@ -61,7 +61,7 @@ include_social: true
 
   <article class="talk">
     <h1>Scala and the JVM for Big Data: Lessons from Spark</h1>
-    <p class="talk-desc">Strata + Hadoop World, San Jose & Singapore, 2016</p>
+    <p class="talk-desc">Strata San Jose & Singapore 2016</p>
     <p>The JVM is the standard platform for Big Data and Scala is emerging as the standard programming language for Big Data Developers, driven in part by <a href="http://spark.apache.org">Spark</a>. What lessons can we draw from this picture?</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons.pdf" class="button button-pdf">Download PDF</a>
@@ -72,7 +72,7 @@ include_social: true
 
   <article class="talk">
     <h1>Why Spark Is The Next Top (Compute) Model</h1>
-    <p class="talk-desc">Numerous Venues - 2014, 2015</p>
+    <p class="talk-desc">Numerous Venues 2014 and 2015</p>
     <p><a href="http://spark.apache.org">Spark</a> has emerged as the replacement for <span class='keyword'>MapReduce</span> in <span class='keyword'>Hadoop</span> applications. This talk explains why.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/Spark-TheNextTopComputeModel.pdf" class="button button-pdf">Download PDF</a>

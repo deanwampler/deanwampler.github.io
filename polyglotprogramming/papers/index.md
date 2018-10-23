@@ -20,7 +20,7 @@ Most of my conference and user group talks can be found in this <a href="http://
     <td>
       <article class="talk">
         <h1>Executive Briefing: What You Need to Know about Fast Data</h1>
-        <p class="talk-desc">Strata London, Strata NYC, 2018</p>
+        <p class="talk-desc">Strata London and NYC 2018</p>
         <p>A briefing for managers and executives about the trends in Fast Data and how the impact on their organizations.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf" class="button button-pdf">Download PDF</a>
@@ -54,7 +54,7 @@ Most of my conference and user group talks can be found in this <a href="http://
     <td>
       <article class="talk">
         <h1>Stream All the Things!!</h1>
-        <p class="talk-desc">2017: Software Architecture Conference NYC, Strata London, Strata NYC, Reactive Summit, ScalaIO. 2018: YOW! Data</p>
+        <p class="talk-desc">Software Architecture Conference NYC 2017, Strata London and NYC 2017, Reactive Summit 2017, ScalaIO 2017, YOW! Data 2018</p>
         <p>I discuss the emerging architecture for large-scale stream data processing, that also integrates the best of microservice architectures.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="button button-pdf">Download PDF</a>
@@ -71,7 +71,7 @@ Most of my conference and user group talks can be found in this <a href="http://
     <td>
       <article class="talk">
         <h1>Streaming Microservices with Akka Streams and Kafka Streams</h1>
-        <p class="talk-desc">Strata San Jose, Strata London, and Scala Days NYC, 2018</p>
+        <p class="talk-desc">Strata San Jose and London 2018, Scala Days NYC 2018, Reactive Summit 2018</p>
         <p>I discuss processing data in microservices using Akka Streams and Kafka Streams, vs. using tools like Spark and Flink.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="button button-pdf">Download PDF</a>
@@ -87,7 +87,7 @@ Most of my conference and user group talks can be found in this <a href="http://
     <td>
       <article class="talk">
         <h1>Bash and All That</h1>
-        <p class="talk-desc">GOTO Chicago, 2018</p>
+        <p class="talk-desc">GOTO Chicago 2018</p>
         <p>A celebration of the UNIX philosophy and the tools it spawned.</p>
         <div class="more">
           <a href="BashAndAllThat.pdf" class="button button-pdf">Download PDF</a>
@@ -103,7 +103,7 @@ Most of my conference and user group talks can be found in this <a href="http://
     <td>
       <article class="talk">
         <h1>Scala and the JVM for Big Data: Lessons from Spark</h1>
-        <p class="talk-desc">Strata + Hadoop World, San Jose and Singapore, 2016</p>
+        <p class="talk-desc">Strata San Jose and Singapore 2016</p>
         <p>The JVM is the standard platform for Big Data and Scala is emerging as the standard programming language for Big Data Developers, driven in part by <a href="http://spark.apache.org">Spark</a>. What lessons can we draw from this picture?</p>
         <div class="more">
           <a href="ScalaJVMBigData-SparkLessons.pdf" class="button button-pdf">Download PDF</a>
@@ -121,7 +121,7 @@ Most of my conference and user group talks can be found in this <a href="http://
     <td>
       <article class="talk">
         <h1>The SMACK Stack: Emerging Fast Data and Microservice Architectures</h1>
-        <p class="talk-desc">CodeNode London, October 24, 2016</p>
+        <p class="talk-desc">CodeNode London 2016</p>
         <p><a href="http://spark.apache.org">Spark</a>, <a href="http://mesos.apache.org">Mesos</a>, <a href="http://akka.io">Akka</a>, <a href="http://cassandra.apache.org">Cassandra</a>, and <a href="http://kafka.apache.org">Kafka</a> form the basis for new, flexible architectures for Fast Data and Microservice applications. This talk describes the characteristics these applications need and how the SMACK combination meets those needs.</p>
         <div class="more">
           <a href="SMACKStack.pdf" class="button button-pdf">Download PDF</a>
@@ -137,7 +137,7 @@ Most of my conference and user group talks can be found in this <a href="http://
     <td>
       <article class="talk">
         <h1>Spark 2.0</h1>
-        <p class="talk-desc">Chicago Spark Meetup, May 18, 2016</p>
+        <p class="talk-desc">Chicago Spark Meetup, May 2016</p>
         <p><a href="http://spark.apache.org">Spark</a> 2.0 introduces significant improvements and refactorings. This talk summarizes the major changes.</p>
         <div class="more">
           <a href="Spark20.pdf" class="button button-pdf">Download PDF</a>
@@ -153,7 +153,7 @@ Most of my conference and user group talks can be found in this <a href="http://
     <td>
       <article class="talk">
         <h1>Why Spark Is The Next Top (Compute) Model</h1>
-        <p class="talk-desc">Numerous Venues - 2014, 2015</p>
+        <p class="talk-desc">Numerous Venues 2014 and 2015</p>
         <p><a href="http://spark.apache.org">Spark</a> has emerged as the replacement for <em>MapReduce</em> in <em>Hadoop</em> applications. This talk explains why.</p>
         <div class="more">
           <a href="Spark-TheNextTopComputeModel.pdf" class="button button-pdf">Download PDF</a>
@@ -170,7 +170,7 @@ Most of my conference and user group talks can be found in this <a href="http://
     <td>
       <article class="talk">
         <h1>Spark on Mesos</h1>
-        <p class="talk-desc">Strata + Hadoop World London and NYC 2015</p>
+        <p class="talk-desc">Strata London and NYC 2015</p>
         <p>While <a href="http://spark.apache.org">Spark</a> is now popular on Hadoop, managed by YARN, it emerged as demonstration project for <a href="http://mesos.apache.org">Mesos</a>. This talk explores Mesos, compares it to YARN, and argues for why you should consider a Spark + Mesos cluster.</p>
         <div class="more">
           <a href="SparkOnMesos.pdf" class="button button-pdf">Download PDF</a>
@@ -287,7 +287,7 @@ Most of my conference and user group talks can be found in this <a href="http://
     <td>
       <article class="talk">
         <h1>Reactive Design, Languages, and Paradigms</h1>
-        <p class="talk-desc"><a href="http://reactconf.com">React Londong 2014</a> and <a href="http://lambdajam.yowconference.com.au/">YOW! LambdaJam 2014</a>.</p>
+        <p class="talk-desc"><a href="http://reactconf.com">React London 2014</a> and <a href="http://lambdajam.yowconference.com.au/">YOW! LambdaJam 2014</a>.</p>
         <p>The <a href="http://reactivemanifesto.org">Reactive Manifesto</a> has four central traits. How well are they supported by Functional Programming, and Object-Oriented Programming, and Domain Driven Design? What about different languages? What about "reactive" approaches like <em>Functional Reactive Programming</em>, <em>Reactive Extensions</em>, and <em>Actors</em>? (April 8, 2014)</p>
         <div class="more">
           <a href="ReactiveDesignLanguagesAndParadigms.pdf" class="button button-pdf">Download PDF</a>
