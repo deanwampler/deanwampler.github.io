@@ -11,7 +11,7 @@ include_social: true
   <p class="section-title"><span>Books &amp; Reports</span></p>
   <div class="books-list">
     <a href="books/programmingscala2.html" class="books-book"><img src="/assets/images/prog_scala_2ed_comp-quarter_size.jpg" alt="Programming Scala, 2nd Edition"/></a>
-    <a href="books/fd-arch-streaming.html" class="books-book"><img src="/assets/images/FastDataArch-StreamingApps-256x337.png" alt="Fast Data Architectures for Streaming Applications"/></a>
+    <a href="books/fd-arch-streaming.html" class="books-book"><img src="/assets/images/FastDataArch-StreamingApps-2ndEd-256x337.png" alt="Fast Data Architectures for Streaming Applications"/></a>
     <a href="books/fpjava.html" class="books-book"><img src="/assets/images/FPforJavaDevsCover_256x337.png"/></a>
     <a href="books/programminghive.html" class="books-book"><img src="/assets/images/prog_hive_mech_cover_front_252x331.png"/></a>
   </div>
@@ -32,21 +32,21 @@ include_social: true
   </article>
 
   <article class="talk">
+    <h1>Streaming Microservices with Akka Streams and Kafka Streams</h1>
+    <p class="talk-desc">Strata San Jose and London 2018, Scala Days NYC 2018, Reactive Summit 2018</p>
+    <p>I discuss processing data in microservices using Akka Streams and Kafka Streams, vs. using tools like Spark and Flink.</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="button button-pdf">Download PDF</a>
+    </div>
+  </article>
+
+  <article class="talk">
     <h1>Stream All the Things!!</h1>
     <p class="talk-desc">Software Architecture Conference NYC 2017, Strata London and NYC 2017</p>
     <p>I discuss the emerging architecture for large-scale stream data processing, that also integrates the best of microservice architectures.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="button button-pdf">Download PDF</a>
       <a href="https://www.youtube.com/watch?v=xZZB2JFyurY" class="button button-video">Watch video</a>
-    </div>
-  </article>
-
-  <article class="talk">
-    <h1>Streaming Microservices with Akka Streams and Kafka Streams</h1>
-    <p class="talk-desc">Strata San Jose and London 2018, Scala Days NYC 2018, Reactive Summit 2018</p>
-    <p>I discuss processing data in microservices using Akka Streams and Kafka Streams, vs. using tools like Spark and Flink.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="button button-pdf">Download PDF</a>
     </div>
   </article>
 

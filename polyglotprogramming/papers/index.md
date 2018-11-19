@@ -36,17 +36,16 @@ Most of my conference and user group talks can be found in this <a href="http://
   <tr>
     <td>
       <article class="talk">
-        <h1>Delivering Media at Scale - The Fast Data Perspective</h1>
-        <p class="talk-desc">Delivering Media Services at Scale - Reactive, London, September 27, 2018</p>
-        <p>My talk at the Walt Disney Company Meetup in London. This talk is similar to the <em>Executive Briefing</em> above, but shorter and focused on the media streaming use case.</p>
+        <h1>Streaming Microservices with Akka Streams and Kafka Streams</h1>
+        <p class="talk-desc">Strata San Jose and London 2018, Scala Days NYC 2018, Reactive Summit 2018</p>
+        <p>I discuss processing data in microservices using Akka Streams and Kafka Streams, vs. using tools like Spark and Flink.</p>
         <div class="more">
-          <a href="/polyglotprogramming/papers/DeliveringMediaAtScale-TheFastDataPerspective.pdf" class="button button-pdf">Download PDF</a>
-          <!-- <a href="https://info.lightbend.com/webinar-fast-data-executive-briefing-recording.html" class="button button-video">Watch video</a> (A similar webinar) -->
+          <a href="/polyglotprogramming/papers/KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="button button-pdf">Download PDF</a>
         </div>
       </article>
     </td>
     <td>
-      <a href="/polyglotprogramming/papers/DeliveringMediaAtScale-TheFastDataPerspective.pdf"><img src="DeliveringMediaAtScale-TheFastDataPerspective-TitlePage-342x192.jpg" /></a>
+      <a href="KafkaMicroservices-AkkaStreams-KafkaStreams.pdf"><img src="KafkaMicroservices-AkkaStreams-KafkaStreams-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
 
@@ -64,22 +63,6 @@ Most of my conference and user group talks can be found in this <a href="http://
     </td>
     <td>
       <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf"><img src="StreamAllTheThings-TitlePage-342x192.jpg" /></a>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <article class="talk">
-        <h1>Streaming Microservices with Akka Streams and Kafka Streams</h1>
-        <p class="talk-desc">Strata San Jose and London 2018, Scala Days NYC 2018, Reactive Summit 2018</p>
-        <p>I discuss processing data in microservices using Akka Streams and Kafka Streams, vs. using tools like Spark and Flink.</p>
-        <div class="more">
-          <a href="/polyglotprogramming/papers/KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="button button-pdf">Download PDF</a>
-        </div>
-      </article>
-    </td>
-    <td>
-      <a href="KafkaMicroservices-AkkaStreams-KafkaStreams.pdf"><img src="KafkaMicroservices-AkkaStreams-KafkaStreams-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
 
@@ -114,6 +97,23 @@ Most of my conference and user group talks can be found in this <a href="http://
     </td>
     <td>
       <a href="ScalaJVMBigData-SparkLessons.pdf"><img src="ScalaJVMBigData-SparkLessons-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
+        <h1>Delivering Media at Scale - The Fast Data Perspective</h1>
+        <p class="talk-desc">Delivering Media Services at Scale - Reactive, London, September 27, 2018</p>
+        <p>My talk at the Walt Disney Company Meetup in London. This talk is similar to the <em>Executive Briefing</em> above, but shorter and focused on the media streaming use case.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/DeliveringMediaAtScale-TheFastDataPerspective.pdf" class="button button-pdf">Download PDF</a>
+          <!-- <a href="https://info.lightbend.com/webinar-fast-data-executive-briefing-recording.html" class="button button-video">Watch video</a> (A similar webinar) -->
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="/polyglotprogramming/papers/DeliveringMediaAtScale-TheFastDataPerspective.pdf"><img src="DeliveringMediaAtScale-TheFastDataPerspective-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
 

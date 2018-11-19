@@ -21,7 +21,7 @@ tagline: Books written by Dean Wampler
       <p><a href="fd-arch-streaming.html">More information...</a>.</p>
     </td>
     <td><a href="http://www.oreilly.com/data/free/fast-data-architectures-for-streaming-applications.csp" class="books-book">
-      <img src="/assets/images/FastDataArch-StreamingApps-256x337.png" alt="Fast Data Architectures for Streaming Applications"/></a>
+      <img src="/assets/images/FastDataArch-StreamingApps-2ndEd-256x337.png" alt="Fast Data Architectures for Streaming Applications"/></a>
     </td>
   </tr>
   <tr>
