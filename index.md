@@ -33,7 +33,7 @@ include_social: true
 
   <article class="talk">
     <h1>Streaming Microservices with Akka Streams and Kafka Streams</h1>
-    <p class="talk-desc">Strata San Jose and London 2018, Scala Days NYC 2018, Reactive Summit 2018</p>
+    <p class="talk-desc">Strata San Jose and London 2018, Scala Days NYC 2018, Reactive Summit 2018, YOW! 2018</p>
     <p>I discuss processing data in microservices using Akka Streams and Kafka Streams, vs. using tools like Spark and Flink.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="button button-pdf">Download PDF</a>
