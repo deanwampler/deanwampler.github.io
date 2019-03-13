@@ -41,6 +41,7 @@ Most of my conference and user group talks can be found in this <a href="http://
         <p>I discuss processing data in microservices using Akka Streams and Kafka Streams, vs. using tools like Spark and Flink.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="button button-pdf">Download PDF</a>
+          <a href="https://www.youtube.com/watch?time_continue=1&v=X3FjsYz2occ" class="button button-video">Watch video</a>
         </div>
       </article>
     </td>
