@@ -19,6 +19,22 @@ Most of my conference and user group talks can be found in this <a href="http://
   <tr>
     <td>
       <article class="talk">
+        <h1>Executive Briefing: What It Takes to Use ML in Fast Data Pipelines</h1>
+        <p class="talk-desc">Strata San Francisco 2019</p>
+        <p>A briefing for managers and executives about the challenges of serving ML models in a streaming data context.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines.pdf" class="button button-pdf">Download PDF</a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines.pdf"><img src="ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Executive Briefing: What You Need to Know about Fast Data</h1>
         <p class="talk-desc">Strata London and NYC 2018</p>
         <p>A briefing for managers and executives about the trends in Fast Data and how the impact on their organizations.</p>

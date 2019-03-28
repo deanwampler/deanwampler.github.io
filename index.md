@@ -22,6 +22,15 @@ include_social: true
   <p class="section-title"><span>Talks &amp; Papers </span></p>
 
   <article class="talk">
+    <h1>Executive Briefing: What It Takes to Use ML in Fast Data Pipelines</h1>
+    <p class="talk-desc">Strata San Francisco 2019</p>
+    <p>A briefing for managers and executives about the challenges of serving ML models in a streaming data context.</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines.pdf" class="button button-pdf">Download PDF</a>
+    </div>
+  </article>
+
+  <article class="talk">
     <h1>Executive Briefing: What You Need to Know about Fast Data</h1>
     <p class="talk-desc">Strata London and NYC 2018</p>
     <p>A briefing for managers and executives about the trends in Fast Data and how the impact on their organizations.</p>
