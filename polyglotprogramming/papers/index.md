@@ -19,6 +19,22 @@ Most of my conference and user group talks can be found in this <a href="http://
   <tr>
     <td>
       <article class="talk">
+        <h1>TrendsAffectingSystemArchitectures</h1>
+        <p class="talk-desc">GOTO Chicago Nights, April 2, 2019</p>
+        <p>A look at how the increasing importance of handling data quickly is driving applications towards streaming. In particular, the challenges of leveraging machine learning and AI in these streaming applications.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/TrendsAffectingSystemArchitectures.pdf" class="button button-pdf">Download PDF</a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="/polyglotprogramming/papers/TrendsAffectingSystemArchitectures.pdf"><img src="TrendsAffectingSystemArchitectures-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Executive Briefing: What It Takes to Use ML in Fast Data Pipelines</h1>
         <p class="talk-desc">Strata San Francisco 2019</p>
         <p>A briefing for managers and executives about the challenges of serving ML models in a streaming data context.</p>

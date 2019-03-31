@@ -22,6 +22,15 @@ include_social: true
   <p class="section-title"><span>Talks &amp; Papers </span></p>
 
   <article class="talk">
+    <h1>TrendsAffectingSystemArchitectures</h1>
+    <p class="talk-desc">GOTO Chicago Nights, April 2, 2019</p>
+    <p>A look at how the increasing importance of handling data quickly is driving applications towards streaming. In particular, the challenges of leveraging machine learning and AI in these streaming applications.</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/TrendsAffectingSystemArchitectures.pdf" class="button button-pdf">Download PDF</a>
+    </div>
+  </article>
+
+  <article class="talk">
     <h1>Executive Briefing: What It Takes to Use ML in Fast Data Pipelines</h1>
     <p class="talk-desc">Strata San Francisco 2019</p>
     <p>A briefing for managers and executives about the challenges of serving ML models in a streaming data context.</p>
@@ -57,36 +66,6 @@ include_social: true
     <div class="more">
       <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="button button-pdf">Download PDF</a>
       <a href="https://www.youtube.com/watch?v=xZZB2JFyurY" class="button button-video">Watch video</a>
-    </div>
-  </article>
-
-  <article class="talk">
-    <h1>Bash and All That</h1>
-    <p class="talk-desc">GOTO Chicago 2018</p>
-    <p>A celebration of the UNIX philosophy and the tools it spawned.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/BashAndAllThat.pdf" class="button button-pdf">Download PDF</a>
-    </div>
-  </article>
-
-  <article class="talk">
-    <h1>Scala and the JVM for Big Data: Lessons from Spark</h1>
-    <p class="talk-desc">Strata San Jose & Singapore 2016</p>
-    <p>The JVM is the standard platform for Big Data and Scala is emerging as the standard programming language for Big Data Developers, driven in part by <a href="http://spark.apache.org">Spark</a>. What lessons can we draw from this picture?</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons.pdf" class="button button-pdf">Download PDF</a>
-      <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons-extended.pdf" class="button button-pdf">Longer Version</a>
-      <a href="https://www.youtube.com/watch?v=FC-7AAZggl8" class="button button-video">Watch video</a>
-    </div>
-  </article>
-
-  <article class="talk">
-    <h1>Why Spark Is The Next Top (Compute) Model</h1>
-    <p class="talk-desc">Numerous Venues 2014 and 2015</p>
-    <p><a href="http://spark.apache.org">Spark</a> has emerged as the replacement for <span class='keyword'>MapReduce</span> in <span class='keyword'>Hadoop</span> applications. This talk explains why.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/Spark-TheNextTopComputeModel.pdf" class="button button-pdf">Download PDF</a>
-      <a href="https://www.youtube.com/watch?v=R0kCmkUDdKs" class="button button-video">Watch video</a>
     </div>
   </article>
 
