@@ -22,7 +22,7 @@ include_social: true
   <p class="section-title"><span>Talks &amp; Papers </span></p>
 
   <article class="talk">
-    <h1>TrendsAffectingSystemArchitectures</h1>
+    <h1>Trends Affecting System Architectures</h1>
     <p class="talk-desc">GOTO Chicago Nights, April 2, 2019</p>
     <p>A look at how the increasing importance of handling data quickly is driving applications towards streaming. In particular, the challenges of leveraging machine learning and AI in these streaming applications.</p>
     <div class="more">
