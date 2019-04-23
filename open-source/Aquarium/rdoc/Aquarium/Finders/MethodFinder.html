@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Aquarium::Finders::MethodFinder - Aquarium</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+  var index_rel_prefix = "../../";
+</script>
+
+<script src="../../js/jquery.js"></script>
+<script src="../../js/darkfish.js"></script>
+
+<link href="../../css/fonts.css" rel="stylesheet">
+<link href="../../css/rdoc.css" rel="stylesheet">
+
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../table_of_contents.html#pages">Pages</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="../../Object.html">Object</a>
+  
+</div>
+
+    <div id="includes-section" class="nav-section">
+  <h3>Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><a class="include" href="../Utils/ArrayUtils.html">Aquarium::Utils::ArrayUtils</a>
+  
+  
+  
+    <li><a class="include" href="../Utils/OptionsUtils.html">Aquarium::Utils::OptionsUtils</a>
+  
+  
+  </ul>
+</div>
+
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-all_recognized_method_option_symbols">::all_recognized_method_option_symbols</a>
+    
+    <li ><a href="#method-c-init_method_options">::init_method_options</a>
+    
+    <li ><a href="#method-c-is_recognized_method_option">::is_recognized_method_option</a>
+    
+    <li ><a href="#method-i-find">#find</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Aquarium::Finders::MethodFinder">
+  <h1 id="class-Aquarium::Finders::MethodFinder" class="class">
+    class Aquarium::Finders::MethodFinder
+  </h1>
+
+  <section class="description">
+    
+<h2 id="class-Aquarium::Finders::MethodFinder-label-MethodFinder"><a href="MethodFinder.html"><code>MethodFinder</code></a><span><a href="#class-Aquarium::Finders::MethodFinder-label-MethodFinder">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Locate methods in specified types or objects.</p>
+
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+      
+        <dt id="CANONICAL_OPTIONS">CANONICAL_OPTIONS
+        
+        <dd>
+        
+      
+        <dt id="IGNORED_SYSTEM_METHODS">IGNORED_SYSTEM_METHODS
+        
+        <dd><p>Methods we ignore by default, because users rarely want to advice them and so it makes finding what you want easier.</p>
+        
+      
+        <dt id="METHOD_FINDER_CANONICAL_OPTIONS">METHOD_FINDER_CANONICAL_OPTIONS
+        
+        <dd>
+        
+      
+        <dt id="NIL_OBJECT">NIL_OBJECT
+        
+        <dd>
+        
+      
+        <dt id="RECOGNIZED_METHOD_OPTIONS">RECOGNIZED_METHOD_OPTIONS
+        
+        <dd>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-all_recognized_method_option_symbols" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">all_recognized_method_option_symbols</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="all_recognized_method_option_symbols-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/finders/method_finder.rb</span>
+<span class="line-num">165</span> <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">all_recognized_method_option_symbols</span>
+<span class="line-num">166</span>   <span class="ruby-identifier">all</span> = <span class="ruby-constant">RECOGNIZED_METHOD_OPTIONS</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">key</span><span class="ruby-operator">|</span> <span class="ruby-identifier">key</span>.<span class="ruby-identifier">intern</span>}
+<span class="line-num">167</span>   <span class="ruby-constant">RECOGNIZED_METHOD_OPTIONS</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-identifier">all</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">all</span>, <span class="ruby-identifier">key</span><span class="ruby-operator">|</span>
+<span class="line-num">168</span>     <span class="ruby-identifier">all</span> <span class="ruby-operator">+=</span> <span class="ruby-constant">RECOGNIZED_METHOD_OPTIONS</span>[<span class="ruby-identifier">key</span>].<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">value</span><span class="ruby-operator">|</span> <span class="ruby-identifier">value</span>.<span class="ruby-identifier">intern</span>}
+<span class="line-num">169</span>     <span class="ruby-identifier">all</span>
+<span class="line-num">170</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">171</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-init_method_options" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">init_method_options</span><span
+            class="method-args">(scope_options_set)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="init_method_options-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/finders/method_finder.rb</span>
+<span class="line-num">149</span> <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">init_method_options</span> <span class="ruby-identifier">scope_options_set</span>
+<span class="line-num">150</span>   <span class="ruby-keyword">return</span> <span class="ruby-constant">Set</span>.<span class="ruby-identifier">new</span>([]) <span class="ruby-keyword">if</span> <span class="ruby-identifier">scope_options_set</span>.<span class="ruby-identifier">nil?</span>
+<span class="line-num">151</span>   <span class="ruby-identifier">options</span> = []
+<span class="line-num">152</span>   <span class="ruby-identifier">scope_options_set</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">opt</span><span class="ruby-operator">|</span>
+<span class="line-num">153</span>     <span class="ruby-keyword">if</span> <span class="ruby-constant">RECOGNIZED_METHOD_OPTIONS</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">opt</span>.<span class="ruby-identifier">to_s</span>)
+<span class="line-num">154</span>       <span class="ruby-identifier">options</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">opt</span>
+<span class="line-num">155</span>     <span class="ruby-keyword">else</span>
+<span class="line-num">156</span>       <span class="ruby-constant">RECOGNIZED_METHOD_OPTIONS</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span><span class="ruby-operator">|</span>
+<span class="line-num">157</span>         <span class="ruby-identifier">options</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">key</span>.<span class="ruby-identifier">intern</span> <span class="ruby-keyword">if</span> <span class="ruby-constant">RECOGNIZED_METHOD_OPTIONS</span>[<span class="ruby-identifier">key</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">opt</span>.<span class="ruby-identifier">to_s</span>)
+<span class="line-num">158</span>       <span class="ruby-keyword">end</span>
+<span class="line-num">159</span>     <span class="ruby-keyword">end</span>
+<span class="line-num">160</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">161</span>   <span class="ruby-identifier">options</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-value">:instance</span> <span class="ruby-keyword">unless</span> (<span class="ruby-identifier">options</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:class</span>) <span class="ruby-keyword">or</span> <span class="ruby-identifier">options</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:singleton</span>))
+<span class="line-num">162</span>   <span class="ruby-constant">Set</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">options</span>.<span class="ruby-identifier">sort</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span>,<span class="ruby-identifier">y</span><span class="ruby-operator">|</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">y</span>.<span class="ruby-identifier">to_s</span>}.<span class="ruby-identifier">uniq</span>)
+<span class="line-num">163</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-is_recognized_method_option" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">is_recognized_method_option</span><span
+            class="method-args">(string_or_symbol)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="is_recognized_method_option-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/finders/method_finder.rb</span>
+<span class="line-num">173</span> <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">is_recognized_method_option</span> <span class="ruby-identifier">string_or_symbol</span>
+<span class="line-num">174</span>   <span class="ruby-identifier">sym</span> = <span class="ruby-identifier">string_or_symbol</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:intern</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">string_or_symbol</span>.<span class="ruby-identifier">intern</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">string_or_symbol</span>
+<span class="line-num">175</span>   <span class="ruby-identifier">all_recognized_method_option_symbols</span>.<span class="ruby-identifier">include?</span> <span class="ruby-identifier">sym</span>
+<span class="line-num">176</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-find" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">find</span><span
+            class="method-args">(options = {})</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns a <a href="FinderResult.html"><code>Aquarium::Finders::FinderResult</code></a>, where the “matched” keys are the input  types, type names, and/or regular expressions, and objects for which matches were found and the  corresponding values are the method name <em>symbols</em> that were found. Method names, not method objects, are always returned, because we can only get method objects for instance methods if we have an instance! The keys in the “not_matched” part of the <a href="FinderResult.html"><code>FinderResult</code></a> are the specified types and objects for which no matches were found.</p>
+
+<p>The options are as follows:</p>
+
+<h4 id="method-i-find-label-Types">Types<span><a href="#method-i-find-label-Types">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>All the options supported by <a href="TypeFinder.html#method-i-find"><code>TypeFinder#find</code></a>.</p>
+
+<h4 id="method-i-find-label-Objects">Objects<span><a href="#method-i-find-label-Objects">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>One or more objects to match.  Specify one or an array of values. <strong>Note</strong>: <a href="../../String.html"><code>String</code></a> or symbol objects will be treated as type names!</p>
+<ul><li>
+<p><code>:objects =&gt; objects</code></p>
+</li><li>
+<p><code>:object  =&gt; objects</code></p>
+</li><li>
+<p><code>:for_objects =&gt; objects</code></p>
+</li><li>
+<p><code>:for_object  =&gt; objects</code></p>
+</li><li>
+<p><code>:on_objects =&gt; objects</code></p>
+</li><li>
+<p><code>:on_object  =&gt; objects</code></p>
+</li><li>
+<p><code>:in_objects =&gt; objects</code></p>
+</li><li>
+<p><code>:in_object  =&gt; objects</code></p>
+</li><li>
+<p><code>:within_objects =&gt; objects</code></p>
+</li><li>
+<p><code>:within_object  =&gt; objects</code></p>
+</li></ul>
+
+<h4 id="method-i-find-label-Methods">Methods<span><a href="#method-i-find-label-Methods">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>One or more method names and/or regular expressions to match. Specify one or an array of values. If <code>:all</code> or <code>:all_methods</code> is specified, all methods in the types or objects will be matched, subject to the search options described below. That is, <code>:all</code> is equivalent  to the regular expression /.+/. </p>
+<ul><li>
+<p><code>:methods =&gt; method_names_and_regexps</code></p>
+</li><li>
+<p><code>:method  =&gt; method_names_and_regexps</code></p>
+</li><li>
+<p><code>:within_methods =&gt; method_names_and_regexps</code></p>
+</li><li>
+<p><code>:within_method  =&gt; method_names_and_regexps</code></p>
+</li><li>
+<p><code>:calling   =&gt; method_names_and_regexps</code></p>
+</li><li>
+<p><code>:invoking  =&gt; method_names_and_regexps</code></p>
+</li><li>
+<p><code>:calls_to  =&gt; method_names_and_regexps</code></p>
+</li><li>
+<p><code>:sending_message_to  =&gt; method_names_and_regexps</code></p>
+</li><li>
+<p><code>:sending_messages_to =&gt; method_names_and_regexps</code></p>
+</li></ul>
+
+<h4 id="method-i-find-label-Methods+Options">Methods Options<span><a href="#method-i-find-label-Methods+Options">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>By default, the searches are restricted to public instance methods. </p>
+<ul><li>
+<p><code>:method_options =&gt; options</code></p>
+</li><li>
+<p><code>:method_option =&gt; options</code></p>
+</li><li>
+<p><code>:restricting_methods_to =&gt; options</code></p>
+</li></ul>
+
+<p>Note, the older, deprecated <code>:options</code> synonym has been removed.</p>
+
+<p>Here are the allowed “options”. Specify one or more of them. Any combination is allowed.</p>
+<dl class="rdoc-list note-list"><dt><code>:public</code> or <code>:public_methods</code>
+<dd>
+<p>Search for public methods (default).</p>
+</dd><dt><code>:private</code> or <code>:private_methods</code>
+<dd>
+<p>Search for private methods. </p>
+</dd><dt><code>:protected</code> or <code>:protected_methods</code>
+<dd>
+<p>Search for protected methods.</p>
+</dd><dt><code>:instance</code> or <code>:instance_methods</code>
+<dd>
+<p>Search for instance methods.</p>
+</dd><dt><code>:class</code> or <code>:class_methods</code>
+<dd>
+<p>Search for class methods.</p>
+</dd><dt><code>:singleton</code> or <code>:singleton_methods</code>
+<dd>
+<p>Search for singleton methods. </p>
+</dd><dt><code>:include_system_methods</code>
+<dd>
+<p>Also search for “system” methods like __id__ that are normally ignored (See IGNORED_SYSTEM_MEHTODS). </p>
+</dd></dl>
+
+<p>Note: specifying <code>:class</code> when objects are specified won&#39;t work.  Also, <code>:class</code>, <code>:public</code>, <code>:protected</code>, and <code>:private</code> are ignored when looking for singleton methods.</p>
+
+<h4 id="method-i-find-label-Excluded+Types-2C+Objects-2C+or+Methods">Excluded Types, Objects, or Methods<span><a href="#method-i-find-label-Excluded+Types-2C+Objects-2C+or+Methods">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>Exclude one or more types, objects, or methods from the match. Specify one or an array of values.</p>
+<ul><li>
+<p><code>:exclude_methods =&gt; method_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_method  =&gt; method_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_ancestor_methods</code> - Suppress “ancestor” methods. </p>
+</li></ul>
+
+<p>The <code>exclude_</code> prefix can be used with any of the synonyms for the other options.  <strong>WARNING</strong>: the <code>:exclude_ancestor_methods</code> option means that if you search for a override method <code>foo</code> in a derived class and <code>foo</code> is defined in the base class, you won&#39;t find it!</p>
+          
+          
+
+          
+          <div class="method-source-code" id="find-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/finders/method_finder.rb</span>
+<span class="line-num"> 93</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">find</span> <span class="ruby-identifier">options</span> = {}
+<span class="line-num"> 94</span>   <span class="ruby-identifier">init_specification</span> <span class="ruby-identifier">options</span>, <span class="ruby-constant">CANONICAL_OPTIONS</span> <span class="ruby-keyword">do</span>
+<span class="line-num"> 95</span>     <span class="ruby-identifier">finish_specification_initialization</span> 
+<span class="line-num"> 96</span>   <span class="ruby-keyword">end</span>
+<span class="line-num"> 97</span>   <span class="ruby-keyword">return</span> <span class="ruby-constant">Aquarium</span><span class="ruby-operator">::</span><span class="ruby-constant">Finders</span><span class="ruby-operator">::</span><span class="ruby-constant">FinderResult</span>.<span class="ruby-identifier">new</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">nothing_to_find?</span>
+<span class="line-num"> 98</span>   <span class="ruby-identifier">types_and_objects</span> = <span class="ruby-identifier">input_types</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">input_objects</span>
+<span class="line-num"> 99</span>   <span class="ruby-identifier">method_names_or_regexps</span> = <span class="ruby-identifier">input_methods</span>
+<span class="line-num">100</span>   <span class="ruby-keyword">if</span> <span class="ruby-identifier">method_names_or_regexps</span>.<span class="ruby-identifier">empty?</span>
+<span class="line-num">101</span>     <span class="ruby-identifier">not_matched</span> = {}
+<span class="line-num">102</span>     <span class="ruby-identifier">types_and_objects</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">t</span><span class="ruby-operator">|</span> <span class="ruby-identifier">not_matched</span>[<span class="ruby-identifier">t</span>] = []}
+<span class="line-num">103</span>     <span class="ruby-keyword">return</span> <span class="ruby-constant">Aquarium</span><span class="ruby-operator">::</span><span class="ruby-constant">Finders</span><span class="ruby-operator">::</span><span class="ruby-constant">FinderResult</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">:not_matched</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-identifier">not_matched</span>)
+<span class="line-num">104</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">105</span>   <span class="ruby-identifier">result</span> = <span class="ruby-identifier">do_find_all_by</span> <span class="ruby-identifier">types_and_objects</span>, <span class="ruby-identifier">method_names_or_regexps</span>
+<span class="line-num">106</span>   <span class="ruby-keyword">unless</span> (<span class="ruby-identifier">input_exclude_methods</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">input_exclude_methods</span>.<span class="ruby-identifier">empty?</span>)
+<span class="line-num">107</span>     <span class="ruby-identifier">result</span> <span class="ruby-operator">-=</span> <span class="ruby-identifier">do_find_all_by</span> <span class="ruby-identifier">types_and_objects</span>, <span class="ruby-identifier">input_exclude_methods</span>
+<span class="line-num">108</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">109</span>   <span class="ruby-identifier">result</span>
+<span class="line-num">110</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

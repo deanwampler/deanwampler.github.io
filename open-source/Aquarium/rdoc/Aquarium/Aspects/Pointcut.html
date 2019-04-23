@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Aquarium::Aspects::Pointcut - Aquarium</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+  var index_rel_prefix = "../../";
+</script>
+
+<script src="../../js/jquery.js"></script>
+<script src="../../js/darkfish.js"></script>
+
+<link href="../../css/fonts.css" rel="stylesheet">
+<link href="../../css/rdoc.css" rel="stylesheet">
+
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../table_of_contents.html#pages">Pages</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+<div class="nav-section">
+  <h3>Table of Contents</h3>
+
+  <ul class="link-list" role="directory">
+    <li><a href="#class-Aquarium::Aspects::Pointcut-label-Pointcut">Pointcut</a>
+    <li><a href="#class-Aquarium::Aspects::Pointcut-label-Pointcut+-28composition-29">Pointcut (composition)</a>
+  </ul>
+</div>
+
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="../../Object.html">Object</a>
+  
+</div>
+
+    <div id="includes-section" class="nav-section">
+  <h3>Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><a class="include" href="../Utils/ArrayUtils.html">Aquarium::Utils::ArrayUtils</a>
+  
+  
+  
+    <li><a class="include" href="../Utils/HashUtils.html">Aquarium::Utils::HashUtils</a>
+  
+  
+  
+    <li><a class="include" href="../Utils/OptionsUtils.html">Aquarium::Utils::OptionsUtils</a>
+  
+  
+  
+    <li><a class="include" href="../Utils/SetUtils.html">Aquarium::Utils::SetUtils</a>
+  
+  
+  
+    <li><span class="include">ExclusionHandler</span>
+  
+  
+  
+    <li><span class="include">DefaultObjectsHandler</span>
+  
+  
+  </ul>
+</div>
+
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-make_attribute_reading_writing_options">::make_attribute_reading_writing_options</a>
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-c-validate_attribute_options">::validate_attribute_options</a>
+    
+    <li ><a href="#method-i-26">#&amp;</a>
+    
+    <li ><a href="#method-i-3D-3D">#==</a>
+    
+    <li ><a href="#method-i-all_methods_specified-3F">#all_methods_specified?</a>
+    
+    <li ><a href="#method-i-and">#and</a>
+    
+    <li ><a href="#method-i-any_type_related_options_given-3F">#any_type_related_options_given?</a>
+    
+    <li ><a href="#method-i-empty-3F">#empty?</a>
+    
+    <li ><a href="#method-i-eql-3F">#eql?</a>
+    
+    <li ><a href="#method-i-finish_specification_initialization">#finish_specification_initialization</a>
+    
+    <li ><a href="#method-i-init_methods_specification">#init_methods_specification</a>
+    
+    <li ><a href="#method-i-inspect">#inspect</a>
+    
+    <li ><a href="#method-i-intersection">#intersection</a>
+    
+    <li ><a href="#method-i-match_all_methods">#match_all_methods</a>
+    
+    <li ><a href="#method-i-no_attributes_specified-3F">#no_attributes_specified?</a>
+    
+    <li ><a href="#method-i-no_methods_specified-3F">#no_methods_specified?</a>
+    
+    <li ><a href="#method-i-or">#or</a>
+    
+    <li ><a href="#method-i-to_s">#to_s</a>
+    
+    <li ><a href="#method-i-union">#union</a>
+    
+    <li ><a href="#method-i-7C">#|</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Aquarium::Aspects::Pointcut">
+  <h1 id="class-Aquarium::Aspects::Pointcut" class="class">
+    class Aquarium::Aspects::Pointcut
+  </h1>
+
+  <section class="description">
+    
+<h2 id="class-Aquarium::Aspects::Pointcut-label-Pointcut"><a href="Pointcut.html"><code>Pointcut</code></a><span><a href="#class-Aquarium::Aspects::Pointcut-label-Pointcut">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Pointcuts are queries on JoinPoints combined with binding of context data to that will be useful during advice execution. The <a href="Pointcut.html"><code>Pointcut</code></a> locates the join points that match the input criteria, remembering the found join points as well as the the criteria that yielded no matches (mostly useful for debugging <a href="Pointcut.html"><code>Pointcut</code></a> definitions)</p>
+
+<h2 id="class-Aquarium::Aspects::Pointcut-label-Pointcut+-28composition-29"><a href="Pointcut.html"><code>Pointcut</code></a> (composition)<span><a href="#class-Aquarium::Aspects::Pointcut-label-Pointcut+-28composition-29">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Since Pointcuts are queries, they can be composed, <em>i.e.,</em> unions and intersections of them can be computed, yielding new Pointcuts.</p>
+
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+      
+        <dt id="ATTRIBUTE_OPTIONS_VALUES">ATTRIBUTE_OPTIONS_VALUES
+        
+        <dd>
+        
+      
+        <dt id="CANONICAL_OPTIONS">CANONICAL_OPTIONS
+        
+        <dd>
+        
+      
+        <dt id="POINTCUT_CANONICAL_OPTIONS">POINTCUT_CANONICAL_OPTIONS
+        
+        <dd>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-candidate_join_points" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">candidate_join_points</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-candidate_objects" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">candidate_objects</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-candidate_types" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">candidate_types</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-candidate_types_excluded" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">candidate_types_excluded</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-join_points_matched" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">join_points_matched</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-join_points_not_matched" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">join_points_not_matched</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-specification" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">specification</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-make_attribute_reading_writing_options" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">make_attribute_reading_writing_options</span><span
+            class="method-args">(options_hash)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="make_attribute_reading_writing_options-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/pointcut.rb</span>
+<span class="line-num">250</span> <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">make_attribute_reading_writing_options</span> <span class="ruby-identifier">options_hash</span>
+<span class="line-num">251</span>   <span class="ruby-identifier">result</span> = {}
+<span class="line-num">252</span>   [<span class="ruby-value">:writing</span>, <span class="ruby-value">:changing</span>, <span class="ruby-value">:reading</span>].<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">attr_key</span><span class="ruby-operator">|</span>
+<span class="line-num">253</span>     <span class="ruby-keyword">next</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">options_hash</span>[<span class="ruby-identifier">attr_key</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">options_hash</span>[<span class="ruby-identifier">attr_key</span>].<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">empty?</span>
+<span class="line-num">254</span>     <span class="ruby-identifier">result</span>[<span class="ruby-value">:attributes</span>] <span class="ruby-operator">||=</span> <span class="ruby-constant">Set</span>.<span class="ruby-identifier">new</span>([])
+<span class="line-num">255</span>     <span class="ruby-identifier">result</span>[<span class="ruby-value">:attribute_options</span>] <span class="ruby-operator">||=</span> <span class="ruby-constant">Set</span>.<span class="ruby-identifier">new</span>([])
+<span class="line-num">256</span>     <span class="ruby-identifier">result</span>[<span class="ruby-value">:attributes</span>].<span class="ruby-identifier">merge</span>(<span class="ruby-constant">Aquarium</span><span class="ruby-operator">::</span><span class="ruby-constant">Utils</span><span class="ruby-operator">::</span><span class="ruby-constant">ArrayUtils</span>.<span class="ruby-identifier">make_array</span>(<span class="ruby-identifier">options_hash</span>[<span class="ruby-identifier">attr_key</span>]))
+<span class="line-num">257</span>     <span class="ruby-identifier">attr_opt</span> = <span class="ruby-identifier">attr_key</span> <span class="ruby-operator">==</span> <span class="ruby-value">:reading</span> <span class="ruby-operator">?</span> <span class="ruby-value">:readers</span> <span class="ruby-operator">:</span> <span class="ruby-value">:writers</span>
+<span class="line-num">258</span>     <span class="ruby-identifier">result</span>[<span class="ruby-value">:attribute_options</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">attr_opt</span>
+<span class="line-num">259</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">260</span>   <span class="ruby-identifier">result</span>
+<span class="line-num">261</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(options = {})</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Construct a <a href="Pointcut.html"><code>Pointcut</code></a> for methods in types or objects.</p>
+
+<pre>Pointcut.new :join_points =&gt; [...] | :type{s} =&gt; [...] | :object{s} =&gt; [...]
+   {, :method{s} =&gt; [], :method_options =&gt; [...],
+   :attribute{s} =&gt; [...], :attribute_options[...]}</pre>
+
+<p>where the “{}” indicate optional elements. Most of the arguments have many synonyms, shown below, to promote an English-like DSL.</p>
+
+<p>The options include the following.</p>
+
+<h4 id="method-c-new-label-Join+Points">Join Points<span><a href="#method-c-new-label-Join+Points">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>Specify one or an array of join_points.</p>
+<ul><li>
+<p><code>:join_points =&gt; join_point || [join_point_list]</code></p>
+</li><li>
+<p><code>:join_point  =&gt; join_point || [join_point_list]</code></p>
+</li><li>
+<p><code>:for_join_points =&gt; join_point || [join_point_list]</code></p>
+</li><li>
+<p><code>:for_join_point  =&gt; join_point || [join_point_list]</code></p>
+</li><li>
+<p><code>:on_join_points =&gt; join_point || [join_point_list]</code></p>
+</li><li>
+<p><code>:on_join_point  =&gt; join_point || [join_point_list]</code></p>
+</li><li>
+<p><code>:within_join_points =&gt; join_point || [join_point_list]</code></p>
+</li><li>
+<p><code>:within_join_point  =&gt; join_point || [join_point_list]</code></p>
+</li></ul>
+
+<h5 id="method-c-new-label-Types">Types<span><a href="#method-c-new-label-Types">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<p>Specify a type, type name, type name regular expression or an array of the same. (Mixed is allowed.)</p>
+<ul><li>
+<p><code>:types =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:type  =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:for_types =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:for_type  =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:on_types =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:on_type  =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:within_types =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:within_type  =&gt; type || [type_list]</code></p>
+</li></ul>
+
+<h5 id="method-c-new-label-Types+and+Ancestors+or+Descendents">Types and Ancestors or Descendents<span><a href="#method-c-new-label-Types+and+Ancestors+or+Descendents">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<p>Specify a type, type name, type name regular expression or an array of the same. (Mixed is allowed.) The ancestors or descendents will also be found. To find <em>both</em> ancestors and descendents, use both options.</p>
+<ul><li>
+<p><code>:types_and_descendents =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:type_and_descendents  =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:types_and_ancestors   =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:type_and_ancestors    =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:for_types_and_ancestors   =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:for_type_and_ancestors    =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:on_types_and_descendents =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:on_type_and_descendents  =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:on_types_and_ancestors   =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:on_type_and_ancestors    =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:within_types_and_descendents =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:within_type_and_descendents  =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:within_types_and_ancestors   =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:within_type_and_ancestors    =&gt; type || [type_list]</code></p>
+</li></ul>
+
+<h5 id="method-c-new-label-Types+and+Nested+Types">Types and Nested Types<span><a href="#method-c-new-label-Types+and+Nested+Types">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<p>Specify a type, type name, type name regular expression or an array of the same. (Mixed is allowed.) The nested (enclosed) types will also be found.</p>
+<ul><li>
+<p><code>:types_and_nested_types =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:type_and_nested_types  =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:types_and_nested =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:type_and_nested  =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:for_types_and_nested_types =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:for_type_and_nested_types  =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:for_types_and_nested =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:for_type_and_nested  =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:on_types_and_nested_types =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:on_type_and_nested_types  =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:on_types_and_nested =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:on_type_and_nested  =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:within_types_and_nested_types =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:within_type_and_nested_types  =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:within_types_and_nested =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:within_type_and_nested  =&gt; type || [type_list]</code></p>
+</li></ul>
+
+<h5 id="method-c-new-label-Objects">Objects<span><a href="#method-c-new-label-Objects">&para;</a> <a href="#top">&uarr;</a></span></h5>
+<ul><li>
+<p><code>:objects =&gt; object || [object_list]</code></p>
+</li><li>
+<p><code>:object  =&gt; object || [object_list]</code></p>
+</li><li>
+<p><code>:for_objects =&gt; object || [object_list]</code></p>
+</li><li>
+<p><code>:for_object  =&gt; object || [object_list]</code></p>
+</li><li>
+<p><code>:on_objects =&gt; object || [object_list]</code></p>
+</li><li>
+<p><code>:on_object  =&gt; object || [object_list]</code></p>
+</li><li>
+<p><code>:within_objects =&gt; object || [object_list]</code></p>
+</li><li>
+<p><code>:within_object  =&gt; object || [object_list]</code></p>
+</li></ul>
+
+<h5 id="method-c-new-label-22Default-22+Objects">“Default” Objects<span><a href="#method-c-new-label-22Default-22+Objects">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<p>An “internal” flag used by Aspect::DSL#pointcut. When no object or type is specified  explicitly, the value of :default_objects will be used, if defined. Aspect::DSL#pointcut sets the value to <code>self</code>, so the user doesn&#39;t have to specify a type or object in the contexts where that would be useful, <em>e.g.,</em> pointcuts defined within a type for join points within itself. <strong>WARNING</strong>: This flag is subject to change, so don&#39;t use it explicitly!</p>
+<ul><li>
+<p><code>:default_objects =&gt; object || [object_list]</code></p>
+</li><li>
+<p><code>:default_object =&gt; object || [object_list]</code></p>
+</li></ul>
+
+<h5 id="method-c-new-label-Methods">Methods<span><a href="#method-c-new-label-Methods">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<p>A method name, name regular expession or an array of the same.  By default, if neither <code>:methods</code> nor <code>:attributes</code> are specified, all public instance methods will be found, with the method option <code>:exclude_ancestor_methods</code> implied, unless explicit method  options are given.</p>
+<ul><li>
+<p><code>:methods =&gt; method || [method_list]</code></p>
+</li><li>
+<p><code>:method  =&gt; method || [method_list]</code></p>
+</li><li>
+<p><code>:within_methods =&gt; method || [method_list]</code></p>
+</li><li>
+<p><code>:within_method  =&gt; method || [method_list]</code></p>
+</li><li>
+<p><code>:calling  =&gt; method || [method_list]</code></p>
+</li><li>
+<p><code>:calls_to  =&gt; method || [method_list]</code></p>
+</li><li>
+<p><code>:invoking  =&gt; method || [method_list]</code></p>
+</li><li>
+<p><code>:invocations_of  =&gt; method || [method_list]</code></p>
+</li><li>
+<p><code>:sending_message_to  =&gt; method || [method_list]</code></p>
+</li></ul>
+
+<h5 id="method-c-new-label-Method+Options">Method Options<span><a href="#method-c-new-label-Method+Options">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<p>One or more options supported by <a href="../Finders/MethodFinder.html"><code>Aquarium::Finders::MethodFinder</code></a>. The <code>:exclude_ancestor_methods</code> option is most useful.</p>
+<ul><li>
+<p><code>:method_options =&gt; [options]</code></p>
+</li></ul>
+
+<h5 id="method-c-new-label-Attributes">Attributes<span><a href="#method-c-new-label-Attributes">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<p>An attribute name, regular expession or array of the same.  <strong>WARNING</strong> This is syntactic sugar for the corresponding attribute readers and/or writers methods. The actual attribute accesses are not advised, which can lead to unexpected behavior. A goal before V1.0 is to support actual attribute accesses, if possible.</p>
+<ul><li>
+<p><code>:attributes =&gt; attribute || [attribute_list]</code></p>
+</li><li>
+<p><code>:attribute  =&gt; attribute || [attribute_list]</code></p>
+</li><li>
+<p><code>:reading   =&gt; attribute || [attribute_list]</code></p>
+</li><li>
+<p><code>:writing   =&gt; attribute || [attribute_list]</code></p>
+</li><li>
+<p><code>:changing =&gt; attribute || [attribute_list]</code></p>
+</li><li>
+<p><code>:accessing =&gt; attribute || [attribute_list]</code></p>
+</li></ul>
+
+<p>If <code>:reading</code> is specified, just attribute readers are matched. If <code>:writing</code> is specified, just attribute writers are matched. If <code>:accessing</code> is specified, both readers and writers are matched. Any matches will be joined with the matched <code>:methods.</code>.</p>
+
+<h5 id="method-c-new-label-Attribute+Options">Attribute Options<span><a href="#method-c-new-label-Attribute+Options">&para;</a> <a href="#top">&uarr;</a></span></h5>
+
+<p>One or more of <code>:readers</code>, <code>:reader</code> (synonymous),  <code>:writers</code>, and/or <code>:writer</code> (synonymous). By default, both readers and writers are matched.  <code>:reading =&gt; ...</code> is synonymous with <code>:attributes =&gt; ...,  :attribute_options =&gt; [:readers]</code>. <code>:writing =&gt; ...</code> and <code>:changing =&gt; ...</code> are synonymous with <code>:attributes =&gt; ...,  :attribute_options =&gt; [:writers]</code>. <code>:accessing =&gt; ...</code> is synonymous with <code>:attributes =&gt; ...</code>.</p>
+<ul><li>
+<p><code>:attribute_options =&gt; [options]</code></p>
+</li></ul>
+
+<h4 id="method-c-new-label-Exclusion+Options">Exclusion Options<span><a href="#method-c-new-label-Exclusion+Options">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>Exclude the specified “things” from the matched join points. If pointcuts are excluded, they should be subsets of the matched pointcuts. Otherwise, the resulting pointcut will be empty!</p>
+<ul><li>
+<p><code>:exclude_pointcuts   =&gt; pc || [pc_list]</code></p>
+</li><li>
+<p><code>:exclude_pointcut    =&gt; pc || [pc_list]</code></p>
+</li><li>
+<p><code>:exclude_join_points =&gt; jp || [jp_list]</code></p>
+</li><li>
+<p><code>:exclude_join_point  =&gt; jp || [jp_list]</code></p>
+</li><li>
+<p><code>:exclude_types       =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:exclude_types       =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:exclude_type        =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:exclude_types_and_descendents =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:exclude_type_and_descendents  =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:exclude_types_and_ancestors   =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:exclude_type_and_ancestors    =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:exclude_types_and_nested_types =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:exclude_type_and_nested_types  =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:exclude_types_and_nested       =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:exclude_type_and_nested        =&gt; type || [type_list]</code></p>
+</li><li>
+<p><code>:exclude_objects     =&gt; object || [object_list]</code></p>
+</li><li>
+<p><code>:exclude_object      =&gt; object || [object_list]</code></p>
+</li><li>
+<p><code>:exclude_methods     =&gt; method || [method_list]</code></p>
+</li><li>
+<p><code>:exclude_method      =&gt; method || [method_list]</code></p>
+</li><li>
+<p><code>:exclude_attributes  =&gt; attribute || [attribute_list]</code></p>
+</li><li>
+<p><code>:exclude_attribute   =&gt; attribute || [attribute_list]</code></p>
+</li></ul>
+
+<p>The <code>exclude_</code> prefix works with the synonyms of the options shown.</p>
+
+<p><a href="Pointcut.html#method-c-new"><code>Pointcut.new</code></a> also accepts all the “universal” options documented in <a href="../Utils/OptionsUtils.html"><code>Aquarium::Utils::OptionsUtils</code></a>.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/pointcut.rb</span>
+<span class="line-num">191</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span> <span class="ruby-identifier">options</span> = {} 
+<span class="line-num">192</span>   <span class="ruby-identifier">init_specification</span> <span class="ruby-identifier">options</span>, <span class="ruby-constant">CANONICAL_OPTIONS</span>, (<span class="ruby-constant">ATTRIBUTE_OPTIONS_VALUES</span> <span class="ruby-operator">+</span> <span class="ruby-constant">Advice</span><span class="ruby-operator">::</span><span class="ruby-constant">KINDS_IN_PRIORITY_ORDER</span>) <span class="ruby-keyword">do</span> 
+<span class="line-num">193</span>     <span class="ruby-identifier">finish_specification_initialization</span>
+<span class="line-num">194</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">195</span>   <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">noop</span>
+<span class="line-num">196</span>   <span class="ruby-identifier">init_candidate_types</span> 
+<span class="line-num">197</span>   <span class="ruby-identifier">init_candidate_objects</span>
+<span class="line-num">198</span>   <span class="ruby-identifier">init_candidate_join_points</span>
+<span class="line-num">199</span>   <span class="ruby-identifier">init_join_points</span>
+<span class="line-num">200</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-validate_attribute_options" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">validate_attribute_options</span><span
+            class="method-args">(spec_hash, options_hash)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="validate_attribute_options-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/pointcut.rb</span>
+<span class="line-num">280</span> <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">validate_attribute_options</span> <span class="ruby-identifier">spec_hash</span>, <span class="ruby-identifier">options_hash</span>
+<span class="line-num">281</span>   <span class="ruby-identifier">raise</span> <span class="ruby-constant">Aquarium</span><span class="ruby-operator">::</span><span class="ruby-constant">Utils</span><span class="ruby-operator">::</span><span class="ruby-constant">InvalidOptions</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;:all is not yet supported for :attributes.&quot;</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">spec_hash</span>[<span class="ruby-value">:attributes</span>] <span class="ruby-operator">==</span> <span class="ruby-constant">Set</span>.<span class="ruby-identifier">new</span>([<span class="ruby-value">:all</span>])
+<span class="line-num">282</span>   <span class="ruby-keyword">if</span> <span class="ruby-identifier">options_hash</span>[<span class="ruby-value">:reading</span>] <span class="ruby-keyword">and</span> (<span class="ruby-identifier">options_hash</span>[<span class="ruby-value">:writing</span>] <span class="ruby-keyword">or</span> <span class="ruby-identifier">options_hash</span>[<span class="ruby-value">:changing</span>])
+<span class="line-num">283</span>     <span class="ruby-keyword">unless</span> <span class="ruby-identifier">options_hash</span>[<span class="ruby-value">:reading</span>].<span class="ruby-identifier">eql?</span>(<span class="ruby-identifier">options_hash</span>[<span class="ruby-value">:writing</span>]) <span class="ruby-keyword">or</span> <span class="ruby-identifier">options_hash</span>[<span class="ruby-value">:reading</span>].<span class="ruby-identifier">eql?</span>(<span class="ruby-identifier">options_hash</span>[<span class="ruby-value">:changing</span>])
+<span class="line-num">284</span>       <span class="ruby-identifier">raise</span> <span class="ruby-constant">Aquarium</span><span class="ruby-operator">::</span><span class="ruby-constant">Utils</span><span class="ruby-operator">::</span><span class="ruby-constant">InvalidOptions</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;:reading and :writing/:changing can only be used together if they refer to the same set of attributes.&quot;</span>) 
+<span class="line-num">285</span>     <span class="ruby-keyword">end</span>
+<span class="line-num">286</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">287</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-26" class="method-detail method-alias">
+        
+        <div class="method-heading">
+          <span class="method-name">&amp;</span><span
+            class="method-args">(pointcut2)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="Pointcut.html#method-i-and">and</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="method-i-3D-3D" class="method-detail method-alias">
+        
+        <div class="method-heading">
+          <span class="method-name">==</span><span
+            class="method-args">(other)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="Pointcut.html#method-i-eql-3F">eql?</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="method-i-and" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">and</span><span
+            class="method-args">(pointcut2)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="and-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/aspects/pointcut_composition.rb</span>
+<span class="line-num">24</span> <span class="ruby-keyword">def</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier ruby-title">pointcut2</span>
+<span class="line-num">25</span>   <span class="ruby-identifier">result</span> = <span class="ruby-constant">Aquarium</span><span class="ruby-operator">::</span><span class="ruby-constant">Aspects</span><span class="ruby-operator">::</span><span class="ruby-constant">Pointcut</span>.<span class="ruby-identifier">new</span>
+<span class="line-num">26</span>   <span class="ruby-identifier">result</span>.<span class="ruby-identifier">specification</span>           = <span class="ruby-identifier">specification</span>.<span class="ruby-identifier">and</span>(<span class="ruby-identifier">pointcut2</span>.<span class="ruby-identifier">specification</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">value1</span>, <span class="ruby-identifier">value2</span><span class="ruby-operator">|</span> 
+<span class="line-num">27</span>     <span class="ruby-identifier">value1</span> <span class="ruby-operator">&amp;</span> <span class="ruby-identifier">value2</span>
+<span class="line-num">28</span>     <span class="ruby-comment"># value1.intersection_using_eql_comparison value2</span>
+<span class="line-num">29</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">30</span>   <span class="ruby-identifier">result</span>.<span class="ruby-identifier">join_points_matched</span>     = <span class="ruby-identifier">join_points_matched</span>.<span class="ruby-identifier">intersection_using_eql_comparison</span>      <span class="ruby-identifier">pointcut2</span>.<span class="ruby-identifier">join_points_matched</span>
+<span class="line-num">31</span>   <span class="ruby-identifier">result</span>.<span class="ruby-identifier">join_points_not_matched</span> = <span class="ruby-identifier">join_points_not_matched</span>.<span class="ruby-identifier">intersection_using_eql_comparison</span>  <span class="ruby-identifier">pointcut2</span>.<span class="ruby-identifier">join_points_not_matched</span>
+<span class="line-num">32</span>   <span class="ruby-identifier">result</span>.<span class="ruby-identifier">candidate_types</span>         = <span class="ruby-identifier">candidate_types</span>.<span class="ruby-identifier">intersection</span>          <span class="ruby-identifier">pointcut2</span>.<span class="ruby-identifier">candidate_types</span>
+<span class="line-num">33</span>   <span class="ruby-identifier">result</span>.<span class="ruby-identifier">candidate_objects</span>       = <span class="ruby-identifier">candidate_objects</span>.<span class="ruby-identifier">intersection</span>        <span class="ruby-identifier">pointcut2</span>.<span class="ruby-identifier">candidate_objects</span>
+<span class="line-num">34</span>   <span class="ruby-identifier">result</span>
+<span class="line-num">35</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Pointcut.html#method-i-intersection">intersection</a>, <a href="Pointcut.html#method-i-26">&amp;</a>
+        </div>
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-any_type_related_options_given-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">any_type_related_options_given?</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="any_type_related_options_given-3F-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/pointcut.rb</span>
+<span class="line-num">276</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">any_type_related_options_given?</span>
+<span class="line-num">277</span>   <span class="ruby-identifier">objects_given?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">join_points_given?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">types_given?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">types_and_descendents_given?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">types_and_ancestors_given?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">types_and_nested_types_given?</span>
+<span class="line-num">278</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-empty-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">empty?</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="empty-3F-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/pointcut.rb</span>
+<span class="line-num">220</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">empty?</span>
+<span class="line-num">221</span>   <span class="ruby-keyword">return</span> <span class="ruby-identifier">join_points_matched</span>.<span class="ruby-identifier">empty?</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">join_points_not_matched</span>.<span class="ruby-identifier">empty?</span>
+<span class="line-num">222</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-eql-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">eql?</span><span
+            class="method-args">(other)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Two Considered equivalent only if the same join points matched and not_matched sets are equal,  the specifications are equal, and the candidate types and candidate objects are equal. if you care only about the matched join points, then just compare <a href="Pointcut.html#attribute-i-join_points_matched"><code>join_points_matched</code></a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="eql-3F-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/pointcut.rb</span>
+<span class="line-num">207</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">eql?</span> <span class="ruby-identifier">other</span>
+<span class="line-num">208</span>   <span class="ruby-identifier">object_id</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">object_id</span> <span class="ruby-operator">||</span> 
+<span class="line-num">209</span>   (<span class="ruby-keyword">self</span>.<span class="ruby-identifier">class</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">class</span> <span class="ruby-operator">&amp;&amp;</span>
+<span class="line-num">210</span>    <span class="ruby-identifier">specification</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">specification</span> <span class="ruby-operator">&amp;&amp;</span> 
+<span class="line-num">211</span>    <span class="ruby-identifier">candidate_types</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">candidate_types</span> <span class="ruby-operator">&amp;&amp;</span> 
+<span class="line-num">212</span>    <span class="ruby-identifier">candidate_types_excluded</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">candidate_types_excluded</span> <span class="ruby-operator">&amp;&amp;</span> 
+<span class="line-num">213</span>    <span class="ruby-identifier">candidate_objects</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">candidate_objects</span> <span class="ruby-operator">&amp;&amp;</span> 
+<span class="line-num">214</span>    <span class="ruby-identifier">join_points_matched</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">join_points_matched</span> <span class="ruby-operator">&amp;&amp;</span>
+<span class="line-num">215</span>    <span class="ruby-identifier">join_points_not_matched</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">join_points_not_matched</span>)
+<span class="line-num">216</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Pointcut.html#method-i-3D-3D">==</a>
+        </div>
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-finish_specification_initialization" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">finish_specification_initialization</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="finish_specification_initialization-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/pointcut.rb</span>
+<span class="line-num">263</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">finish_specification_initialization</span>
+<span class="line-num">264</span>   <span class="ruby-ivar">@specification</span>.<span class="ruby-identifier">merge!</span> <span class="ruby-constant">Pointcut</span>.<span class="ruby-identifier">make_attribute_reading_writing_options</span>(<span class="ruby-ivar">@original_options</span>)
+<span class="line-num">265</span>   <span class="ruby-comment"># Map the method options to their canonical values:</span>
+<span class="line-num">266</span>   <span class="ruby-ivar">@specification</span>[<span class="ruby-value">:method_options</span>] = <span class="ruby-constant">Aquarium</span><span class="ruby-operator">::</span><span class="ruby-constant">Finders</span><span class="ruby-operator">::</span><span class="ruby-constant">MethodFinder</span>.<span class="ruby-identifier">init_method_options</span>(<span class="ruby-ivar">@specification</span>[<span class="ruby-value">:method_options</span>])
+<span class="line-num">267</span>   <span class="ruby-identifier">use_default_objects_if_defined</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">any_type_related_options_given?</span>
+<span class="line-num">268</span>   <span class="ruby-constant">Pointcut</span><span class="ruby-operator">::</span><span class="ruby-identifier">validate_attribute_options</span> <span class="ruby-ivar">@specification</span>, <span class="ruby-ivar">@original_options</span>
+<span class="line-num">269</span>   <span class="ruby-identifier">init_methods_specification</span>
+<span class="line-num">270</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-init_methods_specification" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">init_methods_specification</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="init_methods_specification-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/pointcut.rb</span>
+<span class="line-num">272</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">init_methods_specification</span>
+<span class="line-num">273</span>   <span class="ruby-identifier">match_all_methods</span> <span class="ruby-keyword">if</span> ((<span class="ruby-identifier">no_methods_specified?</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">no_attributes_specified?</span>) <span class="ruby-keyword">or</span> <span class="ruby-identifier">all_methods_specified?</span>)
+<span class="line-num">274</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-inspect" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">inspect</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="inspect-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/pointcut.rb</span>
+<span class="line-num">224</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">inspect</span>
+<span class="line-num">225</span>   <span class="ruby-node">&quot;Pointcut: {specification: #{specification.inspect}, candidate_types: #{candidate_types.inspect}, candidate_types_excluded: #{candidate_types_excluded.inspect}, candidate_objects: #{candidate_objects.inspect}, join_points_matched: #{join_points_matched.inspect}, join_points_not_matched: #{join_points_not_matched.inspect}}&quot;</span>
+<span class="line-num">226</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Pointcut.html#method-i-to_s">to_s</a>
+        </div>
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-intersection" class="method-detail method-alias">
+        
+        <div class="method-heading">
+          <span class="method-name">intersection</span><span
+            class="method-args">(pointcut2)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="Pointcut.html#method-i-and">and</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="method-i-or" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">or</span><span
+            class="method-args">(pointcut2)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="or-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/aspects/pointcut_composition.rb</span>
+<span class="line-num"> 9</span> <span class="ruby-keyword">def</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier ruby-title">pointcut2</span>
+<span class="line-num">10</span>   <span class="ruby-identifier">result</span> = <span class="ruby-constant">Aquarium</span><span class="ruby-operator">::</span><span class="ruby-constant">Aspects</span><span class="ruby-operator">::</span><span class="ruby-constant">Pointcut</span>.<span class="ruby-identifier">new</span>
+<span class="line-num">11</span>   <span class="ruby-identifier">result</span>.<span class="ruby-identifier">specification</span>           = <span class="ruby-identifier">specification</span>.<span class="ruby-identifier">or</span>(<span class="ruby-identifier">pointcut2</span>.<span class="ruby-identifier">specification</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">value1</span>, <span class="ruby-identifier">value2</span><span class="ruby-operator">|</span> 
+<span class="line-num">12</span>     <span class="ruby-identifier">value1</span>.<span class="ruby-identifier">union_using_eql_comparison</span> <span class="ruby-identifier">value2</span>
+<span class="line-num">13</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">14</span>   <span class="ruby-identifier">result</span>.<span class="ruby-identifier">join_points_matched</span>     = <span class="ruby-identifier">join_points_matched</span>.<span class="ruby-identifier">union_using_eql_comparison</span>     <span class="ruby-identifier">pointcut2</span>.<span class="ruby-identifier">join_points_matched</span>
+<span class="line-num">15</span>   <span class="ruby-identifier">result</span>.<span class="ruby-identifier">join_points_not_matched</span> = <span class="ruby-identifier">join_points_not_matched</span>.<span class="ruby-identifier">union_using_eql_comparison</span> <span class="ruby-identifier">pointcut2</span>.<span class="ruby-identifier">join_points_not_matched</span>
+<span class="line-num">16</span>   <span class="ruby-identifier">result</span>.<span class="ruby-identifier">candidate_types</span>         = <span class="ruby-identifier">candidate_types</span>.<span class="ruby-identifier">union</span>         <span class="ruby-identifier">pointcut2</span>.<span class="ruby-identifier">candidate_types</span>
+<span class="line-num">17</span>   <span class="ruby-identifier">result</span>.<span class="ruby-identifier">candidate_objects</span>       = <span class="ruby-identifier">candidate_objects</span>.<span class="ruby-identifier">union</span>       <span class="ruby-identifier">pointcut2</span>.<span class="ruby-identifier">candidate_objects</span>
+<span class="line-num">18</span>   <span class="ruby-identifier">result</span>
+<span class="line-num">19</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Pointcut.html#method-i-union">union</a>, <a href="Pointcut.html#method-i-7C">|</a>
+        </div>
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-to_s" class="method-detail method-alias">
+        
+        <div class="method-heading">
+          <span class="method-name">to_s</span><span
+            class="method-args">()</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="Pointcut.html#method-i-inspect">inspect</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="method-i-union" class="method-detail method-alias">
+        
+        <div class="method-heading">
+          <span class="method-name">union</span><span
+            class="method-args">(pointcut2)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="Pointcut.html#method-i-or">or</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="method-i-7C" class="method-detail method-alias">
+        
+        <div class="method-heading">
+          <span class="method-name">|</span><span
+            class="method-args">(pointcut2)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="Pointcut.html#method-i-or">or</a>
+        </div>
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="protected-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Protected Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-all_methods_specified-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">all_methods_specified?</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="all_methods_specified-3F-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/pointcut.rb</span>
+<span class="line-num">301</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">all_methods_specified?</span>
+<span class="line-num">302</span>   <span class="ruby-identifier">methods_spec</span> = <span class="ruby-ivar">@specification</span>[<span class="ruby-value">:methods</span>].<span class="ruby-identifier">to_a</span>
+<span class="line-num">303</span>   <span class="ruby-identifier">methods_spec</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:all</span>) <span class="ruby-keyword">or</span> <span class="ruby-identifier">methods_spec</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:all_methods</span>)
+<span class="line-num">304</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-match_all_methods" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">match_all_methods</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="match_all_methods-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/pointcut.rb</span>
+<span class="line-num">293</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">match_all_methods</span>
+<span class="line-num">294</span>   <span class="ruby-ivar">@specification</span>[<span class="ruby-value">:methods</span>] = <span class="ruby-constant">Set</span>.<span class="ruby-identifier">new</span>([<span class="ruby-value">:all</span>])
+<span class="line-num">295</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-no_attributes_specified-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">no_attributes_specified?</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="no_attributes_specified-3F-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/pointcut.rb</span>
+<span class="line-num">306</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">no_attributes_specified?</span>
+<span class="line-num">307</span>   <span class="ruby-ivar">@specification</span>[<span class="ruby-value">:attributes</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-keyword">or</span> <span class="ruby-ivar">@specification</span>[<span class="ruby-value">:attributes</span>].<span class="ruby-identifier">empty?</span>
+<span class="line-num">308</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-no_methods_specified-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">no_methods_specified?</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="no_methods_specified-3F-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/pointcut.rb</span>
+<span class="line-num">297</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">no_methods_specified?</span>
+<span class="line-num">298</span>   <span class="ruby-ivar">@specification</span>[<span class="ruby-value">:methods</span>].<span class="ruby-identifier">nil?</span> <span class="ruby-keyword">or</span> <span class="ruby-ivar">@specification</span>[<span class="ruby-value">:methods</span>].<span class="ruby-identifier">empty?</span>
+<span class="line-num">299</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="author" content="Dean Wampler">
+      <meta name="description" content="Aquarium, JRuby, Aspect Oriented Programming for Ruby"/>
+      <meta name="keywords"
+          content="aspect-oriented programming, aspect-oriented software development, object-oriented programming, ruby, aop, aosd, software">
+  	<meta name="copyright" content="Copyright 2007-2019 Aquarium Development Team, All Rights Reserved">
+    <meta name="generator" content="webgen - http://webgen.rubyforge.org" />
+    <link rel="stylesheet" href="default.css" type="text/css" media="screen,projection" />
+    <title>JRuby</title>
+  </head>
+
+  <body>
+    <div id="container" >
+
+      <div id="header">
+        <h1><a href="index.html">Aquarium</a></h1>
+        <h2>Aspect-Oriented Programming for Ruby</h2>
+      </div>
+
+      <div id="content">
+        <h2 id="jruby-support">JRuby Support</h2>
+
+<p>Aquarium runs under JRuby. The <code>rake website</code> target runs all the specs under JRuby to ensure that they work as expected.</p>
+
+<p>In addition, JRuby can now advise Java types (with some limitations…)!</p>
+
+<h3 id="advising-java-types-in-jruby">Advising Java Types in JRuby</h3>
+
+<p>While you might normally turn to <a href="http://aspectj.org">AspectJ</a> or the <a href="http://springframework.org/">Spring Framework</a> to advise Java classes, if you are using JRuby, you can now use Aquarium! The advantages and disadvantages of Aquarium compared to AspectJ are listed in the <a href="https://github.com/deanwampler/Aquarium">README</a>. Briefly, Aquarium lets you add <em>and</em> remove <span class="keyword">advice</span> dynamically at runtime, you can advise JDK types easily, and Aquarium lets you advise individual objects. The disadvantages of Aquarium are that it will be slower than using AspectJ, Aquarium’s <span class="keyword">pointcut language</span> is not as full-featured as AspectJ’s, and there are some bugs and limitations in this initial support (V0.4.0).</p>
+
+<p>Here is an example of adding tracing calls to a method <code>doIt</code> in all classes that implement the Java interface <code>com.foo.Work</code>.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#036;font-weight:bold">Aspect</span>.new <span style="color:#A60">:before</span>, <span style="color:#A60">:calls_to</span> =&gt; [<span style="color:#A60">:doIt</span>, <span style="color:#A60">:do_it</span>],
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>    <span style="color:#A60">:in_types_and_descendents</span> =&gt; <span style="color:#036;font-weight:bold">Java</span>::com.foo.Work <span style="color:#080;font-weight:bold">do</span> |jp, obj, *args|
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>  names = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>jp.target_type.name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">#</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>jp.method_name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>  log <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Entering: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>names<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">: object = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>object<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">, args = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span><span style="color:#080;font-weight:bold">end</span>
+</pre></div>
+</div>
+
+<p>There are two important points to notice in this example:</p>
+
+<ul>
+  <li>You can choose to refer to the method as <code>do_it</code> (Ruby style) or <code>doIt</code>, but these variants are effectively treated as <em>separate</em> methods; advice on one will not affect invocations of the other. So, if you want to be sure to catch <em>all</em> invocations, use <em>both</em> forms. There is a bug (18326) that happens in certain conditions if you use just the Java naming convention.</li>
+  <li>If the type is an interface, you must use <code>:types_and_descendents</code> (or one of the variants on the word <code>types</code>). Since interfaces don’t have method implementations, you will match no join points unless you use the <code>and_descendents</code> clause. (By default, Aquarium warns you when no join points are matched by an aspect.) However, there is a bug (18325) with this approach if Java types are subtyped in Ruby.</li>
+</ul>
+
+<h3 id="limitations-and-bugs">Limitations and Bugs</h3>
+
+<p>(Here’s the “fine print”…) In this (V0.4.0) release, there are some important limitations and a few bugs (either in Aquarium or JRuby??).</p>
+
+<ul>
+  <li>Aquarium advice on a method in a Java type will only be invoked when the method is called directly from Ruby.</li>
+  <li>To have the advice invoked when the method is called from either Java or Ruby, it is necessary to create a subclass of the Java type in Ruby and an override of the method, which can just call “super”. Note that it will be necessary for instances of this Ruby type to be used throughout, not instances of a Java parent type.</li>
+  <li>BUG #18325: If you have Ruby subclasses of Java types <em>and</em> you advise a Java method in the hierarchy using <code>:types_and_descendents =&gt; MyJavaBaseClassOrInterface</code> <em>and</em> you call unadvise on the aspect, the advice “infrastructure” is not correctly removed from the Ruby types. Workaround: Only advise methods in Ruby subclasses of Java types where the method is explicitly overridden in the Ruby class. (The spec provides examples.)</li>
+  <li>BUG #18326: Normally, you can use either Java- or Ruby-style method names (e.g., <code>doSomething</code> vs. <code>do_something</code>), for Java types. However, if you write an aspect using the Java-style for a method name and a Ruby subclass of the Java type where the method is actually defined (i.e., the Ruby class doesn’t override the method), it appears that the JoinPoint was advised, but the advice is never called. Workaround: Use the Ruby-style name in this scenario.</li>
+</ul>
+
+<p>For more details, see the RSpec examples in the <code>jruby/spec</code> directory.</p>
+
+
+      </div>
+
+      <div id="subcontent">
+        <div class="small box">V0.7.1</strong>
+          <ul>
+            <li><code>gem install aquarium</code></li>
+            <li><code>gem update aquarium</code></li>
+          </ul>
+        </div>
+
+        <h2>Menu</h2>
+        <div id="submenu"><ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html" hreflang="en">Aquarium Website</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="documentation/index.html" hreflang="en">Documentation</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="documentation/API/index.html" hreflang="en">API</a><ul><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/aspects.html" hreflang="en">Aspects</a><ul><li class="webgen-menu-level5 webgen-menu-submenu"><a href="documentation/API/aspects.html#aspects">Aspects</a><ul><li class="webgen-menu-level6"><a href="documentation/API/aspects.html#terminology">Terminology</a></li><li class="webgen-menu-level6"><a href="documentation/API/aspects.html#usage-in-aquarium">Usage in Aquarium</a></li></ul></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/extensions.html" hreflang="en">Extensions</a><ul><li class="webgen-menu-level5"><a href="documentation/API/extensions.html#extensions">Extensions</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/extras.html" hreflang="en">Extras</a><ul><li class="webgen-menu-level5"><a href="documentation/API/extras.html#extras">Extras</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/finders.html" hreflang="en">Finders</a><ul><li class="webgen-menu-level5"><a href="documentation/API/finders.html#finders">Finders</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/index.html" hreflang="en">Aquarium API</a><ul><li class="webgen-menu-level5"><a href="documentation/API/index.html#aquarium-api">Aquarium API</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/join_points_and_pointcuts.html" hreflang="en">Join Points and Pointcuts</a><ul><li class="webgen-menu-level5"><a href="documentation/API/join_points_and_pointcuts.html#join-points-and-pointcuts">Join Points and Pointcuts</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/utils.html" hreflang="en">Utils</a><ul><li class="webgen-menu-level5"><a href="documentation/API/utils.html#utils">Utils</a></li></ul></li></ul></li><li class="webgen-menu-level3 webgen-menu-submenu"><a href="documentation/index.html" hreflang="en">Documentation</a><ul><li class="webgen-menu-level4"><a href="documentation/index.html#documentation">Documentation</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="images/">Images</a><ul><li class="webgen-menu-level3"><a href="images/aquabar1.jpg">Aquabar1</a></li><li class="webgen-menu-level3"><a href="images/bodybg.gif">Bodybg</a></li><li class="webgen-menu-level3"><a href="images/evil_genius.jpg">Evil genius</a></li><li class="webgen-menu-level3"><a href="images/generated_by_webgen.png">Generated by webgen</a></li><li class="webgen-menu-level3"><a href="images/puck_as_god.jpg">Puck as god</a></li><li class="webgen-menu-level3"><a href="images/sidebarbg.gif">Sidebarbg</a></li><li class="webgen-menu-level3"><a href="images/war_room.jpg">War room</a></li><li class="webgen-menu-level3"><a href="images/webgen_logo.png">Webgen logo</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="stylesheets/">Stylesheets</a><ul><li class="webgen-menu-level3"><a href="stylesheets/api.css">Api</a></li><li class="webgen-menu-level3"><a href="stylesheets/coderay-default.css">Coderay default</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="templates/">Templates</a><ul><li class="webgen-menu-level3"><a href="templates/api.template">Api</a></li><li class="webgen-menu-level3"><a href="templates/feed.template">Feed</a></li><li class="webgen-menu-level3"><a href="templates/sitemap.template">Sitemap</a></li><li class="webgen-menu-level3"><a href="templates/tag.template">Tag</a></li><li class="webgen-menu-level3"><a href="templates/tikz.template">Tikz</a></li></ul></li><li class="webgen-menu-level2"><a href="default.template">Default</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="changes.html" hreflang="en">Changes</a><ul><li class="webgen-menu-level3"><a href="changes.html#change-notes">Change Notes</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="community.html" hreflang="en">Community</a><ul><li class="webgen-menu-level3"><a href="community.html#contributing-to-aquarium">Contributing to Aquarium</a></li><li class="webgen-menu-level3"><a href="community.html#mailing-lists">Mailing Lists</a></li><li class="webgen-menu-level3 webgen-menu-submenu"><a href="community.html#bugs-enhancement-requests-etc">Bugs, Enhancement Requests, etc.</a><ul><li class="webgen-menu-level4"><a href="community.html#bugs">Bugs</a></li><li class="webgen-menu-level4"><a href="community.html#feature-requests">Feature Requests</a></li><li class="webgen-menu-level4"><a href="community.html#patches">Patches</a></li></ul></li><li class="webgen-menu-level3"><a href="community.html#the-core-team">The Core Team</a></li><li class="webgen-menu-level3"><a href="community.html#acknowledgements">Acknowledgements</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="examples.html" hreflang="en">Examples</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="examples.html#examples">Examples</a><ul><li class="webgen-menu-level4"><a href="examples.html#tracing-method-calls">Tracing Method Calls</a></li><li class="webgen-menu-level4"><a href="examples.html#enhancing-codemethod095missingcode-without-overriding">“Enhancing” <code>method&#095;missing</code> Without Overriding</a></li><li class="webgen-menu-level4"><a href="examples.html#wrapping-an-exception-rescuing-one-type-and-raising-another">“Wrapping” an Exception: Rescuing one type and raising another</a></li><li class="webgen-menu-level4"><a href="examples.html#hack-to-create-a-reusable-aspect-that-is-defined-when-a-module-is-included-in-another">“Hack” to Create a Reusable Aspect that Is Defined When a Module is Included in Another</a></li><li class="webgen-menu-level4"><a href="examples.html#aspect-design">Aspect Design</a></li><li class="webgen-menu-level4"><a href="examples.html#design-by-contract-153">Design by Contract ™</a></li><li class="webgen-menu-level4"><a href="examples.html#testing-uses-of-aspects">Testing Uses of Aspects</a></li><li class="webgen-menu-level4"><a href="examples.html#mimicking-iintroductionsi-aka-iintertype-declarationsi">Mimicking <i>Introductions</i> (a.k.a. <i>Intertype Declarations</i>)</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="index.html" hreflang="en">Home</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="index.html#overview-of-aquarium">Overview of Aquarium</a><ul><li class="webgen-menu-level4"><a href="index.html#news">News</a></li></ul></li><li class="webgen-menu-level3"><a href="index.html#links">Links</a></li><li class="webgen-menu-level3"><a href="index.html#how-to-use-aquarium">How to Use Aquarium</a></li><li class="webgen-menu-level3"><a href="index.html#start-here">Start Here</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="install.html" hreflang="en">Install/Update</a><ul><li class="webgen-menu-level3"><a href="install.html#first-time-installation">First-Time Installation</a></li><li class="webgen-menu-level3"><a href="install.html#rubygems">RubyGems</a></li><li class="webgen-menu-level3 webgen-menu-submenu"><a href="install.html#notes-on-updating">Notes on Updating</a><ul><li class="webgen-menu-level4"><a href="install.html#updating-to-aquarium-07x">Updating to Aquarium-0.7.X</a></li><li class="webgen-menu-level4"><a href="install.html#updating-to-aquarium-06x">Updating to Aquarium-0.6.X</a></li><li class="webgen-menu-level4"><a href="install.html#notes-on-building-aquarium">Notes on Building Aquarium</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-item-selected"><a href="jruby.html" hreflang="en">JRuby</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="#jruby-support">JRuby Support</a><ul><li class="webgen-menu-level4"><a href="#advising-java-types-in-jruby">Advising Java Types in JRuby</a></li><li class="webgen-menu-level4"><a href="#limitations-and-bugs">Limitations and Bugs</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="license.html" hreflang="en">License</a><ul><li class="webgen-menu-level3"><a href="license.html#aquarium-license">Aquarium License</a></li></ul></li><li class="webgen-menu-level2"><a href="browserfix.css">Browserfix</a></li><li class="webgen-menu-level2"><a href="default.css">Default</a></li></ul></li></ul></div>
+
+        <h2>Other Links</h2>
+        <ul class="linkblock">
+          <li><a href="https://deanwampler.github.io/open-source/aquarium/index.html">Aquarium Home</a></li>
+          <li><a href="https://github.com/deanwampler/Aquarium">GitHub</a></li>
+          <li><a href="https://concurrentthought.com" target="ara">Our Sponsors...</a></li>
+        </ul>
+
+      </div>
+
+      <div id="footer">
+        <p>&copy; 2007-2019, <a href="index.html">Aquarium Development Team</a>, All Rights Reserved | Generated by <a href="http://webgen.rubyforge.org">webgen</a> | Design by <a href="http://andreasviklund.com">Andreas Viklund</a></p>
+      </div>
+
+    </div>
+  </body>
+</html>

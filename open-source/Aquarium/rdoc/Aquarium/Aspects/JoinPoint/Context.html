@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Aquarium::Aspects::JoinPoint::Context - Aquarium</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+  var index_rel_prefix = "../../../";
+</script>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/darkfish.js"></script>
+
+<link href="../../../css/fonts.css" rel="stylesheet">
+<link href="../../../css/rdoc.css" rel="stylesheet">
+
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../../table_of_contents.html#pages">Pages</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="../../../Object.html">Object</a>
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-3C-3D-3E">#&lt;=&gt;</a>
+    
+    <li ><a href="#method-i-3D-3D">#==</a>
+    
+    <li ><a href="#method-i-3D-3D-3D">#===</a>
+    
+    <li ><a href="#method-i-eql-3F">#eql?</a>
+    
+    <li ><a href="#method-i-inspect">#inspect</a>
+    
+    <li ><a href="#method-i-invoke_original_join_point">#invoke_original_join_point</a>
+    
+    <li ><a href="#method-i-proceed">#proceed</a>
+    
+    <li ><a href="#method-i-to_s">#to_s</a>
+    
+    <li ><a href="#method-i-update">#update</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Aquarium::Aspects::JoinPoint::Context">
+  <h1 id="class-Aquarium::Aspects::JoinPoint::Context" class="class">
+    class Aquarium::Aspects::JoinPoint::Context
+  </h1>
+
+  <section class="description">
+    
+<h2 id="class-Aquarium::Aspects::JoinPoint::Context-label-JoinPoint-3A-3AContext"><a href="Context.html"><code>JoinPoint::Context</code></a><span><a href="#class-Aquarium::Aspects::JoinPoint::Context-label-JoinPoint-3A-3AContext">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Encapsulates current runtime context information for a join point, such as the values of method parameters, a raised  exception (for <code>:after</code> or <code>after_raising</code> advice), <em>etc.</em> <a href="Context.html"><code>Context</code></a> objects are <em>partly</em> value objects.  TODO Separate out the read-only part from the variable part. This might require an API change!</p>
+
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+      
+        <dt id="NIL_OBJECT">NIL_OBJECT
+        
+        <dd>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-advice_kind" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">advice_kind</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-advised_object" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">advised_object</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-block_for_method" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">block_for_method</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-current_advice_node" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">current_advice_node</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-parameters" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">parameters</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-proceed_proc" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">proceed_proc</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-raised_exception" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">raised_exception</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-returned_value" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">returned_value</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-target_object" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">target_object</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(options = {})</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/aspects/join_point.rb</span>
+<span class="line-num">32</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span> <span class="ruby-identifier">options</span> = {}
+<span class="line-num">33</span>   <span class="ruby-identifier">update</span> <span class="ruby-identifier">options</span>
+<span class="line-num">34</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-3C-3D-3E" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">&lt;=&gt;</span><span
+            class="method-args">(other)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="3C-3D-3E-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/aspects/join_point.rb</span>
+<span class="line-num">67</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">&lt;=&gt;</span> <span class="ruby-identifier">other</span>
+<span class="line-num">68</span>   <span class="ruby-keyword">return</span> <span class="ruby-value">0</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">object_id</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">object_id</span> 
+<span class="line-num">69</span>   <span class="ruby-keyword">return</span> <span class="ruby-value">1</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">nil?</span>
+<span class="line-num">70</span>   <span class="ruby-identifier">result</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">class</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">class</span> 
+<span class="line-num">71</span>   <span class="ruby-keyword">return</span> <span class="ruby-identifier">result</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">result</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="line-num">72</span>   <span class="ruby-identifier">result</span> = <span class="ruby-constant">Advice</span>.<span class="ruby-identifier">compare_advice_kinds</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">advice_kind</span>, <span class="ruby-identifier">other</span>.<span class="ruby-identifier">advice_kind</span>
+<span class="line-num">73</span>   <span class="ruby-keyword">return</span> <span class="ruby-identifier">result</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">result</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="line-num">74</span>   <span class="ruby-identifier">result</span> = (<span class="ruby-keyword">self</span>.<span class="ruby-identifier">advised_object</span>.<span class="ruby-identifier">object_id</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">advised_object</span>.<span class="ruby-identifier">object_id</span>.<span class="ruby-identifier">nil?</span>) <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">advised_object</span>.<span class="ruby-identifier">object_id</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">advised_object</span>.<span class="ruby-identifier">object_id</span> 
+<span class="line-num">75</span>   <span class="ruby-keyword">return</span> <span class="ruby-identifier">result</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">result</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="line-num">76</span>   <span class="ruby-identifier">result</span> = (<span class="ruby-keyword">self</span>.<span class="ruby-identifier">parameters</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">parameters</span>.<span class="ruby-identifier">nil?</span>) <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">parameters</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">parameters</span> 
+<span class="line-num">77</span>   <span class="ruby-keyword">return</span> <span class="ruby-identifier">result</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">result</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="line-num">78</span>   <span class="ruby-identifier">result</span> = (<span class="ruby-keyword">self</span>.<span class="ruby-identifier">returned_value</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">returned_value</span>.<span class="ruby-identifier">nil?</span>) <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">returned_value</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">returned_value</span> 
+<span class="line-num">79</span>   <span class="ruby-keyword">return</span> <span class="ruby-identifier">result</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">result</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="line-num">80</span>   (<span class="ruby-keyword">self</span>.<span class="ruby-identifier">raised_exception</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">raised_exception</span>.<span class="ruby-identifier">nil?</span>) <span class="ruby-operator">?</span> <span class="ruby-value">0</span> <span class="ruby-operator">:</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">raised_exception</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">raised_exception</span>
+<span class="line-num">81</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-3D-3D" class="method-detail method-alias">
+        
+        <div class="method-heading">
+          <span class="method-name">==</span><span
+            class="method-args">(other)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="Context.html#method-i-eql-3F">eql?</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="method-i-3D-3D-3D" class="method-detail method-alias">
+        
+        <div class="method-heading">
+          <span class="method-name">===</span><span
+            class="method-args">(other)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="Context.html#method-i-eql-3F">eql?</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="method-i-eql-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">eql?</span><span
+            class="method-args">(other)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="eql-3F-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/aspects/join_point.rb</span>
+<span class="line-num">83</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">eql?</span> <span class="ruby-identifier">other</span>
+<span class="line-num">84</span>   (<span class="ruby-keyword">self</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>) <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="line-num">85</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Context.html#method-i-3D-3D">==</a>, <a href="Context.html#method-i-3D-3D-3D">===</a>
+        </div>
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-inspect" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">inspect</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="inspect-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/aspects/join_point.rb</span>
+<span class="line-num">61</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">inspect</span>
+<span class="line-num">62</span>   <span class="ruby-node">&quot;JoinPoint::Context: {advice_kind = #{advice_kind}, advised_object = #{advised_object}, parameters = #{parameters}, &quot;</span> <span class="ruby-operator">+</span>
+<span class="line-num">63</span>   <span class="ruby-node">&quot;proceed_proc = #{proceed_proc}, current_advice_node = #{current_advice_node.inspect}, returned_value = #{returned_value}, &quot;</span> <span class="ruby-operator">+</span>
+<span class="line-num">64</span>   <span class="ruby-node">&quot;raised_exception = #{raised_exception}, block_for_method = #{block_for_method}}&quot;</span>
+<span class="line-num">65</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Context.html#method-i-to_s">to_s</a>
+        </div>
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-invoke_original_join_point" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">invoke_original_join_point</span><span
+            class="method-args">(enclosing_join_point, *args, &amp;block)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="invoke_original_join_point-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/aspects/join_point.rb</span>
+<span class="line-num">52</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">invoke_original_join_point</span> <span class="ruby-identifier">enclosing_join_point</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>
+<span class="line-num">53</span>   <span class="ruby-identifier">raise</span> <span class="ruby-constant">ContextNotCorrectlyDefined</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;It looks like you tried to call \&quot;JoinPoint#invoke_original_join_point\&quot; (or \&quot;JoinPoint::Context#invoke_original_join_point\&quot;) using a join point without a completely formed context object. (Specific error: The original join point cannot be invoked because no \&quot;@current_advice_node\&quot; attribute was set on the corresponding JoinPoint::Context object.)&quot;</span>) <span class="ruby-keyword">if</span> <span class="ruby-ivar">@current_advice_node</span>.<span class="ruby-identifier">nil?</span>
+<span class="line-num">54</span>   <span class="ruby-identifier">enclosing_join_point</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">parameters</span> = <span class="ruby-identifier">args</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">empty?</span> 
+<span class="line-num">55</span>   <span class="ruby-identifier">enclosing_join_point</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">block_for_method</span> = <span class="ruby-identifier">block</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">block</span> 
+<span class="line-num">56</span>   <span class="ruby-identifier">current_advice_node</span>.<span class="ruby-identifier">invoke_original_join_point</span> <span class="ruby-identifier">enclosing_join_point</span>
+<span class="line-num">57</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-proceed" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">proceed</span><span
+            class="method-args">(enclosing_join_point, *args, &amp;block)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="proceed-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/aspects/join_point.rb</span>
+<span class="line-num">45</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">proceed</span> <span class="ruby-identifier">enclosing_join_point</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>
+<span class="line-num">46</span>   <span class="ruby-identifier">raise</span> <span class="ruby-constant">ProceedMethodNotAvailable</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;It looks like you tried to call \&quot;JoinPoint#proceed\&quot; (or \&quot;JoinPoint::Context#proceed\&quot;) from within advice that isn&#39;t \&quot;around\&quot; advice. Only around advice can call proceed. (Specific error: JoinPoint#proceed cannot be invoked because no \&quot;@proceed_proc\&quot; attribute was set on the corresponding JoinPoint::Context object.)&quot;</span>) <span class="ruby-keyword">if</span> <span class="ruby-ivar">@proceed_proc</span>.<span class="ruby-identifier">nil?</span>
+<span class="line-num">47</span>   <span class="ruby-identifier">enclosing_join_point</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">parameters</span> = <span class="ruby-identifier">args</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">args</span>.<span class="ruby-identifier">empty?</span> 
+<span class="line-num">48</span>   <span class="ruby-identifier">enclosing_join_point</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">block_for_method</span> = <span class="ruby-identifier">block</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">block</span> 
+<span class="line-num">49</span>   <span class="ruby-identifier">proceed_proc</span>.<span class="ruby-identifier">call</span> <span class="ruby-identifier">enclosing_join_point</span>
+<span class="line-num">50</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-to_s" class="method-detail method-alias">
+        
+        <div class="method-heading">
+          <span class="method-name">to_s</span><span
+            class="method-args">()</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="Context.html#method-i-inspect">inspect</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="method-i-update" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update</span><span
+            class="method-args">(options)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="update-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/aspects/join_point.rb</span>
+<span class="line-num">36</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">update</span> <span class="ruby-identifier">options</span>
+<span class="line-num">37</span>   <span class="ruby-identifier">options</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+<span class="line-num">38</span>     <span class="ruby-identifier">instance_variable_set</span> <span class="ruby-node">&quot;@#{key}&quot;</span>, <span class="ruby-identifier">value</span>
+<span class="line-num">39</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">40</span>   <span class="ruby-ivar">@advice_kind</span>    <span class="ruby-operator">||=</span> <span class="ruby-constant">Advice</span><span class="ruby-operator">::</span><span class="ruby-constant">UNKNOWN_ADVICE_KIND</span>
+<span class="line-num">41</span>   <span class="ruby-ivar">@advised_object</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">NIL_OBJECT</span>
+<span class="line-num">42</span>   <span class="ruby-ivar">@parameters</span>     <span class="ruby-operator">||=</span> []
+<span class="line-num">43</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

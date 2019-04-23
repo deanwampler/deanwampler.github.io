@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>UPGRADE - Aquarium</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+<div class="nav-section">
+  <h3>Table of Contents</h3>
+
+  <ul class="link-list" role="directory">
+    <li><a href="#label-Updating+to+Aquarium-0.7.1">Updating to Aquarium-0.7.1</a>
+    <li><a href="#label-Updating+to+Aquarium-0.6.X">Updating to Aquarium-0.6.X</a>
+    <li><a href="#label-Updating+to+Aquarium-0.5.X">Updating to Aquarium-0.5.X</a>
+    <li><a href="#label-Updating+to+Aquarium-0.4.X">Updating to Aquarium-0.4.X</a>
+    <li><a href="#label-Updating+to+Aquarium-0.3.1">Updating to Aquarium-0.3.1</a>
+    <li><a href="#label-Updating+to+Aquarium-0.3.0">Updating to Aquarium-0.3.0</a>
+    <li><a href="#label-Updating+to+Aquarium-0.2.0">Updating to Aquarium-0.2.0</a>
+    <li><a href="#label-Updating+to+Aquarium-0.1.8">Updating to Aquarium-0.1.8</a>
+    <li><a href="#label-Updating+to+Aquarium-0.1.7">Updating to Aquarium-0.1.7</a>
+    <li><a href="#label-Updating+to+Aquarium-0.1.6">Updating to Aquarium-0.1.6</a>
+    <li><a href="#label-Updating+to+Aquarium-0.1.5">Updating to Aquarium-0.1.5</a>
+    <li><a href="#label-Updating+existing+code+to+Aquarium-0.1.0">Updating existing code to Aquarium-0.1.0</a>
+  </ul>
+</div>
+
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./CHANGES.html">CHANGES</a>
+  
+    <li><a href="./MIT_LICENSE.html">MIT_LICENSE</a>
+  
+    <li><a href="./README.html">README</a>
+  
+    <li><a href="./UPGRADE.html">UPGRADE</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page UPGRADE">
+
+<h2 id="label-Updating+to+Aquarium-0.7.1">Updating to Aquarium-0.7.1<span><a href="#label-Updating+to+Aquarium-0.7.1">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Version 0.7.1 supports only Ruby 2.6. It was tested with 2.6.3p62 (2019-04-16 revision 67580). Basic JRuby 9.2.7.0 (2.5.3) 2019-04-09 8a269e3 support is provided, but using JRuby currently does <strong>not</strong> pass all the custom Java specs in the `jruby/spec` directory, which specifically test working with Java classes. However, JRuby does pass all the Ruby specs in the `spec` directory. This is a long-standing issue with JRuby support in <a href="Aquarium.html"><code>Aquarium</code></a>. Patches are welcome!</p>
+
+<p>&gt; TODO: There are currently a <em>lot</em> of deprecation warnings.</p>
+
+<h2 id="label-Updating+to+Aquarium-0.6.X">Updating to Aquarium-0.6.X<span><a href="#label-Updating+to+Aquarium-0.6.X">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Version 0.6.0 supports only Ruby 2.0.0p247. Basic JRuby 1.7.4 (1.9.3p392) support is provided, but using JRuby currently does <strong>not</strong> pass all the custom Java specs in the `jruby/spec` directory, which specifically test working with Java classes. However, JRuby does pass all the Ruby specs in the `spec` directory. I didn&#39;t want to release v0.6.0 with the Java-specific specs not working, but I didn&#39;t have time to resolve the issues. Patches are welcome.</p>
+
+<h2 id="label-Updating+to+Aquarium-0.5.X">Updating to Aquarium-0.5.X<span><a href="#label-Updating+to+Aquarium-0.5.X">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>This release introduces a few small API changes that are described in <a href="CHANGES.html">CHANGES</a>. The primary goal of the release is to add full support for Ruby 1.9.3 and JRuby 1.6.7.</p>
+
+<p>It was not tested on early versions of Ruby 1.9 and JRuby 1.X, so users of earlier releases should use caution upgrading. Post any issues to the GitHub project.</p>
+
+<h2 id="label-Updating+to+Aquarium-0.4.X">Updating to Aquarium-0.4.X<span><a href="#label-Updating+to+Aquarium-0.4.X">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>This release is fully backwards-compatible with previous releases. It expands the API slightly and adds internal improvements to better support JRuby. There should be no upgrade issues.</p>
+
+<h2 id="label-Updating+to+Aquarium-0.3.1">Updating to Aquarium-0.3.1<span><a href="#label-Updating+to+Aquarium-0.3.1">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>There should be no upgrade issues with this release. However, the enhancement #17565 now ensures that a JoinPoint is only specified with one type and a type that actually exists, when a string, symbol, or regex is used to specify the type.</p>
+
+<h2 id="label-Updating+to+Aquarium-0.3.0">Updating to Aquarium-0.3.0<span><a href="#label-Updating+to+Aquarium-0.3.0">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>There are no known upgrade issues with this release. Although many new synonyms were added for API method parameters, all changes are backwards compatible.</p>
+
+<h2 id="label-Updating+to+Aquarium-0.2.0">Updating to Aquarium-0.2.0<span><a href="#label-Updating+to+Aquarium-0.2.0">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>This release changes the expected advice parameter list from</p>
+
+<pre>|join_point, *method_args|</pre>
+
+<p>to</p>
+
+<pre>|join_point, object, *method_args|</pre>
+
+<p>where “object” is the current object receiving the message corresponding to the advised join point.  Therefore, when you upgrade, you will need to modify your advices to take this extra argument, even if you don&#39;t use it. Since an advice of |jp, *args| would silently “absorb” the object into the beginning of “*args”, thereby potentially causing confusion, <a href="Aquarium.html"><code>Aquarium</code></a> will raise an exception if the advice block or proc has this obsolete signature.</p>
+
+<p>Note that “JoinPoint#Context.advised_object” is still supported, even if it is now less useful.</p>
+
+<h2 id="label-Updating+to+Aquarium-0.1.8">Updating to Aquarium-0.1.8<span><a href="#label-Updating+to+Aquarium-0.1.8">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>V0.1.7 did not successfully “register” at rubyforge. This releases fixes that problem and also adds several feature enhancements and refactorings. There are no known upgrade issues.</p>
+
+<h2 id="label-Updating+to+Aquarium-0.1.7">Updating to Aquarium-0.1.7<span><a href="#label-Updating+to+Aquarium-0.1.7">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>This is primarily a bug-fix release, so there should be no upgrading or incompatibility issues.</p>
+
+<h2 id="label-Updating+to+Aquarium-0.1.6">Updating to Aquarium-0.1.6<span><a href="#label-Updating+to+Aquarium-0.1.6">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>As described in the <a href="CHANGES.html">CHANGES</a>, the JoinPoint#type, JoinPoint#type=, JoinPoint#object, and JoinPoint#object= are now deprecated. Client code that uses these methods will still work, but warning messages will be written to STDOUT. See <a href="CHANGES.html">CHANGES</a> for more details.</p>
+
+<h2 id="label-Updating+to+Aquarium-0.1.5">Updating to Aquarium-0.1.5<span><a href="#label-Updating+to+Aquarium-0.1.5">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>This is mostly a bug-fix release, but it did have to introduce one API change, as described in the <a href="CHANGES.html">CHANGES</a>. In particular, the aspect “DSL” methods are no longer automatically to <a href="Object.html"><code>Object</code></a>, as some of their names overlap with methods added by Rails.</p>
+
+<p>Now, if you want these methods added to <a href="Object.html"><code>Object</code></a>, you must require the new lib/aquarium/aspects/dsl/object_dsl.rb explicitly.</p>
+
+<p>As an alternative, if you just want these methods added selectively in certain types, then do the following:</p>
+
+<pre class="ruby"><span class="ruby-identifier">require</span> <span class="ruby-string">&#39;aquarium/dsl/aspect_dsl&#39;</span>
+
+<span class="ruby-keyword">class</span> <span class="ruby-constant">MyClass</span>   <span class="ruby-comment"># reopen &quot;MyClass&quot;</span>
+        <span class="ruby-comment"># Add the methods as _class_ methods</span>
+        <span class="ruby-identifier">include</span> <span class="ruby-constant">Aquarium</span><span class="ruby-operator">::</span><span class="ruby-constant">DSL</span>
+<span class="ruby-keyword">end</span>
+</pre>
+
+<p>or, use (class|module)_eval:</p>
+
+<pre class="ruby"><span class="ruby-identifier">require</span> <span class="ruby-string">&#39;aquarium/dsl/aspect_dsl&#39;</span>
+
+<span class="ruby-constant">MyClass</span>.<span class="ruby-identifier">class_eval</span> <span class="ruby-keyword">do</span>
+        <span class="ruby-comment"># Add the methods as _class_ methods</span>
+        <span class="ruby-identifier">include</span> <span class="ruby-constant">Aquarium</span><span class="ruby-operator">::</span><span class="ruby-constant">DSL</span>
+<span class="ruby-keyword">end</span>
+</pre>
+
+<p>To add the methods as <em>instance</em> methods on individual objects:</p>
+
+<pre class="ruby"><span class="ruby-identifier">object</span> = <span class="ruby-constant">MyClass</span>.<span class="ruby-identifier">new</span>
+<span class="ruby-identifier">object</span>.<span class="ruby-identifier">extend</span>(<span class="ruby-constant">Aquarium</span><span class="ruby-operator">::</span><span class="ruby-constant">DSL</span>)
+</pre>
+
+<p>See the <a href="CHANGES.html">CHANGES</a> for more details.</p>
+
+<h2 id="label-Updating+existing+code+to+Aquarium-0.1.0">Updating existing code to Aquarium-0.1.0<span><a href="#label-Updating+existing+code+to+Aquarium-0.1.0">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>This is the first release of <a href="Aquarium.html"><code>Aquarium</code></a>.</p>
+
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Aquarium::Finders::TypeFinder - Aquarium</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+  var index_rel_prefix = "../../";
+</script>
+
+<script src="../../js/jquery.js"></script>
+<script src="../../js/darkfish.js"></script>
+
+<link href="../../css/fonts.css" rel="stylesheet">
+<link href="../../css/rdoc.css" rel="stylesheet">
+
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../table_of_contents.html#pages">Pages</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="../../Object.html">Object</a>
+  
+</div>
+
+    <div id="includes-section" class="nav-section">
+  <h3>Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><a class="include" href="../Utils/ArrayUtils.html">Aquarium::Utils::ArrayUtils</a>
+  
+  
+  
+    <li><a class="include" href="../Utils/TypeUtils.html">Aquarium::Utils::TypeUtils</a>
+  
+  
+  
+    <li><a class="include" href="../Utils/OptionsUtils.html">Aquarium::Utils::OptionsUtils</a>
+  
+  
+  </ul>
+</div>
+
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-add_ancestors_descendents_and_nested_option_variants_for">::add_ancestors_descendents_and_nested_option_variants_for</a>
+    
+    <li ><a href="#method-i-find">#find</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Aquarium::Finders::TypeFinder">
+  <h1 id="class-Aquarium::Finders::TypeFinder" class="class">
+    class Aquarium::Finders::TypeFinder
+  </h1>
+
+  <section class="description">
+    
+<h2 id="class-Aquarium::Finders::TypeFinder-label-TypeFinder"><a href="TypeFinder.html"><code>TypeFinder</code></a><span><a href="#class-Aquarium::Finders::TypeFinder-label-TypeFinder">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Locate types.</p>
+
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+      
+        <dt id="CANONICAL_OPTIONS">CANONICAL_OPTIONS
+        
+        <dd>
+        
+      
+        <dt id="TYPE_FINDER_CANONICAL_OPTIONS">TYPE_FINDER_CANONICAL_OPTIONS
+        
+        <dd>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-add_ancestors_descendents_and_nested_option_variants_for" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">add_ancestors_descendents_and_nested_option_variants_for</span><span
+            class="method-args">(option, options_hash)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="add_ancestors_descendents_and_nested_option_variants_for-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/finders/type_finder.rb</span>
+<span class="line-num">26</span> <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">add_ancestors_descendents_and_nested_option_variants_for</span> <span class="ruby-identifier">option</span>, <span class="ruby-identifier">options_hash</span>
+<span class="line-num">27</span>   <span class="ruby-identifier">all_variants</span> = <span class="ruby-identifier">options_hash</span>[<span class="ruby-identifier">option</span>].<span class="ruby-identifier">dup</span>
+<span class="line-num">28</span>   <span class="ruby-node">%w[descendents ancestors nested_types]</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">suffix</span><span class="ruby-operator">|</span>
+<span class="line-num">29</span>     <span class="ruby-identifier">options_hash</span>[<span class="ruby-node">&quot;#{option}_and_#{suffix}&quot;</span>] = <span class="ruby-identifier">all_variants</span>.<span class="ruby-identifier">inject</span>([]) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">memo</span>, <span class="ruby-identifier">x</span><span class="ruby-operator">|</span>
+<span class="line-num">30</span>       <span class="ruby-identifier">memo</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;#{x}_and_#{suffix}&quot;</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;#{x}_and_#{suffix}_of&quot;</span>
+<span class="line-num">31</span>     <span class="ruby-keyword">end</span>
+<span class="line-num">32</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">33</span>   <span class="ruby-identifier">options_hash</span>[<span class="ruby-node">&quot;#{option}_and_nested_types&quot;</span>] <span class="ruby-operator">+=</span> <span class="ruby-identifier">all_variants</span>.<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-node">&quot;#{x}_and_nested&quot;</span>}
+<span class="line-num">34</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-find" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">find</span><span
+            class="method-args">(options = {})</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns a <a href="TypeFinder/TypeFinderResult.html"><code>TypeFinder::TypeFinderResult</code></a>, where the “matched” keys are the input  types, type names, and/or regular expressions, and objects for which matches were found and the  corresponding values are the class constant or variable pointcuts that were found. The keys in the “not_matched” part of the result are the specified types and objects for which no matches were found.</p>
+
+<p>The options are as follows:</p>
+
+<h4 id="method-i-find-label-Types">Types<span><a href="#method-i-find-label-Types">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>A single type, type name, name regular expression, or an array of the same. (Mixed allowed.)</p>
+<ul><li>
+<p><code>:types =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:names =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:type  =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:name  =&gt; types_and_type_names_and_regexps</code></p>
+</li></ul>
+
+<h4 id="method-i-find-label-Types+and+Descendents">Types and Descendents<span><a href="#method-i-find-label-Types+and+Descendents">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>A single type, type name, name regular expression, or an array of the same. (Mixed allowed.) Matching types and their descendents will be found. A type that includes a module is considered a descendent, since the module would show up in that type&#39;s ancestors.</p>
+<ul><li>
+<p><code>:types_and_descendents =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:names_and_descendents =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:type_and_descendents  =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:name_and_descendents  =&gt; types_and_type_names_and_regexps</code></p>
+</li></ul>
+
+<p>You can also append the suffix “_of” on any of these keys.</p>
+
+<h4 id="method-i-find-label-Types+and+Ancestors">Types and Ancestors<span><a href="#method-i-find-label-Types+and+Ancestors">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>A single type, type name, name regular expression, or an array of the same. (Mixed allowed.) Matching types and their ancestors will be found.</p>
+<ul><li>
+<p><code>:types_and_ancestors =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:names_and_ancestors =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:type_and_ancestors  =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:name_and_ancestors  =&gt; types_and_type_names_and_regexps</code></p>
+</li></ul>
+
+<p>You can also append the suffix “_of” on any of these keys.</p>
+
+<h4 id="method-i-find-label-Types+and+Nested+Types">Types and Nested Types<span><a href="#method-i-find-label-Types+and+Nested+Types">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>A single type, type name, name regular expression, or an array of the same. (Mixed allowed.) Matching types and any types nested within them will be found.</p>
+<ul><li>
+<p><code>:types_and_nested_types =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:names_and_nested_types =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:type_and_nested_types  =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:name_and_nested_types  =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:types_and_nested =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:names_and_nested =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:type_and_nested  =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:name_and_nested  =&gt; types_and_type_names_and_regexps</code></p>
+</li></ul>
+
+<p>You can also append the suffix “_of” on any of the “*_types” keys.</p>
+
+<p>Note: This option will also match <code>Class</code>, <code>Module</code>, &lt;i&gt;etc.&lt;/&gt;,  so use with caution!</p>
+
+<p>To get both descendents and ancestors, use both options with the same type specification.</p>
+
+<h4 id="method-i-find-label-Exclude+Types">Exclude Types<span><a href="#method-i-find-label-Exclude+Types">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>Exclude the specified type(s) from the list of matched types.  Note: These excluded types <em>won&#39;t</em> appear in the <a href="FinderResult.html#attribute-i-not_matched"><code>FinderResult#not_matched</code></a>. </p>
+<ul><li>
+<p><code>:exclude_type  =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_types =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_name  =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_names =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_types_and_descendents =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_names_and_descendents =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_type_and_descendents  =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_name_and_descendents  =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_types_and_ancestors =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_names_and_ancestors =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_type_and_ancestors  =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_name_and_ancestors  =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_types_and_nested_types =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_names_and_nested_types =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_type_and_nested_types  =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_name_and_nested_types  =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_types_and_nested =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_names_and_nested =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_type_and_nested  =&gt; types_and_type_names_and_regexps</code></p>
+</li><li>
+<p><code>:exclude_name_and_nested  =&gt; types_and_type_names_and_regexps</code></p>
+</li></ul>
+
+<p>You can also append the suffix “_of” on any of the “*_descendents”, “*_ancestors”, and “*_types” keys.</p>
+
+<h4 id="method-i-find-label-Namespaces+-28Modules-29+and+Regular+Expressions">Namespaces (Modules) and Regular Expressions<span><a href="#method-i-find-label-Namespaces+-28Modules-29+and+Regular+Expressions">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>Because of the special sigificance of the module (“namespace”) separator “::”,  special rules for the regular expressions apply. Normally, you can just use the “*_and_nested_types” or “*_and_nested” to match enclosed types, but if you want to be selective, note the following. First, assume that “subexp” is a “sub regular  expression” that results if you split on the separator “::”.</p>
+<dl class="rdoc-list note-list"><dt>A full regexp with no “::”
+<dd>
+<p>Allow partial matches, <em>i.e.</em>, as if you wrote <code>/^.*#{regexp}.*$/.</code></p>
+</dd><dt>A subexp before the first “::”
+<dd>
+<p>It behaves as <code>/^.*#{subexp}::.../</code>, meaning that the end of “subexp”  must be followed by “::”.</p>
+</dd><dt>A subexp after the last “::”
+<dd>
+<p>It behaves as <code>/...::#{subexp}$/</code>, meaning that the beginning of “subexp” must immediately follow a “::”.</p>
+</dd><dt>For a subexp between two “::”
+<dd>
+<p>It behaves as <code>/...::#{subexp}::.../</code>, meaning that the subexp must match  the whole name between the “::” exactly.</p>
+</dd></dl>
+
+<p>Note: a common idiom in aspects is to include descendents of a type, but not the type itself. You can do as in the following example:</p>
+
+<pre>&lt;tt&gt;... :type_and_descendents =&gt; &quot;Foo&quot;, :exclude_type =&gt; &quot;Foo&quot;</pre>
+          
+          
+
+          
+          <div class="method-source-code" id="find-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/finders/type_finder.rb</span>
+<span class="line-num">159</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">find</span> <span class="ruby-identifier">options</span> = {}
+<span class="line-num">160</span>   <span class="ruby-identifier">init_specification</span> <span class="ruby-identifier">options</span>, <span class="ruby-constant">CANONICAL_OPTIONS</span>
+<span class="line-num">161</span>   <span class="ruby-identifier">result</span> = <span class="ruby-identifier">do_find_types</span>
+<span class="line-num">162</span>   <span class="ruby-identifier">unset_specification</span>
+<span class="line-num">163</span>   <span class="ruby-identifier">result</span> 
+<span class="line-num">164</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

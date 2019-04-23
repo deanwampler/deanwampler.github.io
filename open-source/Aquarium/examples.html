@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="author" content="Dean Wampler">
+      <meta name="description" content="Aquarium, Examples, Aspect Oriented Programming for Ruby"/>
+      <meta name="keywords"
+          content="aspect-oriented programming, aspect-oriented software development, object-oriented programming, ruby, aop, aosd, software">
+  	<meta name="copyright" content="Copyright 2007-2019 Aquarium Development Team, All Rights Reserved">
+    <meta name="generator" content="webgen - http://webgen.rubyforge.org" />
+    <link rel="stylesheet" href="default.css" type="text/css" media="screen,projection" />
+    <title>Examples</title>
+  </head>
+
+  <body>
+    <div id="container" >
+
+      <div id="header">
+        <h1><a href="index.html">Aquarium</a></h1>
+        <h2>Aspect-Oriented Programming for Ruby</h2>
+      </div>
+
+      <div id="content">
+        <h2 id="examples">Examples</h2>
+
+<p>These examples are all in the “examples” directory that is part of the distribution. Other examples can be found in the <a href="https://github.com/deanwampler/Aquarium">README</a>, in particular, different ways of expressing the same ideas (for readability…).</p>
+
+<h3 id="tracing-method-calls">Tracing Method Calls</h3>
+
+<p>Want to trace invocations of certain methods? This example demonstrates how to do it.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span><span style="color:#34b">#!/usr/bin/env ruby</span>
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span><span style="color:#777"># Example demonstrating &quot;around&quot; advice that traces calls to all </span>
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span><span style="color:#777"># methods in classes Foo and Bar.</span>
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span><span style="color:#d70">$LOAD_PATH</span>.unshift <span style="color:#036;font-weight:bold">File</span>.dirname(<span style="color:#069">__FILE__</span>) + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">/../lib</span><span style="color:#710">'</span></span>
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">aquarium</span><span style="color:#710">'</span></span>
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span><span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">Aquarium</span>
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>  <span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Foo</span>
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span> *args
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span>      p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Inside:   Foo#initialize: args = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args.inspect<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n12" name="n12">12</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n13" name="n13">13</a></span>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">do_it</span> *args
+<span class="line-numbers"><a href="#n14" name="n14">14</a></span>      p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Inside:   Foo#do_it: args = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args.inspect<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n15" name="n15">15</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n16" name="n16">16</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n17" name="n17">17</a></span>
+<span class="line-numbers"><a href="#n18" name="n18">18</a></span>  <span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">BarModule</span>
+<span class="line-numbers"><a href="#n19" name="n19">19</a></span>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span> *args
+<span class="line-numbers"><strong><a href="#n20" name="n20">20</a></strong></span>      p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Inside:   BarModule#initialize: args = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args.inspect<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n21" name="n21">21</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n22" name="n22">22</a></span>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">do_something_else</span> *args
+<span class="line-numbers"><a href="#n23" name="n23">23</a></span>      p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Inside:   BarModule#do_something_else: args = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args.inspect<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n24" name="n24">24</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n25" name="n25">25</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n26" name="n26">26</a></span>
+<span class="line-numbers"><a href="#n27" name="n27">27</a></span>  <span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Bar</span>
+<span class="line-numbers"><a href="#n28" name="n28">28</a></span>    include <span style="color:#036;font-weight:bold">BarModule</span>
+<span class="line-numbers"><a href="#n29" name="n29">29</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><strong><a href="#n30" name="n30">30</a></strong></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n31" name="n31">31</a></span>
+<span class="line-numbers"><a href="#n32" name="n32">32</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Before advising the methods:</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n33" name="n33">33</a></span>foo1 = <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Foo</span>.new <span style="color:#A60">:a1</span>, <span style="color:#A60">:a2</span>
+<span class="line-numbers"><a href="#n34" name="n34">34</a></span>foo1.do_it <span style="color:#A60">:b1</span>, <span style="color:#A60">:b2</span>
+<span class="line-numbers"><a href="#n35" name="n35">35</a></span>
+<span class="line-numbers"><a href="#n36" name="n36">36</a></span>bar1 = <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Bar</span>.new <span style="color:#A60">:a3</span>, <span style="color:#A60">:a4</span>
+<span class="line-numbers"><a href="#n37" name="n37">37</a></span>bar1.do_something_else <span style="color:#A60">:b3</span>, <span style="color:#A60">:b4</span>
+<span class="line-numbers"><a href="#n38" name="n38">38</a></span>
+<span class="line-numbers"><a href="#n39" name="n39">39</a></span>include <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Aspects</span>
+<span class="line-numbers"><strong><a href="#n40" name="n40">40</a></strong></span>
+<span class="line-numbers"><a href="#n41" name="n41">41</a></span><span style="color:#777"># &quot;jp&quot; is the &quot;join point&quot;, a.k.a. the current execution point.</span>
+<span class="line-numbers"><a href="#n42" name="n42">42</a></span><span style="color:#036;font-weight:bold">Aspect</span>.new <span style="color:#A60">:around</span>, <span style="color:#A60">:calls_to</span> =&gt; <span style="color:#A60">:all_methods</span>, 
+<span class="line-numbers"><a href="#n43" name="n43">43</a></span>    <span style="color:#A60">:for_types</span> =&gt; [<span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Foo</span>, <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Bar</span>],
+<span class="line-numbers"><a href="#n44" name="n44">44</a></span>    <span style="color:#A60">:method_options</span> =&gt; <span style="color:#A60">:exclude_ancestor_methods</span> <span style="color:#080;font-weight:bold">do</span> |jp, obj, *args|
+<span class="line-numbers"><a href="#n45" name="n45">45</a></span>  <span style="color:#080;font-weight:bold">begin</span>
+<span class="line-numbers"><a href="#n46" name="n46">46</a></span>    names = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>jp.target_type.name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">#</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>jp.method_name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n47" name="n47">47</a></span>    p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Entering: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>names<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">: args = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args.inspect<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n48" name="n48">48</a></span>    jp.proceed
+<span class="line-numbers"><a href="#n49" name="n49">49</a></span>  <span style="color:#080;font-weight:bold">ensure</span>
+<span class="line-numbers"><strong><a href="#n50" name="n50">50</a></strong></span>    p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Leaving:  </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>names<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">: args = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args.inspect<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n51" name="n51">51</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n52" name="n52">52</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n53" name="n53">53</a></span>
+<span class="line-numbers"><a href="#n54" name="n54">54</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">After advising the methods. Notice that #intialize isn't advised:</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n55" name="n55">55</a></span>foo2 = <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Foo</span>.new <span style="color:#A60">:a5</span>, <span style="color:#A60">:a6</span>
+<span class="line-numbers"><a href="#n56" name="n56">56</a></span>foo2.do_it <span style="color:#A60">:b5</span>, <span style="color:#A60">:b6</span>
+<span class="line-numbers"><a href="#n57" name="n57">57</a></span>
+<span class="line-numbers"><a href="#n58" name="n58">58</a></span>bar1 = <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Bar</span>.new <span style="color:#A60">:a7</span>, <span style="color:#A60">:a8</span>
+<span class="line-numbers"><a href="#n59" name="n59">59</a></span>bar1.do_something_else <span style="color:#A60">:b7</span>, <span style="color:#A60">:b8</span>
+<span class="line-numbers"><strong><a href="#n60" name="n60">60</a></strong></span>
+<span class="line-numbers"><a href="#n61" name="n61">61</a></span><span style="color:#777"># The &quot;begin/ensure/end&quot; idiom shown causes the advice to return the correct</span>
+<span class="line-numbers"><a href="#n62" name="n62">62</a></span><span style="color:#777"># value; the result of the &quot;proceed&quot;, rather than the value returned by &quot;p&quot;!</span>
+<span class="line-numbers"><a href="#n63" name="n63">63</a></span><span style="color:#036;font-weight:bold">Aspect</span>.new <span style="color:#A60">:around</span>, <span style="color:#A60">:invocations_of</span> =&gt; <span style="color:#A60">:initialize</span>, 
+<span class="line-numbers"><a href="#n64" name="n64">64</a></span>    <span style="color:#A60">:for_types</span> =&gt; [<span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Foo</span>, <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Bar</span>],  
+<span class="line-numbers"><a href="#n65" name="n65">65</a></span>    <span style="color:#A60">:restricting_methods_to</span> =&gt; <span style="color:#A60">:private_methods</span> <span style="color:#080;font-weight:bold">do</span> |jp, obj, *args|
+<span class="line-numbers"><a href="#n66" name="n66">66</a></span>  <span style="color:#080;font-weight:bold">begin</span>
+<span class="line-numbers"><a href="#n67" name="n67">67</a></span>    names = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>jp.target_type.name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">#</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>jp.method_name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n68" name="n68">68</a></span>    p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Entering: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>names<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">: args = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args.inspect<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n69" name="n69">69</a></span>    jp.proceed
+<span class="line-numbers"><strong><a href="#n70" name="n70">70</a></strong></span>  <span style="color:#080;font-weight:bold">ensure</span>
+<span class="line-numbers"><a href="#n71" name="n71">71</a></span>    p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Leaving:  </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>names<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">: args = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args.inspect<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n72" name="n72">72</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n73" name="n73">73</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n74" name="n74">74</a></span>
+<span class="line-numbers"><a href="#n75" name="n75">75</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">After advising the private methods. Notice that #intialize is advised:</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n76" name="n76">76</a></span>foo2 = <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Foo</span>.new <span style="color:#A60">:a9</span>, <span style="color:#A60">:a10</span>
+<span class="line-numbers"><a href="#n77" name="n77">77</a></span>foo2.do_it <span style="color:#A60">:b9</span>, <span style="color:#A60">:b10</span>
+<span class="line-numbers"><a href="#n78" name="n78">78</a></span>
+<span class="line-numbers"><a href="#n79" name="n79">79</a></span>bar1 = <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Bar</span>.new <span style="color:#A60">:a11</span>, <span style="color:#A60">:a12</span>
+<span class="line-numbers"><strong><a href="#n80" name="n80">80</a></strong></span>bar1.do_something_else <span style="color:#A60">:b11</span>, <span style="color:#A60">:b12</span>
+</pre></div>
+</div>
+
+<p></p>
+
+<h3 id="enhancing-codemethod095missingcode-without-overriding">“Enhancing” <code>method&#095;missing</code> Without Overriding</h3>
+
+<p>Here is an example of “advising” <code>method&#095;missing</code> to add behavior, rather than overriding it, which can increase the risk of collisions with overrides from other toolkits:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span><span style="color:#34b">#!/usr/bin/env ruby</span>
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span><span style="color:#777"># Example demonstrating &quot;around&quot; advice for method_missing. This is a </span>
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span><span style="color:#777"># technique for avoiding collisions when different toolkits want to override</span>
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span><span style="color:#777"># method_missing in the same classes, e.g., Object. Using around advice as </span>
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span><span style="color:#777"># shown allows a toolkit to add custom behavior while invoking the &quot;native&quot; </span>
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span><span style="color:#777"># method_missing to handle unrecognized method calls.</span>
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span><span style="color:#777"># Note that it is essential to use around advice, not before or after advice,</span>
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span><span style="color:#777"># because neither can prevent the call to the &quot;wrapped&quot; method_missing, which</span>
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span><span style="color:#777"># is presumably not what you want. In this (contrived) example, an Echo class</span>
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span><span style="color:#777"># uses method_missing to simply echo the method name and arguments. An aspect</span>
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span><span style="color:#777"># is used to intercept any calls to a fictitious &quot;log&quot; method and handle those</span>
+<span class="line-numbers"><a href="#n12" name="n12">12</a></span><span style="color:#777"># in a different way.</span>
+<span class="line-numbers"><a href="#n13" name="n13">13</a></span>
+<span class="line-numbers"><a href="#n14" name="n14">14</a></span><span style="color:#d70">$LOAD_PATH</span>.unshift <span style="color:#036;font-weight:bold">File</span>.dirname(<span style="color:#069">__FILE__</span>) + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">/../lib</span><span style="color:#710">'</span></span>
+<span class="line-numbers"><a href="#n15" name="n15">15</a></span>require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">aquarium</span><span style="color:#710">'</span></span>
+<span class="line-numbers"><a href="#n16" name="n16">16</a></span>
+<span class="line-numbers"><a href="#n17" name="n17">17</a></span><span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">Aquarium</span>
+<span class="line-numbers"><a href="#n18" name="n18">18</a></span>  <span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Echo</span>
+<span class="line-numbers"><a href="#n19" name="n19">19</a></span>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">method_missing</span> sym, *args
+<span class="line-numbers"><strong><a href="#n20" name="n20">20</a></strong></span>      p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Echoing: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>sym.to_s<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args.join(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20"> </span><span style="color:#710">&quot;</span></span>)<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n21" name="n21">21</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n22" name="n22">22</a></span>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">respond_to?</span> sym, include_private = <span style="color:#069">false</span>
+<span class="line-numbers"><a href="#n23" name="n23">23</a></span>      <span style="color:#069">true</span>
+<span class="line-numbers"><a href="#n24" name="n24">24</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n25" name="n25">25</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n26" name="n26">26</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n27" name="n27">27</a></span>
+<span class="line-numbers"><a href="#n28" name="n28">28</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Before advising Echo:</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n29" name="n29">29</a></span>echo1 = <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Echo</span>.new
+<span class="line-numbers"><strong><a href="#n30" name="n30">30</a></strong></span>echo1.say <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">hello</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">world!</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n31" name="n31">31</a></span>echo1.log <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">something</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">interesting...</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n32" name="n32">32</a></span>echo1.shout <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">theater</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">in</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">a</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">crowded</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">firehouse!</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n33" name="n33">33</a></span>
+<span class="line-numbers"><a href="#n34" name="n34">34</a></span><span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Aspects</span>::<span style="color:#036;font-weight:bold">Aspect</span>.new <span style="color:#A60">:around</span>, 
+<span class="line-numbers"><a href="#n35" name="n35">35</a></span>    <span style="color:#A60">:calls_to</span> =&gt; <span style="color:#A60">:method_missing</span>, 
+<span class="line-numbers"><a href="#n36" name="n36">36</a></span>    <span style="color:#A60">:for_type</span> =&gt; <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Echo</span> <span style="color:#080;font-weight:bold">do</span> |jp, obj, sym, *args|
+<span class="line-numbers"><a href="#n37" name="n37">37</a></span>  <span style="color:#080;font-weight:bold">if</span> sym == <span style="color:#A60">:log</span> 
+<span class="line-numbers"><a href="#n38" name="n38">38</a></span>    p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">--- Sending to log: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args.join(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20"> </span><span style="color:#710">&quot;</span></span>)<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span> 
+<span class="line-numbers"><a href="#n39" name="n39">39</a></span>  <span style="color:#080;font-weight:bold">else</span>
+<span class="line-numbers"><strong><a href="#n40" name="n40">40</a></strong></span>    jp.proceed
+<span class="line-numbers"><a href="#n41" name="n41">41</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n42" name="n42">42</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n43" name="n43">43</a></span>
+<span class="line-numbers"><a href="#n44" name="n44">44</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">After advising Echo:</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n45" name="n45">45</a></span>echo2 = <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Echo</span>.new
+<span class="line-numbers"><a href="#n46" name="n46">46</a></span>echo2.say <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">hello</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">world!</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n47" name="n47">47</a></span>echo2.log <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">something</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">interesting...</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n48" name="n48">48</a></span>echo2.shout <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">theater</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">in</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">a</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">crowded</span><span style="color:#710">&quot;</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">firehouse!</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n49" name="n49">49</a></span>
+<span class="line-numbers"><strong><a href="#n50" name="n50">50</a></strong></span>
+</pre></div>
+</div>
+
+<p></p>
+
+<h3 id="wrapping-an-exception-rescuing-one-type-and-raising-another">“Wrapping” an Exception: Rescuing one type and raising another</h3>
+
+<p>While it’s tempting to try this with <code>:after&#095;raising</code> advice, this won’t work, because you can’t change the control flow with any form of advice, except for <code>:around</code> advice. (See, however, feature request #19119.) Here is the idiom to use.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span><span style="color:#34b">#!/usr/bin/env ruby</span>
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span><span style="color:#777"># Example demonstrating &quot;wrapping&quot; an exception; rescuing an exception and </span>
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span><span style="color:#777"># throwing a different one. A common use for this is to map exceptions across</span>
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span><span style="color:#777"># &quot;domain&quot; boundaries, e.g., persistence and application logic domains. </span>
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span><span style="color:#777"># Note that you must use :around advice, since :after_raising cannot change</span>
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span><span style="color:#777"># the control flow.</span>
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span><span style="color:#777"># (However, see feature request #19119)</span>
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span><span style="color:#d70">$LOAD_PATH</span>.unshift <span style="color:#036;font-weight:bold">File</span>.dirname(<span style="color:#069">__FILE__</span>) + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">/../lib</span><span style="color:#710">'</span></span>
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">aquarium</span><span style="color:#710">'</span></span>
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span>
+<span class="line-numbers"><a href="#n12" name="n12">12</a></span><span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">Aquarium</span>
+<span class="line-numbers"><a href="#n13" name="n13">13</a></span>  <span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Exception1</span> &lt; <span style="color:#036;font-weight:bold">Exception</span>; <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n14" name="n14">14</a></span>  <span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Exception2</span> &lt; <span style="color:#036;font-weight:bold">Exception</span>; <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n15" name="n15">15</a></span>  <span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">NewException</span> &lt; <span style="color:#036;font-weight:bold">Exception</span>; <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n16" name="n16">16</a></span>
+<span class="line-numbers"><a href="#n17" name="n17">17</a></span>  <span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Raiser</span>
+<span class="line-numbers"><a href="#n18" name="n18">18</a></span>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">raise_exception1</span>
+<span class="line-numbers"><a href="#n19" name="n19">19</a></span>      raise <span style="color:#036;font-weight:bold">Exception1</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">one</span><span style="color:#710">&quot;</span></span>)
+<span class="line-numbers"><strong><a href="#n20" name="n20">20</a></strong></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n21" name="n21">21</a></span>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">raise_exception2</span>
+<span class="line-numbers"><a href="#n22" name="n22">22</a></span>      raise <span style="color:#036;font-weight:bold">Exception2</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">two</span><span style="color:#710">&quot;</span></span>)
+<span class="line-numbers"><a href="#n23" name="n23">23</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n24" name="n24">24</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n25" name="n25">25</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n26" name="n26">26</a></span>
+<span class="line-numbers"><a href="#n27" name="n27">27</a></span><span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Aspects</span>::<span style="color:#036;font-weight:bold">Aspect</span>.new <span style="color:#A60">:around</span>, 
+<span class="line-numbers"><a href="#n28" name="n28">28</a></span>    <span style="color:#A60">:calls_to</span> =&gt; <span style="background-color:hsla(300,100%,50%,0.06)"><span style="color:#404">/</span><span style="color:#808">^raise_exception</span><span style="color:#404">/</span></span>, 
+<span class="line-numbers"><a href="#n29" name="n29">29</a></span>    <span style="color:#A60">:in_type</span> =&gt; <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Raiser</span> <span style="color:#080;font-weight:bold">do</span> |jp, obj, *args|
+<span class="line-numbers"><strong><a href="#n30" name="n30">30</a></strong></span>  <span style="color:#080;font-weight:bold">begin</span>
+<span class="line-numbers"><a href="#n31" name="n31">31</a></span>    jp.proceed
+<span class="line-numbers"><a href="#n32" name="n32">32</a></span>  <span style="color:#080;font-weight:bold">rescue</span> <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Exception1</span> =&gt; e
+<span class="line-numbers"><a href="#n33" name="n33">33</a></span>    raise <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">NewException</span>.new(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Exception message was </span><span style="color:#b0b">\&quot;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>e.message<span style="font-weight:bold;color:#666">}</span></span><span style="color:#b0b">\&quot;</span><span style="color:#710">&quot;</span></span>)
+<span class="line-numbers"><a href="#n34" name="n34">34</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n35" name="n35">35</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n36" name="n36">36</a></span>
+<span class="line-numbers"><a href="#n37" name="n37">37</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">The raised Aquarium::Exception2 raised here won't be intercepted:</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n38" name="n38">38</a></span><span style="color:#080;font-weight:bold">begin</span>
+<span class="line-numbers"><a href="#n39" name="n39">39</a></span>  <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Raiser</span>.new.raise_exception2
+<span class="line-numbers"><strong><a href="#n40" name="n40">40</a></strong></span><span style="color:#080;font-weight:bold">rescue</span> <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Exception2</span> =&gt; e
+<span class="line-numbers"><a href="#n41" name="n41">41</a></span>  p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Rescued exception: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>e.class<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> with message: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>e<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n42" name="n42">42</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n43" name="n43">43</a></span>
+<span class="line-numbers"><a href="#n44" name="n44">44</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">The raised Aquarium::Exception1 raised here will be intercepted and</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n45" name="n45">45</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20"> Aquarium::NewException will be raised:</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n46" name="n46">46</a></span><span style="color:#080;font-weight:bold">begin</span>
+<span class="line-numbers"><a href="#n47" name="n47">47</a></span>  <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Raiser</span>.new.raise_exception1
+<span class="line-numbers"><a href="#n48" name="n48">48</a></span><span style="color:#080;font-weight:bold">rescue</span> <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">NewException</span> =&gt; e
+<span class="line-numbers"><a href="#n49" name="n49">49</a></span>  p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Rescued exception: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>e.class<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20"> with message: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>e<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><strong><a href="#n50" name="n50">50</a></strong></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n51" name="n51">51</a></span>
+</pre></div>
+</div>
+
+<p></p>
+
+<h3 id="hack-to-create-a-reusable-aspect-that-is-defined-when-a-module-is-included-in-another">“Hack” to Create a Reusable Aspect that Is Defined When a Module is Included in Another</h3>
+
+<p>It’s actually harder than it should be to define a reusable aspect, because the aspect is evaluated when it’s defined, which means the pointcut needs to be known at that time. Feature request #19122 will address this issue. For now, here’s a hack that works around the limitation. Make sure you heed the warning!</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span><span style="color:#34b">#!/usr/bin/env ruby</span>
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span><span style="color:#777"># Example demonstrating a hack for defining a reusable aspect in a module</span>
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span><span style="color:#777"># so that the aspect only gets created when the module is included by another</span>
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span><span style="color:#777"># module or class.</span>
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span><span style="color:#777"># Hacking like this defies the spirit of Aquarium's goal of being &quot;intuitive&quot;,</span>
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span><span style="color:#777"># so I created a feature request #19122 to address this problem.</span>
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span><span style="color:#777">#</span>
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span><span style="color:#777"># WARNING: put the &quot;include ...&quot; statement at the END of the class declaration,</span>
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span><span style="color:#777"># as shown below. If you put the include statement at the beginning, as you</span>
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span><span style="color:#777"># normally wouuld for including a module, it won't advice any join points, </span>
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span><span style="color:#777"># because no methods will have been defined at that point!!</span>
+<span class="line-numbers"><a href="#n12" name="n12">12</a></span> 
+<span class="line-numbers"><a href="#n13" name="n13">13</a></span><span style="color:#d70">$LOAD_PATH</span>.unshift <span style="color:#036;font-weight:bold">File</span>.dirname(<span style="color:#069">__FILE__</span>) + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">/../lib</span><span style="color:#710">'</span></span>
+<span class="line-numbers"><a href="#n14" name="n14">14</a></span>require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">aquarium</span><span style="color:#710">'</span></span>
+<span class="line-numbers"><a href="#n15" name="n15">15</a></span>
+<span class="line-numbers"><a href="#n16" name="n16">16</a></span><span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">Aquarium</span>
+<span class="line-numbers"><a href="#n17" name="n17">17</a></span>  <span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">Reusables</span>
+<span class="line-numbers"><a href="#n18" name="n18">18</a></span>    <span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">TraceMethods</span>
+<span class="line-numbers"><a href="#n19" name="n19">19</a></span>      <span style="color:#080;font-weight:bold">def</span> <span style="color:#069">self</span>.<span style="color:#06B;font-weight:bold">append_features</span> mod
+<span class="line-numbers"><strong><a href="#n20" name="n20">20</a></strong></span>        <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Aspects</span>::<span style="color:#036;font-weight:bold">Aspect</span>.new <span style="color:#A60">:around</span>, <span style="color:#A60">:type</span> =&gt; mod, 
+<span class="line-numbers"><a href="#n21" name="n21">21</a></span>            <span style="color:#A60">:methods</span> =&gt; <span style="color:#A60">:all</span>, 
+<span class="line-numbers"><a href="#n22" name="n22">22</a></span>            <span style="color:#A60">:method_options</span> =&gt; [<span style="color:#A60">:exclude_ancestor_methods</span>] <span style="color:#080;font-weight:bold">do</span> |jp, object, *args|
+<span class="line-numbers"><a href="#n23" name="n23">23</a></span>          names = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>jp.target_type.name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">#</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>jp.method_name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n24" name="n24">24</a></span>          p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Entering: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>names<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">: args = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args.inspect<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n25" name="n25">25</a></span>          jp.proceed
+<span class="line-numbers"><a href="#n26" name="n26">26</a></span>          p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Leaving:  </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>names<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">: args = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args.inspect<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n27" name="n27">27</a></span>        <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n28" name="n28">28</a></span>      <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n29" name="n29">29</a></span>    <span style="color:#080;font-weight:bold">end</span>    
+<span class="line-numbers"><strong><a href="#n30" name="n30">30</a></strong></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n31" name="n31">31</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n32" name="n32">32</a></span>
+<span class="line-numbers"><a href="#n33" name="n33">33</a></span><span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">NotTraced1</span>
+<span class="line-numbers"><a href="#n34" name="n34">34</a></span>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">doit</span>; p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">NotTraced1#doit</span><span style="color:#710">&quot;</span></span>; <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n35" name="n35">35</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n36" name="n36">36</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">You will be warned that no join points in NotTraced2 were matched.</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n37" name="n37">37</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">This happens because the include statement and hence the aspect evaluation</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n38" name="n38">38</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20"> happen BEFORE any methods are defined!</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n39" name="n39">39</a></span><span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">NotTraced2</span>
+<span class="line-numbers"><strong><a href="#n40" name="n40">40</a></strong></span>  include <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Reusables</span>::<span style="color:#036;font-weight:bold">TraceMethods</span>
+<span class="line-numbers"><a href="#n41" name="n41">41</a></span>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">doit</span>; p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">NotTraced2#doit</span><span style="color:#710">&quot;</span></span>; <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n42" name="n42">42</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n43" name="n43">43</a></span><span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Traced1</span>
+<span class="line-numbers"><a href="#n44" name="n44">44</a></span>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">doit</span>; p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Traced1#doit</span><span style="color:#710">&quot;</span></span>; <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n45" name="n45">45</a></span>  include <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Reusables</span>::<span style="color:#036;font-weight:bold">TraceMethods</span>
+<span class="line-numbers"><a href="#n46" name="n46">46</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n47" name="n47">47</a></span><span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">Traced2</span>
+<span class="line-numbers"><a href="#n48" name="n48">48</a></span>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">doit</span>; p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Traced1#doit</span><span style="color:#710">&quot;</span></span>; <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n49" name="n49">49</a></span>  include <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Reusables</span>::<span style="color:#036;font-weight:bold">TraceMethods</span>
+<span class="line-numbers"><strong><a href="#n50" name="n50">50</a></strong></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n51" name="n51">51</a></span>
+<span class="line-numbers"><a href="#n52" name="n52">52</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n53" name="n53">53</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">No method tracing:</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n54" name="n54">54</a></span><span style="color:#036;font-weight:bold">NotTraced1</span>.new.doit
+<span class="line-numbers"><a href="#n55" name="n55">55</a></span><span style="color:#036;font-weight:bold">NotTraced1</span>.new.doit
+<span class="line-numbers"><a href="#n56" name="n56">56</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n57" name="n57">57</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Method tracing:</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n58" name="n58">58</a></span><span style="color:#036;font-weight:bold">Traced1</span>.new.doit
+<span class="line-numbers"><a href="#n59" name="n59">59</a></span><span style="color:#036;font-weight:bold">Traced2</span>.new.doit
+<span class="line-numbers"><strong><a href="#n60" name="n60">60</a></strong></span>
+</pre></div>
+</div>
+
+<p></p>
+
+<h3 id="aspect-design">Aspect Design</h3>
+
+<p>The AOP community is still discovering good design principles. However, simple extensions of good OOD principles are an important step. Many of those principles focus on minimal coupling between components and, in particular, coupling through abstractions, rather than concrete details.</p>
+
+<p>In this example, we demonstrate how one module defines a pointcut representing an object’s state changes. An “observer” aspect watches for those changes and prints a message when updates occur. Hence, the example demonstrates one implementation of the Observer Pattern.</p>
+
+<p>Notice how the aspect is independent of the details of the pointcut, so it won’t require change as the observed class evolves.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span><span style="color:#34b">#!/usr/bin/env ruby</span>
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span><span style="color:#777"># Example demonstrating emerging ideas about good aspect-oriented design. </span>
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span><span style="color:#777"># Specifically, this example follows ideas of Jonathan Aldrich on </span>
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span><span style="color:#777"># &quot;Open Modules&quot;, where a &quot;module&quot; (in the generic sense of the word...) is</span>
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span><span style="color:#777"># responsible for defining and maintaining the pointcuts that it is willing</span>
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span><span style="color:#777"># to expose to potential aspects. Aspects are only allowed to advise the </span>
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span><span style="color:#777"># module through the pointcut. (Enforcing this constraint is TBD.) Griswold, </span>
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span><span style="color:#777"># Sullivan, and collaborators have expanded on these ideas. See their IEEE</span>
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span><span style="color:#777"># Software, March 2006 paper.</span>
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span><span style="color:#d70">$LOAD_PATH</span>.unshift <span style="color:#036;font-weight:bold">File</span>.dirname(<span style="color:#069">__FILE__</span>) + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">/../lib</span><span style="color:#710">'</span></span>
+<span class="line-numbers"><a href="#n12" name="n12">12</a></span>require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">aquarium</span><span style="color:#710">'</span></span>
+<span class="line-numbers"><a href="#n13" name="n13">13</a></span>
+<span class="line-numbers"><a href="#n14" name="n14">14</a></span><span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">Aquarium</span>
+<span class="line-numbers"><a href="#n15" name="n15">15</a></span>  <span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">ClassWithStateAndBehavior</span>
+<span class="line-numbers"><a href="#n16" name="n16">16</a></span>    include <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">DSL</span>
+<span class="line-numbers"><a href="#n17" name="n17">17</a></span>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span> *args
+<span class="line-numbers"><a href="#n18" name="n18">18</a></span>      <span style="color:#33B">@state</span> = args
+<span class="line-numbers"><a href="#n19" name="n19">19</a></span>      p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Initializing: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args.inspect<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><strong><a href="#n20" name="n20">20</a></strong></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n21" name="n21">21</a></span>    attr_accessor <span style="color:#A60">:state</span>
+<span class="line-numbers"><a href="#n22" name="n22">22</a></span>  
+<span class="line-numbers"><a href="#n23" name="n23">23</a></span>    <span style="color:#777"># Two alternative versions of the following pointcut would be </span>
+<span class="line-numbers"><a href="#n24" name="n24">24</a></span>    <span style="color:#777"># STATE_CHANGE = pointcut :method =&gt; :state=</span>
+<span class="line-numbers"><a href="#n25" name="n25">25</a></span>    <span style="color:#777"># STATE_CHANGE = pointcut :attribute =&gt; :state, :attribute_options =&gt; [:writers]</span>
+<span class="line-numbers"><a href="#n26" name="n26">26</a></span>    <span style="color:#777"># Note that only matching on the attribute writers is important, especially</span>
+<span class="line-numbers"><a href="#n27" name="n27">27</a></span>    <span style="color:#777"># given the advice block below, because if the reader is allowed to be </span>
+<span class="line-numbers"><a href="#n28" name="n28">28</a></span>    <span style="color:#777"># advised, we get an infinite recursion of advice invocation! The correct </span>
+<span class="line-numbers"><a href="#n29" name="n29">29</a></span>    <span style="color:#777"># solution is the planned extension of the pointcut language to support </span>
+<span class="line-numbers"><strong><a href="#n30" name="n30">30</a></strong></span>    <span style="color:#777"># condition tests for context. I.e., we don't want the advice applied when</span>
+<span class="line-numbers"><a href="#n31" name="n31">31</a></span>    <span style="color:#777"># it's already inside advice.</span>
+<span class="line-numbers"><a href="#n32" name="n32">32</a></span>    <span style="color:#036;font-weight:bold">STATE_CHANGE</span> = pointcut <span style="color:#A60">:writing</span> =&gt; <span style="color:#A60">:state</span>
+<span class="line-numbers"><a href="#n33" name="n33">33</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n34" name="n34">34</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n35" name="n35">35</a></span>
+<span class="line-numbers"><a href="#n36" name="n36">36</a></span>include <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Aspects</span>
+<span class="line-numbers"><a href="#n37" name="n37">37</a></span>
+<span class="line-numbers"><a href="#n38" name="n38">38</a></span><span style="color:#777"># Observe state changes in the class, using the class-defined pointcut.</span>
+<span class="line-numbers"><a href="#n39" name="n39">39</a></span><span style="color:#777"># Two ways of referencing the pointcut are shown. The first assumes you know</span>
+<span class="line-numbers"><strong><a href="#n40" name="n40">40</a></strong></span><span style="color:#777"># the particular pointcuts you care about. The second is more general; it </span>
+<span class="line-numbers"><a href="#n41" name="n41">41</a></span><span style="color:#777"># uses the recently-introduced :named_pointcut feature to search for all</span>
+<span class="line-numbers"><a href="#n42" name="n42">42</a></span><span style="color:#777"># pointcuts matching a name in a set of types.</span>
+<span class="line-numbers"><a href="#n43" name="n43">43</a></span>
+<span class="line-numbers"><a href="#n44" name="n44">44</a></span>observer1 = <span style="color:#036;font-weight:bold">Aspect</span>.new <span style="color:#A60">:after</span>, 
+<span class="line-numbers"><a href="#n45" name="n45">45</a></span>  <span style="color:#A60">:pointcut</span> =&gt; <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">ClassWithStateAndBehavior</span>::<span style="color:#036;font-weight:bold">STATE_CHANGE</span> <span style="color:#080;font-weight:bold">do</span> |jp, obj, *args|
+<span class="line-numbers"><a href="#n46" name="n46">46</a></span>  p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">State has changed. </span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n47" name="n47">47</a></span>  state = obj.state
+<span class="line-numbers"><a href="#n48" name="n48">48</a></span>  p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">  New state is </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>state.nil? ? <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">nil</span><span style="color:#710">'</span></span> : state.inspect<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n49" name="n49">49</a></span>  p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">  Equivalent to *args: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args.inspect<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><strong><a href="#n50" name="n50">50</a></strong></span><span style="color:#080;font-weight:bold">end</span>  
+<span class="line-numbers"><a href="#n51" name="n51">51</a></span>
+<span class="line-numbers"><a href="#n52" name="n52">52</a></span>observer2 = <span style="color:#036;font-weight:bold">Aspect</span>.new <span style="color:#A60">:after</span>, <span style="color:#A60">:named_pointcuts</span> =&gt; {<span style="color:#A60">:matching</span> =&gt; <span style="background-color:hsla(300,100%,50%,0.06)"><span style="color:#404">/</span><span style="color:#808">CHANGE</span><span style="color:#404">/</span></span>, 
+<span class="line-numbers"><a href="#n53" name="n53">53</a></span>    <span style="color:#A60">:within_types</span> =&gt; <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">ClassWithStateAndBehavior</span>} <span style="color:#080;font-weight:bold">do</span> |jp, obj, *args|
+<span class="line-numbers"><a href="#n54" name="n54">54</a></span>  p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">State has changed. </span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n55" name="n55">55</a></span>  state = obj.state
+<span class="line-numbers"><a href="#n56" name="n56">56</a></span>  p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">  New state is </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>state.nil? ? <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">nil</span><span style="color:#710">'</span></span> : state.inspect<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n57" name="n57">57</a></span>  p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">  Equivalent to *args: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args.inspect<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n58" name="n58">58</a></span><span style="color:#080;font-weight:bold">end</span>  
+<span class="line-numbers"><a href="#n59" name="n59">59</a></span>
+<span class="line-numbers"><strong><a href="#n60" name="n60">60</a></strong></span>object = <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">ClassWithStateAndBehavior</span>.new(<span style="color:#A60">:a1</span>, <span style="color:#A60">:a2</span>, <span style="color:#A60">:a3</span>)
+<span class="line-numbers"><a href="#n61" name="n61">61</a></span>object.state = [<span style="color:#A60">:b1</span>, <span style="color:#A60">:b2</span>]
+</pre></div>
+</div>
+
+<p></p>
+
+<h3 id="design-by-contract-153">Design by Contract ™</h3>
+
+<p>It is easy to use <span class="keyword">Aquarium</span> to implement a “contract” for a Module, in the sense of Bertrand Meyer’s <em>Design by Contract</em>™. In fact, there is a simple DbC module (not a complete implementation…) in the <a href="https://github.com/deanwampler/Aquarium/blob/master/aquarium/lib/aquarium/extras.rb">Aquarium::Extras</a>, which this example uses:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span><span style="color:#34b">#!/usr/bin/env ruby</span>
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span><span style="color:#777"># Example demonstrating &quot;Design by Contract&quot;, Bertrand Meyer's idea for</span>
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span><span style="color:#777"># programmatically-specifying the contract of use for a class or module and</span>
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span><span style="color:#777"># testing it at runtime (usually during the testing process). This example </span>
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span><span style="color:#777"># is adapted from spec/extras/design_by_contract_spec.rb.</span>
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span><span style="color:#777"># Note: the DesignByContract module adds the #precondition, #postcondition, </span>
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span><span style="color:#777"># and #invariant methods shown below to Object and they use &quot;self&quot; as the </span>
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span><span style="color:#777"># :object to advise.  </span>
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span> 
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span><span style="color:#d70">$LOAD_PATH</span>.unshift <span style="color:#036;font-weight:bold">File</span>.dirname(<span style="color:#069">__FILE__</span>) + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">/../lib</span><span style="color:#710">'</span></span>
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span>require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">aquarium/extras/design_by_contract</span><span style="color:#710">'</span></span>
+<span class="line-numbers"><a href="#n12" name="n12">12</a></span>
+<span class="line-numbers"><a href="#n13" name="n13">13</a></span><span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">Aquarium</span>
+<span class="line-numbers"><a href="#n14" name="n14">14</a></span>  <span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">PreCond</span>
+<span class="line-numbers"><a href="#n15" name="n15">15</a></span>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">action</span> *args
+<span class="line-numbers"><a href="#n16" name="n16">16</a></span>      p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">inside :action</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n17" name="n17">17</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n18" name="n18">18</a></span>  
+<span class="line-numbers"><a href="#n19" name="n19">19</a></span>    precondition <span style="color:#A60">:calls_to</span> =&gt; <span style="color:#A60">:action</span>, 
+<span class="line-numbers"><strong><a href="#n20" name="n20">20</a></strong></span>        <span style="color:#A60">:message</span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Must pass more than one argument.</span><span style="color:#710">&quot;</span></span> <span style="color:#080;font-weight:bold">do</span> |jp, obj, *args|
+<span class="line-numbers"><a href="#n21" name="n21">21</a></span>      args.size &gt; <span style="color:#00D">0</span>
+<span class="line-numbers"><a href="#n22" name="n22">22</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n23" name="n23">23</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n24" name="n24">24</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n25" name="n25">25</a></span>  
+<span class="line-numbers"><a href="#n26" name="n26">26</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">This call will fail because the precondition is not satisfied:</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n27" name="n27">27</a></span><span style="color:#080;font-weight:bold">begin</span>
+<span class="line-numbers"><a href="#n28" name="n28">28</a></span>  <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">PreCond</span>.new.action
+<span class="line-numbers"><a href="#n29" name="n29">29</a></span><span style="color:#080;font-weight:bold">rescue</span> <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Extras</span>::<span style="color:#036;font-weight:bold">DesignByContract</span>::<span style="color:#036;font-weight:bold">ContractError</span> =&gt; e
+<span class="line-numbers"><strong><a href="#n30" name="n30">30</a></strong></span>  p e.inspect
+<span class="line-numbers"><a href="#n31" name="n31">31</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n32" name="n32">32</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">This call will pass because the precondition is satisfied:</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n33" name="n33">33</a></span><span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">PreCond</span>.new.action <span style="color:#A60">:a1</span>
+<span class="line-numbers"><a href="#n34" name="n34">34</a></span>
+<span class="line-numbers"><a href="#n35" name="n35">35</a></span><span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">Aquarium</span>
+<span class="line-numbers"><a href="#n36" name="n36">36</a></span>  <span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">PostCond</span>
+<span class="line-numbers"><a href="#n37" name="n37">37</a></span>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">action</span> *args
+<span class="line-numbers"><a href="#n38" name="n38">38</a></span>      args.empty? ? args.dup : args + [<span style="color:#A60">:a</span>]
+<span class="line-numbers"><a href="#n39" name="n39">39</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><strong><a href="#n40" name="n40">40</a></strong></span>  
+<span class="line-numbers"><a href="#n41" name="n41">41</a></span>    postcondition <span style="color:#A60">:calls_to</span> =&gt; <span style="color:#A60">:action</span>, 
+<span class="line-numbers"><a href="#n42" name="n42">42</a></span>      <span style="color:#A60">:message</span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Must return new array, [:a] + args.</span><span style="color:#710">&quot;</span></span> <span style="color:#080;font-weight:bold">do</span> |jp, obj, *args|
+<span class="line-numbers"><a href="#n43" name="n43">43</a></span>      jp.context.returned_value.size == args.size + <span style="color:#00D">1</span> &amp;&amp; 
+<span class="line-numbers"><a href="#n44" name="n44">44</a></span>      jp.context.returned_value[<span style="color:#00D">-1</span>] == <span style="color:#A60">:a</span>
+<span class="line-numbers"><a href="#n45" name="n45">45</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n46" name="n46">46</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n47" name="n47">47</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n48" name="n48">48</a></span>
+<span class="line-numbers"><a href="#n49" name="n49">49</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">These two calls will fail because the postcondition is not satisfied:</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><strong><a href="#n50" name="n50">50</a></strong></span><span style="color:#080;font-weight:bold">begin</span>
+<span class="line-numbers"><a href="#n51" name="n51">51</a></span>  <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">PostCond</span>.new.action
+<span class="line-numbers"><a href="#n52" name="n52">52</a></span><span style="color:#080;font-weight:bold">rescue</span> <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Extras</span>::<span style="color:#036;font-weight:bold">DesignByContract</span>::<span style="color:#036;font-weight:bold">ContractError</span> =&gt; e
+<span class="line-numbers"><a href="#n53" name="n53">53</a></span>  p e.inspect
+<span class="line-numbers"><a href="#n54" name="n54">54</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n55" name="n55">55</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">This call will pass because the postcondition is satisfied:</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n56" name="n56">56</a></span><span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">PostCond</span>.new.action  <span style="color:#A60">:x1</span>, <span style="color:#A60">:x2</span>
+<span class="line-numbers"><a href="#n57" name="n57">57</a></span>
+<span class="line-numbers"><a href="#n58" name="n58">58</a></span><span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">Aquarium</span>
+<span class="line-numbers"><a href="#n59" name="n59">59</a></span>  <span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">InvarCond</span>
+<span class="line-numbers"><strong><a href="#n60" name="n60">60</a></strong></span>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">initialize</span> 
+<span class="line-numbers"><a href="#n61" name="n61">61</a></span>      <span style="color:#33B">@invar</span> = <span style="color:#00D">0</span>
+<span class="line-numbers"><a href="#n62" name="n62">62</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n63" name="n63">63</a></span>    attr_reader <span style="color:#A60">:invar</span>
+<span class="line-numbers"><a href="#n64" name="n64">64</a></span>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">good_action</span>
+<span class="line-numbers"><a href="#n65" name="n65">65</a></span>      p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">inside :good_action</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n66" name="n66">66</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n67" name="n67">67</a></span>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">bad_action</span>
+<span class="line-numbers"><a href="#n68" name="n68">68</a></span>      p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">inside :bad_action</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n69" name="n69">69</a></span>      <span style="color:#33B">@invar</span> = <span style="color:#00D">1</span>
+<span class="line-numbers"><strong><a href="#n70" name="n70">70</a></strong></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n71" name="n71">71</a></span>  
+<span class="line-numbers"><a href="#n72" name="n72">72</a></span>    invariant <span style="color:#A60">:calls_to</span> =&gt; <span style="background-color:hsla(300,100%,50%,0.06)"><span style="color:#404">/</span><span style="color:#808">action$</span><span style="color:#404">/</span></span>, 
+<span class="line-numbers"><a href="#n73" name="n73">73</a></span>        <span style="color:#A60">:message</span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">The @invar value must not change.</span><span style="color:#710">&quot;</span></span> <span style="color:#080;font-weight:bold">do</span> |jp, obj, *args|
+<span class="line-numbers"><a href="#n74" name="n74">74</a></span>      obj.invar == <span style="color:#00D">0</span>
+<span class="line-numbers"><a href="#n75" name="n75">75</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n76" name="n76">76</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n77" name="n77">77</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n78" name="n78">78</a></span>
+<span class="line-numbers"><a href="#n79" name="n79">79</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">This call will fail because the invariant is not satisfied:</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><strong><a href="#n80" name="n80">80</a></strong></span><span style="color:#080;font-weight:bold">begin</span>
+<span class="line-numbers"><a href="#n81" name="n81">81</a></span>  <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">InvarCond</span>.new.bad_action
+<span class="line-numbers"><a href="#n82" name="n82">82</a></span><span style="color:#080;font-weight:bold">rescue</span> <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Extras</span>::<span style="color:#036;font-weight:bold">DesignByContract</span>::<span style="color:#036;font-weight:bold">ContractError</span> =&gt; e
+<span class="line-numbers"><a href="#n83" name="n83">83</a></span>  p e.inspect
+<span class="line-numbers"><a href="#n84" name="n84">84</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n85" name="n85">85</a></span>p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">This call will pass because the invariant is satisfied:</span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n86" name="n86">86</a></span><span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">InvarCond</span>.new.good_action
+<span class="line-numbers"><a href="#n87" name="n87">87</a></span>
+</pre></div>
+</div>
+
+<p></p>
+
+<p>Other examples can be found in the <a href="https://github.com/deanwampler/Aquarium">README</a>.</p>
+
+<h3 id="testing-uses-of-aspects">Testing Uses of Aspects</h3>
+
+<p>Aspects are sometimes used for “fault injection”, to enable easier testing of error handling logic, and for stubbing expensive methods, using around advice. The latter technique complements mocking frameworks. You can see an example of stubbing the expensive <code>TypeUtils#descendents</code> in <code>Aquarium::TypeUtilsStub</code> (in <code>spec&#095;example&#095;types.rb</code>) and the use of it in <code>spec/aquarium/aspects/pointcut&#095;spec.rb</code>.</p>
+
+<h3 id="mimicking-iintroductionsi-aka-iintertype-declarationsi">Mimicking <i>Introductions</i> (a.k.a. <i>Intertype Declarations</i>)</h3>
+
+<p>AspectJ lets Java programmers add new methods and attributes to types. Ruby makes this easy however, so Aquarium doesn’t provide a similar facility. However, if you need to extend a set of types, Aquarium’s <code>TypeFinder</code> can be helpful, as shown here:</p>
+
+<p><ruby file="../../../aquarium/examples/introductions&#095;example.rb"></ruby></p>
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span><span style="color:#d70">$LOAD_PATH</span>.unshift <span style="color:#036;font-weight:bold">File</span>.dirname(<span style="color:#069">__FILE__</span>) + <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">/../lib</span><span style="color:#710">'</span></span>
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">aquarium</span><span style="color:#710">'</span></span>
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span><span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">Aquarium</span>
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>  <span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">TypeFinderIntroductionExampleTargetModule1</span>
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>  <span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">TypeFinderIntroductionExampleTargetModule2</span>
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>  <span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">TypeFinderIntroductionExampleTargetClass1</span>
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span>  <span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">TypeFinderIntroductionExampleTargetClass2</span>
+<span class="line-numbers"><a href="#n12" name="n12">12</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n13" name="n13">13</a></span>  <span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">TypeFinderIntroductionExampleModule</span>
+<span class="line-numbers"><a href="#n14" name="n14">14</a></span>    <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">introduced_method</span>; <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n15" name="n15">15</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n16" name="n16">16</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n17" name="n17">17</a></span>
+<span class="line-numbers"><a href="#n18" name="n18">18</a></span>include <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">Finders</span>
+<span class="line-numbers"><a href="#n19" name="n19">19</a></span>
+<span class="line-numbers"><strong><a href="#n20" name="n20">20</a></strong></span><span style="color:#777"># First, find the types</span>
+<span class="line-numbers"><a href="#n21" name="n21">21</a></span>
+<span class="line-numbers"><a href="#n22" name="n22">22</a></span>found = <span style="color:#036;font-weight:bold">TypeFinder</span>.new.find <span style="color:#A60">:types</span> =&gt; <span style="background-color:hsla(300,100%,50%,0.06)"><span style="color:#404">/</span><span style="color:#808">Aquarium::TypeFinderIntroductionExampleTarget</span><span style="color:#404">/</span></span>
+<span class="line-numbers"><a href="#n23" name="n23">23</a></span>
+<span class="line-numbers"><a href="#n24" name="n24">24</a></span><span style="color:#777"># Now, iterate through them and &quot;extend&quot; them with the module defining </span>
+<span class="line-numbers"><a href="#n25" name="n25">25</a></span><span style="color:#777"># the new behavior.</span>
+<span class="line-numbers"><a href="#n26" name="n26">26</a></span>
+<span class="line-numbers"><a href="#n27" name="n27">27</a></span>found.each {|t| t.extend <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">TypeFinderIntroductionExampleModule</span> }
+<span class="line-numbers"><a href="#n28" name="n28">28</a></span>
+<span class="line-numbers"><a href="#n29" name="n29">29</a></span><span style="color:#777"># See if the &quot;introduced&quot; modules's method is there.</span>
+<span class="line-numbers"><strong><a href="#n30" name="n30">30</a></strong></span>
+<span class="line-numbers"><a href="#n31" name="n31">31</a></span>[<span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">TypeFinderIntroductionExampleTargetModule1</span>, 
+<span class="line-numbers"><a href="#n32" name="n32">32</a></span> <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">TypeFinderIntroductionExampleTargetModule2</span>,
+<span class="line-numbers"><a href="#n33" name="n33">33</a></span> <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">TypeFinderIntroductionExampleTargetClass1</span>,
+<span class="line-numbers"><a href="#n34" name="n34">34</a></span> <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">TypeFinderIntroductionExampleTargetClass2</span>].each <span style="color:#080;font-weight:bold">do</span> |t|
+<span class="line-numbers"><a href="#n35" name="n35">35</a></span>   p <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">type </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>t<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">, method there? </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>t.methods.include?(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">introduced_method</span><span style="color:#710">&quot;</span></span>)<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n36" name="n36">36</a></span><span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n37" name="n37">37</a></span>
+</pre></div>
+</div>
+
+<p></p>
+
+
+      </div>
+
+      <div id="subcontent">
+        <div class="small box">V0.7.1</strong>
+          <ul>
+            <li><code>gem install aquarium</code></li>
+            <li><code>gem update aquarium</code></li>
+          </ul>
+        </div>
+
+        <h2>Menu</h2>
+        <div id="submenu"><ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html" hreflang="en">Aquarium Website</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="documentation/index.html" hreflang="en">Documentation</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="documentation/API/index.html" hreflang="en">API</a><ul><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/aspects.html" hreflang="en">Aspects</a><ul><li class="webgen-menu-level5 webgen-menu-submenu"><a href="documentation/API/aspects.html#aspects">Aspects</a><ul><li class="webgen-menu-level6"><a href="documentation/API/aspects.html#terminology">Terminology</a></li><li class="webgen-menu-level6"><a href="documentation/API/aspects.html#usage-in-aquarium">Usage in Aquarium</a></li></ul></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/extensions.html" hreflang="en">Extensions</a><ul><li class="webgen-menu-level5"><a href="documentation/API/extensions.html#extensions">Extensions</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/extras.html" hreflang="en">Extras</a><ul><li class="webgen-menu-level5"><a href="documentation/API/extras.html#extras">Extras</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/finders.html" hreflang="en">Finders</a><ul><li class="webgen-menu-level5"><a href="documentation/API/finders.html#finders">Finders</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/index.html" hreflang="en">Aquarium API</a><ul><li class="webgen-menu-level5"><a href="documentation/API/index.html#aquarium-api">Aquarium API</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/join_points_and_pointcuts.html" hreflang="en">Join Points and Pointcuts</a><ul><li class="webgen-menu-level5"><a href="documentation/API/join_points_and_pointcuts.html#join-points-and-pointcuts">Join Points and Pointcuts</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/utils.html" hreflang="en">Utils</a><ul><li class="webgen-menu-level5"><a href="documentation/API/utils.html#utils">Utils</a></li></ul></li></ul></li><li class="webgen-menu-level3 webgen-menu-submenu"><a href="documentation/index.html" hreflang="en">Documentation</a><ul><li class="webgen-menu-level4"><a href="documentation/index.html#documentation">Documentation</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="images/">Images</a><ul><li class="webgen-menu-level3"><a href="images/aquabar1.jpg">Aquabar1</a></li><li class="webgen-menu-level3"><a href="images/bodybg.gif">Bodybg</a></li><li class="webgen-menu-level3"><a href="images/evil_genius.jpg">Evil genius</a></li><li class="webgen-menu-level3"><a href="images/generated_by_webgen.png">Generated by webgen</a></li><li class="webgen-menu-level3"><a href="images/puck_as_god.jpg">Puck as god</a></li><li class="webgen-menu-level3"><a href="images/sidebarbg.gif">Sidebarbg</a></li><li class="webgen-menu-level3"><a href="images/war_room.jpg">War room</a></li><li class="webgen-menu-level3"><a href="images/webgen_logo.png">Webgen logo</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="stylesheets/">Stylesheets</a><ul><li class="webgen-menu-level3"><a href="stylesheets/api.css">Api</a></li><li class="webgen-menu-level3"><a href="stylesheets/coderay-default.css">Coderay default</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="templates/">Templates</a><ul><li class="webgen-menu-level3"><a href="templates/api.template">Api</a></li><li class="webgen-menu-level3"><a href="templates/feed.template">Feed</a></li><li class="webgen-menu-level3"><a href="templates/sitemap.template">Sitemap</a></li><li class="webgen-menu-level3"><a href="templates/tag.template">Tag</a></li><li class="webgen-menu-level3"><a href="templates/tikz.template">Tikz</a></li></ul></li><li class="webgen-menu-level2"><a href="default.template">Default</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="changes.html" hreflang="en">Changes</a><ul><li class="webgen-menu-level3"><a href="changes.html#change-notes">Change Notes</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="community.html" hreflang="en">Community</a><ul><li class="webgen-menu-level3"><a href="community.html#contributing-to-aquarium">Contributing to Aquarium</a></li><li class="webgen-menu-level3"><a href="community.html#mailing-lists">Mailing Lists</a></li><li class="webgen-menu-level3 webgen-menu-submenu"><a href="community.html#bugs-enhancement-requests-etc">Bugs, Enhancement Requests, etc.</a><ul><li class="webgen-menu-level4"><a href="community.html#bugs">Bugs</a></li><li class="webgen-menu-level4"><a href="community.html#feature-requests">Feature Requests</a></li><li class="webgen-menu-level4"><a href="community.html#patches">Patches</a></li></ul></li><li class="webgen-menu-level3"><a href="community.html#the-core-team">The Core Team</a></li><li class="webgen-menu-level3"><a href="community.html#acknowledgements">Acknowledgements</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-item-selected"><a href="examples.html" hreflang="en">Examples</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="#examples">Examples</a><ul><li class="webgen-menu-level4"><a href="#tracing-method-calls">Tracing Method Calls</a></li><li class="webgen-menu-level4"><a href="#enhancing-codemethod095missingcode-without-overriding">“Enhancing” <code>method&#095;missing</code> Without Overriding</a></li><li class="webgen-menu-level4"><a href="#wrapping-an-exception-rescuing-one-type-and-raising-another">“Wrapping” an Exception: Rescuing one type and raising another</a></li><li class="webgen-menu-level4"><a href="#hack-to-create-a-reusable-aspect-that-is-defined-when-a-module-is-included-in-another">“Hack” to Create a Reusable Aspect that Is Defined When a Module is Included in Another</a></li><li class="webgen-menu-level4"><a href="#aspect-design">Aspect Design</a></li><li class="webgen-menu-level4"><a href="#design-by-contract-153">Design by Contract ™</a></li><li class="webgen-menu-level4"><a href="#testing-uses-of-aspects">Testing Uses of Aspects</a></li><li class="webgen-menu-level4"><a href="#mimicking-iintroductionsi-aka-iintertype-declarationsi">Mimicking <i>Introductions</i> (a.k.a. <i>Intertype Declarations</i>)</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="index.html" hreflang="en">Home</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="index.html#overview-of-aquarium">Overview of Aquarium</a><ul><li class="webgen-menu-level4"><a href="index.html#news">News</a></li></ul></li><li class="webgen-menu-level3"><a href="index.html#links">Links</a></li><li class="webgen-menu-level3"><a href="index.html#how-to-use-aquarium">How to Use Aquarium</a></li><li class="webgen-menu-level3"><a href="index.html#start-here">Start Here</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="install.html" hreflang="en">Install/Update</a><ul><li class="webgen-menu-level3"><a href="install.html#first-time-installation">First-Time Installation</a></li><li class="webgen-menu-level3"><a href="install.html#rubygems">RubyGems</a></li><li class="webgen-menu-level3 webgen-menu-submenu"><a href="install.html#notes-on-updating">Notes on Updating</a><ul><li class="webgen-menu-level4"><a href="install.html#updating-to-aquarium-07x">Updating to Aquarium-0.7.X</a></li><li class="webgen-menu-level4"><a href="install.html#updating-to-aquarium-06x">Updating to Aquarium-0.6.X</a></li><li class="webgen-menu-level4"><a href="install.html#notes-on-building-aquarium">Notes on Building Aquarium</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="jruby.html" hreflang="en">JRuby</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="jruby.html#jruby-support">JRuby Support</a><ul><li class="webgen-menu-level4"><a href="jruby.html#advising-java-types-in-jruby">Advising Java Types in JRuby</a></li><li class="webgen-menu-level4"><a href="jruby.html#limitations-and-bugs">Limitations and Bugs</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="license.html" hreflang="en">License</a><ul><li class="webgen-menu-level3"><a href="license.html#aquarium-license">Aquarium License</a></li></ul></li><li class="webgen-menu-level2"><a href="browserfix.css">Browserfix</a></li><li class="webgen-menu-level2"><a href="default.css">Default</a></li></ul></li></ul></div>
+
+        <h2>Other Links</h2>
+        <ul class="linkblock">
+          <li><a href="https://deanwampler.github.io/open-source/aquarium/index.html">Aquarium Home</a></li>
+          <li><a href="https://github.com/deanwampler/Aquarium">GitHub</a></li>
+          <li><a href="https://concurrentthought.com" target="ara">Our Sponsors...</a></li>
+        </ul>
+
+      </div>
+
+      <div id="footer">
+        <p>&copy; 2007-2019, <a href="index.html">Aquarium Development Team</a>, All Rights Reserved | Generated by <a href="http://webgen.rubyforge.org">webgen</a> | Design by <a href="http://andreasviklund.com">Andreas Viklund</a></p>
+      </div>
+
+    </div>
+  </body>
+</html>

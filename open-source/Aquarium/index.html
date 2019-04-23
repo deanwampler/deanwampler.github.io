@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="author" content="Dean Wampler">
+      <meta name="description" content="Aquarium, Home, Aspect Oriented Programming for Ruby"/>
+      <meta name="keywords"
+          content="aspect-oriented programming, aspect-oriented software development, object-oriented programming, ruby, aop, aosd, software">
+  	<meta name="copyright" content="Copyright 2007-2019 Aquarium Development Team, All Rights Reserved">
+    <meta name="generator" content="webgen - http://webgen.rubyforge.org" />
+    <link rel="stylesheet" href="default.css" type="text/css" media="screen,projection" />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <div id="container" >
+
+      <div id="header">
+        <h1><a href="index.html">Aquarium</a></h1>
+        <h2>Aspect-Oriented Programming for Ruby</h2>
+      </div>
+
+      <div id="content">
+        <h2 id="overview-of-aquarium">Overview of Aquarium</h2>
+
+<p><span class="keyword">Aquarium</span> is a framework that implements <span class="keyword">Aspect-Oriented Programming</span> (AOP) for Ruby. The premise of AOP is that some <span class="keyword">concerns</span> in an application will cut across the natural object boundaries of the problem domain. Rather than scatter duplicated code in each object to handle the <span class="keyword">cross-cutting concern</span>, AOP modularizes the specification of which execution points are affected (called <span class="keyword">join points</span>) and the actions that should be invoked at those points.</p>
+
+<p>For example, persistence of <span class="keyword">model</span> objects is a cross-cutting concern, in the  sense that the desired persistence approach (database, flat files, replication, etc.) is independent of the domain logic represented by the model. So, why should the model code have any persistence logic? Instead, capture the details of mapping the domain to the persistence approach in separate <span class="keyword">components</span> and programmatically or declaratively modify the model objects to synchronize state changes with the persistent memory of the state.</p>
+
+<h3 id="news">News</h3>
+
+<ul>
+  <li>V0.7.1 (April 23, 2019): Supports for Ruby 2.6.3 and JRuby 9.2.7.0. New hosting location for the documentation.</li>
+  <li>V0.6.0 (October 31, 2013): Support for Ruby 2.0.0 and eliminates a known thread-safety issue.</li>
+  <li>V0.5.1 (May 1, 2012): Now supports Ruby 1.9.3 and JRuby 1.6.7.</li>
+  <li>V0.4.4 (Oct. 4, 2009): Moved the source repository from RubyForge SVN to GitHub. Upgraded to latest JRuby, RSpec, and Webgen.</li>
+  <li>V0.4.0: Preliminary support for advising Java classes in JRuby! See the discussion on the [JRuby page].</li>
+</ul>
+
+<p>See also the <a href="https://rubygems.org/gems/aquarium">Aquarium on RubyGems</a>.</p>
+
+<h2 id="links">Links</h2>
+
+<ul>
+  <li><a href="documentation/API/index.html">API Overview</a></li>
+  <li><a href="rdoc/index.html" target="rdoc">Aquarium Rdocs</a></li>
+  <li><a href="https://rubygems.org/gems/aquarium">Aquarium on RubyGems</a></li>
+  <li><a href="http://github.com/deanwampler/Aquarium">Aquarium on GitHub</a></li>
+</ul>
+
+<h2 id="how-to-use-aquarium">How to Use Aquarium</h2>
+
+<p><span class="keyword">Aquarium</span> provides a <span class="keyword">Domain Specific Language</span> (DSL) with which you can express "aspectual" system behaviour in a modular way, i.e. using a succinct language and without repeating yourself all over your code base!</p>
+
+<p>Imagine you want to trace all invocations of the public, instance methods in all classes whose names end with "Service". Here's how you can implement that behavior in <span class="keyword">Aquarium</span>:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span><span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">ServiceTracer</span>
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>  include <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">DSL</span>
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>  <span style="color:#777"># jp =&gt; the current &quot;join point&quot;</span>
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>  before <span style="color:#A60">:calls_to</span> =&gt; <span style="color:#A60">:all_methods</span>, <span style="color:#A60">:in_types</span> =&gt; <span style="background-color:hsla(300,100%,50%,0.06)"><span style="color:#404">/</span><span style="color:#808">Service$</span><span style="color:#404">/</span></span> <span style="color:#080;font-weight:bold">do</span> |jp, object, *args|
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>    names = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>jp.target_type.name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">#</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>jp.method_name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>    log <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Entering: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>names<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">: object = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>object<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">, args = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>  after <span style="color:#A60">:calls_to</span> =&gt; <span style="color:#A60">:all_methods</span>, <span style="color:#A60">:in_types</span> =&gt; <span style="background-color:hsla(300,100%,50%,0.06)"><span style="color:#404">/</span><span style="color:#808">Service$</span><span style="color:#404">/</span></span> <span style="color:#080;font-weight:bold">do</span> |jp, object, *args|
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>    names = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>jp.target_type.name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">#</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>jp.method_name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>    log <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Leaving: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>names<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">: object = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>object<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">, args = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n12" name="n12">12</a></span><span style="color:#080;font-weight:bold">end</span>
+</pre></div>
+</div>
+
+<p></p>
+
+<p>The <code>#before</code> advice adds behavior that is invoked before each method is invoked, in this case, it logs a message with the name of the executing class and method, followed by the list of arguments passed to the method.</p>
+
+<p>The <code>#after</code> advice adds similar behavior the is invoked after each method is invoked.</p>
+
+<p>A more succinct implementation of this behavior uses <code>#around</code> advice:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span><span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">ServiceTracer</span>
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>  include <span style="color:#036;font-weight:bold">Aquarium</span>::<span style="color:#036;font-weight:bold">DSL</span>
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>  around <span style="color:#A60">:calls_to</span> =&gt; <span style="color:#A60">:all_methods</span>, <span style="color:#A60">:in_types</span> =&gt; <span style="background-color:hsla(300,100%,50%,0.06)"><span style="color:#404">/</span><span style="color:#808">Service$</span><span style="color:#404">/</span></span> <span style="color:#080;font-weight:bold">do</span> |jp, object, *args|
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>    names = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>jp.target_type.name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">#</span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>jp.method_name<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>    log <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Entering: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>names<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">: object = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>object<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">, args = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>    result = join_point.proceed
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>    log <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">Leaving: </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>names<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">: object = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>object<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">, args = </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>args<span style="font-weight:bold;color:#666">}</span></span><span style="color:#710">&quot;</span></span>
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>    result  <span style="color:#777"># block needs to return the result of the &quot;proceed&quot;!</span>
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span><span style="color:#080;font-weight:bold">end</span>
+</pre></div>
+</div>
+
+<p></p>
+
+<p>The special method <code>#proceed</code> invokes the advised method, passing it the args list (by default). For <code>#around</code> advice, you must call <code>#proceed</code> unless you specifically don't want the original method called!</p>
+
+<p>See the <a href="examples.html">Examples</a> and the <a href="documentation/API/index.html">API Overview</a> section for more details.</p>
+
+<h2 id="start-here">Start Here</h2>
+
+<p>Install (or upgrade):</p>
+
+<pre>
+$ gem install aquarium
+$ gem upgrade aquarium
+</pre>
+
+
+      </div>
+
+      <div id="subcontent">
+        <div class="small box">V0.7.1</strong>
+          <ul>
+            <li><code>gem install aquarium</code></li>
+            <li><code>gem update aquarium</code></li>
+          </ul>
+        </div>
+
+        <h2>Menu</h2>
+        <div id="submenu"><ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html" hreflang="en">Aquarium Website</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="documentation/index.html" hreflang="en">Documentation</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="documentation/API/index.html" hreflang="en">API</a><ul><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/aspects.html" hreflang="en">Aspects</a><ul><li class="webgen-menu-level5 webgen-menu-submenu"><a href="documentation/API/aspects.html#aspects">Aspects</a><ul><li class="webgen-menu-level6"><a href="documentation/API/aspects.html#terminology">Terminology</a></li><li class="webgen-menu-level6"><a href="documentation/API/aspects.html#usage-in-aquarium">Usage in Aquarium</a></li></ul></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/extensions.html" hreflang="en">Extensions</a><ul><li class="webgen-menu-level5"><a href="documentation/API/extensions.html#extensions">Extensions</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/extras.html" hreflang="en">Extras</a><ul><li class="webgen-menu-level5"><a href="documentation/API/extras.html#extras">Extras</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/finders.html" hreflang="en">Finders</a><ul><li class="webgen-menu-level5"><a href="documentation/API/finders.html#finders">Finders</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/index.html" hreflang="en">Aquarium API</a><ul><li class="webgen-menu-level5"><a href="documentation/API/index.html#aquarium-api">Aquarium API</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/join_points_and_pointcuts.html" hreflang="en">Join Points and Pointcuts</a><ul><li class="webgen-menu-level5"><a href="documentation/API/join_points_and_pointcuts.html#join-points-and-pointcuts">Join Points and Pointcuts</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/utils.html" hreflang="en">Utils</a><ul><li class="webgen-menu-level5"><a href="documentation/API/utils.html#utils">Utils</a></li></ul></li></ul></li><li class="webgen-menu-level3 webgen-menu-submenu"><a href="documentation/index.html" hreflang="en">Documentation</a><ul><li class="webgen-menu-level4"><a href="documentation/index.html#documentation">Documentation</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="images/">Images</a><ul><li class="webgen-menu-level3"><a href="images/aquabar1.jpg">Aquabar1</a></li><li class="webgen-menu-level3"><a href="images/bodybg.gif">Bodybg</a></li><li class="webgen-menu-level3"><a href="images/evil_genius.jpg">Evil genius</a></li><li class="webgen-menu-level3"><a href="images/generated_by_webgen.png">Generated by webgen</a></li><li class="webgen-menu-level3"><a href="images/puck_as_god.jpg">Puck as god</a></li><li class="webgen-menu-level3"><a href="images/sidebarbg.gif">Sidebarbg</a></li><li class="webgen-menu-level3"><a href="images/war_room.jpg">War room</a></li><li class="webgen-menu-level3"><a href="images/webgen_logo.png">Webgen logo</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="stylesheets/">Stylesheets</a><ul><li class="webgen-menu-level3"><a href="stylesheets/api.css">Api</a></li><li class="webgen-menu-level3"><a href="stylesheets/coderay-default.css">Coderay default</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="templates/">Templates</a><ul><li class="webgen-menu-level3"><a href="templates/api.template">Api</a></li><li class="webgen-menu-level3"><a href="templates/feed.template">Feed</a></li><li class="webgen-menu-level3"><a href="templates/sitemap.template">Sitemap</a></li><li class="webgen-menu-level3"><a href="templates/tag.template">Tag</a></li><li class="webgen-menu-level3"><a href="templates/tikz.template">Tikz</a></li></ul></li><li class="webgen-menu-level2"><a href="default.template">Default</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="changes.html" hreflang="en">Changes</a><ul><li class="webgen-menu-level3"><a href="changes.html#change-notes">Change Notes</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="community.html" hreflang="en">Community</a><ul><li class="webgen-menu-level3"><a href="community.html#contributing-to-aquarium">Contributing to Aquarium</a></li><li class="webgen-menu-level3"><a href="community.html#mailing-lists">Mailing Lists</a></li><li class="webgen-menu-level3 webgen-menu-submenu"><a href="community.html#bugs-enhancement-requests-etc">Bugs, Enhancement Requests, etc.</a><ul><li class="webgen-menu-level4"><a href="community.html#bugs">Bugs</a></li><li class="webgen-menu-level4"><a href="community.html#feature-requests">Feature Requests</a></li><li class="webgen-menu-level4"><a href="community.html#patches">Patches</a></li></ul></li><li class="webgen-menu-level3"><a href="community.html#the-core-team">The Core Team</a></li><li class="webgen-menu-level3"><a href="community.html#acknowledgements">Acknowledgements</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="examples.html" hreflang="en">Examples</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="examples.html#examples">Examples</a><ul><li class="webgen-menu-level4"><a href="examples.html#tracing-method-calls">Tracing Method Calls</a></li><li class="webgen-menu-level4"><a href="examples.html#enhancing-codemethod095missingcode-without-overriding">“Enhancing” <code>method&#095;missing</code> Without Overriding</a></li><li class="webgen-menu-level4"><a href="examples.html#wrapping-an-exception-rescuing-one-type-and-raising-another">“Wrapping” an Exception: Rescuing one type and raising another</a></li><li class="webgen-menu-level4"><a href="examples.html#hack-to-create-a-reusable-aspect-that-is-defined-when-a-module-is-included-in-another">“Hack” to Create a Reusable Aspect that Is Defined When a Module is Included in Another</a></li><li class="webgen-menu-level4"><a href="examples.html#aspect-design">Aspect Design</a></li><li class="webgen-menu-level4"><a href="examples.html#design-by-contract-153">Design by Contract ™</a></li><li class="webgen-menu-level4"><a href="examples.html#testing-uses-of-aspects">Testing Uses of Aspects</a></li><li class="webgen-menu-level4"><a href="examples.html#mimicking-iintroductionsi-aka-iintertype-declarationsi">Mimicking <i>Introductions</i> (a.k.a. <i>Intertype Declarations</i>)</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-item-selected"><a href="index.html" hreflang="en">Home</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="#overview-of-aquarium">Overview of Aquarium</a><ul><li class="webgen-menu-level4"><a href="#news">News</a></li></ul></li><li class="webgen-menu-level3"><a href="#links">Links</a></li><li class="webgen-menu-level3"><a href="#how-to-use-aquarium">How to Use Aquarium</a></li><li class="webgen-menu-level3"><a href="#start-here">Start Here</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="install.html" hreflang="en">Install/Update</a><ul><li class="webgen-menu-level3"><a href="install.html#first-time-installation">First-Time Installation</a></li><li class="webgen-menu-level3"><a href="install.html#rubygems">RubyGems</a></li><li class="webgen-menu-level3 webgen-menu-submenu"><a href="install.html#notes-on-updating">Notes on Updating</a><ul><li class="webgen-menu-level4"><a href="install.html#updating-to-aquarium-07x">Updating to Aquarium-0.7.X</a></li><li class="webgen-menu-level4"><a href="install.html#updating-to-aquarium-06x">Updating to Aquarium-0.6.X</a></li><li class="webgen-menu-level4"><a href="install.html#notes-on-building-aquarium">Notes on Building Aquarium</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="jruby.html" hreflang="en">JRuby</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="jruby.html#jruby-support">JRuby Support</a><ul><li class="webgen-menu-level4"><a href="jruby.html#advising-java-types-in-jruby">Advising Java Types in JRuby</a></li><li class="webgen-menu-level4"><a href="jruby.html#limitations-and-bugs">Limitations and Bugs</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="license.html" hreflang="en">License</a><ul><li class="webgen-menu-level3"><a href="license.html#aquarium-license">Aquarium License</a></li></ul></li><li class="webgen-menu-level2"><a href="browserfix.css">Browserfix</a></li><li class="webgen-menu-level2"><a href="default.css">Default</a></li></ul></li></ul></div>
+
+        <h2>Other Links</h2>
+        <ul class="linkblock">
+          <li><a href="https://deanwampler.github.io/open-source/aquarium/index.html">Aquarium Home</a></li>
+          <li><a href="https://github.com/deanwampler/Aquarium">GitHub</a></li>
+          <li><a href="https://concurrentthought.com" target="ara">Our Sponsors...</a></li>
+        </ul>
+
+      </div>
+
+      <div id="footer">
+        <p>&copy; 2007-2019, <a href="index.html">Aquarium Development Team</a>, All Rights Reserved | Generated by <a href="http://webgen.rubyforge.org">webgen</a> | Design by <a href="http://andreasviklund.com">Andreas Viklund</a></p>
+      </div>
+
+    </div>
+  </body>
+</html>

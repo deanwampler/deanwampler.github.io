@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>module Aquarium::Utils::OptionsUtils - Aquarium</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+  var index_rel_prefix = "../../";
+</script>
+
+<script src="../../js/jquery.js"></script>
+<script src="../../js/darkfish.js"></script>
+
+<link href="../../css/fonts.css" rel="stylesheet">
+<link href="../../css/rdoc.css" rel="stylesheet">
+
+
+
+
+<body id="top" role="document" class="module">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../table_of_contents.html#pages">Pages</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    
+    <div id="includes-section" class="nav-section">
+  <h3>Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><a class="include" href="SetUtils.html">Aquarium::Utils::SetUtils</a>
+  
+  
+  
+    <li><a class="include" href="ArrayUtils.html">Aquarium::Utils::ArrayUtils</a>
+  
+  
+  </ul>
+</div>
+
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li class="calls-super" ><a href="#method-c-append_features">::append_features</a>
+    
+    <li ><a href="#method-c-universal_options">::universal_options</a>
+    
+    <li ><a href="#method-c-universal_prepositions">::universal_prepositions</a>
+    
+    <li ><a href="#method-i-hashify">#hashify</a>
+    
+    <li ><a href="#method-i-init_specification">#init_specification</a>
+    
+    <li ><a href="#method-i-validate_options">#validate_options</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="module-Aquarium::Utils::OptionsUtils">
+  <h1 id="module-Aquarium::Utils::OptionsUtils" class="module">
+    module Aquarium::Utils::OptionsUtils
+  </h1>
+
+  <section class="description">
+    
+<h2 id="module-Aquarium::Utils::OptionsUtils-label-OptionsUtils"><a href="OptionsUtils.html"><code>OptionsUtils</code></a><span><a href="#module-Aquarium::Utils::OptionsUtils-label-OptionsUtils">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Support parsing and processing of key-value pairs of options, where the values are always converted to Sets. Types including this module should have their <code>initialize</code> methods call this module&#39;s <a href="OptionsUtils.html#method-i-init_specification"><code>init_specification</code></a> to do the options processing. See its documentation for more details.</p>
+
+<p>Several <em>class</em> methods are included for defining convenience <em>instance</em> methods. For example, for options <code>:foo</code> and <code>:bar</code>, calling:</p>
+
+<pre class="ruby"><span class="ruby-identifier">canonical_options_given_methods</span> <span class="ruby-value">:foo</span>, <span class="ruby-value">:bar</span>
+</pre>
+
+<p>will define several methods for each option specified, e.g.,:</p>
+
+<pre class="ruby"><span class="ruby-identifier">foo_given</span>    <span class="ruby-comment"># =&gt; returns the value of @specification[:foo]</span>
+<span class="ruby-identifier">foo_given?</span>   <span class="ruby-comment"># =&gt; returns true &quot;foo_given&quot; is not nil or empty.</span>
+<span class="ruby-identifier">bar_given</span>    <span class="ruby-comment"># etc...</span>
+<span class="ruby-identifier">bar_given?</span>
+</pre>
+
+<p>If you would like corresponding reader and writer methods, pass a list of the keys for which you want these methods defined to one of the following methods:</p>
+
+<pre class="ruby"><span class="ruby-identifier">canonical_option_reader</span>   <span class="ruby-value">:foo</span>, <span class="ruby-value">:bar</span>   <span class="ruby-comment"># analogous to attr_reader</span>
+<span class="ruby-identifier">canonical_option_writer</span>   <span class="ruby-value">:foo</span>, <span class="ruby-value">:bar</span>   <span class="ruby-comment"># analogous to attr_writer</span>
+<span class="ruby-identifier">canonical_option_accessor</span> <span class="ruby-value">:foo</span>, <span class="ruby-value">:bar</span>   <span class="ruby-comment"># analogous to attr_accessor</span>
+</pre>
+
+<p>For all of these methods, you can also pass <code>CANONICAL_OPTIONS</code> (discussed below) to define methods for all of the “canonical” options, <em>e.g.,</em></p>
+
+<pre class="ruby"><span class="ruby-identifier">canonical_option_accessor</span> <span class="ruby-constant">CANONICAL_OPTIONS</span>
+</pre>
+
+<p>These methods are not defined by default to prevent accidentally overriding other methods that you might have defined with the same names. Also, note that the writer methods will convert the inputs to sets, following the conventions for the options and the readers will return the sets. If you want different handling, you&#39;ll have to provide custom implementations. </p>
+
+<p>Note that special-case accessor methods are already defined for the <code>:noop</code> and <code>:logger</code> options (discussed below) where the writers expect single values, not sets, and the readers return the single values. (Yea, it&#39;s a bit inconsistent…)</p>
+
+<p>Finally, these <code>canonical_option_*</code> methods should only be called with the <strong>keys</strong> for the <code>CANONICAL_OPTIONS</code>. The keys are considered the “canonical options”, while the values for the keys are synonyms that can be used instead.</p>
+
+<p>This module also defines several universal options that will be available to all types that include this module:</p>
+<dl class="rdoc-list note-list"><dt><code>:logger</code>
+<dd>
+<p>A Ruby standard library Logger used for any messages. A default system-wide logger is used otherwise. The corresponding <code>logger</code> and <code>logger=</code> accessors are defined.</p>
+</dd><dt><code>:logger_stream</code>
+<dd>
+<p>An an alternative to defining the logger, you can define just the output stream where log output will be written. If this option is specified, a new logger will be created for the instance with this output stream. There are no corresponding accessors; use the appropriate methods on the <code>logger</code> object instead.</p>
+</dd><dt><code>:severity</code>
+<dd>
+<p>The logging severity level, one of the Logger::Severity values or a corresponding integer value. If this option is specified, a new logger will be created for the instance with this output stream. There are no corresponding accessors; use the corresponding methods on the <code>logger</code> object instead.</p>
+</dd><dt><code>:noop =&gt; options_hash[:noop] || false</code>
+<dd>
+<p>If true, don&#39;t do “anything”, the interpretation of which will vary with the type receiving the option. For example, a type might go through some initialization, such as parsng its options, but do nothing after that. Primarily useful for debugging and testing. </p>
+
+<p>The value can be accessed through the <code>noop</code> and <code>noop=</code> accessors.</p>
+</dd></dl>
+
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-specification" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">specification</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-append_features" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">append_features</span><span
+            class="method-args">(clazz)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+            <div class="method-calls-super">
+              Calls superclass method
+              
+            </div>
+          
+
+          
+          <div class="method-source-code" id="append_features-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/utils/options_utils.rb</span>
+<span class="line-num">227</span> <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">append_features</span> <span class="ruby-identifier">clazz</span>
+<span class="line-num">228</span>   <span class="ruby-keyword">super</span>
+<span class="line-num">229</span>   <span class="ruby-constant">ClassMethods</span>.<span class="ruby-identifier">send</span> <span class="ruby-value">:append_features</span>, (<span class="ruby-keyword">class</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">clazz</span>; <span class="ruby-keyword">self</span>; <span class="ruby-keyword">end</span>)
+<span class="line-num">230</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-universal_options" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">universal_options</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="universal_options-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/utils/options_utils.rb</span>
+<span class="line-num">74</span> <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">universal_options</span>
+<span class="line-num">75</span>   [<span class="ruby-value">:logger_stream</span>, <span class="ruby-value">:logger</span>, <span class="ruby-value">:severity</span>, <span class="ruby-value">:noop</span>]
+<span class="line-num">76</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-universal_prepositions" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">universal_prepositions</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="universal_prepositions-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/utils/options_utils.rb</span>
+<span class="line-num">78</span> <span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier ruby-title">universal_prepositions</span>
+<span class="line-num">79</span>   [<span class="ruby-value">:for</span>, <span class="ruby-value">:on</span>, <span class="ruby-value">:in</span>, <span class="ruby-value">:within</span>]
+<span class="line-num">80</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-hashify" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">hashify</span><span
+            class="method-args">(options)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="hashify-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/utils/options_utils.rb</span>
+<span class="line-num">125</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">hashify</span> <span class="ruby-identifier">options</span>
+<span class="line-num">126</span>   <span class="ruby-keyword">return</span> <span class="ruby-identifier">options</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">options</span>.<span class="ruby-identifier">kind_of?</span>(<span class="ruby-constant">Hash</span>)
+<span class="line-num">127</span>   <span class="ruby-identifier">new_options</span> = {}
+<span class="line-num">128</span>   <span class="ruby-identifier">options</span> = [<span class="ruby-identifier">options</span>] <span class="ruby-keyword">unless</span> <span class="ruby-identifier">options</span>.<span class="ruby-identifier">kind_of?</span>(<span class="ruby-constant">Array</span>)
+<span class="line-num">129</span>   <span class="ruby-identifier">options</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span>
+<span class="line-num">130</span>     <span class="ruby-keyword">if</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">kind_of?</span>(<span class="ruby-constant">Hash</span>)
+<span class="line-num">131</span>       <span class="ruby-identifier">new_options</span>.<span class="ruby-identifier">merge!</span>(<span class="ruby-identifier">x</span>)
+<span class="line-num">132</span>     <span class="ruby-keyword">else</span>
+<span class="line-num">133</span>       <span class="ruby-identifier">new_options</span>[<span class="ruby-identifier">x</span>] = <span class="ruby-constant">Set</span>.<span class="ruby-identifier">new</span>([])
+<span class="line-num">134</span>     <span class="ruby-keyword">end</span>
+<span class="line-num">135</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">136</span>   <span class="ruby-identifier">new_options</span>
+<span class="line-num">137</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-init_specification" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">init_specification</span><span
+            class="method-args">(options, canonical_options, additional_allowed_options = []) { || ... }</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Class initialize methods call this method to process the input options. Pass an optional block to the method that takes no parameters if you want  to do additional processing of the options before <a href="OptionsUtils.html#method-i-init_specification"><code>init_specification</code></a> validates  the options. The block will have access to the @specification hash built up by <a href="OptionsUtils.html#method-i-init_specification"><code>init_specification</code></a> and to a new attribute @original_options, which will be a  copy of the original options passed to <a href="OptionsUtils.html#method-i-init_specification"><code>init_specification</code></a> (it will be either a  hash or an array).  Finally, if the block returns a value or an array of values, they will be  treated as keys to ignore in the options when they are validated. This is a  way of dynamically treating an option as valid that can&#39;t be known in advance. (See Aspect and Pointcut for examples of this feature in use.)</p>
+          
+          
+
+          
+          <div class="method-source-code" id="init_specification-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/utils/options_utils.rb</span>
+<span class="line-num"> 95</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">init_specification</span> <span class="ruby-identifier">options</span>, <span class="ruby-identifier">canonical_options</span>, <span class="ruby-identifier">additional_allowed_options</span> = []
+<span class="line-num"> 96</span>   <span class="ruby-ivar">@canonical_options</span> = <span class="ruby-identifier">canonical_options</span>
+<span class="line-num"> 97</span>   <span class="ruby-ivar">@additional_allowed_options</span> = <span class="ruby-identifier">additional_allowed_options</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:intern</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">intern</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">x</span>}
+<span class="line-num"> 98</span>   <span class="ruby-ivar">@original_options</span> = <span class="ruby-identifier">options</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">?</span> {} <span class="ruby-operator">:</span> <span class="ruby-identifier">options</span>.<span class="ruby-identifier">dup</span> 
+<span class="line-num"> 99</span>   <span class="ruby-ivar">@specification</span> = {}
+<span class="line-num">100</span>   <span class="ruby-identifier">options</span> <span class="ruby-operator">||=</span> {} 
+<span class="line-num">101</span>   <span class="ruby-identifier">options_hash</span> = <span class="ruby-identifier">hashify</span> <span class="ruby-identifier">options</span>
+<span class="line-num">102</span>   <span class="ruby-ivar">@canonical_options</span>.<span class="ruby-identifier">keys</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span><span class="ruby-operator">|</span>
+<span class="line-num">103</span>     <span class="ruby-identifier">all_related_options</span> = <span class="ruby-identifier">make_array</span>(<span class="ruby-identifier">options_hash</span>[<span class="ruby-identifier">key</span>.<span class="ruby-identifier">intern</span>]) <span class="ruby-operator">||</span> []
+<span class="line-num">104</span>     <span class="ruby-ivar">@canonical_options</span>[<span class="ruby-identifier">key</span>].<span class="ruby-identifier">inject</span>(<span class="ruby-identifier">all_related_options</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">ary</span>, <span class="ruby-identifier">o</span><span class="ruby-operator">|</span> 
+<span class="line-num">105</span>       <span class="ruby-identifier">ary</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">options_hash</span>[<span class="ruby-identifier">o</span>.<span class="ruby-identifier">intern</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">options_hash</span>[<span class="ruby-identifier">o</span>.<span class="ruby-identifier">intern</span>]
+<span class="line-num">106</span>       <span class="ruby-identifier">ary</span>
+<span class="line-num">107</span>     <span class="ruby-keyword">end</span>
+<span class="line-num">108</span>     <span class="ruby-ivar">@specification</span>[<span class="ruby-identifier">key</span>.<span class="ruby-identifier">intern</span>] = <span class="ruby-constant">Set</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">all_related_options</span>.<span class="ruby-identifier">flatten</span>)
+<span class="line-num">109</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">110</span>   
+<span class="line-num">111</span>   <span class="ruby-constant">OptionsUtils</span><span class="ruby-operator">::</span><span class="ruby-identifier">universal_options</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">uopt</span><span class="ruby-operator">|</span> 
+<span class="line-num">112</span>     <span class="ruby-ivar">@specification</span>[<span class="ruby-identifier">uopt</span>] = <span class="ruby-constant">Set</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">make_array</span>(<span class="ruby-identifier">options_hash</span>[<span class="ruby-identifier">uopt</span>])) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">options_hash</span>[<span class="ruby-identifier">uopt</span>].<span class="ruby-identifier">nil?</span> 
+<span class="line-num">113</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">114</span>   <span class="ruby-ivar">@specification</span>[<span class="ruby-value">:noop</span>] <span class="ruby-operator">||=</span> <span class="ruby-constant">Set</span>.<span class="ruby-identifier">new</span>([<span class="ruby-keyword">false</span>])
+<span class="line-num">115</span>   <span class="ruby-identifier">set_logger_if_stream_specified</span>     
+<span class="line-num">116</span>   <span class="ruby-identifier">set_logger_severity_if_specified</span>   
+<span class="line-num">117</span>   <span class="ruby-identifier">set_default_logger_if_not_specified</span> 
+<span class="line-num">118</span>   
+<span class="line-num">119</span>   <span class="ruby-identifier">ignorables</span> = <span class="ruby-keyword">yield</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>
+<span class="line-num">120</span>   <span class="ruby-identifier">ignorables</span> = [] <span class="ruby-keyword">if</span> <span class="ruby-identifier">ignorables</span>.<span class="ruby-identifier">nil?</span> 
+<span class="line-num">121</span>   <span class="ruby-identifier">ignorables</span> = [<span class="ruby-identifier">ignorables</span>] <span class="ruby-keyword">unless</span> <span class="ruby-identifier">ignorables</span>.<span class="ruby-identifier">kind_of?</span> <span class="ruby-constant">Array</span>
+<span class="line-num">122</span>   <span class="ruby-identifier">validate_options</span>(<span class="ruby-identifier">options_hash</span>.<span class="ruby-identifier">reject</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">k</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">ignorables</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">k</span>)})
+<span class="line-num">123</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-validate_options" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">validate_options</span><span
+            class="method-args">(options)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="validate_options-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/utils/options_utils.rb</span>
+<span class="line-num">139</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">validate_options</span> <span class="ruby-identifier">options</span>
+<span class="line-num">140</span>   <span class="ruby-identifier">unknowns</span> = <span class="ruby-identifier">options</span>.<span class="ruby-identifier">keys</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">all_allowed_option_symbols</span> <span class="ruby-operator">-</span> <span class="ruby-constant">OptionsUtils</span><span class="ruby-operator">::</span><span class="ruby-identifier">universal_options</span>
+<span class="line-num">141</span>   <span class="ruby-identifier">raise</span> <span class="ruby-constant">Aquarium</span><span class="ruby-operator">::</span><span class="ruby-constant">Utils</span><span class="ruby-operator">::</span><span class="ruby-constant">InvalidOptions</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;Unknown options specified: #{unknowns.inspect}&quot;</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">unknowns</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+<span class="line-num">142</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

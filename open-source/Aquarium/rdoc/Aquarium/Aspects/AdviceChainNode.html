@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Aquarium::Aspects::AdviceChainNode - Aquarium</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+  var index_rel_prefix = "../../";
+</script>
+
+<script src="../../js/jquery.js"></script>
+<script src="../../js/darkfish.js"></script>
+
+<link href="../../css/fonts.css" rel="stylesheet">
+<link href="../../css/rdoc.css" rel="stylesheet">
+
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../table_of_contents.html#pages">Pages</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="../../Object.html">Object</a>
+  
+</div>
+
+    <div id="includes-section" class="nav-section">
+  <h3>Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><span class="include">Enumerable</span>
+  
+  
+  </ul>
+</div>
+
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-call">#call</a>
+    
+    <li ><a href="#method-i-call_advice">#call_advice</a>
+    
+    <li ><a href="#method-i-each">#each</a>
+    
+    <li ><a href="#method-i-empty-3F">#empty?</a>
+    
+    <li ><a href="#method-i-handle_call_rescue">#handle_call_rescue</a>
+    
+    <li ><a href="#method-i-invoke_original_join_point">#invoke_original_join_point</a>
+    
+    <li ><a href="#method-i-last">#last</a>
+    
+    <li ><a href="#method-i-reset_current_context">#reset_current_context</a>
+    
+    <li ><a href="#method-i-size">#size</a>
+    
+    <li ><a href="#method-i-update_current_context">#update_current_context</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Aquarium::Aspects::AdviceChainNode">
+  <h1 id="class-Aquarium::Aspects::AdviceChainNode" class="class">
+    class Aquarium::Aspects::AdviceChainNode
+  </h1>
+
+  <section class="description">
+    
+<p>Supports Enumerable, but not the sorting methods, as this class is a linked list structure. This is of limited usefulness, because you wouldn&#39;t use an iterator to invoke the procs in the chain, because each proc will invoke the next node arbitrarily or possibly not at all in the case of around advice!</p>
+
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+      
+        <dt id="NIL_OBJECT">NIL_OBJECT
+        
+        <dd><p>TODO: remove this method, which causes run-away recursions in R1.9.1 def inspect &amp;block</p>
+
+<pre class="ruby"><span class="ruby-identifier">block</span> <span class="ruby-operator">?</span> <span class="ruby-keyword">yield</span>(<span class="ruby-keyword">self</span>) <span class="ruby-operator">:</span> <span class="ruby-keyword">super</span>
+</pre>
+
+<p>end</p>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(options = {})</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/aspects/advice.rb</span>
+<span class="line-num">47</span>       <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span> <span class="ruby-identifier">options</span> = {}
+<span class="line-num">48</span>         <span class="ruby-comment"># assign :next_node and :static_join_point so the attributes are always created</span>
+<span class="line-num">49</span>         <span class="ruby-identifier">options</span>[<span class="ruby-value">:next_node</span>] <span class="ruby-operator">||=</span> <span class="ruby-keyword">nil</span>  
+<span class="line-num">50</span>         <span class="ruby-identifier">options</span>[<span class="ruby-value">:static_join_point</span>] <span class="ruby-operator">||=</span> <span class="ruby-keyword">nil</span>
+<span class="line-num">51</span>         <span class="ruby-identifier">options</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+<span class="line-num">52</span>           <span class="ruby-identifier">instance_variable_set</span> <span class="ruby-node">&quot;@#{key}&quot;</span>.<span class="ruby-identifier">intern</span>, <span class="ruby-identifier">value</span>
+<span class="line-num">53</span>           (<span class="ruby-keyword">class</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">self</span>; <span class="ruby-keyword">self</span>; <span class="ruby-keyword">end</span>).<span class="ruby-identifier">class_eval</span>(<span class="ruby-identifier">&lt;&lt;-EOF</span>, <span class="ruby-keyword">__FILE__</span>, <span class="ruby-keyword">__LINE__</span>)
+<span class="line-num">54</span> <span class="ruby-value">            attr_accessor(:#{key})
+<span class="line-num">55</span> </span><span class="ruby-identifier">          EOF</span>
+<span class="line-num">56</span>         <span class="ruby-keyword">end</span>
+<span class="line-num">57</span>       <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-call" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">call</span><span
+            class="method-args">(jp)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="call-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/aspects/advice.rb</span>
+<span class="line-num">68</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">call</span> <span class="ruby-identifier">jp</span>
+<span class="line-num">69</span>   <span class="ruby-keyword">begin</span>
+<span class="line-num">70</span>     <span class="ruby-identifier">advice_wrapper</span> <span class="ruby-identifier">jp</span>
+<span class="line-num">71</span>   <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Exception</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-identifier">e</span>
+<span class="line-num">72</span>     <span class="ruby-identifier">handle_call_rescue</span> <span class="ruby-identifier">e</span>, <span class="ruby-string">&quot;&quot;</span>, <span class="ruby-identifier">jp</span>
+<span class="line-num">73</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">74</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-call_advice" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">call_advice</span><span
+            class="method-args">(jp)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Bug #19262 workaround: need to only pass jp argument if arity is 1.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="call_advice-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/aspects/advice.rb</span>
+<span class="line-num">60</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">call_advice</span> <span class="ruby-identifier">jp</span>
+<span class="line-num">61</span>   <span class="ruby-keyword">if</span> <span class="ruby-identifier">advice</span>.<span class="ruby-identifier">arity</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+<span class="line-num">62</span>     <span class="ruby-identifier">advice</span>.<span class="ruby-identifier">call</span> <span class="ruby-identifier">jp</span>
+<span class="line-num">63</span>   <span class="ruby-keyword">else</span>
+<span class="line-num">64</span>     <span class="ruby-identifier">advice</span>.<span class="ruby-identifier">call</span> <span class="ruby-identifier">jp</span>, <span class="ruby-identifier">jp</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">advised_object</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">jp</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">parameters</span>
+<span class="line-num">65</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">66</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-each" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">each</span><span
+            class="method-args">() { |node| ... }</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Supports Enumerable</p>
+          
+          
+
+          
+          <div class="method-source-code" id="each-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/aspects/advice.rb</span>
+<span class="line-num">85</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">each</span> 
+<span class="line-num">86</span>   <span class="ruby-identifier">node</span> = <span class="ruby-keyword">self</span> 
+<span class="line-num">87</span>   <span class="ruby-keyword">while</span> <span class="ruby-identifier">node</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">false</span> 
+<span class="line-num">88</span>     <span class="ruby-keyword">yield</span> <span class="ruby-identifier">node</span> 
+<span class="line-num">89</span>     <span class="ruby-identifier">node</span> = <span class="ruby-identifier">node</span>.<span class="ruby-identifier">next_node</span> 
+<span class="line-num">90</span>   <span class="ruby-keyword">end</span> 
+<span class="line-num">91</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-empty-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">empty?</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="empty-3F-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/advice.rb</span>
+<span class="line-num">103</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">empty?</span>
+<span class="line-num">104</span>   <span class="ruby-identifier">next_node</span>.<span class="ruby-identifier">nil?</span>
+<span class="line-num">105</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-invoke_original_join_point" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">invoke_original_join_point</span><span
+            class="method-args">(current_jp)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="invoke_original_join_point-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/aspects/advice.rb</span>
+<span class="line-num">76</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">invoke_original_join_point</span> <span class="ruby-identifier">current_jp</span>
+<span class="line-num">77</span>   <span class="ruby-keyword">begin</span>
+<span class="line-num">78</span>     <span class="ruby-identifier">last</span>.<span class="ruby-identifier">advice_wrapper</span> <span class="ruby-identifier">current_jp</span>
+<span class="line-num">79</span>   <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Exception</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-identifier">e</span>
+<span class="line-num">80</span>     <span class="ruby-identifier">handle_call_rescue</span> <span class="ruby-identifier">e</span>, <span class="ruby-string">&quot;While executing the original join_point: &quot;</span>, <span class="ruby-identifier">current_jp</span>
+<span class="line-num">81</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">82</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-last" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">last</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="last-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/aspects/advice.rb</span>
+<span class="line-num">93</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">last</span>
+<span class="line-num">94</span>   <span class="ruby-identifier">last_node</span> = <span class="ruby-keyword">nil</span>
+<span class="line-num">95</span>   <span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">node</span><span class="ruby-operator">|</span> <span class="ruby-identifier">last_node</span> = <span class="ruby-identifier">node</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">node</span>.<span class="ruby-identifier">nil?</span> } 
+<span class="line-num">96</span>   <span class="ruby-identifier">last_node</span>
+<span class="line-num">97</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-size" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">size</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="size-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/advice.rb</span>
+<span class="line-num"> 99</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">size</span>
+<span class="line-num">100</span>   <span class="ruby-identifier">inject</span>(<span class="ruby-value">0</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">memo</span>, <span class="ruby-identifier">node</span><span class="ruby-operator">|</span> <span class="ruby-identifier">memo</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>}
+<span class="line-num">101</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="protected-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Protected Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-handle_call_rescue" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">handle_call_rescue</span><span
+            class="method-args">(ex, error_message_prefix, jp)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="handle_call_rescue-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/advice.rb</span>
+<span class="line-num">133</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">handle_call_rescue</span> <span class="ruby-identifier">ex</span>, <span class="ruby-identifier">error_message_prefix</span>, <span class="ruby-identifier">jp</span>
+<span class="line-num">134</span>   <span class="ruby-keyword">if</span> <span class="ruby-constant">Aquarium</span><span class="ruby-operator">::</span><span class="ruby-constant">Aspects</span><span class="ruby-operator">::</span><span class="ruby-constant">Advice</span>.<span class="ruby-identifier">debug_backtraces</span>
+<span class="line-num">135</span>     <span class="ruby-identifier">class_or_instance_method_separater</span> = <span class="ruby-identifier">jp</span>.<span class="ruby-identifier">instance_method?</span> <span class="ruby-operator">?</span> <span class="ruby-string">&quot;#&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-string">&quot;.&quot;</span>
+<span class="line-num">136</span>     <span class="ruby-identifier">context_message</span> = <span class="ruby-identifier">error_message_prefix</span> <span class="ruby-operator">+</span> <span class="ruby-node">&quot;Exception raised while executing \&quot;#{jp.context.advice_kind}\&quot; advice for \&quot;#{jp.type_or_object.inspect}#{class_or_instance_method_separater}#{jp.method_name}\&quot;: &quot;</span>
+<span class="line-num">137</span> 
+<span class="line-num">138</span>     <span class="ruby-comment"># Don&#39;t prepend the same context message multiple times</span>
+<span class="line-num">139</span>     <span class="ruby-keyword">if</span> <span class="ruby-identifier">ex</span>.<span class="ruby-identifier">message</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">/#{context_message}/</span>
+<span class="line-num">140</span>       <span class="ruby-identifier">context_message</span> = <span class="ruby-string">&quot;&quot;</span>
+<span class="line-num">141</span>     <span class="ruby-keyword">end</span>
+<span class="line-num">142</span> 
+<span class="line-num">143</span>     <span class="ruby-identifier">backtrace</span> = <span class="ruby-identifier">ex</span>.<span class="ruby-identifier">backtrace</span>
+<span class="line-num">144</span>     <span class="ruby-identifier">e2</span> = <span class="ruby-identifier">ex</span>.<span class="ruby-identifier">exception</span>(<span class="ruby-identifier">context_message</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">ex</span>.<span class="ruby-identifier">message</span> <span class="ruby-operator">+</span> <span class="ruby-node">&quot; (join_point = #{jp.inspect})&quot;</span>)
+<span class="line-num">145</span>     <span class="ruby-identifier">e2</span>.<span class="ruby-identifier">set_backtrace</span> <span class="ruby-identifier">backtrace</span>
+<span class="line-num">146</span>     <span class="ruby-identifier">raise</span> <span class="ruby-identifier">e2</span>
+<span class="line-num">147</span>   <span class="ruby-keyword">else</span>
+<span class="line-num">148</span>     <span class="ruby-identifier">raise</span> <span class="ruby-identifier">ex</span>
+<span class="line-num">149</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">150</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-reset_current_context" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">reset_current_context</span><span
+            class="method-args">(jp)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="reset_current_context-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/advice.rb</span>
+<span class="line-num">127</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">reset_current_context</span> <span class="ruby-identifier">jp</span> 
+<span class="line-num">128</span>   <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">advice</span>.<span class="ruby-identifier">arity</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="line-num">129</span>   <span class="ruby-identifier">jp</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">advice_kind</span> = <span class="ruby-ivar">@last_advice_kind</span>
+<span class="line-num">130</span>   <span class="ruby-identifier">jp</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">current_advice_node</span> = <span class="ruby-ivar">@last_advice_node</span>
+<span class="line-num">131</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-update_current_context" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">update_current_context</span><span
+            class="method-args">(jp)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="update_current_context-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/advice.rb</span>
+<span class="line-num">120</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">update_current_context</span> <span class="ruby-identifier">jp</span>
+<span class="line-num">121</span>   <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">advice</span>.<span class="ruby-identifier">arity</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+<span class="line-num">122</span>   <span class="ruby-ivar">@last_advice_kind</span> = <span class="ruby-identifier">jp</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">advice_kind</span>
+<span class="line-num">123</span>   <span class="ruby-ivar">@last_advice_node</span> = <span class="ruby-identifier">jp</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">current_advice_node</span>
+<span class="line-num">124</span>   <span class="ruby-identifier">jp</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">current_advice_node</span> = <span class="ruby-keyword">self</span>
+<span class="line-num">125</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

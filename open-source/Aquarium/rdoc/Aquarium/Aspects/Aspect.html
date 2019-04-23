@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Aquarium::Aspects::Aspect - Aquarium</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+  var index_rel_prefix = "../../";
+</script>
+
+<script src="../../js/jquery.js"></script>
+<script src="../../js/darkfish.js"></script>
+
+<link href="../../css/fonts.css" rel="stylesheet">
+<link href="../../css/rdoc.css" rel="stylesheet">
+
+
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../table_of_contents.html#pages">Pages</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link"><a href="../../Object.html">Object</a>
+  
+</div>
+
+    <div id="includes-section" class="nav-section">
+  <h3>Included Modules</h3>
+
+  <ul class="link-list">
+  
+  
+    <li><a class="include" href="Advice.html">Aquarium::Aspects::Advice</a>
+  
+  
+  
+    <li><a class="include" href="ExclusionHandler.html">Aquarium::Aspects::ExclusionHandler</a>
+  
+  
+  
+    <li><a class="include" href="DefaultObjectsHandler.html">Aquarium::Aspects::DefaultObjectsHandler</a>
+  
+  
+  
+    <li><a class="include" href="../Aspects.html">Aquarium::Aspects</a>
+  
+  
+  
+    <li><a class="include" href="../Utils/ArrayUtils.html">Aquarium::Utils::ArrayUtils</a>
+  
+  
+  
+    <li><a class="include" href="../Utils/HashUtils.html">Aquarium::Utils::HashUtils</a>
+  
+  
+  
+    <li><a class="include" href="../Utils/HtmlEscaper.html">Aquarium::Utils::HtmlEscaper</a>
+  
+  
+  
+    <li><a class="include" href="../Utils/OptionsUtils.html">Aquarium::Utils::OptionsUtils</a>
+  
+  
+  </ul>
+</div>
+
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-3D-3D">#==</a>
+    
+    <li ><a href="#method-i-eql-3F">#eql?</a>
+    
+    <li ><a href="#method-i-inspect">#inspect</a>
+    
+    <li ><a href="#method-i-join_points_matched">#join_points_matched</a>
+    
+    <li ><a href="#method-i-join_points_not_matched">#join_points_not_matched</a>
+    
+    <li ><a href="#method-i-to_s">#to_s</a>
+    
+    <li ><a href="#method-i-unadvise">#unadvise</a>
+    
+    <li ><a href="#method-i-unadvise_join_points">#unadvise_join_points</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Aquarium::Aspects::Aspect">
+  <h1 id="class-Aquarium::Aspects::Aspect" class="class">
+    class Aquarium::Aspects::Aspect
+  </h1>
+
+  <section class="description">
+    
+<h2 id="class-Aquarium::Aspects::Aspect-label-Aspect"><a href="Aspect.html"><code>Aspect</code></a><span><a href="#class-Aquarium::Aspects::Aspect-label-Aspect">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p><a href="Aspect.html"><code>Aspect</code></a> “advises” one or more method invocations for one or more types or objects (including class methods on types). The corresponding advice is a Proc that is invoked either before the join point, after it returns, after it raises an exception,  after either event, or around the join point, meaning the advice runs and it decides  when and if to invoke the advised method. (Hence, around advice can run code before  and after the join point call and it can “veto” the actual join point call).</p>
+
+<p>See also <a href="../DSL.html"><code>Aquarium::DSL</code></a> for more information.</p>
+
+  </section>
+
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+      
+        <dt id="ASPECT_CANONICAL_OPTIONS">ASPECT_CANONICAL_OPTIONS
+        
+        <dd>
+        
+      
+        <dt id="CANONICAL_OPTIONS">CANONICAL_OPTIONS
+        
+        <dd>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+    <section class="attribute-method-details" class="method-section">
+      <header>
+        <h3>Attributes</h3>
+      </header>
+
+      
+      <div id="attribute-i-advice" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">advice</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-pointcuts" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">pointcuts</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-specification" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">specification</span><span
+            class="attribute-access-type">[R]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section>
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(*options, &amp;block)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a href="Aspect.html#method-c-new"><code>Aspect.new</code></a> (:around | :before | :after | :after_returning | :after_raising )</p>
+
+<pre>(:pointcuts =&gt; [...]), :named_pointcuts =&gt; [...] |
+ ((:types =&gt; [...] | :types_and_ancestors =&gt; [...] | :types_and_descendents =&gt; [...]
+  | :types_and_nested_types | :objects =&gt; [...]), 
+  :methods =&gt; [], :method_options =&gt; [...],
+  :attributes =&gt; [...], :attribute_options[...]),
+ (:advice = advice | do |join_point, obj, *args| ...; end)</pre>
+
+<p>where the parameters often have many synonyms (mostly to support a “humane interface”) and they are interpreted as followed:</p>
+
+<h4 id="method-c-new-label-Type+of+Advice">Type of <a href="Advice.html"><code>Advice</code></a><span><a href="#method-c-new-label-Type+of+Advice">&para;</a> <a href="#top">&uarr;</a></span></h4>
+<dl class="rdoc-list note-list"><dt><code>:around</code>
+<dd>
+<p>Invoke the specified advice “around” the join points. It is up to the advice itself to call <code>join_point.proceed</code> (where <code>join_point</code> is the first option passed to the advice) if it wants the advised method to actually execute.</p>
+</dd><dt><code>:before</code>
+<dd>
+<p>Invoke the specified advice before the join point.</p>
+</dd><dt><code>:after</code>
+<dd>
+<p>Invoke the specified advice after the join point either returns successfully or raises an exception.</p>
+</dd><dt><code>:after_returning</code>
+<dd>
+<p>Invoke the specified advice after the join point returns successfully.</p>
+</dd><dt><code>:after_raising [=&gt; exception || [exception_list]]</code>
+<dd>
+<p>Invoke the specified advice after the join point raises one of the specified exceptions. If no exceptions are specified, the advice is invoked after any exception is raised. An alternative syntax is <code>:after_raising, :exception[s] =&gt; (exception || [exception_list])</code>.</p>
+</dd></dl>
+
+<h4 id="method-c-new-label-Advice"><a href="Advice.html"><code>Advice</code></a><span><a href="#method-c-new-label-Advice">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>The advice to invoke before, after, or around the join points. Only one advice may be specified.  If a block is specified, the following options are ignored.</p>
+<ul><li>
+<p><code>:advice =&gt; proc</code></p>
+</li><li>
+<p><code>:action =&gt; proc</code></p>
+</li><li>
+<p><code>:do_action =&gt; proc</code></p>
+</li><li>
+<p><code>:use_advice =&gt; proc</code></p>
+</li><li>
+<p><code>:advise_with =&gt; proc</code></p>
+</li><li>
+<p><code>:invoke =&gt; proc</code></p>
+</li><li>
+<p><code>:call =&gt; proc</code></p>
+</li></ul>
+
+<h4 id="method-c-new-label-Pointcuts">Pointcuts<span><a href="#method-c-new-label-Pointcuts">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>A <a href="Pointcut.html"><code>Pointcut</code></a>, <a href="JoinPoint.html"><code>JoinPoint</code></a>, or array of the same (Mixed is allowed.). Specifying pointcuts is mutually-exclusive with specifying them “indirectly” through :types, :objects, :methods, :attributes, :method_options, and :attribute_options parameters.</p>
+<ul><li>
+<p><code>:pointcuts =&gt; pointcut || [pointcut_list]</code></p>
+</li><li>
+<p><code>:pointcut  =&gt; pointcut || [pointcut_list]</code></p>
+</li><li>
+<p><code>:on_pointcut  =&gt; pointcut || [pointcut_list]</code></p>
+</li><li>
+<p><code>:on_pointcuts =&gt; pointcut || [pointcut_list]</code></p>
+</li><li>
+<p><code>:in_pointcut  =&gt; pointcut || [pointcut_list]</code></p>
+</li><li>
+<p><code>:in_pointcuts =&gt; pointcut || [pointcut_list]</code></p>
+</li><li>
+<p><code>:within_pointcut  =&gt; pointcut || [pointcut_list]</code></p>
+</li><li>
+<p><code>:within_pointcuts =&gt; pointcut || [pointcut_list]</code></p>
+</li></ul>
+
+<h4 id="method-c-new-label-Named+Pointcuts">Named Pointcuts<span><a href="#method-c-new-label-Named+Pointcuts">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>Specify search criteria to locate Pointcuts defined as class constants and/or class variables. The options for the <code>named_pointcuts</code> parameter must form a hash and satisfy the requirements documented for <a href="../Finders/PointcutFinder.html#method-i-find"><code>Aquarium::Finders::PointcutFinder#find</code></a>. Specifying named pointcuts is also mutually-exclusive with specifying Pointcuts “indirectly” through :types, :objects, :methods, :attributes, :method_options, and :attribute_options parameters.</p>
+<ul><li>
+<p><code>:named_pointcuts =&gt; {PointcutFinder options}</code></p>
+</li><li>
+<p><code>:named_pointcut  =&gt; {PointcutFinder options}</code></p>
+</li><li>
+<p><code>:on_named_pointcuts =&gt; {PointcutFinder options}</code></p>
+</li><li>
+<p><code>:on_named_pointcut  =&gt; {PointcutFinder options}</code></p>
+</li><li>
+<p><code>:in_named_pointcuts =&gt; {PointcutFinder options}</code></p>
+</li><li>
+<p><code>:in_named_pointcut  =&gt; {PointcutFinder options}</code></p>
+</li><li>
+<p><code>:within_named_pointcuts =&gt; {PointcutFinder options}</code></p>
+</li><li>
+<p><code>:within_named_pointcut  =&gt; {PointcutFinder options}</code></p>
+</li></ul>
+
+<h4 id="method-c-new-label-Exclude+Pointcuts">Exclude Pointcuts<span><a href="#method-c-new-label-Exclude+Pointcuts">&para;</a> <a href="#top">&uarr;</a></span></h4>
+
+<p>Exclude the specified pointcuts. The <code>exclude_</code> prefix can be used with any of the  <code>:pointcuts</code> and <code>:named_pointcuts</code> synonyms. </p>
+<ul><li>
+<p><code>:exclude_pointcuts =&gt; pointcut || [pointcut_list]</code></p>
+</li><li>
+<p><code>:exclude_named_pointcuts =&gt; {PointcutFinder options}</code></p>
+</li></ul>
+
+<h4 id="method-c-new-label-Miscellaneous+Options">Miscellaneous Options<span><a href="#method-c-new-label-Miscellaneous+Options">&para;</a> <a href="#top">&uarr;</a></span></h4>
+<dl class="rdoc-list note-list"><dt><code>:ignore_no_matching_join_points =&gt; true | false</code>
+<dd>
+<p>Do not issue a warning if no join points are actually matched by the aspect. By default, the value is false, meaning that a WARN-level message will be written to the log. It is usually very helpful to be warned when no matches occurred, for debugging purposes! A synonym for this option is <code>ignore_no_jps =&gt; true | false</code>.</p>
+</dd></dl>
+
+<p>For other options <em>e.g.,</em> <code>:types</code>, <code>:methods</code>, Aspect#new accepts all the options  that Pointcut#new accepts. It also accepts the “universal” options documented in <a href="../Utils/OptionsUtils.html"><code>Aquarium::Utils::OptionsUtils</code></a>.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/aspect.rb</span>
+<span class="line-num">138</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span> <span class="ruby-operator">*</span><span class="ruby-identifier">options</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>
+<span class="line-num">139</span>   <span class="ruby-ivar">@first_option_that_was_method</span> = []
+<span class="line-num">140</span>   <span class="ruby-identifier">opts</span> = <span class="ruby-identifier">rationalize</span> <span class="ruby-identifier">options</span>
+<span class="line-num">141</span>   <span class="ruby-identifier">init_specification</span> <span class="ruby-identifier">opts</span>, <span class="ruby-constant">CANONICAL_OPTIONS</span>, (<span class="ruby-constant">Pointcut</span><span class="ruby-operator">::</span><span class="ruby-constant">ATTRIBUTE_OPTIONS_VALUES</span> <span class="ruby-operator">+</span> <span class="ruby-constant">KINDS_IN_PRIORITY_ORDER</span>) <span class="ruby-keyword">do</span>
+<span class="line-num">142</span>     <span class="ruby-identifier">finish_specification_initialization</span> <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>
+<span class="line-num">143</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">144</span>   <span class="ruby-identifier">init_pointcuts</span>
+<span class="line-num">145</span>   <span class="ruby-identifier">validate_specification</span>
+<span class="line-num">146</span>   <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">noop</span>
+<span class="line-num">147</span>   <span class="ruby-identifier">advise_join_points</span>
+<span class="line-num">148</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-3D-3D" class="method-detail method-alias">
+        
+        <div class="method-heading">
+          <span class="method-name">==</span><span
+            class="method-args">(other)</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="Aspect.html#method-i-eql-3F">eql?</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="method-i-eql-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">eql?</span><span
+            class="method-args">(other)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>We have to ignore advice in the comparison. As recently discussed in ruby-users, there are very few situations. where Proc#eql? returns true.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="eql-3F-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/aspect.rb</span>
+<span class="line-num">177</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">eql?</span> <span class="ruby-identifier">other</span>
+<span class="line-num">178</span>   <span class="ruby-keyword">self</span>.<span class="ruby-identifier">object_id</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">object_id</span> <span class="ruby-operator">||</span>
+<span class="line-num">179</span>     (<span class="ruby-keyword">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">eql?</span>(<span class="ruby-identifier">other</span>.<span class="ruby-identifier">class</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">specification</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">specification</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">pointcuts</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">pointcuts</span>)
+<span class="line-num">180</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Aspect.html#method-i-3D-3D">==</a>
+        </div>
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-inspect" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">inspect</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="inspect-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/aspect.rb</span>
+<span class="line-num">169</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">inspect</span>
+<span class="line-num">170</span>   <span class="ruby-node">&quot;Aspect: {specification: #{specification.inspect}, pointcuts: #{pointcuts.inspect}, advice: #{advice.inspect}}&quot;</span>
+<span class="line-num">171</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Aspect.html#method-i-to_s">to_s</a>
+        </div>
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-join_points_matched" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">join_points_matched</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="join_points_matched-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/aspect.rb</span>
+<span class="line-num">150</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">join_points_matched</span> 
+<span class="line-num">151</span>   <span class="ruby-identifier">get_jps</span> <span class="ruby-value">:join_points_matched</span>
+<span class="line-num">152</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-join_points_not_matched" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">join_points_not_matched</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="join_points_not_matched-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/aspect.rb</span>
+<span class="line-num">154</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">join_points_not_matched</span>
+<span class="line-num">155</span>   <span class="ruby-identifier">get_jps</span> <span class="ruby-value">:join_points_not_matched</span>
+<span class="line-num">156</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-to_s" class="method-detail method-alias">
+        
+        <div class="method-heading">
+          <span class="method-name">to_s</span><span
+            class="method-args">()</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="Aspect.html#method-i-inspect">inspect</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="method-i-unadvise" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">unadvise</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+          <div class="method-source-code" id="unadvise-source">
+            <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/aspect.rb</span>
+<span class="line-num">158</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">unadvise</span>
+<span class="line-num">159</span>   <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">noop</span>
+<span class="line-num">160</span>   <span class="ruby-ivar">@pointcuts</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">pointcut</span><span class="ruby-operator">|</span>
+<span class="line-num">161</span>     <span class="ruby-identifier">interesting_join_points</span>(<span class="ruby-identifier">pointcut</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">join_point</span><span class="ruby-operator">|</span>
+<span class="line-num">162</span>       <span class="ruby-identifier">remove_advice_for_aspect_at</span> <span class="ruby-identifier">join_point</span>
+<span class="line-num">163</span>     <span class="ruby-keyword">end</span>
+<span class="line-num">164</span>   <span class="ruby-keyword">end</span>
+<span class="line-num">165</span> <span class="ruby-keyword">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Aspect.html#method-i-unadvise_join_points">unadvise_join_points</a>
+        </div>
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-unadvise_join_points" class="method-detail method-alias">
+        
+        <div class="method-heading">
+          <span class="method-name">unadvise_join_points</span><span
+            class="method-args">()</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+          
+
+          
+        </div>
+
+        
+
+        
+        <div class="aliases">
+          Alias for: <a href="Aspect.html#method-i-unadvise">unadvise</a>
+        </div>
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="author" content="Dean Wampler">
+      <meta name="description" content="Aquarium, Install/Update, Aspect Oriented Programming for Ruby"/>
+      <meta name="keywords"
+          content="aspect-oriented programming, aspect-oriented software development, object-oriented programming, ruby, aop, aosd, software">
+  	<meta name="copyright" content="Copyright 2007-2019 Aquarium Development Team, All Rights Reserved">
+    <meta name="generator" content="webgen - http://webgen.rubyforge.org" />
+    <link rel="stylesheet" href="default.css" type="text/css" media="screen,projection" />
+    <title>Install/Update</title>
+  </head>
+
+  <body>
+    <div id="container" >
+
+      <div id="header">
+        <h1><a href="index.html">Aquarium</a></h1>
+        <h2>Aspect-Oriented Programming for Ruby</h2>
+      </div>
+
+      <div id="content">
+        
+<h2 id="first-time-installation">First-Time Installation</h2>
+
+<p>There are several ways to install <span class="keyword">Aquarium</span>.</p>
+
+<h2 id="rubygems">RubyGems</h2>
+
+<p>This is the preferred approach. Non-windows users may have to use <code>sudo</code> for each command. Install or update to the latest with:</p>
+<pre>
+gem install aquarium
+gem update aquarium
+
+</pre>
+
+<p>or if you want an older version:</p>
+<pre>
+gem install aquarium -v 0.6.0
+gem update aquarium -v 0.6.0
+
+</pre>
+
+<h2 id="notes-on-updating">Notes on Updating</h2>
+
+<h3 id="updating-to-aquarium-07x">Updating to Aquarium-0.7.X</h3>
+
+<p>Version 0.7.0 supports only Ruby 2.6. It was tested with 2.6.3p62 (2019-04-16 revision 67580). Basic JRuby 9.2.7.0 (2.5.3) 2019-04-09 8a269e3 support is provided, but using JRuby currently does <em>not</em> pass all the custom Java specs in the <code>jruby/spec</code> directory, which specifically test working with Java classes. However, JRuby does pass all the Ruby specs in the <code>spec</code> directory. This is a long-standing issue with JRuby support in Aquarium. Patches are welcome!</p>
+
+<p><strong>TODO:</strong> There are currently a <em>lot</em> of deprecation warnings.</p>
+
+<h3 id="updating-to-aquarium-06x">Updating to Aquarium-0.6.X</h3>
+
+<p>Version 0.6.0 supports only Ruby 2.0.0p247. Basic JRuby 1.7.4 (1.9.3p392) support is provided, but using JRuby currently does <em>not</em> pass all the custom Java specs in the <code>jruby/spec</code> directory, which specifically test working with Java classes. However, JRuby does pass all the Ruby specs in the <code>spec</code> directory. I didn’t want to release v0.6.0 with the Java-specific specs not working, but I didn’t have time to resolve the issues. Patches are welcome.</p>
+
+<p>See <a href="https://github.com/deanwampler/Aquarium/blob/master/aquarium/UPGRADE">UPGRADE</a> for details for older releases.</p>
+
+<h3 id="notes-on-building-aquarium">Notes on Building Aquarium</h3>
+
+<p>See the [README] for details about how to build <span class="keyword">Aquarium</span>.</p>
+
+
+      </div>
+
+      <div id="subcontent">
+        <div class="small box">V0.7.1</strong>
+          <ul>
+            <li><code>gem install aquarium</code></li>
+            <li><code>gem update aquarium</code></li>
+          </ul>
+        </div>
+
+        <h2>Menu</h2>
+        <div id="submenu"><ul><li class="webgen-menu-level1 webgen-menu-submenu webgen-menu-submenu-inhierarchy"><a href="index.html" hreflang="en">Aquarium Website</a><ul><li class="webgen-menu-level2 webgen-menu-submenu"><a href="documentation/index.html" hreflang="en">Documentation</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="documentation/API/index.html" hreflang="en">API</a><ul><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/aspects.html" hreflang="en">Aspects</a><ul><li class="webgen-menu-level5 webgen-menu-submenu"><a href="documentation/API/aspects.html#aspects">Aspects</a><ul><li class="webgen-menu-level6"><a href="documentation/API/aspects.html#terminology">Terminology</a></li><li class="webgen-menu-level6"><a href="documentation/API/aspects.html#usage-in-aquarium">Usage in Aquarium</a></li></ul></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/extensions.html" hreflang="en">Extensions</a><ul><li class="webgen-menu-level5"><a href="documentation/API/extensions.html#extensions">Extensions</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/extras.html" hreflang="en">Extras</a><ul><li class="webgen-menu-level5"><a href="documentation/API/extras.html#extras">Extras</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/finders.html" hreflang="en">Finders</a><ul><li class="webgen-menu-level5"><a href="documentation/API/finders.html#finders">Finders</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/index.html" hreflang="en">Aquarium API</a><ul><li class="webgen-menu-level5"><a href="documentation/API/index.html#aquarium-api">Aquarium API</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/join_points_and_pointcuts.html" hreflang="en">Join Points and Pointcuts</a><ul><li class="webgen-menu-level5"><a href="documentation/API/join_points_and_pointcuts.html#join-points-and-pointcuts">Join Points and Pointcuts</a></li></ul></li><li class="webgen-menu-level4 webgen-menu-submenu"><a href="documentation/API/utils.html" hreflang="en">Utils</a><ul><li class="webgen-menu-level5"><a href="documentation/API/utils.html#utils">Utils</a></li></ul></li></ul></li><li class="webgen-menu-level3 webgen-menu-submenu"><a href="documentation/index.html" hreflang="en">Documentation</a><ul><li class="webgen-menu-level4"><a href="documentation/index.html#documentation">Documentation</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="images/">Images</a><ul><li class="webgen-menu-level3"><a href="images/aquabar1.jpg">Aquabar1</a></li><li class="webgen-menu-level3"><a href="images/bodybg.gif">Bodybg</a></li><li class="webgen-menu-level3"><a href="images/evil_genius.jpg">Evil genius</a></li><li class="webgen-menu-level3"><a href="images/generated_by_webgen.png">Generated by webgen</a></li><li class="webgen-menu-level3"><a href="images/puck_as_god.jpg">Puck as god</a></li><li class="webgen-menu-level3"><a href="images/sidebarbg.gif">Sidebarbg</a></li><li class="webgen-menu-level3"><a href="images/war_room.jpg">War room</a></li><li class="webgen-menu-level3"><a href="images/webgen_logo.png">Webgen logo</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="stylesheets/">Stylesheets</a><ul><li class="webgen-menu-level3"><a href="stylesheets/api.css">Api</a></li><li class="webgen-menu-level3"><a href="stylesheets/coderay-default.css">Coderay default</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="templates/">Templates</a><ul><li class="webgen-menu-level3"><a href="templates/api.template">Api</a></li><li class="webgen-menu-level3"><a href="templates/feed.template">Feed</a></li><li class="webgen-menu-level3"><a href="templates/sitemap.template">Sitemap</a></li><li class="webgen-menu-level3"><a href="templates/tag.template">Tag</a></li><li class="webgen-menu-level3"><a href="templates/tikz.template">Tikz</a></li></ul></li><li class="webgen-menu-level2"><a href="default.template">Default</a></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="changes.html" hreflang="en">Changes</a><ul><li class="webgen-menu-level3"><a href="changes.html#change-notes">Change Notes</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="community.html" hreflang="en">Community</a><ul><li class="webgen-menu-level3"><a href="community.html#contributing-to-aquarium">Contributing to Aquarium</a></li><li class="webgen-menu-level3"><a href="community.html#mailing-lists">Mailing Lists</a></li><li class="webgen-menu-level3 webgen-menu-submenu"><a href="community.html#bugs-enhancement-requests-etc">Bugs, Enhancement Requests, etc.</a><ul><li class="webgen-menu-level4"><a href="community.html#bugs">Bugs</a></li><li class="webgen-menu-level4"><a href="community.html#feature-requests">Feature Requests</a></li><li class="webgen-menu-level4"><a href="community.html#patches">Patches</a></li></ul></li><li class="webgen-menu-level3"><a href="community.html#the-core-team">The Core Team</a></li><li class="webgen-menu-level3"><a href="community.html#acknowledgements">Acknowledgements</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="examples.html" hreflang="en">Examples</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="examples.html#examples">Examples</a><ul><li class="webgen-menu-level4"><a href="examples.html#tracing-method-calls">Tracing Method Calls</a></li><li class="webgen-menu-level4"><a href="examples.html#enhancing-codemethod095missingcode-without-overriding">“Enhancing” <code>method&#095;missing</code> Without Overriding</a></li><li class="webgen-menu-level4"><a href="examples.html#wrapping-an-exception-rescuing-one-type-and-raising-another">“Wrapping” an Exception: Rescuing one type and raising another</a></li><li class="webgen-menu-level4"><a href="examples.html#hack-to-create-a-reusable-aspect-that-is-defined-when-a-module-is-included-in-another">“Hack” to Create a Reusable Aspect that Is Defined When a Module is Included in Another</a></li><li class="webgen-menu-level4"><a href="examples.html#aspect-design">Aspect Design</a></li><li class="webgen-menu-level4"><a href="examples.html#design-by-contract-153">Design by Contract ™</a></li><li class="webgen-menu-level4"><a href="examples.html#testing-uses-of-aspects">Testing Uses of Aspects</a></li><li class="webgen-menu-level4"><a href="examples.html#mimicking-iintroductionsi-aka-iintertype-declarationsi">Mimicking <i>Introductions</i> (a.k.a. <i>Intertype Declarations</i>)</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="index.html" hreflang="en">Home</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="index.html#overview-of-aquarium">Overview of Aquarium</a><ul><li class="webgen-menu-level4"><a href="index.html#news">News</a></li></ul></li><li class="webgen-menu-level3"><a href="index.html#links">Links</a></li><li class="webgen-menu-level3"><a href="index.html#how-to-use-aquarium">How to Use Aquarium</a></li><li class="webgen-menu-level3"><a href="index.html#start-here">Start Here</a></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu webgen-menu-item-selected"><a href="install.html" hreflang="en">Install/Update</a><ul><li class="webgen-menu-level3"><a href="#first-time-installation">First-Time Installation</a></li><li class="webgen-menu-level3"><a href="#rubygems">RubyGems</a></li><li class="webgen-menu-level3 webgen-menu-submenu"><a href="#notes-on-updating">Notes on Updating</a><ul><li class="webgen-menu-level4"><a href="#updating-to-aquarium-07x">Updating to Aquarium-0.7.X</a></li><li class="webgen-menu-level4"><a href="#updating-to-aquarium-06x">Updating to Aquarium-0.6.X</a></li><li class="webgen-menu-level4"><a href="#notes-on-building-aquarium">Notes on Building Aquarium</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="jruby.html" hreflang="en">JRuby</a><ul><li class="webgen-menu-level3 webgen-menu-submenu"><a href="jruby.html#jruby-support">JRuby Support</a><ul><li class="webgen-menu-level4"><a href="jruby.html#advising-java-types-in-jruby">Advising Java Types in JRuby</a></li><li class="webgen-menu-level4"><a href="jruby.html#limitations-and-bugs">Limitations and Bugs</a></li></ul></li></ul></li><li class="webgen-menu-level2 webgen-menu-submenu"><a href="license.html" hreflang="en">License</a><ul><li class="webgen-menu-level3"><a href="license.html#aquarium-license">Aquarium License</a></li></ul></li><li class="webgen-menu-level2"><a href="browserfix.css">Browserfix</a></li><li class="webgen-menu-level2"><a href="default.css">Default</a></li></ul></li></ul></div>
+
+        <h2>Other Links</h2>
+        <ul class="linkblock">
+          <li><a href="https://deanwampler.github.io/open-source/aquarium/index.html">Aquarium Home</a></li>
+          <li><a href="https://github.com/deanwampler/Aquarium">GitHub</a></li>
+          <li><a href="https://concurrentthought.com" target="ara">Our Sponsors...</a></li>
+        </ul>
+
+      </div>
+
+      <div id="footer">
+        <p>&copy; 2007-2019, <a href="index.html">Aquarium Development Team</a>, All Rights Reserved | Generated by <a href="http://webgen.rubyforge.org">webgen</a> | Design by <a href="http://andreasviklund.com">Andreas Viklund</a></p>
+      </div>
+
+    </div>
+  </body>
+</html>
