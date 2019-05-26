@@ -10,7 +10,7 @@
 
 body {
   /*color: #9B9B9B;*/
-  font-family: "Merriweather", serif;
+  font-family: "Trebuchet MS", "Verdana", serif;
   font-size: 18px;
 /*  text-align: center; */
 }
@@ -23,15 +23,15 @@ footer {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 900;
   font-style: regular;
   color: #2C2C2C;
 }
 
 h1 {
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 46px;
 /*
   font-size: 60px;
   line-height: 75px;
@@ -64,7 +64,7 @@ nav {
   padding: 3px;
   background: #112337;  /*#D0021B;*/
   font-size: 12px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -200,7 +200,7 @@ section {
   top: -12px;
   padding: 0 10px;
   background: #fff;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 900;
   font-size: 15px;
   text-transform: uppercase;
@@ -297,7 +297,7 @@ section {
 }
 
 .talk-desc {
-  font-family: Lato-Bold;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 18px;
   color: #112337;
   line-height: 22px;
