@@ -8,20 +8,20 @@ tagline: Books written by Dean Wampler
 <table>
   <tr>
     <td>
-      <p><a href="http://shop.oreilly.com/product/0636920033073.do">Programming Scala, Second Edition</a> is a comprehensive and up-to-date introduction to <a href="http://scala-lang.org">Scala</a>. It covers the features of Scala 2.11.</p>
+      <p><a href="http://shop.oreilly.com/product/0636920033073.do">Programming Scala, Second Edition</a> is a comprehensive and up-to-date introduction to <a href="http://scala-lang.org">Scala</a>. It covers the features of Scala 2.11, but I recently updated the [examples on GitHub](https://github.com/deanwampler/prog-scala-2nd-ed-code-examples) to work with Scala `2.11.12`, `2.12.8`, and `2.13.0-RC2`.</p>
       <p><a href="programmingscala2.html">More information...</a>.</p>
     </td>
     <td><a href="http://shop.oreilly.com/product/0636920033073.do" class="books-book">
-      <img src="/assets/images/prog_scala_2ed_comp-quarter_size.jpg" alt="Programming Scala, 2nd Edition"/></a>
+      <img src="/assets/images/prog_scala_2ed_comp-quarter_size.jpg" alt="Programming Scala, Second Edition"/></a>
     </td>
   </tr>
   <tr>
     <td>
-      <p><a href="http://www.oreilly.com/data/free/fast-data-architectures-for-streaming-applications.csp">Fast Data Architectures for Streaming Applications</a> is a free report co-published by <a href="http://lightbend.com">Lightbend</a> and <a href="http://oreilly.com">O'Reilly</a> on the architectural characteristics of highly available, resilient, scalable, and responsive systems for data stream processing at scale.</p>
+      <p><a href="lbnd.io/fast-data-book">Fast Data Architectures for Streaming Applications, Second Edition</a> is a free report co-published by <a href="http://lightbend.com">Lightbend</a> and <a href="http://oreilly.com">O'Reilly</a> on the architectural characteristics of highly available, resilient, scalable, and responsive systems for data stream processing at scale.</p>
       <p><a href="fd-arch-streaming.html">More information...</a>.</p>
     </td>
-    <td><a href="http://www.oreilly.com/data/free/fast-data-architectures-for-streaming-applications.csp" class="books-book">
-      <img src="/assets/images/FastDataArch-StreamingApps-2ndEd-256x337.png" alt="Fast Data Architectures for Streaming Applications"/></a>
+    <td><a href="lbnd.io/fast-data-book" class="books-book">
+      <img src="/assets/images/FastDataArch-StreamingApps-2ndEd-256x337.png" alt="Fast Data Architectures for Streaming Applications, Second Edition"/></a>
     </td>
   </tr>
   <tr>

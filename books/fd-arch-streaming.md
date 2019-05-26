@@ -9,7 +9,7 @@ tagline:
 <table>
 <tr>
 <td>
-<p><a href="http://www.oreilly.com/data/free/fast-data-architectures-for-streaming-applications.csp">Fast Data Architectures for Streaming Applications, Second Edition</a> is a free report co-published by <a href="http://lightbend.com">Lightbend</a> and <a href="http://oreilly.com">O'Reilly</a> on the architectural characteristics of highly available, resilient, scalable, and responsive systems for data stream processing at scale. Originally published in October, 2016, the second edition was published in October, 2018.</p>
+<p><a href="lbnd.io/fast-data-book">Fast Data Architectures for Streaming Applications, Second Edition</a> is a free report co-published by <a href="http://lightbend.com">Lightbend</a> and <a href="http://oreilly.com">O'Reilly</a> on the architectural characteristics of highly available, resilient, scalable, and responsive systems for data stream processing at scale. Originally published in October, 2016, the second edition was published in October, 2018.</p>
 
 <p>The book provides an overview of the common requirements for reliable streaming systems, based on common use cases for streaming, such as serving machine learning in a streaming context. Other requirements include the need to handle potential data loss, duplication of data, late arrival, etc. Standard system concerns, the so called <a href="http://www.reactivemanifesto.org/">reactive principles</a> are important for such systems, where services and applications must run reliably for weeks, months, even years. If you run anything long enough, it will see every rare anomaly: hardware failures, network partitions, traffic spikes, etc. Hence, streaming systems have harder operational requirements than shorter-lived batch processes</p>
 
@@ -33,7 +33,7 @@ tagline:
 
 <p>Services like Spark and Flink do a lot of heavy lifting for you, such as automatic data partitioning, tasks management across the cluster, etc., but impose some overhead and require that your application fit their programming and execution model. Libraries like Akka Streams and Kafka Streams, provide much more flexibility, including lower latency, but don't provide automatic partitioning and task management, like Spark and Flink.</p>
 
-<p>Rounding out the picture are tools for building other microservices, such as the <a href="http://www.lightbend.com/platform">Lightbend Reactive Platform</a>, as well as management and monitoring tools.</p>
+<p>Rounding out the picture are tools for building other microservices, such as the <a href="http://www.lightbend.com/platform">Lightbend Platform</a>, including management and monitoring tools.</p>
 
 </td>
 <td class="fd-arch-streaming-cover-cell"><a href="https://lbnd.io/fast-data-book"><img src="/assets/images/FastDataArch-StreamingApps-2ndEd-256x337.png" alt="Fast Data Architectures for Streaming Applications, Second Edition"/></a></td>

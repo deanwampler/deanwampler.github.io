@@ -9,7 +9,7 @@ tagline:
 <table>
 <tr>
 <td>
-<p><a href="http://shop.oreilly.com/product/0636920033073.do">Programming Scala, Second Edition</a> is a comprehensive and up-to-date introduction to <a href="http://scala-lang.org">Scala</a>. It covers the features of Scala version 2.11.</p>
+<p><a href="http://shop.oreilly.com/product/0636920033073.do">Programming Scala, Second Edition</a> is a comprehensive and up-to-date introduction to <a href="http://scala-lang.org">Scala</a>. It covers the features of Scala version 2.11. The [examples](https://github.com/deanwampler/prog-scala-2nd-ed-code-examples) were recently upgraded to work with Scala `2.11.12`, `2.12.8`, and `2.13.0-RC2`.</p>
 
 <p>I wrote the book on Scala that I would want to read, if I were to start from the following background:
 <ul>
@@ -29,13 +29,24 @@ tagline:
 </ul>
 </p>
 
-<p>If you want a more gentle introduction to Scala, consider <a href="">Atomic Scala</a> and <a href="">Scala for the Impatient</a>.</p>
+<p>There are some more obscure topics that I omit and other very advanced topics that I briefly mention, so you'll be aware of them. Still, my goal for the reader is to <em>really</em> know the language, the common techniques used to solve various design problems, and to understand how Scala is used in domains like <em>Big Data</em>.</p>
 
-<p>I don't cover <em>everything</em> about the language and libraries. There are some more obscure topics that I omit and other very advanced topics that I briefly mention, so you'll be aware of them. Still, my goal for the reader is to <em>really</em> know the language, the common techniques used to solve various design problems, and to understand how Scala is used in domains like <em>Big Data</em>.</p>
+For more information:
 
-<p>Download the book's example code from <a href="https://github.com/deanwampler/prog-scala-2nd-ed-code-examples">GitHub</a>. Report errata to <a href="http://oreilly.com/catalog/errata.csp?isbn=0636920033073">O'Reilly</a>.
+* This [examples on GitHub](https://github.com/deanwampler/prog-scala-2nd-ed-code-examples).
+* The book site, [Programming Scala, Second Edition](http://shop.oreilly.com/product/0636920033073.do)
+
+To discuss the book, the code examples, etc. use one of these forums:
+
+* The [Gitter channel](https://gitter.im/deanwampler/prog-scala-2nd-ed-code-examples) or [Issues](https://github.com/deanwampler/prog-scala-2nd-ed-code-examples/issues) for the example code GitHub repo
+* The book's Twitter account, [@ProgScala](https://twitter.com/ProgScala)
+* The [O'Reilly forum](http://forums.oreilly.com/) or [errata page](http://oreilly.com/catalog/errata.csp?isbn=0636920033073)
+
 </p>
+
+If you're using Spark and you want a quick introduction to Scala aimed at Spark developers, check out my free tutorial, [Just Enough Scala for Spark](https://github.com/deanwampler/JustEnoughScalaForSpark).
 </td>
+
 <td class="prog-scala-cover-cell"><a href="http://shop.oreilly.com/product/0636920033073.do"><img src="/assets/images/prog_scala_2ed_comp-quarter_size.jpg" alt="Programming Scala, 2nd Edition"/></a></td>
 </tr>
 </table>
