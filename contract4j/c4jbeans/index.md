@@ -13,7 +13,7 @@ v0.2.0.0   October 5, 2005
 v0.2.0M1   August 15, 2005
 
 Dean Wampler, Ph.D.
-http://aspectprogramming.com/contract4j
+https://aspectprogramming.com/contract4j
 
 Contents:
 
@@ -69,7 +69,7 @@ I'm a long-time believer in DbC and wanted to use it in
 Java. A few years ago, I discovered the clever "Barter"
 project, which supports DbC in Java using XDoclet tags
 and AspectJ code generation to perform the tests as AspectJ
-"advice" (http://barter.sourceforge.net/).
+"advice" (https://barter.sourceforge.net/).
 
 A problem with doclet-based approaches is that they are
 buried in the comments and hence decoupled from the
@@ -1080,29 +1080,29 @@ final release. See the TODO items above for details.
 ** For Further Information...
 
 contract4j/ is the home page for Contract4J. It is hosted by
-Aspect Programming, http://www.aspectprogramming.com/, where you'll find more
+Aspect Programming, https://www.aspectprogramming.com/, where you'll find more
 information and whitepapers on Contract4J and Aspect-Oriented Software
 Development (AOSD), in general.
 
-The definitive site on AOSD is http://www.aosd.net.
+The definitive site on AOSD is https://www.aosd.net.
 
-See http://www.eclipse.org/aspectj for information on AspectJ. Note that there are
+See https://www.eclipse.org/aspectj for information on AspectJ. Note that there are
 plans to incorporate Contract4J into the new standard library for AspectJ that
 will be introduced with the forthcoming, final AspectJ5 release.
 
 For alternative approaches to doing Design by Contract in Java, see the
 "Barter" project, which uses XDoclet and also generates AspectJ. Barter
-partially inspired Contract4J. http://barter.sourceforge.net/.
+partially inspired Contract4J. https://barter.sourceforge.net/.
 
 There is a discussion group doing DbC in Java and possibly getting a future
-version of Java to support DbC natively. See http://dbc.dev.java.net/.
+version of Java to support DbC natively. See https://dbc.dev.java.net/.
 
 Some more sophisticated approaches to program correctness include the J-LO
 tool for runtime checks of temporal assertions about the program.
-http://www-i2.informatik.rwth-aachen.de/Research/RV/JLO/
+https://www-i2.informatik.rwth-aachen.de/Research/RV/JLO/
 
 Another project is the Java Modeling Language (JML), which supports DbC
 for Java.
-http://www.cs.iastate.edu/~leavens/JML/
+https://www.cs.iastate.edu/~leavens/JML/
 </pre>
 

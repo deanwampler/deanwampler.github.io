@@ -55,7 +55,7 @@ Copyright 2005-2011 Contract4J Development Team
    may not use this software except in compliance with the
    License. You may obtain a copy of the License a
 
-       http://www.eclipse.org/legal/epl-v10.html
+       https://www.eclipse.org/legal/epl-v10.html
 
    A copy is also included with this distribution. See the
    "LICENSE" file. Unless required by applicable law or
@@ -151,7 +151,7 @@ Copyright 2005-2011 Contract4J Development Team
 
 <h3 id="design_by_contract_and_aspect_oriented_programming">Design by Contract and Aspect-Oriented Programming</h3>
 
-<p>So what does DbC have to do with <a href="http://www.aspectprogramming.com/home/aosd">Aspect-Oriented Software Development</a> (Aspect-Oriented Programming - AOP - for short)? On the one hand, the component&#8217;s contract is an essential part of the complete, logical component specification that clients must support. For example, an interface for a bank account may have a contract requirement that all methods that return a balance must always return a non-negative number (ignoring overdraft features). However, in practical terms, contracts often include implementation concerns that may have little relationship to the domain logic of the application. For example, the code implementing the bank account may prohibit passing null values as method parameters.</p>
+<p>So what does DbC have to do with <a href="https://www.aspectprogramming.com/home/aosd">Aspect-Oriented Software Development</a> (Aspect-Oriented Programming - AOP - for short)? On the one hand, the component&#8217;s contract is an essential part of the complete, logical component specification that clients must support. For example, an interface for a bank account may have a contract requirement that all methods that return a balance must always return a non-negative number (ignoring overdraft features). However, in practical terms, contracts often include implementation concerns that may have little relationship to the domain logic of the application. For example, the code implementing the bank account may prohibit passing null values as method parameters.</p>
 
 <p>For both types of contract details, AOP allows us to specify the details with sufficient &#8220;proximity&#8221; to the interface so that clients can see the constraints and AOP gives us an elegant way of testing the constraints at runtime without cluttering the code with logic to run the tests and handle failures.</p>
 
@@ -1402,19 +1402,19 @@ Numerous minor enhancements.</p>
 
 <p>We recently released the first version of a new AOP framework for Ruby called <a href="https://github.com/deanwampler/Aquarium">Aquarium</a>. The examples included with Aquarium include a basic Design-by-Contract module.</p>
 
-<p>The <a href="http://www.ibm.com/developerworks/views/java/libraryview.jsp?search_by=aop@work:">AOP@Work</a> series at <a href="http://developerWorks.com">developerWorks.com</a> contains an <a href="http://www.ibm.com/developerworks/java/library/j-aopwork17.html">article about Contract4J5</a>. It introduces Design by Contract and how Contract4J5 supports it in Java. The article concludes with a discussion of emerging trends in Aspect-Oriented Design.</p>
+<p>The <a href="https://www.ibm.com/developerworks/views/java/libraryview.jsp?search_by=aop@work:">AOP@Work</a> series at <a href="https://developerWorks.com">developerWorks.com</a> contains an <a href="https://www.ibm.com/developerworks/java/library/j-aopwork17.html">article about Contract4J5</a>. It introduces Design by Contract and how Contract4J5 supports it in Java. The article concludes with a discussion of emerging trends in Aspect-Oriented Design.</p>
 
-<p>The AOSD.06 Conference in Bonn, Germany (March 19-24) featured a talk in the Industry Track on Contract4J5, specifically on the lessoned learned about writing generic, reusable aspects in AspectJ while implementing Contract4J5. There was also a paper on aspect-oriented design patterns in Contract4J5 in the ACP4IS workshop. Both papers can be found at the conference <a href="http://aosd.net/2006">website</a>.</p>
+<p>The AOSD.06 Conference in Bonn, Germany (March 19-24) featured a talk in the Industry Track on Contract4J5, specifically on the lessoned learned about writing generic, reusable aspects in AspectJ while implementing Contract4J5. There was also a paper on aspect-oriented design patterns in Contract4J5 in the ACP4IS workshop. Both papers can be found at the conference <a href="https://aosd.net/2006">website</a>.</p>
 
-<p>The AOSD.07 Conference in Vancouver, British Columbia (March 12-16) featured a talk in the Industry Track on emerging principles of Aspect-Oriented Design, based on adaptations of well-known Object-Oriented Design principles. The paper can be found at the conference <a href="http://aosd.net/2007/">website</a>.</p>
+<p>The AOSD.07 Conference in Vancouver, British Columbia (March 12-16) featured a talk in the Industry Track on emerging principles of Aspect-Oriented Design, based on adaptations of well-known Object-Oriented Design principles. The paper can be found at the conference <a href="https://aosd.net/2007/">website</a>.</p>
 
-<p>The definitive site on AOSD is <a href="http://www.aosd.net">aosd.net</a>.</p>
+<p>The definitive site on AOSD is <a href="https://www.aosd.net">aosd.net</a>.</p>
 
 <p>See <a href="https://www.eclipse.org/aspectj">aspectj.org</a> for information on AspectJ, which was used to implement Contract4J.</p>
 
-<p>For more on Design by Contract, see <a href="http://www.eiffel.com/developers/design_by_contract.html">Building bug-free O-O software: An introduction to Design by Contract(TM)</a> and the discussion of DbC in the larger context of Agile Methods in Martin, et al., &#8220;Agile Software Development: Principles, Patterns, and Practices&#8221;, Prentice Hall, 2003 (ISBN 0-13-597444-5).</p>
+<p>For more on Design by Contract, see <a href="https://www.eiffel.com/developers/design_by_contract.html">Building bug-free O-O software: An introduction to Design by Contract(TM)</a> and the discussion of DbC in the larger context of Agile Methods in Martin, et al., &#8220;Agile Software Development: Principles, Patterns, and Practices&#8221;, Prentice Hall, 2003 (ISBN 0-13-597444-5).</p>
 
-<p>For alternative approaches to doing Design by Contract in Java, see the <a href="http://www.google.com/url?sa=t&amp;source=web&amp;cd=1&amp;ved=0CBsQFjAA&amp;url=http%3A%2F%2Fbarter.sourceforge.net%2F&amp;ei=cMhOTbPQGcatgQfXpMQL&amp;usg=AFQjCNHvW-VD4TQh964pjIZZN2zSIEi5fA">Barter</a> project, which uses <a href="http://www.google.com/url?sa=t&amp;source=web&amp;cd=1&amp;sqi=2&amp;ved=0CBkQFjAA&amp;url=http%3A%2F%2Fxdoclet.sourceforge.net%2F&amp;ei=ishOTbD_C87egQfB4pUg&amp;usg=AFQjCNFXfXQantxoEPUiSvf_hjnw0lnSPQ">XDoclet</a> and also generates AspectJ. Barter was an inspiration for Contract4J5.</p>
+<p>For alternative approaches to doing Design by Contract in Java, see the <a href="https://www.google.com/url?sa=t&amp;source=web&amp;cd=1&amp;ved=0CBsQFjAA&amp;url=http%3A%2F%2Fbarter.sourceforge.net%2F&amp;ei=cMhOTbPQGcatgQfXpMQL&amp;usg=AFQjCNHvW-VD4TQh964pjIZZN2zSIEi5fA">Barter</a> project, which uses <a href="https://www.google.com/url?sa=t&amp;source=web&amp;cd=1&amp;sqi=2&amp;ved=0CBkQFjAA&amp;url=http%3A%2F%2Fxdoclet.sourceforge.net%2F&amp;ei=ishOTbD_C87egQfB4pUg&amp;usg=AFQjCNFXfXQantxoEPUiSvf_hjnw0lnSPQ">XDoclet</a> and also generates AspectJ. Barter was an inspiration for Contract4J5.</p>
 
 <p>JBoss AOP has basic support for contracts. Spring AOP may have similar support.</p>
 
