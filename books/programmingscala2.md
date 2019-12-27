@@ -9,6 +9,7 @@ tagline:
 <table>
 <tr>
 <td>
+<p><b>Update:</b> I've started work on the third edition, which will be published in 2020.</p>
 <p><a href="https://shop.oreilly.com/product/0636920033073.do" target="book">Programming Scala, Second Edition</a> is a comprehensive and up-to-date introduction to <a href="https://scala-lang.org" target="scala">Scala</a>. It covers the features of Scala version 2.11. The <a href="https://github.com/deanwampler/prog-scala-2nd-ed-code-examples" target="code">code examples</a> were recently upgraded to work with Scala 2.11.12, 2.12.8, and 2.13.0-RC2.</p>
 
 <p>I wrote the book on Scala that I would want to read, if I were to start from the following background:
