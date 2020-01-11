@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dean Wampler, Ph.D.
-tagline: Software developer, expert in Fast and Big Data, Scala, and Functional Programming. Mastering Deep Learning.<br/>O'Reilly author and frequent public speaker.<br/>Lives in Chicago. Works all over.
+tagline: Industry expert in ML engineering, streaming data, and Scala.<br/>O'Reilly author and frequent public speaker.<br/>Works for <a href="https://anyscale.io">Anyscale</a>. Lives in Chicago. 
 
 include_social: true
 ---

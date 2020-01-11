@@ -15,7 +15,7 @@ markdown: kramdown
 # so be sure to set them if your theme uses them.
 #
 title : Dean Wampler
-tagline: Polyglot Developer of Streaming Data Systems
+tagline: Engineer of ML and Streaming Data Systems
 author :
   name : Dean Wampler
   email : dean@concurrentthought.com
