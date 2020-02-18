@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dean Wampler, Ph.D.
-tagline: Industry expert in ML engineering, streaming data, and Scala.<br/>O'Reilly author and frequent public speaker.<br/>Works for <a href="https://anyscale.io">Anyscale</a>. Lives in Chicago. 
+tagline: Industry expert in ML engineering, streaming data, and Scala.<br/>O'Reilly author and frequent public speaker.<br/>Works for <a href="https://anyscale.io">Anyscale</a>. Lives in Chicago.
 
 include_social: true
 ---
@@ -20,6 +20,16 @@ include_social: true
 
 <section id="talks" class="talks centered">
   <p class="section-title"><span>Talks &amp; Papers </span></p>
+
+  <article class="talk">
+    <h1>Modularity: A Retrospective</h1>
+    <p class="talk-desc">GOTO Chicago Nights, February 18, 2020</p>
+    <p>A look at what we've accomplished in making software modular and
+      where we need to go.</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/Modularity-a-Retrospective.pdf" class="button button-pdf">Download PDF</a>
+    </div>
+  </article>
 
   <article class="talk">
     <h1>Trends Affecting System Architectures</h1>

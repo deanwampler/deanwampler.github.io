@@ -19,6 +19,23 @@ Most of my conference and user group talks can be found in this <a href="https:/
   <tr>
     <td>
       <article class="talk">
+        <h1>Modularity: A Retrospective</h1>
+        <p class="talk-desc">GOTO Chicago Nights, February 18, 2020</p>
+        <p>A look at what we've accomplished in making software modular and
+        where we need to go.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/Modularity-a-Retrospective.pdf" class="button button-pdf">Download PDF</a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="/polyglotprogramming/papers/Modularity-a-Retrospective.pdf"><img src="Modularity-a-Retrospective-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Trends Affecting System Architectures</h1>
         <p class="talk-desc">GOTO Chicago Nights, April 2, 2019</p>
         <p>A look at how the increasing importance of handling data quickly is driving applications towards streaming. In particular, the challenges of leveraging machine learning and AI in these streaming applications.</p>
