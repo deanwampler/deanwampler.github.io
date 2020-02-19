@@ -1,5 +1,22 @@
 /* Custom container */
 
+/* From https://meowni.ca/posts/monica-dot-css/ */
+* {box-sizing: border-box}
+[hidden] {display: none !important}
+[disabled] {pointer-events:none; opacity: 0.3}
+.horizontal {display: flex; flex-direction: row; justify-content: space-between}
+.vertical {display: flex; flex-direction: column}
+.center {justify-content: center; align-items: center}
+.top {align-items: flex-start}
+.flex {flex: 1}
+html {
+  --spacing-xs: 8px;
+  --spacing: 24px;
+  --spacing-s: 12px;
+  --spacing-m: 36px;
+}
+/* end https://meowni.ca/posts/monica-dot-css/ */
+
 body {
   background-color: #fefdfd;
   height: 100%;

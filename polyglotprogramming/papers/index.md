@@ -581,7 +581,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 </table>
 </section>
 
-<h2>All My Presentations and Papers</h2>
+<h2>Other Presentations and Papers</h2>
 
 <h3>Scala</h3>
 
