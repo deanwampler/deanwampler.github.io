@@ -214,12 +214,17 @@ section {
  */
 
 #about {
-  margin: 100px 0 40px;
+  margin: 72px 0 40px;
+  /* margin: 100px 0 40px; */
 }
 
 #about h1 {
+  font-size: 72px;
+  line-height: 96px;
+/*
   font-size: 100px;
   line-height: 120px;
+*/
 }
 
 .about-whoami {

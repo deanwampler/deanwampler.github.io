@@ -19,7 +19,7 @@ include_social: true
 </section>
 
 <section id="talks" class="talks centered">
-  <p class="section-title"><span>Talks &amp; Papers </span></p>
+  <p class="section-title"><span>Some of My Talks</span></p>
 
   <article class="talk">
     <h1>Modularity: A Retrospective</h1>
@@ -80,7 +80,7 @@ include_social: true
   </article>
 
   <p>
-    <center><a href="/polyglotprogramming/papers">All Talks &amp; Papers...</a></center>
+    <center><a href="/polyglotprogramming/papers">All Talks</a></center>
   </p>
 
 </section>
