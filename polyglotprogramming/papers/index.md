@@ -17,6 +17,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 <table class="talks-table centered">
   <tr>
     <td>
+      <a id="modularity-a-retrospective"/>
       <article class="talk">
         <h1>Modularity: A Retrospective</h1>
         <p class="talk-desc">GOTO Chicago Nights, February 18, 2020</p>
@@ -34,6 +35,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="trends-affecting-system-architectures"/>
       <article class="talk">
         <h1>Trends Affecting System Architectures</h1>
         <p class="talk-desc">GOTO Chicago Nights, April 2, 2019</p>
@@ -50,6 +52,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="executive-briefing-what-it-takes-to-use-ml-in-fast-data-pipelines"/>
       <article class="talk">
         <h1>Executive Briefing: What It Takes to Use ML in Fast Data Pipelines</h1>
         <p class="talk-desc">Strata San Francisco, London, and NYC 2019</p>
@@ -66,6 +69,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="executive-briefing-what-you-need-to-know-about-fast-data"/>
       <article class="talk">
         <h1>Executive Briefing: What You Need to Know about Fast Data</h1>
         <p class="talk-desc">Strata London and NYC 2018</p>
@@ -83,6 +87,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="streaming-microservices-with-akka-streams-and-kafka-streams"/>
       <article class="talk">
         <h1>Streaming Microservices with Akka Streams and Kafka Streams</h1>
         <p class="talk-desc">Strata San Jose and London 2018, Scala Days NYC 2018, Reactive Summit 2018, YOW! 2018</p>
@@ -100,6 +105,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="stream-all-the-things"/>
       <article class="talk">
         <h1>Stream All the Things!!</h1>
         <p class="talk-desc">Software Architecture Conference NYC 2017, Strata London and NYC 2017, Reactive Summit 2017, ScalaIO 2017, YOW! Data 2018</p>
@@ -117,6 +123,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="bash-and-all-that"/>
       <article class="talk">
         <h1>Bash and All That</h1>
         <p class="talk-desc">GOTO Chicago 2018</p>
@@ -133,6 +140,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="scala-and-the-jvm-for-big-data-lessons-from-spark"/>
       <article class="talk">
         <h1>Scala and the JVM for Big Data: Lessons from Spark</h1>
         <p class="talk-desc">Strata San Jose and Singapore 2016</p>
@@ -151,6 +159,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="why-spark-is-the-next-top-compute-model"/>
       <article class="talk">
         <h1>Why Spark Is The Next Top (Compute) Model</h1>
         <p class="talk-desc">Numerous Venues 2014 and 2015</p>
@@ -168,6 +177,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="data-science-at-scale-with-spark"/>
       <article class="talk">
         <h1>Data Science at Scale with Spark</h1>
         <p class="talk-desc">GOTO Chicago 2015</p>
@@ -184,6 +194,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="the-unreasonable-effectiveness-of-scala-for-big-data"/>
       <article class="talk">
         <h1>The Unreasonable Effectiveness of Scala for Big Data</h1>
         <p class="talk-desc"><a href="https://event.scaladays.org/scaladays-sanfran-2015#!#schedulePopupExtras-6536">Scala Days 2015</a>.</p>
@@ -201,6 +212,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="why-scala-is-taking-over-the-big-data-world"/>
       <article class="talk">
         <h1>Why Scala Is Taking Over the Big Data World</h1>
         <p class="talk-desc"><a href="https://www.scaladays.org/#schedule/Why-Scala-is-Taking-Over-the-Big-Data-World">Scala Days 2014</a>, <a href="https://skillsmatter.com/conferences/1948-scala-exchange-2014">Scala eXchange 2014</a>, and <a href="https://datadaytexas.com/">Data Day Texas 2015</a></p>
@@ -220,6 +232,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="the-internet-was-made-for-cats"/>
       <article class="talk">
         <h1>The Internet Was Made for Cats</h1>
         <p class="talk-desc"><a href="https://www.meetup.com/chicagoscala/events/226860360/">Chicago Scala Users Group, Jan 2016</a></p>
@@ -236,6 +249,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="copious-data-the-killer-app-for-functional-programming"/>
       <article class="talk">
         <h1>Copious Data, the Killer App for Functional Programming</h1>
         <p class="talk-desc"><a href="https://lambdajam.com/">LambdaJam Chicago</a></p>
@@ -254,6 +268,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="sql-strikes-back-recent-trends-in-data-persistence-and-analysis"/>
       <article class="talk">
         <h1>SQL Strikes Back! Recent Trends in Data Persistence and Analysis</h1>
         <p class="talk-desc"><a href="https://codemesh.io">CodeMesh London 2014</a></p>
@@ -271,6 +286,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="the-seductions-of-scala"/>
       <article class="talk">
         <h1>The Seductions of Scala</h1>
         <p class="talk-desc">Various Venues</p>
@@ -289,6 +305,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="mapreduce-and-its-discontents"/>
       <article class="talk">
         <h1>MapReduce and Its Discontents</h1>
         <p class="talk-desc">QCon NYC 2012, and <a href="https://www.bigdatatechcon.com/boston2013/">Big Data Techcon Boston 2013</a></p>
@@ -306,6 +323,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="why-big-data-needs-to-be-functional"/>
       <article class="talk">
         <h1>Why Big Data Needs to Be Functional</h1>
         <p class="talk-desc">NE Scala Symposium 2011</p>
@@ -324,6 +342,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="heresies-and-dogmas-in-software-development"/>
       <article class="talk">
         <h1>Heresies and Dogmas in Software Development</h1>
         <p class="talk-desc"><a href="https://thestrangeloop.com">Strange Loop 2011</a></p>
@@ -342,6 +361,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="better-programming-through-functional-programming"/>
       <article class="talk">
         <h1>Better Programming Through Functional Programming</h1>
         <p class="talk-desc"></p>
@@ -360,6 +380,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="polyglot-and-poly-paradigm-programming"/>
       <article class="talk">
         <h1>Polyglot and Poly-paradigm Programming</h1>
         <p class="talk-desc">QCon San Francicso 2008</p>
@@ -378,6 +399,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
+      <a id="hive-sql-for-hadoop"/>
       <article class="talk">
         <h1>Hive - SQL for Hadoop</h1>
         <p class="talk-desc">Chicago Hadoop Users Group</p>
@@ -427,7 +449,7 @@ In addition to the talks above, here are a few others.
     </ul>
 </p>
 
-
+<a id="general-aosd"/>
 <h3>General AOSD</h3>
 <p>
     <ul>
