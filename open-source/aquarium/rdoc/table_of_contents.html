@@ -11,8 +11,11 @@
   var index_rel_prefix = "./";
 </script>
 
-<script src="./js/jquery.js"></script>
-<script src="./js/darkfish.js"></script>
+<script src="./js/navigation.js" defer></script>
+<script src="./js/search.js" defer></script>
+<script src="./js/search_index.js" defer></script>
+<script src="./js/searcher.js" defer></script>
+<script src="./js/darkfish.js" defer></script>
 
 <link href="./css/fonts.css" rel="stylesheet">
 <link href="./css/rdoc.css" rel="stylesheet">
@@ -33,6 +36,8 @@
     <a href="CHANGES.html">CHANGES</a>
 
     <ul>
+
+      <li><a href="CHANGES.html#label-Version+0.7.3">Version 0.7.3</a>
 
       <li><a href="CHANGES.html#label-Version+0.7.1">Version 0.7.1</a>
 
@@ -114,6 +119,8 @@
     <a href="UPGRADE.html">UPGRADE</a>
 
     <ul>
+
+      <li><a href="UPGRADE.html#label-Updating+to+Aquarium-0.7.3">Updating to Aquarium-0.7.3</a>
 
       <li><a href="UPGRADE.html#label-Updating+to+Aquarium-0.7.1">Updating to Aquarium-0.7.1</a>
 
@@ -336,11 +343,6 @@
   </li>
 
   <li class="module">
-    <a href="Aquarium/Extensions/StringHelper.html">Aquarium::Extensions::StringHelper</a>
-
-  </li>
-
-  <li class="module">
     <a href="Aquarium/Extras.html">Aquarium::Extras</a>
 
     <ul>
@@ -541,6 +543,11 @@
   </li>
 
   <li class="module">
+    <a href="Aquarium/Utils/CamelCase.html">Aquarium::Utils::CamelCase</a>
+
+  </li>
+
+  <li class="module">
     <a href="Aquarium/Utils/DefaultLogger.html">Aquarium::Utils::DefaultLogger</a>
 
   </li>
@@ -649,11 +656,6 @@
   </li>
 
   <li class="class">
-    <a href="String.html">String</a>
-
-  </li>
-
-  <li class="class">
     <a href="Traced1.html">Traced1</a>
 
   </li>
@@ -684,14 +686,9 @@
     <span class="container">Aquarium::Finders::MethodFinder</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/DSL/AspectDSL.html#method-c-append_features">::append_features</a>
+    <a href="Aquarium/Utils/OptionsUtils.html#method-c-append_features">::append_features</a>
     &mdash;
-    <span class="container">Aquarium::Aspects::DSL::AspectDSL</span>
-
-  <li class="method">
-    <a href="Aquarium/Reusables/TraceMethods.html#method-c-append_features">::append_features</a>
-    &mdash;
-    <span class="container">Aquarium::Reusables::TraceMethods</span>
+    <span class="container">Aquarium::Utils::OptionsUtils</span>
 
   <li class="method">
     <a href="Aquarium/DSL.html#method-c-append_features">::append_features</a>
@@ -699,9 +696,14 @@
     <span class="container">Aquarium::DSL</span>
 
   <li class="method">
-    <a href="Aquarium/Utils/OptionsUtils.html#method-c-append_features">::append_features</a>
+    <a href="Aquarium/Reusables/TraceMethods.html#method-c-append_features">::append_features</a>
     &mdash;
-    <span class="container">Aquarium::Utils::OptionsUtils</span>
+    <span class="container">Aquarium::Reusables::TraceMethods</span>
+
+  <li class="method">
+    <a href="Aquarium/Aspects/DSL/AspectDSL.html#method-c-append_features">::append_features</a>
+    &mdash;
+    <span class="container">Aquarium::Aspects::DSL::AspectDSL</span>
 
   <li class="method">
     <a href="Aquarium/VERSION.html#method-c-build_tag">::build_tag</a>
@@ -849,6 +851,11 @@
     <span class="container">Aquarium::Utils::TypeUtils</span>
 
   <li class="method">
+    <a href="Aquarium/Aspects/Aspect.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">Aquarium::Aspects::Aspect</span>
+
+  <li class="method">
     <a href="Aquarium/Extras/DesignByContract/ContractError.html#method-c-new">::new</a>
     &mdash;
     <span class="container">Aquarium::Extras::DesignByContract::ContractError</span>
@@ -859,24 +866,14 @@
     <span class="container">Aquarium::Aspects::AdviceChainNode</span>
 
   <li class="method">
-    <a href="Aquarium/Utils/InvalidOptions.html#method-c-new">::new</a>
+    <a href="Aquarium/Finders/FinderResult.html#method-c-new">::new</a>
     &mdash;
-    <span class="container">Aquarium::Utils::InvalidOptions</span>
+    <span class="container">Aquarium::Finders::FinderResult</span>
 
   <li class="method">
-    <a href="Aquarium/Utils/LogicError.html#method-c-new">::new</a>
+    <a href="Aquarium/ClassWithStateAndBehavior.html#method-c-new">::new</a>
     &mdash;
-    <span class="container">Aquarium::Utils::LogicError</span>
-
-  <li class="method">
-    <a href="Aquarium/BarModule.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">Aquarium::BarModule</span>
-
-  <li class="method">
-    <a href="Aquarium/InvarCond.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">Aquarium::InvarCond</span>
+    <span class="container">Aquarium::ClassWithStateAndBehavior</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/NoAdviceChainNode.html#method-c-new">::new</a>
@@ -884,14 +881,14 @@
     <span class="container">Aquarium::Aspects::NoAdviceChainNode</span>
 
   <li class="method">
-    <a href="Aquarium/Finders/FinderResult.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">Aquarium::Finders::FinderResult</span>
-
-  <li class="method">
     <a href="Aquarium/Aspects/BeforeAdviceChainNode.html#method-c-new">::new</a>
     &mdash;
     <span class="container">Aquarium::Aspects::BeforeAdviceChainNode</span>
+
+  <li class="method">
+    <a href="Aquarium/Foo.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">Aquarium::Foo</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/AfterReturningAdviceChainNode.html#method-c-new">::new</a>
@@ -904,6 +901,11 @@
     <span class="container">Aquarium::Aspects::AfterRaisingAdviceChainNode</span>
 
   <li class="method">
+    <a href="Aquarium/Aspects/Pointcut.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">Aquarium::Aspects::Pointcut</span>
+
+  <li class="method">
     <a href="Aquarium/Aspects/AfterAdviceChainNode.html#method-c-new">::new</a>
     &mdash;
     <span class="container">Aquarium::Aspects::AfterAdviceChainNode</span>
@@ -914,9 +916,9 @@
     <span class="container">Aquarium::Aspects::AroundAdviceChainNode</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/Aspect.html#method-c-new">::new</a>
+    <a href="Aquarium/Aspects/JoinPoint/Context.html#method-c-new">::new</a>
     &mdash;
-    <span class="container">Aquarium::Aspects::Aspect</span>
+    <span class="container">Aquarium::Aspects::JoinPoint::Context</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/JoinPoint.html#method-c-new">::new</a>
@@ -924,29 +926,29 @@
     <span class="container">Aquarium::Aspects::JoinPoint</span>
 
   <li class="method">
-    <a href="Aquarium/ClassWithStateAndBehavior.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">Aquarium::ClassWithStateAndBehavior</span>
-
-  <li class="method">
-    <a href="Aquarium/Foo.html#method-c-new">::new</a>
-    &mdash;
-    <span class="container">Aquarium::Foo</span>
-
-  <li class="method">
     <a href="Aquarium/InvarCondExample.html#method-c-new">::new</a>
     &mdash;
     <span class="container">Aquarium::InvarCondExample</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/Pointcut.html#method-c-new">::new</a>
+    <a href="Aquarium/BarModule.html#method-c-new">::new</a>
     &mdash;
-    <span class="container">Aquarium::Aspects::Pointcut</span>
+    <span class="container">Aquarium::BarModule</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/JoinPoint/Context.html#method-c-new">::new</a>
+    <a href="Aquarium/Utils/LogicError.html#method-c-new">::new</a>
     &mdash;
-    <span class="container">Aquarium::Aspects::JoinPoint::Context</span>
+    <span class="container">Aquarium::Utils::LogicError</span>
+
+  <li class="method">
+    <a href="Aquarium/Utils/InvalidOptions.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">Aquarium::Utils::InvalidOptions</span>
+
+  <li class="method">
+    <a href="Aquarium/InvarCond.html#method-c-new">::new</a>
+    &mdash;
+    <span class="container">Aquarium::InvarCond</span>
 
   <li class="method">
     <a href="Aquarium/Reusables/TraceMethods.html#method-c-reset_advice_invoked">::reset_advice_invoked</a>
@@ -1014,17 +1016,12 @@
     <span class="container">Aquarium::Finders::FinderResult</span>
 
   <li class="method">
-    <a href="Aquarium/Extensions/HashHelper.html#method-i-26">#&amp;</a>
-    &mdash;
-    <span class="container">Aquarium::Extensions::HashHelper</span>
-
-  <li class="method">
     <a href="Aquarium/Aspects/Pointcut.html#method-i-26">#&amp;</a>
     &mdash;
     <span class="container">Aquarium::Aspects::Pointcut</span>
 
   <li class="method">
-    <a href="Aquarium/Extensions/HashHelper.html#method-i-2D">#-</a>
+    <a href="Aquarium/Extensions/HashHelper.html#method-i-26">#&amp;</a>
     &mdash;
     <span class="container">Aquarium::Extensions::HashHelper</span>
 
@@ -1034,9 +1031,19 @@
     <span class="container">Aquarium::Finders::FinderResult</span>
 
   <li class="method">
+    <a href="Aquarium/Extensions/HashHelper.html#method-i-2D">#-</a>
+    &mdash;
+    <span class="container">Aquarium::Extensions::HashHelper</span>
+
+  <li class="method">
     <a href="Aquarium/Finders/FinderResult.html#method-i-3C-3C">#&lt;&lt;</a>
     &mdash;
     <span class="container">Aquarium::Finders::FinderResult</span>
+
+  <li class="method">
+    <a href="Aquarium/Aspects/JoinPoint/Context.html#method-i-3C-3D-3E">#&lt;=&gt;</a>
+    &mdash;
+    <span class="container">Aquarium::Aspects::JoinPoint::Context</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/JoinPoint.html#method-i-3C-3D-3E">#&lt;=&gt;</a>
@@ -1049,9 +1056,9 @@
     <span class="container">Aquarium::Extensions::RegexpHelper</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/JoinPoint/Context.html#method-i-3C-3D-3E">#&lt;=&gt;</a>
+    <a href="Set.html#method-i-3D-3D">#==</a>
     &mdash;
-    <span class="container">Aquarium::Aspects::JoinPoint::Context</span>
+    <span class="container">Set</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/JoinPoint.html#method-i-3D-3D">#==</a>
@@ -1059,14 +1066,9 @@
     <span class="container">Aquarium::Aspects::JoinPoint</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/Pointcut.html#method-i-3D-3D">#==</a>
+    <a href="Aquarium/Finders/FinderResult.html#method-i-3D-3D">#==</a>
     &mdash;
-    <span class="container">Aquarium::Aspects::Pointcut</span>
-
-  <li class="method">
-    <a href="Aquarium/Aspects/Aspect.html#method-i-3D-3D">#==</a>
-    &mdash;
-    <span class="container">Aquarium::Aspects::Aspect</span>
+    <span class="container">Aquarium::Finders::FinderResult</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/JoinPoint/Context.html#method-i-3D-3D">#==</a>
@@ -1074,14 +1076,14 @@
     <span class="container">Aquarium::Aspects::JoinPoint::Context</span>
 
   <li class="method">
-    <a href="Aquarium/Finders/FinderResult.html#method-i-3D-3D">#==</a>
+    <a href="Aquarium/Aspects/Aspect.html#method-i-3D-3D">#==</a>
     &mdash;
-    <span class="container">Aquarium::Finders::FinderResult</span>
+    <span class="container">Aquarium::Aspects::Aspect</span>
 
   <li class="method">
-    <a href="Set.html#method-i-3D-3D">#==</a>
+    <a href="Aquarium/Aspects/Pointcut.html#method-i-3D-3D">#==</a>
     &mdash;
-    <span class="container">Set</span>
+    <span class="container">Aquarium::Aspects::Pointcut</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/JoinPoint.html#method-i-3D-3D-3D">#===</a>
@@ -1099,9 +1101,9 @@
     <span class="container">Aquarium::PostCondExample</span>
 
   <li class="method">
-    <a href="Aquarium/PreCondExample.html#method-i-action">#action</a>
+    <a href="Aquarium/PreCond.html#method-i-action">#action</a>
     &mdash;
-    <span class="container">Aquarium::PreCondExample</span>
+    <span class="container">Aquarium::PreCond</span>
 
   <li class="method">
     <a href="Aquarium/PostCond.html#method-i-action">#action</a>
@@ -1109,9 +1111,9 @@
     <span class="container">Aquarium::PostCond</span>
 
   <li class="method">
-    <a href="Aquarium/PreCond.html#method-i-action">#action</a>
+    <a href="Aquarium/PreCondExample.html#method-i-action">#action</a>
     &mdash;
-    <span class="container">Aquarium::PreCond</span>
+    <span class="container">Aquarium::PreCondExample</span>
 
   <li class="method">
     <a href="Aquarium/Utils/OptionsUtils/ClassMethods.html#method-i-add_exclude_options_for">#add_exclude_options_for</a>
@@ -1124,24 +1126,14 @@
     <span class="container">Aquarium::Utils::OptionsUtils::ClassMethods</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/AfterRaisingAdviceChainNode.html#method-i-advice_wrapper">#advice_wrapper</a>
-    &mdash;
-    <span class="container">Aquarium::Aspects::AfterRaisingAdviceChainNode</span>
-
-  <li class="method">
-    <a href="Aquarium/Aspects/NoAdviceChainNode.html#method-i-advice_wrapper">#advice_wrapper</a>
-    &mdash;
-    <span class="container">Aquarium::Aspects::NoAdviceChainNode</span>
-
-  <li class="method">
     <a href="Aquarium/Aspects/BeforeAdviceChainNode.html#method-i-advice_wrapper">#advice_wrapper</a>
     &mdash;
     <span class="container">Aquarium::Aspects::BeforeAdviceChainNode</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/AfterReturningAdviceChainNode.html#method-i-advice_wrapper">#advice_wrapper</a>
+    <a href="Aquarium/Aspects/AfterRaisingAdviceChainNode.html#method-i-advice_wrapper">#advice_wrapper</a>
     &mdash;
-    <span class="container">Aquarium::Aspects::AfterReturningAdviceChainNode</span>
+    <span class="container">Aquarium::Aspects::AfterRaisingAdviceChainNode</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/AroundAdviceChainNode.html#method-i-advice_wrapper">#advice_wrapper</a>
@@ -1152,6 +1144,16 @@
     <a href="Aquarium/Aspects/AfterAdviceChainNode.html#method-i-advice_wrapper">#advice_wrapper</a>
     &mdash;
     <span class="container">Aquarium::Aspects::AfterAdviceChainNode</span>
+
+  <li class="method">
+    <a href="Aquarium/Aspects/AfterReturningAdviceChainNode.html#method-i-advice_wrapper">#advice_wrapper</a>
+    &mdash;
+    <span class="container">Aquarium::Aspects::AfterReturningAdviceChainNode</span>
+
+  <li class="method">
+    <a href="Aquarium/Aspects/NoAdviceChainNode.html#method-i-advice_wrapper">#advice_wrapper</a>
+    &mdash;
+    <span class="container">Aquarium::Aspects::NoAdviceChainNode</span>
 
   <li class="method">
     <a href="Aquarium/DSLMethods.html#method-i-advise">#advise</a>
@@ -1169,11 +1171,6 @@
     <span class="container">Aquarium::Aspects::Pointcut</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/Pointcut.html#method-i-and">#and</a>
-    &mdash;
-    <span class="container">Aquarium::Aspects::Pointcut</span>
-
-  <li class="method">
     <a href="Aquarium/Finders/FinderResult.html#method-i-and">#and</a>
     &mdash;
     <span class="container">Aquarium::Finders::FinderResult</span>
@@ -1182,6 +1179,11 @@
     <a href="Aquarium/Extensions/HashHelper.html#method-i-and">#and</a>
     &mdash;
     <span class="container">Aquarium::Extensions::HashHelper</span>
+
+  <li class="method">
+    <a href="Aquarium/Aspects/Pointcut.html#method-i-and">#and</a>
+    &mdash;
+    <span class="container">Aquarium::Aspects::Pointcut</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/Pointcut.html#method-i-any_type_related_options_given-3F">#any_type_related_options_given?</a>
@@ -1294,11 +1296,6 @@
     <span class="container">Aquarium::BarModule</span>
 
   <li class="method">
-    <a href="Traced2.html#method-i-doit">#doit</a>
-    &mdash;
-    <span class="container">Traced2</span>
-
-  <li class="method">
     <a href="NotTraced2.html#method-i-doit">#doit</a>
     &mdash;
     <span class="container">NotTraced2</span>
@@ -1314,14 +1311,14 @@
     <span class="container">NotTraced1</span>
 
   <li class="method">
+    <a href="Traced2.html#method-i-doit">#doit</a>
+    &mdash;
+    <span class="container">Traced2</span>
+
+  <li class="method">
     <a href="Aquarium/Aspects/JoinPoint.html#method-i-dup">#dup</a>
     &mdash;
     <span class="container">Aquarium::Aspects::JoinPoint</span>
-
-  <li class="method">
-    <a href="Aquarium/Aspects/AdviceChainNode.html#method-i-each">#each</a>
-    &mdash;
-    <span class="container">Aquarium::Aspects::AdviceChainNode</span>
 
   <li class="method">
     <a href="Aquarium/Finders/TypeFinder/TypeFinderResult.html#method-i-each">#each</a>
@@ -1329,9 +1326,9 @@
     <span class="container">Aquarium::Finders::TypeFinder::TypeFinderResult</span>
 
   <li class="method">
-    <a href="Aquarium/Extensions/RegexpHelper.html#method-i-empty-3F">#empty?</a>
+    <a href="Aquarium/Aspects/AdviceChainNode.html#method-i-each">#each</a>
     &mdash;
-    <span class="container">Aquarium::Extensions::RegexpHelper</span>
+    <span class="container">Aquarium::Aspects::AdviceChainNode</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/AdviceChainNode.html#method-i-empty-3F">#empty?</a>
@@ -1339,14 +1336,24 @@
     <span class="container">Aquarium::Aspects::AdviceChainNode</span>
 
   <li class="method">
+    <a href="Aquarium/Aspects/Pointcut.html#method-i-empty-3F">#empty?</a>
+    &mdash;
+    <span class="container">Aquarium::Aspects::Pointcut</span>
+
+  <li class="method">
     <a href="Aquarium/Finders/FinderResult.html#method-i-empty-3F">#empty?</a>
     &mdash;
     <span class="container">Aquarium::Finders::FinderResult</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/Pointcut.html#method-i-empty-3F">#empty?</a>
+    <a href="Aquarium/Extensions/RegexpHelper.html#method-i-empty-3F">#empty?</a>
     &mdash;
-    <span class="container">Aquarium::Aspects::Pointcut</span>
+    <span class="container">Aquarium::Extensions::RegexpHelper</span>
+
+  <li class="method">
+    <a href="Aquarium/Aspects/Aspect.html#method-i-eql-3F">#eql?</a>
+    &mdash;
+    <span class="container">Aquarium::Aspects::Aspect</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/JoinPoint.html#method-i-eql-3F">#eql?</a>
@@ -1359,16 +1366,6 @@
     <span class="container">Aquarium::Finders::FinderResult</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/Aspect.html#method-i-eql-3F">#eql?</a>
-    &mdash;
-    <span class="container">Aquarium::Aspects::Aspect</span>
-
-  <li class="method">
-    <a href="Set.html#method-i-eql-3F">#eql?</a>
-    &mdash;
-    <span class="container">Set</span>
-
-  <li class="method">
     <a href="Aquarium/Utils/Aquarium/Utils/Aquarium/Utils/NilObject.html#method-i-eql-3F">#eql?</a>
     &mdash;
     <span class="container">Aquarium::Utils::Aquarium::Utils::Aquarium::Utils::NilObject</span>
@@ -1377,6 +1374,11 @@
     <a href="Aquarium/Aspects/JoinPoint/Context.html#method-i-eql-3F">#eql?</a>
     &mdash;
     <span class="container">Aquarium::Aspects::JoinPoint::Context</span>
+
+  <li class="method">
+    <a href="Set.html#method-i-eql-3F">#eql?</a>
+    &mdash;
+    <span class="container">Set</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/Pointcut.html#method-i-eql-3F">#eql?</a>
@@ -1404,11 +1406,6 @@
     <span class="container">Aquarium::Aspects::JoinPoint</span>
 
   <li class="method">
-    <a href="Aquarium/Finders/TypeFinder.html#method-i-find">#find</a>
-    &mdash;
-    <span class="container">Aquarium::Finders::TypeFinder</span>
-
-  <li class="method">
     <a href="Aquarium/Finders/PointcutFinder.html#method-i-find">#find</a>
     &mdash;
     <span class="container">Aquarium::Finders::PointcutFinder</span>
@@ -1417,6 +1414,11 @@
     <a href="Aquarium/Finders/MethodFinder.html#method-i-find">#find</a>
     &mdash;
     <span class="container">Aquarium::Finders::MethodFinder</span>
+
+  <li class="method">
+    <a href="Aquarium/Finders/TypeFinder.html#method-i-find">#find</a>
+    &mdash;
+    <span class="container">Aquarium::Finders::TypeFinder</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/Pointcut.html#method-i-finish_specification_initialization">#finish_specification_initialization</a>
@@ -1429,14 +1431,14 @@
     <span class="container">Aquarium::Finders::PointcutFinder::PoincutFinderResult</span>
 
   <li class="method">
-    <a href="Aquarium/InvarCondExample.html#method-i-good_action">#good_action</a>
-    &mdash;
-    <span class="container">Aquarium::InvarCondExample</span>
-
-  <li class="method">
     <a href="Aquarium/InvarCond.html#method-i-good_action">#good_action</a>
     &mdash;
     <span class="container">Aquarium::InvarCond</span>
+
+  <li class="method">
+    <a href="Aquarium/InvarCondExample.html#method-i-good_action">#good_action</a>
+    &mdash;
+    <span class="container">Aquarium::InvarCondExample</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/AdviceChainNode.html#method-i-handle_call_rescue">#handle_call_rescue</a>
@@ -1459,9 +1461,9 @@
     <span class="container">Aquarium::Utils::OptionsUtils</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/JoinPoint/Context.html#method-i-inspect">#inspect</a>
+    <a href="Aquarium/Aspects/Pointcut.html#method-i-inspect">#inspect</a>
     &mdash;
-    <span class="container">Aquarium::Aspects::JoinPoint::Context</span>
+    <span class="container">Aquarium::Aspects::Pointcut</span>
 
   <li class="method">
     <a href="Aquarium/Finders/FinderResult.html#method-i-inspect">#inspect</a>
@@ -1479,9 +1481,9 @@
     <span class="container">Aquarium::Aspects::JoinPoint</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/Pointcut.html#method-i-inspect">#inspect</a>
+    <a href="Aquarium/Aspects/JoinPoint/Context.html#method-i-inspect">#inspect</a>
     &mdash;
-    <span class="container">Aquarium::Aspects::Pointcut</span>
+    <span class="container">Aquarium::Aspects::JoinPoint::Context</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/JoinPoint.html#method-i-instance_method">#instance_method</a>
@@ -1499,14 +1501,14 @@
     <span class="container">Aquarium::Aspects::Pointcut</span>
 
   <li class="method">
-    <a href="Aquarium/Extensions/HashHelper.html#method-i-intersection">#intersection</a>
-    &mdash;
-    <span class="container">Aquarium::Extensions::HashHelper</span>
-
-  <li class="method">
     <a href="Aquarium/Finders/FinderResult.html#method-i-intersection">#intersection</a>
     &mdash;
     <span class="container">Aquarium::Finders::FinderResult</span>
+
+  <li class="method">
+    <a href="Aquarium/Extensions/HashHelper.html#method-i-intersection">#intersection</a>
+    &mdash;
+    <span class="container">Aquarium::Extensions::HashHelper</span>
 
   <li class="method">
     <a href="Set.html#method-i-intersection_using_eql_comparison">#intersection_using_eql_comparison</a>
@@ -1524,11 +1526,6 @@
     <span class="container">Aquarium::Extras::DesignByContract</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/JoinPoint.html#method-i-invoke_original_join_point">#invoke_original_join_point</a>
-    &mdash;
-    <span class="container">Aquarium::Aspects::JoinPoint</span>
-
-  <li class="method">
     <a href="Aquarium/Aspects/AdviceChainNode.html#method-i-invoke_original_join_point">#invoke_original_join_point</a>
     &mdash;
     <span class="container">Aquarium::Aspects::AdviceChainNode</span>
@@ -1537,6 +1534,11 @@
     <a href="Aquarium/Aspects/JoinPoint/Context.html#method-i-invoke_original_join_point">#invoke_original_join_point</a>
     &mdash;
     <span class="container">Aquarium::Aspects::JoinPoint::Context</span>
+
+  <li class="method">
+    <a href="Aquarium/Aspects/JoinPoint.html#method-i-invoke_original_join_point">#invoke_original_join_point</a>
+    &mdash;
+    <span class="container">Aquarium::Aspects::JoinPoint</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/ExclusionHandler.html#method-i-is_excluded_join_point-3F">#is_excluded_join_point?</a>
@@ -1589,14 +1591,14 @@
     <span class="container">Aquarium::LogModule</span>
 
   <li class="method">
-    <a href="Aquarium/Echo.html#method-i-logged_messages">#logged_messages</a>
-    &mdash;
-    <span class="container">Aquarium::Echo</span>
-
-  <li class="method">
     <a href="Aquarium/LogModule.html#method-i-logged_messages">#logged_messages</a>
     &mdash;
     <span class="container">Aquarium::LogModule</span>
+
+  <li class="method">
+    <a href="Aquarium/Echo.html#method-i-logged_messages">#logged_messages</a>
+    &mdash;
+    <span class="container">Aquarium::Echo</span>
 
   <li class="method">
     <a href="Aquarium/Utils/ArrayUtils.html#method-i-make_array">#make_array</a>
@@ -1694,14 +1696,14 @@
     <span class="container">Aquarium::Extras::DesignByContract</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/JoinPoint.html#method-i-proceed">#proceed</a>
-    &mdash;
-    <span class="container">Aquarium::Aspects::JoinPoint</span>
-
-  <li class="method">
     <a href="Aquarium/Aspects/JoinPoint/Context.html#method-i-proceed">#proceed</a>
     &mdash;
     <span class="container">Aquarium::Aspects::JoinPoint::Context</span>
+
+  <li class="method">
+    <a href="Aquarium/Aspects/JoinPoint.html#method-i-proceed">#proceed</a>
+    &mdash;
+    <span class="container">Aquarium::Aspects::JoinPoint</span>
 
   <li class="method">
     <a href="Aquarium/Raiser.html#method-i-raise_exception1">#raise_exception1</a>
@@ -1764,14 +1766,14 @@
     <span class="container">Aquarium::Aspects::JoinPoint</span>
 
   <li class="method">
-    <a href="Aquarium/Extensions/StringHelper.html#method-i-to_camel_case">#to_camel_case</a>
+    <a href="Aquarium/Utils/CamelCase.html#method-i-to_camel_case">#to_camel_case</a>
     &mdash;
-    <span class="container">Aquarium::Extensions::StringHelper</span>
+    <span class="container">Aquarium::Utils::CamelCase</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/JoinPoint/Context.html#method-i-to_s">#to_s</a>
+    <a href="Aquarium/Finders/FinderResult.html#method-i-to_s">#to_s</a>
     &mdash;
-    <span class="container">Aquarium::Aspects::JoinPoint::Context</span>
+    <span class="container">Aquarium::Finders::FinderResult</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/JoinPoint.html#method-i-to_s">#to_s</a>
@@ -1779,19 +1781,24 @@
     <span class="container">Aquarium::Aspects::JoinPoint</span>
 
   <li class="method">
-    <a href="Aquarium/Aspects/Pointcut.html#method-i-to_s">#to_s</a>
-    &mdash;
-    <span class="container">Aquarium::Aspects::Pointcut</span>
-
-  <li class="method">
     <a href="Aquarium/Aspects/Aspect.html#method-i-to_s">#to_s</a>
     &mdash;
     <span class="container">Aquarium::Aspects::Aspect</span>
 
   <li class="method">
-    <a href="Aquarium/Finders/FinderResult.html#method-i-to_s">#to_s</a>
+    <a href="Aquarium/Aspects/JoinPoint/Context.html#method-i-to_s">#to_s</a>
     &mdash;
-    <span class="container">Aquarium::Finders::FinderResult</span>
+    <span class="container">Aquarium::Aspects::JoinPoint::Context</span>
+
+  <li class="method">
+    <a href="Aquarium/Aspects/Pointcut.html#method-i-to_s">#to_s</a>
+    &mdash;
+    <span class="container">Aquarium::Aspects::Pointcut</span>
+
+  <li class="method">
+    <a href="Aquarium/Utils/CamelCase.html#method-i-to_snake_case">#to_snake_case</a>
+    &mdash;
+    <span class="container">Aquarium::Utils::CamelCase</span>
 
   <li class="method">
     <a href="Aquarium/Aspects/JoinPoint.html#method-i-type_or_object">#type_or_object</a>
@@ -1814,14 +1821,14 @@
     <span class="container">Aquarium::Aspects::Pointcut</span>
 
   <li class="method">
-    <a href="Aquarium/Extensions/HashHelper.html#method-i-union">#union</a>
-    &mdash;
-    <span class="container">Aquarium::Extensions::HashHelper</span>
-
-  <li class="method">
     <a href="Aquarium/Finders/FinderResult.html#method-i-union">#union</a>
     &mdash;
     <span class="container">Aquarium::Finders::FinderResult</span>
+
+  <li class="method">
+    <a href="Aquarium/Extensions/HashHelper.html#method-i-union">#union</a>
+    &mdash;
+    <span class="container">Aquarium::Extensions::HashHelper</span>
 
   <li class="method">
     <a href="Set.html#method-i-union_using_eql_comparison">#union_using_eql_comparison</a>
@@ -1849,6 +1856,11 @@
     <span class="container">Aquarium::Utils::OptionsUtils</span>
 
   <li class="method">
+    <a href="Aquarium/Aspects/Pointcut.html#method-i-7C">#|</a>
+    &mdash;
+    <span class="container">Aquarium::Aspects::Pointcut</span>
+
+  <li class="method">
     <a href="Aquarium/Extensions/HashHelper.html#method-i-7C">#|</a>
     &mdash;
     <span class="container">Aquarium::Extensions::HashHelper</span>
@@ -1858,18 +1870,13 @@
     &mdash;
     <span class="container">Aquarium::Finders::FinderResult</span>
 
-  <li class="method">
-    <a href="Aquarium/Aspects/Pointcut.html#method-i-7C">#|</a>
-    &mdash;
-    <span class="container">Aquarium::Aspects::Pointcut</span>
-
 </ul>
 </main>
 
 
 <footer id="validator-badges" role="contentinfo">
   <p><a href="https://validator.w3.org/check/referer">Validate</a>
-  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.1.1.
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.2.1.
   <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
 </footer>
 

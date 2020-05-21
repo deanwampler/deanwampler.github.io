@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 
-<title>module Aquarium::Extensions::RegexpHelper - Aquarium</title>
+<title>module Aquarium::Utils::CamelCase - Aquarium</title>
 
 <script type="text/javascript">
   var rdoc_rel_prefix = "../../";
@@ -68,11 +68,9 @@
 
   <ul class="link-list" role="directory">
     
-    <li ><a href="#method-i-3C-3D-3E">#&lt;=&gt;</a>
+    <li ><a href="#method-i-to_camel_case">#to_camel_case</a>
     
-    <li ><a href="#method-i-empty-3F">#empty?</a>
-    
-    <li ><a href="#method-i-strip">#strip</a>
+    <li ><a href="#method-i-to_snake_case">#to_snake_case</a>
     
   </ul>
 </div>
@@ -80,9 +78,9 @@
   </div>
 </nav>
 
-<main role="main" aria-labelledby="module-Aquarium::Extensions::RegexpHelper">
-  <h1 id="module-Aquarium::Extensions::RegexpHelper" class="module">
-    module Aquarium::Extensions::RegexpHelper
+<main role="main" aria-labelledby="module-Aquarium::Utils::CamelCase">
+  <h1 id="module-Aquarium::Utils::CamelCase" class="module">
+    module Aquarium::Utils::CamelCase
   </h1>
 
   <section class="description">
@@ -106,11 +104,11 @@
        </header>
 
     
-      <div id="method-i-3C-3D-3E" class="method-detail ">
+      <div id="method-i-to_camel_case" class="method-detail ">
         
         <div class="method-heading">
-          <span class="method-name">&lt;=&gt;</span><span
-            class="method-args">(other)</span>
+          <span class="method-name">to_camel_case</span><span
+            class="method-args">(str)</span>
           
           <span class="method-click-advice">click to toggle source</span>
           
@@ -124,11 +122,11 @@
           
 
           
-          <div class="method-source-code" id="3C-3D-3E-source">
-            <pre>   <span class="ruby-comment"># File lib/aquarium/extensions/regexp.rb</span>
-<span class="line-num">11</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">&lt;=&gt;</span> <span class="ruby-identifier">other</span>
-<span class="line-num">12</span>   <span class="ruby-identifier">to_s</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">to_s</span>
-<span class="line-num">13</span> <span class="ruby-keyword">end</span></pre>
+          <div class="method-source-code" id="to_camel_case-source">
+            <pre>  <span class="ruby-comment"># File lib/aquarium/utils/camel_case.rb</span>
+<span class="line-num">4</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">to_camel_case</span> <span class="ruby-identifier">str</span>
+<span class="line-num">5</span>   <span class="ruby-identifier">str</span>.<span class="ruby-identifier">split</span>(<span class="ruby-string">&#39;_&#39;</span>).<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">s</span><span class="ruby-operator">|</span> <span class="ruby-identifier">s</span>[<span class="ruby-value">0</span>,<span class="ruby-value">1</span>]=<span class="ruby-identifier">s</span>[<span class="ruby-value">0</span>,<span class="ruby-value">1</span>].<span class="ruby-identifier">capitalize</span>; <span class="ruby-identifier">s</span>}.<span class="ruby-identifier">join</span>
+<span class="line-num">6</span> <span class="ruby-keyword">end</span></pre>
           </div>
           
         </div>
@@ -139,11 +137,11 @@
       </div>
 
     
-      <div id="method-i-empty-3F" class="method-detail ">
+      <div id="method-i-to_snake_case" class="method-detail ">
         
         <div class="method-heading">
-          <span class="method-name">empty?</span><span
-            class="method-args">()</span>
+          <span class="method-name">to_snake_case</span><span
+            class="method-args">(str)</span>
           
           <span class="method-click-advice">click to toggle source</span>
           
@@ -157,43 +155,10 @@
           
 
           
-          <div class="method-source-code" id="empty-3F-source">
-            <pre>  <span class="ruby-comment"># File lib/aquarium/extensions/regexp.rb</span>
-<span class="line-num">5</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">empty?</span>
-<span class="line-num">6</span>   <span class="ruby-identifier">source</span>.<span class="ruby-identifier">strip</span>.<span class="ruby-identifier">empty?</span>
-<span class="line-num">7</span> <span class="ruby-keyword">end</span></pre>
-          </div>
-          
-        </div>
-
-        
-
-        
-      </div>
-
-    
-      <div id="method-i-strip" class="method-detail ">
-        
-        <div class="method-heading">
-          <span class="method-name">strip</span><span
-            class="method-args">()</span>
-          
-          <span class="method-click-advice">click to toggle source</span>
-          
-        </div>
-        
-
-        <div class="method-description">
-          
-          
-          
-          
-
-          
-          <div class="method-source-code" id="strip-source">
-            <pre>   <span class="ruby-comment"># File lib/aquarium/extensions/regexp.rb</span>
-<span class="line-num"> 8</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">strip</span>
-<span class="line-num"> 9</span>   <span class="ruby-constant">Regexp</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">source</span>.<span class="ruby-identifier">strip</span>)
+          <div class="method-source-code" id="to_snake_case-source">
+            <pre>   <span class="ruby-comment"># File lib/aquarium/utils/camel_case.rb</span>
+<span class="line-num"> 8</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">to_snake_case</span> <span class="ruby-identifier">str</span>
+<span class="line-num"> 9</span>   <span class="ruby-identifier">str</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/([A-Z]+[a-z0-9_-]*)/</span>, <span class="ruby-string">&#39;\1_&#39;</span>).<span class="ruby-identifier">downcase</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/__*/</span>, <span class="ruby-string">&#39;_&#39;</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/_$/</span>, <span class="ruby-string">&#39;&#39;</span>).<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">/^_/</span>, <span class="ruby-string">&#39;&#39;</span>)
 <span class="line-num">10</span> <span class="ruby-keyword">end</span></pre>
           </div>
           
