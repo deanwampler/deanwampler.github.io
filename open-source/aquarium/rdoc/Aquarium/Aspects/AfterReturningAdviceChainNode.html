@@ -11,8 +11,11 @@
   var index_rel_prefix = "../../";
 </script>
 
-<script src="../../js/jquery.js"></script>
-<script src="../../js/darkfish.js"></script>
+<script src="../../js/navigation.js" defer></script>
+<script src="../../js/search.js" defer></script>
+<script src="../../js/search_index.js" defer></script>
+<script src="../../js/searcher.js" defer></script>
+<script src="../../js/darkfish.js" defer></script>
 
 <link href="../../css/fonts.css" rel="stylesheet">
 <link href="../../css/rdoc.css" rel="stylesheet">
@@ -133,9 +136,9 @@
           
           <div class="method-source-code" id="new-source">
             <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/advice.rb</span>
-<span class="line-num">181</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span> <span class="ruby-identifier">options</span> = {}
-<span class="line-num">182</span>   <span class="ruby-keyword">super</span> <span class="ruby-identifier">options</span>
-<span class="line-num">183</span> <span class="ruby-keyword">end</span></pre>
+<span class="line-num">183</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">initialize</span> <span class="ruby-identifier">options</span> = {}
+<span class="line-num">184</span>   <span class="ruby-keyword">super</span> <span class="ruby-identifier">options</span>
+<span class="line-num">185</span> <span class="ruby-keyword">end</span></pre>
           </div>
           
         </div>
@@ -174,16 +177,16 @@
           
           <div class="method-source-code" id="advice_wrapper-source">
             <pre>    <span class="ruby-comment"># File lib/aquarium/aspects/advice.rb</span>
-<span class="line-num">184</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">advice_wrapper</span> <span class="ruby-identifier">jp</span>
-<span class="line-num">185</span>   <span class="ruby-identifier">returned_value</span> = <span class="ruby-identifier">next_node</span>.<span class="ruby-identifier">call</span> <span class="ruby-identifier">jp</span>
-<span class="line-num">186</span>   <span class="ruby-identifier">update_current_context</span> <span class="ruby-identifier">jp</span>
-<span class="line-num">187</span>   <span class="ruby-identifier">jp</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">advice_kind</span> = <span class="ruby-value">:after_returning</span>
-<span class="line-num">188</span>   <span class="ruby-identifier">jp</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">returned_value</span> = <span class="ruby-identifier">returned_value</span>
-<span class="line-num">189</span>   <span class="ruby-identifier">call_advice</span> <span class="ruby-identifier">jp</span>
-<span class="line-num">190</span>   <span class="ruby-identifier">result</span> = <span class="ruby-identifier">jp</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">returned_value</span>   <span class="ruby-comment"># allow advice to modify the returned value</span>
-<span class="line-num">191</span>   <span class="ruby-identifier">reset_current_context</span> <span class="ruby-identifier">jp</span>
-<span class="line-num">192</span>   <span class="ruby-identifier">result</span>
-<span class="line-num">193</span> <span class="ruby-keyword">end</span></pre>
+<span class="line-num">186</span> <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">advice_wrapper</span> <span class="ruby-identifier">jp</span>
+<span class="line-num">187</span>   <span class="ruby-identifier">returned_value</span> = <span class="ruby-identifier">next_node</span>.<span class="ruby-identifier">call</span> <span class="ruby-identifier">jp</span>
+<span class="line-num">188</span>   <span class="ruby-identifier">update_current_context</span> <span class="ruby-identifier">jp</span>
+<span class="line-num">189</span>   <span class="ruby-identifier">jp</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">advice_kind</span> = <span class="ruby-value">:after_returning</span>
+<span class="line-num">190</span>   <span class="ruby-identifier">jp</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">returned_value</span> = <span class="ruby-identifier">returned_value</span>
+<span class="line-num">191</span>   <span class="ruby-identifier">call_advice</span> <span class="ruby-identifier">jp</span>
+<span class="line-num">192</span>   <span class="ruby-identifier">result</span> = <span class="ruby-identifier">jp</span>.<span class="ruby-identifier">context</span>.<span class="ruby-identifier">returned_value</span>   <span class="ruby-comment"># allow advice to modify the returned value</span>
+<span class="line-num">193</span>   <span class="ruby-identifier">reset_current_context</span> <span class="ruby-identifier">jp</span>
+<span class="line-num">194</span>   <span class="ruby-identifier">result</span>
+<span class="line-num">195</span> <span class="ruby-keyword">end</span></pre>
           </div>
           
         </div>
@@ -203,7 +206,7 @@
 
 <footer id="validator-badges" role="contentinfo">
   <p><a href="https://validator.w3.org/check/referer">Validate</a>
-  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.1.1.
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.2.1.
   <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
 </footer>
 
