@@ -20,7 +20,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
       <a id="modularity-a-retrospective"/>
       <article class="talk">
         <h1>Modularity: A Retrospective</h1>
-        <p class="talk-desc">GOTO Chicago Nights, February 18, 2020</p>
+        <p class="talk-desc">GOTO Chicago Nights, February 18, 2020 and Scala in the City, May 28, 2020</p>
         <p>A look at what we've accomplished in making software modular and
         where we need to go.</p>
         <div class="more">
