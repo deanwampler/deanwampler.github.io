@@ -35,18 +35,18 @@ Most of my conference and user group talks can be found in this <a href="https:/
 
   <tr>
     <td>
-      <a id="trends-affecting-system-architectures"/>
+      <a id="cluster-wide-scaling-of-ml-with-ray"/>
       <article class="talk">
-        <h1>Trends Affecting System Architectures</h1>
-        <p class="talk-desc">GOTO Chicago Nights, April 2, 2019</p>
-        <p>A look at how the increasing importance of handling data quickly is driving applications towards streaming. In particular, the challenges of leveraging machine learning and AI in these streaming applications.</p>
+        <h1>Cluster-wide Scaling of ML with Ray</h1>
+        <p class="talk-desc">YOW! Data, July 1, 2020</p>
+        <p><a href="https://ray.io">Ray</a> is a distributed computing system that offers a concise, intuitive API, with excellent performance for distributed workloads. It emerged out of the AI community at U.C. Berkeley.</p>
         <div class="more">
-          <a href="/polyglotprogramming/papers/TrendsAffectingSystemArchitectures.pdf" class="button button-pdf">Download PDF</a>
+          <a href="/polyglotprogramming/papers/ClusterWideScalingOfMLWithRay.pdf" class="button button-pdf">Download PDF</a>
         </div>
       </article>
     </td>
     <td>
-      <a href="/polyglotprogramming/papers/TrendsAffectingSystemArchitectures.pdf"><img src="TrendsAffectingSystemArchitectures-TitlePage-342x192.jpg" /></a>
+      <a href="/polyglotprogramming/papers/ClusterWideScalingOfMLWithRay.pdf"><img src="ClusterWideScalingOfMLWithRay-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
 
