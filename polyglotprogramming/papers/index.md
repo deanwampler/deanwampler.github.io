@@ -51,6 +51,22 @@ Most of my conference and user group talks can be found in this <a href="https:/
   <tr>
     <td>
       <article class="talk">
+        <h1>Ray for Natural Language Processing</h1>
+        <p class="talk-desc">NLP Summit, October 7, 2020</p>
+        <p><a href="https://ray.io">Ray</a> is being adopted by popular NLP frameworks like <a hef="https://spacy.io">spaCy</a> and <a hef="https://huggingface.co">Hugging Face</a>. I discuss the problems Ray solves for them and how Ray is being used by them.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/RayForNLP.pdf" class="button button-pdf">Download PDF</a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="/polyglotprogramming/papers/RayForNLP.pdf"><img src="RayForNLP-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Executive Briefing: What It Takes to Use ML in Fast Data Pipelines</h1>
         <p class="talk-desc">Strata San Francisco, London, and NYC 2019</p>
         <p>A briefing for managers and executives about the challenges of serving ML models in a streaming data context.</p>
