@@ -35,6 +35,22 @@ Most of my conference and user group talks can be found in this <a href="https:/
   <tr>
     <td>
       <article class="talk">
+        <h1>Reinforcement Learning with Ray RLlib</h1>
+        <p class="talk-desc">Chicago Cloud Conference, September 22, 2020</p>
+        <p><a href="https://ray.io">Ray</a> comes with a powerful reinforcement learning library, <a href="http://rllib.io">RLlib</a>. This talk discussed reinforcement learning and how to use RLlib.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/ReinforcementLearningWithRayRLlib.pdf" class="button button-pdf">Download PDF</a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="/polyglotprogramming/papers/ReinforcementLearningWithRayRLlib.pdf"><img src="ReinforcementLearningWithRayRLlib-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Cluster-wide Scaling of ML with Ray</h1>
         <p class="talk-desc">YOW! Data, July 1, 2020</p>
         <p><a href="https://ray.io">Ray</a> is a distributed computing system that offers a concise, intuitive API, with excellent performance for distributed workloads. It emerged out of the AI community at U.C. Berkeley.</p>
