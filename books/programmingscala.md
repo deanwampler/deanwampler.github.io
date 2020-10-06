@@ -10,13 +10,13 @@ tagline:
 <tr>
 <td>
 
-<p><b>October 6, 2020:</b> The first six chapters of <em>Programming Scala, Third Edition</em> are now available as an &ldquo;early access release&rdquo; on the <a href="https://www.oreilly.com/library/view/programming-scala-3rd/9781492077886/">O'Reilly online learning platform</a>. I've also <a href="https://medium.com/@deanwampler">posted the first in a series of blog posts about Scala 3.</a></p>
+<p><b>October 6, 2020:</b> The first six chapters of <em>Programming Scala, Third Edition</em> are now available as an &ldquo;early access release&rdquo; on the <a href="https://www.oreilly.com/library/view/programming-scala-3rd/9781492077886/">O'Reilly online learning platform</a>. I've also posted the <a href="https://medium.com/@deanwampler">first in a series</a> of blog posts about Scala 3.</p>
 
 <p><b>May 6, 2020:</b> I've started work on the third edition, which will be published late 2020 and focus on Scala 3. The <a href="https://github.com/deanwampler/programming-scala-book-code-examples" target="code">code examples repo</a> is now a work-in-progress towards the new edition, but the second edition code was recently upgraded to work with Scala 2.12 and 2.13. Grab the <a href="https://github.com/deanwampler/programming-scala-book-code-examples/releases/tag/2.1.0">v2.1.0 tagged release</a> for the code that still closely follows the organization of the second edition of the book, but is updated for Scala 2.12 and 2.13.</p>
 
 <p>I'll update the rest of this page once the third edition is published.</p>
 
-<p><a href="https://shop.oreilly.com/product/0636920033073.do" target="book">Programming Scala, Second Edition</a> is a comprehensive and up-to-date introduction to <a href="https://scala-lang.org" target="scala">Scala</a>. It covers the features of Scala version 2.11 (although the code examples are compatible with Scala 2.12 and 2.13).</p>
+<p><a href="https://shop.oreilly.com/product/0636920033073.do" target="book">Programming Scala, Second Edition</a> is a comprehensive and up-to-date introduction to <a href="https://scala-lang.org" target="scala">Scala</a>. It covers the features of Scala version 2.11, although the code examples have recently been updated for Scala 2.12 and 2.13 (see below).</p>
 
 <p>I wrote the book on Scala that I would want to read, if I were to start from the following background:
 <ul>
@@ -40,8 +40,8 @@ tagline:
 
 <p>For more information:</p>
 <ul>
-  <li>The <a href="https://github.com/deanwampler/programming-scala-book-code-examples/releases/tag/2.1.0" target="code">code examples on GitHub</a> that support Scala 2.11-2.13. Or see the <a href="https://github.com/deanwampler/programming-scala-book-code-examples/">work-in-progress third edition code</a>.</li>
-  <li>The book site, <a href="https://shop.oreilly.com/product/0636920033073.do" target="book">Programming Scala, Second Edition</a></li>
+  <li>The <a href="https://github.com/deanwampler/programming-scala-book-code-examples/releases/tag/2.1.0" target="code">2.1.0 release</a> of the code examples on <a href="https://github.com/deanwampler/programming-scala-book-code-examples/">GitHub</a> support Scala 2.11-2.13. The <em>master</em> branch is the <a href="https://github.com/deanwampler/programming-scala-book-code-examples/">work-in-progress third edition code</a> for Scala 3.</li>
+  <li>Second edition web site, <a href="https://shop.oreilly.com/product/0636920033073.do" target="book">Programming Scala, Second Edition</a></li>
 </ul>
 
 <p>To discuss the book, the code examples, etc. use one of these forums:</p>

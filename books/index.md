@@ -8,7 +8,7 @@ tagline: Books written by Dean Wampler
 <table>
   <tr>
     <td>
-      <p><a href="https://shop.oreilly.com/product/0636920033073.do" target="book">Programming Scala, Second Edition</a> is a comprehensive introduction to <a href="https://scala-lang.org" target="scala">Scala</a>. It covers the features of Scala 2.11, but I recently updated the <a href="https://github.com/deanwampler/prog-scala-2nd-ed-code-examples" target="code">code examples</a> to work with Scala 2.12 and 2.13, as well. The third edition, covering Scala 3, is planned for the end of 2020.</p>
+      <p><em>Programming Scala</em> is a comprehensive introduction to <a href="https://scala-lang.org" target="scala">Scala</a>. I'm working on the third edition now, which covers the forthcoming Scala 3 release.</p>
       <p><a href="programmingscala.html">More information...</a>.</p>
     </td>
     <td><a href="https://shop.oreilly.com/product/0636920033073.do" class="books-book" target="book">
