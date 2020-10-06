@@ -12,7 +12,7 @@ tagline: Books written by Dean Wampler
       <p><a href="programmingscala.html">More information...</a>.</p>
     </td>
     <td><a href="https://shop.oreilly.com/product/0636920033073.do" class="books-book" target="book">
-      <img src="/assets/images/prog_scala_3ed_comp-quarter_size.jpg" alt="Programming Scala, Second Edition"/></a>
+      <img src="/assets/images/prog_scala_3ed_comp-quarter_size.jpg" alt="Programming Scala, Third Edition"/></a>
     </td>
   </tr>
   <tr>

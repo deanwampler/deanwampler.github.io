@@ -16,7 +16,7 @@ tagline:
 
 <p>I'll update the rest of this page once the third edition is published.</p>
 
-<p><a href="https://shop.oreilly.com/product/0636920033073.do" target="book">Programming Scala, Second Edition</a> is a comprehensive and up-to-date introduction to <a href="https://scala-lang.org" target="scala">Scala</a>. It covers the features of Scala version 2.11, although the code examples have recently been updated for Scala 2.12 and 2.13 (see below).</p>
+<p><a href="https://shop.oreilly.com/product/0636920033073.do" target="book">Programming Scala</a> is a comprehensive and up-to-date introduction to <a href="https://scala-lang.org" target="scala">Scala</a>. It covers the features of Scala version 2.11, although the code examples have recently been updated for Scala 2.12 and 2.13 (see below).</p>
 
 <p>I wrote the book on Scala that I would want to read, if I were to start from the following background:
 <ul>
@@ -27,7 +27,7 @@ tagline:
 <li>I'm serious about learning Scala.</li>
 </ul>
 </p>
-<p>I would read <a href="https://shop.oreilly.com/product/0636920033073.do" target="book">Programming Scala, Second Edition</a> to achieve the following:
+<p>I would read <a href="https://shop.oreilly.com/product/0636920033073.do" target="book">Programming Scala</a> to achieve the following:
 <ul>
 <li>Learn why Scala has become the language of choice for <em>data engineering</em> work in Big Data environments with tools like <a href="https://spark.apache.org" target="spark">Spark</a> and <a href="https://kafka.apache.org" target="kafka">Kafka</a>.</li>
 <li>Learn why Scala is an excellent language for state of the art microservices.</li>
