@@ -10,7 +10,7 @@ tagline:
 <tr>
 <td>
 
-<p><b>October 6, 2020:</b> The first six chapters of <em>Programming Scala, Third Edition</em> are now available as an &ldquo;early access release&rdquo; on the <a href="https://www.oreilly.com/library/view/programming-scala-3rd/9781492077886/">O'Reilly Learning Platform</a>. I've also <a href="https://medium.com/@deanwampler">posted the first in a series of blog posts about Scala 3.</a></p>
+<p><b>October 6, 2020:</b> The first six chapters of <em>Programming Scala, Third Edition</em> are now available as an &ldquo;early access release&rdquo; on the <a href="https://www.oreilly.com/library/view/programming-scala-3rd/9781492077886/">O'Reilly online learning platform</a>. I've also <a href="https://medium.com/@deanwampler">posted the first in a series of blog posts about Scala 3.</a></p>
 
 <p><b>May 6, 2020:</b> I've started work on the third edition, which will be published late 2020 and focus on Scala 3. The <a href="https://github.com/deanwampler/programming-scala-book-code-examples" target="code">code examples repo</a> is now a work-in-progress towards the new edition, but the second edition code was recently upgraded to work with Scala 2.12 and 2.13. Grab the <a href="https://github.com/deanwampler/programming-scala-book-code-examples/releases/tag/2.1.0">v2.1.0 tagged release</a> for the code that still closely follows the organization of the second edition of the book, but is updated for Scala 2.12 and 2.13.</p>
 
