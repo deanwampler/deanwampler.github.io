@@ -6,7 +6,7 @@ tagline:
 ---
 {% include JB/setup %}
 
-<table>
+<table class="book-descriptions">
 <tr>
 <td>
 
@@ -54,6 +54,6 @@ tagline:
 <p>If you're using Spark and you want a quick introduction to Scala aimed at Spark developers, check out my free tutorial, <a href="https://github.com/deanwampler/JustEnoughScalaForSpark" target="jess">Just Enough Scala for Spark</a>.</p>
 </td>
 
-<td class="prog-scala-cover-cell"><a href="https://shop.oreilly.com/product/0636920033073.do"><img src="/assets/images/prog_scala_2ed_comp-quarter_size.jpg" alt="Programming Scala, 2nd Edition"/></a></td>
+<td class="prog-scala-cover-cell"><a href="https://shop.oreilly.com/product/0636920033073.do"><img src="/assets/images/prog_scala_3ed_comp-quarter_size.jpg" alt="Programming Scala, 2nd Edition"/></a></td>
 </tr>
 </table>
