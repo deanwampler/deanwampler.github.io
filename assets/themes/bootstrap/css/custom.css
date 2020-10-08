@@ -31,14 +31,18 @@ body {
   height: 100vh;
 }
 
+.book-descriptions {
+  vertical-align: top;
+}
+
 .prog-scala-cover-cell {
-  /*background-image: url("/assets/images/prog_scala_2ed_comp-quarter_size.jpg");*/
+  /*background-image: url("/assets/images/prog_scala_3ed_comp-quarter_size.jpg");*/
   width:  262px;
   height: 344px;
 }
 
 .fd-arch-streaming-cover-cell {
-  /*background-image: url("/assets/images/prog_scala_2ed_comp-quarter_size.jpg");*/
+  /*background-image: url("/assets/images/prog_scala_3ed_comp-quarter_size.jpg");*/
   width:  256px;
   height: 337px;
 }
