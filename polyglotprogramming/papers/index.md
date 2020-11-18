@@ -52,7 +52,7 @@ Most of my conference and user group talks can be found in this <a href="https:/
     <td>
       <article class="talk">
         <h1>Cluster-wide Scaling of ML with Ray</h1>
-        <p class="talk-desc">YOW! Data, July 1, 2020</p>
+        <p class="talk-desc">YOW! Data, July, 2020, and CodeMesh, Nov., 2020</p>
         <p><a href="https://ray.io">Ray</a> is a distributed computing system that offers a concise, intuitive API, with excellent performance for distributed workloads. It emerged out of the AI community at U.C. Berkeley.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/ClusterWideScalingOfMLWithRay.pdf" class="button button-pdf">Download PDF</a>
