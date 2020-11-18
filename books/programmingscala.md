@@ -10,9 +10,13 @@ tagline:
 <tr>
 <td>
 
-<p><b>October 6, 2020:</b> The first six chapters of <em>Programming Scala, Third Edition</em> are now available as an &ldquo;early access release&rdquo; on the <a href="https://www.oreilly.com/library/view/programming-scala-3rd/9781492077886/">O'Reilly online learning platform</a>. I've also posted the <a href="https://medium.com/@deanwampler">first in a series</a> of blog posts about Scala 3.</p>
+<p><em>Programming Scala, Third Edition</em>, which covers Scala 3, will be published early in 2021. You can read &ldquo;early access release&rdquo; chapters now on the <a href="https://www.oreilly.com/library/view/programming-scala-3rd/9781492077886/">O'Reilly online learning platform</a>.</p>
 
-<p><b>May 6, 2020:</b> I've started work on the third edition, which will be published late 2020 and focus on Scala 3. The <a href="https://github.com/deanwampler/programming-scala-book-code-examples" target="code">code examples repo</a> is now a work-in-progress towards the new edition, but the second edition code was recently upgraded to work with Scala 2.12 and 2.13. Grab the <a href="https://github.com/deanwampler/programming-scala-book-code-examples/releases/tag/2.1.0">v2.1.0 tagged release</a> for the code that still closely follows the organization of the second edition of the book, but is updated for Scala 2.12 and 2.13.</p>
+<p>I've also started a <a href="https://medium.com/scala-3">blog series about Scala 3</a>, where I summarize the highlights of what's coming.</p>
+
+<p>You can also find this <a href="../scala3-highlights.html">synopsis of Scala 3 changes</a>, which I used as notes for a talk at the <a href="https://www.meetup.com/chicagoscala/events/274110140/">November 20, 2020 meeting of the Chicago Area Scala Enthusiasts.</a></p>
+
+<p>The <a href="https://github.com/deanwampler/programming-scala-book-code-examples" target="code">repo for the book's code examples</a> is now a work-in-progress towards the new edition, but the second edition code was recently upgraded to work with Scala 2.12 and 2.13. Grab the <a href="https://github.com/deanwampler/programming-scala-book-code-examples/releases/tag/2.1.0">v2.1.0 tagged release</a> for the code that still closely follows the organization of the second edition of the book, but is updated for Scala 2.12 and 2.13. The <a href="https://github.com/deanwampler/programming-scala-book-code-examples/">current master branch</a> only supports Scala 3.</p>
 
 <p>I'll update the rest of this page once the third edition is published.</p>
 
