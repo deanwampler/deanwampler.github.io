@@ -70,6 +70,14 @@ There are also new options for control syntax, but whether or not you use them i
 
 <script src="https://gist.github.com/deanwampler/98647681a702c13da41342bf51684915.js"></script>
 
+## Even Less Use of `new`
+
+[Blog post](https://medium.com/scala-3/scala-3-universal-apply-methods-2c583800b66a)
+
+We don't need to use `new` when creating instances of case classes, because the compiler generates a companion object with an necessary `apply` method. For other types, like the abstract `Seq` type, one or more custom `apply` methods exist in a companion object, e.g., `Seq(1,2,3)`. In Scala 2, we had to use `new` for all other kinds of classes, especially those from Java libraries.
+
+Scala 3 extends the case class mechanism to all concrete types, even those from Java and Scala 2 libraries. The compiler creates a _synthetic object_ with an `apply` method for each constructor. (Note: for companion objects, only the _primary_ constructor gets an `apply` method automatically).
+
 ## Contextual Abstractions
 
 We begin the migration aware from the implicit _mechanism_ to constructs that more clearly indicate the _intent_.
@@ -397,9 +405,9 @@ Flags to help migration:
 * Completely new macro system
 * _Transparent_ traits
 * `export` clauses
-* type lambdas: `type F = [A] =>> FooBar[A]`
-* kind polymorphism: generalize over `A`, `F[A]`, `G[A,B]`, ...
-* dependent function types (we've had dependent _method_ types)
+* Type lambdas: `type F = [A] =>> FooBar[A]`
+* Kind polymorphism: generalize over `A`, `F[A]`, `G[A,B]`, ...
+* Dependent function types (we've had dependent _method_ types)
 * New types like `Tuple`, `EmptyTuple` (and tuple operations)
 * Explicit `null`s: `def callJava(...): String | Null`
 * Safe initialization
