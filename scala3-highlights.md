@@ -167,11 +167,38 @@ We just saw a _using clause_. They can be anonymous, too. Here's an (unnecessary
 
 <script src="https://gist.github.com/deanwampler/c8f95c00542910674b061684a353c81f.js"></script>
 
-I passed the `implicit/given` values explicitly to `Seq.sortBy` for illustration purposes, but of course I could have passed them implicitly (usingly?). 
+I passed the `implicit/given` values explicitly to `Seq.sortBy` for illustration purposes, but of course I could have passed them implicitly (usingly?). The term _context parameters_ (or arguments) is used for these parameters.
 
 Note that the `using` keyword is now required (although optional in the 3.0 release, to ease the transition). Requiring the keyword when you pass an explicit argument disambiguates which clauses are using clauses and which aren't. This permits more flexible definitions like the following:
 
 <script src="https://gist.github.com/deanwampler/ad16826c18aadd4d74bc7f9603f1e71d.js"></script>
+
+#### By-Name Context Parameters
+
+By-name (regular) parameters are great for deferred evaluation, such as passing expressions that should be evaluated inside a method, not before calling the method. This works for context parameters, too, as in this sketch of a database access API:
+
+<script src="https://gist.github.com/deanwampler/6042d6486474d27b43d5add8de10fa3b.js"></script>
+
+#### Context Functions
+
+_Context functions_ are functions with context parameters only. Scala 3 introduces a new context function type for them, indicated by `?=> T`. Distinguishing context functions from regular functions is useful because of how they are invoked. 
+
+Consider this example that wraps `Future`s:
+
+<script src="https://gist.github.com/deanwampler/846425a8d4324db47b4b52770c9a6af3.js"></script>
+
+`Executable[T]` is a type alias for a context function that takes an `ExecutionContext` and returns a `T`. 
+
+Note the syntax for `FutureCF.apply` compared to `Future.apply`, shown in the comment. It's a simpler syntax than having a using clause, but it can be a bit confusing that a `Future(...)` is returned, not an `Executable`.
+
+Notice that we use `FutureCF.apply` just like `Future.apply`, either using the `given` `global` value or providing it explicitly. So, how do we get the `Exetuable[T]` returned when the body of `FutureCF.apply` is just `Future(...)`?
+
+1. `Executable(Future(sleepN(1.second)))`` is supposed to be returned,
+2. which is the same as `(given ExecutionContext) ?=> Future(sleepN(1.sec
+ond))` (from the type alias for `Executable`),
+3. which the compiler converts to `Future(sleepN(1.second))(given Execution
+Context)`,
+4. which is invoked to return the Future.
 
 ### Given Imports
 
@@ -205,7 +232,7 @@ In the following example, we enable the language feature just for this file, the
 
 <script src="https://gist.github.com/deanwampler/9372fceaf9247f3064f1d691174c8b0b.js"></script>
 
-See the [Dotty documentatin](http://dotty.epfl.ch/docs/reference/contextual/derivation.html) for details about how `CanEqual` is implemented and how to implement your own derivable type classes.
+See the [Dotty documentation](http://dotty.epfl.ch/docs/reference/contextual/derivation.html) for details about how `CanEqual` is implemented and how to implement your own derivable type classes.
 
 ## Infix Operator Notation
 
