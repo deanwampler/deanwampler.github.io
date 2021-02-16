@@ -12,7 +12,7 @@ redirect_from:
 {% include JB/setup %}
 
 <section id="talks" class="talks centered">
-Most of my conference and user group talks can be found in this <a href="https://github.com/deanwampler/Presentations/">GitHub repo</a>. I recent removed some very old talks from the list on this page.
+My talks can be found in this <a href="https://github.com/deanwampler/Presentations/">GitHub repo</a>. The most recent and relevant ones are listed here.
 
 <table class="talks-table centered">
   <tr>
