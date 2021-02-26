@@ -110,8 +110,6 @@ Remember the `ArrowAssoc` implicit conversion??
 
 It's much simpler and more direct to use an _extension method_. The following example shows how to define a `~>` method on any type `A`. The `@targetName` annotation defines the name generated in byte code for the method (but this is only visible to other languages, like Java, not Scala code!).
 
-> **NOTE:** Use `alpha` instead of `targetName` for Scala 3.0.0-M1.
-
 <script src="https://gist.github.com/deanwampler/56bbdbd3129a76f594f9ff9a2e7cb48a.js"></script>
 
 Extension methods are part of a new syntax for _type classes_, which I'll cover in a moment.
@@ -131,7 +129,7 @@ Note that `as` keyword when the second given instance is named.
 By the way, the first definition is shorthand for this:
 
 ```scala
-given Conversion[Double,Dollars]:
+given Conversion[Double,Dollars] with
   def apply(d: Double): Dollars = Dollars(d)
 ```
 
@@ -139,7 +137,7 @@ Even when a given is anonymous, you can use `summon[Conversion[Double,Dollars]]`
 
 ```scala
 scala> summon[Conversion[Double,Dollars]]
-val res68: Conversion[Double, Dollars] = <function1>
+val 0: Conversion[Double, Dollars] = <function1>
 ```
 
 Maybe you already noticed that `Conversion` looks shockingly similar to `A => B`.
@@ -465,7 +463,7 @@ The last one fails because our match type doesn't handle nesting beyond one leve
 
 ## Migration
 
-The book's code examples use the flag `-source 3.1` to force deprecation warnings for older constructs. The default, `-source 3.0`, is more forgiving.
+The book's code examples use the flag `-source future` to force deprecation warnings for older constructs. The default, `-source 3.0`, is more forgiving.
 
 Flags to control syntax preferences:
 
@@ -482,15 +480,16 @@ Flags to help migration:
 
 ## Other Things of Note...
 
-* Trait parameters
-* Completely new macro system
-* _Transparent_ traits
+* Traits can have constructor parameter lists, like classes.
+* The metaprogramming system is completely new.
 * Type lambdas: `type F = [A] =>> FooBar[A]`
 * Kind polymorphism: generalize over `A`, `F[A]`, `G[A,B]`, ...
-* Dependent function types (we've had dependent _method_ types)
+* Dependent function types - We've had dependent _method_ types. Now functions can be dependently typed.
+* Polymorphic function types - We've had polymorphic _methods_, e.g., `def size[T](seq: Seq[T])Int = seq.size`. Now functions can be polymorphic.
 * New types like `Tuple`, `EmptyTuple` (and tuple operations)
 * Explicit `null`s: `def callJava(...): String | Null`
 * Safe initialization
 * `@main` methods: instead of `object Foo { def main():Unit = ??? }` boilerplate
 * No more 22-arity limits on tuples and functions
+* _Transparent_ traits
 * ... and lots of smaller refinements
