@@ -39,6 +39,24 @@ To get started, an EPFL SBT plugin brings Dotty/Scala 3 support to SBT:
 
 You can now use significant indentation ("braceless"), like Python or Haskell, rather than curly braces. You can also mix and match, or use a compiler flag to force one or the other (see below).
 
+### Import and Export Statements
+
+[blog post](https://medium.com/scala-3/scala-3-the-they-are-achanging-32b1ebb90fa2)
+
+Look at these examples of `import` statements:
+
+<script src="https://gist.github.com/deanwampler/7205aa985d9b439530c76783c69bad9d.js"></script>
+
+Scala 3 replaces `_` with `*` as the wild card for imports, which is what most other languages use. When you alias a type, you now use the new `as` keyword instead of `=>`. Hence, `=>` is now used solely for function literals.
+
+What if you want to import a multiplication method named `*`? Use back ticks:
+
+```scala
+import Matrix.`*`
+```
+
+Scala 3 also introduces the concept of _exporting_ members of a type. See the [blog post](https://medium.com/scala-3/scala-3-the-they-are-achanging-32b1ebb90fa2) for details.
+
 ### Types
 
 <script src="https://gist.github.com/deanwampler/b277550a3a7f9a1e52192a9120a38153.js"></script>
@@ -165,11 +183,11 @@ I passed the `implicit/given` values explicitly to `Seq.sortBy` for illustration
 
 [Blog post](https://medium.com/scala-3/scala-3-contextual-abstractions-part-iii-6b7be628a7de)
 
-To allow use of `_` for imports, but _not_ pull in all givens when you don't want them:
+To allow use of `*` for imports, but _not_ pull in all givens when you don't want them:
 
 <script src="https://gist.github.com/deanwampler/0a3685df0763b9cd03f8f6fe4e5972e6.js"></script>
 
-In Scala 3.0, `_` will still import everything, for backwards compatibility, but Scala 3.1 will begin transitioning to this behavior.
+In Scala 3.0, `*` will still import everything, for backwards compatibility, but Scala 3.1 will begin transitioning to this behavior.
 
 > **NOTE:** "non-givens" should be called _takes_ IMHO... If you grew up with the King James Bible (1611) in your Baptist church like I did, they would be `giveth` and `taketh`...
 
@@ -220,7 +238,7 @@ val res2: String = 234
 
 ## Easier Enums
 
-(No blog post yet!)
+[blog post](https://medium.com/scala-3/scala-3-well-designed-object-oriented-type-hierarchies-a87d5f2baf26)
 
 I can never remember the Scala 2 syntax for enums. Now I have an even easier syntax to forget!
 
@@ -248,7 +266,7 @@ Value classes still have a few advantages. They are real classes, so you can cus
 
 ### Open Classes
 
-Also in this [blog post](https://medium.com/scala-3/opaque-type-aliases-and-open-classes-13076a6c07e4)
+[blog post](https://medium.com/scala-3/opaque-type-aliases-and-open-classes-13076a6c07e4)
 
 No more ad-hoc extensions of concrete types (unless you want 'em):
 
@@ -353,6 +371,8 @@ Speaking of match expressions...
 
 ### Match Types
 
+[blog post](https://medium.com/scala-3/scala-3-dependent-types-part-ii-e7fc04dbfb08)
+
 This can be a bit "quirky", but it's a cool feature. (Example adapted from the [Dotty docs](https://dotty.epfl.ch/docs/reference/new-types/match-types.html)):
 
 ```scala
@@ -404,7 +424,6 @@ Flags to help migration:
 * Trait parameters
 * Completely new macro system
 * _Transparent_ traits
-* `export` clauses
 * Type lambdas: `type F = [A] =>> FooBar[A]`
 * Kind polymorphism: generalize over `A`, `F[A]`, `G[A,B]`, ...
 * Dependent function types (we've had dependent _method_ types)
