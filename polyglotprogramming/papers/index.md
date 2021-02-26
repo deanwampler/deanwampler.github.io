@@ -12,9 +12,25 @@ redirect_from:
 {% include JB/setup %}
 
 <section id="talks" class="talks centered">
-Most of my conference and user group talks can be found in this <a href="https://github.com/deanwampler/Presentations/">GitHub repo</a>. I recent removed some very old talks from the list on this page.
+My talks can be found in this <a href="https://github.com/deanwampler/Presentations/">GitHub repo</a>. The most recent and relevant ones are listed here.
 
 <table class="talks-table centered">
+  <tr>
+    <td>
+      <article class="talk">
+        <h1>Next Generation AI: Transitioning to the Continuous, Self-Learning Enterprise</h1>
+        <p class="talk-desc">Draft. February 2021</p>
+        <p>A talk I'm developing that looks at the state of AI/ML and what enterprises need to do to fully leverage it.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/NextGenerationAI.pdf" class="button button-pdf">Download PDF</a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="/polyglotprogramming/papers/NextGenerationAI.pdf"><img src="NextGenerationAI-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
   <tr>
     <td>
       <article class="talk">

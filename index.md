@@ -22,6 +22,15 @@ include_social: true
   <p class="section-title"><span>Some of My Talks</span></p>
 
   <article class="talk">
+    <h1>Next Generation AI: Transitioning to the Continuous, Self-Learning Enterprise</h1>
+    <p class="talk-desc">Draft. February 2021</p>
+    <p>A talk I'm developing that looks at the state of AI/ML and what enterprises need to do to fully leverage it.</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/NextGenerationAI.pdf" class="button button-pdf">Download PDF</a>
+    </div>
+  </article>
+
+  <article class="talk">
     <h1>Modularity: A Retrospective</h1>
     <p class="talk-desc">GOTO Chicago Nights, February 18, 2020 and Scala in the City, May 28, 2020</p>
     <p>A look at what we've accomplished in making software modular and
