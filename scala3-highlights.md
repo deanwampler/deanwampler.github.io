@@ -467,7 +467,7 @@ The last one fails because our match type doesn't handle nesting beyond one leve
 
 _Type lambdas_ are the type-level analog of "value lambdas", i.e., _functions_. Scala 3 intoduces a syntax similar to function syntax, e.g., `type Work = [T] =>> Either[String,T]`. Note the similarity of `=>>` to function literal "arrows" `=>`.
 
-This example suggests one important use for type lambdas; when you have a type with two type parameters that you want to use in a context where a single type parameter is expected, but the one of the type parameters can be fixed. The [blog post](https://medium.com/scala-3/scala-3-type-lambdas-polymorphic-function-types-and-dependent-function-types-2a6eabef896d) provides a more extensive example.
+This example suggests one important use for type lambdas; when you have a type with two type parameters that you want to use in a context where a single type parameter is expected, but one of the type parameters can be fixed. The [blog post](https://medium.com/scala-3/scala-3-type-lambdas-polymorphic-function-types-and-dependent-function-types-2a6eabef896d) provides a more extensive example.
 
 ## Migration
 
