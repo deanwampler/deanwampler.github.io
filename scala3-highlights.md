@@ -461,6 +461,14 @@ summon[Elem[Option[List[Long]]] =:= Long]   // ERROR
 
 The last one fails because our match type doesn't handle nesting beyond one level. This is possible; the type can be recursive!
 
+### Type Lambdas
+
+[blog post](https://medium.com/scala-3/scala-3-type-lambdas-polymorphic-function-types-and-dependent-function-types-2a6eabef896d)
+
+_Type lambdas_ are the type-level analog of "value lambdas", i.e., _functions_. Scala 3 intoduces a syntax similar to function syntax, e.g., `type Work = [T] =>> Either[String,T]`. Note the similarity of `=>>` to function literal "arrows" `=>`.
+
+This example suggests one important use for type lambdas; when you have a type with two type parameters that you want to use in a context where a single type parameter is expected, but the one of the type parameters can be fixed. The [blog post](https://medium.com/scala-3/scala-3-type-lambdas-polymorphic-function-types-and-dependent-function-types-2a6eabef896d) provides a more extensive example.
+
 ## Migration
 
 The book's code examples use the flag `-source future` to force deprecation warnings for older constructs. The default, `-source 3.0`, is more forgiving.
@@ -482,14 +490,13 @@ Flags to help migration:
 
 * Traits can have constructor parameter lists, like classes.
 * The metaprogramming system is completely new.
-* Type lambdas: `type F = [A] =>> FooBar[A]`
 * Kind polymorphism: generalize over `A`, `F[A]`, `G[A,B]`, ...
-* Dependent function types - We've had dependent _method_ types. Now functions can be dependently typed.
-* Polymorphic function types - We've had polymorphic _methods_, e.g., `def size[T](seq: Seq[T])Int = seq.size`. Now functions can be polymorphic.
-* New types like `Tuple`, `EmptyTuple` (and tuple operations)
-* Explicit `null`s: `def callJava(...): String | Null`
-* Safe initialization
-* `@main` methods: instead of `object Foo { def main():Unit = ??? }` boilerplate
-* No more 22-arity limits on tuples and functions
-* _Transparent_ traits
-* ... and lots of smaller refinements
+* Dependent function types - We've had dependent _method_ types. Now functions can be dependently typed. See [this blog post](https://medium.com/scala-3/scala-3-type-lambdas-polymorphic-function-types-and-dependent-function-types-2a6eabef896d).
+* Polymorphic function types - We've had polymorphic _methods_, e.g., `def size[T](seq: Seq[T])Int = seq.size`. Now functions can be polymorphic. See [this blog post](https://medium.com/scala-3/scala-3-type-lambdas-polymorphic-function-types-and-dependent-function-types-2a6eabef896d).
+* New types like `Tuple`, `EmptyTuple` (and tuple operations).
+* Explicit `null`s: `def callJavaMethod(...): String | Null`.
+* Safe initialization.
+* `@main` methods that can replace `object Foo { def main(args: Array[String]):Unit = ??? }` boilerplate (although parsing of arguments is primitive in the first release).
+* No more 22-arity limits on tuples and functions.
+* _Transparent_ traits (i.e., they don't show up in type inference).
+* ... and [lots of other refinements](https://dotty.epfl.ch/docs/Reference/index.html).

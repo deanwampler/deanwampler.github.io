@@ -15,7 +15,8 @@ include_social: true
     <a href="books/fpjava.html" class="books-book"><img src="/assets/images/FPforJavaDevsCover_256x337.png"/></a>
     <a href="books/programminghive.html" class="books-book"><img src="/assets/images/prog_hive_mech_cover_front_252x331.png"/></a>
   </div>
-  <p class="talk"><a href="/books">More on my books</a>.</p>
+  <p class="talk"><a href="/scala3-highlights.html">Scala 3 highlights</a>.</p>
+  <p class="talk"><a href="/books">More information</a> on my books and reports.</p>
 </section>
 
 <section id="talks" class="talks centered">
