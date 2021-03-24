@@ -480,7 +480,7 @@ In addition to the talks above, here are a few others.
     <ul>
         <li><a href="AOPerspectiveOnOOD.pdf">Noninvasiveness and Aspect-Oriented Design: Lessons from Object-Oriented Design Principles</a>. Research Paper discussing classic OO design principles in the context of AOSD.</li>
         <li><a href="AOP_Academia_and_Industry.pdf">AOP in Academia and Industry</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/>.</li>
-        <li><a href="https://aosd.net/2007/program/industry/I6-AspectDesignPrinciples.pdf">Aspect-Oriented Design Principles: Lessons from Object-Oriented Design</a> (<img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/>.</li>
+        <li><a href="https://aosd.net/2007/program/industry/I6-AspectDesignPrinciples.pdf">Aspect-Oriented Design Principles: Lessons from Object-Oriented Design</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/>.</li>
         <li><a href="https://www-128.ibm.com/developerworks/java/library/j-aopwork17.html">AOP@Work: Component Design with Contract4J</a> (IBM <a href="https://www-128.ibm.com/developerworks">developerWorks</a>).</li>
         <li><a href="TheChallengesOfWritingReusableAspectsInAspectJ.pdf">The Challenges of Writing Reusable and Portable Aspects in AspectJ: Lessons from Contract4J</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/>.</li>
         <li><a href="https://www.aosd.net/workshops/acp4is/2006/papers/7.pdf">Contract4J for Design by Contract in Java: Design Pattern-Like Protocols and Aspect Interfaces</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/></li>
