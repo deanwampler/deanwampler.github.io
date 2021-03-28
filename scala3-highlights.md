@@ -124,7 +124,7 @@ Note the new `given` syntax. This replaces `implicit val/def`, in general.
 
 Note the name that is synthesized for the first _given instance_ if you don't explicitly provide a name, `given_Conversion_Double_Dollars`. 
 
-Note that `as` keyword when the second given instance is named.
+The second given instance is named `d2P`. The declaration looks similar to a typical `val` declaration.
 
 By the way, the first definition is shorthand for this:
 
@@ -150,7 +150,7 @@ The syntax combines traits (to define the abstraction), regular and _extension m
 
 <script src="https://gist.github.com/deanwampler/6c1496da43bf338019beee2c5ea70ce4.js"></script>
 
-Notice which members are extensions and which ones aren't! The extension methods will be _instance_ members and the others will be the equivalent of _companion object_ members; we only need one `unit` per type `T`.
+Notice which members are extensions and which ones aren't! The extension methods will be _instance_ members and the others will be the equivalent of _companion object_ members; we only need one `unit` per type `T`. (The fact they are split across two different types is incidental to how I defined them. All could be defined in the same type.)
 
 Create two _monoid instances_: 
 
@@ -167,7 +167,7 @@ exists:
 
 Now we see our first example of a _using clause_, the successor to an _implicit parameter list_.
 
-Finally, `given`s will often be declared anonymous:
+Finally, like the `Conversion[Double,Dollars]` example above, `given`s will often be declared anonymous:
 
 <script src="https://gist.github.com/deanwampler/5d176eeb8f886f8c4fcf2c6dc8edab81.js"></script>
 
@@ -185,13 +185,13 @@ We just saw a _using clause_. They can be anonymous, too. Here's an (unnecessary
 
 I passed the `implicit/given` values explicitly to `Seq.sortBy` for illustration purposes, but of course I could have passed them implicitly (usingly?). The term _context parameters_ (or arguments) is used for these parameters.
 
-Note that the `using` keyword is now required (although optional in the 3.0 release, to ease the transition). Requiring the keyword when you pass an explicit argument disambiguates which clauses are using clauses and which aren't. This permits more flexible definitions like the following:
+Note that the `using` keyword is now required when you pass an explicit argument (although optional in the 3.0 release, to ease the transition). Requiring the keyword when you pass an explicit argument disambiguates which clauses are using clauses and which aren't. This permits more flexible definitions like the following:
 
 <script src="https://gist.github.com/deanwampler/ad16826c18aadd4d74bc7f9603f1e71d.js"></script>
 
 #### By-Name Context Parameters
 
-By-name (regular) parameters are great for deferred evaluation, such as passing expressions that should be evaluated inside a method, not before calling the method. This works for context parameters, too, as in this sketch of a database access API:
+In general, by-name parameters are great for deferred evaluation, such as passing expressions that should be evaluated inside a method, not before calling the method. This works for context parameters, too, as in this sketch of a database access API:
 
 <script src="https://gist.github.com/deanwampler/6042d6486474d27b43d5add8de10fa3b.js"></script>
 
@@ -215,6 +215,8 @@ ond))` (from the type alias for `Executable`),
 3. which the compiler converts to `Future(sleepN(1.second))(given Execution
 Context)`,
 4. which is invoked to return the Future.
+
+You can also define methods that take context functions as arguments. Study this [Dotty documentation](https://dotty.epfl.ch/docs/reference/contextual/context-functions.html) for more examples and an explanation of how the compiler handles these definitions. 
 
 ### Given Imports
 
@@ -250,13 +252,17 @@ In the following example, we enable the language feature just for this file, the
 
 See the [Dotty documentation](http://dotty.epfl.ch/docs/reference/contextual/derivation.html) for details about how `CanEqual` is implemented and how to implement your own derivable type classes.
 
+Finally, for this particular example, recall that normally we're allowed to compare any `AnyRef` to another `AnyRef`, even if they will never be equal. This is _universal equality_. The `CanEqual` type class supports _multiversal equality_, where types are grouped in such a way that comparison of instances is only allowed for types within the same group. That doesn't necessarily mean the same exact type. In the example, we can compare a `Branch[T]` and a `Leaf[T]` for the same `T`, but not compare instances for different `T`s.
+
 ## Infix Operator Notation
+
+[blog post](https://medium.com/scala-3/scala-3-infix-operator-notation-26bd7c13d0a3)
 
 Because people abuse operator notation, Scala is migrating towards disallowing it, by default, unless:
 
 1. The method name uses only "operator characters".
-2. The method is annotated with `@scala.annotation.infix`.
-3. Usage is followed by a curly brace.
+2. The method is declared `infix`.
+3. The argument is wrapped in curly braces.
 4. Back ticks are used:
 
 In our previous example:
@@ -265,15 +271,13 @@ In our previous example:
 scala> "2" combine ("3" combine "4")
      |
 1 |"2" combine ("3" combine "4")
-  |                 ^^^^^^^
-  |Alphanumeric method combine is not declared @infix; it should not be used as infix operator.
+  |    ^^^^^^^
+  |Alphanumeric method combine is not declared `infix`; it should not be used as infix operator.
   |The operation can be rewritten automatically to `combine` under -deprecation -rewrite.
   |Or rewrite to method syntax .combine(...) manually.
 1 |"2" combine ("3" combine "4")
-  |    ^^^^^^^
-  |Alphanumeric method combine is not declared @infix; it should not be used as infix operator.
-  |The operation can be rewritten automatically to `combine` under -deprecation -rewrite.
-  |Or rewrite to method syntax .combine(...) manually.
+  |                 ^^^^^^^
+  | (same error message)
 
 scala> "2" combine { "3" combine { "4" } }
 val res0: String = 234
@@ -282,7 +286,7 @@ scala> "2" `combine` ("3" `combine` "4")
 val res1: String = 234
 ```
 
-Or, mark `combine` with `infix`, then you can use `"2" combine ("3" combine "4")`: 
+Or, declare `combine` with `infix`, then you can use `"2" combine ("3" combine "4")`: 
 
 <script src="https://gist.github.com/deanwampler/5f7eac8bfe678816ff4b6863ee81522a.js"></script>
 
@@ -475,7 +479,6 @@ The book's code examples use the flag `-source future` to force deprecation warn
 
 Flags to control syntax preferences:
 
-* `-indent`: Allow significant indentation.
 * `-noindent`: Require classical {...} syntax, indentation is not significant.
 * `-new-syntax`: Require `then` in conditional expressions.
 * `-old-syntax`: Require `(...)` around conditions.
@@ -485,6 +488,7 @@ Flags to help migration:
 * `-language:Scala2`: Compile Scala 2 code, highlight what needs updating.
 * `-migration`: Emit warning and location for migration issues from Scala 2.
 * `-rewrite`: Attempt to fix code automatically.
+* `-indent`: Use with `-migration` and `-rewrite` to transform code into braceless notation.
 
 ## Other Things of Note...
 
