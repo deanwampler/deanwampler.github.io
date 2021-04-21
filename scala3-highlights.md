@@ -6,29 +6,29 @@ include_social: true
 ---
 {% include JB/setup %}
 
-* Created, Nov 19, 2020. Latest update: February 13, 2021
+* Created, Nov 19, 2020. Latest update: April 21, 2021
 * [@deanwampler](https://twitter.com/deanwampler)
 * [dean@deanwampler.com](mailto:dean@deanwampler.com)
 
-These are the notes for my talk at [The Chicago-Area Scala Enthusiasts (CASE)](https://www.meetup.com/chicagoscala/events/274110140/), Nov. 19, 2020, and [Scala Love in the City](https://inthecity.scala.love/), Feb. 13, 2021. Some of these code examples are in my [running series of blog posts on Scala 3](https://medium.com/scala-3). Most are adapted from the [Code examples](https://github.com/deanwampler/programming-scala-book-code-examples) for [_Programming Scala, Third Edition_](http://programming-scala.org/) with a few "borrowed" from the [Dotty documentation](https://dotty.epfl.ch/docs/index.html).
+These are the notes for my talk at [The Chicago-Area Scala Enthusiasts (CASE)](https://www.meetup.com/chicagoscala/events/274110140/), Nov. 19, 2020, [Scala Love in the City](https://inthecity.scala.love/), Feb. 13, 2021, and at the [Philly Area Scala Enthusiasts (PHASE)](https://www.meetup.com/scala-phase/events/277164777/), April 21, 2021. Some of these code examples are in my [running series of blog posts on Scala 3](https://medium.com/scala-3). Most are adapted from the [Code examples](https://github.com/deanwampler/programming-scala-book-code-examples) for [_Programming Scala, Third Edition_](http://programming-scala.org/) with a few "borrowed" from the [Dotty documentation](https://dotty.epfl.ch/docs/index.html).
 
 ## For More Information
 
 ![Programming Scala 3rd Edition Cover](/assets/images/prog_scala_3ed_comp-quarter_size.jpg)
 
 * [Programming Scala, Third Edition](http://programming-scala.org/)
-* [Code examples](https://github.com/deanwampler/programming-scala-book-code-examples) (warning, very few comments!!)
+* [Code examples](https://github.com/deanwampler/programming-scala-book-code-examples) (warning, not many comments!!)
 * [My blog on Scala 3](https://medium.com/scala-3)
 * [EPFL's very good documentation on Scala 3](https://dotty.epfl.ch/). See in particular the:
     *  [Blog](https://dotty.epfl.ch/blog/index.html)
-    *  [Docs](https://dotty.epfl.ch/docs/index.html).
+    *  [Docs](https://dotty.epfl.ch/docs/index.html)
 * [Gitter Channel on Dotty](https://gitter.im/lampepfl/dotty). Essential!
 
 ## General Comments
 
 Some features are transitional; you can mix old with new in 3.0, but subsequent releases will start deprecating and warning about deprecated features.
 
-To get started, an EPFL SBT plugin brings Dotty/Scala 3 support to SBT:
+To get started, SBT 1.5 supports Scala 3:
 
 * [Getting started](https://dotty.epfl.ch/docs/usage/getting-started.html)
 * [Dotty example project](https://github.com/lampepfl/dotty-example-project)
@@ -80,7 +80,7 @@ Create a custom `loop` "control":
 
 <script src="https://gist.github.com/deanwampler/6c7124e65102e4c203a47127fa329716.js"></script>
 
-There is an experimental compiler flag `-Yindent-colons` that enables this to work, but there are details to work out before it's considered fully supported (Scala 3.1??).
+There is an experimental compiler flag `-language:experimental.fewerBraces` that enables this to work, but there are details to work out before it's considered fully supported (Scala 3.1??).
 
 ### New Control Syntax
 
@@ -209,12 +209,11 @@ Note the syntax for `FutureCF.apply` compared to `Future.apply`, shown in the co
 
 Notice that we use `FutureCF.apply` just like `Future.apply`, either using the `given` `global` value or providing it explicitly. So, how do we get the `Exetuable[T]` returned when the body of `FutureCF.apply` is just `Future(...)`?
 
-1. `Executable(Future(sleepN(1.second)))`` is supposed to be returned,
+1. `Executable(Future(sleepN(1.second)))` is returned,
 2. which is the same as `(given ExecutionContext) ?=> Future(sleepN(1.sec
 ond))` (from the type alias for `Executable`),
-3. which the compiler converts to `Future(sleepN(1.second))(given Execution
-Context)`,
-4. which is invoked to return the Future.
+3. which is invoked to produce `Future(sleepN(1.second))(using global)`,
+4. which is invoked to return the `Future`.
 
 You can also define methods that take context functions as arguments. Study this [Dotty documentation](https://dotty.epfl.ch/docs/reference/contextual/context-functions.html) for more examples and an explanation of how the compiler handles these definitions. 
 
@@ -250,7 +249,7 @@ In the following example, we enable the language feature just for this file, the
 
 <script src="https://gist.github.com/deanwampler/9372fceaf9247f3064f1d691174c8b0b.js"></script>
 
-See the [Dotty documentation](http://dotty.epfl.ch/docs/reference/contextual/derivation.html) for details about how `CanEqual` is implemented and how to implement your own derivable type classes.
+See the [Dotty documentation](http://dotty.epfl.ch/docs/reference/contextual/derivation.html) for details about how `CanEqual` is implemented and how to implement your own derivable type classes. (The new `enum` syntax is discussed below.)
 
 Finally, for this particular example, recall that normally we're allowed to compare any `AnyRef` to another `AnyRef`, even if they will never be equal. This is _universal equality_. The `CanEqual` type class supports _multiversal equality_, where types are grouped in such a way that comparison of instances is only allowed for types within the same group. That doesn't necessarily mean the same exact type. In the example, we can compare a `Branch[T]` and a `Leaf[T]` for the same `T`, but not compare instances for different `T`s.
 
@@ -422,10 +421,10 @@ def getUser(id: String, dbc: DBConnection): String | User | Seq[User] =
   catch 
     case dbe: DBException => dbe.getMessage
 
-getUser(dbc) match
-  case message: String => error(message)
-  case User(name, password) => ...
-  case seq: Seq[User] => ...
+getUser("1234", myDBConnection) match
+  case message: String => println(s"ERROR: $message")
+  case User(name, password) => println("Hello user: $name")
+  case seq: Seq[User] => println ("Hello users: $seq")
 ```
 
 Note how pattern matching is necessary to determine what was returned from `getUser`. Compared to `Either`, you give up the useful operations like `map`, `flatMap`, etc. as alternatives to pattern matching like this.
