@@ -464,6 +464,12 @@ summon[Elem[Option[List[Long]]] =:= Long]   // ERROR
 
 The last one fails because our match type doesn't handle nesting beyond one level. This is possible; the type can be recursive!
 
+### Matchable
+
+[blog post](https://medium.com/scala-3/scala-3-safer-pattern-matching-with-matchable-f0396430ded6)
+
+Scala 3 introduces a new trait called `scala.Matchable`. It is used to fix some loopholes in pattern matching. It has a lot of implications for your code. See my [blog post](https://medium.com/scala-3/scala-3-safer-pattern-matching-with-matchable-f0396430ded6) for details.
+
 ### Type Lambdas
 
 [blog post](https://medium.com/scala-3/scala-3-type-lambdas-polymorphic-function-types-and-dependent-function-types-2a6eabef896d)
