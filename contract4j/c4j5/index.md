@@ -1400,7 +1400,7 @@ Numerous minor enhancements.</p>
 
 <p><a href="/contract4j">polyglotprogramming.com/contract4j</a> is the home page for Contract4J5 and Contract4JBeans. It is developed by <a href="/aspectresearchassociates">Aspect Research Associates</a> (ARA), a consulting company specializing in <em>Polyglot</em> Programming technologies, such as Aspect-Oriented, Functional, and Object-Oriented Programming, &#8220;enterprise&#8221; Scala and Java, and Ruby on Rails. ARA also manages the <a href="/aspectprogramming">Aspect Programming</a> web site, where you will find more information and whitepapers on Contract4J5 and Aspect-Oriented Software Development (AOSD), in general.</p>
 
-<p>We recently released the first version of a new AOP framework for Ruby called <a href="https://github.com/deanwampler/Aquarium">Aquarium</a>. The examples included with Aquarium include a basic Design-by-Contract module.</p>
+<p>We recently released the first version of a new AOP framework for Ruby called <a href="https://github.com/Agilefreaks/Aquarium">Aquarium</a>. The examples included with Aquarium include a basic Design-by-Contract module.</p>
 
 <p>The <a href="https://www.ibm.com/developerworks/views/java/libraryview.jsp?search_by=aop@work:">AOP@Work</a> series at <a href="https://developerWorks.com">developerWorks.com</a> contains an <a href="https://www.ibm.com/developerworks/java/library/j-aopwork17.html">article about Contract4J5</a>. It introduces Design by Contract and how Contract4J5 supports it in Java. The article concludes with a discussion of emerging trends in Aspect-Oriented Design.</p>
 

@@ -14,4 +14,4 @@ AOP requires two features to implement <span class="keyword">aspects</span>, whi
 
 However, in practice, AOP didn't become as useful as originally expected. It works well for injecting code modifications, like monitoring, debugging, and logging logic. However, other mechanisms were found to be "good enough" for addressing cross-cutting concerns.
 
-I developed two AOP-based tools, [Aquarium](https://github.com/deanwampler/Aquarium), an AOP toolkit for the Ruby language, and [Contract4J](/contract4j), a [Design by Contract](https://en.wikipedia.org/wiki/Design_by_contract) tool for Java.
+I developed two AOP-based tools, [Aquarium](/open-source/aquarium), an AOP toolkit for the Ruby language, and [Contract4J](/contract4j), a [Design by Contract](https://en.wikipedia.org/wiki/Design_by_contract) tool for Java.
