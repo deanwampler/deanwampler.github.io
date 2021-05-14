@@ -19,7 +19,7 @@ These are the notes for my talk at [The Chicago-Area Scala Enthusiasts (CASE)](h
 * [Programming Scala, Third Edition](http://programming-scala.org/)
 * [Code examples](https://github.com/deanwampler/programming-scala-book-code-examples) (warning, not many comments!!)
 * [My blog on Scala 3](https://medium.com/scala-3)
-* [EPFL's very good documentation on Scala 3](https://dotty.epfl.ch/). See in particular the:
+* [Scala 3 home page](https://docs.scala-lang.org/scala3/) which links to the thorough [EPFL's documentation](https://dotty.epfl.ch/). See in particular the:
     *  [Blog](https://dotty.epfl.ch/blog/index.html)
     *  [Docs](https://dotty.epfl.ch/docs/index.html)
 * [Gitter Channel on Dotty](https://gitter.im/lampepfl/dotty). Essential!
