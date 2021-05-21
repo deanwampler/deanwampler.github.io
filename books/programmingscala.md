@@ -59,8 +59,8 @@ tagline:
   <li>The code examples <a href="https://gitter.im/deanwampler/programming-scala-book-code-examples" target="github">Gitter channel</a></li>
   <li>The GitHub repo <a href="https://github.com/deanwampler/programming-scala-book-code-examples/discussions" target="github">Discussions forum</a></li>
   <li>The GitHub repo <a href="https://github.com/deanwampler/programming-scala-book-code-examples/issues" target="github">Issues</a></li>
-  <li><a href="https://oreil.ly/programming-scala-3" target="oreilly">O'Reilly's book page</a></li>
-  <li>The book's Twitter account, <a href="https://twitter.com/ProgScala" target="twitter">@ProgScala</a></li>
+  <li>The <a href="https://oreil.ly/programming-scala-3" target="oreilly">O'Reilly book page</a> and the <a href="https://www.oreilly.com/catalog/errata.csp?isbn=9781492077893" target="oreilly">errata page</a></li>
+  <li>The <a href="https://twitter.com/ProgScala" target="twitter">Twitter account @ProgScala</a></li>
 </ul>
 
 <p>If you're using Spark and you want a quick introduction to Scala aimed at Spark developers, check out my free tutorial, <a href="https://github.com/deanwampler/JustEnoughScalaForSpark" target="jess">Just Enough Scala for Spark</a>.</p>
