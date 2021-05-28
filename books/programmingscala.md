@@ -10,20 +10,19 @@ tagline:
 <tr>
 <td>
 
-<p><em>Programming Scala, Third Edition</em> covers Scala 3. It will be published in June, 2021. You can read &ldquo;early access release&rdquo; chapters now on the <a href="https://oreil.ly/programming-scala-3">O'Reilly online learning platform</a>.</p>
-
-<p>You can also pre-order ebooks and print copies at these book stores:
+<p><a href="https://oreil.ly/programming-scala-3" target="oreilly">Programming Scala, Third Edition</a> covers Scala 3. It was published June, 2021 by O'Reilly Media. You can read it on the <a href="https://oreil.ly/programming-scala-3">O'Reilly online learning platform</a> or purchase ebook or print copies from these sellers:
     <ul>
-        <li><a href="https://www.amazon.com/Programming-Scala-Scalability-Functional-Objects/dp/1492077895/ref=sr_1_1">Amazon</a> (Kindle version coming soon)</li>
-        <li><a href="https://www.powells.com/book/programming-scala-9781492077893">Powells</a></li>
-        <li><a href="https://www.barnesandnoble.com/w/programming-scala-dean-wampler/1112215033?ean=9781492077893">Barnes and Noble</a></li>
-        <li><a href="https://bookshop.org/books/programming-scala-scalability-functional-programming-objects-9781492077893/9781492077893">Bookshop</a></li>
-        <li>Apple Books (soon)</li>
+        <li><a href="https://www.amazon.com/Programming-Scala-Scalability-Functional-Objects/dp/1492077895/ref=sr_1_1">Amazon</a> (Kindle and print versions)</li>
+        <li><a href="https://shop.aer.io/oreilly/p/programming-scala-3rd/9781492077893-9149" target="oreilly-store">O'Reilly Media</a> (print)</li>
+        <li><a href="https://www.powells.com/book/programming-scala-9781492077893">Powells</a> (print)</li>
+        <li><a href="https://www.barnesandnoble.com/w/programming-scala-dean-wampler/1112215033?ean=9781492077893">Barnes and Noble</a> (print)</li>
+        <li><a href="https://bookshop.org/books/programming-scala-scalability-functional-programming-objects-9781492077893/9781492077893">Bookshop</a> (print)</li>
+        <li><a href="https://books.apple.com/us/book/programming-scala/id1569480947">Apple Books</a> (ePub)</li>
         <li>... and other places. Search for ISBN 9781492077893</li>
     </ul>
 </p>
 
-<p>See my <a href="https://medium.com/scala-3">blog series about Scala 3</a>, where I summarize the highlights of what's new.</p>
+<p>See my <a href="https://medium.com/scala-3">blog series about Scala 3</a>, where I cover many highlights of what's new.</p>
 
 <p>I also created this <a href="../scala3-highlights.html">synopsis of Scala 3 changes</a>, which I used as notes for several talks on Scala 3, such as the <a href="https://www.meetup.com/chicagoscala/events/274110140/">November 20, 2020 meeting of the Chicago Area Scala Enthusiasts.</a></p>
 
@@ -52,7 +51,7 @@ tagline:
     </ul>
 </p>
 
-<p>My goal for the reader is to <em>really</em> know the language, including how features work, the design challenges and coding problems they were introduced to solve. I want you to learn the common techniques used to solve various design problems, as well as general best practices and idioms. There are some more obscure topics that I omit and some advanced topics that I only briefly mention, but you should be expert in Scala when you finish this book.</p>
+<p>My goal for the reader is to <em>really</em> know the language, including the motivations for different Scala features and how they work. I want you to learn the common techniques used to solve various design problems, as well as general best practices and idioms. There are some more obscure topics that I omit and some advanced topics that I only briefly mention, but you should be expert in Scala when you finish this book.</p>
 
 <p>To discuss the book, the code examples, etc. use one of the following forums. Bug reports (and patches!) are especially welcome:</p>
 <ul>
