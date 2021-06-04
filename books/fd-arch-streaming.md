@@ -9,7 +9,7 @@ tagline:
 <table>
 <tr>
 <td>
-<p><a href="https://lbnd.io/fast-data-book" target="book">Fast Data Architectures for Streaming Applications, Second Edition</a> is a free report co-published by <a href="https://lightbend.com" target="lightbend">Lightbend</a> and <a href="https://oreilly.com" target="window">O'Reilly</a> on the architectural characteristics of highly available, resilient, scalable, and responsive systems for data stream processing at scale. Originally published in October, 2016, the second edition was published in October, 2018.</p>
+<p><a href="https://www.lightbend.com/ebooks/fast-data-architectures-for-streaming-applications-oreilly-2nd-edition" target="book">Fast Data Architectures for Streaming Applications, Second Edition</a> is a free report co-published by <a href="https://lightbend.com" target="lightbend">Lightbend</a> and <a href="https://oreilly.com" target="window">O'Reilly</a> on the architectural characteristics of highly available, resilient, scalable, and responsive systems for data stream processing at scale. Originally published in October, 2016, the second edition was published in October, 2018.</p>
 
 <p>The book provides an overview of the common requirements for reliable streaming systems, based on common use cases for streaming, such as serving machine learning in a streaming context. Other requirements include the need to handle potential data loss, duplication of data, late arrival, etc. Standard system concerns, the so called <a href="https://www.reactivemanifesto.org/" target="rm">reactive principles</a> are important for such systems, where services and applications must run reliably for weeks, months, even years. If you run anything long enough, it will see every rare anomaly: hardware failures, network partitions, traffic spikes, etc. Hence, streaming systems have harder operational requirements than shorter-lived batch processes</p>
 
@@ -36,6 +36,6 @@ tagline:
 <p>Rounding out the picture are tools for building other microservices, such as the <a href="https://www.lightbend.com/platform" target="lightbend">Lightbend Platform</a>, including management and monitoring tools.</p>
 
 </td>
-<td class="fd-arch-streaming-cover-cell"><a href="https://lbnd.io/fast-data-book" target="book"><img src="/assets/images/FastDataArch-StreamingApps-2ndEd-256x337.png" alt="Fast Data Architectures for Streaming Applications, Second Edition"/></a></td>
+<td class="fd-arch-streaming-cover-cell"><a href="https://www.lightbend.com/ebooks/fast-data-architectures-for-streaming-applications-oreilly-2nd-edition" target="book"><img src="/assets/images/FastDataArch-StreamingApps-2ndEd-256x337.png" alt="Fast Data Architectures for Streaming Applications, Second Edition"/></a></td>
 </tr>
 </table>

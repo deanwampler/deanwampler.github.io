@@ -47,6 +47,12 @@ body {
   height: 337px;
 }
 
+.what-is-ray-cell {
+  /*background-image: url("/assets/images/what-is-ray.jpg");*/
+  width:  250px;
+  height: 375px;
+}
+
 .basic-table {
   width: 90%;
   border-style: solid;

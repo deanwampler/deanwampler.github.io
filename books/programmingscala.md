@@ -12,8 +12,8 @@ tagline:
 
 <p><a href="https://oreil.ly/programming-scala-3" target="oreilly">Programming Scala, Third Edition</a> covers Scala 3. It was published June, 2021 by O'Reilly Media. You can read it on the <a href="https://oreil.ly/programming-scala-3">O'Reilly online learning platform</a> or purchase ebook or print copies from these sellers:
     <ul>
+        <li><a href="https://shop.aer.io/oreilly/p/programming-scala-3rd/9781492077893-9149" target="oreilly-store">O'Reilly Media</a></li>
         <li><a href="https://www.amazon.com/Programming-Scala-Scalability-Functional-Objects/dp/1492077895/ref=sr_1_1">Amazon</a> (Kindle and print versions)</li>
-        <li><a href="https://shop.aer.io/oreilly/p/programming-scala-3rd/9781492077893-9149" target="oreilly-store">O'Reilly Media</a> (print)</li>
         <li><a href="https://www.powells.com/book/programming-scala-9781492077893">Powells</a> (print)</li>
         <li><a href="https://www.barnesandnoble.com/w/programming-scala-dean-wampler/1112215033?ean=9781492077893">Barnes and Noble</a> (print)</li>
         <li><a href="https://bookshop.org/books/programming-scala-scalability-functional-programming-objects-9781492077893/9781492077893">Bookshop</a> (print)</li>
@@ -65,6 +65,9 @@ tagline:
 <p>If you're using Spark and you want a quick introduction to Scala aimed at Spark developers, check out my free tutorial, <a href="https://github.com/deanwampler/JustEnoughScalaForSpark" target="jess">Just Enough Scala for Spark</a>.</p>
 </td>
 
-<td class="prog-scala-cover-cell"><a href="https://oreil.ly/programming-scala-3"><img src="/assets/images/prog_scala_3ed_comp-quarter_size.jpg" alt="Programming Scala, 3rd Edition"/></a></td>
+<td class="prog-scala-cover-cell">
+    <a href="https://oreil.ly/programming-scala-3" target="oreilly"><img src="/assets/images/prog_scala_3ed_comp-quarter_size.jpg" alt="Programming Scala, 3rd Edition"/></a>
+    <!-- <iframe src="https://www.oreilly.com/authors/widgets/813.html" height="500px" width="200px" scrolling="no" frameborder="0"></iframe> -->
+</td>
 </tr>
 </table>

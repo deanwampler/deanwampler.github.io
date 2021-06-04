@@ -23,6 +23,9 @@ tagline:
 </ul>
 
 </td>
-<td class="prog-scala-cover-cell"><a href="https://shop.oreilly.com/product/0636920021667.do" target="fpjava"><img src="/assets/images/FPforJavaDevsCover_256x337.png" alt="Functional Programming for Java Developers: A Short Introduction"/></a></td>
+<td class="prog-scala-cover-cell">
+    <iframe src="https://www.oreilly.com/authors/widgets/819.html" height="500px" width="200px" scrolling="no" frameborder="0"></iframe>
+    <!-- <a href="https://shop.oreilly.com/product/0636920021667.do" target="fpjava"><img src="/assets/images/FPforJavaDevsCover_256x337.png" alt="Functional Programming for Java Developers: A Short Introduction"/></a> -->
+</td>
 </tr>
 </table>
