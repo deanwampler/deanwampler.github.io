@@ -5,14 +5,14 @@ tagline: Books and Reports written by Dean Wampler
 ---
 {% include JB/setup %}
 
-<table>
+<table class="book-page-table">
   <tr>
     <td>
-      <p><em>Programming Scala</em> is a comprehensive introduction to <a href="https://scala-lang.org" target="scala">Scala</a>. The third edition was published Jun 2021, covering the new Scala 3 release.</p>
+      <p><a href="programmingscala.html">Programming Scala, Third Edition</a> is a comprehensive introduction to <a href="https://scala-lang.org" target="scala">Scala</a>. The third edition was published Jun 2021, covering the new Scala 3 release.</p>
       <p><a href="programmingscala.html">More information...</a>.</p>
     </td>
     <td>
-        <a href="programmingscala.html" class="books-book" target="book"><img src="/assets/images/prog_scala_3ed_comp-quarter_size.jpg" alt="Programming Scala, Third Edition"/></a>
+      <a href="programmingscala.html" class="books-book" target="book"><img src="/assets/images/prog_scala_3ed_comp-quarter_size.jpg" alt="Programming Scala, Third Edition"/></a>
     </td>
   </tr>
   <tr>

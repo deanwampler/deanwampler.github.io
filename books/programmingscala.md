@@ -66,8 +66,10 @@ tagline:
 </td>
 
 <td class="prog-scala-cover-cell">
+    <iframe src="https://www.oreilly.com/authors/widgets/822.html" height="500px" width="200px" scrolling="no" frameborder="0"></iframe>
+    <!--
     <a href="https://oreil.ly/programming-scala-3" target="oreilly"><img src="/assets/images/prog_scala_3ed_comp-quarter_size.jpg" alt="Programming Scala, 3rd Edition"/></a>
-    <!-- <iframe src="https://www.oreilly.com/authors/widgets/813.html" height="500px" width="200px" scrolling="no" frameborder="0"></iframe> -->
+    -->
 </td>
 </tr>
 </table>

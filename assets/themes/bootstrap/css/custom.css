@@ -35,6 +35,10 @@ body {
   vertical-align: top;
 }
 
+.book-page-table {
+  vertical-align: top;
+}
+
 .prog-scala-cover-cell {
   /*background-image: url("/assets/images/prog_scala_3ed_comp-quarter_size.jpg");*/
   width:  262px;
