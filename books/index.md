@@ -30,7 +30,16 @@ tagline: Books and Reports written by Dean Wampler
       <p><a href="what-is-ray.html">More information...</a>.</p>
     </td>
     <td>
-          <a href="what-is-ray.html" class="books-book" target="book"><img src="/assets/images/WhatIsRay.jpg" alt="What Is Ray?"/></a>
+        <a href="what-is-ray.html" class="books-book" target="book"><img src="/assets/images/WhatIsRay.jpg" alt="What Is Ray?"/></a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><a href="https://www.nvidia.com/en-us/ai-data-science/resources/hardware-software-process-book/" target="nvidia">Hardware &gt; Software &gt; Process</a>, co-written with <a href="https://derwen.ai/paco">Paco Nathan</a>, explores the changing landscape of hardware acceleration and its impact on software development, including process.</p>
+      <p><a href="hardware-software-process.html">More information...</a>.</p>
+    </td>
+    <td>
+        <a href="hardware-software-process.html" class="books-book" target="book"><img src="/assets/images/HardwareSoftwareProcess-256x337.png" alt="Hardware > Software > Process"/></a>
     </td>
   </tr>
   <tr>
