@@ -14,15 +14,29 @@ These are the notes for my talk at [The Chicago-Area Scala Enthusiasts (CASE)](h
 
 ## For More Information
 
-![Programming Scala 3rd Edition Cover](/assets/images/prog_scala_3ed_comp-quarter_size.jpg)
-
-* [Programming Scala, Third Edition](http://programming-scala.org/)
-* [Code examples](https://github.com/deanwampler/programming-scala-book-code-examples) (warning, not many comments!!)
-* [My blog on Scala 3](https://medium.com/scala-3)
-* [Scala 3 home page](https://docs.scala-lang.org/scala3/) which links to the thorough [EPFL's documentation](https://dotty.epfl.ch/). See in particular the:
-    *  [Blog](https://dotty.epfl.ch/blog/index.html)
-    *  [Docs](https://dotty.epfl.ch/docs/index.html)
-* [Gitter Channel on Dotty](https://gitter.im/lampepfl/dotty). Essential!
+<table>
+    <tr>
+        <td>
+            <iframe src="https://www.oreilly.com/authors/widgets/822.html" height="350px" width="200px" scrolling="no" frameborder="0"></iframe>
+            <!-- ![Programming Scala 3rd Edition Cover](/assets/images/prog_scala_3ed_comp-quarter_size.jpg) -->
+        </td>
+        <td class="book-descriptions"> <!--style="vertical-align: text-top;">-->
+            <ul>
+                <li><a href="http://programming-scala.org/">Programming Scala, Third Edition</a></li>
+                <li><a href="https://github.com/deanwampler/programming-scala-book-code-examples">Code examples</a> (warning, not many comments!!)</li>
+                <li><a href="https://medium.com/scala-3">My blog on Scala 3</a></li>
+                <li><a href="https://docs.scala-lang.org/scala3/">Scala 3 home page</a> which links to the thorough <a href="https://dotty.epfl.ch/">EPFL's documentation</a>. See in particular the following:</li>
+                <li>
+                    <ul>
+                        <li><a href="https://dotty.epfl.ch/blog/index.html">Blog</a></li>
+                        <li><a href="https://dotty.epfl.ch/docs/index.html">Docs</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://gitter.im/scala/scala">Scala Gitter channel</a>. Essential!</li>
+            </ul>
+        </td>
+    </tr>
+</table>
 
 ## General Comments
 

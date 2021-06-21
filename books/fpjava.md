@@ -8,7 +8,7 @@ tagline:
 
 <table>
 <tr>
-<td>
+<td class="book-descriptions">
 <p><a href="https://shop.oreilly.com/product/0636920021667.do" target="fpjava">Functional Programming for Java Developers: A Short Introduction</a> explains the principles of <span class="keyword">Functional Programming</span> in a straightforward and pragmatic style, with code examples written in Java so the Java developer can see how to apply those ideas without switching to a functional language.</p>
 
 <p>As a short introduction, the book doesn't cover every aspect of this rich field, but it tries to convey the most important ideas and why <span class="keyword">Functional Programming</span> is often a better fit than <span class="keyword">Object-Oriented Programming</span> for the problems of our time.</p>
@@ -23,8 +23,8 @@ tagline:
 </ul>
 
 </td>
-<td class="prog-scala-cover-cell">
-    <iframe src="https://www.oreilly.com/authors/widgets/819.html" height="500px" width="200px" scrolling="no" frameborder="0"></iframe>
+<td class="book-descriptions">
+    <iframe src="https://www.oreilly.com/authors/widgets/819.html" height="350px" width="200px" scrolling="no" frameborder="0"></iframe>
     <!-- <a href="https://shop.oreilly.com/product/0636920021667.do" target="fpjava"><img src="/assets/images/FPforJavaDevsCover_256x337.png" alt="Functional Programming for Java Developers: A Short Introduction"/></a> -->
 </td>
 </tr>

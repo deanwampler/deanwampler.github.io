@@ -6,9 +6,9 @@ tagline:
 ---
 {% include JB/setup %}
 
-<table class="book-descriptions">
+<table>
 <tr>
-<td>
+<td class="book-descriptions">
 
 <p><a href="https://oreil.ly/programming-scala-3" target="oreilly">Programming Scala, Third Edition</a> covers Scala 3. It was published June, 2021 by O'Reilly Media. You can read it on the <a href="https://oreil.ly/programming-scala-3">O'Reilly online learning platform</a> or purchase ebook or print copies from these sellers:
     <ul>
@@ -65,7 +65,7 @@ tagline:
 <p>If you're using Spark and you want a quick introduction to Scala aimed at Spark developers, check out my free tutorial, <a href="https://github.com/deanwampler/JustEnoughScalaForSpark" target="jess">Just Enough Scala for Spark</a>.</p>
 </td>
 
-<td class="prog-scala-cover-cell">
+<td class="book-descriptions">
     <iframe src="https://www.oreilly.com/authors/widgets/822.html" height="500px" width="200px" scrolling="no" frameborder="0"></iframe>
     <!--
     <a href="https://oreil.ly/programming-scala-3" target="oreilly"><img src="/assets/images/prog_scala_3ed_comp-quarter_size.jpg" alt="Programming Scala, 3rd Edition"/></a>
