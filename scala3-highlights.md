@@ -1,16 +1,18 @@
 ---
 layout: page
 title: Scala 3 Highlights
-tagline: Notes on what's coming in Scala 3.
+tagline: What's new in Scala 3?
 include_social: true
 ---
 {% include JB/setup %}
 
-* Created, Nov 19, 2020. Latest update: April 21, 2021
+* Created, Nov 19, 2020. Latest update: July 2, 2021
 * [@deanwampler](https://twitter.com/deanwampler)
 * [dean@deanwampler.com](mailto:dean@deanwampler.com)
 
-These are the notes for my talk at [The Chicago-Area Scala Enthusiasts (CASE)](https://www.meetup.com/chicagoscala/events/274110140/), Nov. 19, 2020, [Scala Love in the City](https://inthecity.scala.love/), Feb. 13, 2021, and at the [Philly Area Scala Enthusiasts (PHASE)](https://www.meetup.com/scala-phase/events/277164777/), April 21, 2021. Some of these code examples are in my [running series of blog posts on Scala 3](https://medium.com/scala-3). Most are adapted from the [Code examples](https://github.com/deanwampler/programming-scala-book-code-examples) for [_Programming Scala, Third Edition_](http://programming-scala.org/) with a few "borrowed" from the [Dotty documentation](https://dotty.epfl.ch/docs/index.html).
+This is a concise summary of many of the changes in Scala 3. I used these notes for talks at [The Chicago-Area Scala Enthusiasts (CASE)](https://www.meetup.com/chicagoscala/events/274110140/), Nov. 19, 2020, [Scala Love in the City](https://inthecity.scala.love/), Feb. 13, 2021, and at the [Philly Area Scala Enthusiasts (PHASE)](https://www.meetup.com/scala-phase/events/277164777/), April 21, 2021. 
+
+Some of the code examples are in my [Scala 3 blog](https://medium.com/scala-3). Most are adapted from the [Code examples](https://github.com/deanwampler/programming-scala-book-code-examples) for [_Programming Scala, Third Edition_](http://programming-scala.org/) with a few "borrowed" from the [_Dotty_ documentation](https://dotty.epfl.ch/docs/index.html) (_Dotty_ is the project that evolved into Scala 3).
 
 ## For More Information
 
@@ -22,11 +24,13 @@ These are the notes for my talk at [The Chicago-Area Scala Enthusiasts (CASE)](h
         </td>
         <td class="book-descriptions"> <!--style="vertical-align: text-top;">-->
             <ul>
-                <li><a href="http://programming-scala.org/">Programming Scala, Third Edition</a></li>
-                <li><a href="https://github.com/deanwampler/programming-scala-book-code-examples">Code examples</a> (warning, not many comments!!)</li>
-                <li><a href="https://medium.com/scala-3">My blog on Scala 3</a></li>
-                <li><a href="https://docs.scala-lang.org/scala3/">Scala 3 home page</a> which links to the thorough <a href="https://dotty.epfl.ch/">EPFL's documentation</a>. See in particular the following:</li>
-                <li>
+                <li><a href="http://programming-scala.org/">Programming Scala, Third Edition</a>
+                    <ul>
+                        <li><a href="https://github.com/deanwampler/programming-scala-book-code-examples">Code examples</a> (warning, not many comments!!)</li>
+                    </ul>
+                </li>
+                <li><a href="https://medium.com/scala-3">My Scala 3 blog</a></li>
+                <li><a href="https://www.scala-lang.org/download/scala3.html">Scala 3 home page</a> which links to the thorough <a href="https://dotty.epfl.ch/">EPFL's documentation</a>. See in particular the following:
                     <ul>
                         <li><a href="https://dotty.epfl.ch/blog/index.html">Blog</a></li>
                         <li><a href="https://dotty.epfl.ch/docs/index.html">Docs</a></li>
@@ -40,9 +44,9 @@ These are the notes for my talk at [The Chicago-Area Scala Enthusiasts (CASE)](h
 
 ## General Comments
 
-Some features are transitional; you can mix old with new in 3.0, but subsequent releases will start deprecating and warning about deprecated features.
+Some features are transitional to make upgrading easier. Scala 3.0 lets you mix older Scala 2 features with their Scala 3 replacements, but subsequent releases will start deprecating and eventually removing the older features. I'll discuss examples as we go.
 
-To get started, SBT 1.5 supports Scala 3:
+To get started, SBT 1.5+ supports Scala 3:
 
 * [Getting started](https://dotty.epfl.ch/docs/usage/getting-started.html)
 * [Dotty example project](https://github.com/lampepfl/dotty-example-project)
@@ -512,7 +516,7 @@ Flags to help migration:
 ## Other Things of Note...
 
 * Traits can have constructor parameter lists, like classes.
-* The metaprogramming system is completely new.
+* The metaprogramming system is completely new. I don't discuss it here, but I am [blogging about it](https://medium.com/scala-3).
 * Kind polymorphism: generalize over `A`, `F[A]`, `G[A,B]`, ...
 * Dependent function types - We've had dependent _method_ types. Now functions can be dependently typed. See [this blog post](https://medium.com/scala-3/scala-3-type-lambdas-polymorphic-function-types-and-dependent-function-types-2a6eabef896d).
 * Polymorphic function types - We've had polymorphic _methods_, e.g., `def size[T](seq: Seq[T])Int = seq.size`. Now functions can be polymorphic. See [this blog post](https://medium.com/scala-3/scala-3-type-lambdas-polymorphic-function-types-and-dependent-function-types-2a6eabef896d).
