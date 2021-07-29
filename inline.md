@@ -227,7 +227,34 @@ When `ignore` is `true`, the entire implementation of `apply` reduces to `block`
       result
 ```
 
-The benefit of using a macro implementation is that the `InvariantFailure` message string will contain the code for `predicate` and `block`, so it's easier to see what failed. See the [blog post](https://medium.com/scala-3/scala-3-macros-d63dd6811f89) for more details.
+The benefit of using a macro implementation is that the `InvariantFailure` message string will contain the code for `predicate` and `block`, so it's easier to see what failed. Here's an example of what happens if you use this in `sbt console` for the _Programming Scala_ code examples, where this code is already compiled:
+
+```
+scala> import progscala3.meta.*
+
+scala> var okay = true    // Something we'll use in the predicate and block
+var okay: Boolean = true
+
+scala> invariant(okay == true) {
+     |   "hello world!"
+     | }
+val res0: String = hello world!   // works fine
+
+scala> invariant(okay == true) {
+     |   okay = false
+     |   "hello world!"
+     | }
+progscala3.meta.invariant$InvariantFailure: FAILURE! predicate "repl.rs$line$40.okay.==(true)" failed after evaluation of block: "{
+  repl.rs$line$40.okay = false
+  "hello world!"
+}". Message = "".
+  at progscala3.meta.invariant$InvariantFailure$.apply(Invariant.scala:26)
+  ...
+```
+
+Note the error message contains the predicate, `okay.==(true)` (omitting the REPL prefix and after converting the operator notation _syntactic sugar_ to a regular method call). It also contains the block that caused the error.
+
+See the [blog post](https://medium.com/scala-3/scala-3-macros-d63dd6811f89) for more details.
 
 ## Overrides
 
