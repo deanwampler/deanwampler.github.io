@@ -3,6 +3,8 @@ layout: page
 style: no-image
 title: Astrophotography with the MSM Star Tracker
 tagline:
+include_photo_social: true
+opaque_background: true
 ---
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
@@ -97,7 +99,7 @@ tagline:
 
 This widget compares a single exposure vs. 10 exposures stacked together. All exposures were taken with the Sony A7RIV and the Sony 24mm F1.4 GM lens, F1.4, 15 seconds, ISO 800. The stacked image was created using [Starry Sky Stacker](https://sites.google.com/site/starryskystacker/home). My camera was mounted on a [Move Shoot Move Star Tracker](https://www.moveshootmove.com/collections/sifo-rotator/products/sifo-rotator-for-star-tracking-time-lapse-panorama-photography).
 
-See my Medium blog post for more details.
+See my [Medium blog post for more details](https://medium.com/the-backpacking-photographer/move-shoot-move-for-astrophotography-f740bb4a49dc).
 
 <div class='msm1-slider-container opaque'>
   <div class='img background-img'></div>
