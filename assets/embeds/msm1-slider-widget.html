@@ -1,6 +1,5 @@
-<html>
-<body>
-<div class='msm1-slider-container'>
+<!DOCTYPE html>
+<html lang="en" data-color-mode="auto" data-light-theme="light" data-dark-theme="dark">
   <!--
   Slider widget adapted from https://levelup.gitconnected.com/how-to-create-a-before-after-image-slider-with-css-and-js-a609d9ba77bf
   Images (c) Dean Wampler, All Rights Reserved.
@@ -8,6 +7,11 @@
     https://www.flickr.com/photos/deanwampler/51350918396/in/album-72157719618117355/
     https://www.flickr.com/photos/deanwampler/51351936525/in/album-72157719618117355/
   -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  </head>
   <style>
   *, *:before, *:after {
     box-sizing: inherit;
@@ -94,13 +98,13 @@
     transform: rotate(135deg);
   }
   </style>
-
+<body>
+<div class='msm1-slider-container'>
   <div class='img background-img'></div>
   <div class='img foreground-img'></div>
   <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
   <div class='slider-button'></div>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
   <script id="rendered-js" >
     $("#slider").on("input change", (e)=>{
       const sliderPos = e.target.value;
