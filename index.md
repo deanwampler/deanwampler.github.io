@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dean Wampler, Ph.D.
-tagline: Industry expert in ML engineering, streaming data, and Scala.<br/>O'Reilly author and frequent public speaker.<br/>Works for <a href="https://dominodatalab.com">Domino Data Lab</a>. Photographer. Lives in Chicago.
+tagline: Industry expert in AI/ML engineering, streaming data, and Scala.<br/><a href="/books">Author</a> and <a href="/talks">industry public speaker</a>.<br/>Works for <a href="https://dominodatalab.com" target="ddl">Domino Data Lab</a>. <a href="/photography/">Photographer</a>. Lives in Chicago.
 
 include_social: true
 ---

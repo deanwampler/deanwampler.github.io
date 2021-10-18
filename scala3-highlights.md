@@ -496,6 +496,10 @@ _Type lambdas_ are the type-level analog of "value lambdas", i.e., _functions_. 
 
 This example suggests one important use for type lambdas; when you have a type with two type parameters that you want to use in a context where a single type parameter is expected, but one of the type parameters can be fixed. The [blog post](https://medium.com/scala-3/scala-3-type-lambdas-polymorphic-function-types-and-dependent-function-types-2a6eabef896d) provides a more extensive example.
 
+## Metaprogramming
+
+The metaprogramming system is completely new in Scala 3. See my blog posts on [`inline`](https://medium.com/scala-3/scala-3-a-look-at-inline-and-programming-scala-is-now-published-9690ca43c23a) and [macros](https://medium.com/scala-3/scala-3-macros-d63dd6811f89) for more details. See also <a href="./inline.html">this separate overview of `inline`</a>. (I have more posts planned about Scala 3 metaprogramming.)
+
 ## Migration
 
 The book's code examples use the flag `-source future` to force deprecation warnings for older constructs. The default, `-source 3.0`, is more forgiving.
@@ -516,7 +520,6 @@ Flags to help migration:
 ## Other Things of Note...
 
 * Traits can have constructor parameter lists, like classes.
-* The metaprogramming system is completely new. I don't discuss it here, but I am [blogging about it](https://medium.com/scala-3).
 * Kind polymorphism: generalize over `A`, `F[A]`, `G[A,B]`, ...
 * Dependent function types - We've had dependent _method_ types. Now functions can be dependently typed. See [this blog post](https://medium.com/scala-3/scala-3-type-lambdas-polymorphic-function-types-and-dependent-function-types-2a6eabef896d).
 * Polymorphic function types - We've had polymorphic _methods_, e.g., `def size[T](seq: Seq[T])Int = seq.size`. Now functions can be polymorphic. See [this blog post](https://medium.com/scala-3/scala-3-type-lambdas-polymorphic-function-types-and-dependent-function-types-2a6eabef896d).

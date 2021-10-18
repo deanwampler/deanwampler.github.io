@@ -30,10 +30,14 @@
         <a href="https://deanwampler.medium.com" target="blog">Blog<sup>⬀</sup></a>
         <a href="/polyglotprogramming">Polyglot Programming</a>
         <a href="/concurrentthought">Concurrent Thought</a>
-        <a href="/aspectprogramming">Aspect Programming</a>
+        <a href="/photography">Photography and Video</a>
         <a href="/pages.html">Pages...</a>
       </nav>
+      {% if page.opaque_background %}
+      <div class="container content">
+      {% else %}
       <div class="container content partially-transparent">
+      {% endif %}
         {{ content }}
         <hr>
         <footer>
