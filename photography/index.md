@@ -8,7 +8,7 @@ include_photo_social: true
 
 Landscape photography has been a growing passion of mine for a long time. (This website's [background image is from Colorado](https://www.flickr.com/photos/deanwampler/15905693911/in/album-72157649110558517/).) More recently, I've explored time lapses, plus macro and product photography.
 
-* See my [Flickr page](https://www.flickr.com/photos/deanwampler/) for images.
+* See my [Flickr page](https://www.flickr.com/photos/deanwampler/) for images and videos.
 * See my new blog series, [The Backpacking Photographer](https://medium.com/the-backpacking-photographer), for lessons learned combining serious photography (heavy and expensive equipment) with ultralight backpacking (going as light as possible and ... also expensive equipment, at least sometimes).
 
 A few other pages here:
