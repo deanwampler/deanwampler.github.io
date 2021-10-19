@@ -61,3 +61,32 @@ tagline: Books and Reports written by Dean Wampler
     </td>
   </tr>
 </table>
+
+<center>In addition, I have contributed chapters to the following books.</center>
+
+<table class="book-page-table">
+  <tr>
+    <td class="book-descriptions">
+      <p><a href="https://www.oreilly.com/library/view/97-things-every/9781492062400/" target="book">97 Things Every Data Engineer Should Know</a> is a collection of essays on concepts that <em>data engineers</em> should know and use in building data-centric ecosystems and applications.</p>
+    </td>
+    <td class="book-descriptions">
+        <a href="https://www.oreilly.com/library/view/97-things-every/9781492062400/" class="books-book" target="book"><img src="/assets/images/97-data-engineer.jpg" alt="97 Things"/></a>
+    </td>
+  </tr>
+  <tr>
+    <td class="book-descriptions">
+      <p><a href="https://www.oreilly.com/library/view/97-things-every/9781491952689/" target="book">97 Things Every Java Programmer Should Know</a> is a collection of essays for <em>Java developers</em>.</p>
+    </td>
+    <td class="book-descriptions">
+        <a href="https://www.oreilly.com/library/view/97-things-every/9781491952689/" class="books-book" target="book"><img src="/assets/images/97-java-programmer.jpg" alt="97 Things"/></a>
+    </td>
+  </tr>
+  <tr>
+    <td class="book-descriptions">
+      <p><a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882" target="book">Clean Code, <em>A Handbook of Agile Software Craftsmanship</em></a>.</p>
+    </td>
+    <td class="book-descriptions">
+        <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882" class="books-book" target="book"><img src="/assets/images/clean-code.jpg" alt="97 Things"/></a>
+    </td>
+  </tr>
+</table>
