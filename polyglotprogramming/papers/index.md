@@ -19,7 +19,7 @@ My talks can be found in this <a href="https://github.com/deanwampler/Presentati
     <td>
       <article class="talk">
         <h1>Lessons Learned from 15 Years of Scala in the Wild</h1>
-        <p class="talk-desc">Scale by the Bay, November 2021</p>
+        <p class="talk-desc">Scale by the Bay, October 2021</p>
         <p>Since I joined the Scala community roughly 15 years ago, the Scala community has learned a lot to make the language more robust and easier to use effectively. I've also learned lots of lessons about effective "enterprise" programming using Scala.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/15YearsOfScala.pdf" class="button button-pdf">Download PDF</a>
