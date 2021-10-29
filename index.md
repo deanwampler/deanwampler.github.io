@@ -25,8 +25,17 @@ include_social: true
   <p class="section-title"><span>Some of My Talks</span></p>
 
   <article class="talk">
+    <h1>Lessons Learned from 15 Years of Scala in the Wild</h1>
+    <p class="talk-desc">Scale by the Bay, November 2021</p>
+    <p>Since I joined the Scala community roughly 15 years ago, the Scala community has learned a lot to make the language more robust and easier to use effectively. I've also learned lots of lessons about effective "enterprise" programming using Scala.</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/15YearsOfScala.pdf" class="button button-pdf">Download PDF</a>
+    </div>
+  </article>
+
+  <article class="talk">
     <h1>Next Generation AI: Transitioning to the Continuous, Self-Learning Enterprise</h1>
-    <p class="talk-desc">Draft. February 2021</p>
+    <p class="talk-desc">Draft, February 2021</p>
     <p>A talk I'm developing that looks at the state of AI/ML and what enterprises need to do to fully leverage it.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/NextGenerationAI.pdf" class="button button-pdf">Download PDF</a>
