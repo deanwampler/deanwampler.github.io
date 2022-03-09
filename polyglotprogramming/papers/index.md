@@ -302,11 +302,14 @@ My talks can be found in this <a href="https://github.com/deanwampler/Presentati
     <td>
       <article class="talk">
         <h1>Copious Data, the Killer App for Functional Programming</h1>
-        <p class="talk-desc"><a href="https://lambdajam.com/">LambdaJam Chicago</a></p>
-        <p>I argue that <em>"Copious" Data</em> (okay, <em>Big Data</em>) is driving adoption of <em>Functional Programming</em> (FP), more so than multicore concurrency concerns, because more developers will grapple with data problems than concurrency. Because FP is based on Mathematics, it is a natural fit for working with Data, whereas languages like Java, in which Hadoop is written, are poor choices. (November 21, 2013)</p>
+        <p class="talk-desc"><a href="https://lambdajam.com/">LambdaJam Chicago</a>, others</p>
+        <p>I argued that <em>"Copious" Data</em> (okay, <em>Big Data</em>) is driving adoption of <em>Functional Programming</em> (FP), more so than multicore concurrency concerns, because more developers will grapple with data problems than concurrency. Because FP is based on Mathematics, it is a natural fit for working with Data, whereas languages like Java, in which Hadoop is written, are poor choices. I revisited this subject in March 2020. The original talks where presented at events in 2013-2014</p>
         <div class="more">
-          <a href="CopiousData_TheKillerAppForFP.pdf" class="button button-pdf">Download PDF</a>
-          <a href="https://www.infoq.com/presentations/big-data-functional-programming" class="button button-video">Watch video</a> (earlier version)
+          2020 Update - short version: <a href="CopiousData_TheKillerAppForFP_2020_Update.pdf" class="button button-pdf">Download PDF</a>
+        </div>
+        <div class="more">
+          Original 2014 Talk - long version: <a href="CopiousData_TheKillerAppForFP.pdf" class="button button-pdf">Download PDF</a>
+          <a href="https://www.infoq.com/presentations/big-data-functional-programming" class="button button-video">Video</a>
         </div>
       </article>
     </td>
