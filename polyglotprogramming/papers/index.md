@@ -23,6 +23,7 @@ My talks can be found in this <a href="https://github.com/deanwampler/Presentati
         <p>Since I joined the Scala community roughly 15 years ago, the Scala community has learned a lot to make the language more robust and easier to use effectively. I've also learned lots of lessons about effective "enterprise" programming using Scala. Finally, I see warning signs for FP's future growth.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/15YearsOfScala.pdf" class="button button-pdf">Download PDF</a>
+          <a href="https://www.youtube.com/watch?v=cpWc7j85inQ" class="button button-video">Watch video</a>
         </div>
       </article>
     </td>
