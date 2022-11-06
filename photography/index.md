@@ -6,14 +6,18 @@ tagline: Landscapes | Macro | Product
 include_photo_social: true
 ---
 
-Landscape photography has been a growing passion of mine for a long time. (This website's [background image is from Colorado](https://www.flickr.com/photos/deanwampler/15905693911/in/album-72157649110558517/).) More recently, I've explored time lapses, plus macro and product photography.
+Landscape photography has been a growing passion of mine for a long time. This website's <a href="https://www.flickr.com/photos/deanwampler/15905693911/in/album-72157649110558517/" target="_flickr">background image is from Colorado</a>. More recently, I've explored time lapses, plus macro and product photography.
 
-* See my [Flickr page](https://www.flickr.com/photos/deanwampler/) for images and videos.
-* See my new blog series, [The Backpacking Photographer](https://medium.com/the-backpacking-photographer), for lessons learned combining serious photography (heavy and expensive equipment) with ultralight backpacking (going as light as possible and ... also expensive equipment, at least sometimes).
+My photos can be found at these websites:
+* <a href="https://www.flickr.com/photos/deanwampler/" target="_flickr">Flickr</a>
+* <a href="https://vero.co/bucktrends/" target="_vero">Vero</a>
+* <a href="https://glass.photo/bucktrends" target="_glass">Glass</a>
+
+I am starting a photo blog on <a href="https://medium.com/the-backpacking-photographer" target="_blog">backpacking and photography</a>.
 
 A few other pages here:
 
-* [A slider](msm1-slider-widget.html) comparing a single astro image with 10 stacked images, made possible using the [Move Shoot Move Star Tracker](https://www.moveshootmove.com/collections/sifo-rotator/products/sifo-rotator-for-star-tracking-time-lapse-panorama-photography). See [this blog post](https://medium.com/the-backpacking-photographer/move-shoot-move-for-astrophotography-f740bb4a49dc) for more details.
+* [A slider](msm1-slider-widget.html) comparing a single astro image with 10 stacked images, made possible using the <a href="https://www.moveshootmove.com/collections/sifo-rotator/products/sifo-rotator-for-star-tracking-time-lapse-panorama-photography" target="_msm">Move Shoot Move Star Tracker</a>. See <a href="https://medium.com/the-backpacking-photographer/move-shoot-move-for-astrophotography-f740bb4a49dc" target="_msm_blog">my blog post on MSM</a> for more details.
 
     
 
