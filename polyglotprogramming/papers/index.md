@@ -36,8 +36,8 @@ My talks can be found in this <a href="https://github.com/deanwampler/Presentati
     <td>
       <article class="talk">
         <h1>Next Generation AI: Transitioning to the Continuous, Self-Learning Enterprise</h1>
-        <p class="talk-desc">Draft, February 2021</p>
-        <p>A talk I'm developing that looks at the state of AI/ML and what enterprises need to do to fully leverage it.</p>
+        <p class="talk-desc">Draft, May 2021</p>
+        <p>A talk I'm developing that looks at the state of AI/ML and what enterprises need to do to fully adopt and leverage it.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/NextGenerationAI.pdf" class="button button-pdf">Download PDF</a>
         </div>
@@ -69,7 +69,7 @@ My talks can be found in this <a href="https://github.com/deanwampler/Presentati
     <td>
       <article class="talk">
         <h1>Reinforcement Learning with Ray RLlib</h1>
-        <p class="talk-desc">Chicago Cloud Conference, September 22, 2020</p>
+        <p class="talk-desc">Several Conferences, 2020-2023</p>
         <p><a href="https://ray.io">Ray</a> comes with a powerful reinforcement learning library, <a href="http://rllib.io">RLlib</a>. This talk discussed reinforcement learning and how to use RLlib.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/ReinforcementLearningWithRayRLlib.pdf" class="button button-pdf">Download PDF</a>
