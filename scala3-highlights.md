@@ -57,6 +57,8 @@ To get started, SBT 1.5+ supports Scala 3:
 
 You can now use significant indentation ("braceless"), like Python or Haskell, rather than curly braces. You can also mix and match, or use a compiler flag to force one or the other (see below).
 
+> **Note:** Additional changes to this syntax are coming in Scala 3.3. ([Blog Post](https://medium.com/scala-3/scala-3-even-fewer-braces-3890e4f9bc55))
+
 ### Import and Export Statements
 
 [blog post](https://medium.com/scala-3/scala-3-the-they-are-achanging-32b1ebb90fa2)
