@@ -99,6 +99,7 @@ p a:hover {
 .about-social-button-blog,
 .about-social-button-twitter,
 .about-social-button-linkedin,
+.about-social-button-photo,
 .button-pdf,
 .button-video {
   background: url(/assets/images/buttons.svg) 3px 3px no-repeat;
@@ -107,7 +108,8 @@ p a:hover {
 .about-social-button-resume,
 .about-social-button-blog,
 .about-social-button-twitter,
-.about-social-button-linkedin {
+.about-social-button-linkedin,
+.about-social-button-photo {
   display: inline-block;
   padding: 0 15px 0 35px;
   margin: 0 5px;
@@ -166,11 +168,15 @@ p a:hover {
   background-position: 8px -78px;
 }
 
-.button-video {
+.button-video,
+.about-social-button-photo {
   background-position: 8px -198px;
 }
 .button-video:hover {
   background-position: 8px -158px;
+}
+.about-social-button-photo:hover {
+  background-position: 8px -198px;
 }
 
 
