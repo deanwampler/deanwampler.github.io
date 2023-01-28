@@ -26,6 +26,15 @@ include_photo_social: true
   <p class="section-title"><span>Some of My Talks</span></p>
 
   <article class="talk">
+    <h1>Reinforcement Learning with Ray RLlib (V2)</h1>
+    <p class="talk-desc">Data Day Texas, 2023</p>
+    <p>Updated version of my talk on <a href="https://ray.io">Ray's</a> powerful reinforcement learning library, <a href="http://rllib.io">RLlib</a>. This talk discusses reinforcement learning and how to use RLlib.</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/ReinforcementLearningWithRayRLlibV2.pdf" class="button button-pdf">Download PDF</a>
+    </div>
+  </article>
+
+  <article class="talk">
     <h1>Lessons Learned from 15 Years of Scala in the Wild</h1>
     <p class="talk-desc">Several Conferences, 2021-2022</p>
     <p>Since I joined the Scala community roughly 15 years ago, the Scala community has learned a lot to make the language more robust and easier to use effectively. I've also learned lots of lessons about effective "enterprise" programming using Scala. Finally, I see warning signs for FP's future growth.</p>
