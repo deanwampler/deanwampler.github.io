@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Books and Reports
-tagline: Books and Reports written by Dean Wampler
+tagline: Books and Reports written or co-written by Dean Wampler
 ---
 {% include JB/setup %}
 
@@ -62,7 +62,7 @@ tagline: Books and Reports written by Dean Wampler
   </tr>
 </table>
 
-<center>In addition, I have contributed chapters to the following books.</center>
+<center><span style="font-weight: bold;">In addition, I have contributed chapters to the following books.</span></center>
 
 <table class="book-page-table">
   <tr>
