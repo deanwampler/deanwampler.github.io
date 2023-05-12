@@ -12,7 +12,10 @@ redirect_from:
 {% include JB/setup %}
 
 <section id="talks" class="talks centered">
-My talks can be found in this <a href="https://github.com/deanwampler/Presentations/">GitHub repo</a>. The most recent and relevant ones are listed here.
+<p>
+My talks can be found in this <a href="https://github.com/deanwampler/Presentations/" target="_github">GitHub repo</a>. The most recent and relevant ones are listed here.
+See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=ryUQWksAAAAJ" target="_gs">Google Scholar</a> page for papers.
+</p>
 
 <table class="talks-table centered">
   <tr>
