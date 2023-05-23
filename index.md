@@ -37,7 +37,7 @@ include_photo_social: true
   <article class="talk">
     <h1>Lessons Learned from 15 Years of Scala in the Wild</h1>
     <p class="talk-desc">Several Conferences, 2021-2022</p>
-    <p>Since I joined the Scala community roughly 15 years ago, the Scala community has learned a lot to make the language more robust and easier to use effectively. I've also learned lots of lessons about effective "enterprise" programming using Scala. Finally, I see warning signs for FP's future growth.</p>
+    <p>Since I joined the Scala community roughly 15 years ago, the <a href="https://scala-lang.org" target="scala">Scala</a> community has learned a lot to make the language more robust and easier to use effectively. I've also learned lots of lessons about effective "enterprise" programming using Scala. Finally, I see warning signs for FP's future growth.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/15YearsOfScala.pdf" class="button button-pdf">Download PDF</a>
       <a href="https://www.youtube.com/watch?v=cpWc7j85inQ" class="button button-video">Watch video</a>
@@ -66,7 +66,7 @@ include_photo_social: true
   <article class="talk">
     <h1>Cluster-wide Scaling of ML with Ray</h1>
     <p class="talk-desc">YOW! Data, July 1, 2020, and CodeMesh, Nov., 2020</p>
-    <p><a href="https://ray.io">Ray</a> is a distributed computing system that offers a concise, intuitive API, with excellent performance for distributed workloads. It emerged out of the AI community at U.C. Berkeley.</p>
+    <p><a href="https://ray.io" target="ray">Ray</a> is a distributed computing system that offers a concise, intuitive API, with excellent performance for distributed workloads. It emerged out of the AI community at U.C. Berkeley.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/ClusterWideScalingOfMLWithRay.pdf" class="button button-pdf">Download PDF</a>
     </div>

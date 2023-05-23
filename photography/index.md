@@ -13,7 +13,7 @@ My photos can be found at these websites:
 * <a href="https://vero.co/bucktrends/" target="_vero">Vero</a>
 * <a href="https://glass.photo/bucktrends" target="_glass">Glass</a>
 
-I am starting a <a href="https://medium.com/the-backpacking-photographer" target="_blog">photo blog on backpacking and photography</a>.
+Occasionally, I post to a <a href="https://medium.com/the-backpacking-photographer" target="_blog">photo blog on lightweight backpacking and photography</a>.
 
 A few other pages here:
 
