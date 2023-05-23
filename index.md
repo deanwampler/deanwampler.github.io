@@ -26,11 +26,11 @@ include_photo_social: true
   <p class="section-title"><span>Some of My Talks</span></p>
 
   <article class="talk">
-    <h1>Reinforcement Learning with Ray RLlib (V2)</h1>
-    <p class="talk-desc">Data Day Texas, 2023</p>
-    <p>Updated version of my talk on <a href="https://ray.io">Ray's</a> powerful reinforcement learning library, <a href="http://rllib.io">RLlib</a>. This talk discusses reinforcement learning and how to use RLlib.</p>
+    <h1>Reinforcement Learning: ChatGPT, Games, and More</h1>
+    <p class="talk-desc">GOTO Chicago, May 2023</p>
+    <p>Things move fast; an update to January's RL talk that expands the coverage of <em>Reinforcement Learning from Human Feedback</em>, a key element in training <a href="https://openai.com/blog/chatgpt" target="_chatgpt">ChatGPT</a>.</p>
     <div class="more">
-      <a href="/polyglotprogramming/papers/ReinforcementLearningWithRayRLlibV2.pdf" class="button button-pdf">Download PDF</a>
+      <a href="/polyglotprogramming/papers/ReinforcementLearningChatGPT.pdf" class="button button-pdf">Download PDF</a>
     </div>
   </article>
 

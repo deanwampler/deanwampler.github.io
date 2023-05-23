@@ -18,8 +18,24 @@ My talks can be found in this <a href="https://github.com/deanwampler/Presentati
   <tr>
     <td>
       <article class="talk">
-        <h1>Reinforcement Learning with Ray RLlib (V2)</h1>
-        <p class="talk-desc">Data Day Texas, 2023</p>
+        <h1>Reinforcement Learning, ChatGPT, Games, and More</h1>
+        <p class="talk-desc">GOTO Chicago, May 2023</p>
+        <p>Things move fast; an update to January's RL talk that expands the coverage of <em>Reinforcement Learning from Human Feedback</em>, a key element in training <a href="https://openai.com/blog/chatgpt" target="_chatgpt">ChatGPT</a>.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/ReinforcementLearningChatGPT.pdf" class="button button-pdf">Download PDF</a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="/polyglotprogramming/papers/ReinforcementLearningChatGPT.pdf"><img src="ReinforcementLearningChatGPT-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
+        <h1>Reinforcement Learning with Ray RLlib (V2 for Data Day Texas)</h1>
+        <p class="talk-desc">Data Day Texas, January 2023</p>
         <p>Updated version of my talk on <a href="https://ray.io">Ray's</a> powerful reinforcement learning library, <a href="http://rllib.io">RLlib</a>. This talk discusses reinforcement learning and how to use RLlib.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/ReinforcementLearningWithRayRLlibV2.pdf" class="button button-pdf">Download PDF</a>
