@@ -6,12 +6,16 @@
 
   {% if page.include_social %}
   <div class="about-social">
-    <a href="https://www.linkedin.com/in/deanwampler/" class="no-toggle-button about-social-button-linkedin" target="_linkedin">LinkedIn</a>
+    <a href="{{site.author['linkedin_link']}}" class="no-toggle-button about-social-button-linkedin" target="_linkedin">LinkedIn</a>
     <a href="resume.pdf" class="no-toggle-button about-social-button-resume" target="_resume">Resum&eacute;</a>
+    <a href="{{site.author['github_link']}}" class="no-toggle-button about-social-button-resume" target="_github">{{site.author['github']}}</a>
+    <a href="{{site.author['ibm_research_link']}}" class="no-toggle-button about-social-button-resume" target="_ibm_research">{{site.author['ibm_research']}}</a>
+    <a href="{{site.author['google_scholar_link']}}" class="no-toggle-button about-social-button-resume" target="_google_scholar">{{site.author['google_scholar']}}</a>
   </div>
   <div class="about-social">
-    <a href="https://twitter.com/deanwampler" class="no-toggle-button about-social-button-twitter" target="_twitter">@deanwampler</a>
-    <a href="https://deanwampler.medium.com" class="no-toggle-button about-social-button-blog" target="_blog">Blog</a>
+    <a href="{{site.author['bluesky_link']}}" class="no-toggle-button about-social-button-twitter" target="_bluesky">{{site.author['bluesky']}}</a>
+    <a href="{{site.author['mastodon_link']}}" class="no-toggle-button about-social-button-twitter" target="_mastodon">{{site.author['mastodon']}}</a>
+    <a href="{{site.author['twitter_link']}}" class="no-toggle-button about-social-button-twitter" target="_twitter">{{site.author['twitter']}}</a>
   </div>
   {% endif %}
 

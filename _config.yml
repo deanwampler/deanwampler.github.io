@@ -15,12 +15,25 @@ markdown: kramdown
 # so be sure to set them if your theme uses them.
 #
 title : Dean Wampler
-tagline: Engineer of ML and Streaming Data Systems
+tagline: Engineer for AI/ML and Streaming Data Systems, Amateur photographer.
 author :
-  name : Dean Wampler
-  email : dean@concurrentthought.com
-  github : deanwampler
-  twitter : deanwampler
+  name :                Dean Wampler
+  email :               dean@concurrentthought.com
+  linkedin :            deanwampler
+  linkedin_link :       https://www.linkedin.com/in/deanwampler/
+  github :              GitHub
+  github_link :         https://github.com/deanwampler
+  mastodon :            "@deanwampler@discuss.systems"
+  mastodon_link :       https://discuss.systems/@deanwampler
+  bluesky :             "@deanwampler.bsky.social"
+  bluesky_link :        https://bsky.app/profile/deanwampler.bsky.social
+  twitter :             "@deanwampler"
+  twitter_link :        https://twitter.com/deanwampler
+  google_scholar :      Google Scholar
+  google_scholar_link : https://scholar.google.com/citations?view_op=list_works&hl=en&user=ryUQWksAAAAJ
+  ibm_research :        IBM Research
+  ibm_research_link :   https://research.ibm.com/people/dean-wampler
+  blog_link :           https://deanwampler.medium.com
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt

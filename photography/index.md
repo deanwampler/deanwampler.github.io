@@ -15,9 +15,9 @@ My photos can be found at these websites:
 
 Occasionally, I post to a <a href="https://medium.com/the-backpacking-photographer" target="_blog">photo blog on lightweight backpacking and photography</a>.
 
-A few other pages here:
+Other pages in this site:
 
-* [A slider](msm1-slider-widget.html) comparing a single astro image with 10 stacked images, made possible using the <a href="https://www.moveshootmove.com/collections/sifo-rotator/products/sifo-rotator-for-star-tracking-time-lapse-panorama-photography" target="_msm">Move Shoot Move Star Tracker</a>. See <a href="https://medium.com/the-backpacking-photographer/move-shoot-move-for-astrophotography-f740bb4a49dc" target="_msm_blog">my blog post on MSM</a> for more details.
+* [A slider](msm1-slider-widget.html) comparing a single astro image with 10 stacked images, where I used the <a href="https://www.moveshootmove.com/collections/sifo-rotator/products/sifo-rotator-for-star-tracking-time-lapse-panorama-photography" target="_msm">Move Shoot Move Star Tracker</a> to capture the images. See <a href="https://medium.com/the-backpacking-photographer/move-shoot-move-for-astrophotography-f740bb4a49dc" target="_msm_blog">my blog post on MSM</a> for more details.
 
     
 
