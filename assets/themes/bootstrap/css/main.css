@@ -95,62 +95,31 @@ p a:hover {
  * BUTTONS
  */
 
-.about-social-button-resume,
-.about-social-button-blog,
-.about-social-button-twitter,
-.about-social-button-linkedin,
-.about-social-button-photo,
+.button-resume,
+.button-twitter,
+.button-linkedin,
 .button-pdf,
 .button-video {
   background: url(/assets/images/buttons.svg) 3px 3px no-repeat;
 }
 
-/*
-.about-social-button-resume,
-.about-social-button-blog,
-.about-social-button-twitter,
-.about-social-button-linkedin,
-.about-social-button-photo,
+/* TODO: Create images for:
+.button-github
+.button-ibm-research
+.button-google-scholar
+.button-bluesky
+.button-mastodon
+.button-blog
+.button-photo
 */
-.no-toggle-button  {
+
+.no-toggle-button, .button {
   display: inline-block;
   padding: 0 15px 0 35px;
   margin: 0 5px;
   height: 30px;
   line-height: 31px;
   border-radius: 20px;
-  background-color: #112337;
-  color: #fff;
-  text-decoration: none;
-}
-
-
-.about-social-button-twitter {
-  background-position: 8px -37px;
-}
-
-.about-social-button-resume {
-  background-position: 8px -118px;
-}
-
-/* Use PDF image for now. */
-.about-social-button-blog {
-  background-position: 8px -118px;
-}
-
-/* Use video image for now. */
-.about-social-button-photo {
-  background-position: 8px -198px;
-}
-
-.button {
-  display: inline-block;
-  padding: 0 15px 0 35px;
-  margin: 0 5px;
-  height: 30px;
-  line-height: 31px;
-  border-radius: 20px;
-  border: 1px solid #112337;
   background-color: #112337;
   color: #fff;
   text-decoration: none;
@@ -163,16 +132,17 @@ p a:hover {
 
 .button:hover,
 .button-pdf:hover,
-.button-video:hover,
-.button-photo:hover {
+.button-video:hover {
   background-color: #fff;
   color: #112337;
 }
 
-.button-pdf,
-.button-video,
-.button-photo {
-  padding: 0 15px 0 35px;
+.button-twitter {
+  background-position: 8px -37px;
+}
+
+.button-resume {
+  background-position: 8px -118px;
 }
 
 .button-pdf {
