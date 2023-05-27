@@ -7,6 +7,9 @@ include_photo_social: true
 opaque_background: true
 ---
 
+<!-- It appears that something "broke" between these versions for the slider used on this page.
+<script src="{{ ASSET_PATH }}/resources/jquery/jquery-3.7.0.min.js"></script>
+-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
 
 <style>
