@@ -13,8 +13,10 @@ redirect_from:
 
 <section id="talks" class="talks centered">
 <p>
-My talks can be found in this <a href="https://github.com/deanwampler/Presentations/" target="_github">GitHub repo</a>. The most recent and relevant ones are listed here.
-See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=ryUQWksAAAAJ" target="_gs">Google Scholar</a> page for papers.
+The &ldquo;source files&rdquo; for my talks can be found in this <a href="https://github.com/deanwampler/Presentations/" target="_github">GitHub repo</a>. The most recent and relevant ones are listed here.
+</p>
+<p>
+See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=ryUQWksAAAAJ" target="_gs">Google Scholar</a> page for papers. some of which are listed <a href="#papers">below</a>.
 </p>
 
 <table class="talks-table centered">
@@ -499,9 +501,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 </table>
 </section>
 
-<h2>Other Presentations</h2>
+<a name="papers"/>
+<h2>Research Papers and Other Presentations</h2>
 
-In addition to the talks above, here are a few others.
+In addition to the talks above, here are a few other talks and the research papers I have written or co-written.
 
 <h3>Akka</h3>
 <p>
@@ -540,5 +543,12 @@ In addition to the talks above, here are a few others.
         <li><a href="TheChallengesOfWritingReusableAspectsInAspectJ.pdf">The Challenges of Writing Reusable and Portable Aspects in AspectJ: Lessons from Contract4J</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/>.</li>
         <li><a href="https://www.aosd.net/workshops/acp4is/2006/papers/7.pdf">Contract4J for Design by Contract in Java: Design Pattern-Like Protocols and Aspect Interfaces</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/></li>
         <li><a href="TheFutureOfAOP.pdf">The Future of AOP</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/></li>
+    </ul>
+</p>
+
+<h3>Other</h3>
+<p>
+    <ul>
+        <li><a href="https://dl.acm.org/doi/10.1145/3565384.3565888" target="paper">Accelerating automation of digital health applications via cloud native approach</a>. Experience report of lessons learned while building the digital health application portfolio on IBM’s Accelerated Discovery Platform.</li>
     </ul>
 </p>
