@@ -25,7 +25,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <article class="talk">
         <h1>Reinforcement Learning, ChatGPT, Games, and More</h1>
         <p class="talk-desc">GOTO Chicago, May 2023, and IBM Research, October 2023</p>
-        <p>Things move fast; an update to January's RL talk that expands the coverage of <em>Reinforcement Learning from Human Feedback</em>, a key element in training <a href="https://openai.com/blog/chatgpt" target="_chatgpt">ChatGPT</a>. (</p>
+        <p>Things move fast; an update to January's RL talk that expands the coverage of <em>Reinforcement Learning from Human Feedback</em>, a key element in training <a href="https://openai.com/blog/chatgpt" target="_chatgpt">ChatGPT</a>.</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/ReinforcementLearningChatGPT.pdf" class="button button-pdf">Download PDF</a> (GOTO 2023 version: <a href="/polyglotprogramming/papers/ReinforcementLearningChatGPT-GOTO2023.pdf" class="button button-pdf">Download PDF</a>) 
         </div>
