@@ -23,6 +23,22 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
   <tr>
     <td>
       <article class="talk">
+        <h1>Open Source: Science vs. Software. What's Different? What's the Same?</h1>
+        <p class="talk-desc">Scale by the Bay, November 2023</p>
+        <p>What I learned at IBM Research about the differences and similarities of open source software (OSS) and open source science (OSSci.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/Open-Source-Science-vs-Software.pdf" class="button button-pdf">Download PDF</a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="/polyglotprogramming/papers/Open-Source-Science-vs-Software.pdf"><img src="Open-Source-Science-vs-Software-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Reinforcement Learning, ChatGPT, Games, and More</h1>
         <p class="talk-desc">GOTO Chicago, May 2023, and IBM Research, October 2023</p>
         <p>Things move fast; an update to January's RL talk that expands the coverage of <em>Reinforcement Learning from Human Feedback</em>, a key element in training <a href="https://openai.com/blog/chatgpt" target="_chatgpt">ChatGPT</a>.</p>
