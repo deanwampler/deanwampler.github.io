@@ -35,6 +35,16 @@ include_photo_social: true
   </article>
 
   <article class="talk">
+    <h1>Open Source: Science vs. Software. What's Different? What's the Same?</h1>
+    <p class="talk-desc">Scale by the Bay, November 2023</p>
+    <p>What I learned at IBM Research about the differences and similarities of open source software (OSS) and open source science (OSSci).</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/Open-Source-Science-vs-Software.pdf" class="button button-pdf">Download PDF</a>
+      <a href="https://www.youtube.com/watch?v=UFvObAiVaNI&list=PLNESult6cnOlHK5bRvdT8f2UnoyZ9TfKW&index=16" class="button button-video">Watch video</a>
+    </div>
+  </article>
+
+  <article class="talk">
     <h1>Lessons Learned from 15 Years of Scala in the Wild</h1>
     <p class="talk-desc">Several Conferences, 2021-2022</p>
     <p>Since I joined the Scala community roughly 15 years ago, the <a href="https://scala-lang.org" target="scala">Scala</a> community has learned a lot to make the language more robust and easier to use effectively. I've also learned lots of lessons about effective "enterprise" programming using Scala. Finally, I see warning signs for FP's future growth.</p>

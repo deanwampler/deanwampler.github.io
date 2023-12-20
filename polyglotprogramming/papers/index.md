@@ -25,9 +25,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <article class="talk">
         <h1>Open Source: Science vs. Software. What's Different? What's the Same?</h1>
         <p class="talk-desc">Scale by the Bay, November 2023</p>
-        <p>What I learned at IBM Research about the differences and similarities of open source software (OSS) and open source science (OSSci.</p>
+        <p>What I learned at IBM Research about the differences and similarities of open source software (OSS) and open source science (OSSci).</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/Open-Source-Science-vs-Software.pdf" class="button button-pdf">Download PDF</a>
+          <a href="https://www.youtube.com/watch?v=UFvObAiVaNI&list=PLNESult6cnOlHK5bRvdT8f2UnoyZ9TfKW&index=16" class="button button-video">Watch video</a>
         </div>
       </article>
     </td>
