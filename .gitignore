@@ -4,3 +4,4 @@ _site
 _drafts
 _posts
 _site.save
+.jekyll-cache
