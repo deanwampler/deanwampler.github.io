@@ -26,6 +26,25 @@ include_photo_social: true
   <p class="section-title"><span>Some of My Talks</span></p>
 
   <article class="talk">
+    <h1>AI in the Open: Why It Matters. How to Achieve It.</h1>
+    <p class="talk-desc">AI Camp, Chicago, February 2024</p>
+    <p>To maximize availability and safety of AI, we should follow the path of open-source software, while recognizing what is new.</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/AI-in-the-Open.pdf" class="button button-pdf">Download PDF</a>
+    </div>
+  </article>
+
+  <article class="talk">
+    <h1>Open Source: Science vs. Software. What's Different? What's the Same?</h1>
+    <p class="talk-desc">Scale by the Bay, November 2023</p>
+    <p>What I learned at IBM Research about the differences and similarities of open-source software (OSS) and open-source science (OSSci).</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/Open-Source-Science-vs-Software.pdf" class="button button-pdf">Download PDF</a>
+      <a href="https://www.youtube.com/watch?v=UFvObAiVaNI&list=PLNESult6cnOlHK5bRvdT8f2UnoyZ9TfKW&index=16" class="button button-video">Watch video</a>
+    </div>
+  </article>
+
+  <article class="talk">
     <h1>Reinforcement Learning: ChatGPT, Games, and More</h1>
     <p class="talk-desc">GOTO Chicago, May 2023, and IBM Research, October 2023</p>
     <p>Things move fast; an update to January's RL talk that expands the coverage of <em>Reinforcement Learning from Human Feedback</em>, a key element in training <a href="https://openai.com/blog/chatgpt" target="_chatgpt">ChatGPT</a>.</p>

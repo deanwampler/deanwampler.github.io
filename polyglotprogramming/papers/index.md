@@ -23,9 +23,25 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
   <tr>
     <td>
       <article class="talk">
+        <h1>AI in the Open: Why It Matters. How to Achieve It.</h1>
+        <p class="talk-desc">AI Camp, Chicago, February 2024</p>
+        <p>To maximize availability and safety of AI, we should follow the path of open-source software, while recognizing what is new.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/AI-in-the-Open.pdf" class="button button-pdf">Download PDF</a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="/polyglotprogramming/papers/AI-in-the-Open.pdf"><img src="AI-in-the-Open-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>Open Source: Science vs. Software. What's Different? What's the Same?</h1>
         <p class="talk-desc">Scale by the Bay, November 2023</p>
-        <p>What I learned at IBM Research about the differences and similarities of open source software (OSS) and open source science (OSSci).</p>
+        <p>What I learned at IBM Research about the differences and similarities of open-source software (OSS) and open-source science (OSSci).</p>
         <div class="more">
           <a href="/polyglotprogramming/papers/Open-Source-Science-vs-Software.pdf" class="button button-pdf">Download PDF</a>
           <a href="https://www.youtube.com/watch?v=UFvObAiVaNI&list=PLNESult6cnOlHK5bRvdT8f2UnoyZ9TfKW&index=16" class="button button-video">Watch video</a>
