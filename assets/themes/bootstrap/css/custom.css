@@ -9,6 +9,15 @@
 .center {justify-content: center; align-items: center}
 .top {align-items: flex-start}
 .flex {flex: 1}
+.opaque {
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+.partially-transparent {
+  opacity: 0.75;
+  filter: alpha(opacity=75); /* For IE8 and earlier */
+}
+
 html {
   --spacing-xs: 8px;
   --spacing: 24px;
@@ -22,6 +31,10 @@ body {
   height: 100%;
 }
 
+.content-color {
+  background-color: #d9d7c3; /* #ede9af;*/
+}
+
 .background-image {
   background-image: url("/assets/images/MountEvansAndMountBierstadtFromGuanellaPassNearDusk2560x1440.jpg");
   /*background-image: url("/assets/images/MountEvansAndMountBierstadtFromGuanellaPassNearDusk1200x842.jpg");*/
@@ -29,6 +42,10 @@ body {
   background-size: cover; /*contain;*/
   background-attachment: fixed;
   height: 100vh;
+}
+
+.embedded-image {
+  width: 100%;
 }
 
 .book-descriptions {
@@ -71,7 +88,6 @@ body {
 }
 
 .container {
-  background-color: #f0f0f0;
 }
 
 .footnote {
@@ -93,11 +109,6 @@ body {
 
 .navbar .nav {
   float: right;
-}
-
-.partially-transparent {
-  opacity: 0.75;
-  filter: alpha(opacity=75); /* For IE8 and earlier */
 }
 
 /* posts index */

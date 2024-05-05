@@ -4,16 +4,28 @@ style: no-image
 title: Photography and Video
 tagline: Landscapes | Macro | Product
 include_photo_social: true
+opaque_background: true
 ---
 
-Landscape photography has been a growing passion of mine for a long time. This website's <a href="https://www.flickr.com/photos/deanwampler/15905693911/in/album-72157649110558517/" target="_flickr">background image is from Colorado</a>. More recently, I've explored time lapses, plus macro and product photography.
+Landscape photography has been a growing passion of mine for a long time. 
+<div class="embedded-image center">
+	<img 
+		src="/assets/images/Orion-Rising-Over-The-Haystack.jpg"
+		class="embedded-image"
+		alt="Orion Rising Over The Haystack, Wind River Range, Wyoming"/>
+	<a 
+		href="https://www.flickr.com/photos/deanwampler/53004539434/in/album-72177720302185576/" 
+		target="_flickr">Orion Rising Over The Haystack, Wind River Range, Wyoming</a>, © 2022, Dean Wampler
+</div>
+
+This website's <a href="https://www.flickr.com/photos/deanwampler/15905693911/in/album-72157649110558517/" target="_flickr">background image is Mount Evans and Mount Bierstadt from Guanella Pass in Colorado</a>. More recently, I've explored time lapses, plus macro and product photography.
 
 My photos can be found at these websites:
 * <a href="https://www.flickr.com/photos/deanwampler/" target="_flickr">Flickr</a>
 * <a href="https://vero.co/bucktrends/" target="_vero">Vero</a>
 * <a href="https://glass.photo/bucktrends" target="_glass">Glass</a>
 
-Occasionally, I post to a <a href="https://medium.com/the-backpacking-photographer" target="_blog">photo blog on lightweight backpacking and photography</a>.
+Occasionally, I post to my <a href="https://medium.com/the-backpacking-photographer" target="_blog">blog on photography and lightweight backpacking</a>.
 
 Other pages in this site:
 
