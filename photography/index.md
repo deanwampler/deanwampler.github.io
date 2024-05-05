@@ -2,12 +2,13 @@
 layout: page
 style: no-image
 title: Photography and Video
-tagline: Landscapes | Macro | Product
+tagline: Landscape | Timelapse | Macro | Product
 include_photo_social: true
 opaque_background: true
 ---
 
-Landscape photography has been a growing passion of mine for a long time. 
+Photography has been a passion of mine for a long time. 
+
 <div class="embedded-image center">
 	<img 
 		src="/assets/images/Orion-Rising-Over-The-Haystack.jpg"
@@ -18,7 +19,7 @@ Landscape photography has been a growing passion of mine for a long time.
 		target="_flickr">Orion Rising Over The Haystack, Wind River Range, Wyoming</a>, © 2022, Dean Wampler
 </div>
 
-This website's <a href="https://www.flickr.com/photos/deanwampler/15905693911/in/album-72157649110558517/" target="_flickr">background image is Mount Evans and Mount Bierstadt from Guanella Pass in Colorado</a>. More recently, I've explored time lapses, plus macro and product photography.
+This website's <a href="https://www.flickr.com/photos/deanwampler/15905693911/in/album-72157649110558517/" target="_flickr">background image is Mount Evans and Mount Bierstadt from Guanella Pass in Colorado</a>. More recently, While I mostly photograph landscapes, recently I have explored timelapse, macro, and product photography.
 
 My photos can be found at these websites:
 * <a href="https://www.flickr.com/photos/deanwampler/" target="_flickr">Flickr</a>
