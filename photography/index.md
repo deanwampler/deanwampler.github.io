@@ -1,7 +1,7 @@
 ---
 layout: page
 style: no-image
-title: Photography and Video
+title: Photography
 tagline: Landscape | Timelapse | Macro | Product
 include_photo_social: true
 opaque_background: true
