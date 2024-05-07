@@ -28,11 +28,11 @@ html {
 
 body {
   background-color: #fefdfd;
-  height: 100%;
+  height: 10
 }
 
 .content-color {
-  background-color: #e1e3d8; /* #d9d7c3; #ede9af;*/
+  background-color: #cab6a5; /* rgb(253 227 206 / 100%); #fde3ce; */
 }
 
 .background-image {
@@ -109,6 +109,10 @@ body {
 
 .navbar .nav {
   float: right;
+}
+
+.tagline {
+  font-size: 125%;
 }
 
 /* posts index */
