@@ -7,11 +7,6 @@ include_photo_social: true
 opaque_background: true
 ---
 
-<!-- It appears that something "broke" between these versions for the slider used on this page.
-<script src="{{ ASSET_PATH }}/resources/jquery/jquery-3.7.0.min.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
--->
-
 <style>
 *, *:before, *:after {
   box-sizing: inherit;
@@ -104,8 +99,6 @@ This widget compares a single exposure vs. 10 exposures stacked together. All ex
 
 See my [Medium blog post for more details](https://medium.com/the-backpacking-photographer/move-shoot-move-for-astrophotography-f740bb4a49dc).
 
-<em>This slider is currently broken, apparently due to a change in jquery... Fix is TBD.</em>
-
 <div class='msm1-slider-container opaque'>
   <div class='img background-img'></div>
   <div class='img foreground-img'></div>
@@ -113,6 +106,7 @@ See my [Medium blog post for more details](https://medium.com/the-backpacking-ph
   <div class='slider-button'></div>
 
   <script id="rendered-js" >
+    console.log("boo!")
     $("#slider").on("input change", (e)=>{
       const sliderPos = e.target.value;
       // Update the width of the foreground image

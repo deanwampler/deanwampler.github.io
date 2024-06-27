@@ -15,6 +15,7 @@
     <!--[if lt IE 9]>
       <script src="{{ ASSET_PATH }}/resources/respond/Respond.min.js"></script>
     <![endif]-->
+    <script src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
 
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
@@ -30,32 +31,31 @@
         <a href="https://deanwampler.medium.com" target="blog">Blog<sup>⬀</sup></a>
         <a href="/polyglotprogramming">Polyglot Programming</a>
         <a href="/concurrentthought">Concurrent Thought</a>
-        <a href="/photography">Photography and Video</a>
-        <a href="/pages.html">Pages...</a>
+        <a href="/photography">Photography</a>
+        <a href="/pages.html">All Pages...</a>
       </nav>
       {% if page.opaque_background %}
-      <div class="container content">
+      <div class="container content opaque content-color">
       {% else %}
-      <div class="container content partially-transparent">
+      <div class="container content partially-transparent content-color">
       {% endif %}
         {{ content }}
         <hr>
         <footer>
           <p>
-            <span class="pull-left text-muted">
+            <span class="pull-left"> <!--  text-muted -->
               &copy; 2003 - {{ site.time || date: '%Y' }} {{ site.author.name }}. All Rights Reserved.
             </span>
-            <span class="pull-right text-muted">
+            <span class="pull-right"> <!--  text-muted -->
               Powered by
               <a href="https://dbtek.github.io/jekyll-bootstrap-3" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll-Bootstrap-3</a>
-              and <a href="https://getbootstrap.com" target="_blank">Twitter Bootstrap 3.0.3</a>. Website design: <a href="https://twitter.com/iamwarry">@iamwarry</a>
+              and <a href="https://getbootstrap.com" target="_blank">Twitter Bootstrap 3</a>. Original website design: <a href="https://twitter.com/iamwarry">@iamwarry</a>
             </span>
           </p>
         </footer>
       </div>
 
       {% include JB/analytics %}
-      <script src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
       <script src="{{ ASSET_PATH }}/resources/bootstrap/js/bootstrap.min.js"></script>
     <!-- </div> -->
   </body>
