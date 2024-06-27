@@ -23,6 +23,22 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
   <tr>
     <td>
       <article class="talk">
+        <h1>What Issues Are Blocking AI Adoption?</h1>
+        <p class="talk-desc">1871 AI Innovation Summit, Chicago, June 27 2024</p>
+        <p>Despite the promise of AI, several challenges block many deployments. What are those challenges and what do we do about them?</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/IssuesBlockingAIAdoption.pdf" class="button button-pdf">Download PDF</a>
+        </div>
+      </article>
+    </td>
+    <td>
+      <a href="/polyglotprogramming/papers/IssuesBlockingAIAdoption.pdf"><img src="IssuesBlockingAIAdoption-TitlePage-342x192.jpg" /></a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <article class="talk">
         <h1>AI in the Open: Why It Matters. How to Achieve It.</h1>
         <p class="talk-desc">AI Camp, Chicago, February 2024</p>
         <p>To maximize availability and safety of AI, we should follow the path of open-source software, while recognizing what is new.</p>

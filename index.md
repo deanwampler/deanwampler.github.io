@@ -26,6 +26,15 @@ include_photo_social: true
   <p class="section-title"><span>Some of My Talks</span></p>
 
   <article class="talk">
+    <h1>What Issues Are Blocking AI Adoption?</h1>
+    <p class="talk-desc">1871 AI Innovation Summit, Chicago, June 27 2024</p>
+    <p>Despite the promise of AI, several challenges block many deployments. What are those challenges and what do we do about them?</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/IssuesBlockingAIAdoption.pdf" class="button button-pdf">Download PDF</a>
+    </div>
+  </article>
+
+  <article class="talk">
     <h1>AI in the Open: Why It Matters. How to Achieve It.</h1>
     <p class="talk-desc">AI Camp, Chicago, February 2024</p>
     <p>To maximize availability and safety of AI, we should follow the path of open-source software, while recognizing what is new.</p>
@@ -74,15 +83,6 @@ include_photo_social: true
   </article>
 
   <article class="talk">
-    <h1>Next Generation AI: Transitioning to the Continuous, Self-Learning Enterprise</h1>
-    <p class="talk-desc">Draft, February 2021</p>
-    <p>A talk I'm developing that looks at the state of AI/ML and what enterprises need to do to fully leverage it.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/NextGenerationAI.pdf" class="button button-pdf">Download PDF</a>
-    </div>
-  </article>
-
-  <article class="talk">
     <h1>Modularity: A Retrospective</h1>
     <p class="talk-desc">GOTO Chicago Nights, February 18, 2020 and Scala in the City, May 28, 2020</p>
     <p>A look at what we've accomplished in making software modular and
@@ -117,16 +117,6 @@ include_photo_social: true
     <div class="more">
       <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf" class="button button-pdf">Download PDF</a>
       <a href="https://info.lightbend.com/webinar-fast-data-executive-briefing-recording.html" class="button button-video">Watch video</a> (A similar webinar)
-    </div>
-  </article>
-
-  <article class="talk">
-    <h1>Streaming Microservices with Akka Streams and Kafka Streams</h1>
-    <p class="talk-desc">Strata San Jose and London 2018, Scala Days NYC 2018, Reactive Summit 2018, YOW! 2018</p>
-    <p>I discuss processing data in microservices using Akka Streams and Kafka Streams, vs. using tools like Spark and Flink.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="button button-pdf">Download PDF</a>
-      <a href="https://www.youtube.com/watch?time_continue=1&v=X3FjsYz2occ" class="button button-video">Watch video</a>
     </div>
   </article>
 
