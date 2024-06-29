@@ -26,6 +26,7 @@ include_photo_social: true
   <p class="section-title"><span>Some of My Talks</span></p>
 
   <article class="talk">
+    <a id="IssuesBlockingAIAdoption" class="anchor"></a>
     <h1>What Issues Are Blocking AI Adoption?</h1>
     <p class="talk-desc">1871 AI Innovation Summit, Chicago, June 27 2024</p>
     <p>Despite the promise of AI, several challenges block many deployments. What are those challenges and what do we do about them?</p>
@@ -35,6 +36,7 @@ include_photo_social: true
   </article>
 
   <article class="talk">
+    <a id="AI-in-the-Open" class="anchor"></a>
     <h1>AI in the Open: Why It Matters. How to Achieve It.</h1>
     <p class="talk-desc">AI Camp, Chicago, February 2024</p>
     <p>To maximize availability and safety of AI, we should follow the path of open-source software, while recognizing what is new.</p>
@@ -44,6 +46,7 @@ include_photo_social: true
   </article>
 
   <article class="talk">
+    <a id="Open-Source-Science-vs-Software" class="anchor"></a>
     <h1>Open Source: Science vs. Software. What's Different? What's the Same?</h1>
     <p class="talk-desc">Scale by the Bay, November 2023</p>
     <p>What I learned at IBM Research about the differences and similarities of open-source software (OSS) and open-source science (OSSci).</p>
@@ -54,6 +57,7 @@ include_photo_social: true
   </article>
 
   <article class="talk">
+    <a id="ReinforcementLearningChatGPT" class="anchor"></a>
     <h1>Reinforcement Learning: ChatGPT, Games, and More</h1>
     <p class="talk-desc">GOTO Chicago, May 2023, and IBM Research, October 2023</p>
     <p>Things move fast; an update to January's RL talk that expands the coverage of <em>Reinforcement Learning from Human Feedback</em>, a key element in training <a href="https://openai.com/blog/chatgpt" target="_chatgpt">ChatGPT</a>.</p>
@@ -63,16 +67,7 @@ include_photo_social: true
   </article>
 
   <article class="talk">
-    <h1>Open Source: Science vs. Software. What's Different? What's the Same?</h1>
-    <p class="talk-desc">Scale by the Bay, November 2023</p>
-    <p>What I learned at IBM Research about the differences and similarities of open source software (OSS) and open source science (OSSci).</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/Open-Source-Science-vs-Software.pdf" class="button button-pdf">Download PDF</a>
-      <a href="https://www.youtube.com/watch?v=UFvObAiVaNI&list=PLNESult6cnOlHK5bRvdT8f2UnoyZ9TfKW&index=16" class="button button-video">Watch video</a>
-    </div>
-  </article>
-
-  <article class="talk">
+    <a id="15YearsOfScala" class="anchor"></a>
     <h1>Lessons Learned from 15 Years of Scala in the Wild</h1>
     <p class="talk-desc">Several Conferences, 2021-2022</p>
     <p>Since I joined the Scala community roughly 15 years ago, the <a href="https://scala-lang.org" target="scala">Scala</a> community has learned a lot to make the language more robust and easier to use effectively. I've also learned lots of lessons about effective "enterprise" programming using Scala. Finally, I see warning signs for FP's future growth.</p>
@@ -83,6 +78,7 @@ include_photo_social: true
   </article>
 
   <article class="talk">
+    <a id="Modularity-a-Retrospective" class="anchor"></a>
     <h1>Modularity: A Retrospective</h1>
     <p class="talk-desc">GOTO Chicago Nights, February 18, 2020 and Scala in the City, May 28, 2020</p>
     <p>A look at what we've accomplished in making software modular and
@@ -93,6 +89,7 @@ include_photo_social: true
   </article>
 
   <article class="talk">
+    <a id="ClusterWideScalingOfMLWithRay" class="anchor"></a>
     <h1>Cluster-wide Scaling of ML with Ray</h1>
     <p class="talk-desc">YOW! Data, July 1, 2020, and CodeMesh, Nov., 2020</p>
     <p><a href="https://ray.io" target="ray">Ray</a> is a distributed computing system that offers a concise, intuitive API, with excellent performance for distributed workloads. It emerged out of the AI community at U.C. Berkeley.</p>
@@ -102,6 +99,7 @@ include_photo_social: true
   </article>
 
   <article class="talk">
+    <a id="ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines" class="anchor"></a>
     <h1>Executive Briefing: What It Takes to Use ML in Fast Data Pipelines</h1>
     <p class="talk-desc">Strata San Francisco, London, and NYC 2019</p>
     <p>A briefing for managers and executives about the challenges of serving ML models in a streaming data context.</p>
@@ -111,6 +109,7 @@ include_photo_social: true
   </article>
 
   <article class="talk">
+    <a id="ExecutiveBriefing-WhatYouNeedToKnowAboutFastData" class="anchor"></a>
     <h1>Executive Briefing: What You Need to Know about Fast Data</h1>
     <p class="talk-desc">Strata London and NYC 2018</p>
     <p>A briefing for managers and executives about the trends in Fast Data and how the impact on their organizations.</p>
@@ -121,6 +120,7 @@ include_photo_social: true
   </article>
 
   <article class="talk">
+    <a id="StreamAllTheThings" class="anchor"></a>
     <h1>Stream All the Things!!</h1>
     <p class="talk-desc">Software Architecture Conference NYC 2017, Strata London and NYC 2017</p>
     <p>I discuss the emerging architecture for large-scale stream data processing, that also integrates the best of microservice architectures.</p>

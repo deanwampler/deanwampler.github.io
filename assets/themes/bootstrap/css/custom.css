@@ -31,6 +31,10 @@ body {
   height: 10
 }
 
+ul {
+  text-align: left;
+}
+
 .content-color {
   background-color: #cab6a5; /* rgb(253 227 206 / 100%); #fde3ce; */
 }

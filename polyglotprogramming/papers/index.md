@@ -11,7 +11,7 @@ redirect_from:
 
 {% include JB/setup %}
 
-<section id="talks" class="talks centered">
+<!-- <section id="talks" class="talks centered"> -->
 <p>
 The &ldquo;source files&rdquo; for my talks can be found in this <a href="https://github.com/deanwampler/Presentations/" target="_github">GitHub repo</a>. The most recent and relevant ones are listed here.
 </p>
@@ -19,6 +19,7 @@ The &ldquo;source files&rdquo; for my talks can be found in this <a href="https:
 See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=ryUQWksAAAAJ" target="_gs">Google Scholar</a> page for papers. some of which are listed <a href="#papers">below</a>.
 </p>
 
+<a id="IssuesBlockingAIAdoption" class="anchor"></a>
 <table class="talks-table centered">
   <tr>
     <td>
@@ -35,7 +36,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="/polyglotprogramming/papers/IssuesBlockingAIAdoption.pdf"><img src="IssuesBlockingAIAdoption-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="AI-in-the-Open" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -51,7 +55,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="/polyglotprogramming/papers/AI-in-the-Open.pdf"><img src="AI-in-the-Open-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="Open-Source-Science-vs-Software" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -68,7 +75,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="/polyglotprogramming/papers/Open-Source-Science-vs-Software.pdf"><img src="Open-Source-Science-vs-Software-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="ReinforcementLearningChatGPT" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -84,7 +94,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="/polyglotprogramming/papers/ReinforcementLearningChatGPT.pdf"><img src="ReinforcementLearningChatGPT-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="ReinforcementLearningWithRayRLlibV2" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -100,7 +113,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="/polyglotprogramming/papers/ReinforcementLearningWithRayRLlibV2.pdf"><img src="ReinforcementLearningWithRayRLlibV2-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="15YearsOfScala" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -117,7 +133,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="/polyglotprogramming/papers/15YearsOfScala.pdf"><img src="15YearsOfScala-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="NextGenerationAI" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -133,7 +152,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="/polyglotprogramming/papers/NextGenerationAI.pdf"><img src="NextGenerationAI-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="Modularity-a-Retrospective" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -150,7 +172,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="/polyglotprogramming/papers/Modularity-a-Retrospective.pdf"><img src="Modularity-a-Retrospective-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="ReinforcementLearningWithRayRLlib" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -166,7 +191,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="/polyglotprogramming/papers/ReinforcementLearningWithRayRLlib.pdf"><img src="ReinforcementLearningWithRayRLlib-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="ClusterWideScalingOfMLWithRay" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -182,7 +210,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="/polyglotprogramming/papers/ClusterWideScalingOfMLWithRay.pdf"><img src="ClusterWideScalingOfMLWithRay-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="RayForNLP" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -198,7 +229,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="/polyglotprogramming/papers/RayForNLP.pdf"><img src="RayForNLP-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -214,7 +248,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines.pdf"><img src="ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="ExecutiveBriefing-WhatYouNeedToKnowAboutFastData" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -231,7 +268,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf"><img src="ExecutiveBriefing-WhatYouNeedToKnowAboutFastData-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="KafkaMicroservices-AkkaStreams-KafkaStreams" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -248,7 +288,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="KafkaMicroservices-AkkaStreams-KafkaStreams.pdf"><img src="KafkaMicroservices-AkkaStreams-KafkaStreams-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="StreamAllTheThings" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -265,7 +308,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf"><img src="StreamAllTheThings-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="BashAndAllThat" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -281,7 +327,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="/polyglotprogramming/papers/BashAndAllThat.pdf"><img src="BashAndAllThat-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="ScalaJVMBigData-SparkLessons" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -299,7 +348,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="ScalaJVMBigData-SparkLessons.pdf"><img src="ScalaJVMBigData-SparkLessons-TitlePage-342x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="Spark-TheNextTopComputeModel" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -316,7 +368,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="Spark-TheNextTopComputeModel.pdf"><img src="Spark-TheNextTopComputeModel-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="DataScienceAtScaleWithSpark" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -332,7 +387,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="DataScienceAtScaleWithSpark.pdf"><img src="DataScienceAtScaleWithSpark-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="UnreasonableEffectivenessOfScalaForBigData" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -349,7 +407,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="UnreasonableEffectivenessOfScalaForBigData.pdf"><img src="UnreasonableEffectivenessOfScalaForBigData-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="WhyScalaIsTakingOverTheBigDataWorld" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -367,8 +428,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <img src="WhyScalaIsTakingOverTheBigDataWorld-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
-
+<a id="cats" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -384,7 +447,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <a href="Cats.pdf"><img src="Cats-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="CopiousData_TheKillerAppForFP" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -405,7 +471,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <img src="CopiousData_TheKillerAppForFP-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="SQLStrikesBack" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -422,7 +491,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <img src="SQLStrikesBack-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="SeductionsOfScala" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -440,7 +512,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <img src="SeductionsOfScala-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="MapReduceAndItsDiscontents" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -457,7 +532,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <img src="MapReduceAndItsDiscontents-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="WhyBigDataNeedsToBeFunctional" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -475,7 +553,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <img src="WhyBigDataNeedsToBeFunctional-print-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="Heresies-and-Dogmas-in-Software-Development" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -493,7 +574,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <img src="HeresiesAndDogmasInSoftwareDevelopment-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="HowFPChangesDevPractices" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -511,7 +595,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <img src="BetterProgrammingThroughFP-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="polyglot-polyparadigm-programming" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -529,7 +616,10 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <img src="PolyglotPolyParadigm-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
+</table>
 
+<a id="Hive-SQLforHadoop" class="anchor"></a>
+<table class="talks-table centered">
   <tr>
     <td>
       <article class="talk">
@@ -546,9 +636,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       <img src="Hive-SQLforHadoop-TitlePage-256x192.jpg" /></a>
     </td>
   </tr>
-
 </table>
-</section>
 
 <a name="papers"/>
 <h2>Research Papers and Other Presentations</h2>
@@ -601,3 +689,4 @@ In addition to the talks above, here are a few other talks and the research pape
         <li><a href="https://dl.acm.org/doi/10.1145/3565384.3565888" target="paper">Accelerating automation of digital health applications via cloud native approach</a>. Experience report of lessons learned while building the digital health application portfolio on IBM’s Accelerated Discovery Platform.</li>
     </ul>
 </p>
+<!-- </section> -->
