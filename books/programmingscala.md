@@ -5,26 +5,26 @@ title: Programming Scala
 tagline:
 ---
 {% include JB/setup %}
-<div class="book-descriptions">
+<div class="book-description">
   <a href="https://oreil.ly/programming-scala-3" target="oreilly" class="book-image"><img src="/assets/images/prog_scala_3ed_comp-quarter_size.jpg" alt="Programming Scala, 3rd Edition"/></a>
   <div class="book-description-text">
-    <p>
-      <a href="https://oreil.ly/programming-scala-3" target="oreilly">Programming Scala, Third Edition</a> covers Scala 3. It is a comprehensive and up-to-date introduction to <a href="https://docs.scala-lang.org/scala3/" target="scala">Scala 3</a>. It is written for experienced developers new to Scala, as well experienced Scala developers migrating to Scala 3. It was published June, 2021 by O'Reilly Media.
-    </p>
-    <p>
-      The <a href="https://github.com/deanwampler/programming-scala-book-code-examples" target="code">repo for the book's code examples</a> is Apache-licensed open source. If you want the examples for the second edition, focused on Scala 2, see the <a href="https://github.com/deanwampler/programming-scala-book-code-examples/releases/tag/2.1.0">v2.1.0 release tag</a>, which closely follows the organization of the second edition of the book, but it has been updated for Scala 2.12 and 2.13. The <a href="https://github.com/deanwampler/programming-scala-book-code-examples/">current <code>master</code> branch</a> only supports Scala 3.
-    </p>
-    <p>
-      I wrote the Scala book I would want to read, which means I assumed you are an experienced developer who needs to master Scala, you already know at least one other programming language, and you know Object-Oriented Programming (OOP), but not necessarily Functional Programming (FP).
-    </p>
+  <p>
+    <a href="https://oreil.ly/programming-scala-3" target="oreilly">Programming Scala, Third Edition</a> covers Scala 3. It is a comprehensive and up-to-date introduction to <a href="https://docs.scala-lang.org/scala3/" target="scala">Scala 3</a>. It is written for experienced developers new to Scala, as well experienced Scala developers migrating to Scala 3. It was published June, 2021 by O'Reilly Media.
+  </p>
+  <p>
+    The <a href="https://github.com/deanwampler/programming-scala-book-code-examples" target="code">repo for the book's code examples</a> is Apache-licensed open source. If you want the examples for the second edition, focused on Scala 2, see the <a href="https://github.com/deanwampler/programming-scala-book-code-examples/releases/tag/2.1.0">v2.1.0 release tag</a>, which closely follows the organization of the second edition of the book, but it has been updated for Scala 2.12 and 2.13. The <a href="https://github.com/deanwampler/programming-scala-book-code-examples/">current <code>master</code> branch</a> only supports Scala 3.
+  </p>
+  <p>
+    I wrote the Scala book I would want to read, which means I assumed you are an experienced developer who needs to master Scala, you already know at least one other programming language, and you know Object-Oriented Programming (OOP), but not necessarily Functional Programming (FP).
+  </p>
 
-    <p>I would read <a href="https://oreil.ly/programming-scala-3" target="book">Programming Scala, Third Edition</a> to achieve the following goals:
+  <p>I would read <a href="https://oreil.ly/programming-scala-3" target="book">Programming Scala, Third Edition</a> to achieve the following goals:
     <ul>
         <li>Learn the common idioms, libraries, tools, and techniques used by experts building production software in Scala.</li>
         <li>Understand the major features of Scala and how to use them effectively.</li>
         <li>Understand why Scala is the language of choice for <em>data engineering</em> work in Big Data environments with tools like <a href="https://spark.apache.org" target="spark">Spark</a> and <a href="https://kafka.apache.org" target="kafka">Kafka</a>.</li>
         <li>Learn why Scala is an excellent language for state of the art microservice- and cloud-based production systems.</li>
-    </ul>
+      </ul>
   </p>
 
   <p>My goal for the reader is to <em>really</em> know the language, including the motivations for different Scala features and how they work. I want you to learn the common techniques used to solve various design problems, as well as general best practices and idioms. There are some more obscure topics that I omit and some advanced topics that I only briefly mention, but you should be expert in Scala when you finish this book.</p>

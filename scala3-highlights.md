@@ -22,7 +22,7 @@ Some of the code examples are in my [Scala 3 blog](https://medium.com/scala-3). 
             <iframe src="https://www.oreilly.com/authors/widgets/822.html" height="350px" width="200px" scrolling="no" frameborder="0"></iframe>
             <!-- ![Programming Scala 3rd Edition Cover](/assets/images/prog_scala_3ed_comp-quarter_size.jpg) -->
         </td>
-        <td class="book-descriptions"> <!--style="vertical-align: text-top;">-->
+        <td class="book-description"> <!--style="vertical-align: text-top;">-->
             <ul>
                 <li><a href="http://programming-scala.org/">Programming Scala, Third Edition</a>
                     <ul>

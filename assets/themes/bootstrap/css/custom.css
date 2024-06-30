@@ -52,8 +52,13 @@ ul {
   width: 100%;
 }
 
-.book-descriptions {
+.books-page-content {
   vertical-align: top;
+}
+.book-description {
+  vertical-align: top;
+  width: 100%;
+  display: inline-block;
 }
 .book-description-text {
 }
@@ -61,27 +66,8 @@ ul {
   float: left;
   margin: 8px;
 }
-
-.book-page-table {
-  vertical-align: top;
-}
-
-.prog-scala-cover-cell {
-  /*background-image: url("/assets/images/prog_scala_3ed_comp-quarter_size.jpg");*/
-  width:  262px;
-  height: 344px;
-}
-
-.fd-arch-streaming-cover-cell {
-  /*background-image: url("/assets/images/prog_scala_3ed_comp-quarter_size.jpg");*/
-  width:  256px;
-  height: 337px;
-}
-
-.what-is-ray-cell {
-  /*background-image: url("/assets/images/what-is-ray.jpg");*/
-  width:  250px;
-  height: 375px;
+.book-image-thumbnail {
+  max-width:  130px;
 }
 
 .basic-table {
