@@ -34,6 +34,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="AI-in-the-Open" class="anchor"></a>
   <div class="talk-description">
@@ -49,6 +50,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="Open-Source-Science-vs-Software" class="anchor"></a>
   <div class="talk-description">
@@ -65,6 +67,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="ReinforcementLearningChatGPT" class="anchor"></a>
   <div class="talk-description">
@@ -80,6 +83,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="ReinforcementLearningWithRayRLlibV2" class="anchor"></a>
   <div class="talk-description">
@@ -95,6 +99,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="15YearsOfScala" class="anchor"></a>
   <div class="talk-description">
@@ -111,6 +116,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="NextGenerationAI" class="anchor"></a>
   <div class="talk-description">
@@ -126,6 +132,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="Modularity-a-Retrospective" class="anchor"></a>
   <div class="talk-description">
@@ -142,6 +149,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="ReinforcementLearningWithRayRLlib" class="anchor"></a>
   <div class="talk-description">
@@ -157,6 +165,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="ClusterWideScalingOfMLWithRay" class="anchor"></a>
   <div class="talk-description">
@@ -172,6 +181,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="RayForNLP" class="anchor"></a>
   <div class="talk-description">
@@ -187,6 +197,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines" class="anchor"></a>
   <div class="talk-description">
@@ -202,6 +213,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="ExecutiveBriefing-WhatYouNeedToKnowAboutFastData" class="anchor"></a>
   <div class="talk-description">
@@ -218,6 +230,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="KafkaMicroservices-AkkaStreams-KafkaStreams" class="anchor"></a>
   <div class="talk-description">
@@ -234,6 +247,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="StreamAllTheThings" class="anchor"></a>
   <div class="talk-description">
@@ -250,6 +264,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="BashAndAllThat" class="anchor"></a>
   <div class="talk-description">
@@ -265,6 +280,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="ScalaJVMBigData-SparkLessons" class="anchor"></a>
   <div class="talk-description">
@@ -282,6 +298,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="Spark-TheNextTopComputeModel" class="anchor"></a>
   <div class="talk-description">
@@ -313,6 +330,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="UnreasonableEffectivenessOfScalaForBigData" class="anchor"></a>
   <div class="talk-description">
@@ -329,6 +347,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="WhyScalaIsTakingOverTheBigDataWorld" class="anchor"></a>
   <div class="talk-description">
@@ -345,6 +364,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="cats" class="anchor"></a>
   <div class="talk-description">
@@ -360,6 +380,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="CopiousData_TheKillerAppForFP" class="anchor"></a>
   <div class="talk-description">
@@ -377,6 +398,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="SQLStrikesBack" class="anchor"></a>
   <div class="talk-description">
@@ -392,6 +414,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="SeductionsOfScala" class="anchor"></a>
   <div class="talk-description">
@@ -407,6 +430,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="MapReduceAndItsDiscontents" class="anchor"></a>
   <div class="talk-description">
@@ -422,10 +446,11 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="WhyBigDataNeedsToBeFunctional" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/WhyBigDataNeedsToBeFunctional.pdf" class="talk-image"><img src="WhyBigDataNeedsToBeFunctional-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/WhyBigDataNeedsToBeFunctional-print.pdf" class="talk-image"><img src="WhyBigDataNeedsToBeFunctional-print-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Why Big Data Needs to Be Functional</h2>
@@ -438,6 +463,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="Heresies-and-Dogmas-in-Software-Development" class="anchor"></a>
   <div class="talk-description">
@@ -454,6 +480,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="HowFPChangesDevPractices" class="anchor"></a>
   <div class="talk-description">
@@ -470,6 +497,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="polyglot-polyparadigm-programming" class="anchor"></a>
   <div class="talk-description">
@@ -486,6 +514,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 
   <a id="Hive-SQLforHadoop" class="anchor"></a>
   <div class="talk-description">
@@ -501,6 +530,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
       </div>
     </div>
   </div>
+  <hr/>
 </div>
 
 <a name="papers"/>
