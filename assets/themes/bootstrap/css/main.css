@@ -52,7 +52,7 @@ p {
 }
 
 li {
-  margin-left: 2.0em;
+  margin-left: 5%; /* 5.0em; */
 }
 
 nav {

@@ -55,6 +55,12 @@ ul {
 .book-descriptions {
   vertical-align: top;
 }
+.book-description-text {
+}
+.book-image {
+  float: left;
+  margin: 8px;
+}
 
 .book-page-table {
   vertical-align: top;
