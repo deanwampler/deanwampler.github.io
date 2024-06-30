@@ -66,13 +66,15 @@ ul {
 .book-description {
   vertical-align: top;
   width: 100%;
-  display: inline-flex; /* inline-block; */
+/*
+  display: inline-flex;
   flex-wrap: wrap;
+*/
 }
 .book-description-text {
 }
 .book-image {
-  float: left;
+  float: center;
 }
 .book-image-thumbnail {
   max-width: 125px;
@@ -81,21 +83,36 @@ ul {
 
 .talks-page-content {
   vertical-align: top;
+  padding-bottom: 25px;
 }
+
+.talk {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.talk-desc {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: medium;
+  color: #112337;
+}
+
 .talk-description {
   vertical-align: top;
-  width: 100%;
+/*  width: 100%;*/
   padding-bottom: 25px;
-  display: inline-flex; /* inline-block; */
+/*
+  display: inline-flex; 
   flex-wrap: wrap;
+*/
 }
 .talk-media-buttons {
-  float: left;
+  float: center;
 }
 .talk-description-text {
 }
 .talk-image {
-  float: left;
+  float: center;
 }
 .talk-image-thumbnail {
   max-width:  342px;

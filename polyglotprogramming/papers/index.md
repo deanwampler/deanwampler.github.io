@@ -19,7 +19,7 @@ The &ldquo;source files&rdquo; for my talks can be found in this <a href="https:
 See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=ryUQWksAAAAJ" target="_gs">Google Scholar</a> page for papers. some of which are listed <a href="#papers">below</a>.
 </p>
 
-<div class="/talks-page-content">
+<div class="talks-page-content">
   <a id="IssuesBlockingAIAdoption" class="anchor"></a>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/IssuesBlockingAIAdoption.pdf" class="image-hover-border"><img src="IssuesBlockingAIAdoption-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>

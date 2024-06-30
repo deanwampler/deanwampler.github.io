@@ -4,7 +4,7 @@ title: Books and Reports
 tagline: Books and Reports written or co-written by Dean Wampler
 ---
 {% include JB/setup %}
-<div class="/books-page-content">
+<div class="books-page-content">
   <div class="book-description">
     <a href="/books/programmingscala" class="image-hover-border"><img src="/assets/images/prog_scala_3ed_comp-quarter_size.jpg" alt="Programming Scala, Third Edition" class="book-image-thumbnail"/></a>
     <div class="book-description-text">
