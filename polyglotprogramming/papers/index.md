@@ -2,7 +2,7 @@
 layout: page
 style: no-image
 title: Talks and Papers
-tagline:
+tagline: <span class="tagline">The slides and videos (when available) for my talks.<br/>The original <a href="https://www.apple.com/in/keynote/" target="apple">Keynote</a> files can be found in <a href="https://github.com/deanwampler/Presentations/" target="_github">this GitHub repo</a>.<br/>See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=ryUQWksAAAAJ" target="_gs">Google Scholar</a> page for papers. some of which are listed <a href="#papers">below</a>.</span>
 redirect_from:
   - /aspectprogramming/papers/
   - /concurrentthought/papers/
@@ -11,14 +11,7 @@ redirect_from:
 
 {% include JB/setup %}
 
-<section id="talks" class="talks centered">
-<p>
-The &ldquo;source files&rdquo; for my talks can be found in this <a href="https://github.com/deanwampler/Presentations/" target="_github">GitHub repo</a>. The most recent and relevant ones are listed here.
-</p>
-<p>
-See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=ryUQWksAAAAJ" target="_gs">Google Scholar</a> page for papers. some of which are listed <a href="#papers">below</a>.
-</p>
-
+<section id="talks" class="talks-page-content centered">
 <div class="talks-page-content">
   <a id="IssuesBlockingAIAdoption" class="anchor"></a>
   <div class="talk-description">
