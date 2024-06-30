@@ -70,6 +70,28 @@ ul {
   max-width:  130px;
 }
 
+.talks-page-content {
+  vertical-align: top;
+}
+.talk-description {
+  vertical-align: top;
+  width: 100%;
+  display: inline-block;
+  padding-bottom: 25px;
+}
+.talk-media-buttons {
+  float: left;
+}
+.talk-description-text {
+}
+.talk-image {
+  float: left;
+  margin: 8px;
+}
+.talk-image-thumbnail {
+  max-width:  342px;
+}
+
 .basic-table {
   width: 90%;
   border-style: solid;
