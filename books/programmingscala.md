@@ -6,7 +6,7 @@ tagline:
 ---
 {% include JB/setup %}
 <div class="book-description">
-  <a href="https://oreil.ly/programming-scala-3" target="oreilly" class="book-image"><img src="/assets/images/prog_scala_3ed_comp-quarter_size.jpg" alt="Programming Scala, 3rd Edition"/></a>
+  <a href="https://oreil.ly/programming-scala-3" target="oreilly" class="image-hover-border"><img src="/assets/images/prog_scala_3ed_comp-quarter_size.jpg" alt="Programming Scala, 3rd Edition" class="book-image"/></a>
   <div class="book-description-text">
   <p>
     <a href="https://oreil.ly/programming-scala-3" target="oreilly">Programming Scala, Third Edition</a> covers Scala 3. It is a comprehensive and up-to-date introduction to <a href="https://docs.scala-lang.org/scala3/" target="scala">Scala 3</a>. It is written for experienced developers new to Scala, as well experienced Scala developers migrating to Scala 3. It was published June, 2021 by O'Reilly Media.

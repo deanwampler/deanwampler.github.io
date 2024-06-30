@@ -11,12 +11,12 @@ include_photo_social: true
 <section id="books" class="centered">
   <p class="section-title"><span>Books &amp; Reports</span></p>
   <div class="books-list">
-    <a href="books/programmingscala.html" class="books-book"><img src="/assets/images/prog_scala_3ed_comp-quarter_size.jpg" alt="Programming Scala, 3rd Edition"/></a>
-    <a href="books/fd-arch-streaming.html" class="books-book"><img src="/assets/images/FastDataArch-StreamingApps-2ndEd-256x337.png" alt="Fast Data Architectures for Streaming Applications"/></a>
-    <a href="books/what-is-ray.html" class="books-book"><img src="/assets/images/WhatIsRay.jpg" alt="What Is Ray?"/></a>
-    <a href="books/hardware-software-process.html" class="books-book"><img src="/assets/images/HardwareSoftwareProcess-256x337.png" alt="Hardware > Software > Process"/></a>
-    <a href="books/fpjava.html" class="books-book"><img src="/assets/images/FPforJavaDevsCover_256x337.png"/></a>
-    <a href="books/programminghive.html" class="books-book"><img src="/assets/images/prog_hive_mech_cover_front_252x331.png"/></a>
+    <a href="books/programmingscala.html" class="image-hover-border"><img src="/assets/images/prog_scala_3ed_comp-quarter_size.jpg" alt="Programming Scala, 3rd Edition" class="book-image-thumbnail"/></a>
+    <a href="books/fd-arch-streaming.html" class="image-hover-border"><img src="/assets/images/FastDataArch-StreamingApps-2ndEd-256x337.png" alt="Fast Data Architectures for Streaming Applications" class="book-image-thumbnail"/></a>
+    <a href="books/what-is-ray.html" class="image-hover-border"><img src="/assets/images/WhatIsRay.jpg" alt="What Is Ray?" class="book-image-thumbnail"/></a>
+    <a href="books/hardware-software-process.html" class="image-hover-border"><img src="/assets/images/HardwareSoftwareProcess-256x337.png" alt="Hardware > Software > Process" class="book-image-thumbnail"/></a>
+    <a href="books/fpjava.html" class="image-hover-border"><img src="/assets/images/FPforJavaDevsCover_256x337.png" class="book-image-thumbnail"/></a>
+    <a href="books/programminghive.html" class="image-hover-border"><img src="/assets/images/prog_hive_mech_cover_front_252x331.png" class="book-image-thumbnail"/></a>
   </div>
   <p class="talk"><a href="/scala3-highlights.html">Scala 3 highlights</a>.</p>
   <p class="talk"><a href="/books">More information</a> on my books and reports.</p>

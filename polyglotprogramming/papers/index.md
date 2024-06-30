@@ -22,7 +22,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 <div class="/talks-page-content">
   <a id="IssuesBlockingAIAdoption" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/IssuesBlockingAIAdoption.pdf" class="talk-image"><img src="IssuesBlockingAIAdoption-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/IssuesBlockingAIAdoption.pdf" class="image-hover-border"><img src="IssuesBlockingAIAdoption-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>What Issues Are Blocking AI Adoption?</h2>
@@ -38,7 +38,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="AI-in-the-Open" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/AI-in-the-Open.pdf" class="talk-image"><img src="AI-in-the-Open-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/AI-in-the-Open.pdf" class="image-hover-border"><img src="AI-in-the-Open-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>AI in the Open: Why It Matters. How to Achieve It.</h2>
@@ -54,7 +54,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="Open-Source-Science-vs-Software" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/Open-Source-Science-vs-Software.pdf" class="talk-image"><img src="Open-Source-Science-vs-Software-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/Open-Source-Science-vs-Software.pdf" class="image-hover-border"><img src="Open-Source-Science-vs-Software-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Open Source: Science vs. Software. What's Different? What's the Same?</h2>
@@ -71,7 +71,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="ReinforcementLearningChatGPT" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/ReinforcementLearningChatGPT.pdf" class="talk-image"><img src="ReinforcementLearningChatGPT-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/ReinforcementLearningChatGPT.pdf" class="image-hover-border"><img src="ReinforcementLearningChatGPT-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Reinforcement Learning, ChatGPT, Games, and More</h2>
@@ -87,7 +87,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="ReinforcementLearningWithRayRLlibV2" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/ReinforcementLearningWithRayRLlibV2.pdf" class="talk-image"><img src="ReinforcementLearningWithRayRLlibV2-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/ReinforcementLearningWithRayRLlibV2.pdf" class="image-hover-border"><img src="ReinforcementLearningWithRayRLlibV2-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Reinforcement Learning with Ray RLlib (V2 for Data Day Texas)</h2>
@@ -103,7 +103,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="15YearsOfScala" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/15YearsOfScala.pdf" class="talk-image"><img src="15YearsOfScala-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/15YearsOfScala.pdf" class="image-hover-border"><img src="15YearsOfScala-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Lessons Learned from 15 Years of Scala in the Wild</h2>
@@ -120,7 +120,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="NextGenerationAI" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/NextGenerationAI.pdf" class="talk-image"><img src="NextGenerationAI-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/NextGenerationAI.pdf" class="image-hover-border"><img src="NextGenerationAI-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Next Generation AI: Transitioning to the Continuous, Self-Learning Enterprise</h2>
@@ -136,7 +136,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="Modularity-a-Retrospective" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/Modularity-a-Retrospective.pdf" class="talk-image"><img src="Modularity-a-Retrospective-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/Modularity-a-Retrospective.pdf" class="image-hover-border"><img src="Modularity-a-Retrospective-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Modularity: A Retrospective</h2>
@@ -153,7 +153,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="ReinforcementLearningWithRayRLlib" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/ReinforcementLearningWithRayRLlib.pdf" class="talk-image"><img src="ReinforcementLearningWithRayRLlib-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/ReinforcementLearningWithRayRLlib.pdf" class="image-hover-border"><img src="ReinforcementLearningWithRayRLlib-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Reinforcement Learning with Ray RLlib</h2>
@@ -169,7 +169,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="ClusterWideScalingOfMLWithRay" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/ClusterWideScalingOfMLWithRay.pdf" class="talk-image"><img src="ClusterWideScalingOfMLWithRay-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/ClusterWideScalingOfMLWithRay.pdf" class="image-hover-border"><img src="ClusterWideScalingOfMLWithRay-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Ray - Scalability from a Laptop to a Cluster</h2>
@@ -185,7 +185,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="RayForNLP" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/RayForNLP.pdf" class="talk-image"><img src="RayForNLP-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/RayForNLP.pdf" class="image-hover-border"><img src="RayForNLP-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Ray for Natural Language Processing</h2>
@@ -201,7 +201,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines.pdf" class="talk-image"><img src="ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines.pdf" class="image-hover-border"><img src="ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Executive Briefing: What It Takes to Use ML in Fast Data Pipelines</h2>
@@ -217,7 +217,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="ExecutiveBriefing-WhatYouNeedToKnowAboutFastData" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf" class="talk-image"><img src="ExecutiveBriefing-WhatYouNeedToKnowAboutFastData-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf" class="image-hover-border"><img src="ExecutiveBriefing-WhatYouNeedToKnowAboutFastData-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Executive Briefing: What You Need to Know about Fast Data</h2>
@@ -234,7 +234,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="KafkaMicroservices-AkkaStreams-KafkaStreams" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="talk-image"><img src="KafkaMicroservices-AkkaStreams-KafkaStreams-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="image-hover-border"><img src="KafkaMicroservices-AkkaStreams-KafkaStreams-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Streaming Microservices with Akka Streams and Kafka Streams</h2>
@@ -251,7 +251,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="StreamAllTheThings" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="talk-image"><img src="StreamAllTheThings-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="image-hover-border"><img src="StreamAllTheThings-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Stream All the Things!!</h2>
@@ -268,7 +268,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="BashAndAllThat" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/BashAndAllThat.pdf" class="talk-image"><img src="BashAndAllThat-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/BashAndAllThat.pdf" class="image-hover-border"><img src="BashAndAllThat-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Bash and All That</h2>
@@ -284,7 +284,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="ScalaJVMBigData-SparkLessons" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons.pdf" class="talk-image"><img src="ScalaJVMBigData-SparkLessons-TitlePage-342x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons.pdf" class="image-hover-border"><img src="ScalaJVMBigData-SparkLessons-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Scala and the JVM for Big Data: Lessons from Spark</h2>
@@ -302,7 +302,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="Spark-TheNextTopComputeModel" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/Spark-TheNextTopComputeModel.pdf" class="talk-image"><img src="Spark-TheNextTopComputeModel-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/Spark-TheNextTopComputeModel.pdf" class="image-hover-border"><img src="Spark-TheNextTopComputeModel-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Why Spark Is The Next Top (Compute) Model</h2>
@@ -318,7 +318,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="DataScienceAtScaleWithSpark" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/DataScienceAtScaleWithSpark.pdf" class="talk-image"><img src="DataScienceAtScaleWithSpark-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/DataScienceAtScaleWithSpark.pdf" class="image-hover-border"><img src="DataScienceAtScaleWithSpark-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Data Science at Scale with Spark</h2>
@@ -334,7 +334,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="UnreasonableEffectivenessOfScalaForBigData" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/UnreasonableEffectivenessOfScalaForBigData.pdf" class="talk-image"><img src="UnreasonableEffectivenessOfScalaForBigData-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/UnreasonableEffectivenessOfScalaForBigData.pdf" class="image-hover-border"><img src="UnreasonableEffectivenessOfScalaForBigData-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>The Unreasonable Effectiveness of Scala for Big Data</h2>
@@ -351,7 +351,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="WhyScalaIsTakingOverTheBigDataWorld" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/WhyScalaIsTakingOverTheBigDataWorld.pdf" class="talk-image"><img src="WhyScalaIsTakingOverTheBigDataWorld-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/WhyScalaIsTakingOverTheBigDataWorld.pdf" class="image-hover-border"><img src="WhyScalaIsTakingOverTheBigDataWorld-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Why Scala Is Taking Over the Big Data World</h2>
@@ -368,7 +368,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="cats" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/Cats.pdf" class="talk-image"><img src="Cats-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/Cats.pdf" class="image-hover-border"><img src="Cats-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>The Internet Was Made for Cats</h2>
@@ -384,7 +384,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="CopiousData_TheKillerAppForFP" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/CopiousData_TheKillerAppForFP.pdf" class="talk-image"><img src="CopiousData_TheKillerAppForFP-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/CopiousData_TheKillerAppForFP.pdf" class="image-hover-border"><img src="CopiousData_TheKillerAppForFP-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Copious Data, the Killer App for Functional Programming</h2>
@@ -402,7 +402,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="SQLStrikesBack" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/SQLStrikesBack.pdf" class="talk-image"><img src="SQLStrikesBack-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/SQLStrikesBack.pdf" class="image-hover-border"><img src="SQLStrikesBack-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>SQL Strikes Back! Recent Trends in Data Persistence and Analysis</h2>
@@ -418,7 +418,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="SeductionsOfScala" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/SeductionsOfScala.pdf" class="talk-image"><img src="SeductionsOfScala-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/SeductionsOfScala.pdf" class="image-hover-border"><img src="SeductionsOfScala-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>The Seductions of Scala</h2>
@@ -434,7 +434,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="MapReduceAndItsDiscontents" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/MapReduceAndItsDiscontents.pdf" class="talk-image"><img src="MapReduceAndItsDiscontents-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/MapReduceAndItsDiscontents.pdf" class="image-hover-border"><img src="MapReduceAndItsDiscontents-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>MapReduce and Its Discontents</h2>
@@ -450,7 +450,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="WhyBigDataNeedsToBeFunctional" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/WhyBigDataNeedsToBeFunctional-print.pdf" class="talk-image"><img src="WhyBigDataNeedsToBeFunctional-print-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/WhyBigDataNeedsToBeFunctional-print.pdf" class="image-hover-border"><img src="WhyBigDataNeedsToBeFunctional-print-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Why Big Data Needs to Be Functional</h2>
@@ -467,7 +467,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="Heresies-and-Dogmas-in-Software-Development" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/HeresiesAndDogmasInSoftwareDevelopment.pdf" class="talk-image"><img src="HeresiesAndDogmasInSoftwareDevelopment-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/HeresiesAndDogmasInSoftwareDevelopment.pdf" class="image-hover-border"><img src="HeresiesAndDogmasInSoftwareDevelopment-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Heresies and Dogmas in Software Development</h2>
@@ -484,7 +484,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="HowFPChangesDevPractices" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/BetterProgrammingThroughFP.pdf" class="talk-image"><img src="BetterProgrammingThroughFP-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/BetterProgrammingThroughFP.pdf" class="image-hover-border"><img src="BetterProgrammingThroughFP-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Better Programming Through Functional Programming</h2>
@@ -501,7 +501,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="polyglot-polyparadigm-programming" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/PolyglotPolyParadigm.pdf" class="talk-image"><img src="PolyglotPolyParadigm-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/PolyglotPolyParadigm.pdf" class="image-hover-border"><img src="PolyglotPolyParadigm-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Polyglot and Poly-paradigm Programming</h2>
@@ -518,7 +518,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
 
   <a id="Hive-SQLforHadoop" class="anchor"></a>
   <div class="talk-description">
-    <a href="/polyglotprogramming/papers/Hive-SQLforHadoop.pdf" class="talk-image"><img src="Hive-SQLforHadoop-TitlePage-256x192.jpg" class="talk-image-thumbnail"/></a>
+    <a href="/polyglotprogramming/papers/Hive-SQLforHadoop.pdf" class="image-hover-border"><img src="Hive-SQLforHadoop-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
         <h2>Hive - SQL for Hadoop</h2>
@@ -533,7 +533,7 @@ See also my <a href="https://scholar.google.com/citations?view_op=list_works&hl=
   <hr/>
 </div>
 
-<a name="papers"/>
+<a name="papers" class="talk-image"/>
 <h2>Research Papers and Other Presentations</h2>
 
 In addition to the talks above, here are a few other talks and the research papers I have written or co-written.
@@ -551,17 +551,17 @@ In addition to the talks above, here are a few other talks and the research pape
 
 <p>
     <ul>
-        <li><a href="ReactiveSystems-TheWhyAndTheHow.pdf">Reactive Systems - The Why and the What</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/> and <a href="https://www.safaribooksonline.com/library/view/oreilly-software-architecture/9781491924563/video211449.html">Video</a>.</li>
-        <li><a href="ReactiveDesignLanguagesAndParadigms.pdf">Reactive Design, Languages and Paradigms</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/> and <a href="https://www.youtube.com/watch?v=4L3cYhfSUZs&feature=youtu.be">Video</a>.</li>
-        <li><a href="ErrorHandlingReactiveSystems.pdf">Error Handling in Reactive Systems</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/>.</li>
+        <li><a href="ReactiveSystems-TheWhyAndTheHow.pdf">Reactive Systems - The Why and the What</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF" class="talk-image"/> and <a href="https://www.safaribooksonline.com/library/view/oreilly-software-architecture/9781491924563/video211449.html">Video</a>.</li>
+        <li><a href="ReactiveDesignLanguagesAndParadigms.pdf">Reactive Design, Languages and Paradigms</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF" class="talk-image"/> and <a href="https://www.youtube.com/watch?v=4L3cYhfSUZs&feature=youtu.be">Video</a>.</li>
+        <li><a href="ErrorHandlingReactiveSystems.pdf">Error Handling in Reactive Systems</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF" class="talk-image"/>.</li>
     </ul>
 </p>
 
 <h3>Aquarium</h3>
 <p>
     <ul>
-        <li><a href="Aquarium_RubyAOP.pdf">Aquarium: Aspect-Oriented Programming for Ruby</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/>. There are a few exercises that go with the talk: <a href="Aquarium_RubyAOP_exercises.zip">Aquarium_RubyAOP_exercises.zip</a></li>
-        <li><a href="Aquarium_AOP_for_Ruby_presentation.pdf">Aquarium: AOP for Ruby</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/>. A 30-minute talk presented at <a href="https://aosd.net/2008/">Aspect-Oriented Software Development 2008</a>. The talk was based on my <a href="https://www.aosd.net/2008/program/industry.php">Industry Track paper</a>.</li>
+        <li><a href="Aquarium_RubyAOP.pdf">Aquarium: Aspect-Oriented Programming for Ruby</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF" class="talk-image"/>. There are a few exercises that go with the talk: <a href="Aquarium_RubyAOP_exercises.zip">Aquarium_RubyAOP_exercises.zip</a></li>
+        <li><a href="Aquarium_AOP_for_Ruby_presentation.pdf">Aquarium: AOP for Ruby</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF" class="talk-image"/>. A 30-minute talk presented at <a href="https://aosd.net/2008/">Aspect-Oriented Software Development 2008</a>. The talk was based on my <a href="https://www.aosd.net/2008/program/industry.php">Industry Track paper</a>.</li>
     </ul>
 </p>
 
@@ -569,12 +569,12 @@ In addition to the talks above, here are a few other talks and the research pape
 <p>
     <ul>
         <li><a href="AOPerspectiveOnOOD.pdf">Noninvasiveness and Aspect-Oriented Design: Lessons from Object-Oriented Design Principles</a>. Research Paper discussing classic OO design principles in the context of AOSD.</li>
-        <li><a href="AOP_Academia_and_Industry.pdf">AOP in Academia and Industry</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/>.</li>
-        <li><a href="https://aosd.net/2007/program/industry/I6-AspectDesignPrinciples.pdf">Aspect-Oriented Design Principles: Lessons from Object-Oriented Design</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/>.</li>
+        <li><a href="AOP_Academia_and_Industry.pdf">AOP in Academia and Industry</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF" class="talk-image"/>.</li>
+        <li><a href="https://aosd.net/2007/program/industry/I6-AspectDesignPrinciples.pdf">Aspect-Oriented Design Principles: Lessons from Object-Oriented Design</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF" class="talk-image"/>.</li>
         <li><a href="https://www-128.ibm.com/developerworks/java/library/j-aopwork17.html">AOP@Work: Component Design with Contract4J</a> (IBM <a href="https://www-128.ibm.com/developerworks">developerWorks</a>).</li>
-        <li><a href="TheChallengesOfWritingReusableAspectsInAspectJ.pdf">The Challenges of Writing Reusable and Portable Aspects in AspectJ: Lessons from Contract4J</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/>.</li>
-        <li><a href="https://www.aosd.net/workshops/acp4is/2006/papers/7.pdf">Contract4J for Design by Contract in Java: Design Pattern-Like Protocols and Aspect Interfaces</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/></li>
-        <li><a href="TheFutureOfAOP.pdf">The Future of AOP</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF"/></li>
+        <li><a href="TheChallengesOfWritingReusableAspectsInAspectJ.pdf">The Challenges of Writing Reusable and Portable Aspects in AspectJ: Lessons from Contract4J</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF" class="talk-image"/>.</li>
+        <li><a href="https://www.aosd.net/workshops/acp4is/2006/papers/7.pdf">Contract4J for Design by Contract in Java: Design Pattern-Like Protocols and Aspect Interfaces</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF" class="talk-image"/></li>
+        <li><a href="TheFutureOfAOP.pdf">The Future of AOP</a> <img src="/assets/images/page_white_acrobat.png" alt="Adobe PDF" class="talk-image"/></li>
     </ul>
 </p>
 

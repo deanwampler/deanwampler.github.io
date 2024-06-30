@@ -52,6 +52,14 @@ ul {
   width: 100%;
 }
 
+.image-hover-border img {
+  margin: 8px;
+  border: 4px solid #CECECE;
+}
+.image-hover-border:hover img {
+  border-color: #112337;
+}
+
 .books-page-content {
   vertical-align: top;
 }
@@ -65,11 +73,11 @@ ul {
 }
 .book-image {
   float: left;
-  margin: 8px;
 }
 .book-image-thumbnail {
-  max-width:  130px;
+  max-width: 125px;
 }
+
 
 .talks-page-content {
   vertical-align: top;
@@ -88,11 +96,11 @@ ul {
 }
 .talk-image {
   float: left;
-  margin: 8px;
 }
 .talk-image-thumbnail {
   max-width:  342px;
 }
+
 
 .basic-table {
   width: 90%;
