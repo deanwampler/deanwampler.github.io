@@ -16,31 +16,13 @@ Some of the code examples are in my [Scala 3 blog](https://medium.com/scala-3). 
 
 ## For More Information
 
-<table>
-    <tr>
-        <td>
-            <iframe src="https://www.oreilly.com/authors/widgets/822.html" height="350px" width="200px" scrolling="no" frameborder="0"></iframe>
-            <!-- ![Programming Scala 3rd Edition Cover](/assets/images/prog_scala_3ed_comp-quarter_size.jpg) -->
-        </td>
-        <td class="book-description"> <!--style="vertical-align: text-top;">-->
-            <ul>
-                <li><a href="http://programming-scala.org/">Programming Scala, Third Edition</a>
-                    <ul>
-                        <li><a href="https://github.com/deanwampler/programming-scala-book-code-examples">Code examples</a> (warning, not many comments!!)</li>
-                    </ul>
-                </li>
-                <li><a href="https://medium.com/scala-3">My Scala 3 blog</a></li>
-                <li><a href="https://www.scala-lang.org/download/scala3.html">Scala 3 home page</a> which links to the thorough <a href="https://dotty.epfl.ch/">EPFL's documentation</a>. See in particular the following:
-                    <ul>
-                        <li><a href="https://dotty.epfl.ch/blog/index.html">Blog</a></li>
-                        <li><a href="https://dotty.epfl.ch/docs/index.html">Docs</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://gitter.im/scala/scala">Scala Gitter channel</a>. Essential!</li>
-            </ul>
-        </td>
-    </tr>
-</table>
+* My book, _Programming Scala, Third Edition_:
+  * [Book website](http://programming-scala.org/){:target="prog-scala"}
+  * [Code examples](https://github.com/deanwampler/programming-scala-book-code-examples){:target="code"} (warning, not many comments!!)
+* [My Scala 3 blog](https://medium.com/scala-3){:target="blog"}
+* [Scala 3 home page](https://www.scala-lang.org/download/scala3.html){:target="scala3"} which links to the thorough [Scala documentation](https://dotty.epfl.ch/){:target="docs"}. See in particular the following:
+  * [EPFL Blog](https://dotty.epfl.ch/blog/index.html){:target="epfl-blog"}
+  * [EPFL docs](https://dotty.epfl.ch/docs/index.html){:target="epfl-docs"}
 
 ## General Comments
 
