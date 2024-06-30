@@ -58,7 +58,8 @@ ul {
 .book-description {
   vertical-align: top;
   width: 100%;
-  display: inline-block;
+  display: inline-flex; /* inline-block; */
+  flex-wrap: wrap;
 }
 .book-description-text {
 }
@@ -76,8 +77,9 @@ ul {
 .talk-description {
   vertical-align: top;
   width: 100%;
-  display: inline-block;
   padding-bottom: 25px;
+  display: inline-flex; /* inline-block; */
+  flex-wrap: wrap;
 }
 .talk-media-buttons {
   float: left;
