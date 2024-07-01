@@ -7,8 +7,7 @@ include_social: true
 {% include JB/setup %}
 
 * Created, Nov 19, 2020. Latest update: July 2, 2021
-* [@deanwampler](https://twitter.com/deanwampler)
-* [dean@deanwampler.com](mailto:dean@deanwampler.com)
+* [Dean Wampler](http://deanwampler.com)
 
 This is a concise summary of many of the changes in Scala 3. I used these notes for talks at [The Chicago-Area Scala Enthusiasts (CASE)](https://www.meetup.com/chicagoscala/events/274110140/), Nov. 19, 2020, [Scala Love in the City](https://inthecity.scala.love/), Feb. 13, 2021, and at the [Philly Area Scala Enthusiasts (PHASE)](https://www.meetup.com/scala-phase/events/277164777/), April 21, 2021. 
 
