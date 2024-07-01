@@ -102,23 +102,51 @@ p a:hover {
  * BUTTONS
  */
 
-.button-resume,
-.button-twitter,
-.button-linkedin,
-.button-pdf,
-.button-video {
-  background: url(/assets/images/buttons.svg) 3px 3px no-repeat;
+.button-pdf {
+  background-image: url(/assets/images/PDF-light-button.png);
 }
-
-/* TODO: Create images for:
-.button-github
-.button-ibm-research
-.button-google-scholar
-.button-bluesky
-.button-mastodon
-.button-blog
-.button-photo
-*/
+.button-pdf:hover {
+  background-image: url(/assets/images/PDF-dark-button.png);
+}
+.button-video {
+  background-image: url(/assets/images/video-light-button.png);
+}
+.button-video:hover {
+  background-image: url(/assets/images/video-dark-button.png);
+}
+.button-github {
+  background-image: url(/assets/images/GitHub-light-button.png);
+}
+.button-linkedin {
+  background-image: url(/assets/images/LinkedIn-button.png);
+}
+.button-ibm-research {
+  background-image: url(/assets/images/IBM-button.png);
+}
+.button-google-scholar {
+  background-image: url(/assets/images/Google-Scholar-button.png);
+}
+.button-twitter {
+  background-image: url(/assets/images/Twitter-button.png);
+}
+.button-bluesky {
+  background-image: url(/assets/images/Bluesky-button.png);
+}
+.button-mastodon {
+  background-image: url(/assets/images/Mastodon-button.png);
+}
+.button-flickr {
+  background-image: url(/assets/images/Flickr-button.png);
+}
+.button-glass {
+  background-image: url(/assets/images/Glass-button.png);
+}
+.button-vero {
+  background-image: url(/assets/images/VERO-button.png);
+}
+.button-photo {
+  background-image: url(/assets/images/photo-button.png);
+}
 
 .no-toggle-button, .button {
   display: inline-block;
@@ -127,8 +155,11 @@ p a:hover {
   height: 30px;
   line-height: 31px;
   border-radius: 20px;
-  background-color: #112337;
   color: #fff;
+  background-color: #112337;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 5px 5px;
   text-decoration: none;
 }
 
@@ -142,28 +173,6 @@ p a:hover {
 .button-video:hover {
   background-color: #fff;
   color: #112337;
-}
-
-.button-twitter {
-  background-position: 8px -37px;
-}
-
-.button-resume {
-  background-position: 8px -118px;
-}
-
-.button-pdf {
-  background-position: 8px -118px;
-}
-.button-pdf:hover {
-  background-position: 8px -78px;
-}
-
-.button-video {
-  background-position: 8px -198px;
-}
-.button-video:hover {
-  background-position: 8px -158px;
 }
 
 
