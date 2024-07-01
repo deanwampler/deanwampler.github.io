@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dean Wampler, Ph.D.
-tagline: <span class="tagline"><a href="https://thealliance.ai" target="ai">The AI Alliance</a> and <a href="https://research.ibm.com/" target="ibm">IBM Research</a>.<br/>Industry expert in AI/ML engineering, streaming data, and Scala.<br/><a href="/books">Author</a> and <a href="/talks">public speaker</a>.<br/><a href="/photography/">Photographer</a>. Lives in Chicago.</span>
+tagline: <span class="tagline"><a href="https://thealliance.ai" target="ai">The AI Alliance</a> and <a href="https://research.ibm.com/" target="ibm">IBM Research</a>.<br/>Industry expert in AI/ML engineering, streaming data, and Scala.<br/><a href="/books">Author</a>, <a href="/talks">public speaker</a>, and <a href="/photography/">photographer</a>.</span>
 
 include_social: true
 include_photo_social: true
@@ -46,17 +46,6 @@ include_photo_social: true
   </article>
 
   <article class="talk">
-    <a id="Open-Source-Science-vs-Software" class="anchor"></a>
-    <h1>Open Source: Science vs. Software. What's Different? What's the Same?</h1>
-    <p class="talk-desc">Scale by the Bay, November 2023</p>
-    <p>What I learned at IBM Research about the differences and similarities of open-source software (OSS) and open-source science (OSSci).</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/Open-Source-Science-vs-Software.pdf" class="button button-pdf">Download PDF</a>
-      <a href="https://www.youtube.com/watch?v=UFvObAiVaNI&list=PLNESult6cnOlHK5bRvdT8f2UnoyZ9TfKW&index=16" class="button button-video">Watch video</a>
-    </div>
-  </article>
-
-  <article class="talk">
     <a id="ReinforcementLearningChatGPT" class="anchor"></a>
     <h1>Reinforcement Learning: ChatGPT, Games, and More</h1>
     <p class="talk-desc">GOTO Chicago, May 2023, and IBM Research, October 2023</p>
@@ -73,7 +62,7 @@ include_photo_social: true
     <p>Since I joined the Scala community roughly 15 years ago, the <a href="https://scala-lang.org" target="scala">Scala</a> community has learned a lot to make the language more robust and easier to use effectively. I've also learned lots of lessons about effective "enterprise" programming using Scala. Finally, I see warning signs for FP's future growth.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/15YearsOfScala.pdf" class="button button-pdf">Download PDF</a>
-      <a href="https://www.youtube.com/watch?v=cpWc7j85inQ" class="button button-video">Watch video</a>
+      <a href="https://www.youtube.com/watch?v=cpWc7j85inQ" class="button button-video no-glyph">Watch video</a>
     </div>
   </article>
 
@@ -97,39 +86,6 @@ include_photo_social: true
       <a href="/polyglotprogramming/papers/ClusterWideScalingOfMLWithRay.pdf" class="button button-pdf">Download PDF</a>
     </div>
   </article>
-
-  <article class="talk">
-    <a id="ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines" class="anchor"></a>
-    <h1>Executive Briefing: What It Takes to Use ML in Fast Data Pipelines</h1>
-    <p class="talk-desc">Strata San Francisco, London, and NYC 2019</p>
-    <p>A briefing for managers and executives about the challenges of serving ML models in a streaming data context.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines.pdf" class="button button-pdf">Download PDF</a>
-    </div>
-  </article>
-
-  <article class="talk">
-    <a id="ExecutiveBriefing-WhatYouNeedToKnowAboutFastData" class="anchor"></a>
-    <h1>Executive Briefing: What You Need to Know about Fast Data</h1>
-    <p class="talk-desc">Strata London and NYC 2018</p>
-    <p>A briefing for managers and executives about the trends in Fast Data and how the impact on their organizations.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf" class="button button-pdf">Download PDF</a>
-      <a href="https://info.lightbend.com/webinar-fast-data-executive-briefing-recording.html" class="button button-video">Watch video</a> (A similar webinar)
-    </div>
-  </article>
-
-  <article class="talk">
-    <a id="StreamAllTheThings" class="anchor"></a>
-    <h1>Stream All the Things!!</h1>
-    <p class="talk-desc">Software Architecture Conference NYC 2017, Strata London and NYC 2017</p>
-    <p>I discuss the emerging architecture for large-scale stream data processing, that also integrates the best of microservice architectures.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="button button-pdf">Download PDF</a>
-      <a href="https://www.youtube.com/watch?v=xZZB2JFyurY" class="button button-video">Watch video</a>
-    </div>
-  </article>
-
   <p>
     <center><a href="/polyglotprogramming/papers">All Talks</a></center>
   </p>
