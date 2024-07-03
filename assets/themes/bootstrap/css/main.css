@@ -87,14 +87,15 @@ nav a:hover {
   color: #112337;
 }
 
-p a {
-  color: #26517f;
+a {
+  color: #592b48; /* #34192a; #342f16; #26517f; */
   text-decoration: none;
   display: inline-block;
 }
-p a:hover {
-  background: #96b2b9;
-  color: #112337;
+a:hover {
+  background: #D3BF59;
+/*  background: #96b2b9;*/
+  color: #534b23; /* #112337; */
 }
 
 
@@ -148,6 +149,13 @@ p a:hover {
   background-image: url(/assets/images/photo-button.png);
 }
 
+.button:hover,
+.button-pdf:hover,
+.button-video:hover {
+  background-color: #fff;
+  color: #112337;
+}
+
 .no-toggle-button, .button {
   display: inline-block;
   padding: 0 15px 0 35px;
@@ -166,13 +174,6 @@ p a:hover {
 .button-inactive {
   opacity: 0.75;
   filter: alpha(opacity=75); /* For IE8 and earlier */
-}
-
-.button:hover,
-.button-pdf:hover,
-.button-video:hover {
-  background-color: #fff;
-  color: #112337;
 }
 
 
