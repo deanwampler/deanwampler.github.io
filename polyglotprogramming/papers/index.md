@@ -14,6 +14,7 @@ redirect_from:
 <section id="talks" class="talks-page-content centered">
 <div class="talks-page-content">
   <a id="IssuesBlockingAIAdoption" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/IssuesBlockingAIAdoption.pdf" class="image-hover-border"><img src="IssuesBlockingAIAdoption-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -27,9 +28,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="AI-in-the-Open" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/AI-in-the-Open.pdf" class="image-hover-border"><img src="AI-in-the-Open-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -43,9 +44,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="Open-Source-Science-vs-Software" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/Open-Source-Science-vs-Software.pdf" class="image-hover-border"><img src="Open-Source-Science-vs-Software-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -60,9 +61,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="ReinforcementLearningChatGPT" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/ReinforcementLearningChatGPT.pdf" class="image-hover-border"><img src="ReinforcementLearningChatGPT-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -76,9 +77,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="ReinforcementLearningWithRayRLlibV2" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/ReinforcementLearningWithRayRLlibV2.pdf" class="image-hover-border"><img src="ReinforcementLearningWithRayRLlibV2-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -92,9 +93,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="15YearsOfScala" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/15YearsOfScala.pdf" class="image-hover-border"><img src="15YearsOfScala-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -109,9 +110,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="NextGenerationAI" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/NextGenerationAI.pdf" class="image-hover-border"><img src="NextGenerationAI-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -125,9 +126,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="Modularity-a-Retrospective" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/Modularity-a-Retrospective.pdf" class="image-hover-border"><img src="Modularity-a-Retrospective-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -142,9 +143,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="ReinforcementLearningWithRayRLlib" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/ReinforcementLearningWithRayRLlib.pdf" class="image-hover-border"><img src="ReinforcementLearningWithRayRLlib-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -158,9 +159,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="ClusterWideScalingOfMLWithRay" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/ClusterWideScalingOfMLWithRay.pdf" class="image-hover-border"><img src="ClusterWideScalingOfMLWithRay-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -174,9 +175,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="RayForNLP" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/RayForNLP.pdf" class="image-hover-border"><img src="RayForNLP-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -190,9 +191,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines.pdf" class="image-hover-border"><img src="ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -206,9 +207,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="ExecutiveBriefing-WhatYouNeedToKnowAboutFastData" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf" class="image-hover-border"><img src="ExecutiveBriefing-WhatYouNeedToKnowAboutFastData-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -223,9 +224,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="KafkaMicroservices-AkkaStreams-KafkaStreams" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="image-hover-border"><img src="KafkaMicroservices-AkkaStreams-KafkaStreams-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -240,9 +241,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="StreamAllTheThings" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="image-hover-border"><img src="StreamAllTheThings-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -257,9 +258,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="BashAndAllThat" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/BashAndAllThat.pdf" class="image-hover-border"><img src="BashAndAllThat-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -273,9 +274,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="ScalaJVMBigData-SparkLessons" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/ScalaJVMBigData-SparkLessons.pdf" class="image-hover-border"><img src="ScalaJVMBigData-SparkLessons-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -291,9 +292,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="Spark-TheNextTopComputeModel" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/Spark-TheNextTopComputeModel.pdf" class="image-hover-border"><img src="Spark-TheNextTopComputeModel-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -310,6 +311,7 @@ redirect_from:
  </div>
 
   <a id="DataScienceAtScaleWithSpark" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/DataScienceAtScaleWithSpark.pdf" class="image-hover-border"><img src="DataScienceAtScaleWithSpark-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -323,9 +325,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="UnreasonableEffectivenessOfScalaForBigData" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/UnreasonableEffectivenessOfScalaForBigData.pdf" class="image-hover-border"><img src="UnreasonableEffectivenessOfScalaForBigData-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -340,9 +342,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="WhyScalaIsTakingOverTheBigDataWorld" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/WhyScalaIsTakingOverTheBigDataWorld.pdf" class="image-hover-border"><img src="WhyScalaIsTakingOverTheBigDataWorld-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -357,9 +359,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="cats" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/Cats.pdf" class="image-hover-border"><img src="Cats-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -373,9 +375,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="CopiousData_TheKillerAppForFP" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/CopiousData_TheKillerAppForFP.pdf" class="image-hover-border"><img src="CopiousData_TheKillerAppForFP-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -391,9 +393,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="SQLStrikesBack" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/SQLStrikesBack.pdf" class="image-hover-border"><img src="SQLStrikesBack-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -407,9 +409,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="SeductionsOfScala" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/SeductionsOfScala.pdf" class="image-hover-border"><img src="SeductionsOfScala-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -423,9 +425,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="MapReduceAndItsDiscontents" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/MapReduceAndItsDiscontents.pdf" class="image-hover-border"><img src="MapReduceAndItsDiscontents-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -439,9 +441,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="WhyBigDataNeedsToBeFunctional" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/WhyBigDataNeedsToBeFunctional-print.pdf" class="image-hover-border"><img src="WhyBigDataNeedsToBeFunctional-print-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -456,9 +458,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="Heresies-and-Dogmas-in-Software-Development" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/HeresiesAndDogmasInSoftwareDevelopment.pdf" class="image-hover-border"><img src="HeresiesAndDogmasInSoftwareDevelopment-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -473,9 +475,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="HowFPChangesDevPractices" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/BetterProgrammingThroughFP.pdf" class="image-hover-border"><img src="BetterProgrammingThroughFP-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -490,9 +492,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="polyglot-polyparadigm-programming" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/PolyglotPolyParadigm.pdf" class="image-hover-border"><img src="PolyglotPolyParadigm-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
@@ -507,9 +509,9 @@ redirect_from:
       </div>
     </div>
   </div>
-  <hr/>
 
   <a id="Hive-SQLforHadoop" class="anchor"></a>
+  <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/Hive-SQLforHadoop.pdf" class="image-hover-border"><img src="Hive-SQLforHadoop-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
