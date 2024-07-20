@@ -118,42 +118,67 @@ a:hover {
 .button-github {
   background-image: url(/assets/images/GitHub-light-button.png);
 }
+.button-github:hover {
+  background-image: url(/assets/images/GitHub-dark-button.png);
+}
 .button-linkedin {
+  background-image: url(/assets/images/LinkedIn-button.png);
+}
+.button-linkedin:hover {
   background-image: url(/assets/images/LinkedIn-button.png);
 }
 .button-ibm-research {
   background-image: url(/assets/images/IBM-button.png);
 }
+.button-ibm-research:hover {
+  background-image: url(/assets/images/IBM-button.png);
+}
 .button-google-scholar {
   background-image: url(/assets/images/Google-Scholar-button.png);
 }
+.button-google-scholar:hover {
+  background-image: url(/assets/images/Google-Scholar-button.png);
+}
+/*
 .button-twitter {
   background-image: url(/assets/images/Twitter-button.png);
 }
+*/
 .button-bluesky {
+  background-image: url(/assets/images/Bluesky-button.png);
+}
+.button-bluesky:hover {
   background-image: url(/assets/images/Bluesky-button.png);
 }
 .button-mastodon {
   background-image: url(/assets/images/Mastodon-button.png);
 }
+.button-mastodon:hover {
+  background-image: url(/assets/images/Mastodon-button.png);
+}
 .button-flickr {
+  background-image: url(/assets/images/Flickr-button.png);
+}
+.button-flickr:hover {
   background-image: url(/assets/images/Flickr-button.png);
 }
 .button-glass {
   background-image: url(/assets/images/Glass-button.png);
 }
+.button-glass:hover {
+  background-image: url(/assets/images/Glass-button.png);
+}
 .button-vero {
+  background-image: url(/assets/images/VERO-button.png);
+}
+.button-vero:hover {
   background-image: url(/assets/images/VERO-button.png);
 }
 .button-photo {
   background-image: url(/assets/images/photo-button.png);
 }
-
-.button:hover,
-.button-pdf:hover,
-.button-video:hover {
-  background-color: #fff;
-  color: #112337;
+.button-photo:hover {
+  background-image: url(/assets/images/photo-button.png);
 }
 
 .no-toggle-button, .button, .button:hover {
@@ -172,6 +197,10 @@ a:hover {
 .no-toggle-button, .button {
   color: #fff;
   background-color: #112337;
+}
+.button:hover {
+  background-color: #fff;
+  color: #112337;
 }
 
 .button-inactive {
