@@ -13,6 +13,23 @@ redirect_from:
 
 <section id="talks" class="talks-page-content centered">
 <div class="talks-page-content">
+
+  <a id="WhereIsAIHeaded" class="anchor"></a>
+  <hr/>
+  <div class="talk-description">
+    <a href="/polyglotprogramming/papers/WhereIsAIHeaded.pdf" class="image-hover-border"><img src="WhereIsAIHeaded-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
+    <div class="talk-description-text">
+      <article class="talk">
+        <h2>Where Is AI Headed?</h2>
+        <p class="talk-desc">Private Event, Chicago, July 22, 2024</p>
+        <p>This talk combines and updates the next two AI talks below, <a href="#IssuesBlockingAIAdoption">What Issues Are Blocking AI Adoption?</a> and <a href="#AI-in-the-Open">AI in the Open: Why It Matters. How to Achieve It.</a> I prepared it for a longer session at an IBM in-house event in Chicago, July 22, 2024.</p>
+      </article>
+      <div class="talk-media-buttons">
+        <a href="/polyglotprogramming/papers/WhereIsAIHeaded.pdf" class="button button-pdf">Download PDF</a>
+      </div>
+    </div>
+  </div>
+
   <a id="IssuesBlockingAIAdoption" class="anchor"></a>
   <hr/>
   <div class="talk-description">
