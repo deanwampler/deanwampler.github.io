@@ -58,15 +58,15 @@ For more information:
   </tr>
   <tr valign="top">
     <td>Maven.</td>
-    <td><a href="https://mvnrepository.com/artifact/org.contract4j5/contract4j5/0.8.0">v0.8.0</a>.</td>
+    <td><a href="https://mvnrepository.com/artifact/org.contract4j5/contract4j5/0.8.0" target="maven">v0.8.0</a>.</td>
   </tr>
   <tr valign="top">
     <td>GitHub:</td>
-    <td><a href="https://github.com/deanwampler/Contract4J5/">GitHub Repo</a>.</td>
+    <td><a href="https://github.com/deanwampler/Contract4J5/" target="c4j">GitHub Repo</a>.</td>
   </tr>
   <tr valign="top">
     <td>SourceForge:</td>
-    <td>(Old releases) <a href="https://sourceforge.net/projects/contract4j/">project</a> and <a href="https://sourceforge.net/project/showfiles.php?group_id=130191">downloads</a> pages.</td>
+    <td>(Old releases) <a href="https://sourceforge.net/projects/contract4j/" target="c4jold">project</a> and <a href="https://sourceforge.net/project/showfiles.php?group_id=130191" target="c4jold">downloads</a> pages.</td>
   </tr>
   <tr valign="top">
     <td>White&nbsp;Papers</td>
@@ -76,5 +76,5 @@ For more information:
 </center>
 <br/>
 <b>Contract4J</b> is a project of <a
-href="/aspectresearchassociates" target='ara'>Aspect Research Associates</a>.</p>
+href="/aspectresearchassociates">Aspect Research Associates</a>.</p>
 
