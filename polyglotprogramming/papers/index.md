@@ -21,7 +21,7 @@ redirect_from:
     <div class="talk-description-text">
       <article class="talk">
         <h2>Where Is AI Headed?</h2>
-        <p class="talk-desc">Private Event, Chicago, July 22, 2024</p>
+        <p class="talk-desc">Private Event, Chicago, July 22, 2024. Significant update July 25.</p>
         <p>This talk combines and updates the next two AI talks below, <a href="#IssuesBlockingAIAdoption">What Issues Are Blocking AI Adoption?</a> and <a href="#AI-in-the-Open">AI in the Open: Why It Matters. How to Achieve It.</a> I prepared it for a longer session at an IBM in-house event in Chicago, July 22, 2024.</p>
       </article>
       <div class="talk-media-buttons">
