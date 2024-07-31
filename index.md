@@ -29,14 +29,11 @@ include_photo_social: true
     <a id="WhereIsAIHeaded" class="anchor"></a>
     <h1>Where Is AI Headed?</h1>
     <p class="talk-desc">Private Event, Chicago, July 22, 2024. Significant update July 25.</p>
-    <p>This talk combines and updates the next two AI talks below, <a href="#IssuesBlockingAIAdoption">What Issues Are Blocking AI Adoption?</a> and <a href="#AI-in-the-Open">AI in the Open: Why It Matters. How to Achieve It.</a> I prepared it for a longer session at an IBM in-house event in Chicago, July 22, 2024.</p>
+    <p>This talk combines and updates the two AI talks below, <a href="#IssuesBlockingAIAdoption">What Issues Are Blocking AI Adoption?</a> and <a href="#AI-in-the-Open">AI in the Open: Why It Matters. How to Achieve It.</a> I prepared it for a longer session at an IBM in-house event in Chicago, July 22, 2024.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/WhereIsAIHeaded.pdf" class="button button-pdf" target="pdf">Download PDF</a>
     </div>
   </article>
-
-<section id="talks" class="talks centered">
-  <p class="section-title"><span>Some of My Talks</span></p>
 
   <article class="talk">
     <a id="IssuesBlockingAIAdoption" class="anchor"></a>

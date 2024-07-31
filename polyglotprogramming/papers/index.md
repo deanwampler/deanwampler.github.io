@@ -14,15 +14,31 @@ redirect_from:
 <section id="talks" class="talks-page-content centered">
 <div class="talks-page-content">
 
+  <a id="IssuesBlockingAIAdoption-DecentralizationPerspective" class="anchor"></a>
+  <hr/>
+  <div class="talk-description">
+    <a href="/polyglotprogramming/papers/IssuesBlockingAIAdoption-DecentralizationPerspective.pdf" class="image-hover-border" target="pdf"><img src="IssuesBlockingAIAdoption-DecentralizationPerspective-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
+    <div class="talk-description">
+      <article class="talk">
+        <h2>Issues Blocking AI Adoption: A Decentralization Perspective</h2>
+        <p class="talk-desc"><a href="https://rdi.berkeley.edu/events/decentralizationaisummit24" target="decent">The Summit on Responsible Decentralized Intelligence</a>, NYC, August 6, 2024 </p>
+        <p>A short talk before a panel discussion on what open means in AI and one challenge blocking AI adoption, <em>Alignment</em>. The event was <em>The Summit on Responsible Decentralized Intelligence —— Future of Decentralization and AI</em>, hosted by Berkeley RDI, which aimed to bring together researchers, innovators, thought leaders, and builders to showcase and discuss responsible innovation in decentralization and AI for a greater future for humanity.</p>
+      </article>
+      <div class="talk-media-buttons">
+        <a href="/polyglotprogramming/papers/IssuesBlockingAIAdoption-DecentralizationPerspective.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+      </div>
+    </div>
+  </div>
+  
   <a id="WhereIsAIHeaded" class="anchor"></a>
   <hr/>
   <div class="talk-description">
     <a href="/polyglotprogramming/papers/WhereIsAIHeaded.pdf" class="image-hover-border" target="pdf"><img src="WhereIsAIHeaded-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
-    <div class="talk-description-text">
+    <div class="talk-description">
       <article class="talk">
         <h2>Where Is AI Headed?</h2>
         <p class="talk-desc">Private Event, Chicago, July 22, 2024. Significant update July 25.</p>
-        <p>This talk combines and updates the next two AI talks below, <a href="#IssuesBlockingAIAdoption">What Issues Are Blocking AI Adoption?</a> and <a href="#AI-in-the-Open">AI in the Open: Why It Matters. How to Achieve It.</a> I prepared it for a longer session at an IBM in-house event in Chicago, July 22, 2024.</p>
+        <p>This talk combines and updates two AI talks below, <a href="#IssuesBlockingAIAdoption">What Issues Are Blocking AI Adoption?</a> and <a href="#AI-in-the-Open">AI in the Open: Why It Matters. How to Achieve It.</a> I prepared it for a longer session at an IBM in-house event in Chicago, July 22, 2024.</p>
       </article>
       <div class="talk-media-buttons">
         <a href="/polyglotprogramming/papers/WhereIsAIHeaded.pdf" class="button button-pdf" target="pdf">Download PDF</a>
