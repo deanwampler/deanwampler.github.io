@@ -14,6 +14,23 @@ redirect_from:
 <section id="talks" class="talks-page-content centered">
 <div class="talks-page-content">
 
+  <a id="Model-Alignment-and-Software-Engineering" class="anchor"></a>
+  <hr/>
+  <div class="talk-description">
+    <a href="/polyglotprogramming/papers/Model-Alignment-and-Software-Engineering.pdf" class="image-hover-border" target="pdf"><img src="Model-Alignment-and-Software-Engineering-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
+    <div class="talk-description">
+      <article class="talk">
+        <a id="WhereIsAIHeaded" class="anchor"></a>
+        <h1>Can We Make Model Alignment a Software Engineering Process?</h1>
+        <p class="talk-desc">The AI Conference, San Francisco, September 10, 2024</p>
+        <p>This talk explores two unique challenges for software developers that were created by Gen AI: 1) How the non-determinism of model outputs makes testing harder, and 2) Ways we can make model tuning and related refinements more incremental and iterative.</p>
+      </article>
+      <div class="talk-media-buttons">
+        <a href="/polyglotprogramming/papers/Model-Alignment-and-Software-Engineering.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+      </div>
+    </div>
+  </div>
+  
   <a id="IssuesBlockingAIAdoption-DecentralizationPerspective" class="anchor"></a>
   <hr/>
   <div class="talk-description">
