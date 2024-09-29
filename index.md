@@ -26,12 +26,13 @@ include_photo_social: true
   <p class="section-title"><span>Some of My Talks</span></p>
 
   <article class="talk">
-    <a id="WhereIsAIHeaded" class="anchor"></a>
+    <a id="Model-Alignment-and-Software-Engineering" class="anchor"></a>
     <h1>Can We Make Model Alignment a Software Engineering Process?</h1>
-    <p class="talk-desc">The AI Conference, San Francisco, September 10, 2024</p>
+    <p class="talk-desc">The AI Conference, San Francisco, September 10, 2024, Chicago Meetups, September 25 and 26, 2024</p>
     <p>This talk explores two unique challenges for software developers that were created by Gen AI: 1) How the non-determinism of model outputs makes testing harder, and 2) Ways we can make model tuning and related refinements more incremental and iterative.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/Model-Alignment-and-Software-Engineering.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+      <a href="https://youtu.be/PyA7AisE17Q?t=1828" class="button button-video no-glyph" target="youtube">Watch Meetup Video</a>
     </div>
   </article>
 
@@ -82,7 +83,7 @@ include_photo_social: true
     <p>Since I joined the Scala community roughly 15 years ago, the <a href="https://scala-lang.org" target="scala">Scala</a> community has learned a lot to make the language more robust and easier to use effectively. I've also learned lots of lessons about effective "enterprise" programming using Scala. Finally, I see warning signs for FP's future growth.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/15YearsOfScala.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-      <a href="https://www.youtube.com/watch?v=cpWc7j85inQ" class="button button-video no-glyph" target="video">Watch video</a>
+      <a href="https://www.youtube.com/watch?v=cpWc7j85inQ" class="button button-video no-glyph" target="video">Watch Video</a>
     </div>
   </article>
 

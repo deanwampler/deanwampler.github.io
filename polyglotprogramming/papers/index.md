@@ -22,11 +22,12 @@ redirect_from:
       <article class="talk">
         <a id="WhereIsAIHeaded" class="anchor"></a>
         <h1>Can We Make Model Alignment a Software Engineering Process?</h1>
-        <p class="talk-desc">The AI Conference, San Francisco, September 10, 2024</p>
+        <p class="talk-desc">The AI Conference, San Francisco, September 10, 2024, Chicago Meetups, September 25 and 26, 2024</p>
         <p>This talk explores two unique challenges for software developers that were created by Gen AI: 1) How the non-determinism of model outputs makes testing harder, and 2) Ways we can make model tuning and related refinements more incremental and iterative.</p>
       </article>
       <div class="talk-media-buttons">
         <a href="/polyglotprogramming/papers/Model-Alignment-and-Software-Engineering.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+        <a href="https://youtu.be/PyA7AisE17Q?t=1828" class="button button-video no-glyph" target="youtube">Watch Meetup Video</a>
       </div>
     </div>
   </div>
@@ -107,7 +108,7 @@ redirect_from:
       </article>
       <div class="talk-media-buttons">
         <a href="/polyglotprogramming/papers/Open-Source-Science-vs-Software.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-        <a href="https://www.youtube.com/watch?v=UFvObAiVaNI&list=PLNESult6cnOlHK5bRvdT8f2UnoyZ9TfKW&index=16" class="button button-video no-glyph" target="youtube">Watch video</a>
+        <a href="https://www.youtube.com/watch?v=UFvObAiVaNI&list=PLNESult6cnOlHK5bRvdT8f2UnoyZ9TfKW&index=16" class="button button-video no-glyph" target="youtube">Watch Video</a>
       </div>
     </div>
   </div>
@@ -156,7 +157,7 @@ redirect_from:
       </article>
       <div class="talk-media-buttons">
         <a href="/polyglotprogramming/papers/15YearsOfScala.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-        <a href="https://www.youtube.com/watch?v=cpWc7j85inQ" class="button button-video no-glyph" target="youtube">Watch video</a>
+        <a href="https://www.youtube.com/watch?v=cpWc7j85inQ" class="button button-video no-glyph" target="youtube">Watch Video</a>
       </div>
     </div>
   </div>
@@ -270,7 +271,7 @@ redirect_from:
       </article>
       <div class="talk-media-buttons">
         <a href="/polyglotprogramming/papers/ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-        <a href="https://info.lightbend.com/webinar-fast-data-executive-briefing-recording.html" class="button button-video no-glyph" target="lb">Watch video</a> (A similar webinar)
+        <a href="https://info.lightbend.com/webinar-fast-data-executive-briefing-recording.html" class="button button-video no-glyph" target="lb">Watch Video</a> (A similar webinar)
       </div>
     </div>
   </div>
@@ -287,7 +288,7 @@ redirect_from:
       </article>
       <div class="talk-media-buttons">
         <a href="/polyglotprogramming/papers/KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-        <a href="https://www.youtube.com/watch?time_continue=1&v=X3FjsYz2occ" class="button button-video no-glyph" target="youtube">Watch video</a>
+        <a href="https://www.youtube.com/watch?time_continue=1&v=X3FjsYz2occ" class="button button-video no-glyph" target="youtube">Watch Video</a>
       </div>
     </div>
   </div>
@@ -304,7 +305,7 @@ redirect_from:
       </article>
       <div class="talk-media-buttons">
         <a href="/polyglotprogramming/papers/StreamAllTheThings.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-        <a href="https://www.youtube.com/watch?v=T-RHhxptrlw&feature=youtu.be" class="button button-video no-glyph" target="youtube">Watch video</a>
+        <a href="https://www.youtube.com/watch?v=T-RHhxptrlw&feature=youtu.be" class="button button-video no-glyph" target="youtube">Watch Video</a>
       </div>
     </div>
   </div>
@@ -338,7 +339,7 @@ redirect_from:
       <div class="talk-media-buttons">
         <a href="ScalaJVMBigData-SparkLessons.pdf" class="button button-pdf" target="pdf">Download PDF</a>
         <a href="ScalaJVMBigData-SparkLessons-extended.pdf" class="button button-pdf" target="pdf">Longer Version</a>
-        <a href="https://www.youtube.com/watch?v=FC-7AAZggl8" class="button button-video no-glyph" target="youtube">Watch video</a>
+        <a href="https://www.youtube.com/watch?v=FC-7AAZggl8" class="button button-video no-glyph" target="youtube">Watch Video</a>
       </div>
     </div>
   </div>
@@ -355,7 +356,7 @@ redirect_from:
       </article>
       <div class="talk-media-buttons">
         <a href="Spark-TheNextTopComputeModel.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-        <a href="https://www.youtube.com/watch?v=R0kCmkUDdKs" class="button button-video no-glyph" target="youtube">Watch video</a>
+        <a href="https://www.youtube.com/watch?v=R0kCmkUDdKs" class="button button-video no-glyph" target="youtube">Watch Video</a>
      </div>
    </div>
  </div>
@@ -405,7 +406,7 @@ redirect_from:
       </article>
       <div class="talk-media-buttons">
         <a href="WhyScalaIsTakingOverTheBigDataWorld.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-        <a href="https://skillsmatter.com/skillscasts/5423-why-scala-is-taking-over-the-big-data-world" class="button button-video no-glyph" target="video">Watch video</a> (Scala eXchange)
+        <a href="https://skillsmatter.com/skillscasts/5423-why-scala-is-taking-over-the-big-data-world" class="button button-video no-glyph" target="video">Watch Video</a> (Scala eXchange)
       </div>
     </div>
   </div>
@@ -504,7 +505,7 @@ redirect_from:
       </article>
       <div class="talk-media-buttons">
         <a href="WhyBigDataNeedsToBeFunctional-print.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-        <a href="https://nescala.org/#t-8958946" class="button button-video no-glyph" target="nescala">Watch video</a>
+        <a href="https://nescala.org/#t-8958946" class="button button-video no-glyph" target="nescala">Watch Video</a>
       </div>
     </div>
   </div>
@@ -521,7 +522,7 @@ redirect_from:
       </article>
       <div class="talk-media-buttons">
         <a href="HeresiesAndDogmasInSoftwareDevelopment.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-        <a href="https://www.infoq.com/presentations/Heresies-and-Dogmas-in-Software-Development" class="button button-video no-glyph" target="infoq">Watch video</a>
+        <a href="https://www.infoq.com/presentations/Heresies-and-Dogmas-in-Software-Development" class="button button-video no-glyph" target="infoq">Watch Video</a>
       </div>
     </div>
   </div>
@@ -555,7 +556,7 @@ redirect_from:
       </article>
       <div class="talk-media-buttons">
         <a href="PolyglotPolyParadigm.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-        <a href="https://www.infoq.com/presentations/polyglot-polyparadigm-programming" class="button button-video no-glyph" target="infoq">Watch video</a> (Early version of this talk)
+        <a href="https://www.infoq.com/presentations/polyglot-polyparadigm-programming" class="button button-video no-glyph" target="infoq">Watch Video</a> (Early version of this talk)
       </div>
     </div>
   </div>
