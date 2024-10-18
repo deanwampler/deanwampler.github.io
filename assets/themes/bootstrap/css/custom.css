@@ -96,6 +96,10 @@ ul {
   border-color: #112337;
 }
 
+.no-link-decoration {
+  text-decoration: none;
+}
+
 .books-page-content {
   vertical-align: top;
 }
