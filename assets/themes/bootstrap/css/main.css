@@ -214,8 +214,8 @@ a:hover {
  */
 
 section {
-  margin-top:    80px;
-  margin-bottom: 80px;
+  margin-top:    20px; /* 80px; */
+  margin-bottom: 20px; /* 80px; */
   margin-left:    0px;
   margin-right:   0px;
 }
