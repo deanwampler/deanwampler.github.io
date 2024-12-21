@@ -465,7 +465,7 @@ redirect_from:
           <h2>Why Scala Is Taking Over the Big Data World</h2>
         </a>
         <p class="talk-desc"><a href="https://www.scaladays.org/#schedule/Why-Scala-is-Taking-Over-the-Big-Data-World" target="scaladays">Scala Days 2014</a>, <a href="https://skillsmatter.com/conferences/1948-scala-exchange-2014" target="skillsmatter">Scala eXchange 2014</a>, and <a href="https://datadaytexas.com/" target="ddt">Data Day Texas 2015</a></p>
-        <p><em>Scala</em> has emerged as the <em>de facto</em> language for big data development, driven in part by tools like <a href="https://github.com/twitter/scalding" target="scalding">Scalding</a> and <a href="https://spark.apache.org" target="spark">Spark</a>.</p>
+        <p><em>Scala</em> has emerged as the <em>de facto</em> language for big data development, driven in part by tools like _Scalding_ and <a href="https://spark.apache.org" target="spark">Spark</a>.</p>
       </article>
       <div class="talk-media-buttons">
         <a href="WhyScalaIsTakingOverTheBigDataWorld.pdf" class="button button-pdf" target="pdf">Download PDF</a>
