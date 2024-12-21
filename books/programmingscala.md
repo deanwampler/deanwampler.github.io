@@ -12,7 +12,7 @@ tagline:
     <a href="https://oreil.ly/programming-scala-3" target="oreilly">Programming Scala, Third Edition</a> covers Scala 3. It is a comprehensive and up-to-date introduction to <a href="https://docs.scala-lang.org/scala3/" target="scala">Scala 3</a>. It is written for experienced developers new to Scala, as well experienced Scala developers migrating to Scala 3. It was published June, 2021 by O'Reilly Media.
   </p>
   <p>
-    The <a href="https://github.com/deanwampler/programming-scala-book-code-examples" target="code">repo for the book's code examples</a> is Apache-licensed open source. If you want the examples for the second edition, focused on Scala 2, see the <a href="https://github.com/deanwampler/programming-scala-book-code-examples/releases/tag/2.1.0">v2.1.0 release tag</a>, which closely follows the organization of the second edition of the book, but it has been updated for Scala 2.12 and 2.13. The <a href="https://github.com/deanwampler/programming-scala-book-code-examples/">current <code>master</code> branch</a> only supports Scala 3.
+    The <a href="https://github.com/deanwampler/programming-scala-book-code-examples" target="code">repo for the book's code examples</a> is Apache-licensed open source. If you want the examples for the second edition, focused on Scala 2, see the <a href="https://github.com/deanwampler/programming-scala-book-code-examples/releases/tag/2.1.0">v2.1.0 release tag</a>, which closely follows the organization of the second edition of the book, but it has been updated for Scala 2.12 and 2.13. The <a href="https://github.com/deanwampler/programming-scala-book-code-examples/">current <code>main</code> branch</a> only supports Scala 3 and tracks recent updates, too.
   </p>
   <p>
     I wrote the Scala book I would want to read, which means I assumed you are an experienced developer who needs to master Scala, you already know at least one other programming language, and you know Object-Oriented Programming (OOP), but not necessarily Functional Programming (FP).
@@ -48,13 +48,12 @@ tagline:
 
   <p>To discuss the book, the code examples, etc. use one of the following forums. Bug reports (and patches!) are especially welcome:</p>
   <ul>
-    <li>The code examples <a href="https://gitter.im/deanwampler/programming-scala-book-code-examples" target="github">Gitter channel</a></li>
     <li>The GitHub repo <a href="https://github.com/deanwampler/programming-scala-book-code-examples/discussions" target="github">Discussions forum</a></li>
     <li>The GitHub repo <a href="https://github.com/deanwampler/programming-scala-book-code-examples/issues" target="github">Issues</a></li>
     <li>The <a href="https://oreil.ly/programming-scala-3" target="oreilly">O'Reilly book page</a> and the <a href="https://www.oreilly.com/catalog/errata.csp?isbn=9781492077893" target="oreilly">errata page</a></li>
-    <li>The <a href="https://twitter.com/ProgScala" target="twitter">Twitter account @ProgScala</a></li>
+    <li>Dean Wampler's <a href="https://bsky.app/profile/deanwampler.bsky.social" target="bsky">Bluesky</a>, <a href="https://discuss.systems/@deanwampler" target="mastodon">Mastodon</a>, or <a href="https://www.linkedin.com/in/deanwampler/" target="linkedin">LinkedIn</a> accounts.</li>
   </ul>
 
-  <p>If you're using Spark and you want a quick introduction to Scala aimed at Spark developers, check out my free tutorial, <a href="https://github.com/deanwampler/JustEnoughScalaForSpark" target="jess">Just Enough Scala for Spark</a>.</p>
+  <p>If you're using Spark and you want a quick introduction to Scala aimed at Spark developers, check out my free (but old...) tutorial, <a href="https://github.com/deanwampler/JustEnoughScalaForSpark" target="jess">Just Enough Scala for Spark</a>.</p>
   </div>
 </div>
