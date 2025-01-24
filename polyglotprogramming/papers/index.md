@@ -14,16 +14,13 @@ redirect_from:
   <a id="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing" class="anchor"></a>
   <hr/>
   <div class="talk-description">
-    <a href="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing.pdf" class="image-hover-border" target="pdf"><img src="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
+    <a href="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing.pdf" class="image-hover-border" target="pdf"><img src="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing-TitlePage-342x192.png" class="talk-image-thumbnail" class="talk-image"/></a><br/>
     <div class="talk-description">
       <article class="talk">
         <a id="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing2" class="anchor"></a>
         <h1>Generative AI - Should We Say Goodbye to Deterministic Testing?</h1>
         <p class="talk-desc">Functional Programming 2025, January 24, 2025.</p>
         <p>An exploration of the challenge for developers writing tests when GenAI is inherently probabilistic.</p>
-        <div class="more">
-          <a href="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-        </div>
       </article>
       <div class="talk-media-buttons">
         <a href="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing.pdf" class="button button-pdf" target="pdf">Download PDF</a>
