@@ -11,6 +11,26 @@ redirect_from:
 {% include JB/setup %}
 <section id="talks" class="talks-page-content centered">
 <div class="talks-page-content">
+  <a id="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing" class="anchor"></a>
+  <hr/>
+  <div class="talk-description">
+    <a href="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing.pdf" class="image-hover-border" target="pdf"><img src="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
+    <div class="talk-description">
+      <article class="talk">
+        <a id="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing2" class="anchor"></a>
+        <h1>Generative AI - Should We Say Goodbye to Deterministic Testing?</h1>
+        <p class="talk-desc">Functional Programming 2025, January 24, 2025.</p>
+        <p>An exploration of the challenge for developers writing tests when GenAI is inherently probabilistic.</p>
+        <div class="more">
+          <a href="/polyglotprogramming/papers/polyglotprogramming/papers/Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+        </div>
+      </article>
+      <div class="talk-media-buttons">
+        <a href="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+        <!-- <a href="https://youtu.be/PyA7AisE17Q?t=1828" class="button button-video no-glyph" target="youtube">Watch Meetup Video</a> -->
+      </div>
+    </div>
+  </div>
 
   <a id="Model-Alignment-and-Software-Engineering" class="anchor"></a>
   <hr/>
