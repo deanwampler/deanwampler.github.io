@@ -17,8 +17,9 @@ redirect_from:
     <a href="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing.pdf" class="image-hover-border" target="pdf"><img src="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing-TitlePage-342x192.png" class="talk-image-thumbnail" class="talk-image"/></a><br/>
     <div class="talk-description">
       <article class="talk">
-        <a id="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing2" class="anchor"></a>
-        <h1>Generative AI - Should We Say Goodbye to Deterministic Testing?</h1>
+        <a href="#Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing" class="no-link-decoration permalink">
+          <h2>Generative AI - Should We Say Goodbye to Deterministic Testing?</h2>
+        </a>
         <p class="talk-desc">Functional Programming 2025, January 24, 2025.</p>
         <p>An exploration of the challenge for developers writing tests when GenAI is inherently probabilistic.</p>
       </article>
@@ -35,7 +36,7 @@ redirect_from:
     <a href="Model-Alignment-and-Software-Engineering.pdf" class="image-hover-border" target="pdf"><img src="Model-Alignment-and-Software-Engineering-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
     <div class="talk-description">
       <article class="talk">
-        <a href="#Model-Alignment-and-Software-Engineering" class="no-link-decoration">
+        <a href="#Model-Alignment-and-Software-Engineering" class="no-link-decoration permalink">
           <h2>Can We Make Model Alignment a Software Engineering Process?</h2>
         </a>
         <p class="talk-desc">The AI Conference, San Francisco, September 10, 2024, Chicago Meetups, September 25 and 26, 2024</p>
@@ -54,7 +55,7 @@ redirect_from:
     <a href="State-of-AI_Less-Technical.pdf" class="image-hover-border" target="pdf"><img src="State-of-AI_Less-Technical-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
     <div class="talk-description">
       <article class="talk">
-        <a href="#State-of-AI-Less-Technical" class="no-link-decoration">
+        <a href="#State-of-AI-Less-Technical" class="no-link-decoration permalink">
           <h2>The State of AI: A Less Technical Discussion</h2>
         </a>
         <p class="talk-desc">Private industry briefing, New York City, November 7, 2024</p>
@@ -72,7 +73,7 @@ redirect_from:
     <a href="IssuesBlockingAIAdoption-DecentralizationPerspective.pdf" class="image-hover-border" target="pdf"><img src="IssuesBlockingAIAdoption-DecentralizationPerspective-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description">
       <article class="talk">
-        <a href="#IssuesBlockingAIAdoption-DecentralizationPerspective" class="no-link-decoration">
+        <a href="#IssuesBlockingAIAdoption-DecentralizationPerspective" class="no-link-decoration permalink">
           <h2>Issues Blocking AI Adoption: A Decentralization Perspective</h2>
         </a>
         <p class="talk-desc"><a href="https://rdi.berkeley.edu/events/decentralizationaisummit24" target="decent">The Summit on Responsible Decentralized Intelligence</a>, NYC, August 6, 2024 </p>
@@ -90,7 +91,7 @@ redirect_from:
     <a href="WhereIsAIHeaded.pdf" class="image-hover-border" target="pdf"><img src="WhereIsAIHeaded-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description">
       <article class="talk">
-        <a href="#WhereIsAIHeaded" class="no-link-decoration">
+        <a href="#WhereIsAIHeaded" class="no-link-decoration permalink">
           <h2>Where Is AI Headed?</h2>
         </a>
         <p class="talk-desc">Private Event, Chicago, July 22, 2024. Significant update July 25.</p>
@@ -108,7 +109,7 @@ redirect_from:
     <a href="IssuesBlockingAIAdoption.pdf" class="image-hover-border" target="pdf"><img src="IssuesBlockingAIAdoption-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#IssuesBlockingAIAdoption" class="no-link-decoration">
+        <a href="#IssuesBlockingAIAdoption" class="no-link-decoration permalink">
           <h2>What Issues Are Blocking AI Adoption?</h2>
         </a>
         <p class="talk-desc">1871 AI Innovation Summit, Chicago, June 27 2024</p>
@@ -126,7 +127,7 @@ redirect_from:
     <a href="AI-in-the-Open.pdf" class="image-hover-border" target="pdf"><img src="AI-in-the-Open-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#AI-in-the-Open" class="no-link-decoration">
+        <a href="#AI-in-the-Open" class="no-link-decoration permalink">
           <h2>AI in the Open: Why It Matters. How to Achieve It.</h2>
         </a>
         <p class="talk-desc">AI Camp, Chicago, February 2024</p>
@@ -144,7 +145,7 @@ redirect_from:
     <a href="Open-Source-Science-vs-Software.pdf" class="image-hover-border" target="pdf"><img src="Open-Source-Science-vs-Software-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#Open-Source-Science-vs-Software" class="no-link-decoration">
+        <a href="#Open-Source-Science-vs-Software" class="no-link-decoration permalink">
           <h2>Open Source: Science vs. Software. What's Different? What's the Same?</h2>
         </a>
         <p class="talk-desc">Scale by the Bay, November 2023</p>
@@ -163,7 +164,7 @@ redirect_from:
     <a href="ReinforcementLearningChatGPT.pdf" class="image-hover-border" target="pdf"><img src="ReinforcementLearningChatGPT-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#ReinforcementLearningChatGPT" class="no-link-decoration">
+        <a href="#ReinforcementLearningChatGPT" class="no-link-decoration permalink">
           <h2>Reinforcement Learning, ChatGPT, Games, and More</h2>
         </a>
         <p class="talk-desc">GOTO Chicago, May 2023, and IBM Research, October 2023</p>
@@ -181,7 +182,7 @@ redirect_from:
     <a href="ReinforcementLearningWithRayRLlibV2.pdf" class="image-hover-border" target="pdf"><img src="ReinforcementLearningWithRayRLlibV2-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#ReinforcementLearningWithRayRLlibV2" class="no-link-decoration">
+        <a href="#ReinforcementLearningWithRayRLlibV2" class="no-link-decoration permalink">
           <h2>Reinforcement Learning with Ray RLlib (V2 for Data Day Texas)</h2>
         </a>
         <p class="talk-desc">Data Day Texas, January 2023</p>
@@ -199,7 +200,7 @@ redirect_from:
     <a href="15YearsOfScala.pdf" class="image-hover-border" target="pdf"><img src="15YearsOfScala-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#15YearsOfScala" class="no-link-decoration">
+        <a href="#15YearsOfScala" class="no-link-decoration permalink">
           <h2>Lessons Learned from 15 Years of Scala in the Wild</h2>
         </a>
         <p class="talk-desc">Several Conferences, 2021-2022</p>
@@ -218,7 +219,7 @@ redirect_from:
     <a href="NextGenerationAI.pdf" class="image-hover-border" target="pdf"><img src="NextGenerationAI-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#NextGenerationAI" class="no-link-decoration">
+        <a href="#NextGenerationAI" class="no-link-decoration permalink">
           <h2>Next Generation AI: Transitioning to the Continuous, Self-Learning Enterprise</h2>
         </a>
         <p class="talk-desc">Draft, May 2021</p>
@@ -236,7 +237,7 @@ redirect_from:
     <a href="Modularity-a-Retrospective.pdf" class="image-hover-border" target="pdf"><img src="Modularity-a-Retrospective-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#Modularity-a-Retrospective" class="no-link-decoration">
+        <a href="#Modularity-a-Retrospective" class="no-link-decoration permalink">
           <h2>Modularity: A Retrospective</h2>
         </a>
         <p class="talk-desc">GOTO Chicago Nights, February 18, 2020 and Scala in the City, May 28, 2020</p>
@@ -255,7 +256,7 @@ redirect_from:
     <a href="ReinforcementLearningWithRayRLlib.pdf" class="image-hover-border" target="pdf"><img src="ReinforcementLearningWithRayRLlib-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#ReinforcementLearningWithRayRLlib" class="no-link-decoration">
+        <a href="#ReinforcementLearningWithRayRLlib" class="no-link-decoration permalink">
           <h2>Reinforcement Learning with Ray RLlib</h2>
         </a>
         <p class="talk-desc">Several Conferences, 2020-2023</p>
@@ -273,7 +274,7 @@ redirect_from:
     <a href="ClusterWideScalingOfMLWithRay.pdf" class="image-hover-border" target="pdf"><img src="ClusterWideScalingOfMLWithRay-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#ClusterWideScalingOfMLWithRay" class="no-link-decoration">
+        <a href="#ClusterWideScalingOfMLWithRay" class="no-link-decoration permalink">
           <h2>Ray - Scalability from a Laptop to a Cluster</h2>
         </a>
         <p class="talk-desc">YOW! Data, July, 2020, and CodeMesh, Nov., 2020</p>
@@ -291,7 +292,7 @@ redirect_from:
     <a href="RayForNLP.pdf" class="image-hover-border" target="pdf"><img src="RayForNLP-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#RayForNLP" class="no-link-decoration">
+        <a href="#RayForNLP" class="no-link-decoration permalink">
           <h2>Ray for Natural Language Processing</h2>
         </a>
         <p class="talk-desc">NLP Summit, October 7, 2020</p>
@@ -309,7 +310,7 @@ redirect_from:
     <a href="ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines.pdf" class="image-hover-border" target="pdf"><img src="ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines" class="no-link-decoration">
+        <a href="#ExecutiveBriefing-WhatItTakesToUseMLinFastDataPipelines" class="no-link-decoration permalink">
           <h2>Executive Briefing: What It Takes to Use ML in Fast Data Pipelines</h2>
         </a>
         <p class="talk-desc">Strata San Francisco, London, and NYC 2019</p>
@@ -327,7 +328,7 @@ redirect_from:
     <a href="ExecutiveBriefing-WhatYouNeedToKnowAboutFastData.pdf" class="image-hover-border" target="pdf"><img src="ExecutiveBriefing-WhatYouNeedToKnowAboutFastData-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#ExecutiveBriefing-WhatYouNeedToKnowAboutFastData" class="no-link-decoration">
+        <a href="#ExecutiveBriefing-WhatYouNeedToKnowAboutFastData" class="no-link-decoration permalink">
           <h2>Executive Briefing: What You Need to Know about Fast Data</h2>
         </a>
         <p class="talk-desc">Strata London and NYC 2018</p>
@@ -346,7 +347,7 @@ redirect_from:
     <a href="KafkaMicroservices-AkkaStreams-KafkaStreams.pdf" class="image-hover-border" target="pdf"><img src="KafkaMicroservices-AkkaStreams-KafkaStreams-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#KafkaMicroservices-AkkaStreams-KafkaStreams" class="no-link-decoration">
+        <a href="#KafkaMicroservices-AkkaStreams-KafkaStreams" class="no-link-decoration permalink">
           <h2>Streaming Microservices with Akka Streams and Kafka Streams</h2>
         </a>
         <p class="talk-desc">Strata San Jose and London 2018, Scala Days NYC 2018, Reactive Summit 2018, YOW! 2018</p>
@@ -365,7 +366,7 @@ redirect_from:
     <a href="StreamAllTheThings.pdf" class="image-hover-border" target="pdf"><img src="StreamAllTheThings-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#StreamAllTheThings" class="no-link-decoration">
+        <a href="#StreamAllTheThings" class="no-link-decoration permalink">
           <h2>Stream All the Things!!</h2>
         </a>
         <p class="talk-desc">Software Architecture Conference NYC 2017, Strata London and NYC 2017, Reactive Summit 2017, ScalaIO 2017, YOW! Data 2018</p>
@@ -384,7 +385,7 @@ redirect_from:
     <a href="BashAndAllThat.pdf" class="image-hover-border" target="pdf"><img src="BashAndAllThat-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#BashAndAllThat" class="no-link-decoration">
+        <a href="#BashAndAllThat" class="no-link-decoration permalink">
           <h2>Bash and All That</h2>
         </a>
         <p class="talk-desc">GOTO Chicago 2018</p>
@@ -402,7 +403,7 @@ redirect_from:
     <a href="ScalaJVMBigData-SparkLessons.pdf" class="image-hover-border" target="pdf"><img src="ScalaJVMBigData-SparkLessons-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#ScalaJVMBigData-SparkLessons" class="no-link-decoration">
+        <a href="#ScalaJVMBigData-SparkLessons" class="no-link-decoration permalink">
           <h2>Scala and the JVM for Big Data: Lessons from Spark</h2>
         </a>
         <p class="talk-desc">Strata San Jose and Singapore 2016</p>
@@ -422,7 +423,7 @@ redirect_from:
     <a href="Spark-TheNextTopComputeModel.pdf" class="image-hover-border" target="pdf"><img src="Spark-TheNextTopComputeModel-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#Spark-TheNextTopComputeModel" class="no-link-decoration">
+        <a href="#Spark-TheNextTopComputeModel" class="no-link-decoration permalink">
           <h2>Why Spark Is The Next Top (Compute) Model</h2>
         </a>
         <p class="talk-desc">Numerous Venues 2014 and 2015</p>
@@ -441,7 +442,7 @@ redirect_from:
     <a href="DataScienceAtScaleWithSpark.pdf" class="image-hover-border" target="pdf"><img src="DataScienceAtScaleWithSpark-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#DataScienceAtScaleWithSpark" class="no-link-decoration">
+        <a href="#DataScienceAtScaleWithSpark" class="no-link-decoration permalink">
           <h2>Data Science at Scale with Spark</h2>
         </a>
         <p class="talk-desc">GOTO Chicago 2015</p>
@@ -459,7 +460,7 @@ redirect_from:
     <a href="UnreasonableEffectivenessOfScalaForBigData.pdf" class="image-hover-border" target="pdf"><img src="UnreasonableEffectivenessOfScalaForBigData-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#UnreasonableEffectivenessOfScalaForBigData" class="no-link-decoration">
+        <a href="#UnreasonableEffectivenessOfScalaForBigData" class="no-link-decoration permalink">
           <h2>The Unreasonable Effectiveness of Scala for Big Data</h2>
         </a>
         <p class="talk-desc"><a href="https://event.scaladays.org/scaladays-sanfran-2015#!#schedulePopupExtras-6536" target="scala_days">Scala Days 2015</a>.</p>
@@ -478,7 +479,7 @@ redirect_from:
     <a href="WhyScalaIsTakingOverTheBigDataWorld.pdf" class="image-hover-border" target="pdf"><img src="WhyScalaIsTakingOverTheBigDataWorld-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#WhyScalaIsTakingOverTheBigDataWorld" class="no-link-decoration">
+        <a href="#WhyScalaIsTakingOverTheBigDataWorld" class="no-link-decoration permalink">
           <h2>Why Scala Is Taking Over the Big Data World</h2>
         </a>
         <p class="talk-desc"><a href="https://www.scaladays.org/#schedule/Why-Scala-is-Taking-Over-the-Big-Data-World" target="scaladays">Scala Days 2014</a>, <a href="https://skillsmatter.com/conferences/1948-scala-exchange-2014" target="skillsmatter">Scala eXchange 2014</a>, and <a href="https://datadaytexas.com/" target="ddt">Data Day Texas 2015</a></p>
@@ -497,7 +498,7 @@ redirect_from:
     <a href="Cats.pdf" class="image-hover-border" target="pdf"><img src="Cats-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#cats" class="no-link-decoration">
+        <a href="#cats" class="no-link-decoration permalink">
           <h2>The Internet Was Made for Cats</h2>
         </a>
         <p class="talk-desc"><a href="https://www.meetup.com/chicagoscala/events/226860360/" target="meetup">Chicago Scala Users Group, Jan 2016</a></p>
@@ -515,7 +516,7 @@ redirect_from:
     <a href="CopiousData_TheKillerAppForFP.pdf" class="image-hover-border" target="pdf"><img src="CopiousData_TheKillerAppForFP-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#CopiousData_TheKillerAppForFP" class="no-link-decoration">
+        <a href="#CopiousData_TheKillerAppForFP" class="no-link-decoration permalink">
           <h2>Copious Data, the Killer App for Functional Programming</h2>
         </a>
         <p class="talk-desc"><a href="https://lambdajam.com/" target="lambdajam">LambdaJam Chicago</a>, others</p>
@@ -535,7 +536,7 @@ redirect_from:
     <a href="SQLStrikesBack.pdf" class="image-hover-border" target="pdf"><img src="SQLStrikesBack-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#SQLStrikesBack" class="no-link-decoration">
+        <a href="#SQLStrikesBack" class="no-link-decoration permalink">
           <h2>SQL Strikes Back! Recent Trends in Data Persistence and Analysis</h2>
         </a>
         <p class="talk-desc"><a href="https://codemesh.io" target="codemesh">CodeMesh London 2014</a></p>
@@ -553,7 +554,7 @@ redirect_from:
     <a href="SeductionsOfScala.pdf" class="image-hover-border" target="pdf"><img src="SeductionsOfScala-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#SeductionsOfScala" class="no-link-decoration">
+        <a href="#SeductionsOfScala" class="no-link-decoration permalink">
           <h2>The Seductions of Scala</h2>
         </a>
         <p class="talk-desc">Various Venues</p>
@@ -571,7 +572,7 @@ redirect_from:
     <a href="MapReduceAndItsDiscontents.pdf" class="image-hover-border" target="pdf"><img src="MapReduceAndItsDiscontents-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#MapReduceAndItsDiscontents" class="no-link-decoration">
+        <a href="#MapReduceAndItsDiscontents" class="no-link-decoration permalink">
           <h2>MapReduce and Its Discontents</h2>
         </a>
         <p class="talk-desc">QCon NYC 2012, and <a href="https://www.bigdatatechcon.com/boston2013/" target="bdtb">Big Data Techcon Boston 2013</a></p>
@@ -589,7 +590,7 @@ redirect_from:
     <a href="WhyBigDataNeedsToBeFunctional-print.pdf" class="image-hover-border" target="pdf"><img src="WhyBigDataNeedsToBeFunctional-print-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#WhyBigDataNeedsToBeFunctional" class="no-link-decoration">
+        <a href="#WhyBigDataNeedsToBeFunctional" class="no-link-decoration permalink">
           <h2>Why Big Data Needs to Be Functional</h2>
         </a>
         <p class="talk-desc">NE Scala Symposium 2011</p>
@@ -608,7 +609,7 @@ redirect_from:
     <a href="HeresiesAndDogmasInSoftwareDevelopment.pdf" class="image-hover-border" target="pdf"><img src="HeresiesAndDogmasInSoftwareDevelopment-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#Heresies-and-Dogmas-in-Software-Development" class="no-link-decoration">
+        <a href="#Heresies-and-Dogmas-in-Software-Development" class="no-link-decoration permalink">
           <h2>Heresies and Dogmas in Software Development</h2>
         </a>
         <p class="talk-desc"><a href="https://thestrangeloop.com" target="strange">Strange Loop 2011</a></p>
@@ -627,7 +628,7 @@ redirect_from:
     <a href="BetterProgrammingThroughFP.pdf" class="image-hover-border" target="pdf"><img src="BetterProgrammingThroughFP-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#HowFPChangesDevPractices" class="no-link-decoration">
+        <a href="#HowFPChangesDevPractices" class="no-link-decoration permalink">
           <h2>Better Programming Through Functional Programming</h2>
         </a>
         <p class="talk-desc"></p>
@@ -646,7 +647,7 @@ redirect_from:
     <a href="PolyglotPolyParadigm.pdf" class="image-hover-border" target="pdf"><img src="PolyglotPolyParadigm-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#polyglot-polyparadigm-programming" class="no-link-decoration">
+        <a href="#polyglot-polyparadigm-programming" class="no-link-decoration permalink">
           <h2>Polyglot and Poly-paradigm Programming</h2>
         </a>
         <p class="talk-desc">QCon San Francicso 2008</p>
@@ -665,7 +666,7 @@ redirect_from:
     <a href="Hive-SQLforHadoop.pdf" class="image-hover-border" target="pdf"><img src="Hive-SQLforHadoop-TitlePage-256x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a>
     <div class="talk-description-text">
       <article class="talk">
-        <a href="#Hive-SQLforHadoop" class="no-link-decoration">
+        <a href="#Hive-SQLforHadoop" class="no-link-decoration permalink">
           <h2>Hive - SQL for Hadoop</h2>
         </a>
         <p class="talk-desc">Chicago Hadoop Users Group</p>
