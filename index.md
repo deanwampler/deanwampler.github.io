@@ -42,6 +42,7 @@ include_photo_social: true
     <p>This talk explores two unique challenges for software developers that were created by Gen AI: 1) How the non-determinism of model outputs makes testing harder, and 2) Ways we can make model tuning and related refinements more incremental and iterative.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/Model-Alignment-and-Software-Engineering.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+      <a href="https://www.youtube.com/watch?v=DFCgpnKUmm4" class="button button-video no-glyph" target="youtube">Watch AI Conference 2024 Video</a>
       <a href="https://youtu.be/PyA7AisE17Q?t=1828" class="button button-video no-glyph" target="youtube">Watch Meetup Video</a>
     </div>
   </article>

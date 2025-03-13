@@ -44,6 +44,7 @@ redirect_from:
       </article>
       <div class="talk-media-buttons">
         <a href="Model-Alignment-and-Software-Engineering.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+        <a href="https://www.youtube.com/watch?v=DFCgpnKUmm4" class="button button-video no-glyph" target="youtube">Watch AI Conference 2024 Video</a>
         <a href="https://youtu.be/PyA7AisE17Q?t=1828" class="button button-video no-glyph" target="youtube">Watch Meetup Video</a>
       </div>
     </div>
