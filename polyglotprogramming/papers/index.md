@@ -30,6 +30,24 @@ redirect_from:
     </div>
   </div>
 
+  <a id="Agents-and-MCP_The-AI-Alliance-Projects" class="anchor"></a>
+  <hr/>
+  <div class="talk-description">
+    <a href="Agents-and-MCP_The-AI-Alliance-Projects.pdf" class="image-hover-border" target="pdf"><img src="Agents-and-MCP_The-AI-Alliance-Projects-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
+    <div class="talk-description">
+      <article class="talk">
+        <a href="#Agents-and-MCP_The-AI-Alliance-Projects" class="no-link-decoration permalink">
+          <h2>Agents and MCP: The AI Alliance Projects</h2>
+        </a>
+        <p class="talk-desc">IBM TechXchange 2025, October, 2025.</p>
+        <p>Work in IBM and the AI Alliance to promote effective and safe use of MCP and Agents.</p>
+      </article>
+      <div class="talk-media-buttons">
+        <a href="Agents-and-MCP_The-AI-Alliance-Projects.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+      </div>
+    </div>
+  </div>
+
   <a id="Model-Alignment-and-Software-Engineering" class="anchor"></a>
   <hr/>
   <div class="talk-description">

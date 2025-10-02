@@ -36,6 +36,17 @@ include_photo_social: true
   </article>
 
   <article class="talk">
+    <a href="#Agents-and-MCP_The-AI-Alliance-Projects" class="no-link-decoration permalink">
+      <h2>Agents and MCP: The AI Alliance Projects</h2>
+    </a>
+    <p class="talk-desc">IBM TechXchange 2025, October, 2025.</p>
+    <p>Work in IBM and the AI Alliance to promote effective and safe use of MCP and Agents.</p>
+  </article>
+  <div class="talk-media-buttons">
+    <a href="Agents-and-MCP_The-AI-Alliance-Projects.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+  </div>
+
+  <article class="talk">
     <a id="Model-Alignment-and-Software-Engineering" class="anchor"></a>
     <h1>Can We Make Model Alignment a Software Engineering Process?</h1>
     <p class="talk-desc">The AI Conference, San Francisco, September 10, 2024, Chicago Meetups, September 25 and 26, 2024</p>
