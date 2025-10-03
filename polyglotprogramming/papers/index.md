@@ -30,20 +30,20 @@ redirect_from:
     </div>
   </div>
 
-  <a id="Agents-and-MCP_The-AI-Alliance-Projects" class="anchor"></a>
+  <a id="MCP-and-Agents_OSS-Foundations-for-Agent-Trust-Safety-and-Scale" class="anchor"></a>
   <hr/>
   <div class="talk-description">
-    <a href="Agents-and-MCP_The-AI-Alliance-Projects.pdf" class="image-hover-border" target="pdf"><img src="Agents-and-MCP_The-AI-Alliance-Projects-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
+    <a href="MCP-and-Agents_OSS-Foundations-for-Agent-Trust-Safety-and-Scale.pdf" class="image-hover-border" target="pdf"><img src="MCP-and-Agents_OSS-Foundations-for-Agent-Trust-Safety-and-Scale-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
     <div class="talk-description">
       <article class="talk">
-        <a href="#Agents-and-MCP_The-AI-Alliance-Projects" class="no-link-decoration permalink">
-          <h2>Agents and MCP: The AI Alliance Projects</h2>
+        <a href="#MCP-and-Agents_OSS-Foundations-for-Agent-Trust-Safety-and-Scale" class="no-link-decoration permalink">
+          <h2>MCP and Agents: OSS Foundations for Agent Trust, Safety, and Scale</h2>
         </a>
         <p class="talk-desc">IBM TechXchange 2025, October, 2025.</p>
-        <p>Work in IBM and the AI Alliance to promote effective and safe use of MCP and Agents.</p>
+        <p>Work with colleagues in IBM and the AI Alliance to promote effective and safe use of MCP and Agents.</p>
       </article>
       <div class="talk-media-buttons">
-        <a href="Agents-and-MCP_The-AI-Alliance-Projects.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+        <a href="MCP-and-Agents_OSS-Foundations-for-Agent-Trust-Safety-and-Scale.pdf" class="button button-pdf" target="pdf">Download PDF</a>
       </div>
     </div>
   </div>
