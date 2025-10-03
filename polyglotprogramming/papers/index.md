@@ -29,7 +29,8 @@ redirect_from:
       </div>
     </div>
   </div>
-
+  
+  <!--
   <a id="MCP-and-Agents_OSS-Foundations-for-Agent-Trust-Safety-and-Scale" class="anchor"></a>
   <hr/>
   <div class="talk-description">
@@ -47,6 +48,7 @@ redirect_from:
       </div>
     </div>
   </div>
+  -->
 
   <a id="Model-Alignment-and-Software-Engineering" class="anchor"></a>
   <hr/>
