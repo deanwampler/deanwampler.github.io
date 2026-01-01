@@ -89,7 +89,7 @@ nav a:hover {
 
 a {
   color: #592b48; /* #34192a; #342f16; #26517f; */
-  text-decoration: none;
+  text-decoration: underline; 
   display: inline-block;
 }
 a:hover {
@@ -162,6 +162,12 @@ a:hover {
 .button-flickr:hover {
   background-image: url(/assets/images/Flickr-button.png);
 }
+.button-insta {
+  background-image: url(/assets/images/Insta-button.png);
+}
+.button-insta:hover {
+  background-image: url(/assets/images/Insta-button.png);
+}
 .button-glass {
   background-image: url(/assets/images/Glass-button.png);
 }
@@ -174,6 +180,12 @@ a:hover {
 .button-vero:hover {
   background-image: url(/assets/images/VERO-dark-button.png);
 }
+.button-dark-vero {
+  background-image: url(/assets/images/VERO-dark-button.png);
+}
+.button-dark-vero:hover {
+  background-image: url(/assets/images/VERO-light-button.png);
+}
 .button-photo {
   background-image: url(/assets/images/photo-light-button.png);
 }
@@ -181,7 +193,7 @@ a:hover {
   background-image: url(/assets/images/photo-dark-button.png);
 }
 
-.no-toggle-button, .button, .button:hover {
+.no-toggle-button, .button, .button:hover, .button-light, .button-light:hover {
   display: inline-block;
   padding: 0 15px 0 35px;
   margin: 0 5px;
@@ -201,6 +213,23 @@ a:hover {
 .button:hover {
   background-color: #fff;
   color: #112337;
+}
+
+.button-link, .button-link:hover {
+  display: inline-block;
+  padding: 0 15px 0 35px;
+  margin: 0 5px;
+  height: 30px;
+  line-height: 31px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 5px 5px;
+  text-decoration: none;
+/*
+  color: #fff;
+  background-color: #2C2C2C;
+  border-radius: 20px; 
+*/
 }
 
 .button-inactive {

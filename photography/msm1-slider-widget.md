@@ -95,7 +95,7 @@ opaque_background: true
 }
 </style>
 
-This widget compares a single exposure vs. 10 exposures stacked together. All exposures were taken with the Sony A7RIV and the Sony 24mm F1.4 GM lens, F1.4, 15 seconds, ISO 800. The stacked image was created using [Starry Sky Stacker](https://sites.google.com/site/starryskystacker/home). My camera was mounted on a [Move Shoot Move Star Tracker](https://www.moveshootmove.com/collections/sifo-rotator/products/sifo-rotator-for-star-tracking-time-lapse-panorama-photography).
+This widget compares a single exposure vs. 10 exposures stacked together. All exposures were taken with the Sony A7RIV and the Sony 24mm F1.4 GM lens, F1.4, 15 seconds, ISO 800. The stacked image was created using [Starry Sky Stacker](https://sites.google.com/site/starryskystacker/home). My camera was mounted on a [Move Shoot Move Star Tracker](https://www.moveshootmove.com/collections/sifo-rotator/products/sifo-rotator-for-star-tracking-time-lapse-panorama-photography). (I now use the newer <a href="https://www.moveshootmove.com/products/nomad-star-tracker-for-novice-and-experienced-astrophotographers" target="msm">Move Shoot Move NOMAD</a> tracker, which is a much better device. I'll have more to say about it soon!)
 
 See my [Medium blog post for more details](https://medium.com/the-backpacking-photographer/move-shoot-move-for-astrophotography-f740bb4a49dc).
 
