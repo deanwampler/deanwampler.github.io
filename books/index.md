@@ -82,7 +82,7 @@ tagline: Books and Reports written or co-written by Dean Wampler
   </div>
 
   <div class="book-description">
-    <a href="https://www.oreilly.com/library/view/97-things-every/9781492062400/" class="book-image-thumbnail" target="_97"><img src="/assets/images/97-data-engineer.jpg" alt="97 Things" class="book-image-thumbnail"/></a>
+    <a href="https://www.oreilly.com/library/view/97-things-every/9781492062400/" class="image-hover-border no-glyph" target="_97"><img src="/assets/images/97-data-engineer.jpg" alt="97 Things" class="book-image-thumbnail"/></a>
     <div class="book-description-text">
       <p>
         <a href="https://www.oreilly.com/library/view/97-things-every/9781492062400/" target="_97">97 Things Every Data Engineer Should Know</a> is a collection of essays on concepts that <em>data engineers</em> should know and use in building data-centric ecosystems and applications.
@@ -91,7 +91,7 @@ tagline: Books and Reports written or co-written by Dean Wampler
   </div>
 
   <div class="book-description">
-    <a href="https://www.oreilly.com/library/view/97-things-every/9781491952689/" class="book-image-thumbnail" target="_97"><img src="/assets/images/97-java-programmer.jpg" alt="97 Things" class="book-image-thumbnail"/></a>
+    <a href="https://www.oreilly.com/library/view/97-things-every/9781491952689/" class="image-hover-border no-glyph" target="_97"><img src="/assets/images/97-java-programmer.jpg" alt="97 Things" class="book-image-thumbnail"/></a>
     <div class="book-description-text">
       <p>
         <a href="https://www.oreilly.com/library/view/97-things-every/9781491952689/" target="_97">97 Things Every Java Programmer Should Know</a> is a collection of essays for <em>Java developers</em>.
@@ -100,10 +100,10 @@ tagline: Books and Reports written or co-written by Dean Wampler
   </div>
 
   <div class="book-description">
-    <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882" class="book-image-thumbnail" target="clean"><img src="/assets/images/clean-code.jpg" alt="Clean Code book" class="book-image-thumbnail"/></a>
+    <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882" class="image-hover-border no-glyph" target="clean"><img src="/assets/images/clean-code.jpg" alt="Clean Code book" class="book-image-thumbnail"/></a>
     <div class="book-description-text">
       <p>
-        <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882" target="clean">Clean Code, A Handbook of Agile Software Craftsmanship</a>.
+        <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882" target="clean">Clean Code, A Handbook of Agile Software Craftsmanship</a> is a classic software engineering text on developing software that is robust and easy to evolve as time goes on.
       </p>
     </div>
   </div>
