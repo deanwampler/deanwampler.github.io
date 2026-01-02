@@ -6,5 +6,8 @@ group: navigation
 ---
 {% include JB/setup %}
 
-{% assign pages_list = site.pages %}
+{% assign pages_list = site.pages | sort: "title" %}
+
+Here are all the pages on this site. Some are relatively obsolete, so there aren't links to them from the other pages.
+
 {% include JB/pages_list %}

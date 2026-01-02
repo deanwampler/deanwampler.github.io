@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dean Wampler, Ph.D.
-tagline: <span class="tagline"><a href="https://thealliance.ai" target="ai">The AI Alliance</a> and <a href="https://research.ibm.com/" target="ibm">IBM Research</a>.<br/>Industry expert in AI/ML engineering, streaming data, and Scala.<br/><a href="/books">Author</a>, <a href="/talks">public speaker</a>, and <a href="/photography/">photographer</a>.</span>
+tagline: <span class="tagline"><a href="https://thealliance.ai" target="ai">The AI Alliance</a> and <a href="https://research.ibm.com/" target="ibm">IBM Research</a>.<br/>Industry expert in AI/ML engineering, streaming data, and Scala.<br/><a href="/books">Author</a>, <a href="/talks/">public speaker</a>, and <a href="/photography/">photographer</a>.</span>
 
 include_social: true
 include_photo_social: true

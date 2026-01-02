@@ -23,10 +23,12 @@ This website's <a href="https://www.flickr.com/photos/deanwampler/15905693911/in
 
 Find my photos at these websites:
 
-* <a href="https://www.flickr.com/photos/deanwampler/" class="button-link button-flickr" target="_flickr">Flickr</a>
-* <a href="https://www.instagram.com/deanwamplerphoto/" class="button-link button-insta" target="_insta">Instagram</a>
-* <a href="https://glass.photo/bucktrends" class="button-link button-glass" target="_glass">Glass</a>
-* <a href="https://vero.co/bucktrends/" class="button-link button-dark-vero" target="_vero">Vero</a>
+| **Name** | **Description** |
+| :--- | :---------- |
+| [**Flickr**](https://www.flickr.com/photos/deanwampler/){:target="_flickr" .button-link .button-flickr} | Where most of my photographs over the last 20 years have been published. |
+| [**Instagram**](https://www.instagram.com/deanwamplerphoto/){:target="_insta" .button-link .button-insta} | A collection of my best images from the last several years. |
+| [**Glass**](https://glass.photo/bucktrends){:target="_glass" .button-link .button-glass} | A newer alternative to Instagram that I have been a member of for several years. |
+| [**Vero**](https://vero.co/bucktrends/){:target="_vero" .button-link .button-dark-vero} | Another, newer alternative to Instagram that I have been a member of for several years. |
 
 Occasionally, I post to <a href="https://medium.com/the-backpacking-photographer" target="_blog">my blog on photography and lightweight backpacking</a>.
 

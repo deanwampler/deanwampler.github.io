@@ -71,9 +71,9 @@ nav {
   font-weight: 500;
   text-transform: uppercase;
 }
-nav a {
+nav a, nav a:visited {
   color: #fff;
-  text-decoration: none;
+  text-decoration: none !important;
   display: inline-block;
   padding: 3px 10px;
   border-radius: 20px;
@@ -169,6 +169,53 @@ section {
  * BUTTONS
  */
 
+
+.button, .button:hover, .button-link, .button-link:hover {
+  display: inline-block;
+  padding: 0 15px 0 35px;
+  margin: 0 5px;
+  height: 30px;
+  line-height: 31px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 5px 5px;
+  text-decoration: none;
+}
+
+.button {
+  color: #fff;
+  background-color: #112337;
+}
+.button:hover {
+  color: #112337;
+  background-color: #fff;
+}
+.button a a:visited {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+/* For button-links, use the parent colors */
+.button-link {
+  /*color: #fff;*/
+  /*background-color: #2C2C2C;*/
+}
+.button-link:hover {
+  /*color: #2C2C2C;*/
+  /*background-color: #fff;*/
+}
+.button-link a a:visited {
+  color: #2C2C2C !important;
+  text-decoration: none !important;
+}
+
+.button-inactive {
+  opacity: 0.75;
+  filter: alpha(opacity=75); /* For IE8 and earlier */
+}
+
+
 .button-pdf {
   background-image: url(/assets/images/PDF-light-button.png);
 }
@@ -205,11 +252,6 @@ section {
 .button-google-scholar:hover {
   background-image: url(/assets/images/Google-Scholar-button.png);
 }
-/*
-.button-twitter {
-  background-image: url(/assets/images/Twitter-button.png);
-}
-*/
 .button-bluesky {
   background-image: url(/assets/images/Bluesky-button.png);
 }
@@ -257,49 +299,5 @@ section {
 }
 .button-photo:hover {
   background-image: url(/assets/images/photo-dark-button.png);
-}
-
-.no-toggle-button, .button, .button:hover, .button-light, .button-light:hover {
-  display: inline-block;
-  padding: 0 15px 0 35px;
-  margin: 0 5px;
-  height: 30px;
-  line-height: 31px;
-  border-radius: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  background-position: 5px 5px;
-  text-decoration: none;
-}
-
-.no-toggle-button, .button {
-  color: #fff;
-  background-color: #112337;
-}
-.button:hover {
-  background-color: #fff;
-  color: #112337;
-}
-
-.button-link, .button-link:hover {
-  display: inline-block;
-  padding: 0 15px 0 35px;
-  margin: 0 5px;
-  height: 30px;
-  line-height: 31px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  background-position: 5px 5px;
-  text-decoration: none;
-/*
-  color: #fff;
-  background-color: #2C2C2C;
-  border-radius: 20px; 
-*/
-}
-
-.button-inactive {
-  opacity: 0.75;
-  filter: alpha(opacity=75); /* For IE8 and earlier */
 }
 
