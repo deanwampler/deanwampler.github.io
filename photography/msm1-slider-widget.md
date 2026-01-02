@@ -4,7 +4,7 @@ style: no-image
 title: Astrophotography with the MSM Star Tracker
 tagline:
 include_photo_social: true
-opaque_background: true
+opaque_background: false
 ---
 
 <style>
