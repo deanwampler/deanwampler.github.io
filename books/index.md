@@ -2,6 +2,7 @@
 layout: page
 title: Books and Reports
 tagline: Books and Reports written or co-written by Dean Wampler
+include_social: true
 ---
 {% include JB/setup %}
 <div class="books-page-content">

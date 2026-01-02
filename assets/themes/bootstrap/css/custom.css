@@ -9,13 +9,19 @@
 .center {justify-content: center; align-items: center}
 .top {align-items: flex-start}
 .flex {flex: 1}
+
+/* 
+ Don't use opaque or partially-transparent, because they affect they
+ affect the child elements, even though the property isn't inherited.
+ Use content-color and content-color-partially-transparent instead.
+*/
 .opaque {
   opacity: 1.0;
   filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 .partially-transparent {
-  opacity: 0.75;
-  filter: alpha(opacity=75); /* For IE8 and earlier */
+  opacity: 0.50;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 /*
@@ -69,7 +75,10 @@ ul {
 }
 
 .content-color {
-  background-color: #e2d3c4; /* rgb(226 211 196 / 100%); #fde3ce; */
+  background-color: rgb(226 211 196 / 100%); /* #e2d3c4; #fde3ce; */
+}
+.content-color-partially-transparent {
+  background-color: rgb(226 211 196 / 80%); 
 }
 .content-color-2 {
   background-color: #cab6a5; /* rgb(253 227 206 / 100%); #fde3ce; */

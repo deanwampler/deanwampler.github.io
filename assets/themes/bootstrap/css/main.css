@@ -11,6 +11,7 @@
 body {
   /*color: #9B9B9B;*/
   font-family: "Trebuchet MS", "Verdana", serif;
+  font-size: medium;
 }
 
 footer {
@@ -114,12 +115,12 @@ section {
   position: relative;
   top: -12px;
   padding: 0 10px;
-  background: #fff;
+  background: #ccc;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 900;
   font-size: large;
   text-transform: uppercase;
-  color: #CECECE;
+  color: #222; /* #CECECE; */
 }
 
 

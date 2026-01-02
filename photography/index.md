@@ -4,7 +4,7 @@ style: no-image
 title: Photography
 tagline: Landscape | Timelapse | Macro | Product
 include_photo_social: true
-opaque_background: true
+opaque_background: false
 ---
 
 My passion is landscapes, including time lapses, astrophotography, and macrophotography. I occasionally dabble in product photography, too. Send inquiries via <a href="mailto:info@deanwampler.photo">email</a> or message me on one of the apps below.

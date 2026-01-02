@@ -6,7 +6,12 @@
 
   {% if page.include_social %}
   <div class="about-social">
+    {% comment %}
+    Only show the "Tech:" label if we are also showing the photo social buttons.
+    {% endcomment %}
+    {% if page.include_photo_social %} 
     Tech:
+    {% endif %}
     <a href="{{site.author['linkedin_link']}}" class="button button-linkedin no-glyph" target="_linkedin">LinkedIn</a>
     <a href="resume.pdf" class="button button-pdf no-glyph" target="_resume">Resum&eacute;</a>
     <a href="{{site.author['github_link']}}" class="button button-github no-glyph" target="_github">{{site.author['github']}}</a>
@@ -24,7 +29,12 @@
 
   {% if page.include_photo_social %}
   <div class="about-social">
+    {% comment %}
+    Only show the "Photography:" label if we are also showing the other social buttons.
+    {% endcomment %}
+    {% if page.include_social %}
     Photography:
+    {% endif %}
     <a href="https://www.flickr.com/photos/deanwampler/" class="button button-flickr no-glyph" target="_flickr">Flickr</a>
     <a href="https://www.instagram.com/deanwamplerphoto/" class="button button-insta no-glyph" target="_insta">Instagram</a>
     <a href="https://glass.photo/bucktrends" class="button button-glass no-glyph" target="_glass">Glass</a>

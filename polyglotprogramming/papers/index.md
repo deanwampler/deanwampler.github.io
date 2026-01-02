@@ -7,6 +7,7 @@ redirect_from:
   - /aspectprogramming/papers/
   - /concurrentthought/papers/
   - /papers/
+include_social: true
 ---
 {% include JB/setup %}
 <section id="talks" class="talks-page-content centered">

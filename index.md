@@ -17,6 +17,7 @@ include_photo_social: true
     <a href="books/hardware-software-process.html" class="image-hover-border"><img src="/assets/images/HardwareSoftwareProcess-256x337.png" alt="Hardware > Software > Process" class="book-image-thumbnail"/></a>
     <a href="books/fpjava.html" class="image-hover-border"><img src="/assets/images/FPforJavaDevsCover_256x337.png" class="book-image-thumbnail"/></a>
     <a href="books/programminghive.html" class="image-hover-border"><img src="/assets/images/prog_hive_mech_cover_front_252x331.png" class="book-image-thumbnail"/></a>
+    <strong>...</strong>
   </div>
   <p class="talk"><a href="/scala3-highlights.html">Scala 3 highlights</a>.</p>
   <p class="talk"><a href="/books">More information</a> on my books and reports.</p>
