@@ -6,7 +6,7 @@ tagline:
 ---
 {% include JB/setup %}
 <div class="book-description">
-  <a href="https://shop.oreilly.com/product/0636920021667.do" target="fpjava" class="image-hover-border"><img src="/assets/images/FPforJavaDevsCover_256x337.png" alt="Functional Programming for Java Developers: A Short Introduction" class="book-image"/></a>
+  <a href="https://shop.oreilly.com/product/0636920021667.do" target="fpjava" class="image-hover-border no-glyph"><img src="/assets/images/FPforJavaDevsCover_256x337.png" alt="Functional Programming for Java Developers: A Short Introduction" class="book-image"/></a>
 
   <div class="book-description-text">
   <p>

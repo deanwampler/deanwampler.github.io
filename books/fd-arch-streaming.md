@@ -6,7 +6,7 @@ tagline:
 ---
 {% include JB/setup %}
 <div class="book-description">
-  <a href="https://www.lightbend.com/ebooks/fast-data-architectures-for-streaming-applications-oreilly-2nd-edition" target="book" class="image-hover-border"><img src="/assets/images/FastDataArch-StreamingApps-2ndEd-256x337.png" alt="Fast Data Architectures for Streaming Applications, Second Edition" class="book-image"/></a>
+  <a href="https://www.lightbend.com/ebooks/fast-data-architectures-for-streaming-applications-oreilly-2nd-edition" target="book" class="image-hover-border no-glyph"><img src="/assets/images/FastDataArch-StreamingApps-2ndEd-256x337.png" alt="Fast Data Architectures for Streaming Applications, Second Edition" class="book-image"/></a>
   <div class="book-description-text">
   <p>
     <a href="https://www.lightbend.com/ebooks/fast-data-architectures-for-streaming-applications-oreilly-2nd-edition" target="book">Fast Data Architectures for Streaming Applications, Second Edition</a> is a free report co-published by <a href="https://lightbend.com" target="lightbend">Lightbend</a> and <a href="https://oreilly.com" target="window">O'Reilly</a> on the architectural characteristics of highly available, resilient, scalable, and responsive systems for data stream processing at scale. Originally published in October, 2016, the second edition was published in October, 2018.

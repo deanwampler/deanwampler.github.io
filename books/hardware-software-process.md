@@ -6,7 +6,7 @@ tagline:
 ---
 {% include JB/setup %}
 <div class="book-description">
-  <a href="https://www.nvidia.com/en-us/ai-data-science/resources/hardware-software-process-book/" target="nvidia" class="image-hover-border"><img src="/assets/images/HardwareSoftwareProcess-256x337.png" alt="Hardware > Software > Process" class="book-image"/></a>
+  <a href="https://www.nvidia.com/en-us/ai-data-science/resources/hardware-software-process-book/" target="nvidia" class="image-hover-border no-glyph"><img src="/assets/images/HardwareSoftwareProcess-256x337.png" alt="Hardware > Software > Process" class="book-image"/></a>
 
   <div class="book-description-text">
   <p>

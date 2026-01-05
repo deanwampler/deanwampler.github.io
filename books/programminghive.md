@@ -6,7 +6,7 @@ tagline:
 ---
 {% include JB/setup %}
 <div class="book-description">
-  <a href="https://shop.oreilly.com/product/0636920023555.do" target="book" class="image-hover-border"><img src="/assets/images/prog_hive_mech_cover_front_252x331.png" alt="Programming Hive" class="book-image"/></a>
+  <a href="https://shop.oreilly.com/product/0636920023555.do" target="book" class="image-hover-border no-glyph"><img src="/assets/images/prog_hive_mech_cover_front_252x331.png" alt="Programming Hive" class="book-image"/></a>
 
   <div class="book-description-text">
   <p>

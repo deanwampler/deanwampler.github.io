@@ -6,7 +6,7 @@ tagline:
 ---
 {% include JB/setup %}
 <div class="book-description">
-  <a href="https://learning.oreilly.com/library/view/what-is-ray/9781492085768/" target="oreilly" class="image-hover-border"><img src="/assets/images/WhatIsRay.jpg" alt="What Is Ray?" class="book-image"/></a>
+  <a href="https://learning.oreilly.com/library/view/what-is-ray/9781492085768/" target="oreilly" class="image-hover-border no-glyph"><img src="/assets/images/WhatIsRay.jpg" alt="What Is Ray?" class="book-image"/></a>
 
   <div class="book-description-text">
   <p>
