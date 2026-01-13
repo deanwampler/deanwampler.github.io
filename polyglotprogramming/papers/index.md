@@ -34,7 +34,7 @@ include_social: true
   <a id="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing" class="anchor"></a>
   <hr/>
   <div class="talk-description">
-    <a href="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing.pdf" class="image-hover-border" target="pdf"><img src="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing-TitlePage-342x192.png" class="talk-image-thumbnail" class="talk-image"/></a><br/>
+    <a href="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing.pdf" class="image-hover-border" target="pdf"><img src="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
     <div class="talk-description">
       <article class="talk">
         <a href="#Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing" class="no-link-decoration permalink">
