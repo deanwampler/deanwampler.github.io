@@ -27,9 +27,19 @@ include_photo_social: true
   <p class="section-title"><span>Some of My Talks</span></p>
 
   <article class="talk">
+    <a id="How-Will-AI-Change-Software" class="anchor"></a>
+    <h1>How Will AI Change Software?</h1>
+    <p class="talk-desc">January 14, 2026.</p>
+    <p>A look at the current challenges faced by software developers using AI and some thoughts about how AI might fundamentally change software in the next few years.</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/How-Will-AI-Change-Software.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+    </div>
+  </article>
+
+  <article class="talk">
     <a id="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing" class="anchor"></a>
     <h1>Generative AI - Should We Say Goodbye to Deterministic Testing?</h1>
-    <p class="talk-desc">Functional Programming 2025, January 24, 2025.</p>
+    <p class="talk-desc">Functional Programming 2025, January 24, 2025. Updated, January 13, 2026</p>
     <p>An exploration of the challenge for developers writing tests when GenAI is inherently probabilistic.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing.pdf" class="button button-pdf" target="pdf">Download PDF</a>
