@@ -27,6 +27,16 @@ include_photo_social: true
   <p class="section-title"><span>Some of My Talks</span></p>
 
   <article class="talk">
+    <a id="AI-Testing-Lightning-Talk" class="anchor"></a>
+    <h1>A Lightning Talk on AI Testing</h1>
+    <p class="talk-desc">April 18, 2026.</p>
+    <p>A lightning talk about the AI Alliance project <a href="https://the-ai-alliance.github.io/ai-application-testing/" target="aia">Testing Generative AI Agent Applications</a> that I lead.</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/AI-Testing-Lightning-Talk.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+    </div>
+  </article>
+
+  <article class="talk">
     <a id="How-Will-AI-Change-Software" class="anchor"></a>
     <h1>How Will AI Change Software?</h1>
     <p class="talk-desc">January 14, 2026.</p>

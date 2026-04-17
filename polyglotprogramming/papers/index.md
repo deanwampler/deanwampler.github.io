@@ -13,6 +13,24 @@ include_social: true
 <section id="talks" class="talks-page-content centered">
 <div class="talks-page-content">
 
+  <a id="AI-Testing-Lightning-Talk" class="anchor"></a>
+  <hr/>
+  <div class="talk-description">
+    <a href="AI-Testing-Lightning-Talk.pdf" class="image-hover-border" target="pdf"><img src="AI-Testing-Lightning-Talk-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
+    <div class="talk-description">
+      <article class="talk">
+        <a href="#AI-Testing-Lightning-Talk" class="no-link-decoration permalink">
+          <h2>A Lightning Talk on AI Testing</h2>
+        </a>
+        <p class="talk-desc">April 18, 2026.</p>
+        <p>A lightning talk about the AI Alliance project <a href="https://the-ai-alliance.github.io/ai-application-testing/" target="aia">Testing Generative AI Agent Applications</a> that I lead.</p>
+      </article>
+      <div class="talk-media-buttons">
+        <a href="AI-Testing-Lightning-Talk.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+      </div>
+    </div>
+  </div>
+
   <a id="How-Will-AI-Change-Software" class="anchor"></a>
   <hr/>
   <div class="talk-description">
