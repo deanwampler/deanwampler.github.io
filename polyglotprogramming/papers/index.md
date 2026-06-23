@@ -13,6 +13,25 @@ include_social: true
 <section id="talks" class="talks-page-content centered">
 <div class="talks-page-content">
 
+  <a id="Tapestry-Consortium-Training" class="anchor"></a>
+  </article>
+  <hr/>
+  <div class="talk-description">
+    <a href="What-Is-Consortium-Training.pdf" class="image-hover-border" target="pdf"><img src="What-Is-Consortium-Training-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
+    <div class="talk-description">
+      <article class="talk">
+        <a href="#What-Is-Consortium-Training" class="no-link-decoration permalink">
+          <h2>Tapestry Consortium Training: What Is It and Why Should You Care?</h2>
+        </a>
+        <p class="talk-desc">June 24, 2026</p>
+        <p>A short talk about <em>Consortium Training</em>, a form of distributed training, being pioneered by the AI Alliance <a href="https://the-ai-alliance.github.io/tapestry/" target="aia">Project Tapestry</a>.</p>
+      </article>
+      <div class="talk-media-buttons">
+        <a href="What-Is-Consortium-Training.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+      </div>
+    </div>
+  </div>
+
   <a id="AI-Testing-Lightning-Talk" class="anchor"></a>
   <hr/>
   <div class="talk-description">
@@ -22,7 +41,7 @@ include_social: true
         <a href="#AI-Testing-Lightning-Talk" class="no-link-decoration permalink">
           <h2>A Lightning Talk on AI Testing</h2>
         </a>
-        <p class="talk-desc">April 18, 2026.</p>
+        <p class="talk-desc">April 18, 2026</p>
         <p>A lightning talk about the AI Alliance project <a href="https://the-ai-alliance.github.io/ai-application-testing/" target="aia">Testing Generative AI Agent Applications</a> that I lead.</p>
       </article>
       <div class="talk-media-buttons">
@@ -40,7 +59,7 @@ include_social: true
         <a href="#How-Will-AI-Change-Software" class="no-link-decoration permalink">
           <h2>How Will AI Change Software?</h2>
         </a>
-        <p class="talk-desc">January 14, 2026.</p>
+        <p class="talk-desc">January 14, 2026</p>
         <p>A look at the current challenges faced by software developers using AI and some thoughts about how AI might fundamentally change software in the next few years.</p>
       </article>
       <div class="talk-media-buttons">
@@ -77,7 +96,7 @@ include_social: true
         <a href="#MCP-and-Agents_OSS-Foundations-for-Agent-Trust-Safety-and-Scale" class="no-link-decoration permalink">
           <h2>MCP and Agents: OSS Foundations for Agent Trust, Safety, and Scale</h2>
         </a>
-        <p class="talk-desc">IBM TechXchange 2025, October, 2025.</p>
+        <p class="talk-desc">IBM TechXchange 2025, October, 2025</p>
         <p>Work with colleagues in IBM and the AI Alliance to promote effective and safe use of MCP and Agents.</p>
       </article>
       <div class="talk-media-buttons">

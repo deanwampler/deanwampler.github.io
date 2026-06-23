@@ -27,9 +27,19 @@ include_photo_social: true
   <p class="section-title"><span>Some of My Talks</span></p>
 
   <article class="talk">
+    <a id="Tapestry-Consortium-Training" class="anchor"></a>
+    <h1>Tapestry Consortium Training: What Is It and Why Should You Care?</h1>
+    <p class="talk-desc">June 24, 2026</p>
+    <p>A short talk about <em>Consortium Training</em>, a form of distributed training, being pioneered by the AI Alliance <a href="https://the-ai-alliance.github.io/tapestry/" target="aia">Project Tapestry</a>.</p>
+    <div class="more">
+      <a href="/polyglotprogramming/papers/What-Is-Consortium-Training.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+    </div>
+  </article>
+
+  <article class="talk">
     <a id="AI-Testing-Lightning-Talk" class="anchor"></a>
     <h1>A Lightning Talk on AI Testing</h1>
-    <p class="talk-desc">April 18, 2026.</p>
+    <p class="talk-desc">April 18, 2026</p>
     <p>A lightning talk about the AI Alliance project <a href="https://the-ai-alliance.github.io/ai-application-testing/" target="aia">Testing Generative AI Agent Applications</a> that I lead.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/AI-Testing-Lightning-Talk.pdf" class="button button-pdf" target="pdf">Download PDF</a>
@@ -39,7 +49,7 @@ include_photo_social: true
   <article class="talk">
     <a id="How-Will-AI-Change-Software" class="anchor"></a>
     <h1>How Will AI Change Software?</h1>
-    <p class="talk-desc">January 14, 2026.</p>
+    <p class="talk-desc">January 14, 2026</p>
     <p>A look at the current challenges faced by software developers using AI and some thoughts about how AI might fundamentally change software in the next few years.</p>
     <div class="more">
       <a href="/polyglotprogramming/papers/How-Will-AI-Change-Software.pdf" class="button button-pdf" target="pdf">Download PDF</a>
@@ -61,7 +71,7 @@ include_photo_social: true
     <a id="#MCP-and-Agents_OSS-Foundations-for-Agent-Trust-Safety-and-Scale" class="anchor">
       <h2>MCP and Agents: OSS Foundations for Agent Trust, Safety, and Scale</h2>
     </a>
-    <p class="talk-desc">IBM TechXchange 2025, October, 2025.</p>
+    <p class="talk-desc">IBM TechXchange 2025, October, 2025</p>
     <p>Work with colleagues in IBM and the AI Alliance to promote effective and safe use of MCP and Agents.</p>
   </article>
   <div class="talk-media-buttons">
