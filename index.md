@@ -17,14 +17,14 @@ include_photo_social: true
     <a href="books/hardware-software-process.html" class="image-hover-border"><img src="/assets/images/HardwareSoftwareProcess-256x337.png" alt="Hardware > Software > Process" class="book-image-thumbnail"/></a>
     <a href="books/fpjava.html" class="image-hover-border"><img src="/assets/images/FPforJavaDevsCover_256x337.png" class="book-image-thumbnail"/></a>
     <a href="books/programminghive.html" class="image-hover-border"><img src="/assets/images/prog_hive_mech_cover_front_252x331.png" class="book-image-thumbnail"/></a>
-    <strong>...</strong>
+    <strong><a href="books/">...</a></strong>
   </div>
   <p class="talk"><a href="/scala3-highlights.html">Scala 3 highlights</a>.</p>
   <p class="talk"><a href="/books">More information</a> on my books and reports.</p>
 </section>
 
 <section id="talks" class="talks centered">
-  <p class="section-title"><span>Some of My Talks</span></p>
+  <p class="section-title"><span>Some of My Recent Talks</span></p>
 
   <article class="talk">
     <a id="AI-Testing-Lightning-Talk" class="anchor"></a>
@@ -56,19 +56,6 @@ include_photo_social: true
     </div>
   </article>
 
-  <!--
-  <article class="talk">
-    <a id="#MCP-and-Agents_OSS-Foundations-for-Agent-Trust-Safety-and-Scale" class="anchor">
-      <h2>MCP and Agents: OSS Foundations for Agent Trust, Safety, and Scale</h2>
-    </a>
-    <p class="talk-desc">IBM TechXchange 2025, October, 2025.</p>
-    <p>Work with colleagues in IBM and the AI Alliance to promote effective and safe use of MCP and Agents.</p>
-  </article>
-  <div class="talk-media-buttons">
-    <a href="/polyglotprogramming/papers/MCP-and-Agents_OSS-Foundations-for-Agent-Trust-Safety-and-Scale.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-  </div>
-  -->
-
   <article class="talk">
     <a id="Model-Alignment-and-Software-Engineering" class="anchor"></a>
     <h1>Can We Make Model Alignment a Software Engineering Process?</h1>
@@ -81,79 +68,8 @@ include_photo_social: true
     </div>
   </article>
 
-  <article class="talk">
-    <a id="WhereIsAIHeaded" class="anchor"></a>
-    <h1>Where Is AI Headed?</h1>
-    <p class="talk-desc">Private Event, Chicago, July 22, 2024. Significant update July 25.</p>
-    <p>This talk combines and updates the two AI talks below, <a href="#IssuesBlockingAIAdoption">What Issues Are Blocking AI Adoption?</a> and <a href="#AI-in-the-Open">AI in the Open: Why It Matters. How to Achieve It.</a> I prepared it for a longer session at an IBM in-house event in Chicago, July 22, 2024.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/WhereIsAIHeaded.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-    </div>
-  </article>
-
-  <article class="talk">
-    <a id="IssuesBlockingAIAdoption" class="anchor"></a>
-    <h1>What Issues Are Blocking AI Adoption?</h1>
-    <p class="talk-desc">1871 AI Innovation Summit, Chicago, June 27 2024</p>
-    <p>Despite the promise of AI, several challenges block many deployments. What are those challenges and what do we do about them?</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/IssuesBlockingAIAdoption.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-    </div>
-  </article>
-
-  <article class="talk">
-    <a id="AI-in-the-Open" class="anchor"></a>
-    <h1>AI in the Open: Why It Matters. How to Achieve It.</h1>
-    <p class="talk-desc">AI Camp, Chicago, February 2024</p>
-    <p>To maximize availability and safety of AI, we should follow the path of open-source software, while recognizing what is new.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/AI-in-the-Open.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-    </div>
-  </article>
-
-  <article class="talk">
-    <a id="ReinforcementLearningChatGPT" class="anchor"></a>
-    <h1>Reinforcement Learning: ChatGPT, Games, and More</h1>
-    <p class="talk-desc">GOTO Chicago, May 2023, and IBM Research, October 2023</p>
-    <p>Things move fast; an update to January's RL talk that expands the coverage of <em>Reinforcement Learning from Human Feedback</em>, a key element in training <a href="https://openai.com/blog/chatgpt" target="_chatgpt">ChatGPT</a>.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/ReinforcementLearningChatGPT.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-    </div>
-  </article>
-
-  <article class="talk">
-    <a id="15YearsOfScala" class="anchor"></a>
-    <h1>Lessons Learned from 15 Years of Scala in the Wild</h1>
-    <p class="talk-desc">Several Conferences, 2021-2022</p>
-    <p>Since I joined the Scala community roughly 15 years ago, the <a href="https://scala-lang.org" target="scala">Scala</a> community has learned a lot to make the language more robust and easier to use effectively. I've also learned lots of lessons about effective "enterprise" programming using Scala. Finally, I see warning signs for FP's future growth.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/15YearsOfScala.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-      <a href="https://www.youtube.com/watch?v=cpWc7j85inQ" class="button button-video no-glyph" target="video">Watch Video</a>
-    </div>
-  </article>
-
-  <article class="talk">
-    <a id="Modularity-a-Retrospective" class="anchor"></a>
-    <h1>Modularity: A Retrospective</h1>
-    <p class="talk-desc">GOTO Chicago Nights, February 18, 2020 and Scala in the City, May 28, 2020</p>
-    <p>A look at what we've accomplished in making software modular and
-      where we need to go.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/Modularity-a-Retrospective.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-    </div>
-  </article>
-
-  <article class="talk">
-    <a id="ClusterWideScalingOfMLWithRay" class="anchor"></a>
-    <h1>Cluster-wide Scaling of ML with Ray</h1>
-    <p class="talk-desc">YOW! Data, July 1, 2020, and CodeMesh, Nov., 2020</p>
-    <p><a href="https://ray.io" target="ray">Ray</a> is a distributed computing system that offers a concise, intuitive API, with excellent performance for distributed workloads. It emerged out of the AI community at U.C. Berkeley.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/ClusterWideScalingOfMLWithRay.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-    </div>
-  </article>
   <p>
-    <center><a href="/polyglotprogramming/papers">All Talks</a></center>
+    <center><strong><a href="/polyglotprogramming/papers">All Talks</a></strong></center>
   </p>
 
 </section>
