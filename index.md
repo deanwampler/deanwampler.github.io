@@ -23,50 +23,78 @@ include_photo_social: true
   <p class="talk"><a href="/books">More information</a> on my books and reports.</p>
 </section>
 
-<section id="talks" class="talks centered">
+<section id="talks" class="talks-page-content centered">
   <p class="section-title"><span>Some of My Recent Talks</span></p>
 
-  <article class="talk">
-    <a id="AI-Testing-Lightning-Talk" class="anchor"></a>
-    <h1>A Lightning Talk on AI Testing</h1>
-    <p class="talk-desc">April 18, 2026.</p>
-    <p>A lightning talk about the AI Alliance project <a href="https://the-ai-alliance.github.io/ai-application-testing/" target="aia">Testing Generative AI Agent Applications</a> that I lead.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/AI-Testing-Lightning-Talk.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+  <a id="AI-Testing-Lightning-Talk" class="anchor"></a>
+  <div class="talk-description">
+    <a href="{{site.baseurl}}/polyglotprogramming/papers/AI-Testing-Lightning-Talk.pdf" class="image-hover-border" target="pdf"><img src="{{site.baseurl}}/polyglotprogramming/papers/AI-Testing-Lightning-Talk-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
+    <div class="talk-description">
+      <article class="talk">
+        <a href="#AI-Testing-Lightning-Talk" class="no-link-decoration permalink">
+          <h2>A Lightning Talk on AI Testing</h2>
+        </a>
+        <p class="talk-desc">April 18, 2026.</p>
+        <p>A lightning talk about the AI Alliance project <a href="https://the-ai-alliance.github.io/ai-application-testing/" target="aia">Testing Generative AI Agent Applications</a> that I lead.</p>
+      </article>
+      <div class="talk-media-buttons">
+        <a href="{{site.baseurl}}/polyglotprogramming/papers/AI-Testing-Lightning-Talk.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+      </div>
     </div>
-  </article>
+  </div>
 
-  <article class="talk">
-    <a id="How-Will-AI-Change-Software" class="anchor"></a>
-    <h1>How Will AI Change Software?</h1>
-    <p class="talk-desc">January 14, 2026.</p>
-    <p>A look at the current challenges faced by software developers using AI and some thoughts about how AI might fundamentally change software in the next few years.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/How-Will-AI-Change-Software.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+  <a id="How-Will-AI-Change-Software" class="anchor"></a>
+  <div class="talk-description">
+    <a href="{{site.baseurl}}/polyglotprogramming/papers/How-Will-AI-Change-Software.pdf" class="image-hover-border" target="pdf"><img src="{{site.baseurl}}/polyglotprogramming/papers/How-Will-AI-Change-Software-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
+    <div class="talk-description">
+      <article class="talk">
+        <a href="#How-Will-AI-Change-Software" class="no-link-decoration permalink">
+          <h2>How Will AI Change Software?</h2>
+        </a>
+        <p class="talk-desc">January 14, 2026.</p>
+        <p>A look at the current challenges faced by software developers using AI and some thoughts about how AI might fundamentally change software in the next few years.</p>
+      </article>
+      <div class="talk-media-buttons">
+        <a href="{{site.baseurl}}/polyglotprogramming/papers/How-Will-AI-Change-Software.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+      </div>
     </div>
-  </article>
+  </div>
 
-  <article class="talk">
-    <a id="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing" class="anchor"></a>
-    <h1>Generative AI - Should We Say Goodbye to Deterministic Testing?</h1>
-    <p class="talk-desc">Functional Programming 2025, January 24, 2025. Updated, January 13, 2026</p>
-    <p>An exploration of the challenge for developers writing tests when GenAI is inherently probabilistic.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+  <a id="Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing" class="anchor"></a>
+  <div class="talk-description">
+    <a href="{{site.baseurl}}/polyglotprogramming/papers/Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing.pdf" class="image-hover-border" target="pdf"><img src="{{site.baseurl}}/polyglotprogramming/papers/Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
+    <div class="talk-description">
+      <article class="talk">
+        <a href="#Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing" class="no-link-decoration permalink">
+          <h2>Generative AI - Should We Say Goodbye to Deterministic Testing?</h2>
+        </a>
+        <p class="talk-desc">Functional Programming 2025, January 24, 2025. Updated, January 13, 2026</p>
+        <p>An exploration of the challenge for developers writing tests when GenAI is inherently probabilistic.</p>
+      </article>
+      <div class="talk-media-buttons">
+        <a href="{{site.baseurl}}/polyglotprogramming/papers/Generative-AI-Should-We-Say-Goodbye-to-Deterministic-Testing.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+      </div>
     </div>
-  </article>
-
-  <article class="talk">
-    <a id="Model-Alignment-and-Software-Engineering" class="anchor"></a>
-    <h1>Can We Make Model Alignment a Software Engineering Process?</h1>
-    <p class="talk-desc">The AI Conference, San Francisco, September 10, 2024, Chicago Meetups, September 25 and 26, 2024</p>
-    <p>This talk explores two unique challenges for software developers that were created by Gen AI: 1) How the non-determinism of model outputs makes testing harder, and 2) Ways we can make model tuning and related refinements more incremental and iterative.</p>
-    <div class="more">
-      <a href="/polyglotprogramming/papers/Model-Alignment-and-Software-Engineering.pdf" class="button button-pdf" target="pdf">Download PDF</a>
-      <a href="https://www.youtube.com/watch?v=DFCgpnKUmm4" class="button button-video no-glyph" target="youtube">Watch AI Conference 2024 Video</a>
-      <a href="https://youtu.be/PyA7AisE17Q?t=1828" class="button button-video no-glyph" target="youtube">Watch Meetup Video</a>
+  </div>
+  
+  <a id="Model-Alignment-and-Software-Engineering" class="anchor"></a>
+  <div class="talk-description">
+    <a href="{{site.baseurl}}/polyglotprogramming/papers/Model-Alignment-and-Software-Engineering.pdf" class="image-hover-border" target="pdf"><img src="{{site.baseurl}}/polyglotprogramming/papers/Model-Alignment-and-Software-Engineering-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
+    <div class="talk-description">
+      <article class="talk">
+        <a href="#Model-Alignment-and-Software-Engineering" class="no-link-decoration permalink">
+          <h2>Can We Make Model Alignment a Software Engineering Process?</h2>
+        </a>
+        <p class="talk-desc">The AI Conference, San Francisco, September 10, 2024, Chicago Meetups, September 25 and 26, 2024</p>
+        <p>This talk explores two unique challenges for software developers that were created by Gen AI: 1) How the non-determinism of model outputs makes testing harder, and 2) Ways we can make model tuning and related refinements more incremental and iterative.</p>
+      </article>
+      <div class="talk-media-buttons">
+        <a href="{{site.baseurl}}/polyglotprogramming/papers/Model-Alignment-and-Software-Engineering.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+        <a href="https://www.youtube.com/watch?v=DFCgpnKUmm4" class="button button-video no-glyph" target="youtube">Watch AI Conference 2024 Video</a>
+        <a href="https://youtu.be/PyA7AisE17Q?t=1828" class="button button-video no-glyph" target="youtube">Watch Meetup Video</a>
+      </div>
     </div>
-  </article>
+  </div>
 
   <p>
     <center><strong><a href="/polyglotprogramming/papers">All Talks</a></strong></center>
