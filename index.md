@@ -26,6 +26,23 @@ include_photo_social: true
 <section id="talks" class="talks-page-content centered">
   <p class="section-title"><span>Some of My Recent Talks</span></p>
 
+  <a id="Tapestry-Consortium-Training" class="anchor"></a>
+  <div class="talk-description">
+    <a href="{{site.baseurl}}/polyglotprogramming/papers/What-Is-Consortium-Training.pdf" class="image-hover-border" target="pdf"><img src="{{site.baseurl}}/polyglotprogramming/papers/What-Is-Consortium-Training-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
+    <div class="talk-description">
+      <article class="talk">
+        <a href="#What-Is-Consortium-Training" class="no-link-decoration permalink">
+          <h2>Tapestry Consortium Training: What Is It and Why Should You Care?</h2>
+        </a>
+        <p class="talk-desc">June 24, 2026</p>
+        <p>A short talk about <em>Consortium Training</em>, a form of distributed training, being pioneered by the AI Alliance <a href="https://the-ai-alliance.github.io/tapestry/" target="aia">Project Tapestry</a>.</p>
+      </article>
+      <div class="talk-media-buttons">
+        <a href="{{site.baseurl}}/polyglotprogramming/papers/What-Is-Consortium-Training.pdf" class="button button-pdf" target="pdf">Download PDF</a>
+      </div>
+    </div>
+  </div>
+
   <a id="AI-Testing-Lightning-Talk" class="anchor"></a>
   <div class="talk-description">
     <a href="{{site.baseurl}}/polyglotprogramming/papers/AI-Testing-Lightning-Talk.pdf" class="image-hover-border" target="pdf"><img src="{{site.baseurl}}/polyglotprogramming/papers/AI-Testing-Lightning-Talk-TitlePage-342x192.jpg" class="talk-image-thumbnail" class="talk-image"/></a><br/>
